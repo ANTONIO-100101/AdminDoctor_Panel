@@ -5,9 +5,6 @@ Imports System.Text
 Imports System.Threading.Tasks
 
 Namespace Infocare_Project_1.Object_Models
-    ''' <summary>
-    ''' Appointment Class that is used to store Appointment Details.
-    ''' </summary>
     Public Class Appointment
         Public Property PatientName As String
         Private Property Status As AppointmentStatus

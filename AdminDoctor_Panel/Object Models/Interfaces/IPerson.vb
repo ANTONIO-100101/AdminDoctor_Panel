@@ -8,6 +8,7 @@ Imports System.Threading.Tasks
 Namespace Infocare_Project_1.Object_Models.Interfaces
     Public Interface IPerson
         ' Personal Information
+        Property AccountID As Integer
         Property FirstName As String
         Property LastName As String
         Property UserName As String

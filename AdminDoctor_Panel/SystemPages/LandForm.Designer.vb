@@ -24,6 +24,9 @@ Partial Class LandForm
     Private Sub InitializeComponent()
         Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LandForm))
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -32,24 +35,21 @@ Partial Class LandForm
         Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LandForm))
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
+        Guna2CirclePictureBox5 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
+        Guna2CirclePictureBox4 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         EnterButton = New Guna.UI2.WinForms.Guna2Button()
         Guna2CirclePictureBox2 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Guna2CirclePictureBox4 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
-        Guna2CirclePictureBox5 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Guna2CustomGradientPanel1.SuspendLayout()
+        CType(Guna2CirclePictureBox5, ComponentModel.ISupportInitialize).BeginInit()
+        CType(Guna2CirclePictureBox4, ComponentModel.ISupportInitialize).BeginInit()
         CType(Guna2CirclePictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(guna2CirclePictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(Guna2PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(Guna2PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(Guna2CirclePictureBox4, ComponentModel.ISupportInitialize).BeginInit()
-        CType(Guna2CirclePictureBox5, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Guna2CustomGradientPanel1
@@ -66,10 +66,45 @@ Partial Class LandForm
         Guna2CustomGradientPanel1.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel1.FillColor4 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel1.Location = New Point(-1, 0)
+        Guna2CustomGradientPanel1.Margin = New Padding(3, 2, 3, 2)
         Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
         Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        Guna2CustomGradientPanel1.Size = New Size(1056, 797)
+        Guna2CustomGradientPanel1.Size = New Size(924, 598)
         Guna2CustomGradientPanel1.TabIndex = 1
+        ' 
+        ' Guna2CirclePictureBox5
+        ' 
+        Guna2CirclePictureBox5.BackColor = Color.Transparent
+        Guna2CirclePictureBox5.FillColor = Color.Transparent
+        Guna2CirclePictureBox5.Image = CType(resources.GetObject("Guna2CirclePictureBox5.Image"), Image)
+        Guna2CirclePictureBox5.ImageRotate = 0F
+        Guna2CirclePictureBox5.InitialImage = CType(resources.GetObject("Guna2CirclePictureBox5.InitialImage"), Image)
+        Guna2CirclePictureBox5.Location = New Point(504, 10)
+        Guna2CirclePictureBox5.Name = "Guna2CirclePictureBox5"
+        Guna2CirclePictureBox5.ShadowDecoration.CustomizableEdges = CustomizableEdges1
+        Guna2CirclePictureBox5.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Guna2CirclePictureBox5.Size = New Size(88, 62)
+        Guna2CirclePictureBox5.SizeMode = PictureBoxSizeMode.Zoom
+        Guna2CirclePictureBox5.TabIndex = 157
+        Guna2CirclePictureBox5.TabStop = False
+        Guna2CirclePictureBox5.UseTransparentBackground = True
+        ' 
+        ' Guna2CirclePictureBox4
+        ' 
+        Guna2CirclePictureBox4.BackColor = Color.Transparent
+        Guna2CirclePictureBox4.FillColor = Color.Transparent
+        Guna2CirclePictureBox4.Image = CType(resources.GetObject("Guna2CirclePictureBox4.Image"), Image)
+        Guna2CirclePictureBox4.ImageRotate = 0F
+        Guna2CirclePictureBox4.InitialImage = CType(resources.GetObject("Guna2CirclePictureBox4.InitialImage"), Image)
+        Guna2CirclePictureBox4.Location = New Point(418, 10)
+        Guna2CirclePictureBox4.Name = "Guna2CirclePictureBox4"
+        Guna2CirclePictureBox4.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        Guna2CirclePictureBox4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Guna2CirclePictureBox4.Size = New Size(88, 62)
+        Guna2CirclePictureBox4.SizeMode = PictureBoxSizeMode.Zoom
+        Guna2CirclePictureBox4.TabIndex = 156
+        Guna2CirclePictureBox4.TabStop = False
+        Guna2CirclePictureBox4.UseTransparentBackground = True
         ' 
         ' EnterButton
         ' 
@@ -86,10 +121,11 @@ Partial Class LandForm
         EnterButton.FillColor = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         EnterButton.Font = New Font("Microsoft Sans Serif", 11.999999F)
         EnterButton.ForeColor = Color.White
-        EnterButton.Location = New Point(135, 458)
+        EnterButton.Location = New Point(118, 344)
+        EnterButton.Margin = New Padding(3, 2, 3, 2)
         EnterButton.Name = "EnterButton"
         EnterButton.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        EnterButton.Size = New Size(155, 63)
+        EnterButton.Size = New Size(136, 47)
         EnterButton.TabIndex = 153
         EnterButton.Text = "Enter"
         EnterButton.UseTransparentBackground = True
@@ -101,12 +137,11 @@ Partial Class LandForm
         Guna2CirclePictureBox2.Image = CType(resources.GetObject("Guna2CirclePictureBox2.Image"), Image)
         Guna2CirclePictureBox2.ImageRotate = 0F
         Guna2CirclePictureBox2.InitialImage = CType(resources.GetObject("Guna2CirclePictureBox2.InitialImage"), Image)
-        Guna2CirclePictureBox2.Location = New Point(67, 154)
-        Guna2CirclePictureBox2.Margin = New Padding(3, 4, 3, 4)
+        Guna2CirclePictureBox2.Location = New Point(59, 116)
         Guna2CirclePictureBox2.Name = "Guna2CirclePictureBox2"
         Guna2CirclePictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges5
         Guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Guna2CirclePictureBox2.Size = New Size(587, 516)
+        Guna2CirclePictureBox2.Size = New Size(514, 387)
         Guna2CirclePictureBox2.SizeMode = PictureBoxSizeMode.Zoom
         Guna2CirclePictureBox2.TabIndex = 152
         Guna2CirclePictureBox2.TabStop = False
@@ -119,12 +154,11 @@ Partial Class LandForm
         guna2CirclePictureBox1.Image = CType(resources.GetObject("guna2CirclePictureBox1.Image"), Image)
         guna2CirclePictureBox1.ImageRotate = 0F
         guna2CirclePictureBox1.InitialImage = CType(resources.GetObject("guna2CirclePictureBox1.InitialImage"), Image)
-        guna2CirclePictureBox1.Location = New Point(638, 189)
-        guna2CirclePictureBox1.Margin = New Padding(3, 4, 3, 4)
+        guna2CirclePictureBox1.Location = New Point(558, 142)
         guna2CirclePictureBox1.Name = "guna2CirclePictureBox1"
         guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges6
         guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        guna2CirclePictureBox1.Size = New Size(404, 363)
+        guna2CirclePictureBox1.Size = New Size(354, 272)
         guna2CirclePictureBox1.SizeMode = PictureBoxSizeMode.Zoom
         guna2CirclePictureBox1.TabIndex = 149
         guna2CirclePictureBox1.TabStop = False
@@ -136,10 +170,11 @@ Partial Class LandForm
         Guna2PictureBox2.CustomizableEdges = CustomizableEdges7
         Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), Image)
         Guna2PictureBox2.ImageRotate = 0F
-        Guna2PictureBox2.Location = New Point(576, 428)
+        Guna2PictureBox2.Location = New Point(504, 321)
+        Guna2PictureBox2.Margin = New Padding(3, 2, 3, 2)
         Guna2PictureBox2.Name = "Guna2PictureBox2"
         Guna2PictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        Guna2PictureBox2.Size = New Size(902, 366)
+        Guna2PictureBox2.Size = New Size(789, 274)
         Guna2PictureBox2.TabIndex = 147
         Guna2PictureBox2.TabStop = False
         Guna2PictureBox2.UseTransparentBackground = True
@@ -150,67 +185,33 @@ Partial Class LandForm
         Guna2PictureBox1.CustomizableEdges = CustomizableEdges9
         Guna2PictureBox1.Image = CType(resources.GetObject("Guna2PictureBox1.Image"), Image)
         Guna2PictureBox1.ImageRotate = 0F
-        Guna2PictureBox1.Location = New Point(1, 439)
+        Guna2PictureBox1.Location = New Point(1, 329)
+        Guna2PictureBox1.Margin = New Padding(3, 2, 3, 2)
         Guna2PictureBox1.Name = "Guna2PictureBox1"
         Guna2PictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        Guna2PictureBox1.Size = New Size(902, 366)
+        Guna2PictureBox1.Size = New Size(789, 274)
         Guna2PictureBox1.TabIndex = 154
         Guna2PictureBox1.TabStop = False
         Guna2PictureBox1.UseTransparentBackground = True
         ' 
-        ' Guna2CirclePictureBox4
-        ' 
-        Guna2CirclePictureBox4.BackColor = Color.Transparent
-        Guna2CirclePictureBox4.FillColor = Color.Transparent
-        Guna2CirclePictureBox4.Image = CType(resources.GetObject("Guna2CirclePictureBox4.Image"), Image)
-        Guna2CirclePictureBox4.ImageRotate = 0F
-        Guna2CirclePictureBox4.InitialImage = CType(resources.GetObject("Guna2CirclePictureBox4.InitialImage"), Image)
-        Guna2CirclePictureBox4.Location = New Point(478, 13)
-        Guna2CirclePictureBox4.Margin = New Padding(3, 4, 3, 4)
-        Guna2CirclePictureBox4.Name = "Guna2CirclePictureBox4"
-        Guna2CirclePictureBox4.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        Guna2CirclePictureBox4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Guna2CirclePictureBox4.Size = New Size(101, 83)
-        Guna2CirclePictureBox4.SizeMode = PictureBoxSizeMode.Zoom
-        Guna2CirclePictureBox4.TabIndex = 156
-        Guna2CirclePictureBox4.TabStop = False
-        Guna2CirclePictureBox4.UseTransparentBackground = True
-        ' 
-        ' Guna2CirclePictureBox5
-        ' 
-        Guna2CirclePictureBox5.BackColor = Color.Transparent
-        Guna2CirclePictureBox5.FillColor = Color.Transparent
-        Guna2CirclePictureBox5.Image = CType(resources.GetObject("Guna2CirclePictureBox5.Image"), Image)
-        Guna2CirclePictureBox5.ImageRotate = 0F
-        Guna2CirclePictureBox5.InitialImage = CType(resources.GetObject("Guna2CirclePictureBox5.InitialImage"), Image)
-        Guna2CirclePictureBox5.Location = New Point(576, 13)
-        Guna2CirclePictureBox5.Margin = New Padding(3, 4, 3, 4)
-        Guna2CirclePictureBox5.Name = "Guna2CirclePictureBox5"
-        Guna2CirclePictureBox5.ShadowDecoration.CustomizableEdges = CustomizableEdges1
-        Guna2CirclePictureBox5.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Guna2CirclePictureBox5.Size = New Size(101, 83)
-        Guna2CirclePictureBox5.SizeMode = PictureBoxSizeMode.Zoom
-        Guna2CirclePictureBox5.TabIndex = 157
-        Guna2CirclePictureBox5.TabStop = False
-        Guna2CirclePictureBox5.UseTransparentBackground = True
-        ' 
         ' LandForm
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1053, 792)
+        ClientSize = New Size(921, 594)
         Controls.Add(Guna2CustomGradientPanel1)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(3, 2, 3, 2)
         Name = "LandForm"
         StartPosition = FormStartPosition.CenterScreen
         Text = "LandForm"
         Guna2CustomGradientPanel1.ResumeLayout(False)
+        CType(Guna2CirclePictureBox5, ComponentModel.ISupportInitialize).EndInit()
+        CType(Guna2CirclePictureBox4, ComponentModel.ISupportInitialize).EndInit()
         CType(Guna2CirclePictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(guna2CirclePictureBox1, ComponentModel.ISupportInitialize).EndInit()
         CType(Guna2PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(Guna2PictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        CType(Guna2CirclePictureBox4, ComponentModel.ISupportInitialize).EndInit()
-        CType(Guna2CirclePictureBox5, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
     Friend WithEvents Guna2CustomGradientPanel1 As Guna.UI2.WinForms.Guna2CustomGradientPanel

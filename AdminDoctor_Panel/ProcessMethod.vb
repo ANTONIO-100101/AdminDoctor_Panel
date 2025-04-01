@@ -86,58 +86,5 @@ Namespace Infocare_Project_1
             Next
             Return True
         End Function
-
-        Public Function GenerateOTP(totp As Totp) As String
-            Return totp.ComputeTotp()
-        End Function
-
-        Public Function ValidateOTP(inputOTP As String, totp As Totp) As Boolean
-            Dim timeWindow As New VerificationWindow(previous:=1, future:=1)
-            Dim verified As Boolean = totp.VerifyTotp(inputOTP, timeStepMatched:=Nothing, window:=timeWindow)
-            Return verified
-        End Function
-
-        Public Async Function SendEmailAsync(user As UserModel, otp As String) As Task
-            Dim client As New SmtpClient("smtp.gmail.com") With {
-                .Port = 587,
-                .Credentials = New Net.NetworkCredential("infocare004@gmail.com", "scde knkt wrfy qfzt"),
-                .EnableSsl = True
-            }
-
-            email.DefaultSender = New SmtpSender(client)
-
-            Dim engine As IRazorLightEngine = New RazorLightEngineBuilder() _
-                .UseFileSystemProject(Path.Combine(Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.Parent.FullName, "EmailTemplates")) _
-                .UseMemoryCachingProvider() _
-                .Build()
-
-            Dim data As New With {
-                .Name = user.UserName,
-                .OTP = otp
-            }
-
-            Dim razorTemplate As String = "otp.cshtml"
-            Dim body As String = Await engine.CompileRenderAsync(razorTemplate, data)
-
-            Dim email As IFluentEmail = email _
-                .From("infocare004@gmail.com", "InfoCare") _
-                .To(user.Email) _
-                .Subject("Your One-Time Password (OTP)") _
-                .Body(body, True)
-
-            Dim response As SendResponse = Await email.SendAsync()
-
-            If response.Successful Then
-                Debug.WriteLine("OTP email sent successfully!")
-            Else
-                Debug.WriteLine("Failed to send OTP email: " & String.Join(", ", response.ErrorMessages))
-            End If
-        End Function
-
-        Public Function ValidateEmail(inputEmail As String) As Boolean
-            Dim pattern As String = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-            Return Regex.IsMatch(inputEmail, pattern)
-        End Function
-
     End Module
 End Namespace
