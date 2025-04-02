@@ -4,6 +4,10 @@ Imports AdminDoctor_Panel.Infocare_Project_1.Classes
 Public Class AdminLogin
     Inherits Form
 
+    Public Sub New()
+        InitializeComponent()
+    End Sub
+
     Private Sub EnterButton_Click(sender As Object, e As EventArgs) Handles EnterButton.Click
         Dim username As String = UsernameTxtbox.Text
         Dim password As String = PasswordTxtbox.Text
