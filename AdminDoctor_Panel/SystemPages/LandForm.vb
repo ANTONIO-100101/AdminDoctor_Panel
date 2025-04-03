@@ -1,5 +1,4 @@
-﻿
-Public Class LandForm
+﻿Public Class LandForm
     Public Sub New()
 
         InitializeComponent()
