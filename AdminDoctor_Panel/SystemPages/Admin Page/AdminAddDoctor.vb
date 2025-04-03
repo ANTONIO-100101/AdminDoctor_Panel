@@ -304,7 +304,7 @@ Partial Public Class AdminAddDoctor
         End If
     End Sub
 
-    Private Sub AddSpecialization_Click(sender As Object, e As EventArgs)
+    Private Sub AddSpecialization_Click(sender As Object, e As EventArgs) Handles AddSpecialization.Click
         Dim newSpecializationTextBox As New Guna2TextBox With {
         .Width = 194,
         .Height = 38,

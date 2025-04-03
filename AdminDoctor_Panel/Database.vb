@@ -28,14 +28,19 @@ Public Class Database
 
                 Dim tableColumn As String = If(role = Role.Admin, "A_", If(role = Role.Staff, "S_", If(role = Role.Patient, "P_", "")))
 
-                Dim query As String = $"SELECT COUNT(*) FROM {tableName} WHERE {(If(role = Role.Staff, "", tableColumn))}Username = @Username AND {tableColumn}Password = @Password;"
+                Dim query As String = If(role = Role.Staff,
+                                    $"SELECT COUNT(*) FROM {tableName} WHERE Username = @Username AND Password = @Password;",
+                                    $"SELECT COUNT(*) FROM {tableName} WHERE {tableColumn}Username = @Username AND {tableColumn}Password = @Password;")
 
                 Dim command As New SqlCommand(query, connection)
+
                 Dim hashedPassword As String = ProcessMethods.HashCharacter(password)
+
                 command.Parameters.AddWithValue("@Username", username)
                 command.Parameters.AddWithValue("@Password", hashedPassword)
 
                 connection.Open()
+
                 Dim result As Integer = Convert.ToInt32(command.ExecuteScalar())
 
                 Return result = 1
@@ -45,9 +50,9 @@ Public Class Database
         End Using
     End Function
 
-    Public Shared Function DoctorList() As DataTable
-        Dim query As String = "SELECT id as 'Doctor ID', Firstname AS 'First Name', middleName AS 'Middle Name', lastname AS 'Last Name', specialization AS 'Specialization', day_availability AS 'Day Available' FROM tb_doctorinfo"
 
+    Public Shared Function DoctorList() As DataTable
+        Dim query As String = "SELECT doctor_id as 'Doctor ID', first_name AS 'First Name', last_name AS 'Last Name', email AS 'Email', phone_number AS 'Phone Number', consultation_fee AS 'Consultation Fee' FROM tb_doctorinfo"
         Dim DoctorTable As New DataTable()
 
         Try
@@ -60,7 +65,7 @@ Public Class Database
                 End Using
             End Using
         Catch ex As Exception
-            MessageBox.Show($"Error retrieving staff list: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show($"Error retrieving Doctor list: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
 
         Return DoctorTable
@@ -69,7 +74,7 @@ Public Class Database
     Public Shared Function GetDoctorInfo(AccountId As Integer) As DoctorModel
         Using connection = GetConnection()
             Dim doctor As New DoctorModel()
-            Dim query As String = "SELECT * FROM tb_doctorinfo WHERE id = @ID"
+            Dim query As String = "SELECT * FROM tb_doctorinfo WHERE doctor_id = @ID"
 
             Using cmd As New SqlCommand(query, connection)
                 cmd.Parameters.AddWithValue("@ID", AccountId)
@@ -85,15 +90,15 @@ Public Class Database
                             specializations.Add(skill)
                         Next
                         doctor = New DoctorModel() With {
-                        .AccountID = If(reader.IsDBNull(reader.GetOrdinal("id")), 0, reader.GetInt32("id")),
-                        .FirstName = If(reader.IsDBNull(reader.GetOrdinal("firstname")), "", reader.GetString("firstname")),
-                        .LastName = If(reader.IsDBNull(reader.GetOrdinal("lastname")), "", reader.GetString("lastname")),
+                        .AccountID = If(reader.IsDBNull(reader.GetOrdinal("doctor_id")), 0, reader.GetInt32("doctor_id")),
+                        .FirstName = If(reader.IsDBNull(reader.GetOrdinal("first_name")), "", reader.GetString("first_name")),
+                        .LastName = If(reader.IsDBNull(reader.GetOrdinal("last_name")), "", reader.GetString("last_name")),
                         .MiddleName = If(reader.IsDBNull(reader.GetOrdinal("middlename")), "", reader.GetString("middlename")),
                         .UserName = If(reader.IsDBNull(reader.GetOrdinal("username")), "", reader.GetString("username")),
                         .Password = If(reader.IsDBNull(reader.GetOrdinal("password")), "", reader.GetString("password")),
-                        .ContactNumber = If(reader.IsDBNull(reader.GetOrdinal("contactNumber")), "", reader.GetString("contactNumber")),
+                        .ContactNumber = If(reader.IsDBNull(reader.GetOrdinal("phone_number")), "", reader.GetString("phone_number")),
                         .Email = If(reader.IsDBNull(reader.GetOrdinal("email")), "", reader.GetString("email")),
-                        .ConsultationFee = If(reader.IsDBNull(reader.GetOrdinal("consultationfee")), 0D, reader.GetDecimal("consultationfee")),
+                        .ConsultationFee = If(reader.IsDBNull(reader.GetOrdinal("consultation_fee")), 0D, reader.GetDecimal("consultation_fee")),
                         .StartTime = If(reader.IsDBNull(reader.GetOrdinal("start_time")), New TimeSpan(0), reader.GetTimeSpan("start_time")),
                         .EndTime = If(reader.IsDBNull(reader.GetOrdinal("end_time")), New TimeSpan(0), reader.GetTimeSpan("end_time")),
                         .Specialty = specializations,
@@ -131,7 +136,7 @@ Public Class Database
 
                 If mode = ModalMode.Add Then
                     query = "INSERT INTO tb_doctorinfo " &
-                        "(firstname, middlename, lastname, username, password, consultationfee, start_time, end_time, day_availability, contactnumber, email) " &
+                        "(first_name, middlename, last_name, username, password, consultation_fee, start_time, end_time, day_availability, phone_number, email) " &
                         "VALUES (@FirstName, @MiddleName, @LastName, @Username, @Password, @ConsultationFee, @StartTime, @EndTime, @DayAvailability, @ContactNumber, @Email); " &
                         "SELECT SCOPE_IDENTITY();"
                 Else
@@ -140,7 +145,7 @@ Public Class Database
                         "middlename = @MiddleName, username = @Username, " &
                         "consultationfee = @ConsultationFee, start_time = @StartTime, " &
                         "end_time = @EndTime, day_availability = @DayAvailability, contactnumber = @ContactNumber, " &
-                        "email = @Email WHERE id = @AccountID"
+                        "email = @Email WHERE doctor_id = @AccountID"
                 End If
 
                 Dim command As New SqlCommand(query, connection, transaction)
@@ -186,7 +191,7 @@ Public Class Database
                 Dim joinedSpecializations As String = String.Join(", ", specializationsList)
                 Dim updateQuery As String = "UPDATE tb_doctorinfo " &
                                             "SET specialization = @Specialization " &
-                                            "WHERE id = @DoctorId"
+                                            "WHERE doctor_id = @DoctorId"
                 Dim updateCommand As New SqlCommand(updateQuery, connection, transaction)
                 updateCommand.Parameters.AddWithValue("@Specialization", joinedSpecializations)
                 updateCommand.Parameters.AddWithValue("@DoctorId", doctorId)
@@ -217,7 +222,7 @@ Public Class Database
 
     Public Shared Sub DeleteDoctorById(AccountID As Integer)
         Dim query As String = "DELETE FROM tb_doctor_specializations WHERE doctor_id = @ID;" &
-                          "DELETE FROM tb_doctorinfo WHERE id = @ID"
+                          "DELETE FROM tb_doctorinfo WHERE doctor_id = @ID"
 
         Using connection As SqlConnection = GetConnection()
             Dim cmd As New SqlCommand(query, connection)

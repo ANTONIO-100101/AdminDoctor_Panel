@@ -76,52 +76,6 @@ Namespace Infocare_Project_1
 
             Return True
         End Function
-
-        Public Function GenerateOTP(totp As Totp) As String
-            Return totp.ComputeTotp()
-        End Function
-
-        Public Function ValidateOTP(inputOTP As String, totp As Totp) As Boolean
-            Return totp.VerifyTotp(inputOTP, Nothing, New VerificationWindow(previous:=1, future:=1))
-        End Function
-
-        Public Async Sub SendEmail(user As UserModel, otp As String)
-            Dim client As New SmtpClient("smtp.gmail.com") With {
-                .Port = 587,
-                .Credentials = New System.Net.NetworkCredential("infocare004@gmail.com", "scde knkt wrfy qfzt"),
-                .EnableSsl = True
-            }
-
-            email.DefaultSender = New SmtpSender(client)
-
-            Dim engine As New RazorLightEngineBuilder() _
-                .UseFileSystemProject(Path.Combine(Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.Parent.FullName, "EmailTemplates")) _
-                .UseMemoryCachingProvider() _
-                .Build()
-
-            Dim data = New With {
-                Key .Name = user.UserName,
-                Key .OTP = otp
-            }
-
-            Dim razorTemplate As String = "otp.cshtml"
-            Dim body As String = Await engine.CompileRenderAsync(razorTemplate, data)
-
-            Dim email = email _
-                .From("infocare004@gmail.com", "InfoCare") _
-                .To(user.Email) _
-                .Subject("Your One-Time Password (OTP)") _
-                .Body(body, True)
-
-            Dim response = Await email.SendAsync()
-
-            If response.Successful Then
-                Debug.WriteLine("OTP email sent successfully!")
-            Else
-                Debug.WriteLine("Failed to send OTP email: " & String.Join(", ", response.ErrorMessages))
-            End If
-        End Sub
-
         Public Function ValidateEmail(inputEmail As String) As Boolean
             Dim pattern As String = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
             Return Regex.IsMatch(inputEmail, pattern)

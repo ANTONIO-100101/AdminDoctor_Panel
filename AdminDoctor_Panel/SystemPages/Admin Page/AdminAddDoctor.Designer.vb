@@ -224,7 +224,7 @@ Partial Class AdminAddDoctor
         FirstNameTextBox.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         FirstNameTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         FirstNameTextBox.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        FirstNameTextBox.Font = New Font("Segoe UI", 9.0F)
+        FirstNameTextBox.Font = New Font("Segoe UI", 9F)
         FirstNameTextBox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         FirstNameTextBox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         FirstNameTextBox.Location = New Point(97, 158)
@@ -270,7 +270,7 @@ Partial Class AdminAddDoctor
         UserNameTextBox.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         UserNameTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         UserNameTextBox.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        UserNameTextBox.Font = New Font("Segoe UI", 9.0F)
+        UserNameTextBox.Font = New Font("Segoe UI", 9F)
         UserNameTextBox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         UserNameTextBox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         UserNameTextBox.Location = New Point(97, 260)
@@ -308,7 +308,7 @@ Partial Class AdminAddDoctor
         emailTextBox.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         emailTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         emailTextBox.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        emailTextBox.Font = New Font("Segoe UI", 9.0F)
+        emailTextBox.Font = New Font("Segoe UI", 9F)
         emailTextBox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         emailTextBox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         emailTextBox.Location = New Point(97, 341)
@@ -358,7 +358,7 @@ Partial Class AdminAddDoctor
         PasswordTextBox.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         PasswordTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         PasswordTextBox.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        PasswordTextBox.Font = New Font("Segoe UI", 9.0F)
+        PasswordTextBox.Font = New Font("Segoe UI", 9F)
         PasswordTextBox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         PasswordTextBox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         PasswordTextBox.IconRightOffset = New Point(5, 0)
@@ -386,7 +386,7 @@ Partial Class AdminAddDoctor
         ContactNumberTextbox.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         ContactNumberTextbox.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         ContactNumberTextbox.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        ContactNumberTextbox.Font = New Font("Segoe UI", 9.0F)
+        ContactNumberTextbox.Font = New Font("Segoe UI", 9F)
         ContactNumberTextbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         ContactNumberTextbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         ContactNumberTextbox.Location = New Point(528, 426)
@@ -411,7 +411,7 @@ Partial Class AdminAddDoctor
         ConfirmPasswordTextBox.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         ConfirmPasswordTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         ConfirmPasswordTextBox.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        ConfirmPasswordTextBox.Font = New Font("Segoe UI", 9.0F)
+        ConfirmPasswordTextBox.Font = New Font("Segoe UI", 9F)
         ConfirmPasswordTextBox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         ConfirmPasswordTextBox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         ConfirmPasswordTextBox.Location = New Point(528, 260)
@@ -443,7 +443,7 @@ Partial Class AdminAddDoctor
         TimeComboBox.DropDownStyle = ComboBoxStyle.DropDownList
         TimeComboBox.FocusedColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         TimeComboBox.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        TimeComboBox.Font = New Font("Segoe UI", 10.0F)
+        TimeComboBox.Font = New Font("Segoe UI", 10F)
         TimeComboBox.ForeColor = Color.FromArgb(CByte(68), CByte(88), CByte(112))
         TimeComboBox.ItemHeight = 30
         TimeComboBox.Location = New Point(311, 350)
@@ -547,7 +547,7 @@ Partial Class AdminAddDoctor
         ' guna2HtmlLabel7
         ' 
         guna2HtmlLabel7.BackColor = Color.Transparent
-        guna2HtmlLabel7.Font = New Font("Segoe UI", 8.0F, FontStyle.Bold)
+        guna2HtmlLabel7.Font = New Font("Segoe UI", 8F, FontStyle.Bold)
         guna2HtmlLabel7.Location = New Point(390, 422)
         guna2HtmlLabel7.Name = "guna2HtmlLabel7"
         guna2HtmlLabel7.Size = New Size(25, 15)
@@ -579,7 +579,7 @@ Partial Class AdminAddDoctor
         ConsultationFeeTextBox.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         ConsultationFeeTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         ConsultationFeeTextBox.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        ConsultationFeeTextBox.Font = New Font("Segoe UI", 9.0F)
+        ConsultationFeeTextBox.Font = New Font("Segoe UI", 9F)
         ConsultationFeeTextBox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         ConsultationFeeTextBox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         ConsultationFeeTextBox.Location = New Point(416, 411)
@@ -608,7 +608,7 @@ Partial Class AdminAddDoctor
         ' guna2HtmlLabel6
         ' 
         guna2HtmlLabel6.BackColor = Color.Transparent
-        guna2HtmlLabel6.Font = New Font("Segoe UI", 8.0F, FontStyle.Bold)
+        guna2HtmlLabel6.Font = New Font("Segoe UI", 8F, FontStyle.Bold)
         guna2HtmlLabel6.Location = New Point(322, 431)
         guna2HtmlLabel6.Name = "guna2HtmlLabel6"
         guna2HtmlLabel6.Size = New Size(21, 15)
@@ -631,7 +631,7 @@ Partial Class AdminAddDoctor
         ' guna2HtmlLabel5
         ' 
         guna2HtmlLabel5.BackColor = Color.Transparent
-        guna2HtmlLabel5.Font = New Font("Segoe UI", 8.0F, FontStyle.Bold)
+        guna2HtmlLabel5.Font = New Font("Segoe UI", 8F, FontStyle.Bold)
         guna2HtmlLabel5.Location = New Point(309, 411)
         guna2HtmlLabel5.Name = "guna2HtmlLabel5"
         guna2HtmlLabel5.Size = New Size(70, 15)
@@ -672,7 +672,7 @@ Partial Class AdminAddDoctor
         DayAvailabilityCombobox.DropDownStyle = ComboBoxStyle.DropDownList
         DayAvailabilityCombobox.FocusedColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         DayAvailabilityCombobox.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        DayAvailabilityCombobox.Font = New Font("Segoe UI", 9.0F)
+        DayAvailabilityCombobox.Font = New Font("Segoe UI", 9F)
         DayAvailabilityCombobox.ForeColor = Color.FromArgb(CByte(68), CByte(88), CByte(112))
         DayAvailabilityCombobox.ItemHeight = 30
         DayAvailabilityCombobox.Items.AddRange(New Object() {""})
@@ -694,7 +694,7 @@ Partial Class AdminAddDoctor
         MiddleNameTextbox.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         MiddleNameTextbox.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         MiddleNameTextbox.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        MiddleNameTextbox.Font = New Font("Segoe UI", 9.0F)
+        MiddleNameTextbox.Font = New Font("Segoe UI", 9F)
         MiddleNameTextbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         MiddleNameTextbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         MiddleNameTextbox.Location = New Point(311, 158)
@@ -710,7 +710,7 @@ Partial Class AdminAddDoctor
         ' guna2HtmlLabel3
         ' 
         guna2HtmlLabel3.BackColor = Color.Transparent
-        guna2HtmlLabel3.Font = New Font("Impact", 15.0F)
+        guna2HtmlLabel3.Font = New Font("Impact", 15F)
         guna2HtmlLabel3.ForeColor = Color.White
         guna2HtmlLabel3.Location = New Point(97, 19)
         guna2HtmlLabel3.Margin = New Padding(3, 2, 3, 2)
@@ -731,7 +731,7 @@ Partial Class AdminAddDoctor
         LastNameTextbox.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         LastNameTextbox.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         LastNameTextbox.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        LastNameTextbox.Font = New Font("Segoe UI", 9.0F)
+        LastNameTextbox.Font = New Font("Segoe UI", 9F)
         LastNameTextbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         LastNameTextbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         LastNameTextbox.Location = New Point(528, 158)
@@ -803,13 +803,13 @@ Partial Class AdminAddDoctor
         guna2BorderlessForm1.BorderRadius = 15
         guna2BorderlessForm1.ContainerControl = Me
         guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6R
-        guna2BorderlessForm1.DragStartTransparencyValue = 1.0R
+        guna2BorderlessForm1.DragStartTransparencyValue = 1R
         guna2BorderlessForm1.ResizeForm = False
         guna2BorderlessForm1.TransparentWhileDrag = True
         ' 
         ' AdminAddDoctor
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(822, 591)
         Controls.Add(Guna2CustomGradientPanel1)

@@ -33,6 +33,7 @@
         ad_staffpanel.Visible = False
         ad_patientpanel.Visible = False
         ad_AppointmentPanel.Visible = False
+        Guna2CustomGradientPanel2.Visible = False
 
         DoctorDataGridViewList2.Visible = True
         StaffDataGridViewList2.Visible = False
@@ -44,7 +45,6 @@
 
     Private Sub AddDoctor_Click(sender As Object, e As EventArgs) Handles AddDoctor.Click
         Dim adminAddDoctor As New AdminAddDoctor()
-        AddHandler adminAddDoctor.ShowDoctorList, AddressOf ShowDoctorList
         adminAddDoctor.Show()
     End Sub
 End Class
