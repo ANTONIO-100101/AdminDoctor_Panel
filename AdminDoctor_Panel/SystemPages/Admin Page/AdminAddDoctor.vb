@@ -68,7 +68,11 @@ Partial Public Class AdminAddDoctor
 
         If mode = ModalMode.Edit Then
             doctor = Database.GetDoctorInfo(AccountId)
-            FillUpFields(doctor)
+            If doctor IsNot Nothing Then
+                FillUpFields(doctor)
+            Else
+                MessageBox.Show("Doctor not found.")
+            End If
         End If
     End Sub
 
@@ -238,9 +242,13 @@ Partial Public Class AdminAddDoctor
 
         DayAvailabilityCombobox.SelectedIndex = 0
     End Sub
-
     Private Sub FirstNameTextBox_TextChanged(sender As Object, e As EventArgs) Handles FirstNameTextBox.TextChanged
-        _placeHolderHandler.HandleTextBoxPlaceholder(FirstNameTextBox, FNLabel, "First name")
+        If _placeHolderHandler IsNot Nothing AndAlso FirstNameTextBox IsNot Nothing AndAlso FNLabel IsNot Nothing Then
+            _placeHolderHandler.HandleTextBoxPlaceholder(FirstNameTextBox, FNLabel, "First name")
+        Else
+            ' Log or handle the null reference case
+            Debug.WriteLine("One of the objects is null.")
+        End If
     End Sub
 
     Private Sub LastNameTextBox_TextChanged(sender As Object, e As EventArgs) Handles LastNameTextbox.TextChanged
@@ -248,11 +256,21 @@ Partial Public Class AdminAddDoctor
     End Sub
 
     Private Sub UserNameTextBox_TextChanged(sender As Object, e As EventArgs) Handles UserNameTextBox.TextChanged
-        _placeHolderHandler.HandleTextBoxPlaceholder(UserNameTextBox, UNlabel, "User name")
+        If _placeHolderHandler IsNot Nothing AndAlso UserNameTextBox IsNot Nothing AndAlso UNlabel IsNot Nothing Then
+            _placeHolderHandler.HandleTextBoxPlaceholder(UserNameTextBox, UNlabel, "User name")
+        Else
+            ' Log or handle the null reference case
+            Debug.WriteLine("One of the objects is null.")
+        End If
     End Sub
 
     Private Sub PasswordTextBox_TextChanged(sender As Object, e As EventArgs) Handles PasswordTextBox.TextChanged
-        _placeHolderHandler.HandleTextBoxPlaceholder(PasswordTextBox, PLabel, "Password")
+        If _placeHolderHandler IsNot Nothing AndAlso PasswordTextBox IsNot Nothing AndAlso PLabel IsNot Nothing Then
+            _placeHolderHandler.HandleTextBoxPlaceholder(PasswordTextBox, PLabel, "Password")
+        Else
+            ' Log or handle the null reference case
+            Debug.WriteLine("One of the objects is null.")
+        End If
 
         If PasswordTextBox.Text.Trim() = "" Then
             passValidatorMsg.Visible = False
@@ -275,8 +293,12 @@ Partial Public Class AdminAddDoctor
     End Sub
 
     Private Sub ConfirmPasswordTextBox_TextChanged(sender As Object, e As EventArgs) Handles ConfirmPasswordTextBox.TextChanged
+        If _placeHolderHandler Is Nothing Then
+            _placeHolderHandler = New PlaceHolderHandler() ' Or appropriate initialization
+        End If
         _placeHolderHandler.HandleTextBoxPlaceholder(ConfirmPasswordTextBox, CPLabel, "Confirm Password")
     End Sub
+
 
     Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
         If mode = ModalMode.Add Then
@@ -336,7 +358,6 @@ Partial Public Class AdminAddDoctor
             Database.DeleteDoctorById(doctor.AccountID)
             MessageBox.Show("Doctor removed successfully!")
             Me.Close()
-            RaiseEvent ShowDoctorList()
         End If
     End Sub
 End Class

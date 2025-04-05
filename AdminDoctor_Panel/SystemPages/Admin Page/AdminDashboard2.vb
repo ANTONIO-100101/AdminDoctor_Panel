@@ -7,7 +7,7 @@
     Private Sub ShowDoctorList()
         Try
             Dim DoctorData As DataTable = Database.DoctorList()
-            If DoctorData.Rows.Count > 0 Then
+            If DoctorData IsNot Nothing AndAlso DoctorData.Rows.Count > 0 Then
                 DoctorDataGridViewList2.DataSource = DoctorData
             Else
                 MessageBox.Show("No Doctor data found.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -45,6 +45,10 @@
 
     Private Sub AddDoctor_Click(sender As Object, e As EventArgs) Handles AddDoctor.Click
         Dim adminAddDoctor As New AdminAddDoctor()
+
+        AddHandler adminAddDoctor.ShowDoctorList, AddressOf ShowDoctorList
+
         adminAddDoctor.Show()
+        Debug.WriteLine("AddDoctor button clicked")
     End Sub
 End Class

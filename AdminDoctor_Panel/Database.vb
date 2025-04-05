@@ -240,4 +240,55 @@ Public Class Database
             End Try
         End Using
     End Sub
+    Public Shared Function GetDoctorNameDetails(username As String) As DoctorModel
+        Using connection = GetConnection()
+            Dim query As String = "SELECT * FROM tb_doctorinfo WHERE Username = @Username"
+            Dim command As New SqlCommand(query, connection)
+            command.Parameters.AddWithValue("@Username", username)
+
+            Try
+                connection.Open()
+                Using reader As SqlDataReader = command.ExecuteReader()
+                    If reader.Read() Then
+                        Dim firstName As String = reader("first_name").ToString()
+                        Dim lastName As String = reader("last_name").ToString()
+                        Dim middleName As String = reader("middlename").ToString()
+                        Dim contactNumber As String = reader("phone_number").ToString()
+                        Dim password As String = reader("password").ToString()
+                        Dim specialties As String = reader("specialization").ToString()
+
+                        Dim specialty As New List(Of String)(specialties.Split(","c))
+
+                        Dim consultationFee As Decimal = Decimal.Parse(reader("consultation_fee").ToString())
+
+                        Dim startTime As TimeSpan
+                        TimeSpan.TryParse(reader("start_time").ToString(), startTime)
+
+                        Dim endTime As TimeSpan
+                        TimeSpan.TryParse(reader("end_time").ToString(), endTime)
+
+                        Dim dayAvailability As String = reader("day_availability").ToString()
+
+                        Return New DoctorModel With {
+                        .FirstName = firstName,
+                        .LastName = lastName,
+                        .MiddleName = middleName,
+                        .Password = password,
+                        .Specialty = specialty,
+                        .ConsultationFee = consultationFee,
+                        .StartTime = startTime,
+                        .EndTime = endTime,
+                        .DayAvailability = dayAvailability
+                    }
+                    Else
+                        Throw New Exception("No Doctor found with the given username.")
+                    End If
+                End Using
+            Catch ex As Exception
+                Throw New Exception("Error fetching patient name details: " & ex.Message)
+            End Try
+        End Using
+    End Function
+
+
 End Class
