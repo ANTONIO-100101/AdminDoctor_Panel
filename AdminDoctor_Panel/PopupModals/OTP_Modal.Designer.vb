@@ -290,6 +290,7 @@ Partial Class OTP_Modal
         Controls.Add(guna2HtmlLabel1)
         FormBorderStyle = FormBorderStyle.None
         Name = "OTP_Modal"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "OTP_Modal"
         ResumeLayout(False)
         PerformLayout()

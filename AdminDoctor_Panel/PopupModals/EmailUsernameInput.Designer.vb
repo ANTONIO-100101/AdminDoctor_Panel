@@ -23,14 +23,14 @@ Partial Class EmailUsernameInput
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
-        Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EmailUsernameInput))
-        Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(components)
         submitBtn = New Guna.UI2.WinForms.Guna2Button()
         emailTextbox = New Guna.UI2.WinForms.Guna2TextBox()
@@ -49,7 +49,7 @@ Partial Class EmailUsernameInput
         ' submitBtn
         ' 
         submitBtn.BorderRadius = 5
-        submitBtn.CustomizableEdges = CustomizableEdges8
+        submitBtn.CustomizableEdges = CustomizableEdges2
         submitBtn.DisabledState.BorderColor = Color.DarkGray
         submitBtn.DisabledState.CustomBorderColor = Color.DarkGray
         submitBtn.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -60,7 +60,7 @@ Partial Class EmailUsernameInput
         submitBtn.Location = New Point(128, 333)
         submitBtn.Margin = New Padding(3, 4, 3, 4)
         submitBtn.Name = "submitBtn"
-        submitBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges9
+        submitBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges3
         submitBtn.Size = New Size(206, 60)
         submitBtn.TabIndex = 8
         submitBtn.Text = "Submit"
@@ -69,7 +69,7 @@ Partial Class EmailUsernameInput
         ' 
         emailTextbox.BorderColor = SystemColors.ControlDarkDark
         emailTextbox.BorderRadius = 5
-        emailTextbox.CustomizableEdges = CustomizableEdges10
+        emailTextbox.CustomizableEdges = CustomizableEdges4
         emailTextbox.DefaultText = ""
         emailTextbox.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         emailTextbox.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -85,7 +85,7 @@ Partial Class EmailUsernameInput
         emailTextbox.PlaceholderForeColor = SystemColors.ControlDarkDark
         emailTextbox.PlaceholderText = "Enter Your Email"
         emailTextbox.SelectedText = ""
-        emailTextbox.ShadowDecoration.CustomizableEdges = CustomizableEdges11
+        emailTextbox.ShadowDecoration.CustomizableEdges = CustomizableEdges5
         emailTextbox.Size = New Size(361, 59)
         emailTextbox.TabIndex = 7
         ' 
@@ -93,7 +93,7 @@ Partial Class EmailUsernameInput
         ' 
         usernameTextbox.BorderColor = SystemColors.ControlDarkDark
         usernameTextbox.BorderRadius = 5
-        usernameTextbox.CustomizableEdges = CustomizableEdges12
+        usernameTextbox.CustomizableEdges = CustomizableEdges6
         usernameTextbox.DefaultText = ""
         usernameTextbox.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         usernameTextbox.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -109,7 +109,7 @@ Partial Class EmailUsernameInput
         usernameTextbox.PlaceholderForeColor = SystemColors.ControlDarkDark
         usernameTextbox.PlaceholderText = "Enter Your Username"
         usernameTextbox.SelectedText = ""
-        usernameTextbox.ShadowDecoration.CustomizableEdges = CustomizableEdges13
+        usernameTextbox.ShadowDecoration.CustomizableEdges = CustomizableEdges7
         usernameTextbox.Size = New Size(361, 59)
         usernameTextbox.TabIndex = 6
         ' 
@@ -135,7 +135,7 @@ Partial Class EmailUsernameInput
         closeBtn.Location = New Point(421, 12)
         closeBtn.Name = "closeBtn"
         closeBtn.PressedState.ImageSize = New Size(64, 64)
-        closeBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges14
+        closeBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges1
         closeBtn.Size = New Size(57, 54)
         closeBtn.TabIndex = 9
         ' 
@@ -151,6 +151,7 @@ Partial Class EmailUsernameInput
         Controls.Add(guna2HtmlLabel1)
         FormBorderStyle = FormBorderStyle.None
         Name = "EmailUsernameInput"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Form1"
         ResumeLayout(False)
         PerformLayout()

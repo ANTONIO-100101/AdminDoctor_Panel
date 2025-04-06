@@ -25,6 +25,8 @@ Partial Class DoctorDiagnosisRecord
         components = New ComponentModel.Container()
         Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DoctorDiagnosisRecord))
@@ -38,9 +40,9 @@ Partial Class DoctorDiagnosisRecord
         Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
+        guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        SaveButton = New Guna.UI2.WinForms.Guna2Button()
         ConfineDaysTextbox = New Guna.UI2.WinForms.Guna2TextBox()
         prescritionFlowLayoutPanel = New FlowLayoutPanel()
         DoctorOrdersFlowLayoutPanel = New FlowLayoutPanel()
@@ -52,7 +54,6 @@ Partial Class DoctorDiagnosisRecord
         DoctorLastNameLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
         DoctorFirstNameLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
         guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(components)
         addPrescription = New Guna.UI2.WinForms.Guna2ImageButton()
         doctor_MinimizeButton = New Guna.UI2.WinForms.Guna2ImageButton()
         doctor_ExitButton = New Guna.UI2.WinForms.Guna2Button()
@@ -64,9 +65,8 @@ Partial Class DoctorDiagnosisRecord
         guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         DiagnosisTextBox = New Guna.UI2.WinForms.Guna2TextBox()
         PatientNameLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        SaveButton = New Guna.UI2.WinForms.Guna2Button()
-        guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         guna2HtmlLabel21 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(components)
         Guna2CustomGradientPanel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -100,12 +100,44 @@ Partial Class DoctorDiagnosisRecord
         Guna2CustomGradientPanel1.CustomizableEdges = CustomizableEdges15
         Guna2CustomGradientPanel1.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel1.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        Guna2CustomGradientPanel1.FillColor4 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        Guna2CustomGradientPanel1.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        Guna2CustomGradientPanel1.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         Guna2CustomGradientPanel1.Location = New Point(-1, 0)
         Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
         Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges16
         Guna2CustomGradientPanel1.Size = New Size(967, 613)
         Guna2CustomGradientPanel1.TabIndex = 0
+        ' 
+        ' guna2HtmlLabel1
+        ' 
+        guna2HtmlLabel1.BackColor = Color.Transparent
+        guna2HtmlLabel1.Font = New Font("Impact", 15F)
+        guna2HtmlLabel1.ForeColor = Color.Black
+        guna2HtmlLabel1.Location = New Point(68, 12)
+        guna2HtmlLabel1.Name = "guna2HtmlLabel1"
+        guna2HtmlLabel1.Size = New Size(54, 34)
+        guna2HtmlLabel1.TabIndex = 242
+        guna2HtmlLabel1.Text = "Back"
+        ' 
+        ' SaveButton
+        ' 
+        SaveButton.BackColor = Color.Transparent
+        SaveButton.BorderRadius = 15
+        SaveButton.Cursor = Cursors.Hand
+        SaveButton.CustomizableEdges = CustomizableEdges1
+        SaveButton.DisabledState.BorderColor = Color.DarkGray
+        SaveButton.DisabledState.CustomBorderColor = Color.DarkGray
+        SaveButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        SaveButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        SaveButton.FillColor = Color.Teal
+        SaveButton.Font = New Font("Microsoft Sans Serif", 11.999999F)
+        SaveButton.ForeColor = Color.White
+        SaveButton.Location = New Point(420, 527)
+        SaveButton.Name = "SaveButton"
+        SaveButton.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        SaveButton.Size = New Size(131, 56)
+        SaveButton.TabIndex = 3
+        SaveButton.Text = "Save"
         ' 
         ' ConfineDaysTextbox
         ' 
@@ -247,14 +279,6 @@ Partial Class DoctorDiagnosisRecord
         guna2HtmlLabel6.Size = New Size(119, 25)
         guna2HtmlLabel6.TabIndex = 246
         guna2HtmlLabel6.Text = "Doctor's name"
-        ' 
-        ' guna2BorderlessForm1
-        ' 
-        guna2BorderlessForm1.BorderRadius = 15
-        guna2BorderlessForm1.ContainerControl = Me
-        guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6R
-        guna2BorderlessForm1.DragStartTransparencyValue = 1R
-        guna2BorderlessForm1.TransparentWhileDrag = True
         ' 
         ' addPrescription
         ' 
@@ -436,37 +460,6 @@ Partial Class DoctorDiagnosisRecord
         PatientNameLabel.TabIndex = 233
         PatientNameLabel.Text = "Patient's name"
         ' 
-        ' SaveButton
-        ' 
-        SaveButton.BackColor = Color.Transparent
-        SaveButton.BorderRadius = 15
-        SaveButton.Cursor = Cursors.Hand
-        SaveButton.CustomizableEdges = CustomizableEdges1
-        SaveButton.DisabledState.BorderColor = Color.DarkGray
-        SaveButton.DisabledState.CustomBorderColor = Color.DarkGray
-        SaveButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        SaveButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        SaveButton.FillColor = Color.Teal
-        SaveButton.Font = New Font("Microsoft Sans Serif", 11.999999F)
-        SaveButton.ForeColor = Color.White
-        SaveButton.Location = New Point(420, 527)
-        SaveButton.Name = "SaveButton"
-        SaveButton.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        SaveButton.Size = New Size(131, 56)
-        SaveButton.TabIndex = 3
-        SaveButton.Text = "Save"
-        ' 
-        ' guna2HtmlLabel1
-        ' 
-        guna2HtmlLabel1.BackColor = Color.Transparent
-        guna2HtmlLabel1.Font = New Font("Impact", 15F)
-        guna2HtmlLabel1.ForeColor = Color.Black
-        guna2HtmlLabel1.Location = New Point(68, 12)
-        guna2HtmlLabel1.Name = "guna2HtmlLabel1"
-        guna2HtmlLabel1.Size = New Size(54, 34)
-        guna2HtmlLabel1.TabIndex = 242
-        guna2HtmlLabel1.Text = "Back"
-        ' 
         ' guna2HtmlLabel21
         ' 
         guna2HtmlLabel21.BackColor = Color.Transparent
@@ -478,6 +471,14 @@ Partial Class DoctorDiagnosisRecord
         guna2HtmlLabel21.TabIndex = 241
         guna2HtmlLabel21.Text = "Patient Diagnosis Record"
         ' 
+        ' guna2BorderlessForm1
+        ' 
+        guna2BorderlessForm1.BorderRadius = 15
+        guna2BorderlessForm1.ContainerControl = Me
+        guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6R
+        guna2BorderlessForm1.DragStartTransparencyValue = 1R
+        guna2BorderlessForm1.TransparentWhileDrag = True
+        ' 
         ' DoctorDiagnosisRecord
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -486,6 +487,7 @@ Partial Class DoctorDiagnosisRecord
         Controls.Add(Guna2CustomGradientPanel1)
         FormBorderStyle = FormBorderStyle.None
         Name = "DoctorDiagnosisRecord"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "DoctorDiagnosisRecord"
         Guna2CustomGradientPanel1.ResumeLayout(False)
         Guna2CustomGradientPanel1.PerformLayout()

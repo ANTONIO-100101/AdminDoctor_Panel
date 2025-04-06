@@ -133,12 +133,13 @@ Partial Class PatientBillingInvoice
         Guna2CustomGradientPanel1.Controls.Add(PrintablePanel)
         Guna2CustomGradientPanel1.CustomizableEdges = CustomizableEdges40
         Guna2CustomGradientPanel1.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        Guna2CustomGradientPanel1.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel1.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        Guna2CustomGradientPanel1.FillColor4 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        Guna2CustomGradientPanel1.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         Guna2CustomGradientPanel1.Location = New Point(-1, -2)
         Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
         Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges41
-        Guna2CustomGradientPanel1.Size = New Size(1006, 1108)
+        Guna2CustomGradientPanel1.Size = New Size(1007, 1108)
         Guna2CustomGradientPanel1.TabIndex = 0
         ' 
         ' pbilling_MinimizeButton
@@ -784,6 +785,7 @@ Partial Class PatientBillingInvoice
         Controls.Add(Guna2CustomGradientPanel1)
         FormBorderStyle = FormBorderStyle.None
         Name = "PatientBillingInvoice"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "PatientBillingInvoice"
         Guna2CustomGradientPanel1.ResumeLayout(False)
         PrintablePanel.ResumeLayout(False)

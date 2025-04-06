@@ -25,27 +25,27 @@ Partial Class LandingPage
         components = New ComponentModel.Container()
         Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LandingPage))
-        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LandingPage))
+        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(components)
         Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
-        guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
-        Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         label1 = New Label()
         Label2 = New Label()
-        guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
+        Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Guna2CustomGradientPanel1.SuspendLayout()
         CType(guna2CirclePictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(Guna2PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(Guna2PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(Guna2PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Guna2BorderlessForm1
@@ -66,70 +66,36 @@ Partial Class LandingPage
         Guna2CustomGradientPanel1.CustomizableEdges = CustomizableEdges8
         Guna2CustomGradientPanel1.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel1.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        Guna2CustomGradientPanel1.FillColor3 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
-        Guna2CustomGradientPanel1.FillColor4 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        Guna2CustomGradientPanel1.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        Guna2CustomGradientPanel1.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         Guna2CustomGradientPanel1.Location = New Point(0, 0)
         Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
         Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges9
         Guna2CustomGradientPanel1.Size = New Size(1142, 746)
         Guna2CustomGradientPanel1.TabIndex = 0
         ' 
-        ' guna2CirclePictureBox1
+        ' guna2Button1
         ' 
-        guna2CirclePictureBox1.BackColor = Color.Transparent
-        guna2CirclePictureBox1.FillColor = Color.Transparent
-        guna2CirclePictureBox1.Image = CType(resources.GetObject("guna2CirclePictureBox1.Image"), Image)
-        guna2CirclePictureBox1.ImageRotate = 0F
-        guna2CirclePictureBox1.InitialImage = CType(resources.GetObject("guna2CirclePictureBox1.InitialImage"), Image)
-        guna2CirclePictureBox1.Location = New Point(438, 4)
-        guna2CirclePictureBox1.Margin = New Padding(3, 4, 3, 4)
-        guna2CirclePictureBox1.Name = "guna2CirclePictureBox1"
-        guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges3
-        guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        guna2CirclePictureBox1.Size = New Size(358, 341)
-        guna2CirclePictureBox1.SizeMode = PictureBoxSizeMode.Zoom
-        guna2CirclePictureBox1.TabIndex = 144
-        guna2CirclePictureBox1.TabStop = False
-        guna2CirclePictureBox1.UseTransparentBackground = True
-        ' 
-        ' Guna2PictureBox1
-        ' 
-        Guna2PictureBox1.BackColor = Color.Transparent
-        Guna2PictureBox1.CustomizableEdges = CustomizableEdges6
-        Guna2PictureBox1.Image = CType(resources.GetObject("Guna2PictureBox1.Image"), Image)
-        Guna2PictureBox1.ImageRotate = 0F
-        Guna2PictureBox1.Location = New Point(0, 399)
-        Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Guna2PictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges7
-        Guna2PictureBox1.Size = New Size(698, 402)
-        Guna2PictureBox1.TabIndex = 145
-        Guna2PictureBox1.TabStop = False
-        ' 
-        ' Guna2PictureBox2
-        ' 
-        Guna2PictureBox2.BackColor = Color.Transparent
-        Guna2PictureBox2.CustomizableEdges = CustomizableEdges4
-        Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), Image)
-        Guna2PictureBox2.ImageRotate = 0F
-        Guna2PictureBox2.Location = New Point(573, 382)
-        Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Guna2PictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges5
-        Guna2PictureBox2.Size = New Size(698, 402)
-        Guna2PictureBox2.TabIndex = 146
-        Guna2PictureBox2.TabStop = False
-        Guna2PictureBox2.UseTransparentBackground = True
-        ' 
-        ' Guna2HtmlLabel1
-        ' 
-        Guna2HtmlLabel1.BackColor = Color.Transparent
-        Guna2HtmlLabel1.Font = New Font("Microsoft Sans Serif", 36F, FontStyle.Bold)
-        Guna2HtmlLabel1.ForeColor = Color.White
-        Guna2HtmlLabel1.Location = New Point(332, 293)
-        Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Guna2HtmlLabel1.Size = New Size(572, 71)
-        Guna2HtmlLabel1.TabIndex = 147
-        Guna2HtmlLabel1.Text = "Welcome to Infocare"
-        Guna2HtmlLabel1.UseGdiPlusTextRendering = True
+        guna2Button1.BackColor = Color.Transparent
+        guna2Button1.BorderColor = Color.RosyBrown
+        guna2Button1.BorderRadius = 30
+        guna2Button1.Cursor = Cursors.Hand
+        guna2Button1.CustomizableEdges = CustomizableEdges1
+        guna2Button1.DisabledState.BorderColor = Color.DarkGray
+        guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray
+        guna2Button1.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        guna2Button1.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        guna2Button1.FillColor = Color.FromArgb(CByte(110), CByte(177), CByte(247))
+        guna2Button1.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        guna2Button1.ForeColor = Color.White
+        guna2Button1.Location = New Point(514, 432)
+        guna2Button1.Margin = New Padding(3, 4, 3, 4)
+        guna2Button1.Name = "guna2Button1"
+        guna2Button1.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        guna2Button1.Size = New Size(206, 60)
+        guna2Button1.TabIndex = 150
+        guna2Button1.Text = "Enter"
+        guna2Button1.UseTransparentBackground = True
         ' 
         ' label1
         ' 
@@ -155,28 +121,62 @@ Partial Class LandingPage
         Label2.TabIndex = 149
         Label2.Text = "________________________________________________________________"
         ' 
-        ' guna2Button1
+        ' Guna2HtmlLabel1
         ' 
-        guna2Button1.BackColor = Color.Transparent
-        guna2Button1.BorderColor = Color.RosyBrown
-        guna2Button1.BorderRadius = 30
-        guna2Button1.Cursor = Cursors.Hand
-        guna2Button1.CustomizableEdges = CustomizableEdges1
-        guna2Button1.DisabledState.BorderColor = Color.DarkGray
-        guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray
-        guna2Button1.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        guna2Button1.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        guna2Button1.FillColor = Color.FromArgb(CByte(110), CByte(177), CByte(247))
-        guna2Button1.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        guna2Button1.ForeColor = Color.White
-        guna2Button1.Location = New Point(514, 432)
-        guna2Button1.Margin = New Padding(3, 4, 3, 4)
-        guna2Button1.Name = "guna2Button1"
-        guna2Button1.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        guna2Button1.Size = New Size(206, 60)
-        guna2Button1.TabIndex = 150
-        guna2Button1.Text = "Enter"
-        guna2Button1.UseTransparentBackground = True
+        Guna2HtmlLabel1.BackColor = Color.Transparent
+        Guna2HtmlLabel1.Font = New Font("Microsoft Sans Serif", 36F, FontStyle.Bold)
+        Guna2HtmlLabel1.ForeColor = Color.White
+        Guna2HtmlLabel1.Location = New Point(332, 293)
+        Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
+        Guna2HtmlLabel1.Size = New Size(569, 71)
+        Guna2HtmlLabel1.TabIndex = 147
+        Guna2HtmlLabel1.Text = "Welcome to Infocare"
+        Guna2HtmlLabel1.UseGdiPlusTextRendering = True
+        ' 
+        ' guna2CirclePictureBox1
+        ' 
+        guna2CirclePictureBox1.BackColor = Color.Transparent
+        guna2CirclePictureBox1.FillColor = Color.Transparent
+        guna2CirclePictureBox1.Image = CType(resources.GetObject("guna2CirclePictureBox1.Image"), Image)
+        guna2CirclePictureBox1.ImageRotate = 0F
+        guna2CirclePictureBox1.InitialImage = CType(resources.GetObject("guna2CirclePictureBox1.InitialImage"), Image)
+        guna2CirclePictureBox1.Location = New Point(438, 4)
+        guna2CirclePictureBox1.Margin = New Padding(3, 4, 3, 4)
+        guna2CirclePictureBox1.Name = "guna2CirclePictureBox1"
+        guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges3
+        guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        guna2CirclePictureBox1.Size = New Size(358, 341)
+        guna2CirclePictureBox1.SizeMode = PictureBoxSizeMode.Zoom
+        guna2CirclePictureBox1.TabIndex = 144
+        guna2CirclePictureBox1.TabStop = False
+        guna2CirclePictureBox1.UseTransparentBackground = True
+        ' 
+        ' Guna2PictureBox2
+        ' 
+        Guna2PictureBox2.BackColor = Color.Transparent
+        Guna2PictureBox2.CustomizableEdges = CustomizableEdges4
+        Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), Image)
+        Guna2PictureBox2.ImageRotate = 0F
+        Guna2PictureBox2.Location = New Point(573, 382)
+        Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Guna2PictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges5
+        Guna2PictureBox2.Size = New Size(698, 402)
+        Guna2PictureBox2.TabIndex = 146
+        Guna2PictureBox2.TabStop = False
+        Guna2PictureBox2.UseTransparentBackground = True
+        ' 
+        ' Guna2PictureBox1
+        ' 
+        Guna2PictureBox1.BackColor = Color.Transparent
+        Guna2PictureBox1.CustomizableEdges = CustomizableEdges6
+        Guna2PictureBox1.Image = CType(resources.GetObject("Guna2PictureBox1.Image"), Image)
+        Guna2PictureBox1.ImageRotate = 0F
+        Guna2PictureBox1.Location = New Point(0, 399)
+        Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Guna2PictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges7
+        Guna2PictureBox1.Size = New Size(698, 402)
+        Guna2PictureBox1.TabIndex = 145
+        Guna2PictureBox1.TabStop = False
         ' 
         ' LandingPage
         ' 
@@ -191,8 +191,8 @@ Partial Class LandingPage
         Guna2CustomGradientPanel1.ResumeLayout(False)
         Guna2CustomGradientPanel1.PerformLayout()
         CType(guna2CirclePictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        CType(Guna2PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         CType(Guna2PictureBox2, ComponentModel.ISupportInitialize).EndInit()
+        CType(Guna2PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 

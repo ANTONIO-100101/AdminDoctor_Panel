@@ -25,6 +25,8 @@ Partial Class DoctorMedicalRecord
         components = New ComponentModel.Container()
         Dim CustomizableEdges31 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges32 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DoctorMedicalRecord))
@@ -50,15 +52,13 @@ Partial Class DoctorMedicalRecord
         Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges25 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges29 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges30 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
+        ContinueButton = New Guna.UI2.WinForms.Guna2Button()
         DoctorFullNameLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(components)
         BirthdayTextBox = New Guna.UI2.WinForms.Guna2TextBox()
         BackButton = New Guna.UI2.WinForms.Guna2ImageButton()
         guna2HtmlLabel12 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -82,12 +82,12 @@ Partial Class DoctorMedicalRecord
         guna2HtmlLabel11 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         HeightTextBox = New Guna.UI2.WinForms.Guna2TextBox()
         guna2HtmlLabel21 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        ContinueButton = New Guna.UI2.WinForms.Guna2Button()
         guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         LastNameTextBox = New Guna.UI2.WinForms.Guna2TextBox()
         FNLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
         FirstNameTextBox = New Guna.UI2.WinForms.Guna2TextBox()
+        guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(components)
         Guna2CustomGradientPanel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -126,12 +126,32 @@ Partial Class DoctorMedicalRecord
         Guna2CustomGradientPanel1.CustomizableEdges = CustomizableEdges31
         Guna2CustomGradientPanel1.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel1.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        Guna2CustomGradientPanel1.FillColor4 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        Guna2CustomGradientPanel1.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        Guna2CustomGradientPanel1.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         Guna2CustomGradientPanel1.Location = New Point(-1, -1)
         Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
         Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges32
         Guna2CustomGradientPanel1.Size = New Size(969, 635)
         Guna2CustomGradientPanel1.TabIndex = 1
+        ' 
+        ' ContinueButton
+        ' 
+        ContinueButton.BackColor = Color.Transparent
+        ContinueButton.BorderRadius = 15
+        ContinueButton.CustomizableEdges = CustomizableEdges1
+        ContinueButton.DisabledState.BorderColor = Color.DarkGray
+        ContinueButton.DisabledState.CustomBorderColor = Color.DarkGray
+        ContinueButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        ContinueButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        ContinueButton.FillColor = Color.Teal
+        ContinueButton.Font = New Font("Microsoft Sans Serif", 11.999999F)
+        ContinueButton.ForeColor = Color.White
+        ContinueButton.Location = New Point(418, 539)
+        ContinueButton.Name = "ContinueButton"
+        ContinueButton.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        ContinueButton.Size = New Size(150, 56)
+        ContinueButton.TabIndex = 3
+        ContinueButton.Text = "Continue"
         ' 
         ' DoctorFullNameLabel
         ' 
@@ -143,14 +163,6 @@ Partial Class DoctorMedicalRecord
         DoctorFullNameLabel.Size = New Size(119, 25)
         DoctorFullNameLabel.TabIndex = 242
         DoctorFullNameLabel.Text = "Doctor's name"
-        ' 
-        ' guna2BorderlessForm1
-        ' 
-        guna2BorderlessForm1.BorderRadius = 15
-        guna2BorderlessForm1.ContainerControl = Me
-        guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6R
-        guna2BorderlessForm1.DragStartTransparencyValue = 1R
-        guna2BorderlessForm1.TransparentWhileDrag = True
         ' 
         ' BirthdayTextBox
         ' 
@@ -576,25 +588,6 @@ Partial Class DoctorMedicalRecord
         guna2HtmlLabel21.TabIndex = 218
         guna2HtmlLabel21.Text = "Patient Medical Record"
         ' 
-        ' ContinueButton
-        ' 
-        ContinueButton.BackColor = Color.Transparent
-        ContinueButton.BorderRadius = 15
-        ContinueButton.CustomizableEdges = CustomizableEdges1
-        ContinueButton.DisabledState.BorderColor = Color.DarkGray
-        ContinueButton.DisabledState.CustomBorderColor = Color.DarkGray
-        ContinueButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        ContinueButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        ContinueButton.FillColor = Color.Teal
-        ContinueButton.Font = New Font("Microsoft Sans Serif", 11.999999F)
-        ContinueButton.ForeColor = Color.White
-        ContinueButton.Location = New Point(418, 539)
-        ContinueButton.Name = "ContinueButton"
-        ContinueButton.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        ContinueButton.Size = New Size(150, 56)
-        ContinueButton.TabIndex = 3
-        ContinueButton.Text = "Continue"
-        ' 
         ' guna2HtmlLabel3
         ' 
         guna2HtmlLabel3.BackColor = Color.Transparent
@@ -679,6 +672,14 @@ Partial Class DoctorMedicalRecord
         FirstNameTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges30
         FirstNameTextBox.Size = New Size(222, 48)
         FirstNameTextBox.TabIndex = 213
+        ' 
+        ' guna2BorderlessForm1
+        ' 
+        guna2BorderlessForm1.BorderRadius = 15
+        guna2BorderlessForm1.ContainerControl = Me
+        guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6R
+        guna2BorderlessForm1.DragStartTransparencyValue = 1R
+        guna2BorderlessForm1.TransparentWhileDrag = True
         ' 
         ' DoctorMedicalRecord
         ' 

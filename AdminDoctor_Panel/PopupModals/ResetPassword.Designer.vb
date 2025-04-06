@@ -182,6 +182,7 @@ Partial Class ResetPassword
         Controls.Add(guna2HtmlLabel1)
         FormBorderStyle = FormBorderStyle.None
         Name = "ResetPassword"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "ResetPassword"
         ResumeLayout(False)
         PerformLayout()

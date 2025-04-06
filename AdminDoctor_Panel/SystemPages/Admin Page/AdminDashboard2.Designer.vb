@@ -180,10 +180,11 @@ Partial Class AdminDashboard2
         guna2CustomGradientPanel1.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel1.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel1.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
-        guna2CustomGradientPanel1.Location = New Point(-2, -2)
+        guna2CustomGradientPanel1.Location = New Point(-2, -3)
+        guna2CustomGradientPanel1.Margin = New Padding(3, 4, 3, 4)
         guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1"
         guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        guna2CustomGradientPanel1.Size = New Size(226, 604)
+        guna2CustomGradientPanel1.Size = New Size(258, 805)
         guna2CustomGradientPanel1.TabIndex = 237
         ' 
         ' ad_patientBtn
@@ -201,11 +202,10 @@ Partial Class AdminDashboard2
         ad_patientBtn.ForeColor = Color.Black
         ad_patientBtn.ImageAlign = HorizontalAlignment.Left
         ad_patientBtn.ImageSize = New Size(40, 40)
-        ad_patientBtn.Location = New Point(28, 248)
-        ad_patientBtn.Margin = New Padding(3, 2, 3, 2)
+        ad_patientBtn.Location = New Point(32, 331)
         ad_patientBtn.Name = "ad_patientBtn"
         ad_patientBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        ad_patientBtn.Size = New Size(160, 53)
+        ad_patientBtn.Size = New Size(183, 71)
         ad_patientBtn.TabIndex = 252
         ad_patientBtn.Text = "PATIENTS"
         ad_patientBtn.TextFormatNoPrefix = True
@@ -226,11 +226,10 @@ Partial Class AdminDashboard2
         ad_appointment.ImageAlign = HorizontalAlignment.Left
         ad_appointment.ImageOffset = New Point(2, 0)
         ad_appointment.ImageSize = New Size(40, 40)
-        ad_appointment.Location = New Point(29, 393)
-        ad_appointment.Margin = New Padding(3, 2, 3, 2)
+        ad_appointment.Location = New Point(33, 524)
         ad_appointment.Name = "ad_appointment"
         ad_appointment.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        ad_appointment.Size = New Size(160, 53)
+        ad_appointment.Size = New Size(183, 71)
         ad_appointment.TabIndex = 250
         ad_appointment.Text = "APPOINTMENTS"
         ad_appointment.TextFormatNoPrefix = True
@@ -240,9 +239,10 @@ Partial Class AdminDashboard2
         guna2HtmlLabel9.BackColor = Color.White
         guna2HtmlLabel9.Font = New Font("Microsoft Sans Serif", 8.749999F, FontStyle.Bold)
         guna2HtmlLabel9.ForeColor = Color.Black
-        guna2HtmlLabel9.Location = New Point(50, 557)
+        guna2HtmlLabel9.Location = New Point(57, 743)
+        guna2HtmlLabel9.Margin = New Padding(3, 4, 3, 4)
         guna2HtmlLabel9.Name = "guna2HtmlLabel9"
-        guna2HtmlLabel9.Size = New Size(53, 17)
+        guna2HtmlLabel9.Size = New Size(63, 20)
         guna2HtmlLabel9.TabIndex = 146
         guna2HtmlLabel9.Text = "Log Out"
         ' 
@@ -262,11 +262,10 @@ Partial Class AdminDashboard2
         ad_doctor.ImageAlign = HorizontalAlignment.Left
         ad_doctor.ImageOffset = New Point(2, 0)
         ad_doctor.ImageSize = New Size(40, 40)
-        ad_doctor.Location = New Point(29, 321)
-        ad_doctor.Margin = New Padding(3, 2, 3, 2)
+        ad_doctor.Location = New Point(33, 428)
         ad_doctor.Name = "ad_doctor"
         ad_doctor.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        ad_doctor.Size = New Size(160, 53)
+        ad_doctor.Size = New Size(183, 71)
         ad_doctor.TabIndex = 251
         ad_doctor.Text = "DOCTORS"
         ad_doctor.TextFormatNoPrefix = True
@@ -276,10 +275,9 @@ Partial Class AdminDashboard2
         ad_NameLabel.BackColor = Color.Transparent
         ad_NameLabel.Font = New Font("Tahoma", 17.25F, FontStyle.Bold)
         ad_NameLabel.ForeColor = SystemColors.Control
-        ad_NameLabel.Location = New Point(16, 170)
-        ad_NameLabel.Margin = New Padding(3, 2, 3, 2)
+        ad_NameLabel.Location = New Point(18, 227)
         ad_NameLabel.Name = "ad_NameLabel"
-        ad_NameLabel.Size = New Size(79, 30)
+        ad_NameLabel.Size = New Size(97, 37)
         ad_NameLabel.TabIndex = 140
         ad_NameLabel.Text = "Name!"
         ' 
@@ -288,10 +286,9 @@ Partial Class AdminDashboard2
         guna2HtmlLabel2.BackColor = Color.Transparent
         guna2HtmlLabel2.Font = New Font("Tahoma", 14.25F)
         guna2HtmlLabel2.ForeColor = SystemColors.Control
-        guna2HtmlLabel2.Location = New Point(16, 143)
-        guna2HtmlLabel2.Margin = New Padding(3, 2, 3, 2)
+        guna2HtmlLabel2.Location = New Point(18, 191)
         guna2HtmlLabel2.Name = "guna2HtmlLabel2"
-        guna2HtmlLabel2.Size = New Size(50, 25)
+        guna2HtmlLabel2.Size = New Size(62, 31)
         guna2HtmlLabel2.TabIndex = 139
         guna2HtmlLabel2.Text = "Hello,"
         ' 
@@ -307,11 +304,12 @@ Partial Class AdminDashboard2
         pd_HomeButton.Font = New Font("Segoe UI", 9F)
         pd_HomeButton.ForeColor = Color.White
         pd_HomeButton.Image = CType(resources.GetObject("pd_HomeButton.Image"), Image)
-        pd_HomeButton.Location = New Point(0, 543)
+        pd_HomeButton.Location = New Point(0, 724)
+        pd_HomeButton.Margin = New Padding(3, 4, 3, 4)
         pd_HomeButton.Name = "pd_HomeButton"
         pd_HomeButton.ShadowDecoration.CustomizableEdges = CustomizableEdges7
         pd_HomeButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        pd_HomeButton.Size = New Size(54, 44)
+        pd_HomeButton.Size = New Size(62, 59)
         pd_HomeButton.TabIndex = 107
         ' 
         ' guna2CirclePictureBox1
@@ -321,11 +319,12 @@ Partial Class AdminDashboard2
         guna2CirclePictureBox1.Image = CType(resources.GetObject("guna2CirclePictureBox1.Image"), Image)
         guna2CirclePictureBox1.ImageRotate = 0F
         guna2CirclePictureBox1.InitialImage = CType(resources.GetObject("guna2CirclePictureBox1.InitialImage"), Image)
-        guna2CirclePictureBox1.Location = New Point(28, -3)
+        guna2CirclePictureBox1.Location = New Point(32, -4)
+        guna2CirclePictureBox1.Margin = New Padding(3, 4, 3, 4)
         guna2CirclePictureBox1.Name = "guna2CirclePictureBox1"
         guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        guna2CirclePictureBox1.Size = New Size(182, 152)
+        guna2CirclePictureBox1.Size = New Size(208, 203)
         guna2CirclePictureBox1.SizeMode = PictureBoxSizeMode.Zoom
         guna2CirclePictureBox1.TabIndex = 141
         guna2CirclePictureBox1.TabStop = False
@@ -343,13 +342,14 @@ Partial Class AdminDashboard2
         Guna2TextBox2.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         Guna2TextBox2.Font = New Font("Segoe UI", 9F)
         Guna2TextBox2.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox2.Location = New Point(-130, 543)
+        Guna2TextBox2.Location = New Point(-149, 724)
+        Guna2TextBox2.Margin = New Padding(3, 5, 3, 5)
         Guna2TextBox2.Name = "Guna2TextBox2"
         Guna2TextBox2.PlaceholderText = ""
         Guna2TextBox2.ReadOnly = True
         Guna2TextBox2.SelectedText = ""
         Guna2TextBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        Guna2TextBox2.Size = New Size(250, 58)
+        Guna2TextBox2.Size = New Size(286, 77)
         Guna2TextBox2.TabIndex = 149
         ' 
         ' Guna2CustomGradientPanel2
@@ -362,11 +362,10 @@ Partial Class AdminDashboard2
         Guna2CustomGradientPanel2.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel2.FillColor3 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         Guna2CustomGradientPanel2.FillColor4 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        Guna2CustomGradientPanel2.Location = New Point(224, 98)
-        Guna2CustomGradientPanel2.Margin = New Padding(3, 2, 3, 2)
+        Guna2CustomGradientPanel2.Location = New Point(256, 131)
         Guna2CustomGradientPanel2.Name = "Guna2CustomGradientPanel2"
         Guna2CustomGradientPanel2.ShadowDecoration.CustomizableEdges = CustomizableEdges19
-        Guna2CustomGradientPanel2.Size = New Size(840, 489)
+        Guna2CustomGradientPanel2.Size = New Size(960, 652)
         Guna2CustomGradientPanel2.TabIndex = 250
         ' 
         ' Guna2CirclePictureBox2
@@ -376,11 +375,12 @@ Partial Class AdminDashboard2
         Guna2CirclePictureBox2.Image = CType(resources.GetObject("Guna2CirclePictureBox2.Image"), Image)
         Guna2CirclePictureBox2.ImageRotate = 0F
         Guna2CirclePictureBox2.InitialImage = CType(resources.GetObject("Guna2CirclePictureBox2.InitialImage"), Image)
-        Guna2CirclePictureBox2.Location = New Point(273, 86)
+        Guna2CirclePictureBox2.Location = New Point(312, 115)
+        Guna2CirclePictureBox2.Margin = New Padding(3, 4, 3, 4)
         Guna2CirclePictureBox2.Name = "Guna2CirclePictureBox2"
         Guna2CirclePictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges13
         Guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Guna2CirclePictureBox2.Size = New Size(357, 286)
+        Guna2CirclePictureBox2.Size = New Size(408, 381)
         Guna2CirclePictureBox2.SizeMode = PictureBoxSizeMode.Zoom
         Guna2CirclePictureBox2.TabIndex = 144
         Guna2CirclePictureBox2.TabStop = False
@@ -392,11 +392,10 @@ Partial Class AdminDashboard2
         Guna2PictureBox2.CustomizableEdges = CustomizableEdges14
         Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), Image)
         Guna2PictureBox2.ImageRotate = 0F
-        Guna2PictureBox2.Location = New Point(492, 194)
-        Guna2PictureBox2.Margin = New Padding(3, 2, 3, 2)
+        Guna2PictureBox2.Location = New Point(562, 259)
         Guna2PictureBox2.Name = "Guna2PictureBox2"
         Guna2PictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges15
-        Guna2PictureBox2.Size = New Size(611, 302)
+        Guna2PictureBox2.Size = New Size(698, 403)
         Guna2PictureBox2.TabIndex = 146
         Guna2PictureBox2.TabStop = False
         Guna2PictureBox2.UseTransparentBackground = True
@@ -407,11 +406,10 @@ Partial Class AdminDashboard2
         Guna2PictureBox1.CustomizableEdges = CustomizableEdges16
         Guna2PictureBox1.Image = CType(resources.GetObject("Guna2PictureBox1.Image"), Image)
         Guna2PictureBox1.ImageRotate = 0F
-        Guna2PictureBox1.Location = New Point(-2, 208)
-        Guna2PictureBox1.Margin = New Padding(3, 2, 3, 2)
+        Guna2PictureBox1.Location = New Point(-2, 277)
         Guna2PictureBox1.Name = "Guna2PictureBox1"
         Guna2PictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges17
-        Guna2PictureBox1.Size = New Size(611, 302)
+        Guna2PictureBox1.Size = New Size(698, 403)
         Guna2PictureBox1.TabIndex = 145
         Guna2PictureBox1.TabStop = False
         ' 
@@ -425,12 +423,11 @@ Partial Class AdminDashboard2
         MinimizeButton.ImageOffset = New Point(0, 0)
         MinimizeButton.ImageRotate = 0F
         MinimizeButton.ImageSize = New Size(20, 30)
-        MinimizeButton.Location = New Point(948, 2)
-        MinimizeButton.Margin = New Padding(3, 2, 3, 2)
+        MinimizeButton.Location = New Point(1083, 3)
         MinimizeButton.Name = "MinimizeButton"
         MinimizeButton.PressedState.ImageSize = New Size(20, 30)
         MinimizeButton.ShadowDecoration.CustomizableEdges = CustomizableEdges36
-        MinimizeButton.Size = New Size(43, 26)
+        MinimizeButton.Size = New Size(49, 35)
         MinimizeButton.TabIndex = 242
         ' 
         ' ExitButton
@@ -445,11 +442,10 @@ Partial Class AdminDashboard2
         ExitButton.FillColor = Color.Transparent
         ExitButton.Font = New Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold)
         ExitButton.ForeColor = Color.White
-        ExitButton.Location = New Point(991, 2)
-        ExitButton.Margin = New Padding(3, 2, 3, 2)
+        ExitButton.Location = New Point(1133, 3)
         ExitButton.Name = "ExitButton"
         ExitButton.ShadowDecoration.CustomizableEdges = CustomizableEdges38
-        ExitButton.Size = New Size(43, 26)
+        ExitButton.Size = New Size(49, 35)
         ExitButton.TabIndex = 241
         ExitButton.Text = "X"
         ' 
@@ -471,11 +467,10 @@ Partial Class AdminDashboard2
         ResetTransactionFilterButton.ImageAlign = HorizontalAlignment.Left
         ResetTransactionFilterButton.ImageOffset = New Point(2, 0)
         ResetTransactionFilterButton.ImageSize = New Size(40, 40)
-        ResetTransactionFilterButton.Location = New Point(357, 5)
-        ResetTransactionFilterButton.Margin = New Padding(3, 2, 3, 2)
+        ResetTransactionFilterButton.Location = New Point(408, 7)
         ResetTransactionFilterButton.Name = "ResetTransactionFilterButton"
         ResetTransactionFilterButton.ShadowDecoration.CustomizableEdges = CustomizableEdges42
-        ResetTransactionFilterButton.Size = New Size(74, 33)
+        ResetTransactionFilterButton.Size = New Size(85, 44)
         ResetTransactionFilterButton.TabIndex = 219
         ResetTransactionFilterButton.Text = "Reset"
         ResetTransactionFilterButton.TextFormatNoPrefix = True
@@ -498,11 +493,10 @@ Partial Class AdminDashboard2
         SearchTransactionButton.ImageAlign = HorizontalAlignment.Left
         SearchTransactionButton.ImageOffset = New Point(2, 0)
         SearchTransactionButton.ImageSize = New Size(40, 40)
-        SearchTransactionButton.Location = New Point(277, 5)
-        SearchTransactionButton.Margin = New Padding(3, 2, 3, 2)
+        SearchTransactionButton.Location = New Point(317, 7)
         SearchTransactionButton.Name = "SearchTransactionButton"
         SearchTransactionButton.ShadowDecoration.CustomizableEdges = CustomizableEdges46
-        SearchTransactionButton.Size = New Size(74, 33)
+        SearchTransactionButton.Size = New Size(85, 44)
         SearchTransactionButton.TabIndex = 218
         SearchTransactionButton.Text = "Search"
         SearchTransactionButton.TextFormatNoPrefix = True
@@ -524,14 +518,14 @@ Partial Class AdminDashboard2
         TransactionIdTextBox.Font = New Font("Segoe UI", 9F)
         TransactionIdTextBox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         TransactionIdTextBox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        TransactionIdTextBox.Location = New Point(220, 5)
-        TransactionIdTextBox.Margin = New Padding(3, 4, 3, 4)
+        TransactionIdTextBox.Location = New Point(251, 7)
+        TransactionIdTextBox.Margin = New Padding(3, 5, 3, 5)
         TransactionIdTextBox.Name = "TransactionIdTextBox"
         TransactionIdTextBox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         TransactionIdTextBox.PlaceholderText = "ID"
         TransactionIdTextBox.SelectedText = ""
         TransactionIdTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges48
-        TransactionIdTextBox.Size = New Size(51, 33)
+        TransactionIdTextBox.Size = New Size(58, 44)
         TransactionIdTextBox.TabIndex = 213
         ' 
         ' NameTextBox
@@ -552,14 +546,14 @@ Partial Class AdminDashboard2
         NameTextBox.Font = New Font("Segoe UI", 9F)
         NameTextBox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         NameTextBox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        NameTextBox.Location = New Point(10, 5)
-        NameTextBox.Margin = New Padding(3, 4, 3, 4)
+        NameTextBox.Location = New Point(11, 7)
+        NameTextBox.Margin = New Padding(3, 5, 3, 5)
         NameTextBox.Name = "NameTextBox"
         NameTextBox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         NameTextBox.PlaceholderText = "Name"
         NameTextBox.SelectedText = ""
         NameTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges44
-        NameTextBox.Size = New Size(170, 33)
+        NameTextBox.Size = New Size(194, 44)
         NameTextBox.TabIndex = 218
         ' 
         ' Guna2HtmlLabel3
@@ -567,10 +561,9 @@ Partial Class AdminDashboard2
         Guna2HtmlLabel3.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2HtmlLabel3.Font = New Font("Tahoma", 20.25F, FontStyle.Bold)
         Guna2HtmlLabel3.ForeColor = Color.Gainsboro
-        Guna2HtmlLabel3.Location = New Point(244, 50)
-        Guna2HtmlLabel3.Margin = New Padding(3, 2, 3, 2)
+        Guna2HtmlLabel3.Location = New Point(279, 67)
         Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
-        Guna2HtmlLabel3.Size = New Size(177, 35)
+        Guna2HtmlLabel3.Size = New Size(223, 43)
         Guna2HtmlLabel3.TabIndex = 246
         Guna2HtmlLabel3.Text = "DASHBOARD"
         ' 
@@ -579,10 +572,9 @@ Partial Class AdminDashboard2
         Guna2HtmlLabel1.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2HtmlLabel1.Font = New Font("Tahoma", 15.25F, FontStyle.Bold)
         Guna2HtmlLabel1.ForeColor = Color.Gainsboro
-        Guna2HtmlLabel1.Location = New Point(244, 21)
-        Guna2HtmlLabel1.Margin = New Padding(3, 2, 3, 2)
+        Guna2HtmlLabel1.Location = New Point(279, 28)
         Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Guna2HtmlLabel1.Size = New Size(94, 26)
+        Guna2HtmlLabel1.Size = New Size(115, 32)
         Guna2HtmlLabel1.TabIndex = 245
         Guna2HtmlLabel1.Text = "ADMIN'S"
         ' 
@@ -599,13 +591,14 @@ Partial Class AdminDashboard2
         Guna2TextBox3.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         Guna2TextBox3.Font = New Font("Segoe UI", 9F)
         Guna2TextBox3.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox3.Location = New Point(1, -2)
+        Guna2TextBox3.Location = New Point(1, -3)
+        Guna2TextBox3.Margin = New Padding(3, 5, 3, 5)
         Guna2TextBox3.Name = "Guna2TextBox3"
         Guna2TextBox3.PlaceholderText = ""
         Guna2TextBox3.ReadOnly = True
         Guna2TextBox3.SelectedText = ""
         Guna2TextBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges40
-        Guna2TextBox3.Size = New Size(504, 102)
+        Guna2TextBox3.Size = New Size(576, 136)
         Guna2TextBox3.TabIndex = 236
         ' 
         ' guna2HtmlLabel8
@@ -613,10 +606,9 @@ Partial Class AdminDashboard2
         guna2HtmlLabel8.BackColor = Color.Transparent
         guna2HtmlLabel8.Font = New Font("Tahoma", 9.75F)
         guna2HtmlLabel8.ForeColor = SystemColors.Control
-        guna2HtmlLabel8.Location = New Point(189, 12)
-        guna2HtmlLabel8.Margin = New Padding(3, 2, 3, 2)
+        guna2HtmlLabel8.Location = New Point(216, 16)
         guna2HtmlLabel8.Name = "guna2HtmlLabel8"
-        guna2HtmlLabel8.Size = New Size(20, 18)
+        guna2HtmlLabel8.Size = New Size(25, 21)
         guna2HtmlLabel8.TabIndex = 220
         guna2HtmlLabel8.Text = "OR"
         ' 
@@ -634,10 +626,11 @@ Partial Class AdminDashboard2
         SearchPanel4.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         SearchPanel4.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         SearchPanel4.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
-        SearchPanel4.Location = New Point(559, 34)
+        SearchPanel4.Location = New Point(639, 45)
+        SearchPanel4.Margin = New Padding(3, 4, 3, 4)
         SearchPanel4.Name = "SearchPanel4"
         SearchPanel4.ShadowDecoration.CustomizableEdges = CustomizableEdges50
-        SearchPanel4.Size = New Size(441, 44)
+        SearchPanel4.Size = New Size(504, 59)
         SearchPanel4.TabIndex = 244
         SearchPanel4.Visible = False
         ' 
@@ -653,9 +646,10 @@ Partial Class AdminDashboard2
         ad_patientpanel.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_patientpanel.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         ad_patientpanel.Location = New Point(0, 0)
+        ad_patientpanel.Margin = New Padding(3, 4, 3, 4)
         ad_patientpanel.Name = "ad_patientpanel"
         ad_patientpanel.ShadowDecoration.CustomizableEdges = CustomizableEdges27
-        ad_patientpanel.Size = New Size(662, 448)
+        ad_patientpanel.Size = New Size(757, 597)
         ad_patientpanel.TabIndex = 249
         ' 
         ' guna2HtmlLabel6
@@ -663,10 +657,9 @@ Partial Class AdminDashboard2
         guna2HtmlLabel6.BackColor = Color.Transparent
         guna2HtmlLabel6.Font = New Font("Tahoma", 15.25F, FontStyle.Bold)
         guna2HtmlLabel6.ForeColor = SystemColors.Control
-        guna2HtmlLabel6.Location = New Point(10, 15)
-        guna2HtmlLabel6.Margin = New Padding(3, 2, 3, 2)
+        guna2HtmlLabel6.Location = New Point(11, 20)
         guna2HtmlLabel6.Name = "guna2HtmlLabel6"
-        guna2HtmlLabel6.Size = New Size(116, 26)
+        guna2HtmlLabel6.Size = New Size(145, 32)
         guna2HtmlLabel6.TabIndex = 142
         guna2HtmlLabel6.Text = "Patient List"
         ' 
@@ -679,10 +672,11 @@ Partial Class AdminDashboard2
         guna2CustomGradientPanel3.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel3.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel3.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
-        guna2CustomGradientPanel3.Location = New Point(3, 42)
+        guna2CustomGradientPanel3.Location = New Point(3, 56)
+        guna2CustomGradientPanel3.Margin = New Padding(3, 4, 3, 4)
         guna2CustomGradientPanel3.Name = "guna2CustomGradientPanel3"
         guna2CustomGradientPanel3.ShadowDecoration.CustomizableEdges = CustomizableEdges21
-        guna2CustomGradientPanel3.Size = New Size(662, 448)
+        guna2CustomGradientPanel3.Size = New Size(757, 597)
         guna2CustomGradientPanel3.TabIndex = 142
         ' 
         ' PatientDataGridViewList2
@@ -716,7 +710,8 @@ Partial Class AdminDashboard2
         DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
         PatientDataGridViewList2.DefaultCellStyle = DataGridViewCellStyle3
         PatientDataGridViewList2.GridColor = Color.FromArgb(CByte(179), CByte(230), CByte(251))
-        PatientDataGridViewList2.Location = New Point(5, 3)
+        PatientDataGridViewList2.Location = New Point(6, 4)
+        PatientDataGridViewList2.Margin = New Padding(3, 4, 3, 4)
         PatientDataGridViewList2.Name = "PatientDataGridViewList2"
         PatientDataGridViewList2.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft
@@ -730,7 +725,7 @@ Partial Class AdminDashboard2
         PatientDataGridViewList2.RowHeadersVisible = False
         PatientDataGridViewList2.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
         PatientDataGridViewList2.RowTemplate.Height = 35
-        PatientDataGridViewList2.Size = New Size(645, 391)
+        PatientDataGridViewList2.Size = New Size(737, 521)
         PatientDataGridViewList2.TabIndex = 176
         PatientDataGridViewList2.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.LightBlue
         PatientDataGridViewList2.ThemeStyle.AlternatingRowsStyle.BackColor = Color.FromArgb(CByte(160), CByte(160), CByte(160))
@@ -766,10 +761,11 @@ Partial Class AdminDashboard2
         ad_AppointmentPanel.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_AppointmentPanel.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_AppointmentPanel.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
-        ad_AppointmentPanel.Location = New Point(20, 3)
+        ad_AppointmentPanel.Location = New Point(23, 4)
+        ad_AppointmentPanel.Margin = New Padding(3, 4, 3, 4)
         ad_AppointmentPanel.Name = "ad_AppointmentPanel"
         ad_AppointmentPanel.ShadowDecoration.CustomizableEdges = CustomizableEdges25
-        ad_AppointmentPanel.Size = New Size(662, 448)
+        ad_AppointmentPanel.Size = New Size(757, 597)
         ad_AppointmentPanel.TabIndex = 179
         ' 
         ' guna2HtmlLabel5
@@ -777,10 +773,9 @@ Partial Class AdminDashboard2
         guna2HtmlLabel5.BackColor = Color.Transparent
         guna2HtmlLabel5.Font = New Font("Tahoma", 15.25F, FontStyle.Bold)
         guna2HtmlLabel5.ForeColor = SystemColors.Control
-        guna2HtmlLabel5.Location = New Point(13, 12)
-        guna2HtmlLabel5.Margin = New Padding(3, 2, 3, 2)
+        guna2HtmlLabel5.Location = New Point(15, 16)
         guna2HtmlLabel5.Name = "guna2HtmlLabel5"
-        guna2HtmlLabel5.Size = New Size(175, 26)
+        guna2HtmlLabel5.Size = New Size(218, 32)
         guna2HtmlLabel5.TabIndex = 142
         guna2HtmlLabel5.Text = "Appointment List"
         ' 
@@ -793,10 +788,11 @@ Partial Class AdminDashboard2
         guna2CustomGradientPanel5.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel5.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel5.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
-        guna2CustomGradientPanel5.Location = New Point(3, 42)
+        guna2CustomGradientPanel5.Location = New Point(3, 56)
+        guna2CustomGradientPanel5.Margin = New Padding(3, 4, 3, 4)
         guna2CustomGradientPanel5.Name = "guna2CustomGradientPanel5"
         guna2CustomGradientPanel5.ShadowDecoration.CustomizableEdges = CustomizableEdges23
-        guna2CustomGradientPanel5.Size = New Size(662, 448)
+        guna2CustomGradientPanel5.Size = New Size(757, 597)
         guna2CustomGradientPanel5.TabIndex = 142
         ' 
         ' AppointmentDataGridViewList2
@@ -830,7 +826,8 @@ Partial Class AdminDashboard2
         DataGridViewCellStyle7.WrapMode = DataGridViewTriState.False
         AppointmentDataGridViewList2.DefaultCellStyle = DataGridViewCellStyle7
         AppointmentDataGridViewList2.GridColor = Color.FromArgb(CByte(179), CByte(230), CByte(251))
-        AppointmentDataGridViewList2.Location = New Point(8, 6)
+        AppointmentDataGridViewList2.Location = New Point(9, 8)
+        AppointmentDataGridViewList2.Margin = New Padding(3, 4, 3, 4)
         AppointmentDataGridViewList2.Name = "AppointmentDataGridViewList2"
         AppointmentDataGridViewList2.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft
@@ -844,7 +841,7 @@ Partial Class AdminDashboard2
         AppointmentDataGridViewList2.RowHeadersVisible = False
         AppointmentDataGridViewList2.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
         AppointmentDataGridViewList2.RowTemplate.Height = 35
-        AppointmentDataGridViewList2.Size = New Size(645, 396)
+        AppointmentDataGridViewList2.Size = New Size(737, 528)
         AppointmentDataGridViewList2.TabIndex = 176
         AppointmentDataGridViewList2.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.LightBlue
         AppointmentDataGridViewList2.ThemeStyle.AlternatingRowsStyle.BackColor = Color.FromArgb(CByte(160), CByte(160), CByte(160))
@@ -883,10 +880,11 @@ Partial Class AdminDashboard2
         ad_docpanel.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_docpanel.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_docpanel.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
-        ad_docpanel.Location = New Point(291, 116)
+        ad_docpanel.Location = New Point(333, 155)
+        ad_docpanel.Margin = New Padding(3, 4, 3, 4)
         ad_docpanel.Name = "ad_docpanel"
         ad_docpanel.ShadowDecoration.CustomizableEdges = CustomizableEdges32
-        ad_docpanel.Size = New Size(662, 448)
+        ad_docpanel.Size = New Size(757, 597)
         ad_docpanel.TabIndex = 248
         ' 
         ' guna2HtmlLabel4
@@ -894,10 +892,9 @@ Partial Class AdminDashboard2
         guna2HtmlLabel4.BackColor = Color.Transparent
         guna2HtmlLabel4.Font = New Font("Arial", 12.25F, FontStyle.Bold)
         guna2HtmlLabel4.ForeColor = SystemColors.Control
-        guna2HtmlLabel4.Location = New Point(554, 16)
-        guna2HtmlLabel4.Margin = New Padding(3, 2, 3, 2)
+        guna2HtmlLabel4.Location = New Point(633, 21)
         guna2HtmlLabel4.Name = "guna2HtmlLabel4"
-        guna2HtmlLabel4.Size = New Size(90, 21)
+        guna2HtmlLabel4.Size = New Size(110, 26)
         guna2HtmlLabel4.TabIndex = 175
         guna2HtmlLabel4.Text = "Add Doctor"
         ' 
@@ -906,10 +903,9 @@ Partial Class AdminDashboard2
         Guna2HtmlLabel7.BackColor = Color.Transparent
         Guna2HtmlLabel7.Font = New Font("Tahoma", 15.25F, FontStyle.Bold)
         Guna2HtmlLabel7.ForeColor = SystemColors.Control
-        Guna2HtmlLabel7.Location = New Point(13, 12)
-        Guna2HtmlLabel7.Margin = New Padding(3, 2, 3, 2)
+        Guna2HtmlLabel7.Location = New Point(15, 16)
         Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
-        Guna2HtmlLabel7.Size = New Size(111, 26)
+        Guna2HtmlLabel7.Size = New Size(138, 32)
         Guna2HtmlLabel7.TabIndex = 142
         Guna2HtmlLabel7.Text = "Doctor List"
         ' 
@@ -922,10 +918,11 @@ Partial Class AdminDashboard2
         guna2CustomGradientPanel4.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel4.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel4.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
-        guna2CustomGradientPanel4.Location = New Point(3, 42)
+        guna2CustomGradientPanel4.Location = New Point(3, 56)
+        guna2CustomGradientPanel4.Margin = New Padding(3, 4, 3, 4)
         guna2CustomGradientPanel4.Name = "guna2CustomGradientPanel4"
         guna2CustomGradientPanel4.ShadowDecoration.CustomizableEdges = CustomizableEdges29
-        guna2CustomGradientPanel4.Size = New Size(662, 448)
+        guna2CustomGradientPanel4.Size = New Size(757, 597)
         guna2CustomGradientPanel4.TabIndex = 142
         ' 
         ' DoctorDataGridViewList2
@@ -959,7 +956,8 @@ Partial Class AdminDashboard2
         DataGridViewCellStyle11.WrapMode = DataGridViewTriState.False
         DoctorDataGridViewList2.DefaultCellStyle = DataGridViewCellStyle11
         DoctorDataGridViewList2.GridColor = Color.FromArgb(CByte(179), CByte(230), CByte(251))
-        DoctorDataGridViewList2.Location = New Point(4, 3)
+        DoctorDataGridViewList2.Location = New Point(5, 4)
+        DoctorDataGridViewList2.Margin = New Padding(3, 4, 3, 4)
         DoctorDataGridViewList2.Name = "DoctorDataGridViewList2"
         DoctorDataGridViewList2.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle12.Alignment = DataGridViewContentAlignment.MiddleLeft
@@ -973,7 +971,7 @@ Partial Class AdminDashboard2
         DoctorDataGridViewList2.RowHeadersVisible = False
         DoctorDataGridViewList2.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
         DoctorDataGridViewList2.RowTemplate.Height = 35
-        DoctorDataGridViewList2.Size = New Size(649, 393)
+        DoctorDataGridViewList2.Size = New Size(742, 524)
         DoctorDataGridViewList2.TabIndex = 215
         DoctorDataGridViewList2.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.LightBlue
         DoctorDataGridViewList2.ThemeStyle.AlternatingRowsStyle.BackColor = Color.FromArgb(CByte(160), CByte(160), CByte(160))
@@ -1009,11 +1007,12 @@ Partial Class AdminDashboard2
         AddDoctor.ImageOffset = New Point(0, 0)
         AddDoctor.ImageRotate = 0F
         AddDoctor.ImageSize = New Size(40, 45)
-        AddDoctor.Location = New Point(508, 4)
+        AddDoctor.Location = New Point(581, 5)
+        AddDoctor.Margin = New Padding(3, 4, 3, 4)
         AddDoctor.Name = "AddDoctor"
         AddDoctor.PressedState.ImageSize = New Size(64, 64)
         AddDoctor.ShadowDecoration.CustomizableEdges = CustomizableEdges30
-        AddDoctor.Size = New Size(45, 39)
+        AddDoctor.Size = New Size(51, 52)
         AddDoctor.TabIndex = 177
         ' 
         ' ad_staffpanel
@@ -1028,10 +1027,11 @@ Partial Class AdminDashboard2
         ad_staffpanel.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_staffpanel.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_staffpanel.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
-        ad_staffpanel.Location = New Point(291, 116)
+        ad_staffpanel.Location = New Point(333, 155)
+        ad_staffpanel.Margin = New Padding(3, 4, 3, 4)
         ad_staffpanel.Name = "ad_staffpanel"
         ad_staffpanel.ShadowDecoration.CustomizableEdges = CustomizableEdges35
-        ad_staffpanel.Size = New Size(662, 448)
+        ad_staffpanel.Size = New Size(757, 597)
         ad_staffpanel.TabIndex = 247
         ad_staffpanel.Visible = False
         ' 
@@ -1066,7 +1066,8 @@ Partial Class AdminDashboard2
         DataGridViewCellStyle15.WrapMode = DataGridViewTriState.False
         StaffDataGridViewList2.DefaultCellStyle = DataGridViewCellStyle15
         StaffDataGridViewList2.GridColor = Color.FromArgb(CByte(179), CByte(230), CByte(251))
-        StaffDataGridViewList2.Location = New Point(7, 46)
+        StaffDataGridViewList2.Location = New Point(8, 61)
+        StaffDataGridViewList2.Margin = New Padding(3, 4, 3, 4)
         StaffDataGridViewList2.Name = "StaffDataGridViewList2"
         StaffDataGridViewList2.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle16.Alignment = DataGridViewContentAlignment.MiddleLeft
@@ -1080,7 +1081,7 @@ Partial Class AdminDashboard2
         StaffDataGridViewList2.RowHeadersVisible = False
         StaffDataGridViewList2.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
         StaffDataGridViewList2.RowTemplate.Height = 35
-        StaffDataGridViewList2.Size = New Size(649, 391)
+        StaffDataGridViewList2.Size = New Size(742, 521)
         StaffDataGridViewList2.TabIndex = 215
         StaffDataGridViewList2.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.LightBlue
         StaffDataGridViewList2.ThemeStyle.AlternatingRowsStyle.BackColor = Color.FromArgb(CByte(160), CByte(160), CByte(160))
@@ -1111,10 +1112,9 @@ Partial Class AdminDashboard2
         Guna2HtmlLabel10.BackColor = Color.Transparent
         Guna2HtmlLabel10.Font = New Font("Tahoma", 15.25F, FontStyle.Bold)
         Guna2HtmlLabel10.ForeColor = SystemColors.Control
-        Guna2HtmlLabel10.Location = New Point(20, 8)
-        Guna2HtmlLabel10.Margin = New Padding(3, 2, 3, 2)
+        Guna2HtmlLabel10.Location = New Point(23, 11)
         Guna2HtmlLabel10.Name = "Guna2HtmlLabel10"
-        Guna2HtmlLabel10.Size = New Size(93, 26)
+        Guna2HtmlLabel10.Size = New Size(116, 32)
         Guna2HtmlLabel10.TabIndex = 143
         Guna2HtmlLabel10.Text = "Staff List"
         ' 
@@ -1123,10 +1123,9 @@ Partial Class AdminDashboard2
         AddStaffLabel.BackColor = Color.Transparent
         AddStaffLabel.Font = New Font("Arial", 12.25F, FontStyle.Bold)
         AddStaffLabel.ForeColor = SystemColors.Control
-        AddStaffLabel.Location = New Point(559, 11)
-        AddStaffLabel.Margin = New Padding(3, 2, 3, 2)
+        AddStaffLabel.Location = New Point(639, 15)
         AddStaffLabel.Name = "AddStaffLabel"
-        AddStaffLabel.Size = New Size(73, 21)
+        AddStaffLabel.Size = New Size(91, 26)
         AddStaffLabel.TabIndex = 174
         AddStaffLabel.Text = "Add Staff"
         ' 
@@ -1140,18 +1139,19 @@ Partial Class AdminDashboard2
         AddButton.ImageOffset = New Point(0, 0)
         AddButton.ImageRotate = 0F
         AddButton.ImageSize = New Size(40, 45)
-        AddButton.Location = New Point(516, 0)
+        AddButton.Location = New Point(590, 0)
+        AddButton.Margin = New Padding(3, 4, 3, 4)
         AddButton.Name = "AddButton"
         AddButton.PressedState.ImageSize = New Size(64, 64)
         AddButton.ShadowDecoration.CustomizableEdges = CustomizableEdges33
-        AddButton.Size = New Size(45, 39)
+        AddButton.Size = New Size(51, 52)
         AddButton.TabIndex = 173
         ' 
         ' AdminDashboard2
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1033, 584)
+        ClientSize = New Size(1181, 779)
         Controls.Add(guna2CustomGradientPanel1)
         Controls.Add(Guna2CustomGradientPanel2)
         Controls.Add(ad_docpanel)
@@ -1163,8 +1163,8 @@ Partial Class AdminDashboard2
         Controls.Add(Guna2TextBox3)
         Controls.Add(SearchPanel4)
         FormBorderStyle = FormBorderStyle.None
-        Margin = New Padding(3, 2, 3, 2)
         Name = "AdminDashboard2"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "AdminDashboard2"
         guna2CustomGradientPanel1.ResumeLayout(False)
         guna2CustomGradientPanel1.PerformLayout()

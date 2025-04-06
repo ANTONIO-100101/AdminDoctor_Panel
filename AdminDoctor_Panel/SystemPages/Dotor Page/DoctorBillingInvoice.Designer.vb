@@ -24,6 +24,14 @@ Partial Class DoctorBillingInvoice
     Private Sub InitializeComponent()
         Dim CustomizableEdges42 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges43 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges40 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges41 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -61,15 +69,11 @@ Partial Class DoctorBillingInvoice
         Dim CustomizableEdges38 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DoctorBillingInvoice))
         Dim CustomizableEdges39 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
+        ExitButton = New Guna.UI2.WinForms.Guna2Button()
+        guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        CreatePDFButton = New Guna.UI2.WinForms.Guna2Button()
+        viewinfo_PrintBtn = New Guna.UI2.WinForms.Guna2Button()
         PrintablePanel = New Guna.UI2.WinForms.Guna2Panel()
         TotalLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
         billing_Total = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -97,10 +101,6 @@ Partial Class DoctorBillingInvoice
         Guna2CustomGradientPanel5 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
-        viewinfo_PrintBtn = New Guna.UI2.WinForms.Guna2Button()
-        CreatePDFButton = New Guna.UI2.WinForms.Guna2Button()
-        guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
-        ExitButton = New Guna.UI2.WinForms.Guna2Button()
         Guna2CustomGradientPanel1.SuspendLayout()
         PrintablePanel.SuspendLayout()
         guna2Panel8.SuspendLayout()
@@ -125,13 +125,90 @@ Partial Class DoctorBillingInvoice
         Guna2CustomGradientPanel1.Controls.Add(PrintablePanel)
         Guna2CustomGradientPanel1.CustomizableEdges = CustomizableEdges42
         Guna2CustomGradientPanel1.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        Guna2CustomGradientPanel1.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel1.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        Guna2CustomGradientPanel1.FillColor4 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        Guna2CustomGradientPanel1.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         Guna2CustomGradientPanel1.Location = New Point(-1, -2)
         Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
         Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges43
         Guna2CustomGradientPanel1.Size = New Size(932, 956)
         Guna2CustomGradientPanel1.TabIndex = 0
+        ' 
+        ' ExitButton
+        ' 
+        ExitButton.BackColor = Color.Red
+        ExitButton.Cursor = Cursors.Hand
+        ExitButton.CustomizableEdges = CustomizableEdges1
+        ExitButton.DisabledState.BorderColor = Color.DarkGray
+        ExitButton.DisabledState.CustomBorderColor = Color.DarkGray
+        ExitButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        ExitButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        ExitButton.FillColor = Color.Transparent
+        ExitButton.Font = New Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold)
+        ExitButton.ForeColor = SystemColors.Window
+        ExitButton.Location = New Point(884, 3)
+        ExitButton.Name = "ExitButton"
+        ExitButton.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        ExitButton.Size = New Size(49, 35)
+        ExitButton.TabIndex = 167
+        ExitButton.Text = "X"
+        ' 
+        ' guna2Button1
+        ' 
+        guna2Button1.BackColor = SystemColors.ActiveCaption
+        guna2Button1.Cursor = Cursors.Hand
+        guna2Button1.CustomizableEdges = CustomizableEdges3
+        guna2Button1.DisabledState.BorderColor = Color.DarkGray
+        guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray
+        guna2Button1.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        guna2Button1.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        guna2Button1.FillColor = Color.Transparent
+        guna2Button1.Font = New Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold Or FontStyle.Italic)
+        guna2Button1.ForeColor = SystemColors.Window
+        guna2Button1.Location = New Point(829, 0)
+        guna2Button1.Name = "guna2Button1"
+        guna2Button1.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        guna2Button1.Size = New Size(49, 35)
+        guna2Button1.TabIndex = 169
+        guna2Button1.Text = "<"
+        ' 
+        ' CreatePDFButton
+        ' 
+        CreatePDFButton.BorderThickness = 1
+        CreatePDFButton.CustomizableEdges = CustomizableEdges5
+        CreatePDFButton.DisabledState.BorderColor = Color.DarkGray
+        CreatePDFButton.DisabledState.CustomBorderColor = Color.DarkGray
+        CreatePDFButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        CreatePDFButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        CreatePDFButton.FillColor = Color.Red
+        CreatePDFButton.Font = New Font("Segoe UI", 9F)
+        CreatePDFButton.ForeColor = Color.White
+        CreatePDFButton.Location = New Point(762, 888)
+        CreatePDFButton.Margin = New Padding(3, 4, 3, 4)
+        CreatePDFButton.Name = "CreatePDFButton"
+        CreatePDFButton.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        CreatePDFButton.Size = New Size(104, 47)
+        CreatePDFButton.TabIndex = 168
+        CreatePDFButton.Text = "Create PDF"
+        ' 
+        ' viewinfo_PrintBtn
+        ' 
+        viewinfo_PrintBtn.BorderThickness = 1
+        viewinfo_PrintBtn.CustomizableEdges = CustomizableEdges7
+        viewinfo_PrintBtn.DisabledState.BorderColor = Color.DarkGray
+        viewinfo_PrintBtn.DisabledState.CustomBorderColor = Color.DarkGray
+        viewinfo_PrintBtn.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        viewinfo_PrintBtn.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        viewinfo_PrintBtn.FillColor = Color.Red
+        viewinfo_PrintBtn.Font = New Font("Segoe UI", 9F)
+        viewinfo_PrintBtn.ForeColor = Color.White
+        viewinfo_PrintBtn.Location = New Point(652, 888)
+        viewinfo_PrintBtn.Margin = New Padding(3, 4, 3, 4)
+        viewinfo_PrintBtn.Name = "viewinfo_PrintBtn"
+        viewinfo_PrintBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges8
+        viewinfo_PrintBtn.Size = New Size(104, 45)
+        viewinfo_PrintBtn.TabIndex = 166
+        viewinfo_PrintBtn.Text = "Print"
         ' 
         ' PrintablePanel
         ' 
@@ -591,82 +668,6 @@ Partial Class DoctorBillingInvoice
         guna2CirclePictureBox1.SizeMode = PictureBoxSizeMode.Zoom
         guna2CirclePictureBox1.TabIndex = 143
         guna2CirclePictureBox1.TabStop = False
-        ' 
-        ' viewinfo_PrintBtn
-        ' 
-        viewinfo_PrintBtn.BorderThickness = 1
-        viewinfo_PrintBtn.CustomizableEdges = CustomizableEdges7
-        viewinfo_PrintBtn.DisabledState.BorderColor = Color.DarkGray
-        viewinfo_PrintBtn.DisabledState.CustomBorderColor = Color.DarkGray
-        viewinfo_PrintBtn.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        viewinfo_PrintBtn.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        viewinfo_PrintBtn.FillColor = Color.Red
-        viewinfo_PrintBtn.Font = New Font("Segoe UI", 9F)
-        viewinfo_PrintBtn.ForeColor = Color.White
-        viewinfo_PrintBtn.Location = New Point(652, 888)
-        viewinfo_PrintBtn.Margin = New Padding(3, 4, 3, 4)
-        viewinfo_PrintBtn.Name = "viewinfo_PrintBtn"
-        viewinfo_PrintBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        viewinfo_PrintBtn.Size = New Size(104, 45)
-        viewinfo_PrintBtn.TabIndex = 166
-        viewinfo_PrintBtn.Text = "Print"
-        ' 
-        ' CreatePDFButton
-        ' 
-        CreatePDFButton.BorderThickness = 1
-        CreatePDFButton.CustomizableEdges = CustomizableEdges5
-        CreatePDFButton.DisabledState.BorderColor = Color.DarkGray
-        CreatePDFButton.DisabledState.CustomBorderColor = Color.DarkGray
-        CreatePDFButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        CreatePDFButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        CreatePDFButton.FillColor = Color.Red
-        CreatePDFButton.Font = New Font("Segoe UI", 9F)
-        CreatePDFButton.ForeColor = Color.White
-        CreatePDFButton.Location = New Point(762, 888)
-        CreatePDFButton.Margin = New Padding(3, 4, 3, 4)
-        CreatePDFButton.Name = "CreatePDFButton"
-        CreatePDFButton.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        CreatePDFButton.Size = New Size(104, 47)
-        CreatePDFButton.TabIndex = 168
-        CreatePDFButton.Text = "Create PDF"
-        ' 
-        ' guna2Button1
-        ' 
-        guna2Button1.BackColor = SystemColors.ActiveCaption
-        guna2Button1.Cursor = Cursors.Hand
-        guna2Button1.CustomizableEdges = CustomizableEdges3
-        guna2Button1.DisabledState.BorderColor = Color.DarkGray
-        guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray
-        guna2Button1.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        guna2Button1.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        guna2Button1.FillColor = Color.Transparent
-        guna2Button1.Font = New Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold Or FontStyle.Italic)
-        guna2Button1.ForeColor = SystemColors.Window
-        guna2Button1.Location = New Point(829, 0)
-        guna2Button1.Name = "guna2Button1"
-        guna2Button1.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        guna2Button1.Size = New Size(49, 35)
-        guna2Button1.TabIndex = 169
-        guna2Button1.Text = "<"
-        ' 
-        ' ExitButton
-        ' 
-        ExitButton.BackColor = Color.Red
-        ExitButton.Cursor = Cursors.Hand
-        ExitButton.CustomizableEdges = CustomizableEdges1
-        ExitButton.DisabledState.BorderColor = Color.DarkGray
-        ExitButton.DisabledState.CustomBorderColor = Color.DarkGray
-        ExitButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        ExitButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        ExitButton.FillColor = Color.Transparent
-        ExitButton.Font = New Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold)
-        ExitButton.ForeColor = SystemColors.Window
-        ExitButton.Location = New Point(884, 3)
-        ExitButton.Name = "ExitButton"
-        ExitButton.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        ExitButton.Size = New Size(49, 35)
-        ExitButton.TabIndex = 167
-        ExitButton.Text = "X"
         ' 
         ' DoctorBillingInvoice
         ' 
