@@ -69,7 +69,7 @@ Partial Class LandForm
         Guna2CustomGradientPanel1.Location = New Point(-1, 0)
         Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
         Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        Guna2CustomGradientPanel1.Size = New Size(1056, 797)
+        Guna2CustomGradientPanel1.Size = New Size(1917, 1375)
         Guna2CustomGradientPanel1.TabIndex = 1
         ' 
         ' Guna2CirclePictureBox5
@@ -199,12 +199,13 @@ Partial Class LandForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1053, 792)
+        ClientSize = New Size(1904, 1372)
         Controls.Add(Guna2CustomGradientPanel1)
         FormBorderStyle = FormBorderStyle.None
         Name = "LandForm"
         StartPosition = FormStartPosition.CenterScreen
         Text = "LandForm"
+        WindowState = FormWindowState.Maximized
         Guna2CustomGradientPanel1.ResumeLayout(False)
         CType(Guna2CirclePictureBox5, ComponentModel.ISupportInitialize).EndInit()
         CType(Guna2CirclePictureBox4, ComponentModel.ISupportInitialize).EndInit()
