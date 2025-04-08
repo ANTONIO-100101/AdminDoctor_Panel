@@ -10,7 +10,7 @@ Namespace Infocare_Project.NewFolder
 
             Public Sub New()
                 Specializations = New List(Of String) From {
-                    "Specialization", "Cardiology", "Dermatology", "Neurology", "Orthopedics", "Pediatrics", "Psychiatry",
+                    "Cardiology", "Dermatology", "Neurology", "Orthopedics", "Pediatrics", "Psychiatry",
                     "Ophthalmology", "Obstetrics and Gynecology", "Endocrinology", "Gastroenterology",
                     "Hematology", "Oncology", "Pulmonology", "Nephrology", "Urology", "General Surgery",
                     "Plastic Surgery", "Radiology", "Anesthesiology", "Internal Medicine", "Family Medicine",

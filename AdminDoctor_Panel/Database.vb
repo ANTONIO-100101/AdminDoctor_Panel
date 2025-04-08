@@ -1,4 +1,5 @@
 ﻿Imports System.Data.SqlClient
+Imports System.Globalization
 Imports AdminDoctor_Panel.Infocare_Project_1
 Imports AdminDoctor_Panel.Infocare_Project_1.Object_Models
 Imports Microsoft.Data.SqlClient
@@ -290,5 +291,89 @@ Public Class Database
         End Using
     End Function
 
+
+    Public Shared Function GetPatientInfo(username As String, password As String) As PatientModel
+        Using connection As SqlConnection = GetConnection()
+            Dim user As New PatientModel()
+            Dim health As New HealthInfoModel()
+            Dim emergency As New EmergencyContactModel()
+            Dim user_address As New AddressModel()
+            Dim eme_address As New AddressModel()
+
+            connection.Open()
+            Dim query As String = "SELECT * FROM tb_patientinfo WHERE P_username = @Username AND P_Password = @Password"
+
+            Using cmd As New SqlCommand(query, connection)
+                cmd.Parameters.AddWithValue("@Username", username)
+                cmd.Parameters.AddWithValue("@Password", password)
+
+                ' Fetch patient data
+                PatientInfoFetcher(cmd, user, health, user_address, emergency, eme_address)
+            End Using
+
+            ' Assign related models
+            user.HealthInfo = health
+            user.Address = user_address
+            emergency.Address = eme_address
+            user.EmergencyContact = emergency
+
+            Return user
+        End Using
+    End Function
+
+    Public Shared Sub PatientInfoFetcher(
+    ByVal cmd As SqlCommand, ByVal user As PatientModel, ByVal health As HealthInfoModel,
+    ByVal user_address As AddressModel, ByVal emergency As EmergencyContactModel, ByVal eme_address As AddressModel)
+
+        Using reader As SqlDataReader = cmd.ExecuteReader()
+            While reader.Read()
+                user.AccountID = reader.GetInt32(reader.GetOrdinal("id"))
+                user.FirstName = reader.GetString(reader.GetOrdinal("P_Firstname"))
+                user.LastName = reader.GetString(reader.GetOrdinal("P_Lastname"))
+                user.Password = If(reader.IsDBNull(reader.GetOrdinal("P_Password")), "", reader.GetString(reader.GetOrdinal("P_Password")))
+                user.MiddleName = reader.GetString(reader.GetOrdinal("P_Middlename"))
+                user.UserName = reader.GetString(reader.GetOrdinal("P_username"))
+                user.ContactNumber = reader.GetString(reader.GetOrdinal("P_ContactNumber"))
+                user.BirthDate = DateTime.ParseExact(reader.GetString(reader.GetOrdinal("P_Bdate")), "dd-MM-yyyy", CultureInfo.InvariantCulture)
+                user.Sex = reader.GetString(reader.GetOrdinal("P_Sex"))
+                user.Suffix = If(reader.IsDBNull(reader.GetOrdinal("P_Suffix")), "n/a", reader.GetString(reader.GetOrdinal("P_Suffix")))
+                user.Email = If(reader.IsDBNull(reader.GetOrdinal("email")), "", reader.GetString(reader.GetOrdinal("email")))
+
+                health.Height = If(reader.IsDBNull(reader.GetOrdinal("P_Height")), 0, reader.GetDouble(reader.GetOrdinal("P_Height")))
+                health.Weight = If(reader.IsDBNull(reader.GetOrdinal("P_Weight")), 0, reader.GetDouble(reader.GetOrdinal("P_Weight")))
+                health.BMI = If(reader.IsDBNull(reader.GetOrdinal("P_BMI")), 0, reader.GetDouble(reader.GetOrdinal("P_BMI")))
+                health.BloodType = If(reader.IsDBNull(reader.GetOrdinal("P_Blood_Type")), "", reader.GetString(reader.GetOrdinal("P_Blood_Type")))
+                health.PreCon = If(reader.IsDBNull(reader.GetOrdinal("P_Precondition")), "", reader.GetString(reader.GetOrdinal("P_Precondition")))
+                health.Treatment = If(reader.IsDBNull(reader.GetOrdinal("P_Treatment")), "", reader.GetString(reader.GetOrdinal("P_Treatment")))
+                health.PrevSurg = If(reader.IsDBNull(reader.GetOrdinal("P_PrevSurgery")), "", reader.GetString(reader.GetOrdinal("P_PrevSurgery")))
+
+                Dim addressArr() As String = If(reader.IsDBNull(reader.GetOrdinal("P_Address")), ",,,,,", reader.GetString(reader.GetOrdinal("P_Address"))).Split(","c)
+
+                user_address.HouseNo = Integer.Parse(addressArr(0))
+                user_address.ZipCode = Integer.Parse(addressArr(1))
+                user_address.Zone = Integer.Parse(addressArr(2))
+                user_address.Street = addressArr(3)
+                user_address.Barangay = addressArr(4)
+                user_address.City = addressArr(5)
+
+                health.Alergy = If(reader.IsDBNull(reader.GetOrdinal("P_Alergy")), "", reader.GetString(reader.GetOrdinal("P_Alergy")))
+                health.Medication = If(reader.IsDBNull(reader.GetOrdinal("P_Medication")), "", reader.GetString(reader.GetOrdinal("P_Medication")))
+
+                emergency.FirstName = If(reader.IsDBNull(reader.GetOrdinal("Eme_Firstname")), "", reader.GetString(reader.GetOrdinal("Eme_Firstname")))
+                emergency.LastName = If(reader.IsDBNull(reader.GetOrdinal("Eme_Lastname")), "", reader.GetString(reader.GetOrdinal("Eme_Lastname")))
+                emergency.MiddleName = If(reader.IsDBNull(reader.GetOrdinal("Eme_Middlename")), "", reader.GetString(reader.GetOrdinal("Eme_Middlename")))
+                emergency.Suffix = If(reader.IsDBNull(reader.GetOrdinal("Eme_Suffix")), "", reader.GetString(reader.GetOrdinal("Eme_Suffix")))
+
+                Dim eme_addressArr() As String = If(reader.IsDBNull(reader.GetOrdinal("Eme_Address")), "0,0,0,0,0,0", reader.GetString(reader.GetOrdinal("Eme_Address"))).Split(","c)
+
+                eme_address.HouseNo = Integer.Parse(eme_addressArr(0))
+                eme_address.ZipCode = Integer.Parse(eme_addressArr(1))
+                eme_address.Zone = Integer.Parse(eme_addressArr(2))
+                eme_address.Street = eme_addressArr(3)
+                eme_address.Barangay = eme_addressArr(4)
+                eme_address.City = eme_addressArr(5)
+            End While
+        End Using
+    End Sub
 
 End Class

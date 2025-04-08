@@ -1,9 +1,14 @@
-﻿Public Class PatientDashboard
-    Private Sub Guna2TextBox3_TextChanged(sender As Object, e As EventArgs)
+﻿Imports AdminDoctor_Panel.Infocare_Project_1.Object_Models
 
-    End Sub
+Public Class PatientDashboard
+    Inherits Form
 
-    Private Sub Guna2HtmlLabel3_Click(sender As Object, e As EventArgs)
+    Private patient As PatientModel
 
+    Public Sub New(patient As PatientModel)
+        InitializeComponent()
+        Me.patient = patient
+
+        NameLabel.Text = $"{patient.FirstName}!"
     End Sub
 End Class

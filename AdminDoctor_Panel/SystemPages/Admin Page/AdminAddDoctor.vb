@@ -327,29 +327,19 @@ Partial Public Class AdminAddDoctor
     End Sub
 
     Private Sub AddSpecialization_Click(sender As Object, e As EventArgs) Handles AddSpecialization.Click
-        Dim newSpecializationTextBox As New Guna2TextBox With {
-        .Width = 194,
-        .Height = 38,
-        .Margin = New Padding(3, 3, 3, 3),
-        .PlaceholderText = "Specialization",
-        .PlaceholderForeColor = Color.FromArgb(47, 89, 114),
-        .Font = New Font("Segoe UI", 9),
-        .ForeColor = Color.FromArgb(47, 89, 114),
-        .BorderColor = Color.FromArgb(93, 202, 209),
-        .BorderThickness = 1,
-        .BorderRadius = 8,
-        .BackColor = Color.FromArgb(110, 177, 247),
-        .Cursor = Cursors.Default,
-        .Padding = New Padding(0),
-        .IconLeftSize = New Size(20, 20),
-        .IconRightSize = New Size(20, 20),
-        .WordWrap = True,
-        .Multiline = False,
-        .TextAlign = HorizontalAlignment.Left
-    }
+        Dim specializationObj As New Specialization.DoctorSpecialization()
 
-        flowLayoutPanel1.Controls.Add(newSpecializationTextBox)
+        Dim newComboBox As New ComboBox()
+        newComboBox.Width = 250
+        newComboBox.Height = 30
+
+        newComboBox.DropDownStyle = ComboBoxStyle.DropDownList
+
+        newComboBox.Items.AddRange(specializationObj.Specializations.ToArray())
+
+        flowLayoutPanel1.Controls.Add(newComboBox)
     End Sub
+
 
     Private Sub RemoveDoctor_Click(sender As Object, e As EventArgs) Handles removeDoctor.Click
         Dim confirm As DialogResult = MessageBox.Show("Are you sure you want to remove this doctor?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
