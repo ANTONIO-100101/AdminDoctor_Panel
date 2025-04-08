@@ -376,4 +376,167 @@ Public Class Database
         End Using
     End Sub
 
+    Public Shared Function GetPatientInfoById(id As Integer) As PatientModel
+        Using connection = GetConnection()
+            Dim user As New PatientModel()
+            Dim health As New HealthInfoModel()
+            Dim emergency As New EmergencyContactModel()
+            Dim user_address As New AddressModel()
+            Dim eme_address As New AddressModel()
+
+            connection.Open()
+            Dim query As String = "SELECT * FROM tb_patientinfo WHERE id = @ID"
+
+            Using cmd As New SqlCommand(query, connection)
+                cmd.Parameters.AddWithValue("@ID", id)
+
+                PatientInfoFetcher(cmd, user, health, user_address, emergency, eme_address)
+            End Using
+
+            user.HealthInfo = health
+            user.Address = user_address
+
+            emergency.Address = eme_address
+            user.EmergencyContact = emergency
+
+            Return user
+        End Using
+    End Function
+
+    Public Shared Function UsernameExists(username As String, role As Role) As Boolean
+        Dim tblname As String = If(role = Role.Staff, "tb_staffinfo",
+                           If(role = Role.Patient, "tb_patientinfo",
+                           "tb_doctorinfo"))
+
+        Dim colname As String = If(role = Role.Patient, "P_", "")
+        Dim query As String = $"SELECT COUNT(*) FROM {tblname} WHERE {colname}username = @Username"
+
+        Using connection As New SqlConnection(connectionString)
+            connection.Open()
+            Using command As New SqlCommand(query, connection)
+                command.Parameters.AddWithValue("@Username", username)
+                Dim count As Integer = Convert.ToInt32(command.ExecuteScalar())
+                Return count > 0
+            End Using
+        End Using
+    End Function
+
+    Public Shared Function IsUsernameExists(username As String) As Boolean
+        Dim query As String = "SELECT COUNT(*) FROM tb_patientinfo WHERE P_Username = @Username"
+
+        Using connection As New SqlConnection(connectionString)
+            connection.Open()
+            Using command As New SqlCommand(query, connection)
+                command.Parameters.AddWithValue("@Username", username)
+                Dim count As Integer = Convert.ToInt32(command.ExecuteScalar())
+                Return count > 0
+            End Using
+        End Using
+    End Function
+
+    Public Shared Sub PatientRegFunc(patient As PatientModel, mode As ModalMode)
+        Using connection As SqlConnection = GetConnection()
+            Try
+                Dim query As String
+
+                If mode = ModalMode.Add Then
+                    query = "INSERT INTO tb_patientinfo (p_FirstName, p_LastName, p_MiddleName, p_Suffix, p_Username, P_Password, P_ContactNumber, P_Bdate, P_Sex, P_Address, email) " &
+                        "VALUES (@FirstName, @LastName, @MiddleName, @Suffix, @Username, @Password, @ContactNumber, @Bdate, @Sex, @Address, @Email)"
+                Else
+                    query = "UPDATE tb_patientinfo SET p_FirstName = @FirstName, p_LastName = @LastName, p_MiddleName = @MiddleName, " &
+                        "p_Suffix = @Suffix, p_username = @Username, P_ContactNumber = @ContactNumber, P_Bdate = @Bdate, " &
+                        "P_Sex = @Sex, P_Address = @Address, email = @Email WHERE P_username = @Username"
+                End If
+
+                Dim command As New SqlCommand(query, connection)
+
+                command.Parameters.AddWithValue("@FirstName", patient.FirstName)
+                command.Parameters.AddWithValue("@LastName", patient.LastName)
+                command.Parameters.AddWithValue("@MiddleName", patient.MiddleName)
+                command.Parameters.AddWithValue("@Suffix", patient.Suffix)
+                command.Parameters.AddWithValue("@Username", patient.UserName)
+                command.Parameters.AddWithValue("@Password", ProcessMethods.HashCharacter(patient.Password))
+                command.Parameters.AddWithValue("@ContactNumber", patient.ContactNumber)
+                command.Parameters.AddWithValue("@Bdate", patient.BirthDate.ToString("dd-MM-yyyy"))
+                command.Parameters.AddWithValue("@Sex", patient.Sex.ToString())
+                command.Parameters.AddWithValue("@Email", patient.Email)
+                command.Parameters.AddWithValue("@Address", patient.Address.FullAddress)
+
+                connection.Open()
+                command.ExecuteNonQuery()
+            Catch ex As Exception
+                Throw New Exception("Error inserting patient data: " & ex.Message)
+            End Try
+        End Using
+    End Sub
+
+    Public Shared Sub PatientRegFunc(patient As PatientModel, username As String, height As Double, weight As Double, bmi As Double, bloodType As String, preCon As String, treatment As String, prevSurg As String, allergy As String, medication As String, mode As ModalMode)
+        Dim query As String
+
+        If mode = ModalMode.Add Then
+            query = "INSERT INTO tb_patientinfo (P_Height, P_Weight, P_BMI, P_Blood_Type, P_Precondition, P_Treatment, P_PrevSurgery, P_Username, P_Alergy, P_Medication) " &
+                "VALUES (@Height, @Weight, @BMI, @BloodType, @PreCon, @Treatment, @PrevSurg, @Username, @Allergy, @Medication) " &
+                "ON DUPLICATE KEY UPDATE P_Height = IFNULL(@Height, P_Height), P_Weight = IFNULL(@Weight, P_Weight), P_BMI = IFNULL(@BMI, P_BMI), " &
+                "P_Blood_Type = IFNULL(@BloodType, P_Blood_Type), P_Precondition = IFNULL(@PreCon, P_Precondition), P_Treatment = IFNULL(@Treatment, P_Treatment), " &
+                "P_PrevSurgery = IFNULL(@PrevSurg, P_PrevSurgery), P_Alergy = IFNULL(@Allergy, P_Alergy), P_Medication = IFNULL(@Medication, P_Medication)"
+        Else
+            query = "UPDATE tb_patientinfo SET P_Height = @Height, P_Weight = @Weight, P_BMI = @BMI, P_Blood_Type = @BloodType, " &
+                "P_Precondition = @PreCon, P_Treatment = @Treatment, P_PrevSurgery = @PrevSurg, P_Alergy = @Allergy, P_Medication = @Medication " &
+                "WHERE P_username = @Username"
+        End If
+
+        Using connection As SqlConnection = GetConnection()
+            Dim cmd As New SqlCommand(query, connection)
+
+            cmd.Parameters.AddWithValue("@Height", If(height > 0, height, DBNull.Value))
+            cmd.Parameters.AddWithValue("@Weight", If(weight > 0, weight, DBNull.Value))
+            cmd.Parameters.AddWithValue("@BMI", If(bmi > 0, bmi, DBNull.Value))
+            cmd.Parameters.AddWithValue("@BloodType", If(String.IsNullOrEmpty(bloodType), DBNull.Value, bloodType))
+            cmd.Parameters.AddWithValue("@PreCon", If(String.IsNullOrEmpty(preCon), DBNull.Value, preCon))
+            cmd.Parameters.AddWithValue("@Treatment", If(String.IsNullOrEmpty(treatment), DBNull.Value, treatment))
+            cmd.Parameters.AddWithValue("@PrevSurg", If(String.IsNullOrEmpty(prevSurg), DBNull.Value, prevSurg))
+            cmd.Parameters.AddWithValue("@Allergy", If(String.IsNullOrEmpty(allergy), DBNull.Value, allergy))
+            cmd.Parameters.AddWithValue("@Medication", If(String.IsNullOrEmpty(medication), DBNull.Value, medication))
+            cmd.Parameters.AddWithValue("@Username", username)
+
+            connection.Open()
+            cmd.ExecuteNonQuery()
+        End Using
+    End Sub
+
+    Public Shared Sub PatientRegFunc(Emergency As EmergencyContactModel, username As String, firstName As String, lastName As String, middleName As String, suffix As String, houseNo As Integer, street As String, barangay As String, city As String, zipCode As Integer, zone As Integer, mode As ModalMode)
+        Dim query As String
+
+        If mode = ModalMode.Add Then
+            query = "INSERT INTO tb_patientinfo (P_username, Eme_Firstname, Eme_Middlename, Eme_Lastname, Eme_Suffix, Eme_Address) " &
+                "VALUES (@P_username, @Eme_Firstname, @Eme_Middlename, @Eme_Lastname, @Eme_Suffix, @Eme_Address) " &
+                "ON DUPLICATE KEY UPDATE Eme_Firstname = @Eme_Firstname, Eme_Middlename = @Eme_Middlename, Eme_Lastname = @Eme_Lastname, " &
+                "Eme_Suffix = @Eme_Suffix, Eme_Address = @Eme_Address"
+        Else
+            query = "UPDATE tb_patientinfo SET Eme_Firstname = @Eme_Firstname, Eme_Middlename = @Eme_Middlename, " &
+                "Eme_Lastname = @Eme_Lastname, Eme_Suffix = @Eme_Suffix, Eme_Address = @Eme_Address WHERE P_username = @P_username"
+        End If
+
+        Using connection As SqlConnection = GetConnection()
+            Try
+                Dim command As New SqlCommand(query, connection)
+
+                command.Parameters.AddWithValue("@P_username", username)
+                command.Parameters.AddWithValue("@Eme_Firstname", If(String.IsNullOrEmpty(firstName), DBNull.Value, firstName))
+                command.Parameters.AddWithValue("@Eme_Middlename", If(String.IsNullOrEmpty(middleName), DBNull.Value, middleName))
+                command.Parameters.AddWithValue("@Eme_Lastname", If(String.IsNullOrEmpty(lastName), DBNull.Value, lastName))
+                command.Parameters.AddWithValue("@Eme_Suffix", If(String.IsNullOrEmpty(suffix), DBNull.Value, suffix))
+
+                Dim fullAddress As String = houseNo.ToString() & "," & zipCode.ToString() & ", " & zone.ToString() & ", " & street & " street, Brgy. " & barangay & ", " & city
+                command.Parameters.AddWithValue("@Eme_Address", If(String.IsNullOrEmpty(fullAddress), DBNull.Value, fullAddress))
+
+                connection.Open()
+                command.ExecuteNonQuery()
+            Catch ex As Exception
+                Throw New Exception("Error updating patient data: " & ex.Message)
+            End Try
+        End Using
+    End Sub
+
+
 End Class
