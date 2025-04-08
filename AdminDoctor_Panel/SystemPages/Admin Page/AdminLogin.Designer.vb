@@ -80,12 +80,12 @@ Partial Class AdminLogin
         MinimizeButton.ImageOffset = New Point(0, 0)
         MinimizeButton.ImageRotate = 0F
         MinimizeButton.ImageSize = New Size(20, 30)
-        MinimizeButton.Location = New Point(894, 0)
+        MinimizeButton.Location = New Point(1807, 0)
         MinimizeButton.Margin = New Padding(3, 2, 3, 2)
         MinimizeButton.Name = "MinimizeButton"
         MinimizeButton.PressedState.ImageSize = New Size(20, 30)
         MinimizeButton.ShadowDecoration.CustomizableEdges = CustomizableEdges1
-        MinimizeButton.Size = New Size(43, 26)
+        MinimizeButton.Size = New Size(59, 53)
         MinimizeButton.TabIndex = 161
         ' 
         ' ad_HomeButton
@@ -102,10 +102,11 @@ Partial Class AdminLogin
         ad_HomeButton.Image = CType(resources.GetObject("ad_HomeButton.Image"), Image)
         ad_HomeButton.ImageAlign = HorizontalAlignment.Left
         ad_HomeButton.ImageOffset = New Point(5, 0)
-        ad_HomeButton.Location = New Point(367, 2)
+        ad_HomeButton.ImageSize = New Size(35, 35)
+        ad_HomeButton.Location = New Point(587, 1)
         ad_HomeButton.Name = "ad_HomeButton"
         ad_HomeButton.ShadowDecoration.CustomizableEdges = CustomizableEdges3
-        ad_HomeButton.Size = New Size(44, 45)
+        ad_HomeButton.Size = New Size(76, 54)
         ad_HomeButton.TabIndex = 165
         ad_HomeButton.TextAlign = HorizontalAlignment.Right
         ad_HomeButton.TextOffset = New Point(2, 0)
@@ -123,11 +124,11 @@ Partial Class AdminLogin
         EnterButton.FillColor = Color.RoyalBlue
         EnterButton.Font = New Font("Microsoft Sans Serif", 11.999999F)
         EnterButton.ForeColor = SystemColors.Control
-        EnterButton.Location = New Point(133, 398)
+        EnterButton.Location = New Point(248, 719)
         EnterButton.Margin = New Padding(3, 2, 3, 2)
         EnterButton.Name = "EnterButton"
         EnterButton.ShadowDecoration.CustomizableEdges = CustomizableEdges5
-        EnterButton.Size = New Size(185, 48)
+        EnterButton.Size = New Size(199, 65)
         EnterButton.TabIndex = 4
         EnterButton.Text = "Log in"
         ' 
@@ -135,10 +136,10 @@ Partial Class AdminLogin
         ' 
         admin_showpass.AutoSize = True
         admin_showpass.Cursor = Cursors.Hand
-        admin_showpass.Font = New Font("Microsoft Sans Serif", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        admin_showpass.Location = New Point(94, 376)
+        admin_showpass.Font = New Font("Microsoft Sans Serif", 11F)
+        admin_showpass.Location = New Point(137, 683)
         admin_showpass.Name = "admin_showpass"
-        admin_showpass.Size = New Size(114, 19)
+        admin_showpass.Size = New Size(136, 22)
         admin_showpass.TabIndex = 3
         admin_showpass.Text = "Show Password"
         admin_showpass.UseVisualStyleBackColor = True
@@ -146,12 +147,12 @@ Partial Class AdminLogin
         ' guna2HtmlLabel1
         ' 
         guna2HtmlLabel1.BackColor = Color.Transparent
-        guna2HtmlLabel1.Font = New Font("Arial", 30.0F, FontStyle.Bold)
+        guna2HtmlLabel1.Font = New Font("Arial", 40F, FontStyle.Bold)
         guna2HtmlLabel1.ForeColor = Color.White
-        guna2HtmlLabel1.Location = New Point(189, 386)
+        guna2HtmlLabel1.Location = New Point(513, 654)
         guna2HtmlLabel1.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel1.Name = "guna2HtmlLabel1"
-        guna2HtmlLabel1.Size = New Size(162, 48)
+        guna2HtmlLabel1.Size = New Size(217, 64)
         guna2HtmlLabel1.TabIndex = 142
         guna2HtmlLabel1.Text = "InfoCare"
         ' 
@@ -165,13 +166,13 @@ Partial Class AdminLogin
         ExitButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         ExitButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         ExitButton.FillColor = Color.Transparent
-        ExitButton.Font = New Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold)
+        ExitButton.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Bold)
         ExitButton.ForeColor = Color.White
-        ExitButton.Location = New Point(942, 0)
+        ExitButton.Location = New Point(1853, 0)
         ExitButton.Margin = New Padding(3, 2, 3, 2)
         ExitButton.Name = "ExitButton"
         ExitButton.ShadowDecoration.CustomizableEdges = CustomizableEdges7
-        ExitButton.Size = New Size(43, 26)
+        ExitButton.Size = New Size(67, 53)
         ExitButton.TabIndex = 72
         ExitButton.Text = "X"
         ' 
@@ -182,11 +183,11 @@ Partial Class AdminLogin
         guna2CirclePictureBox3.Image = CType(resources.GetObject("guna2CirclePictureBox3.Image"), Image)
         guna2CirclePictureBox3.ImageRotate = 0F
         guna2CirclePictureBox3.InitialImage = CType(resources.GetObject("guna2CirclePictureBox3.InitialImage"), Image)
-        guna2CirclePictureBox3.Location = New Point(46, 32)
+        guna2CirclePictureBox3.Location = New Point(329, 144)
         guna2CirclePictureBox3.Name = "guna2CirclePictureBox3"
         guna2CirclePictureBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         guna2CirclePictureBox3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        guna2CirclePictureBox3.Size = New Size(466, 400)
+        guna2CirclePictureBox3.Size = New Size(585, 505)
         guna2CirclePictureBox3.SizeMode = PictureBoxSizeMode.Zoom
         guna2CirclePictureBox3.TabIndex = 143
         guna2CirclePictureBox3.TabStop = False
@@ -194,12 +195,12 @@ Partial Class AdminLogin
         ' PasswordLabel
         ' 
         PasswordLabel.BackColor = Color.Transparent
-        PasswordLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
+        PasswordLabel.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         PasswordLabel.ForeColor = Color.Black
-        PasswordLabel.Location = New Point(94, 303)
+        PasswordLabel.Location = New Point(133, 575)
         PasswordLabel.Margin = New Padding(3, 2, 3, 2)
         PasswordLabel.Name = "PasswordLabel"
-        PasswordLabel.Size = New Size(53, 15)
+        PasswordLabel.Size = New Size(75, 23)
         PasswordLabel.TabIndex = 163
         PasswordLabel.Text = "Password"
         PasswordLabel.Visible = False
@@ -208,23 +209,23 @@ Partial Class AdminLogin
         ' 
         label2.AutoSize = True
         label2.BackColor = Color.Transparent
-        label2.Font = New Font("Arial", 11.25F)
+        label2.Font = New Font("Arial", 18.25F)
         label2.ForeColor = Color.Black
-        label2.Location = New Point(150, 208)
+        label2.Location = New Point(229, 394)
         label2.Name = "label2"
-        label2.Size = New Size(124, 17)
+        label2.Size = New Size(213, 28)
         label2.TabIndex = 146
         label2.Text = "Welcome, admin!"
         ' 
         ' UserNameLabel
         ' 
         UserNameLabel.BackColor = Color.Transparent
-        UserNameLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
+        UserNameLabel.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         UserNameLabel.ForeColor = Color.Black
-        UserNameLabel.Location = New Point(93, 231)
+        UserNameLabel.Location = New Point(133, 454)
         UserNameLabel.Margin = New Padding(3, 2, 3, 2)
         UserNameLabel.Name = "UserNameLabel"
-        UserNameLabel.Size = New Size(55, 15)
+        UserNameLabel.Size = New Size(80, 23)
         UserNameLabel.TabIndex = 162
         UserNameLabel.Text = "Username"
         UserNameLabel.Visible = False
@@ -233,11 +234,11 @@ Partial Class AdminLogin
         ' 
         label1.AutoSize = True
         label1.BackColor = Color.Transparent
-        label1.Font = New Font("Microsoft Sans Serif", 24.0F)
+        label1.Font = New Font("Microsoft Sans Serif", 30F)
         label1.ForeColor = Color.Black
-        label1.Location = New Point(164, 172)
+        label1.Location = New Point(267, 345)
         label1.Name = "label1"
-        label1.Size = New Size(106, 37)
+        label1.Size = New Size(130, 46)
         label1.TabIndex = 145
         label1.Text = "Log In"
         ' 
@@ -253,17 +254,17 @@ Partial Class AdminLogin
         UsernameTxtbox.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         UsernameTxtbox.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         UsernameTxtbox.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        UsernameTxtbox.Font = New Font("Segoe UI", 9.0F)
+        UsernameTxtbox.Font = New Font("Segoe UI", 9F)
         UsernameTxtbox.ForeColor = Color.Black
         UsernameTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        UsernameTxtbox.Location = New Point(91, 251)
+        UsernameTxtbox.Location = New Point(133, 483)
         UsernameTxtbox.Margin = New Padding(3, 4, 3, 4)
         UsernameTxtbox.Name = "UsernameTxtbox"
         UsernameTxtbox.PlaceholderForeColor = Color.Black
         UsernameTxtbox.PlaceholderText = ""
         UsernameTxtbox.SelectedText = ""
         UsernameTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        UsernameTxtbox.Size = New Size(279, 46)
+        UsernameTxtbox.Size = New Size(408, 72)
         UsernameTxtbox.TabIndex = 1
         ' 
         ' PasswordTxtbox
@@ -278,10 +279,10 @@ Partial Class AdminLogin
         PasswordTxtbox.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         PasswordTxtbox.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         PasswordTxtbox.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        PasswordTxtbox.Font = New Font("Segoe UI", 9.0F)
+        PasswordTxtbox.Font = New Font("Segoe UI", 9F)
         PasswordTxtbox.ForeColor = Color.Black
         PasswordTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        PasswordTxtbox.Location = New Point(93, 323)
+        PasswordTxtbox.Location = New Point(133, 604)
         PasswordTxtbox.Margin = New Padding(3, 4, 3, 4)
         PasswordTxtbox.Name = "PasswordTxtbox"
         PasswordTxtbox.PasswordChar = "●"c
@@ -289,7 +290,7 @@ Partial Class AdminLogin
         PasswordTxtbox.PlaceholderText = ""
         PasswordTxtbox.SelectedText = ""
         PasswordTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        PasswordTxtbox.Size = New Size(277, 46)
+        PasswordTxtbox.Size = New Size(408, 72)
         PasswordTxtbox.TabIndex = 2
         ' 
         ' guna2CirclePictureBox1
@@ -298,11 +299,11 @@ Partial Class AdminLogin
         guna2CirclePictureBox1.FillColor = SystemColors.Control
         guna2CirclePictureBox1.Image = CType(resources.GetObject("guna2CirclePictureBox1.Image"), Image)
         guna2CirclePictureBox1.ImageRotate = 0F
-        guna2CirclePictureBox1.Location = New Point(32, 256)
+        guna2CirclePictureBox1.Location = New Point(56, 496)
         guna2CirclePictureBox1.Name = "guna2CirclePictureBox1"
         guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges13
         guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        guna2CirclePictureBox1.Size = New Size(52, 38)
+        guna2CirclePictureBox1.Size = New Size(65, 56)
         guna2CirclePictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         guna2CirclePictureBox1.TabIndex = 100
         guna2CirclePictureBox1.TabStop = False
@@ -312,11 +313,11 @@ Partial Class AdminLogin
         guna2CirclePictureBox2.FillColor = SystemColors.Control
         guna2CirclePictureBox2.Image = CType(resources.GetObject("guna2CirclePictureBox2.Image"), Image)
         guna2CirclePictureBox2.ImageRotate = 0F
-        guna2CirclePictureBox2.Location = New Point(32, 328)
+        guna2CirclePictureBox2.Location = New Point(55, 611)
         guna2CirclePictureBox2.Name = "guna2CirclePictureBox2"
         guna2CirclePictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges14
         guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        guna2CirclePictureBox2.Size = New Size(52, 39)
+        guna2CirclePictureBox2.Size = New Size(72, 62)
         guna2CirclePictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
         guna2CirclePictureBox2.TabIndex = 101
         guna2CirclePictureBox2.TabStop = False
@@ -326,10 +327,10 @@ Partial Class AdminLogin
         guna2PictureBox8.CustomizableEdges = CustomizableEdges15
         guna2PictureBox8.Image = CType(resources.GetObject("guna2PictureBox8.Image"), Image)
         guna2PictureBox8.ImageRotate = 0F
-        guna2PictureBox8.Location = New Point(133, 25)
+        guna2PictureBox8.Location = New Point(193, 41)
         guna2PictureBox8.Name = "guna2PictureBox8"
         guna2PictureBox8.ShadowDecoration.CustomizableEdges = CustomizableEdges16
-        guna2PictureBox8.Size = New Size(185, 144)
+        guna2PictureBox8.Size = New Size(309, 305)
         guna2PictureBox8.SizeMode = PictureBoxSizeMode.StretchImage
         guna2PictureBox8.TabIndex = 164
         guna2PictureBox8.TabStop = False
@@ -350,10 +351,10 @@ Partial Class AdminLogin
         guna2GradientPanel1.Controls.Add(guna2CirclePictureBox2)
         guna2GradientPanel1.Controls.Add(guna2PictureBox8)
         guna2GradientPanel1.CustomizableEdges = CustomizableEdges17
-        guna2GradientPanel1.Location = New Point(541, 55)
+        guna2GradientPanel1.Location = New Point(1173, 121)
         guna2GradientPanel1.Name = "guna2GradientPanel1"
         guna2GradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges18
-        guna2GradientPanel1.Size = New Size(413, 469)
+        guna2GradientPanel1.Size = New Size(665, 889)
         guna2GradientPanel1.TabIndex = 173
         ' 
         ' guna2CustomGradientPanel1
@@ -372,20 +373,21 @@ Partial Class AdminLogin
         guna2CustomGradientPanel1.Location = New Point(0, 0)
         guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1"
         guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges20
-        guna2CustomGradientPanel1.Size = New Size(988, 588)
+        guna2CustomGradientPanel1.Size = New Size(1920, 1080)
         guna2CustomGradientPanel1.TabIndex = 176
         ' 
         ' AdminLogin
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(987, 587)
+        ClientSize = New Size(1920, 1080)
         Controls.Add(guna2CustomGradientPanel1)
         FormBorderStyle = FormBorderStyle.None
         Margin = New Padding(3, 2, 3, 2)
         Name = "AdminLogin"
         StartPosition = FormStartPosition.CenterScreen
         Text = "AdminLogin"
+        WindowState = FormWindowState.Maximized
         CType(guna2CirclePictureBox3, ComponentModel.ISupportInitialize).EndInit()
         CType(guna2CirclePictureBox1, ComponentModel.ISupportInitialize).EndInit()
         CType(guna2CirclePictureBox2, ComponentModel.ISupportInitialize).EndInit()
