@@ -16,13 +16,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Properties\AdminResources.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.7" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Class\Resources.Designer.vb">
+    <Compile Update="Class\AdminResources.Designer.vb">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
@@ -30,7 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Class\Resources.resx">
+    <EmbeddedResource Update="Class\AdminResources.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
