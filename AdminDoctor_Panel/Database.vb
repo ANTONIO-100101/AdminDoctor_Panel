@@ -538,5 +538,104 @@ Public Class Database
         End Using
     End Sub
 
+    Public Shared Function GetPatientName(ByVal patient As PatientModel) As String
+        Using connection = GetConnection()
+            Dim query As String = "SELECT P_Firstname, P_Lastname FROM tb_patientinfo WHERE P_Username = @Username"
+
+            Dim command As New SqlCommand(query, connection)
+            command.Parameters.AddWithValue("@Username", patient.UserName)
+
+            Try
+                connection.Open()
+
+                Using reader As SqlDataReader = command.ExecuteReader()
+                    If reader.Read() Then
+                        Dim firstName As String = reader("P_Firstname").ToString()
+                        Dim lastName As String = reader("P_Lastname").ToString()
+
+                        Return $"{lastName}, {firstName}"
+                    Else
+                        Throw New Exception("No patient found with the given username.")
+                    End If
+                End Using
+            Catch ex As Exception
+                Throw New Exception("Error fetching patient name: " & ex.Message)
+            End Try
+        End Using
+    End Function
+
+    Public Shared Sub DeletePatientByUsername(ByVal username As String)
+        Dim query As String = "DELETE FROM tb_patientinfo WHERE P_Username = @Username and "
+
+        Using connection = GetConnection()
+            Dim cmd As New SqlCommand(query, connection)
+            cmd.Parameters.AddWithValue("@Username", username)
+
+            Try
+                connection.Open()
+                Dim rowsAffected As Integer = cmd.ExecuteNonQuery()
+
+                If rowsAffected = 0 Then
+                    Throw New Exception("No row found to delete.")
+                End If
+            Catch ex As Exception
+                Throw New Exception("Error deleting patient record: " & ex.Message)
+            End Try
+        End Using
+    End Sub
+
+    Public Shared Sub DeletePatientReg1Data(patient As PatientModel)
+        Dim query As String = "
+        Delete from tb_patientinfo
+        WHERE P_Username = @Username"
+
+        Using connection = GetConnection()
+            Dim cmd As New SqlCommand(query, connection)
+            cmd.Parameters.AddWithValue("@Username", patient.UserName)
+
+            Try
+                connection.Open()
+                Dim rowsAffected As Integer = cmd.ExecuteNonQuery()
+
+                If rowsAffected = 0 Then
+                    Throw New Exception("No records were found to delete.")
+                End If
+            Catch ex As Exception
+                Throw New Exception("Error deleting patient data: " & ex.Message)
+            End Try
+        End Using
+    End Sub
+
+    Public Shared Sub NullPatientReg2Data(username As String)
+        Dim query As String = "
+        UPDATE tb_patientinfo
+        SET 
+            P_Height = NULL,
+            P_Weight = NULL,
+            P_BMI = NULL,
+            P_Blood_Type = NULL,
+            P_Precondition = NULL,
+            P_Treatment = NULL,
+            P_PrevSurgery = NULL,
+            P_Alergy = NULL,
+            P_Medication = NULL
+        WHERE P_Username = @Username"
+
+        Using connection = GetConnection()
+            Dim cmd As New SqlCommand(query, connection)
+            cmd.Parameters.AddWithValue("@Username", username)
+
+            Try
+                connection.Open()
+                Dim rowsAffected As Integer = cmd.ExecuteNonQuery()
+
+                If rowsAffected = 0 Then
+                    Throw New Exception("No records were found to update.")
+                End If
+            Catch ex As Exception
+                Throw New Exception("Error deleting patient data: " & ex.Message)
+            End Try
+        End Using
+    End Sub
 
 End Class

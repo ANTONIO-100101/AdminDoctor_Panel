@@ -115,9 +115,10 @@ Partial Class EmergencyRegistration
         guna2HtmlLabel19.BackColor = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         guna2HtmlLabel19.Font = New Font("Microsoft Sans Serif", 18F)
         guna2HtmlLabel19.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel19.Location = New Point(566, 691)
+        guna2HtmlLabel19.Location = New Point(495, 518)
+        guna2HtmlLabel19.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel19.Name = "guna2HtmlLabel19"
-        guna2HtmlLabel19.Size = New Size(45, 38)
+        guna2HtmlLabel19.Size = New Size(36, 31)
         guna2HtmlLabel19.TabIndex = 217
         guna2HtmlLabel19.Text = "3/3"
         ' 
@@ -126,11 +127,10 @@ Partial Class EmergencyRegistration
         guna2PictureBox1.CustomizableEdges = CustomizableEdges1
         guna2PictureBox1.Image = CType(resources.GetObject("guna2PictureBox1.Image"), Image)
         guna2PictureBox1.ImageRotate = 0F
-        guna2PictureBox1.Location = New Point(96, 695)
-        guna2PictureBox1.Margin = New Padding(3, 4, 3, 4)
+        guna2PictureBox1.Location = New Point(84, 521)
         guna2PictureBox1.Name = "guna2PictureBox1"
         guna2PictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        guna2PictureBox1.Size = New Size(957, 96)
+        guna2PictureBox1.Size = New Size(837, 72)
         guna2PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         guna2PictureBox1.TabIndex = 237
         guna2PictureBox1.TabStop = False
@@ -178,9 +178,10 @@ Partial Class EmergencyRegistration
         Guna2CustomGradientPanel2.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel2.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         Guna2CustomGradientPanel2.Location = New Point(-1, -1)
+        Guna2CustomGradientPanel2.Margin = New Padding(3, 2, 3, 2)
         Guna2CustomGradientPanel2.Name = "Guna2CustomGradientPanel2"
         Guna2CustomGradientPanel2.ShadowDecoration.CustomizableEdges = CustomizableEdges34
-        Guna2CustomGradientPanel2.Size = New Size(1170, 680)
+        Guna2CustomGradientPanel2.Size = New Size(1024, 510)
         Guna2CustomGradientPanel2.TabIndex = 244
         ' 
         ' RegisterButton
@@ -195,10 +196,11 @@ Partial Class EmergencyRegistration
         RegisterButton.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         RegisterButton.Font = New Font("Microsoft Sans Serif", 11.999999F)
         RegisterButton.ForeColor = Color.White
-        RegisterButton.Location = New Point(511, 607)
+        RegisterButton.Location = New Point(447, 455)
+        RegisterButton.Margin = New Padding(3, 2, 3, 2)
         RegisterButton.Name = "RegisterButton"
         RegisterButton.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        RegisterButton.Size = New Size(202, 61)
+        RegisterButton.Size = New Size(177, 46)
         RegisterButton.TabIndex = 3
         RegisterButton.Text = "Register"
         ' 
@@ -214,10 +216,11 @@ Partial Class EmergencyRegistration
         DeleteBtn.FillColor = Color.Red
         DeleteBtn.Font = New Font("Microsoft Sans Serif", 9.75F)
         DeleteBtn.ForeColor = Color.White
-        DeleteBtn.Location = New Point(873, 612)
+        DeleteBtn.Location = New Point(764, 459)
+        DeleteBtn.Margin = New Padding(3, 2, 3, 2)
         DeleteBtn.Name = "DeleteBtn"
         DeleteBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        DeleteBtn.Size = New Size(171, 61)
+        DeleteBtn.Size = New Size(150, 46)
         DeleteBtn.TabIndex = 278
         DeleteBtn.Text = "Delete Patient"
         DeleteBtn.Visible = False
@@ -227,9 +230,10 @@ Partial Class EmergencyRegistration
         guna2HtmlLabel4.BackColor = Color.Transparent
         guna2HtmlLabel4.Font = New Font("Tahoma", 26.25F, FontStyle.Bold)
         guna2HtmlLabel4.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel4.Location = New Point(364, 49)
+        guna2HtmlLabel4.Location = New Point(318, 37)
+        guna2HtmlLabel4.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel4.Name = "guna2HtmlLabel4"
-        guna2HtmlLabel4.Size = New Size(483, 55)
+        guna2HtmlLabel4.Size = New Size(384, 44)
         guna2HtmlLabel4.TabIndex = 277
         guna2HtmlLabel4.Text = "In Case of Emergency"
         ' 
@@ -243,11 +247,12 @@ Partial Class EmergencyRegistration
         MinimizeButton.ImageOffset = New Point(0, 0)
         MinimizeButton.ImageRotate = 0F
         MinimizeButton.ImageSize = New Size(20, 30)
-        MinimizeButton.Location = New Point(979, 8)
+        MinimizeButton.Location = New Point(857, 6)
+        MinimizeButton.Margin = New Padding(3, 2, 3, 2)
         MinimizeButton.Name = "MinimizeButton"
         MinimizeButton.PressedState.ImageSize = New Size(20, 30)
         MinimizeButton.ShadowDecoration.CustomizableEdges = CustomizableEdges7
-        MinimizeButton.Size = New Size(49, 35)
+        MinimizeButton.Size = New Size(43, 26)
         MinimizeButton.TabIndex = 276
         ' 
         ' BackButton
@@ -260,12 +265,11 @@ Partial Class EmergencyRegistration
         BackButton.ImageOffset = New Point(0, 0)
         BackButton.ImageRotate = 0F
         BackButton.ImageSize = New Size(40, 45)
-        BackButton.Location = New Point(70, 24)
-        BackButton.Margin = New Padding(3, 4, 3, 4)
+        BackButton.Location = New Point(61, 18)
         BackButton.Name = "BackButton"
         BackButton.PressedState.ImageSize = New Size(64, 64)
         BackButton.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        BackButton.Size = New Size(75, 60)
+        BackButton.Size = New Size(66, 45)
         BackButton.TabIndex = 275
         ' 
         ' guna2HtmlLabel3
@@ -273,9 +277,10 @@ Partial Class EmergencyRegistration
         guna2HtmlLabel3.BackColor = Color.Transparent
         guna2HtmlLabel3.Font = New Font("Impact", 15F)
         guna2HtmlLabel3.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel3.Location = New Point(143, 36)
+        guna2HtmlLabel3.Location = New Point(125, 27)
+        guna2HtmlLabel3.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel3.Name = "guna2HtmlLabel3"
-        guna2HtmlLabel3.Size = New Size(54, 34)
+        guna2HtmlLabel3.Size = New Size(44, 27)
         guna2HtmlLabel3.TabIndex = 274
         guna2HtmlLabel3.Text = "Back"
         ' 
@@ -285,11 +290,10 @@ Partial Class EmergencyRegistration
         guna2PictureBox3.CustomizableEdges = CustomizableEdges9
         guna2PictureBox3.Image = CType(resources.GetObject("guna2PictureBox3.Image"), Image)
         guna2PictureBox3.ImageRotate = 0F
-        guna2PictureBox3.Location = New Point(273, 32)
-        guna2PictureBox3.Margin = New Padding(3, 4, 3, 4)
+        guna2PictureBox3.Location = New Point(239, 24)
         guna2PictureBox3.Name = "guna2PictureBox3"
         guna2PictureBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        guna2PictureBox3.Size = New Size(85, 100)
+        guna2PictureBox3.Size = New Size(74, 75)
         guna2PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
         guna2PictureBox3.TabIndex = 273
         guna2PictureBox3.TabStop = False
@@ -299,9 +303,10 @@ Partial Class EmergencyRegistration
         CityLabel.BackColor = Color.Transparent
         CityLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
         CityLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        CityLabel.Location = New Point(684, 504)
+        CityLabel.Location = New Point(598, 378)
+        CityLabel.Margin = New Padding(3, 2, 3, 2)
         CityLabel.Name = "CityLabel"
-        CityLabel.Size = New Size(29, 21)
+        CityLabel.Size = New Size(23, 15)
         CityLabel.TabIndex = 272
         CityLabel.Text = "City"
         CityLabel.Visible = False
@@ -311,9 +316,10 @@ Partial Class EmergencyRegistration
         BarangayLabel.BackColor = Color.Transparent
         BarangayLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
         BarangayLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        BarangayLabel.Location = New Point(526, 504)
+        BarangayLabel.Location = New Point(460, 378)
+        BarangayLabel.Margin = New Padding(3, 2, 3, 2)
         BarangayLabel.Name = "BarangayLabel"
-        BarangayLabel.Size = New Size(67, 21)
+        BarangayLabel.Size = New Size(52, 15)
         BarangayLabel.TabIndex = 271
         BarangayLabel.Text = "Barangay"
         BarangayLabel.Visible = False
@@ -323,9 +329,10 @@ Partial Class EmergencyRegistration
         StreetLabel.BackColor = Color.Transparent
         StreetLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
         StreetLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        StreetLabel.Location = New Point(377, 504)
+        StreetLabel.Location = New Point(330, 378)
+        StreetLabel.Margin = New Padding(3, 2, 3, 2)
         StreetLabel.Name = "StreetLabel"
-        StreetLabel.Size = New Size(43, 21)
+        StreetLabel.Size = New Size(33, 15)
         StreetLabel.TabIndex = 270
         StreetLabel.Text = "Street"
         StreetLabel.Visible = False
@@ -335,9 +342,10 @@ Partial Class EmergencyRegistration
         ZoneLabel.BackColor = Color.Transparent
         ZoneLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
         ZoneLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        ZoneLabel.Location = New Point(684, 422)
+        ZoneLabel.Location = New Point(598, 316)
+        ZoneLabel.Margin = New Padding(3, 2, 3, 2)
         ZoneLabel.Name = "ZoneLabel"
-        ZoneLabel.Size = New Size(37, 21)
+        ZoneLabel.Size = New Size(30, 15)
         ZoneLabel.TabIndex = 269
         ZoneLabel.Text = "Zone"
         ZoneLabel.Visible = False
@@ -347,9 +355,10 @@ Partial Class EmergencyRegistration
         ZipCodeLabel.BackColor = Color.Transparent
         ZipCodeLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
         ZipCodeLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        ZipCodeLabel.Location = New Point(526, 422)
+        ZipCodeLabel.Location = New Point(460, 316)
+        ZipCodeLabel.Margin = New Padding(3, 2, 3, 2)
         ZipCodeLabel.Name = "ZipCodeLabel"
-        ZipCodeLabel.Size = New Size(64, 21)
+        ZipCodeLabel.Size = New Size(50, 15)
         ZipCodeLabel.TabIndex = 268
         ZipCodeLabel.Text = "Zip Code"
         ZipCodeLabel.Visible = False
@@ -359,9 +368,10 @@ Partial Class EmergencyRegistration
         HouseLabel.BackColor = Color.Transparent
         HouseLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
         HouseLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        HouseLabel.Location = New Point(374, 422)
+        HouseLabel.Location = New Point(327, 316)
+        HouseLabel.Margin = New Padding(3, 2, 3, 2)
         HouseLabel.Name = "HouseLabel"
-        HouseLabel.Size = New Size(73, 21)
+        HouseLabel.Size = New Size(58, 15)
         HouseLabel.TabIndex = 267
         HouseLabel.Text = "House No."
         HouseLabel.Visible = False
@@ -371,9 +381,10 @@ Partial Class EmergencyRegistration
         guna2HtmlLabel6.BackColor = Color.Transparent
         guna2HtmlLabel6.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
         guna2HtmlLabel6.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel6.Location = New Point(550, 381)
+        guna2HtmlLabel6.Location = New Point(481, 286)
+        guna2HtmlLabel6.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel6.Name = "guna2HtmlLabel6"
-        guna2HtmlLabel6.Size = New Size(63, 23)
+        guna2HtmlLabel6.Size = New Size(52, 19)
         guna2HtmlLabel6.TabIndex = 266
         guna2HtmlLabel6.Text = "Address"
         ' 
@@ -392,14 +403,14 @@ Partial Class EmergencyRegistration
         CityTxtbox.Font = New Font("Segoe UI", 9F)
         CityTxtbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         CityTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        CityTxtbox.Location = New Point(675, 525)
-        CityTxtbox.Margin = New Padding(3, 5, 3, 5)
+        CityTxtbox.Location = New Point(591, 394)
+        CityTxtbox.Margin = New Padding(3, 4, 3, 4)
         CityTxtbox.Name = "CityTxtbox"
         CityTxtbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         CityTxtbox.PlaceholderText = "City"
         CityTxtbox.SelectedText = ""
         CityTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        CityTxtbox.Size = New Size(128, 61)
+        CityTxtbox.Size = New Size(112, 46)
         CityTxtbox.TabIndex = 265
         ' 
         ' BarangayTxtbox
@@ -417,14 +428,14 @@ Partial Class EmergencyRegistration
         BarangayTxtbox.Font = New Font("Segoe UI", 9F)
         BarangayTxtbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         BarangayTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        BarangayTxtbox.Location = New Point(520, 525)
-        BarangayTxtbox.Margin = New Padding(3, 5, 3, 5)
+        BarangayTxtbox.Location = New Point(455, 394)
+        BarangayTxtbox.Margin = New Padding(3, 4, 3, 4)
         BarangayTxtbox.Name = "BarangayTxtbox"
         BarangayTxtbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         BarangayTxtbox.PlaceholderText = "Barangay"
         BarangayTxtbox.SelectedText = ""
         BarangayTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges14
-        BarangayTxtbox.Size = New Size(128, 61)
+        BarangayTxtbox.Size = New Size(112, 46)
         BarangayTxtbox.TabIndex = 264
         ' 
         ' guna2HtmlLabel21
@@ -432,9 +443,10 @@ Partial Class EmergencyRegistration
         guna2HtmlLabel21.BackColor = Color.Transparent
         guna2HtmlLabel21.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
         guna2HtmlLabel21.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel21.Location = New Point(616, 357)
+        guna2HtmlLabel21.Location = New Point(539, 268)
+        guna2HtmlLabel21.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel21.Name = "guna2HtmlLabel21"
-        guna2HtmlLabel21.Size = New Size(117, 21)
+        guna2HtmlLabel21.Size = New Size(93, 15)
         guna2HtmlLabel21.TabIndex = 259
         guna2HtmlLabel21.Text = "Type N/A if none"
         ' 
@@ -443,9 +455,10 @@ Partial Class EmergencyRegistration
         guna2HtmlLabel20.BackColor = Color.Transparent
         guna2HtmlLabel20.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
         guna2HtmlLabel20.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel20.Location = New Point(383, 357)
+        guna2HtmlLabel20.Location = New Point(335, 268)
+        guna2HtmlLabel20.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel20.Name = "guna2HtmlLabel20"
-        guna2HtmlLabel20.Size = New Size(117, 21)
+        guna2HtmlLabel20.Size = New Size(93, 15)
         guna2HtmlLabel20.TabIndex = 258
         guna2HtmlLabel20.Text = "Type N/A if none"
         ' 
@@ -464,14 +477,14 @@ Partial Class EmergencyRegistration
         SuffixTxtbox.Font = New Font("Segoe UI", 9F)
         SuffixTxtbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         SuffixTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        SuffixTxtbox.Location = New Point(603, 289)
-        SuffixTxtbox.Margin = New Padding(3, 5, 3, 5)
+        SuffixTxtbox.Location = New Point(528, 217)
+        SuffixTxtbox.Margin = New Padding(3, 4, 3, 4)
         SuffixTxtbox.Name = "SuffixTxtbox"
         SuffixTxtbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         SuffixTxtbox.PlaceholderText = "Suffix"
         SuffixTxtbox.SelectedText = ""
         SuffixTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges16
-        SuffixTxtbox.Size = New Size(202, 61)
+        SuffixTxtbox.Size = New Size(177, 46)
         SuffixTxtbox.TabIndex = 257
         ' 
         ' StreetTxtbox
@@ -489,14 +502,14 @@ Partial Class EmergencyRegistration
         StreetTxtbox.Font = New Font("Segoe UI", 9F)
         StreetTxtbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         StreetTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        StreetTxtbox.Location = New Point(369, 525)
-        StreetTxtbox.Margin = New Padding(3, 5, 3, 5)
+        StreetTxtbox.Location = New Point(323, 394)
+        StreetTxtbox.Margin = New Padding(3, 4, 3, 4)
         StreetTxtbox.Name = "StreetTxtbox"
         StreetTxtbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         StreetTxtbox.PlaceholderText = "Street"
         StreetTxtbox.SelectedText = ""
         StreetTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges18
-        StreetTxtbox.Size = New Size(128, 61)
+        StreetTxtbox.Size = New Size(112, 46)
         StreetTxtbox.TabIndex = 263
         ' 
         ' ZoneTxtbox
@@ -514,14 +527,14 @@ Partial Class EmergencyRegistration
         ZoneTxtbox.Font = New Font("Segoe UI", 9F)
         ZoneTxtbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         ZoneTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        ZoneTxtbox.Location = New Point(675, 444)
-        ZoneTxtbox.Margin = New Padding(3, 5, 3, 5)
+        ZoneTxtbox.Location = New Point(591, 333)
+        ZoneTxtbox.Margin = New Padding(3, 4, 3, 4)
         ZoneTxtbox.Name = "ZoneTxtbox"
         ZoneTxtbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         ZoneTxtbox.PlaceholderText = "Zone"
         ZoneTxtbox.SelectedText = ""
         ZoneTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges20
-        ZoneTxtbox.Size = New Size(128, 61)
+        ZoneTxtbox.Size = New Size(112, 46)
         ZoneTxtbox.TabIndex = 262
         ' 
         ' ZipCodeTxtbox
@@ -539,14 +552,14 @@ Partial Class EmergencyRegistration
         ZipCodeTxtbox.Font = New Font("Segoe UI", 9F)
         ZipCodeTxtbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         ZipCodeTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        ZipCodeTxtbox.Location = New Point(520, 444)
-        ZipCodeTxtbox.Margin = New Padding(3, 5, 3, 5)
+        ZipCodeTxtbox.Location = New Point(455, 333)
+        ZipCodeTxtbox.Margin = New Padding(3, 4, 3, 4)
         ZipCodeTxtbox.Name = "ZipCodeTxtbox"
         ZipCodeTxtbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         ZipCodeTxtbox.PlaceholderText = "Zip Code"
         ZipCodeTxtbox.SelectedText = ""
         ZipCodeTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges22
-        ZipCodeTxtbox.Size = New Size(128, 61)
+        ZipCodeTxtbox.Size = New Size(112, 46)
         ZipCodeTxtbox.TabIndex = 261
         ' 
         ' HouseNoTxtbox
@@ -564,14 +577,14 @@ Partial Class EmergencyRegistration
         HouseNoTxtbox.Font = New Font("Segoe UI", 9F)
         HouseNoTxtbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         HouseNoTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        HouseNoTxtbox.Location = New Point(369, 444)
-        HouseNoTxtbox.Margin = New Padding(3, 5, 3, 5)
+        HouseNoTxtbox.Location = New Point(323, 333)
+        HouseNoTxtbox.Margin = New Padding(3, 4, 3, 4)
         HouseNoTxtbox.Name = "HouseNoTxtbox"
         HouseNoTxtbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         HouseNoTxtbox.PlaceholderText = "House no"
         HouseNoTxtbox.SelectedText = ""
         HouseNoTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges24
-        HouseNoTxtbox.Size = New Size(128, 61)
+        HouseNoTxtbox.Size = New Size(112, 46)
         HouseNoTxtbox.TabIndex = 260
         ' 
         ' guna2HtmlLabel8
@@ -579,9 +592,10 @@ Partial Class EmergencyRegistration
         guna2HtmlLabel8.BackColor = Color.Transparent
         guna2HtmlLabel8.Font = New Font("Segoe UI", 8.25F)
         guna2HtmlLabel8.ForeColor = SystemColors.Control
-        guna2HtmlLabel8.Location = New Point(593, 377)
+        guna2HtmlLabel8.Location = New Point(519, 283)
+        guna2HtmlLabel8.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel8.Name = "guna2HtmlLabel8"
-        guna2HtmlLabel8.Size = New Size(417, 21)
+        guna2HtmlLabel8.Size = New Size(348, 15)
         guna2HtmlLabel8.TabIndex = 256
         guna2HtmlLabel8.Text = "_____________________________________________________________________"
         ' 
@@ -590,9 +604,10 @@ Partial Class EmergencyRegistration
         guna2HtmlLabel11.BackColor = Color.Transparent
         guna2HtmlLabel11.Font = New Font("Segoe UI", 8.25F)
         guna2HtmlLabel11.ForeColor = SystemColors.Control
-        guna2HtmlLabel11.Location = New Point(201, 377)
+        guna2HtmlLabel11.Location = New Point(176, 283)
+        guna2HtmlLabel11.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel11.Name = "guna2HtmlLabel11"
-        guna2HtmlLabel11.Size = New Size(417, 21)
+        guna2HtmlLabel11.Size = New Size(348, 15)
         guna2HtmlLabel11.TabIndex = 255
         guna2HtmlLabel11.Text = "_____________________________________________________________________"
         ' 
@@ -601,10 +616,9 @@ Partial Class EmergencyRegistration
         NameLabel.BackColor = Color.Transparent
         NameLabel.Font = New Font("Tahoma", 15.75F, FontStyle.Bold)
         NameLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        NameLabel.Location = New Point(550, 126)
-        NameLabel.Margin = New Padding(3, 4, 3, 4)
+        NameLabel.Location = New Point(481, 94)
         NameLabel.Name = "NameLabel"
-        NameLabel.Size = New Size(80, 33)
+        NameLabel.Size = New Size(65, 27)
         NameLabel.TabIndex = 254
         NameLabel.Text = "NAME"
         ' 
@@ -613,10 +627,9 @@ Partial Class EmergencyRegistration
         guna2HtmlLabel1.BackColor = Color.Transparent
         guna2HtmlLabel1.Font = New Font("Tahoma", 15.75F, FontStyle.Bold)
         guna2HtmlLabel1.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel1.Location = New Point(495, 126)
-        guna2HtmlLabel1.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel1.Location = New Point(433, 94)
         guna2HtmlLabel1.Name = "guna2HtmlLabel1"
-        guna2HtmlLabel1.Size = New Size(45, 33)
+        guna2HtmlLabel1.Size = New Size(36, 27)
         guna2HtmlLabel1.TabIndex = 253
         guna2HtmlLabel1.Text = "HI!"
         ' 
@@ -625,9 +638,10 @@ Partial Class EmergencyRegistration
         MiddleNameLabel.BackColor = Color.Transparent
         MiddleNameLabel.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
         MiddleNameLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        MiddleNameLabel.Location = New Point(374, 262)
+        MiddleNameLabel.Location = New Point(327, 196)
+        MiddleNameLabel.Margin = New Padding(3, 2, 3, 2)
         MiddleNameLabel.Name = "MiddleNameLabel"
-        MiddleNameLabel.Size = New Size(107, 23)
+        MiddleNameLabel.Size = New Size(86, 19)
         MiddleNameLabel.TabIndex = 251
         MiddleNameLabel.Text = "Middle Name"
         ' 
@@ -636,9 +650,10 @@ Partial Class EmergencyRegistration
         SuffixLabel.BackColor = Color.Transparent
         SuffixLabel.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
         SuffixLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        SuffixLabel.Location = New Point(610, 262)
+        SuffixLabel.Location = New Point(534, 196)
+        SuffixLabel.Margin = New Padding(3, 2, 3, 2)
         SuffixLabel.Name = "SuffixLabel"
-        SuffixLabel.Size = New Size(48, 23)
+        SuffixLabel.Size = New Size(39, 19)
         SuffixLabel.TabIndex = 250
         SuffixLabel.Text = "Suffix"
         ' 
@@ -647,9 +662,10 @@ Partial Class EmergencyRegistration
         LastNameLabel.BackColor = Color.Transparent
         LastNameLabel.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
         LastNameLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        LastNameLabel.Location = New Point(609, 164)
+        LastNameLabel.Location = New Point(533, 123)
+        LastNameLabel.Margin = New Padding(3, 2, 3, 2)
         LastNameLabel.Name = "LastNameLabel"
-        LastNameLabel.Size = New Size(83, 23)
+        LastNameLabel.Size = New Size(68, 19)
         LastNameLabel.TabIndex = 249
         LastNameLabel.Text = "Last Name"
         ' 
@@ -658,9 +674,10 @@ Partial Class EmergencyRegistration
         FirstNameLabel.BackColor = Color.Transparent
         FirstNameLabel.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
         FirstNameLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        FirstNameLabel.Location = New Point(375, 164)
+        FirstNameLabel.Location = New Point(328, 123)
+        FirstNameLabel.Margin = New Padding(3, 2, 3, 2)
         FirstNameLabel.Name = "FirstNameLabel"
-        FirstNameLabel.Size = New Size(85, 23)
+        FirstNameLabel.Size = New Size(70, 19)
         FirstNameLabel.TabIndex = 248
         FirstNameLabel.Text = "First Name"
         FirstNameLabel.Visible = False
@@ -680,14 +697,14 @@ Partial Class EmergencyRegistration
         MiddleNameTxtbox.Font = New Font("Segoe UI", 9F)
         MiddleNameTxtbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         MiddleNameTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        MiddleNameTxtbox.Location = New Point(369, 289)
-        MiddleNameTxtbox.Margin = New Padding(3, 5, 3, 5)
+        MiddleNameTxtbox.Location = New Point(323, 217)
+        MiddleNameTxtbox.Margin = New Padding(3, 4, 3, 4)
         MiddleNameTxtbox.Name = "MiddleNameTxtbox"
         MiddleNameTxtbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         MiddleNameTxtbox.PlaceholderText = "Middle Name"
         MiddleNameTxtbox.SelectedText = ""
         MiddleNameTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges26
-        MiddleNameTxtbox.Size = New Size(202, 61)
+        MiddleNameTxtbox.Size = New Size(177, 46)
         MiddleNameTxtbox.TabIndex = 247
         ' 
         ' ExitButton
@@ -701,10 +718,11 @@ Partial Class EmergencyRegistration
         ExitButton.FillColor = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         ExitButton.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold)
         ExitButton.ForeColor = Color.White
-        ExitButton.Location = New Point(1028, 8)
+        ExitButton.Location = New Point(900, 6)
+        ExitButton.Margin = New Padding(3, 2, 3, 2)
         ExitButton.Name = "ExitButton"
         ExitButton.ShadowDecoration.CustomizableEdges = CustomizableEdges28
-        ExitButton.Size = New Size(49, 35)
+        ExitButton.Size = New Size(43, 26)
         ExitButton.TabIndex = 246
         ExitButton.Text = "X"
         ' 
@@ -723,14 +741,14 @@ Partial Class EmergencyRegistration
         FirstnameTxtbox.Font = New Font("Segoe UI", 9F)
         FirstnameTxtbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         FirstnameTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        FirstnameTxtbox.Location = New Point(369, 190)
-        FirstnameTxtbox.Margin = New Padding(3, 5, 3, 5)
+        FirstnameTxtbox.Location = New Point(323, 142)
+        FirstnameTxtbox.Margin = New Padding(3, 4, 3, 4)
         FirstnameTxtbox.Name = "FirstnameTxtbox"
         FirstnameTxtbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         FirstnameTxtbox.PlaceholderText = "First Name"
         FirstnameTxtbox.SelectedText = ""
         FirstnameTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges30
-        FirstnameTxtbox.Size = New Size(202, 61)
+        FirstnameTxtbox.Size = New Size(177, 46)
         FirstnameTxtbox.TabIndex = 244
         ' 
         ' LastNameTxtbox
@@ -748,25 +766,26 @@ Partial Class EmergencyRegistration
         LastNameTxtbox.Font = New Font("Segoe UI", 9F)
         LastNameTxtbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         LastNameTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        LastNameTxtbox.Location = New Point(603, 190)
-        LastNameTxtbox.Margin = New Padding(3, 5, 3, 5)
+        LastNameTxtbox.Location = New Point(528, 142)
+        LastNameTxtbox.Margin = New Padding(3, 4, 3, 4)
         LastNameTxtbox.Name = "LastNameTxtbox"
         LastNameTxtbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         LastNameTxtbox.PlaceholderText = "Last Name"
         LastNameTxtbox.SelectedText = ""
         LastNameTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges32
-        LastNameTxtbox.Size = New Size(202, 61)
+        LastNameTxtbox.Size = New Size(177, 46)
         LastNameTxtbox.TabIndex = 245
         ' 
         ' EmergencyRegistration
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1153, 679)
+        ClientSize = New Size(1009, 509)
         Controls.Add(guna2HtmlLabel19)
         Controls.Add(guna2PictureBox1)
         Controls.Add(Guna2CustomGradientPanel2)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(3, 2, 3, 2)
         Name = "EmergencyRegistration"
         StartPosition = FormStartPosition.CenterScreen
         Text = "EmergencyRegistration"

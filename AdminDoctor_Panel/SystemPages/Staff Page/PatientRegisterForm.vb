@@ -11,6 +11,7 @@ Public Class PatientRegisterForm
     Private passShow As Boolean = True
     Private _placeHolderHandler As PlaceHolderHandler
     Public Property ReloadResults As Action
+    Public Property DeletePatientAndReload As Action
     Private houseNo As Integer
     Private zipCode As Integer
     Private zone As Integer
@@ -229,8 +230,8 @@ Public Class PatientRegisterForm
 
         Me.Cursor = Cursors.Default
         Dim patientInfoForm As New PatientBasicInformationForm(ProperModel, mode, panelMode)
-        patientInfoForm.ReloadResults += ReloadResults
-        patientInfoForm.DeletePatientAndReload += DeletePatientAndReload
+        patientInfoForm.ReloadResults = ReloadResults
+        patientInfoForm.DeletePatientAndReload = DeletePatientAndReload
         patientInfoForm.TopMost = True
         patientInfoForm.Show()
         Me.Hide()
@@ -259,7 +260,7 @@ Public Class PatientRegisterForm
     Private Sub PasswordTextBox_IconRightClick(sender As Object, e As EventArgs) Handles PasswordTextBox.IconRightClick
         If passShow Then
             PasswordTextBox.PasswordChar = ChrW(0)
-            PasswordTextBox.IconRight = AdminDoctor_Panel.Resources.hide_password_logo
+            PasswordTextBox.IconRight = AdminDoctor_Panel.Properties.Resources.hide_password_logo
             passShow = False
         Else
             PasswordTextBox.PasswordChar = "*"
