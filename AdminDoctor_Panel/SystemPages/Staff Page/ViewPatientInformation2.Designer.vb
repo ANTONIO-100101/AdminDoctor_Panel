@@ -24,6 +24,11 @@ Partial Class ViewPatientInformation2
     Private Sub InitializeComponent()
         Dim CustomizableEdges99 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges100 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ViewPatientInformation2))
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges97 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges98 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -118,12 +123,12 @@ Partial Class ViewPatientInformation2
         Dim CustomizableEdges92 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges95 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges96 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ViewPatientInformation2))
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
+        Guna2HtmlLabel25 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Guna2HtmlLabel13 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        viewinfo_PrintBtn = New Guna.UI2.WinForms.Guna2ImageButton()
+        CreatePDFButton = New Guna.UI2.WinForms.Guna2ImageButton()
+        ExitButton = New Guna.UI2.WinForms.Guna2Button()
         PrintablePanel = New Guna.UI2.WinForms.Guna2Panel()
         guna2Panel25 = New Guna.UI2.WinForms.Guna2Panel()
         appointmentdateTextBox = New Guna.UI2.WinForms.Guna2TextBox()
@@ -194,11 +199,6 @@ Partial Class ViewPatientInformation2
         guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         guna2Panel14 = New Guna.UI2.WinForms.Guna2Panel()
         guna2HtmlLabel14 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        ExitButton = New Guna.UI2.WinForms.Guna2Button()
-        CreatePDFButton = New Guna.UI2.WinForms.Guna2ImageButton()
-        viewinfo_PrintBtn = New Guna.UI2.WinForms.Guna2ImageButton()
-        Guna2HtmlLabel13 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Guna2HtmlLabel25 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Guna2CustomGradientPanel1.SuspendLayout()
         PrintablePanel.SuspendLayout()
         guna2Panel25.SuspendLayout()
@@ -240,11 +240,86 @@ Partial Class ViewPatientInformation2
         Guna2CustomGradientPanel1.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel1.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel1.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
-        Guna2CustomGradientPanel1.Location = New Point(0, -4)
+        Guna2CustomGradientPanel1.Location = New Point(0, -3)
+        Guna2CustomGradientPanel1.Margin = New Padding(3, 2, 3, 2)
         Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
         Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges100
-        Guna2CustomGradientPanel1.Size = New Size(997, 1106)
+        Guna2CustomGradientPanel1.Size = New Size(925, 891)
         Guna2CustomGradientPanel1.TabIndex = 0
+        ' 
+        ' Guna2HtmlLabel25
+        ' 
+        Guna2HtmlLabel25.BackColor = Color.Transparent
+        Guna2HtmlLabel25.Font = New Font("Nirmala UI", 10.75F, FontStyle.Bold)
+        Guna2HtmlLabel25.ForeColor = Color.White
+        Guna2HtmlLabel25.Location = New Point(838, 269)
+        Guna2HtmlLabel25.Name = "Guna2HtmlLabel25"
+        Guna2HtmlLabel25.Size = New Size(64, 21)
+        Guna2HtmlLabel25.TabIndex = 167
+        Guna2HtmlLabel25.Text = "Generate"
+        ' 
+        ' Guna2HtmlLabel13
+        ' 
+        Guna2HtmlLabel13.BackColor = Color.Transparent
+        Guna2HtmlLabel13.Font = New Font("Nirmala UI", 10.75F, FontStyle.Bold)
+        Guna2HtmlLabel13.ForeColor = Color.White
+        Guna2HtmlLabel13.Location = New Point(851, 157)
+        Guna2HtmlLabel13.Name = "Guna2HtmlLabel13"
+        Guna2HtmlLabel13.Size = New Size(35, 21)
+        Guna2HtmlLabel13.TabIndex = 1
+        Guna2HtmlLabel13.Text = "Print"
+        ' 
+        ' viewinfo_PrintBtn
+        ' 
+        viewinfo_PrintBtn.BackColor = Color.Transparent
+        viewinfo_PrintBtn.CheckedState.ImageSize = New Size(64, 64)
+        viewinfo_PrintBtn.HoverState.ImageSize = New Size(64, 64)
+        viewinfo_PrintBtn.Image = CType(resources.GetObject("viewinfo_PrintBtn.Image"), Image)
+        viewinfo_PrintBtn.ImageOffset = New Point(0, 0)
+        viewinfo_PrintBtn.ImageRotate = 0F
+        viewinfo_PrintBtn.Location = New Point(834, 101)
+        viewinfo_PrintBtn.Margin = New Padding(3, 2, 3, 2)
+        viewinfo_PrintBtn.Name = "viewinfo_PrintBtn"
+        viewinfo_PrintBtn.PressedState.ImageSize = New Size(64, 64)
+        viewinfo_PrintBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges1
+        viewinfo_PrintBtn.Size = New Size(70, 51)
+        viewinfo_PrintBtn.TabIndex = 166
+        ' 
+        ' CreatePDFButton
+        ' 
+        CreatePDFButton.BackColor = Color.Transparent
+        CreatePDFButton.CheckedState.ImageSize = New Size(64, 64)
+        CreatePDFButton.HoverState.ImageSize = New Size(64, 64)
+        CreatePDFButton.Image = CType(resources.GetObject("CreatePDFButton.Image"), Image)
+        CreatePDFButton.ImageOffset = New Point(0, 0)
+        CreatePDFButton.ImageRotate = 0F
+        CreatePDFButton.Location = New Point(834, 209)
+        CreatePDFButton.Margin = New Padding(3, 2, 3, 2)
+        CreatePDFButton.Name = "CreatePDFButton"
+        CreatePDFButton.PressedState.ImageSize = New Size(64, 64)
+        CreatePDFButton.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        CreatePDFButton.Size = New Size(70, 51)
+        CreatePDFButton.TabIndex = 165
+        ' 
+        ' ExitButton
+        ' 
+        ExitButton.BackColor = Color.Red
+        ExitButton.Cursor = Cursors.Hand
+        ExitButton.CustomizableEdges = CustomizableEdges3
+        ExitButton.DisabledState.BorderColor = Color.DarkGray
+        ExitButton.DisabledState.CustomBorderColor = Color.DarkGray
+        ExitButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        ExitButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        ExitButton.FillColor = Color.Transparent
+        ExitButton.Font = New Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold)
+        ExitButton.ForeColor = SystemColors.Window
+        ExitButton.Location = New Point(882, 2)
+        ExitButton.Margin = New Padding(3, 2, 3, 2)
+        ExitButton.Name = "ExitButton"
+        ExitButton.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        ExitButton.Size = New Size(43, 26)
+        ExitButton.TabIndex = 164
+        ExitButton.Text = "X"
         ' 
         ' PrintablePanel
         ' 
@@ -276,11 +351,10 @@ Partial Class ViewPatientInformation2
         PrintablePanel.Controls.Add(guna2Panel14)
         PrintablePanel.CustomizableEdges = CustomizableEdges97
         PrintablePanel.FillColor = Color.White
-        PrintablePanel.Location = New Point(95, 17)
-        PrintablePanel.Margin = New Padding(3, 4, 3, 4)
+        PrintablePanel.Location = New Point(117, 53)
         PrintablePanel.Name = "PrintablePanel"
         PrintablePanel.ShadowDecoration.CustomizableEdges = CustomizableEdges98
-        PrintablePanel.Size = New Size(793, 1085)
+        PrintablePanel.Size = New Size(694, 814)
         PrintablePanel.TabIndex = 7
         ' 
         ' guna2Panel25
@@ -291,11 +365,10 @@ Partial Class ViewPatientInformation2
         guna2Panel25.Controls.Add(appointmentdateTextBox)
         guna2Panel25.Controls.Add(guna2HtmlLabel24)
         guna2Panel25.CustomizableEdges = CustomizableEdges7
-        guna2Panel25.Location = New Point(286, 685)
-        guna2Panel25.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel25.Location = New Point(250, 514)
         guna2Panel25.Name = "guna2Panel25"
         guna2Panel25.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        guna2Panel25.Size = New Size(226, 97)
+        guna2Panel25.Size = New Size(198, 73)
         guna2Panel25.TabIndex = 37
         ' 
         ' appointmentdateTextBox
@@ -313,25 +386,24 @@ Partial Class ViewPatientInformation2
         appointmentdateTextBox.Font = New Font("Segoe UI", 9F)
         appointmentdateTextBox.ForeColor = Color.Black
         appointmentdateTextBox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        appointmentdateTextBox.Location = New Point(11, 29)
-        appointmentdateTextBox.Margin = New Padding(3, 5, 3, 5)
+        appointmentdateTextBox.Location = New Point(10, 22)
+        appointmentdateTextBox.Margin = New Padding(3, 4, 3, 4)
         appointmentdateTextBox.Name = "appointmentdateTextBox"
         appointmentdateTextBox.PlaceholderForeColor = Color.Black
         appointmentdateTextBox.PlaceholderText = ""
         appointmentdateTextBox.ReadOnly = True
         appointmentdateTextBox.SelectedText = ""
         appointmentdateTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        appointmentdateTextBox.Size = New Size(202, 48)
+        appointmentdateTextBox.Size = New Size(177, 36)
         appointmentdateTextBox.TabIndex = 0
         ' 
         ' guna2HtmlLabel24
         ' 
         guna2HtmlLabel24.BackColor = Color.Transparent
         guna2HtmlLabel24.Font = New Font("Nirmala UI", 9F, FontStyle.Bold)
-        guna2HtmlLabel24.Location = New Point(14, 7)
-        guna2HtmlLabel24.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel24.Location = New Point(12, 5)
         guna2HtmlLabel24.Name = "guna2HtmlLabel24"
-        guna2HtmlLabel24.Size = New Size(134, 22)
+        guna2HtmlLabel24.Size = New Size(107, 17)
         guna2HtmlLabel24.TabIndex = 2
         guna2HtmlLabel24.Text = "Appointment Date"
         ' 
@@ -343,11 +415,10 @@ Partial Class ViewPatientInformation2
         guna2Panel24.Controls.Add(appointmenttimeTextBox)
         guna2Panel24.Controls.Add(guna2HtmlLabel23)
         guna2Panel24.CustomizableEdges = CustomizableEdges11
-        guna2Panel24.Location = New Point(59, 685)
-        guna2Panel24.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel24.Location = New Point(52, 514)
         guna2Panel24.Name = "guna2Panel24"
         guna2Panel24.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        guna2Panel24.Size = New Size(226, 97)
+        guna2Panel24.Size = New Size(198, 73)
         guna2Panel24.TabIndex = 36
         ' 
         ' appointmenttimeTextBox
@@ -365,25 +436,24 @@ Partial Class ViewPatientInformation2
         appointmenttimeTextBox.Font = New Font("Segoe UI", 9F)
         appointmenttimeTextBox.ForeColor = Color.Black
         appointmenttimeTextBox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        appointmenttimeTextBox.Location = New Point(11, 29)
-        appointmenttimeTextBox.Margin = New Padding(3, 5, 3, 5)
+        appointmenttimeTextBox.Location = New Point(10, 22)
+        appointmenttimeTextBox.Margin = New Padding(3, 4, 3, 4)
         appointmenttimeTextBox.Name = "appointmenttimeTextBox"
         appointmenttimeTextBox.PlaceholderForeColor = Color.Black
         appointmenttimeTextBox.PlaceholderText = ""
         appointmenttimeTextBox.ReadOnly = True
         appointmenttimeTextBox.SelectedText = ""
         appointmenttimeTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        appointmenttimeTextBox.Size = New Size(202, 48)
+        appointmenttimeTextBox.Size = New Size(177, 36)
         appointmenttimeTextBox.TabIndex = 0
         ' 
         ' guna2HtmlLabel23
         ' 
         guna2HtmlLabel23.BackColor = Color.Transparent
         guna2HtmlLabel23.Font = New Font("Nirmala UI", 9F, FontStyle.Bold)
-        guna2HtmlLabel23.Location = New Point(14, 7)
-        guna2HtmlLabel23.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel23.Location = New Point(12, 5)
         guna2HtmlLabel23.Name = "guna2HtmlLabel23"
-        guna2HtmlLabel23.Size = New Size(136, 22)
+        guna2HtmlLabel23.Size = New Size(108, 17)
         guna2HtmlLabel23.TabIndex = 2
         guna2HtmlLabel23.Text = "Appointment Time"
         ' 
@@ -395,11 +465,10 @@ Partial Class ViewPatientInformation2
         guna2Panel19.Controls.Add(viewinfo_prescription)
         guna2Panel19.Controls.Add(guna2HtmlLabel19)
         guna2Panel19.CustomizableEdges = CustomizableEdges15
-        guna2Panel19.Location = New Point(59, 929)
-        guna2Panel19.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel19.Location = New Point(52, 697)
         guna2Panel19.Name = "guna2Panel19"
         guna2Panel19.ShadowDecoration.CustomizableEdges = CustomizableEdges16
-        guna2Panel19.Size = New Size(453, 145)
+        guna2Panel19.Size = New Size(396, 109)
         guna2Panel19.TabIndex = 29
         ' 
         ' viewinfo_prescription
@@ -417,8 +486,8 @@ Partial Class ViewPatientInformation2
         viewinfo_prescription.Font = New Font("Segoe UI", 9F)
         viewinfo_prescription.ForeColor = Color.Black
         viewinfo_prescription.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        viewinfo_prescription.Location = New Point(13, 37)
-        viewinfo_prescription.Margin = New Padding(3, 5, 3, 5)
+        viewinfo_prescription.Location = New Point(11, 28)
+        viewinfo_prescription.Margin = New Padding(3, 4, 3, 4)
         viewinfo_prescription.Multiline = True
         viewinfo_prescription.Name = "viewinfo_prescription"
         viewinfo_prescription.PlaceholderForeColor = Color.Black
@@ -426,17 +495,16 @@ Partial Class ViewPatientInformation2
         viewinfo_prescription.ReadOnly = True
         viewinfo_prescription.SelectedText = ""
         viewinfo_prescription.ShadowDecoration.CustomizableEdges = CustomizableEdges14
-        viewinfo_prescription.Size = New Size(427, 100)
+        viewinfo_prescription.Size = New Size(374, 75)
         viewinfo_prescription.TabIndex = 4
         ' 
         ' guna2HtmlLabel19
         ' 
         guna2HtmlLabel19.BackColor = Color.Transparent
         guna2HtmlLabel19.Font = New Font("Nirmala UI", 9F, FontStyle.Bold)
-        guna2HtmlLabel19.Location = New Point(14, 7)
-        guna2HtmlLabel19.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel19.Location = New Point(12, 5)
         guna2HtmlLabel19.Name = "guna2HtmlLabel19"
-        guna2HtmlLabel19.Size = New Size(87, 22)
+        guna2HtmlLabel19.Size = New Size(70, 17)
         guna2HtmlLabel19.TabIndex = 2
         guna2HtmlLabel19.Text = "Prescription"
         ' 
@@ -448,11 +516,10 @@ Partial Class ViewPatientInformation2
         guna2Panel18.Controls.Add(viewinfo_diagnosis)
         guna2Panel18.Controls.Add(guna2HtmlLabel18)
         guna2Panel18.CustomizableEdges = CustomizableEdges19
-        guna2Panel18.Location = New Point(59, 784)
-        guna2Panel18.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel18.Location = New Point(52, 588)
         guna2Panel18.Name = "guna2Panel18"
         guna2Panel18.ShadowDecoration.CustomizableEdges = CustomizableEdges20
-        guna2Panel18.Size = New Size(453, 145)
+        guna2Panel18.Size = New Size(396, 109)
         guna2Panel18.TabIndex = 28
         ' 
         ' viewinfo_diagnosis
@@ -470,8 +537,8 @@ Partial Class ViewPatientInformation2
         viewinfo_diagnosis.Font = New Font("Segoe UI", 9F)
         viewinfo_diagnosis.ForeColor = Color.Black
         viewinfo_diagnosis.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        viewinfo_diagnosis.Location = New Point(11, 35)
-        viewinfo_diagnosis.Margin = New Padding(3, 5, 3, 5)
+        viewinfo_diagnosis.Location = New Point(10, 26)
+        viewinfo_diagnosis.Margin = New Padding(3, 4, 3, 4)
         viewinfo_diagnosis.Multiline = True
         viewinfo_diagnosis.Name = "viewinfo_diagnosis"
         viewinfo_diagnosis.PlaceholderForeColor = Color.Black
@@ -479,17 +546,16 @@ Partial Class ViewPatientInformation2
         viewinfo_diagnosis.ReadOnly = True
         viewinfo_diagnosis.SelectedText = ""
         viewinfo_diagnosis.ShadowDecoration.CustomizableEdges = CustomizableEdges18
-        viewinfo_diagnosis.Size = New Size(429, 100)
+        viewinfo_diagnosis.Size = New Size(375, 75)
         viewinfo_diagnosis.TabIndex = 3
         ' 
         ' guna2HtmlLabel18
         ' 
         guna2HtmlLabel18.BackColor = Color.Transparent
         guna2HtmlLabel18.Font = New Font("Nirmala UI", 9F, FontStyle.Bold)
-        guna2HtmlLabel18.Location = New Point(14, 7)
-        guna2HtmlLabel18.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel18.Location = New Point(12, 5)
         guna2HtmlLabel18.Name = "guna2HtmlLabel18"
-        guna2HtmlLabel18.Size = New Size(71, 22)
+        guna2HtmlLabel18.Size = New Size(55, 17)
         guna2HtmlLabel18.TabIndex = 2
         guna2HtmlLabel18.Text = "Diagnosis"
         ' 
@@ -501,11 +567,10 @@ Partial Class ViewPatientInformation2
         guna2Panel23.Controls.Add(consultationTextBox)
         guna2Panel23.Controls.Add(guna2HtmlLabel22)
         guna2Panel23.CustomizableEdges = CustomizableEdges23
-        guna2Panel23.Location = New Point(286, 588)
-        guna2Panel23.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel23.Location = New Point(250, 441)
         guna2Panel23.Name = "guna2Panel23"
         guna2Panel23.ShadowDecoration.CustomizableEdges = CustomizableEdges24
-        guna2Panel23.Size = New Size(226, 97)
+        guna2Panel23.Size = New Size(198, 73)
         guna2Panel23.TabIndex = 35
         ' 
         ' consultationTextBox
@@ -523,25 +588,24 @@ Partial Class ViewPatientInformation2
         consultationTextBox.Font = New Font("Segoe UI", 9F)
         consultationTextBox.ForeColor = Color.Black
         consultationTextBox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        consultationTextBox.Location = New Point(11, 29)
-        consultationTextBox.Margin = New Padding(3, 5, 3, 5)
+        consultationTextBox.Location = New Point(10, 22)
+        consultationTextBox.Margin = New Padding(3, 4, 3, 4)
         consultationTextBox.Name = "consultationTextBox"
         consultationTextBox.PlaceholderForeColor = Color.Black
         consultationTextBox.PlaceholderText = ""
         consultationTextBox.ReadOnly = True
         consultationTextBox.SelectedText = ""
         consultationTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges22
-        consultationTextBox.Size = New Size(202, 48)
+        consultationTextBox.Size = New Size(177, 36)
         consultationTextBox.TabIndex = 0
         ' 
         ' guna2HtmlLabel22
         ' 
         guna2HtmlLabel22.BackColor = Color.Transparent
         guna2HtmlLabel22.Font = New Font("Nirmala UI", 9F, FontStyle.Bold)
-        guna2HtmlLabel22.Location = New Point(14, 7)
-        guna2HtmlLabel22.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel22.Location = New Point(12, 5)
         guna2HtmlLabel22.Name = "guna2HtmlLabel22"
-        guna2HtmlLabel22.Size = New Size(120, 22)
+        guna2HtmlLabel22.Size = New Size(95, 17)
         guna2HtmlLabel22.TabIndex = 2
         guna2HtmlLabel22.Text = "Consultation Fee"
         ' 
@@ -553,11 +617,10 @@ Partial Class ViewPatientInformation2
         guna2Panel22.Controls.Add(specializationTextBox)
         guna2Panel22.Controls.Add(guna2HtmlLabel17)
         guna2Panel22.CustomizableEdges = CustomizableEdges27
-        guna2Panel22.Location = New Point(59, 588)
-        guna2Panel22.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel22.Location = New Point(52, 441)
         guna2Panel22.Name = "guna2Panel22"
         guna2Panel22.ShadowDecoration.CustomizableEdges = CustomizableEdges28
-        guna2Panel22.Size = New Size(226, 97)
+        guna2Panel22.Size = New Size(198, 73)
         guna2Panel22.TabIndex = 34
         ' 
         ' specializationTextBox
@@ -575,25 +638,24 @@ Partial Class ViewPatientInformation2
         specializationTextBox.Font = New Font("Segoe UI", 9F)
         specializationTextBox.ForeColor = Color.Black
         specializationTextBox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        specializationTextBox.Location = New Point(11, 29)
-        specializationTextBox.Margin = New Padding(3, 5, 3, 5)
+        specializationTextBox.Location = New Point(10, 22)
+        specializationTextBox.Margin = New Padding(3, 4, 3, 4)
         specializationTextBox.Name = "specializationTextBox"
         specializationTextBox.PlaceholderForeColor = Color.Black
         specializationTextBox.PlaceholderText = ""
         specializationTextBox.ReadOnly = True
         specializationTextBox.SelectedText = ""
         specializationTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges26
-        specializationTextBox.Size = New Size(202, 48)
+        specializationTextBox.Size = New Size(177, 36)
         specializationTextBox.TabIndex = 0
         ' 
         ' guna2HtmlLabel17
         ' 
         guna2HtmlLabel17.BackColor = Color.Transparent
         guna2HtmlLabel17.Font = New Font("Nirmala UI", 9F, FontStyle.Bold)
-        guna2HtmlLabel17.Location = New Point(14, 7)
-        guna2HtmlLabel17.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel17.Location = New Point(12, 5)
         guna2HtmlLabel17.Name = "guna2HtmlLabel17"
-        guna2HtmlLabel17.Size = New Size(98, 22)
+        guna2HtmlLabel17.Size = New Size(79, 17)
         guna2HtmlLabel17.TabIndex = 2
         guna2HtmlLabel17.Text = "Specialization"
         ' 
@@ -605,11 +667,10 @@ Partial Class ViewPatientInformation2
         guna2Panel21.Controls.Add(viewinfo_AdditionalNotes)
         guna2Panel21.Controls.Add(guna2HtmlLabel21)
         guna2Panel21.CustomizableEdges = CustomizableEdges31
-        guna2Panel21.Location = New Point(512, 677)
-        guna2Panel21.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel21.Location = New Point(448, 508)
         guna2Panel21.Name = "guna2Panel21"
         guna2Panel21.ShadowDecoration.CustomizableEdges = CustomizableEdges32
-        guna2Panel21.Size = New Size(226, 217)
+        guna2Panel21.Size = New Size(198, 163)
         guna2Panel21.TabIndex = 31
         ' 
         ' viewinfo_AdditionalNotes
@@ -627,8 +688,8 @@ Partial Class ViewPatientInformation2
         viewinfo_AdditionalNotes.Font = New Font("Segoe UI", 9F)
         viewinfo_AdditionalNotes.ForeColor = Color.Black
         viewinfo_AdditionalNotes.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        viewinfo_AdditionalNotes.Location = New Point(11, 39)
-        viewinfo_AdditionalNotes.Margin = New Padding(3, 5, 3, 5)
+        viewinfo_AdditionalNotes.Location = New Point(10, 29)
+        viewinfo_AdditionalNotes.Margin = New Padding(3, 4, 3, 4)
         viewinfo_AdditionalNotes.Multiline = True
         viewinfo_AdditionalNotes.Name = "viewinfo_AdditionalNotes"
         viewinfo_AdditionalNotes.PlaceholderForeColor = Color.Black
@@ -636,17 +697,16 @@ Partial Class ViewPatientInformation2
         viewinfo_AdditionalNotes.ReadOnly = True
         viewinfo_AdditionalNotes.SelectedText = ""
         viewinfo_AdditionalNotes.ShadowDecoration.CustomizableEdges = CustomizableEdges30
-        viewinfo_AdditionalNotes.Size = New Size(200, 155)
+        viewinfo_AdditionalNotes.Size = New Size(175, 116)
         viewinfo_AdditionalNotes.TabIndex = 7
         ' 
         ' guna2HtmlLabel21
         ' 
         guna2HtmlLabel21.BackColor = Color.Transparent
         guna2HtmlLabel21.Font = New Font("Nirmala UI", 9F, FontStyle.Bold)
-        guna2HtmlLabel21.Location = New Point(14, 8)
-        guna2HtmlLabel21.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel21.Location = New Point(12, 6)
         guna2HtmlLabel21.Name = "guna2HtmlLabel21"
-        guna2HtmlLabel21.Size = New Size(122, 22)
+        guna2HtmlLabel21.Size = New Size(95, 17)
         guna2HtmlLabel21.TabIndex = 2
         guna2HtmlLabel21.Text = "Additional Notes"
         ' 
@@ -658,11 +718,10 @@ Partial Class ViewPatientInformation2
         guna2Panel20.Controls.Add(viewinfo_DoctorOrder)
         guna2Panel20.Controls.Add(guna2HtmlLabel20)
         guna2Panel20.CustomizableEdges = CustomizableEdges35
-        guna2Panel20.Location = New Point(512, 491)
-        guna2Panel20.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel20.Location = New Point(448, 368)
         guna2Panel20.Name = "guna2Panel20"
         guna2Panel20.ShadowDecoration.CustomizableEdges = CustomizableEdges36
-        guna2Panel20.Size = New Size(226, 187)
+        guna2Panel20.Size = New Size(198, 140)
         guna2Panel20.TabIndex = 30
         ' 
         ' viewinfo_DoctorOrder
@@ -680,8 +739,8 @@ Partial Class ViewPatientInformation2
         viewinfo_DoctorOrder.Font = New Font("Segoe UI", 9F)
         viewinfo_DoctorOrder.ForeColor = Color.Black
         viewinfo_DoctorOrder.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        viewinfo_DoctorOrder.Location = New Point(11, 33)
-        viewinfo_DoctorOrder.Margin = New Padding(3, 5, 3, 5)
+        viewinfo_DoctorOrder.Location = New Point(10, 25)
+        viewinfo_DoctorOrder.Margin = New Padding(3, 4, 3, 4)
         viewinfo_DoctorOrder.Multiline = True
         viewinfo_DoctorOrder.Name = "viewinfo_DoctorOrder"
         viewinfo_DoctorOrder.PlaceholderForeColor = Color.Black
@@ -689,17 +748,16 @@ Partial Class ViewPatientInformation2
         viewinfo_DoctorOrder.ReadOnly = True
         viewinfo_DoctorOrder.SelectedText = ""
         viewinfo_DoctorOrder.ShadowDecoration.CustomizableEdges = CustomizableEdges34
-        viewinfo_DoctorOrder.Size = New Size(200, 141)
+        viewinfo_DoctorOrder.Size = New Size(175, 106)
         viewinfo_DoctorOrder.TabIndex = 4
         ' 
         ' guna2HtmlLabel20
         ' 
         guna2HtmlLabel20.BackColor = Color.Transparent
         guna2HtmlLabel20.Font = New Font("Nirmala UI", 9F, FontStyle.Bold)
-        guna2HtmlLabel20.Location = New Point(14, 7)
-        guna2HtmlLabel20.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel20.Location = New Point(12, 5)
         guna2HtmlLabel20.Name = "guna2HtmlLabel20"
-        guna2HtmlLabel20.Size = New Size(106, 22)
+        guna2HtmlLabel20.Size = New Size(87, 17)
         guna2HtmlLabel20.TabIndex = 2
         guna2HtmlLabel20.Text = "Doctor's Order"
         ' 
@@ -710,11 +768,10 @@ Partial Class ViewPatientInformation2
         guna2Panel17.BorderThickness = 1
         guna2Panel17.Controls.Add(diagnosis_Lname)
         guna2Panel17.CustomizableEdges = CustomizableEdges39
-        guna2Panel17.Location = New Point(286, 491)
-        guna2Panel17.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel17.Location = New Point(250, 368)
         guna2Panel17.Name = "guna2Panel17"
         guna2Panel17.ShadowDecoration.CustomizableEdges = CustomizableEdges40
-        guna2Panel17.Size = New Size(226, 97)
+        guna2Panel17.Size = New Size(198, 73)
         guna2Panel17.TabIndex = 27
         ' 
         ' diagnosis_Lname
@@ -732,15 +789,15 @@ Partial Class ViewPatientInformation2
         diagnosis_Lname.Font = New Font("Segoe UI", 9F)
         diagnosis_Lname.ForeColor = Color.Black
         diagnosis_Lname.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        diagnosis_Lname.Location = New Point(11, 29)
-        diagnosis_Lname.Margin = New Padding(3, 5, 3, 5)
+        diagnosis_Lname.Location = New Point(10, 22)
+        diagnosis_Lname.Margin = New Padding(3, 4, 3, 4)
         diagnosis_Lname.Name = "diagnosis_Lname"
         diagnosis_Lname.PlaceholderForeColor = Color.Black
         diagnosis_Lname.PlaceholderText = ""
         diagnosis_Lname.ReadOnly = True
         diagnosis_Lname.SelectedText = ""
         diagnosis_Lname.ShadowDecoration.CustomizableEdges = CustomizableEdges38
-        diagnosis_Lname.Size = New Size(202, 48)
+        diagnosis_Lname.Size = New Size(177, 36)
         diagnosis_Lname.TabIndex = 0
         ' 
         ' guna2Panel16
@@ -751,11 +808,10 @@ Partial Class ViewPatientInformation2
         guna2Panel16.Controls.Add(diagnosis_Fname)
         guna2Panel16.Controls.Add(guna2HtmlLabel16)
         guna2Panel16.CustomizableEdges = CustomizableEdges43
-        guna2Panel16.Location = New Point(59, 491)
-        guna2Panel16.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel16.Location = New Point(52, 368)
         guna2Panel16.Name = "guna2Panel16"
         guna2Panel16.ShadowDecoration.CustomizableEdges = CustomizableEdges44
-        guna2Panel16.Size = New Size(226, 97)
+        guna2Panel16.Size = New Size(198, 73)
         guna2Panel16.TabIndex = 26
         ' 
         ' diagnosis_Fname
@@ -773,25 +829,24 @@ Partial Class ViewPatientInformation2
         diagnosis_Fname.Font = New Font("Segoe UI", 9F)
         diagnosis_Fname.ForeColor = Color.Black
         diagnosis_Fname.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        diagnosis_Fname.Location = New Point(11, 29)
-        diagnosis_Fname.Margin = New Padding(3, 5, 3, 5)
+        diagnosis_Fname.Location = New Point(10, 22)
+        diagnosis_Fname.Margin = New Padding(3, 4, 3, 4)
         diagnosis_Fname.Name = "diagnosis_Fname"
         diagnosis_Fname.PlaceholderForeColor = Color.Black
         diagnosis_Fname.PlaceholderText = ""
         diagnosis_Fname.ReadOnly = True
         diagnosis_Fname.SelectedText = ""
         diagnosis_Fname.ShadowDecoration.CustomizableEdges = CustomizableEdges42
-        diagnosis_Fname.Size = New Size(202, 48)
+        diagnosis_Fname.Size = New Size(177, 36)
         diagnosis_Fname.TabIndex = 0
         ' 
         ' guna2HtmlLabel16
         ' 
         guna2HtmlLabel16.BackColor = Color.Transparent
         guna2HtmlLabel16.Font = New Font("Nirmala UI", 9F, FontStyle.Bold)
-        guna2HtmlLabel16.Location = New Point(14, 7)
-        guna2HtmlLabel16.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel16.Location = New Point(12, 5)
         guna2HtmlLabel16.Name = "guna2HtmlLabel16"
-        guna2HtmlLabel16.Size = New Size(97, 22)
+        guna2HtmlLabel16.Size = New Size(78, 17)
         guna2HtmlLabel16.TabIndex = 2
         guna2HtmlLabel16.Text = "Doctor Name"
         ' 
@@ -802,21 +857,19 @@ Partial Class ViewPatientInformation2
         guna2Panel15.BorderThickness = 1
         guna2Panel15.Controls.Add(guna2HtmlLabel15)
         guna2Panel15.CustomizableEdges = CustomizableEdges45
-        guna2Panel15.Location = New Point(59, 453)
-        guna2Panel15.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel15.Location = New Point(52, 340)
         guna2Panel15.Name = "guna2Panel15"
         guna2Panel15.ShadowDecoration.CustomizableEdges = CustomizableEdges46
-        guna2Panel15.Size = New Size(679, 37)
+        guna2Panel15.Size = New Size(594, 28)
         guna2Panel15.TabIndex = 25
         ' 
         ' guna2HtmlLabel15
         ' 
         guna2HtmlLabel15.BackColor = Color.Transparent
         guna2HtmlLabel15.Font = New Font("Nirmala UI", 15.75F, FontStyle.Bold)
-        guna2HtmlLabel15.Location = New Point(192, -5)
-        guna2HtmlLabel15.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel15.Location = New Point(168, -4)
         guna2HtmlLabel15.Name = "guna2HtmlLabel15"
-        guna2HtmlLabel15.Size = New Size(302, 38)
+        guna2HtmlLabel15.Size = New Size(246, 32)
         guna2HtmlLabel15.TabIndex = 0
         guna2HtmlLabel15.Text = "Doctor Diagnosis Record"
         ' 
@@ -828,11 +881,10 @@ Partial Class ViewPatientInformation2
         guna2Panel13.Controls.Add(viewinfo_Treatment)
         guna2Panel13.Controls.Add(guna2HtmlLabel12)
         guna2Panel13.CustomizableEdges = CustomizableEdges49
-        guna2Panel13.Location = New Point(512, 356)
-        guna2Panel13.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel13.Location = New Point(448, 267)
         guna2Panel13.Name = "guna2Panel13"
         guna2Panel13.ShadowDecoration.CustomizableEdges = CustomizableEdges50
-        guna2Panel13.Size = New Size(226, 97)
+        guna2Panel13.Size = New Size(198, 73)
         guna2Panel13.TabIndex = 23
         ' 
         ' viewinfo_Treatment
@@ -850,8 +902,8 @@ Partial Class ViewPatientInformation2
         viewinfo_Treatment.Font = New Font("Segoe UI", 9F)
         viewinfo_Treatment.ForeColor = Color.Black
         viewinfo_Treatment.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        viewinfo_Treatment.Location = New Point(11, 29)
-        viewinfo_Treatment.Margin = New Padding(3, 5, 3, 5)
+        viewinfo_Treatment.Location = New Point(10, 22)
+        viewinfo_Treatment.Margin = New Padding(3, 4, 3, 4)
         viewinfo_Treatment.Multiline = True
         viewinfo_Treatment.Name = "viewinfo_Treatment"
         viewinfo_Treatment.PlaceholderForeColor = Color.Black
@@ -859,17 +911,16 @@ Partial Class ViewPatientInformation2
         viewinfo_Treatment.ReadOnly = True
         viewinfo_Treatment.SelectedText = ""
         viewinfo_Treatment.ShadowDecoration.CustomizableEdges = CustomizableEdges48
-        viewinfo_Treatment.Size = New Size(202, 48)
+        viewinfo_Treatment.Size = New Size(177, 36)
         viewinfo_Treatment.TabIndex = 0
         ' 
         ' guna2HtmlLabel12
         ' 
         guna2HtmlLabel12.BackColor = Color.Transparent
         guna2HtmlLabel12.Font = New Font("Nirmala UI", 9F, FontStyle.Bold)
-        guna2HtmlLabel12.Location = New Point(14, 8)
-        guna2HtmlLabel12.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel12.Location = New Point(12, 6)
         guna2HtmlLabel12.Name = "guna2HtmlLabel12"
-        guna2HtmlLabel12.Size = New Size(77, 22)
+        guna2HtmlLabel12.Size = New Size(63, 17)
         guna2HtmlLabel12.TabIndex = 2
         guna2HtmlLabel12.Text = "Treatment"
         ' 
@@ -881,11 +932,10 @@ Partial Class ViewPatientInformation2
         guna2Panel12.Controls.Add(viewinfo_Precon)
         guna2Panel12.Controls.Add(guna2HtmlLabel11)
         guna2Panel12.CustomizableEdges = CustomizableEdges53
-        guna2Panel12.Location = New Point(286, 356)
-        guna2Panel12.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel12.Location = New Point(250, 267)
         guna2Panel12.Name = "guna2Panel12"
         guna2Panel12.ShadowDecoration.CustomizableEdges = CustomizableEdges54
-        guna2Panel12.Size = New Size(226, 97)
+        guna2Panel12.Size = New Size(198, 73)
         guna2Panel12.TabIndex = 22
         ' 
         ' viewinfo_Precon
@@ -903,25 +953,24 @@ Partial Class ViewPatientInformation2
         viewinfo_Precon.Font = New Font("Segoe UI", 9F)
         viewinfo_Precon.ForeColor = Color.Black
         viewinfo_Precon.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        viewinfo_Precon.Location = New Point(11, 29)
-        viewinfo_Precon.Margin = New Padding(3, 5, 3, 5)
+        viewinfo_Precon.Location = New Point(10, 22)
+        viewinfo_Precon.Margin = New Padding(3, 4, 3, 4)
         viewinfo_Precon.Name = "viewinfo_Precon"
         viewinfo_Precon.PlaceholderForeColor = Color.Black
         viewinfo_Precon.PlaceholderText = ""
         viewinfo_Precon.ReadOnly = True
         viewinfo_Precon.SelectedText = ""
         viewinfo_Precon.ShadowDecoration.CustomizableEdges = CustomizableEdges52
-        viewinfo_Precon.Size = New Size(202, 48)
+        viewinfo_Precon.Size = New Size(177, 36)
         viewinfo_Precon.TabIndex = 0
         ' 
         ' guna2HtmlLabel11
         ' 
         guna2HtmlLabel11.BackColor = Color.Transparent
         guna2HtmlLabel11.Font = New Font("Nirmala UI", 9F, FontStyle.Bold)
-        guna2HtmlLabel11.Location = New Point(17, 7)
-        guna2HtmlLabel11.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel11.Location = New Point(15, 5)
         guna2HtmlLabel11.Name = "guna2HtmlLabel11"
-        guna2HtmlLabel11.Size = New Size(100, 22)
+        guna2HtmlLabel11.Size = New Size(80, 17)
         guna2HtmlLabel11.TabIndex = 2
         guna2HtmlLabel11.Text = "Pre-Condition"
         ' 
@@ -933,11 +982,10 @@ Partial Class ViewPatientInformation2
         guna2Panel11.Controls.Add(viewinfo_Prevsur)
         guna2Panel11.Controls.Add(guna2HtmlLabel10)
         guna2Panel11.CustomizableEdges = CustomizableEdges57
-        guna2Panel11.Location = New Point(59, 356)
-        guna2Panel11.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel11.Location = New Point(52, 267)
         guna2Panel11.Name = "guna2Panel11"
         guna2Panel11.ShadowDecoration.CustomizableEdges = CustomizableEdges58
-        guna2Panel11.Size = New Size(226, 97)
+        guna2Panel11.Size = New Size(198, 73)
         guna2Panel11.TabIndex = 21
         ' 
         ' viewinfo_Prevsur
@@ -955,25 +1003,24 @@ Partial Class ViewPatientInformation2
         viewinfo_Prevsur.Font = New Font("Segoe UI", 9F)
         viewinfo_Prevsur.ForeColor = Color.Black
         viewinfo_Prevsur.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        viewinfo_Prevsur.Location = New Point(17, 29)
-        viewinfo_Prevsur.Margin = New Padding(3, 5, 3, 5)
+        viewinfo_Prevsur.Location = New Point(15, 22)
+        viewinfo_Prevsur.Margin = New Padding(3, 4, 3, 4)
         viewinfo_Prevsur.Name = "viewinfo_Prevsur"
         viewinfo_Prevsur.PlaceholderForeColor = Color.Black
         viewinfo_Prevsur.PlaceholderText = ""
         viewinfo_Prevsur.ReadOnly = True
         viewinfo_Prevsur.SelectedText = ""
         viewinfo_Prevsur.ShadowDecoration.CustomizableEdges = CustomizableEdges56
-        viewinfo_Prevsur.Size = New Size(197, 48)
+        viewinfo_Prevsur.Size = New Size(172, 36)
         viewinfo_Prevsur.TabIndex = 0
         ' 
         ' guna2HtmlLabel10
         ' 
         guna2HtmlLabel10.BackColor = Color.Transparent
         guna2HtmlLabel10.Font = New Font("Nirmala UI", 9F, FontStyle.Bold)
-        guna2HtmlLabel10.Location = New Point(19, 7)
-        guna2HtmlLabel10.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel10.Location = New Point(17, 5)
         guna2HtmlLabel10.Name = "guna2HtmlLabel10"
-        guna2HtmlLabel10.Size = New Size(121, 22)
+        guna2HtmlLabel10.Size = New Size(98, 17)
         guna2HtmlLabel10.TabIndex = 2
         guna2HtmlLabel10.Text = "Previous Surgery"
         ' 
@@ -985,11 +1032,10 @@ Partial Class ViewPatientInformation2
         guna2Panel10.Controls.Add(viewinfo_Medic)
         guna2Panel10.Controls.Add(guna2HtmlLabel9)
         guna2Panel10.CustomizableEdges = CustomizableEdges61
-        guna2Panel10.Location = New Point(512, 259)
-        guna2Panel10.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel10.Location = New Point(448, 194)
         guna2Panel10.Name = "guna2Panel10"
         guna2Panel10.ShadowDecoration.CustomizableEdges = CustomizableEdges62
-        guna2Panel10.Size = New Size(226, 97)
+        guna2Panel10.Size = New Size(198, 73)
         guna2Panel10.TabIndex = 20
         ' 
         ' viewinfo_Medic
@@ -1007,25 +1053,24 @@ Partial Class ViewPatientInformation2
         viewinfo_Medic.Font = New Font("Segoe UI", 9F)
         viewinfo_Medic.ForeColor = Color.Black
         viewinfo_Medic.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        viewinfo_Medic.Location = New Point(11, 29)
-        viewinfo_Medic.Margin = New Padding(3, 5, 3, 5)
+        viewinfo_Medic.Location = New Point(10, 22)
+        viewinfo_Medic.Margin = New Padding(3, 4, 3, 4)
         viewinfo_Medic.Name = "viewinfo_Medic"
         viewinfo_Medic.PlaceholderForeColor = Color.Black
         viewinfo_Medic.PlaceholderText = ""
         viewinfo_Medic.ReadOnly = True
         viewinfo_Medic.SelectedText = ""
         viewinfo_Medic.ShadowDecoration.CustomizableEdges = CustomizableEdges60
-        viewinfo_Medic.Size = New Size(202, 48)
+        viewinfo_Medic.Size = New Size(177, 36)
         viewinfo_Medic.TabIndex = 0
         ' 
         ' guna2HtmlLabel9
         ' 
         guna2HtmlLabel9.BackColor = Color.Transparent
         guna2HtmlLabel9.Font = New Font("Nirmala UI", 9F, FontStyle.Bold)
-        guna2HtmlLabel9.Location = New Point(14, 7)
-        guna2HtmlLabel9.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel9.Location = New Point(12, 5)
         guna2HtmlLabel9.Name = "guna2HtmlLabel9"
-        guna2HtmlLabel9.Size = New Size(81, 22)
+        guna2HtmlLabel9.Size = New Size(65, 17)
         guna2HtmlLabel9.TabIndex = 2
         guna2HtmlLabel9.Text = "Medication"
         ' 
@@ -1037,11 +1082,10 @@ Partial Class ViewPatientInformation2
         guna2Panel9.Controls.Add(viewinfo_Allergy)
         guna2Panel9.Controls.Add(guna2HtmlLabel8)
         guna2Panel9.CustomizableEdges = CustomizableEdges65
-        guna2Panel9.Location = New Point(286, 259)
-        guna2Panel9.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel9.Location = New Point(250, 194)
         guna2Panel9.Name = "guna2Panel9"
         guna2Panel9.ShadowDecoration.CustomizableEdges = CustomizableEdges66
-        guna2Panel9.Size = New Size(226, 97)
+        guna2Panel9.Size = New Size(198, 73)
         guna2Panel9.TabIndex = 19
         ' 
         ' viewinfo_Allergy
@@ -1059,25 +1103,24 @@ Partial Class ViewPatientInformation2
         viewinfo_Allergy.Font = New Font("Segoe UI", 9F)
         viewinfo_Allergy.ForeColor = Color.Black
         viewinfo_Allergy.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        viewinfo_Allergy.Location = New Point(11, 29)
-        viewinfo_Allergy.Margin = New Padding(3, 5, 3, 5)
+        viewinfo_Allergy.Location = New Point(10, 22)
+        viewinfo_Allergy.Margin = New Padding(3, 4, 3, 4)
         viewinfo_Allergy.Name = "viewinfo_Allergy"
         viewinfo_Allergy.PlaceholderForeColor = Color.Black
         viewinfo_Allergy.PlaceholderText = ""
         viewinfo_Allergy.ReadOnly = True
         viewinfo_Allergy.SelectedText = ""
         viewinfo_Allergy.ShadowDecoration.CustomizableEdges = CustomizableEdges64
-        viewinfo_Allergy.Size = New Size(202, 48)
+        viewinfo_Allergy.Size = New Size(177, 36)
         viewinfo_Allergy.TabIndex = 0
         ' 
         ' guna2HtmlLabel8
         ' 
         guna2HtmlLabel8.BackColor = Color.Transparent
         guna2HtmlLabel8.Font = New Font("Nirmala UI", 9F, FontStyle.Bold)
-        guna2HtmlLabel8.Location = New Point(14, 7)
-        guna2HtmlLabel8.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel8.Location = New Point(12, 5)
         guna2HtmlLabel8.Name = "guna2HtmlLabel8"
-        guna2HtmlLabel8.Size = New Size(53, 22)
+        guna2HtmlLabel8.Size = New Size(42, 17)
         guna2HtmlLabel8.TabIndex = 2
         guna2HtmlLabel8.Text = "Allergy"
         ' 
@@ -1089,11 +1132,10 @@ Partial Class ViewPatientInformation2
         guna2Panel8.Controls.Add(viewifo_Btype)
         guna2Panel8.Controls.Add(guna2HtmlLabel7)
         guna2Panel8.CustomizableEdges = CustomizableEdges69
-        guna2Panel8.Location = New Point(59, 259)
-        guna2Panel8.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel8.Location = New Point(52, 194)
         guna2Panel8.Name = "guna2Panel8"
         guna2Panel8.ShadowDecoration.CustomizableEdges = CustomizableEdges70
-        guna2Panel8.Size = New Size(226, 97)
+        guna2Panel8.Size = New Size(198, 73)
         guna2Panel8.TabIndex = 18
         ' 
         ' viewifo_Btype
@@ -1111,25 +1153,24 @@ Partial Class ViewPatientInformation2
         viewifo_Btype.Font = New Font("Segoe UI", 9F)
         viewifo_Btype.ForeColor = Color.Black
         viewifo_Btype.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        viewifo_Btype.Location = New Point(11, 29)
-        viewifo_Btype.Margin = New Padding(3, 5, 3, 5)
+        viewifo_Btype.Location = New Point(10, 22)
+        viewifo_Btype.Margin = New Padding(3, 4, 3, 4)
         viewifo_Btype.Name = "viewifo_Btype"
         viewifo_Btype.PlaceholderForeColor = Color.Black
         viewifo_Btype.PlaceholderText = ""
         viewifo_Btype.ReadOnly = True
         viewifo_Btype.SelectedText = ""
         viewifo_Btype.ShadowDecoration.CustomizableEdges = CustomizableEdges68
-        viewifo_Btype.Size = New Size(202, 48)
+        viewifo_Btype.Size = New Size(177, 36)
         viewifo_Btype.TabIndex = 0
         ' 
         ' guna2HtmlLabel7
         ' 
         guna2HtmlLabel7.BackColor = Color.Transparent
         guna2HtmlLabel7.Font = New Font("Nirmala UI", 9F, FontStyle.Bold)
-        guna2HtmlLabel7.Location = New Point(14, 7)
-        guna2HtmlLabel7.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel7.Location = New Point(12, 5)
         guna2HtmlLabel7.Name = "guna2HtmlLabel7"
-        guna2HtmlLabel7.Size = New Size(82, 22)
+        guna2HtmlLabel7.Size = New Size(65, 17)
         guna2HtmlLabel7.TabIndex = 2
         guna2HtmlLabel7.Text = "Blood Type"
         ' 
@@ -1141,11 +1182,10 @@ Partial Class ViewPatientInformation2
         guna2Panel7.Controls.Add(viewinfo_Bmi)
         guna2Panel7.Controls.Add(guna2HtmlLabel6)
         guna2Panel7.CustomizableEdges = CustomizableEdges73
-        guna2Panel7.Location = New Point(512, 161)
-        guna2Panel7.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel7.Location = New Point(448, 121)
         guna2Panel7.Name = "guna2Panel7"
         guna2Panel7.ShadowDecoration.CustomizableEdges = CustomizableEdges74
-        guna2Panel7.Size = New Size(226, 97)
+        guna2Panel7.Size = New Size(198, 73)
         guna2Panel7.TabIndex = 17
         ' 
         ' viewinfo_Bmi
@@ -1163,25 +1203,24 @@ Partial Class ViewPatientInformation2
         viewinfo_Bmi.Font = New Font("Segoe UI", 9F)
         viewinfo_Bmi.ForeColor = Color.Black
         viewinfo_Bmi.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        viewinfo_Bmi.Location = New Point(11, 29)
-        viewinfo_Bmi.Margin = New Padding(3, 5, 3, 5)
+        viewinfo_Bmi.Location = New Point(10, 22)
+        viewinfo_Bmi.Margin = New Padding(3, 4, 3, 4)
         viewinfo_Bmi.Name = "viewinfo_Bmi"
         viewinfo_Bmi.PlaceholderForeColor = Color.Black
         viewinfo_Bmi.PlaceholderText = ""
         viewinfo_Bmi.ReadOnly = True
         viewinfo_Bmi.SelectedText = ""
         viewinfo_Bmi.ShadowDecoration.CustomizableEdges = CustomizableEdges72
-        viewinfo_Bmi.Size = New Size(202, 48)
+        viewinfo_Bmi.Size = New Size(177, 36)
         viewinfo_Bmi.TabIndex = 0
         ' 
         ' guna2HtmlLabel6
         ' 
         guna2HtmlLabel6.BackColor = Color.Transparent
         guna2HtmlLabel6.Font = New Font("Nirmala UI", 9F, FontStyle.Bold)
-        guna2HtmlLabel6.Location = New Point(14, 7)
-        guna2HtmlLabel6.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel6.Location = New Point(12, 5)
         guna2HtmlLabel6.Name = "guna2HtmlLabel6"
-        guna2HtmlLabel6.Size = New Size(32, 22)
+        guna2HtmlLabel6.Size = New Size(26, 17)
         guna2HtmlLabel6.TabIndex = 2
         guna2HtmlLabel6.Text = "BMI"
         ' 
@@ -1193,11 +1232,10 @@ Partial Class ViewPatientInformation2
         guna2Panel6.Controls.Add(viewinfo_Weight)
         guna2Panel6.Controls.Add(guna2HtmlLabel5)
         guna2Panel6.CustomizableEdges = CustomizableEdges77
-        guna2Panel6.Location = New Point(286, 161)
-        guna2Panel6.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel6.Location = New Point(250, 121)
         guna2Panel6.Name = "guna2Panel6"
         guna2Panel6.ShadowDecoration.CustomizableEdges = CustomizableEdges78
-        guna2Panel6.Size = New Size(226, 97)
+        guna2Panel6.Size = New Size(198, 73)
         guna2Panel6.TabIndex = 14
         ' 
         ' viewinfo_Weight
@@ -1215,25 +1253,24 @@ Partial Class ViewPatientInformation2
         viewinfo_Weight.Font = New Font("Segoe UI", 9F)
         viewinfo_Weight.ForeColor = Color.Black
         viewinfo_Weight.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        viewinfo_Weight.Location = New Point(11, 29)
-        viewinfo_Weight.Margin = New Padding(3, 5, 3, 5)
+        viewinfo_Weight.Location = New Point(10, 22)
+        viewinfo_Weight.Margin = New Padding(3, 4, 3, 4)
         viewinfo_Weight.Name = "viewinfo_Weight"
         viewinfo_Weight.PlaceholderForeColor = Color.Black
         viewinfo_Weight.PlaceholderText = ""
         viewinfo_Weight.ReadOnly = True
         viewinfo_Weight.SelectedText = ""
         viewinfo_Weight.ShadowDecoration.CustomizableEdges = CustomizableEdges76
-        viewinfo_Weight.Size = New Size(202, 48)
+        viewinfo_Weight.Size = New Size(177, 36)
         viewinfo_Weight.TabIndex = 0
         ' 
         ' guna2HtmlLabel5
         ' 
         guna2HtmlLabel5.BackColor = Color.Transparent
         guna2HtmlLabel5.Font = New Font("Nirmala UI", 9F, FontStyle.Bold)
-        guna2HtmlLabel5.Location = New Point(14, 7)
-        guna2HtmlLabel5.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel5.Location = New Point(12, 5)
         guna2HtmlLabel5.Name = "guna2HtmlLabel5"
-        guna2HtmlLabel5.Size = New Size(54, 22)
+        guna2HtmlLabel5.Size = New Size(44, 17)
         guna2HtmlLabel5.TabIndex = 2
         guna2HtmlLabel5.Text = "Weight"
         ' 
@@ -1245,11 +1282,10 @@ Partial Class ViewPatientInformation2
         guna2Panel5.Controls.Add(viewinfo_Height)
         guna2Panel5.Controls.Add(guna2HtmlLabel4)
         guna2Panel5.CustomizableEdges = CustomizableEdges81
-        guna2Panel5.Location = New Point(59, 161)
-        guna2Panel5.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel5.Location = New Point(52, 121)
         guna2Panel5.Name = "guna2Panel5"
         guna2Panel5.ShadowDecoration.CustomizableEdges = CustomizableEdges82
-        guna2Panel5.Size = New Size(226, 97)
+        guna2Panel5.Size = New Size(198, 73)
         guna2Panel5.TabIndex = 16
         ' 
         ' viewinfo_Height
@@ -1267,25 +1303,24 @@ Partial Class ViewPatientInformation2
         viewinfo_Height.Font = New Font("Segoe UI", 9F)
         viewinfo_Height.ForeColor = Color.Black
         viewinfo_Height.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        viewinfo_Height.Location = New Point(11, 29)
-        viewinfo_Height.Margin = New Padding(3, 5, 3, 5)
+        viewinfo_Height.Location = New Point(10, 22)
+        viewinfo_Height.Margin = New Padding(3, 4, 3, 4)
         viewinfo_Height.Name = "viewinfo_Height"
         viewinfo_Height.PlaceholderForeColor = Color.Black
         viewinfo_Height.PlaceholderText = ""
         viewinfo_Height.ReadOnly = True
         viewinfo_Height.SelectedText = ""
         viewinfo_Height.ShadowDecoration.CustomizableEdges = CustomizableEdges80
-        viewinfo_Height.Size = New Size(202, 48)
+        viewinfo_Height.Size = New Size(177, 36)
         viewinfo_Height.TabIndex = 0
         ' 
         ' guna2HtmlLabel4
         ' 
         guna2HtmlLabel4.BackColor = Color.Transparent
         guna2HtmlLabel4.Font = New Font("Nirmala UI", 9F, FontStyle.Bold)
-        guna2HtmlLabel4.Location = New Point(14, 7)
-        guna2HtmlLabel4.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel4.Location = New Point(12, 5)
         guna2HtmlLabel4.Name = "guna2HtmlLabel4"
-        guna2HtmlLabel4.Size = New Size(50, 22)
+        guna2HtmlLabel4.Size = New Size(41, 17)
         guna2HtmlLabel4.TabIndex = 2
         guna2HtmlLabel4.Text = "Height"
         ' 
@@ -1297,11 +1332,10 @@ Partial Class ViewPatientInformation2
         guna2Panel4.Controls.Add(viewinfo_Bdate)
         guna2Panel4.Controls.Add(guna2HtmlLabel3)
         guna2Panel4.CustomizableEdges = CustomizableEdges85
-        guna2Panel4.Location = New Point(512, 64)
-        guna2Panel4.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel4.Location = New Point(448, 48)
         guna2Panel4.Name = "guna2Panel4"
         guna2Panel4.ShadowDecoration.CustomizableEdges = CustomizableEdges86
-        guna2Panel4.Size = New Size(226, 97)
+        guna2Panel4.Size = New Size(198, 73)
         guna2Panel4.TabIndex = 15
         ' 
         ' viewinfo_Bdate
@@ -1319,25 +1353,24 @@ Partial Class ViewPatientInformation2
         viewinfo_Bdate.Font = New Font("Segoe UI", 9F)
         viewinfo_Bdate.ForeColor = Color.Black
         viewinfo_Bdate.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        viewinfo_Bdate.Location = New Point(11, 29)
-        viewinfo_Bdate.Margin = New Padding(3, 5, 3, 5)
+        viewinfo_Bdate.Location = New Point(10, 22)
+        viewinfo_Bdate.Margin = New Padding(3, 4, 3, 4)
         viewinfo_Bdate.Name = "viewinfo_Bdate"
         viewinfo_Bdate.PlaceholderForeColor = Color.Black
         viewinfo_Bdate.PlaceholderText = ""
         viewinfo_Bdate.ReadOnly = True
         viewinfo_Bdate.SelectedText = ""
         viewinfo_Bdate.ShadowDecoration.CustomizableEdges = CustomizableEdges84
-        viewinfo_Bdate.Size = New Size(202, 48)
+        viewinfo_Bdate.Size = New Size(177, 36)
         viewinfo_Bdate.TabIndex = 0
         ' 
         ' guna2HtmlLabel3
         ' 
         guna2HtmlLabel3.BackColor = Color.Transparent
         guna2HtmlLabel3.Font = New Font("Nirmala UI", 9F, FontStyle.Bold)
-        guna2HtmlLabel3.Location = New Point(14, 7)
-        guna2HtmlLabel3.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel3.Location = New Point(12, 5)
         guna2HtmlLabel3.Name = "guna2HtmlLabel3"
-        guna2HtmlLabel3.Size = New Size(94, 22)
+        guna2HtmlLabel3.Size = New Size(76, 17)
         guna2HtmlLabel3.TabIndex = 2
         guna2HtmlLabel3.Text = "Date of Birth"
         ' 
@@ -1349,11 +1382,10 @@ Partial Class ViewPatientInformation2
         guna2Panel3.Controls.Add(viewinfo_Lname)
         guna2Panel3.Controls.Add(guna2HtmlLabel2)
         guna2Panel3.CustomizableEdges = CustomizableEdges89
-        guna2Panel3.Location = New Point(286, 64)
-        guna2Panel3.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel3.Location = New Point(250, 48)
         guna2Panel3.Name = "guna2Panel3"
         guna2Panel3.ShadowDecoration.CustomizableEdges = CustomizableEdges90
-        guna2Panel3.Size = New Size(226, 97)
+        guna2Panel3.Size = New Size(198, 73)
         guna2Panel3.TabIndex = 14
         ' 
         ' viewinfo_Lname
@@ -1371,25 +1403,24 @@ Partial Class ViewPatientInformation2
         viewinfo_Lname.Font = New Font("Segoe UI", 9F)
         viewinfo_Lname.ForeColor = Color.Black
         viewinfo_Lname.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        viewinfo_Lname.Location = New Point(11, 29)
-        viewinfo_Lname.Margin = New Padding(3, 5, 3, 5)
+        viewinfo_Lname.Location = New Point(10, 22)
+        viewinfo_Lname.Margin = New Padding(3, 4, 3, 4)
         viewinfo_Lname.Name = "viewinfo_Lname"
         viewinfo_Lname.PlaceholderForeColor = Color.Black
         viewinfo_Lname.PlaceholderText = ""
         viewinfo_Lname.ReadOnly = True
         viewinfo_Lname.SelectedText = ""
         viewinfo_Lname.ShadowDecoration.CustomizableEdges = CustomizableEdges88
-        viewinfo_Lname.Size = New Size(202, 48)
+        viewinfo_Lname.Size = New Size(177, 36)
         viewinfo_Lname.TabIndex = 0
         ' 
         ' guna2HtmlLabel2
         ' 
         guna2HtmlLabel2.BackColor = Color.Transparent
         guna2HtmlLabel2.Font = New Font("Nirmala UI", 9F, FontStyle.Bold)
-        guna2HtmlLabel2.Location = New Point(14, 7)
-        guna2HtmlLabel2.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel2.Location = New Point(12, 5)
         guna2HtmlLabel2.Name = "guna2HtmlLabel2"
-        guna2HtmlLabel2.Size = New Size(78, 22)
+        guna2HtmlLabel2.Size = New Size(61, 17)
         guna2HtmlLabel2.TabIndex = 2
         guna2HtmlLabel2.Text = "Last Name"
         ' 
@@ -1401,11 +1432,10 @@ Partial Class ViewPatientInformation2
         guna2Panel1.Controls.Add(viewinfo_Fname)
         guna2Panel1.Controls.Add(guna2HtmlLabel1)
         guna2Panel1.CustomizableEdges = CustomizableEdges93
-        guna2Panel1.Location = New Point(59, 64)
-        guna2Panel1.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel1.Location = New Point(52, 48)
         guna2Panel1.Name = "guna2Panel1"
         guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges94
-        guna2Panel1.Size = New Size(226, 97)
+        guna2Panel1.Size = New Size(198, 73)
         guna2Panel1.TabIndex = 13
         ' 
         ' viewinfo_Fname
@@ -1423,25 +1453,24 @@ Partial Class ViewPatientInformation2
         viewinfo_Fname.Font = New Font("Segoe UI", 9F)
         viewinfo_Fname.ForeColor = Color.Black
         viewinfo_Fname.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        viewinfo_Fname.Location = New Point(11, 29)
-        viewinfo_Fname.Margin = New Padding(3, 5, 3, 5)
+        viewinfo_Fname.Location = New Point(10, 22)
+        viewinfo_Fname.Margin = New Padding(3, 4, 3, 4)
         viewinfo_Fname.Name = "viewinfo_Fname"
         viewinfo_Fname.PlaceholderForeColor = Color.Black
         viewinfo_Fname.PlaceholderText = ""
         viewinfo_Fname.ReadOnly = True
         viewinfo_Fname.SelectedText = ""
         viewinfo_Fname.ShadowDecoration.CustomizableEdges = CustomizableEdges92
-        viewinfo_Fname.Size = New Size(202, 48)
+        viewinfo_Fname.Size = New Size(177, 36)
         viewinfo_Fname.TabIndex = 0
         ' 
         ' guna2HtmlLabel1
         ' 
         guna2HtmlLabel1.BackColor = Color.Transparent
         guna2HtmlLabel1.Font = New Font("Nirmala UI", 9F, FontStyle.Bold)
-        guna2HtmlLabel1.Location = New Point(14, 7)
-        guna2HtmlLabel1.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel1.Location = New Point(12, 5)
         guna2HtmlLabel1.Name = "guna2HtmlLabel1"
-        guna2HtmlLabel1.Size = New Size(80, 22)
+        guna2HtmlLabel1.Size = New Size(63, 17)
         guna2HtmlLabel1.TabIndex = 2
         guna2HtmlLabel1.Text = "First Name"
         ' 
@@ -1452,104 +1481,30 @@ Partial Class ViewPatientInformation2
         guna2Panel14.BorderThickness = 1
         guna2Panel14.Controls.Add(guna2HtmlLabel14)
         guna2Panel14.CustomizableEdges = CustomizableEdges95
-        guna2Panel14.Location = New Point(59, 27)
-        guna2Panel14.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel14.Location = New Point(52, 20)
         guna2Panel14.Name = "guna2Panel14"
         guna2Panel14.ShadowDecoration.CustomizableEdges = CustomizableEdges96
-        guna2Panel14.Size = New Size(679, 37)
+        guna2Panel14.Size = New Size(594, 28)
         guna2Panel14.TabIndex = 24
         ' 
         ' guna2HtmlLabel14
         ' 
         guna2HtmlLabel14.BackColor = Color.Transparent
         guna2HtmlLabel14.Font = New Font("Nirmala UI", 15.75F, FontStyle.Bold)
-        guna2HtmlLabel14.Location = New Point(209, -4)
-        guna2HtmlLabel14.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel14.Location = New Point(183, -3)
         guna2HtmlLabel14.Name = "guna2HtmlLabel14"
-        guna2HtmlLabel14.Size = New Size(284, 38)
+        guna2HtmlLabel14.Size = New Size(231, 32)
         guna2HtmlLabel14.TabIndex = 0
         guna2HtmlLabel14.Text = "Patient Medical Record"
         ' 
-        ' ExitButton
-        ' 
-        ExitButton.BackColor = Color.Red
-        ExitButton.Cursor = Cursors.Hand
-        ExitButton.CustomizableEdges = CustomizableEdges3
-        ExitButton.DisabledState.BorderColor = Color.DarkGray
-        ExitButton.DisabledState.CustomBorderColor = Color.DarkGray
-        ExitButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        ExitButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        ExitButton.FillColor = Color.Transparent
-        ExitButton.Font = New Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold)
-        ExitButton.ForeColor = SystemColors.Window
-        ExitButton.Location = New Point(940, 3)
-        ExitButton.Name = "ExitButton"
-        ExitButton.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        ExitButton.Size = New Size(49, 35)
-        ExitButton.TabIndex = 164
-        ExitButton.Text = "X"
-        ' 
-        ' CreatePDFButton
-        ' 
-        CreatePDFButton.BackColor = Color.Transparent
-        CreatePDFButton.CheckedState.ImageSize = New Size(64, 64)
-        CreatePDFButton.HoverState.ImageSize = New Size(64, 64)
-        CreatePDFButton.Image = CType(resources.GetObject("CreatePDFButton.Image"), Image)
-        CreatePDFButton.ImageOffset = New Point(0, 0)
-        CreatePDFButton.ImageRotate = 0F
-        CreatePDFButton.Location = New Point(895, 285)
-        CreatePDFButton.Name = "CreatePDFButton"
-        CreatePDFButton.PressedState.ImageSize = New Size(64, 64)
-        CreatePDFButton.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        CreatePDFButton.Size = New Size(80, 68)
-        CreatePDFButton.TabIndex = 165
-        ' 
-        ' viewinfo_PrintBtn
-        ' 
-        viewinfo_PrintBtn.BackColor = Color.Transparent
-        viewinfo_PrintBtn.CheckedState.ImageSize = New Size(64, 64)
-        viewinfo_PrintBtn.HoverState.ImageSize = New Size(64, 64)
-        viewinfo_PrintBtn.Image = CType(resources.GetObject("viewinfo_PrintBtn.Image"), Image)
-        viewinfo_PrintBtn.ImageOffset = New Point(0, 0)
-        viewinfo_PrintBtn.ImageRotate = 0F
-        viewinfo_PrintBtn.Location = New Point(894, 139)
-        viewinfo_PrintBtn.Name = "viewinfo_PrintBtn"
-        viewinfo_PrintBtn.PressedState.ImageSize = New Size(64, 64)
-        viewinfo_PrintBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges1
-        viewinfo_PrintBtn.Size = New Size(80, 68)
-        viewinfo_PrintBtn.TabIndex = 166
-        ' 
-        ' Guna2HtmlLabel13
-        ' 
-        Guna2HtmlLabel13.BackColor = Color.Transparent
-        Guna2HtmlLabel13.Font = New Font("Nirmala UI", 10.75F, FontStyle.Bold)
-        Guna2HtmlLabel13.ForeColor = Color.White
-        Guna2HtmlLabel13.Location = New Point(913, 208)
-        Guna2HtmlLabel13.Margin = New Padding(3, 4, 3, 4)
-        Guna2HtmlLabel13.Name = "Guna2HtmlLabel13"
-        Guna2HtmlLabel13.Size = New Size(44, 27)
-        Guna2HtmlLabel13.TabIndex = 1
-        Guna2HtmlLabel13.Text = "Print"
-        ' 
-        ' Guna2HtmlLabel25
-        ' 
-        Guna2HtmlLabel25.BackColor = Color.Transparent
-        Guna2HtmlLabel25.Font = New Font("Nirmala UI", 10.75F, FontStyle.Bold)
-        Guna2HtmlLabel25.ForeColor = Color.White
-        Guna2HtmlLabel25.Location = New Point(899, 353)
-        Guna2HtmlLabel25.Margin = New Padding(3, 4, 3, 4)
-        Guna2HtmlLabel25.Name = "Guna2HtmlLabel25"
-        Guna2HtmlLabel25.Size = New Size(81, 27)
-        Guna2HtmlLabel25.TabIndex = 167
-        Guna2HtmlLabel25.Text = "Generate"
-        ' 
         ' ViewPatientInformation2
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(987, 1102)
+        ClientSize = New Size(925, 888)
         Controls.Add(Guna2CustomGradientPanel1)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(3, 2, 3, 2)
         Name = "ViewPatientInformation2"
         StartPosition = FormStartPosition.CenterScreen
         Text = "ViewPatientInformation2"

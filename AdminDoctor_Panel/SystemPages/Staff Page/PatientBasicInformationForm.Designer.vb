@@ -55,22 +55,16 @@ Partial Class PatientBasicInformationForm
         Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
+        Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         RegisterButton = New Guna.UI2.WinForms.Guna2Button()
         DeleteBtn = New Guna.UI2.WinForms.Guna2Button()
-        guna2HtmlLabel21 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         guna2PictureBox3 = New Guna.UI2.WinForms.Guna2PictureBox()
         BackButton = New Guna.UI2.WinForms.Guna2ImageButton()
         guna2HtmlLabel20 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         MinimizeButton = New Guna.UI2.WinForms.Guna2ImageButton()
         guna2HtmlLabel19 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        guna2HtmlLabel18 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        guna2HtmlLabel17 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        guna2HtmlLabel16 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        guna2HtmlLabel15 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        guna2HtmlLabel14 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         AlergyTextbox = New Guna.UI2.WinForms.Guna2TextBox()
         guna2HtmlLabel12 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        guna2HtmlLabel13 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         MedicationTxtbox = New Guna.UI2.WinForms.Guna2TextBox()
         guna2HtmlLabel8 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         guna2HtmlLabel11 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -91,8 +85,13 @@ Partial Class PatientBasicInformationForm
         ExitButton = New Guna.UI2.WinForms.Guna2Button()
         HeightTextBox = New Guna.UI2.WinForms.Guna2TextBox()
         WeightTextBox = New Guna.UI2.WinForms.Guna2TextBox()
+        guna2HtmlLabel13 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(components)
-        Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        guna2HtmlLabel15 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Guna2HtmlLabel14 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Guna2HtmlLabel16 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Guna2HtmlLabel17 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Guna2HtmlLabel18 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Guna2CustomGradientPanel1.SuspendLayout()
         CType(guna2PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -100,20 +99,19 @@ Partial Class PatientBasicInformationForm
         ' Guna2CustomGradientPanel1
         ' 
         Guna2CustomGradientPanel1.BackColor = Color.White
+        Guna2CustomGradientPanel1.Controls.Add(Guna2HtmlLabel18)
+        Guna2CustomGradientPanel1.Controls.Add(Guna2HtmlLabel17)
+        Guna2CustomGradientPanel1.Controls.Add(Guna2HtmlLabel16)
+        Guna2CustomGradientPanel1.Controls.Add(Guna2HtmlLabel14)
         Guna2CustomGradientPanel1.Controls.Add(Guna2HtmlLabel2)
         Guna2CustomGradientPanel1.Controls.Add(RegisterButton)
         Guna2CustomGradientPanel1.Controls.Add(DeleteBtn)
-        Guna2CustomGradientPanel1.Controls.Add(guna2HtmlLabel21)
         Guna2CustomGradientPanel1.Controls.Add(guna2PictureBox3)
         Guna2CustomGradientPanel1.Controls.Add(BackButton)
         Guna2CustomGradientPanel1.Controls.Add(guna2HtmlLabel20)
         Guna2CustomGradientPanel1.Controls.Add(MinimizeButton)
         Guna2CustomGradientPanel1.Controls.Add(guna2HtmlLabel19)
-        Guna2CustomGradientPanel1.Controls.Add(guna2HtmlLabel18)
-        Guna2CustomGradientPanel1.Controls.Add(guna2HtmlLabel17)
-        Guna2CustomGradientPanel1.Controls.Add(guna2HtmlLabel16)
         Guna2CustomGradientPanel1.Controls.Add(guna2HtmlLabel15)
-        Guna2CustomGradientPanel1.Controls.Add(guna2HtmlLabel14)
         Guna2CustomGradientPanel1.Controls.Add(AlergyTextbox)
         Guna2CustomGradientPanel1.Controls.Add(guna2HtmlLabel12)
         Guna2CustomGradientPanel1.Controls.Add(MedicationTxtbox)
@@ -146,8 +144,20 @@ Partial Class PatientBasicInformationForm
         Guna2CustomGradientPanel1.Margin = New Padding(3, 2, 3, 2)
         Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
         Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges30
-        Guna2CustomGradientPanel1.Size = New Size(1920, 1080)
+        Guna2CustomGradientPanel1.Size = New Size(1920, 1087)
         Guna2CustomGradientPanel1.TabIndex = 0
+        ' 
+        ' Guna2HtmlLabel2
+        ' 
+        Guna2HtmlLabel2.BackColor = Color.Transparent
+        Guna2HtmlLabel2.Font = New Font("Tahoma", 48F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Guna2HtmlLabel2.ForeColor = Color.FromArgb(CByte(110), CByte(177), CByte(247))
+        Guna2HtmlLabel2.Location = New Point(710, 55)
+        Guna2HtmlLabel2.Margin = New Padding(3, 2, 3, 2)
+        Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
+        Guna2HtmlLabel2.Size = New Size(580, 79)
+        Guna2HtmlLabel2.TabIndex = 278
+        Guna2HtmlLabel2.Text = "Basic Information"
         ' 
         ' RegisterButton
         ' 
@@ -161,7 +171,7 @@ Partial Class PatientBasicInformationForm
         RegisterButton.FillColor = Color.Blue
         RegisterButton.Font = New Font("Microsoft Sans Serif", 11.999999F)
         RegisterButton.ForeColor = SystemColors.Window
-        RegisterButton.Location = New Point(884, 985)
+        RegisterButton.Location = New Point(880, 914)
         RegisterButton.Margin = New Padding(3, 2, 3, 2)
         RegisterButton.Name = "RegisterButton"
         RegisterButton.ShadowDecoration.CustomizableEdges = CustomizableEdges2
@@ -189,18 +199,6 @@ Partial Class PatientBasicInformationForm
         DeleteBtn.TabIndex = 218
         DeleteBtn.Text = "Delete Patient"
         DeleteBtn.Visible = False
-        ' 
-        ' guna2HtmlLabel21
-        ' 
-        guna2HtmlLabel21.BackColor = Color.Transparent
-        guna2HtmlLabel21.Font = New Font("Tahoma", 26.25F, FontStyle.Bold)
-        guna2HtmlLabel21.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel21.Location = New Point(305, 34)
-        guna2HtmlLabel21.Margin = New Padding(3, 2, 3, 2)
-        guna2HtmlLabel21.Name = "guna2HtmlLabel21"
-        guna2HtmlLabel21.Size = New Size(445, 44)
-        guna2HtmlLabel21.TabIndex = 251
-        guna2HtmlLabel21.Text = "Basic Health Information"
         ' 
         ' guna2PictureBox3
         ' 
@@ -275,66 +273,6 @@ Partial Class PatientBasicInformationForm
         guna2HtmlLabel19.TabIndex = 243
         guna2HtmlLabel19.Text = "2/3"
         ' 
-        ' guna2HtmlLabel18
-        ' 
-        guna2HtmlLabel18.BackColor = Color.Transparent
-        guna2HtmlLabel18.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
-        guna2HtmlLabel18.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel18.Location = New Point(665, 460)
-        guna2HtmlLabel18.Margin = New Padding(3, 2, 3, 2)
-        guna2HtmlLabel18.Name = "guna2HtmlLabel18"
-        guna2HtmlLabel18.Size = New Size(93, 15)
-        guna2HtmlLabel18.TabIndex = 242
-        guna2HtmlLabel18.Text = "Type N/A if none"
-        ' 
-        ' guna2HtmlLabel17
-        ' 
-        guna2HtmlLabel17.BackColor = Color.Transparent
-        guna2HtmlLabel17.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
-        guna2HtmlLabel17.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel17.Location = New Point(453, 460)
-        guna2HtmlLabel17.Margin = New Padding(3, 2, 3, 2)
-        guna2HtmlLabel17.Name = "guna2HtmlLabel17"
-        guna2HtmlLabel17.Size = New Size(93, 15)
-        guna2HtmlLabel17.TabIndex = 241
-        guna2HtmlLabel17.Text = "Type N/A if none"
-        ' 
-        ' guna2HtmlLabel16
-        ' 
-        guna2HtmlLabel16.BackColor = Color.Transparent
-        guna2HtmlLabel16.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
-        guna2HtmlLabel16.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel16.Location = New Point(248, 460)
-        guna2HtmlLabel16.Margin = New Padding(3, 2, 3, 2)
-        guna2HtmlLabel16.Name = "guna2HtmlLabel16"
-        guna2HtmlLabel16.Size = New Size(93, 15)
-        guna2HtmlLabel16.TabIndex = 240
-        guna2HtmlLabel16.Text = "Type N/A if none"
-        ' 
-        ' guna2HtmlLabel15
-        ' 
-        guna2HtmlLabel15.BackColor = Color.Transparent
-        guna2HtmlLabel15.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
-        guna2HtmlLabel15.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel15.Location = New Point(325, 370)
-        guna2HtmlLabel15.Margin = New Padding(3, 2, 3, 2)
-        guna2HtmlLabel15.Name = "guna2HtmlLabel15"
-        guna2HtmlLabel15.Size = New Size(93, 15)
-        guna2HtmlLabel15.TabIndex = 239
-        guna2HtmlLabel15.Text = "Type N/A if none"
-        ' 
-        ' guna2HtmlLabel14
-        ' 
-        guna2HtmlLabel14.BackColor = Color.Transparent
-        guna2HtmlLabel14.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
-        guna2HtmlLabel14.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel14.Location = New Point(536, 370)
-        guna2HtmlLabel14.Margin = New Padding(3, 2, 3, 2)
-        guna2HtmlLabel14.Name = "guna2HtmlLabel14"
-        guna2HtmlLabel14.Size = New Size(93, 15)
-        guna2HtmlLabel14.TabIndex = 238
-        guna2HtmlLabel14.Text = "Type N/A if none"
-        ' 
         ' AlergyTextbox
         ' 
         AlergyTextbox.BackColor = Color.Transparent
@@ -371,18 +309,6 @@ Partial Class PatientBasicInformationForm
         guna2HtmlLabel12.Size = New Size(47, 19)
         guna2HtmlLabel12.TabIndex = 237
         guna2HtmlLabel12.Text = "Allergy"
-        ' 
-        ' guna2HtmlLabel13
-        ' 
-        guna2HtmlLabel13.BackColor = Color.Transparent
-        guna2HtmlLabel13.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
-        guna2HtmlLabel13.ForeColor = Color.White
-        guna2HtmlLabel13.Location = New Point(1008, 515)
-        guna2HtmlLabel13.Margin = New Padding(3, 2, 3, 2)
-        guna2HtmlLabel13.Name = "guna2HtmlLabel13"
-        guna2HtmlLabel13.Size = New Size(72, 19)
-        guna2HtmlLabel13.TabIndex = 236
-        guna2HtmlLabel13.Text = "Medication"
         ' 
         ' MedicationTxtbox
         ' 
@@ -502,7 +428,7 @@ Partial Class PatientBasicInformationForm
         guna2HtmlLabel6.BackColor = Color.Transparent
         guna2HtmlLabel6.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
         guna2HtmlLabel6.ForeColor = Color.White
-        guna2HtmlLabel6.Location = New Point(582, 603)
+        guna2HtmlLabel6.Location = New Point(582, 602)
         guna2HtmlLabel6.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel6.Name = "guna2HtmlLabel6"
         guna2HtmlLabel6.Size = New Size(107, 19)
@@ -514,7 +440,7 @@ Partial Class PatientBasicInformationForm
         guna2HtmlLabel9.BackColor = Color.Transparent
         guna2HtmlLabel9.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
         guna2HtmlLabel9.ForeColor = Color.White
-        guna2HtmlLabel9.Location = New Point(1115, 603)
+        guna2HtmlLabel9.Location = New Point(1115, 601)
         guna2HtmlLabel9.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel9.Name = "guna2HtmlLabel9"
         guna2HtmlLabel9.Size = New Size(67, 19)
@@ -526,7 +452,7 @@ Partial Class PatientBasicInformationForm
         guna2HtmlLabel10.BackColor = Color.Transparent
         guna2HtmlLabel10.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
         guna2HtmlLabel10.ForeColor = Color.White
-        guna2HtmlLabel10.Location = New Point(848, 603)
+        guna2HtmlLabel10.Location = New Point(848, 601)
         guna2HtmlLabel10.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel10.Name = "guna2HtmlLabel10"
         guna2HtmlLabel10.Size = New Size(89, 19)
@@ -726,6 +652,18 @@ Partial Class PatientBasicInformationForm
         WeightTextBox.Size = New Size(250, 60)
         WeightTextBox.TabIndex = 214
         ' 
+        ' guna2HtmlLabel13
+        ' 
+        guna2HtmlLabel13.BackColor = Color.Transparent
+        guna2HtmlLabel13.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
+        guna2HtmlLabel13.ForeColor = Color.White
+        guna2HtmlLabel13.Location = New Point(1008, 515)
+        guna2HtmlLabel13.Margin = New Padding(3, 2, 3, 2)
+        guna2HtmlLabel13.Name = "guna2HtmlLabel13"
+        guna2HtmlLabel13.Size = New Size(72, 19)
+        guna2HtmlLabel13.TabIndex = 236
+        guna2HtmlLabel13.Text = "Medication"
+        ' 
         ' guna2BorderlessForm1
         ' 
         guna2BorderlessForm1.BorderRadius = 15
@@ -734,17 +672,65 @@ Partial Class PatientBasicInformationForm
         guna2BorderlessForm1.DragStartTransparencyValue = 1R
         guna2BorderlessForm1.TransparentWhileDrag = True
         ' 
-        ' Guna2HtmlLabel2
+        ' guna2HtmlLabel15
         ' 
-        Guna2HtmlLabel2.BackColor = Color.Transparent
-        Guna2HtmlLabel2.Font = New Font("Tahoma", 48F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Guna2HtmlLabel2.ForeColor = Color.FromArgb(CByte(110), CByte(177), CByte(247))
-        Guna2HtmlLabel2.Location = New Point(710, 55)
-        Guna2HtmlLabel2.Margin = New Padding(3, 2, 3, 2)
-        Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
-        Guna2HtmlLabel2.Size = New Size(580, 79)
-        Guna2HtmlLabel2.TabIndex = 278
-        Guna2HtmlLabel2.Text = "Basic Information"
+        guna2HtmlLabel15.BackColor = Color.Transparent
+        guna2HtmlLabel15.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
+        guna2HtmlLabel15.ForeColor = Color.DarkGray
+        guna2HtmlLabel15.Location = New Point(695, 599)
+        guna2HtmlLabel15.Margin = New Padding(3, 2, 3, 2)
+        guna2HtmlLabel15.Name = "guna2HtmlLabel15"
+        guna2HtmlLabel15.Size = New Size(93, 15)
+        guna2HtmlLabel15.TabIndex = 239
+        guna2HtmlLabel15.Text = "Type N/A if none"
+        ' 
+        ' Guna2HtmlLabel14
+        ' 
+        Guna2HtmlLabel14.BackColor = Color.Transparent
+        Guna2HtmlLabel14.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
+        Guna2HtmlLabel14.ForeColor = Color.DarkGray
+        Guna2HtmlLabel14.Location = New Point(999, 599)
+        Guna2HtmlLabel14.Margin = New Padding(3, 2, 3, 2)
+        Guna2HtmlLabel14.Name = "Guna2HtmlLabel14"
+        Guna2HtmlLabel14.Size = New Size(93, 15)
+        Guna2HtmlLabel14.TabIndex = 279
+        Guna2HtmlLabel14.Text = "Type N/A if none"
+        ' 
+        ' Guna2HtmlLabel16
+        ' 
+        Guna2HtmlLabel16.BackColor = Color.Transparent
+        Guna2HtmlLabel16.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
+        Guna2HtmlLabel16.ForeColor = Color.DarkGray
+        Guna2HtmlLabel16.Location = New Point(573, 687)
+        Guna2HtmlLabel16.Margin = New Padding(3, 2, 3, 2)
+        Guna2HtmlLabel16.Name = "Guna2HtmlLabel16"
+        Guna2HtmlLabel16.Size = New Size(93, 15)
+        Guna2HtmlLabel16.TabIndex = 280
+        Guna2HtmlLabel16.Text = "Type N/A if none"
+        ' 
+        ' Guna2HtmlLabel17
+        ' 
+        Guna2HtmlLabel17.BackColor = Color.Transparent
+        Guna2HtmlLabel17.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
+        Guna2HtmlLabel17.ForeColor = Color.DarkGray
+        Guna2HtmlLabel17.Location = New Point(845, 687)
+        Guna2HtmlLabel17.Margin = New Padding(3, 2, 3, 2)
+        Guna2HtmlLabel17.Name = "Guna2HtmlLabel17"
+        Guna2HtmlLabel17.Size = New Size(93, 15)
+        Guna2HtmlLabel17.TabIndex = 281
+        Guna2HtmlLabel17.Text = "Type N/A if none"
+        ' 
+        ' Guna2HtmlLabel18
+        ' 
+        Guna2HtmlLabel18.BackColor = Color.Transparent
+        Guna2HtmlLabel18.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
+        Guna2HtmlLabel18.ForeColor = Color.DarkGray
+        Guna2HtmlLabel18.Location = New Point(1110, 687)
+        Guna2HtmlLabel18.Margin = New Padding(3, 2, 3, 2)
+        Guna2HtmlLabel18.Name = "Guna2HtmlLabel18"
+        Guna2HtmlLabel18.Size = New Size(93, 15)
+        Guna2HtmlLabel18.TabIndex = 282
+        Guna2HtmlLabel18.Text = "Type N/A if none"
         ' 
         ' PatientBasicInformationForm
         ' 
@@ -765,17 +751,11 @@ Partial Class PatientBasicInformationForm
 
     Friend WithEvents Guna2CustomGradientPanel1 As Guna.UI2.WinForms.Guna2CustomGradientPanel
     Private WithEvents DeleteBtn As Guna.UI2.WinForms.Guna2Button
-    Private WithEvents guna2HtmlLabel21 As Guna.UI2.WinForms.Guna2HtmlLabel
     Private WithEvents guna2PictureBox3 As Guna.UI2.WinForms.Guna2PictureBox
     Private WithEvents BackButton As Guna.UI2.WinForms.Guna2ImageButton
     Private WithEvents guna2HtmlLabel20 As Guna.UI2.WinForms.Guna2HtmlLabel
     Private WithEvents MinimizeButton As Guna.UI2.WinForms.Guna2ImageButton
     Private WithEvents guna2HtmlLabel19 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Private WithEvents guna2HtmlLabel18 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Private WithEvents guna2HtmlLabel17 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Private WithEvents guna2HtmlLabel16 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Private WithEvents guna2HtmlLabel15 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Private WithEvents guna2HtmlLabel14 As Guna.UI2.WinForms.Guna2HtmlLabel
     Private WithEvents AlergyTextbox As Guna.UI2.WinForms.Guna2TextBox
     Private WithEvents guna2HtmlLabel12 As Guna.UI2.WinForms.Guna2HtmlLabel
     Private WithEvents guna2HtmlLabel13 As Guna.UI2.WinForms.Guna2HtmlLabel
@@ -802,4 +782,9 @@ Partial Class PatientBasicInformationForm
     Private WithEvents WeightTextBox As Guna.UI2.WinForms.Guna2TextBox
     Private WithEvents guna2BorderlessForm1 As Guna.UI2.WinForms.Guna2BorderlessForm
     Private WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Private WithEvents Guna2HtmlLabel14 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Private WithEvents guna2HtmlLabel15 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Private WithEvents Guna2HtmlLabel18 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Private WithEvents Guna2HtmlLabel17 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Private WithEvents Guna2HtmlLabel16 As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class
