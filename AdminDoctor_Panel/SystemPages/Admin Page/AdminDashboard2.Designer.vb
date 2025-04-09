@@ -23,105 +23,95 @@ Partial Class AdminDashboard2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
-        Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AdminDashboard2))
-        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges51 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges52 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges44 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges45 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges46 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges47 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges48 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges49 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges50 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges23 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges25 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges30 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges31 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges29 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim CustomizableEdges34 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges35 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges32 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges33 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim CustomizableEdges39 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges40 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges36 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges37 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim DataGridViewCellStyle9 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim CustomizableEdges38 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges42 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges43 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim DataGridViewCellStyle13 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim CustomizableEdges41 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges81 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges82 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges83 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges84 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges73 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges74 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges75 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges76 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges77 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges78 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AdminDashboard2))
         Dim CustomizableEdges79 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges80 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges61 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges62 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges53 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges54 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges55 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges56 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges57 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges58 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges59 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges60 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges71 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges72 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges63 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges64 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges65 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges66 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges67 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges68 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges69 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges70 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges81 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges82 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges92 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges93 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges85 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges86 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges87 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges88 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges89 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges90 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges91 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges94 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges95 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges96 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges97 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges98 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges99 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges100 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges101 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges102 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges103 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges104 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges105 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges106 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges107 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges108 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges111 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges112 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges109 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges110 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim DataGridViewCellStyle17 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle19 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle20 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim CustomizableEdges115 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges116 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges113 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges114 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim DataGridViewCellStyle21 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle22 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle23 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle24 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim CustomizableEdges120 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges121 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges117 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges118 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim DataGridViewCellStyle25 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle26 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle27 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle28 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim CustomizableEdges119 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges123 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges124 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim DataGridViewCellStyle29 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle30 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle31 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle32 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim CustomizableEdges122 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges133 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges134 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges125 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges126 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges127 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges128 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges129 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges130 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges131 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges132 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges143 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges144 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges135 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges136 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges137 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges138 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges139 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges140 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges141 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges142 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(components)
         guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         ad_patientBtn = New Guna.UI2.WinForms.Guna2Button()
@@ -169,23 +159,18 @@ Partial Class AdminDashboard2
         AddStaffLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
         AddButton = New Guna.UI2.WinForms.Guna2ImageButton()
         SearchPanel3 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
-        Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        ResetAppointmentButton = New Guna.UI2.WinForms.Guna2Button()
         Guna2HtmlLabel11 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
-        Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
-        Guna2TextBox4 = New Guna.UI2.WinForms.Guna2TextBox()
-        SearchPanel2 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
-        Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
-        Guna2HtmlLabel12 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Guna2TextBox5 = New Guna.UI2.WinForms.Guna2TextBox()
-        Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
-        Guna2TextBox6 = New Guna.UI2.WinForms.Guna2TextBox()
+        SearchAppointmentName = New Guna.UI2.WinForms.Guna2TextBox()
+        SearchAppointmentButton = New Guna.UI2.WinForms.Guna2Button()
+        SearchAppointmentID = New Guna.UI2.WinForms.Guna2TextBox()
         SearchPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
-        Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
+        ResetDoctorButton = New Guna.UI2.WinForms.Guna2Button()
         Guna2HtmlLabel13 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Guna2TextBox7 = New Guna.UI2.WinForms.Guna2TextBox()
-        Guna2Button6 = New Guna.UI2.WinForms.Guna2Button()
-        Guna2TextBox8 = New Guna.UI2.WinForms.Guna2TextBox()
+        SearchDoctorName = New Guna.UI2.WinForms.Guna2TextBox()
+        SearchDoctorButton = New Guna.UI2.WinForms.Guna2Button()
+        SearchDoctorID = New Guna.UI2.WinForms.Guna2TextBox()
+        Guna2HtmlLabel12 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         guna2CustomGradientPanel1.SuspendLayout()
         CType(guna2CirclePictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Guna2CustomGradientPanel2.SuspendLayout()
@@ -206,7 +191,6 @@ Partial Class AdminDashboard2
         ad_staffpanel.SuspendLayout()
         CType(StaffDataGridViewList2, ComponentModel.ISupportInitialize).BeginInit()
         SearchPanel3.SuspendLayout()
-        SearchPanel2.SuspendLayout()
         SearchPanel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -230,14 +214,14 @@ Partial Class AdminDashboard2
         guna2CustomGradientPanel1.Controls.Add(pd_HomeButton)
         guna2CustomGradientPanel1.Controls.Add(guna2CirclePictureBox1)
         guna2CustomGradientPanel1.Controls.Add(Guna2TextBox2)
-        guna2CustomGradientPanel1.CustomizableEdges = CustomizableEdges11
+        guna2CustomGradientPanel1.CustomizableEdges = CustomizableEdges83
         guna2CustomGradientPanel1.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel1.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel1.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel1.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         guna2CustomGradientPanel1.Location = New Point(-2, -1)
         guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1"
-        guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges12
+        guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges84
         guna2CustomGradientPanel1.Size = New Size(226, 1080)
         guna2CustomGradientPanel1.TabIndex = 237
         ' 
@@ -246,7 +230,7 @@ Partial Class AdminDashboard2
         ad_patientBtn.BackColor = Color.Transparent
         ad_patientBtn.BorderRadius = 25
         ad_patientBtn.Cursor = Cursors.Hand
-        ad_patientBtn.CustomizableEdges = CustomizableEdges1
+        ad_patientBtn.CustomizableEdges = CustomizableEdges73
         ad_patientBtn.DisabledState.BorderColor = Color.DarkGray
         ad_patientBtn.DisabledState.CustomBorderColor = Color.DarkGray
         ad_patientBtn.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -259,7 +243,7 @@ Partial Class AdminDashboard2
         ad_patientBtn.Location = New Point(28, 321)
         ad_patientBtn.Margin = New Padding(3, 2, 3, 2)
         ad_patientBtn.Name = "ad_patientBtn"
-        ad_patientBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        ad_patientBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges74
         ad_patientBtn.Size = New Size(172, 69)
         ad_patientBtn.TabIndex = 252
         ad_patientBtn.Text = "PATIENTS"
@@ -270,7 +254,7 @@ Partial Class AdminDashboard2
         ad_appointment.BackColor = Color.Transparent
         ad_appointment.BorderRadius = 25
         ad_appointment.Cursor = Cursors.Hand
-        ad_appointment.CustomizableEdges = CustomizableEdges3
+        ad_appointment.CustomizableEdges = CustomizableEdges75
         ad_appointment.DisabledState.BorderColor = Color.DarkGray
         ad_appointment.DisabledState.CustomBorderColor = Color.DarkGray
         ad_appointment.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -284,7 +268,7 @@ Partial Class AdminDashboard2
         ad_appointment.Location = New Point(28, 565)
         ad_appointment.Margin = New Padding(3, 2, 3, 2)
         ad_appointment.Name = "ad_appointment"
-        ad_appointment.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        ad_appointment.ShadowDecoration.CustomizableEdges = CustomizableEdges76
         ad_appointment.Size = New Size(172, 69)
         ad_appointment.TabIndex = 250
         ad_appointment.Text = "APPOINTMENTS"
@@ -306,7 +290,7 @@ Partial Class AdminDashboard2
         ad_doctor.BackColor = Color.Transparent
         ad_doctor.BorderRadius = 25
         ad_doctor.Cursor = Cursors.Hand
-        ad_doctor.CustomizableEdges = CustomizableEdges5
+        ad_doctor.CustomizableEdges = CustomizableEdges77
         ad_doctor.DisabledState.BorderColor = Color.DarkGray
         ad_doctor.DisabledState.CustomBorderColor = Color.DarkGray
         ad_doctor.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -320,7 +304,7 @@ Partial Class AdminDashboard2
         ad_doctor.Location = New Point(28, 443)
         ad_doctor.Margin = New Padding(3, 2, 3, 2)
         ad_doctor.Name = "ad_doctor"
-        ad_doctor.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        ad_doctor.ShadowDecoration.CustomizableEdges = CustomizableEdges78
         ad_doctor.Size = New Size(172, 69)
         ad_doctor.TabIndex = 251
         ad_doctor.Text = "DOCTORS"
@@ -364,7 +348,7 @@ Partial Class AdminDashboard2
         pd_HomeButton.Image = CType(resources.GetObject("pd_HomeButton.Image"), Image)
         pd_HomeButton.Location = New Point(0, 1033)
         pd_HomeButton.Name = "pd_HomeButton"
-        pd_HomeButton.ShadowDecoration.CustomizableEdges = CustomizableEdges7
+        pd_HomeButton.ShadowDecoration.CustomizableEdges = CustomizableEdges79
         pd_HomeButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         pd_HomeButton.Size = New Size(54, 44)
         pd_HomeButton.TabIndex = 107
@@ -378,7 +362,7 @@ Partial Class AdminDashboard2
         guna2CirclePictureBox1.InitialImage = CType(resources.GetObject("guna2CirclePictureBox1.InitialImage"), Image)
         guna2CirclePictureBox1.Location = New Point(8, 3)
         guna2CirclePictureBox1.Name = "guna2CirclePictureBox1"
-        guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges8
+        guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges80
         guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         guna2CirclePictureBox1.Size = New Size(220, 213)
         guna2CirclePictureBox1.SizeMode = PictureBoxSizeMode.Zoom
@@ -389,7 +373,7 @@ Partial Class AdminDashboard2
         ' 
         Guna2TextBox2.BackColor = Color.Transparent
         Guna2TextBox2.BorderRadius = 30
-        Guna2TextBox2.CustomizableEdges = CustomizableEdges9
+        Guna2TextBox2.CustomizableEdges = CustomizableEdges81
         Guna2TextBox2.DefaultText = ""
         Guna2TextBox2.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         Guna2TextBox2.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -404,7 +388,7 @@ Partial Class AdminDashboard2
         Guna2TextBox2.PlaceholderText = ""
         Guna2TextBox2.ReadOnly = True
         Guna2TextBox2.SelectedText = ""
-        Guna2TextBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        Guna2TextBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges82
         Guna2TextBox2.Size = New Size(250, 58)
         Guna2TextBox2.TabIndex = 149
         ' 
@@ -414,7 +398,7 @@ Partial Class AdminDashboard2
         Guna2CustomGradientPanel2.Controls.Add(Guna2PictureBox2)
         Guna2CustomGradientPanel2.Controls.Add(Guna2CirclePictureBox2)
         Guna2CustomGradientPanel2.Controls.Add(Guna2PictureBox1)
-        Guna2CustomGradientPanel2.CustomizableEdges = CustomizableEdges51
+        Guna2CustomGradientPanel2.CustomizableEdges = CustomizableEdges92
         Guna2CustomGradientPanel2.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel2.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel2.FillColor3 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
@@ -422,20 +406,20 @@ Partial Class AdminDashboard2
         Guna2CustomGradientPanel2.Location = New Point(223, 169)
         Guna2CustomGradientPanel2.Margin = New Padding(3, 2, 3, 2)
         Guna2CustomGradientPanel2.Name = "Guna2CustomGradientPanel2"
-        Guna2CustomGradientPanel2.ShadowDecoration.CustomizableEdges = CustomizableEdges52
+        Guna2CustomGradientPanel2.ShadowDecoration.CustomizableEdges = CustomizableEdges93
         Guna2CustomGradientPanel2.Size = New Size(1695, 929)
         Guna2CustomGradientPanel2.TabIndex = 250
         ' 
         ' Guna2PictureBox3
         ' 
         Guna2PictureBox3.BackColor = Color.Transparent
-        Guna2PictureBox3.CustomizableEdges = CustomizableEdges44
+        Guna2PictureBox3.CustomizableEdges = CustomizableEdges85
         Guna2PictureBox3.Image = CType(resources.GetObject("Guna2PictureBox3.Image"), Image)
         Guna2PictureBox3.ImageRotate = 0F
         Guna2PictureBox3.Location = New Point(1142, 555)
         Guna2PictureBox3.Margin = New Padding(3, 2, 3, 2)
         Guna2PictureBox3.Name = "Guna2PictureBox3"
-        Guna2PictureBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges45
+        Guna2PictureBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges86
         Guna2PictureBox3.Size = New Size(661, 412)
         Guna2PictureBox3.TabIndex = 147
         Guna2PictureBox3.TabStop = False
@@ -443,13 +427,13 @@ Partial Class AdminDashboard2
         ' Guna2PictureBox2
         ' 
         Guna2PictureBox2.BackColor = Color.Transparent
-        Guna2PictureBox2.CustomizableEdges = CustomizableEdges46
+        Guna2PictureBox2.CustomizableEdges = CustomizableEdges87
         Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), Image)
         Guna2PictureBox2.ImageRotate = 0F
         Guna2PictureBox2.Location = New Point(569, 569)
         Guna2PictureBox2.Margin = New Padding(3, 2, 3, 2)
         Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Guna2PictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges47
+        Guna2PictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges88
         Guna2PictureBox2.Size = New Size(661, 412)
         Guna2PictureBox2.TabIndex = 146
         Guna2PictureBox2.TabStop = False
@@ -463,7 +447,7 @@ Partial Class AdminDashboard2
         Guna2CirclePictureBox2.InitialImage = CType(resources.GetObject("Guna2CirclePictureBox2.InitialImage"), Image)
         Guna2CirclePictureBox2.Location = New Point(626, 161)
         Guna2CirclePictureBox2.Name = "Guna2CirclePictureBox2"
-        Guna2CirclePictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges48
+        Guna2CirclePictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges89
         Guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Guna2CirclePictureBox2.Size = New Size(521, 422)
         Guna2CirclePictureBox2.SizeMode = PictureBoxSizeMode.Zoom
@@ -474,13 +458,13 @@ Partial Class AdminDashboard2
         ' Guna2PictureBox1
         ' 
         Guna2PictureBox1.BackColor = Color.Transparent
-        Guna2PictureBox1.CustomizableEdges = CustomizableEdges49
+        Guna2PictureBox1.CustomizableEdges = CustomizableEdges90
         Guna2PictureBox1.Image = CType(resources.GetObject("Guna2PictureBox1.Image"), Image)
         Guna2PictureBox1.ImageRotate = 0F
         Guna2PictureBox1.Location = New Point(3, 569)
         Guna2PictureBox1.Margin = New Padding(3, 2, 3, 2)
         Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Guna2PictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges50
+        Guna2PictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges91
         Guna2PictureBox1.Size = New Size(661, 412)
         Guna2PictureBox1.TabIndex = 145
         Guna2PictureBox1.TabStop = False
@@ -499,7 +483,7 @@ Partial Class AdminDashboard2
         MinimizeButton.Margin = New Padding(3, 2, 3, 2)
         MinimizeButton.Name = "MinimizeButton"
         MinimizeButton.PressedState.ImageSize = New Size(20, 30)
-        MinimizeButton.ShadowDecoration.CustomizableEdges = CustomizableEdges13
+        MinimizeButton.ShadowDecoration.CustomizableEdges = CustomizableEdges94
         MinimizeButton.Size = New Size(57, 45)
         MinimizeButton.TabIndex = 242
         ' 
@@ -507,7 +491,7 @@ Partial Class AdminDashboard2
         ' 
         ExitButton.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ExitButton.Cursor = Cursors.Hand
-        ExitButton.CustomizableEdges = CustomizableEdges14
+        ExitButton.CustomizableEdges = CustomizableEdges95
         ExitButton.DisabledState.BorderColor = Color.DarkGray
         ExitButton.DisabledState.CustomBorderColor = Color.DarkGray
         ExitButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -518,7 +502,7 @@ Partial Class AdminDashboard2
         ExitButton.Location = New Point(1862, 0)
         ExitButton.Margin = New Padding(3, 2, 3, 2)
         ExitButton.Name = "ExitButton"
-        ExitButton.ShadowDecoration.CustomizableEdges = CustomizableEdges15
+        ExitButton.ShadowDecoration.CustomizableEdges = CustomizableEdges96
         ExitButton.Size = New Size(57, 45)
         ExitButton.TabIndex = 241
         ExitButton.Text = "X"
@@ -530,7 +514,7 @@ Partial Class AdminDashboard2
         ResetTransactionFilterButton.BorderRadius = 15
         ResetTransactionFilterButton.Cursor = Cursors.Hand
         ResetTransactionFilterButton.CustomBorderColor = Color.Cyan
-        ResetTransactionFilterButton.CustomizableEdges = CustomizableEdges18
+        ResetTransactionFilterButton.CustomizableEdges = CustomizableEdges97
         ResetTransactionFilterButton.DisabledState.BorderColor = Color.DarkGray
         ResetTransactionFilterButton.DisabledState.CustomBorderColor = Color.DarkGray
         ResetTransactionFilterButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -544,7 +528,7 @@ Partial Class AdminDashboard2
         ResetTransactionFilterButton.Location = New Point(536, 11)
         ResetTransactionFilterButton.Margin = New Padding(3, 2, 3, 2)
         ResetTransactionFilterButton.Name = "ResetTransactionFilterButton"
-        ResetTransactionFilterButton.ShadowDecoration.CustomizableEdges = CustomizableEdges19
+        ResetTransactionFilterButton.ShadowDecoration.CustomizableEdges = CustomizableEdges98
         ResetTransactionFilterButton.Size = New Size(100, 48)
         ResetTransactionFilterButton.TabIndex = 219
         ResetTransactionFilterButton.Text = "Reset"
@@ -557,7 +541,7 @@ Partial Class AdminDashboard2
         SearchTransactionButton.BorderRadius = 15
         SearchTransactionButton.Cursor = Cursors.Hand
         SearchTransactionButton.CustomBorderColor = Color.Cyan
-        SearchTransactionButton.CustomizableEdges = CustomizableEdges22
+        SearchTransactionButton.CustomizableEdges = CustomizableEdges99
         SearchTransactionButton.DisabledState.BorderColor = Color.DarkGray
         SearchTransactionButton.DisabledState.CustomBorderColor = Color.DarkGray
         SearchTransactionButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -571,7 +555,7 @@ Partial Class AdminDashboard2
         SearchTransactionButton.Location = New Point(430, 12)
         SearchTransactionButton.Margin = New Padding(3, 2, 3, 2)
         SearchTransactionButton.Name = "SearchTransactionButton"
-        SearchTransactionButton.ShadowDecoration.CustomizableEdges = CustomizableEdges23
+        SearchTransactionButton.ShadowDecoration.CustomizableEdges = CustomizableEdges100
         SearchTransactionButton.Size = New Size(100, 48)
         SearchTransactionButton.TabIndex = 218
         SearchTransactionButton.Text = "Search"
@@ -584,7 +568,7 @@ Partial Class AdminDashboard2
         TransactionIdTextBox.BorderRadius = 8
         TransactionIdTextBox.BorderThickness = 0
         TransactionIdTextBox.Cursor = Cursors.IBeam
-        TransactionIdTextBox.CustomizableEdges = CustomizableEdges24
+        TransactionIdTextBox.CustomizableEdges = CustomizableEdges101
         TransactionIdTextBox.DefaultText = ""
         TransactionIdTextBox.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         TransactionIdTextBox.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -600,7 +584,7 @@ Partial Class AdminDashboard2
         TransactionIdTextBox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         TransactionIdTextBox.PlaceholderText = "ID"
         TransactionIdTextBox.SelectedText = ""
-        TransactionIdTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges25
+        TransactionIdTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges102
         TransactionIdTextBox.Size = New Size(83, 48)
         TransactionIdTextBox.TabIndex = 213
         ' 
@@ -611,7 +595,7 @@ Partial Class AdminDashboard2
         NameTextBox.BorderRadius = 8
         NameTextBox.BorderThickness = 0
         NameTextBox.Cursor = Cursors.IBeam
-        NameTextBox.CustomizableEdges = CustomizableEdges20
+        NameTextBox.CustomizableEdges = CustomizableEdges103
         NameTextBox.DefaultText = ""
         NameTextBox.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         NameTextBox.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -628,7 +612,7 @@ Partial Class AdminDashboard2
         NameTextBox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         NameTextBox.PlaceholderText = "Name"
         NameTextBox.SelectedText = ""
-        NameTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges21
+        NameTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges104
         NameTextBox.Size = New Size(253, 48)
         NameTextBox.TabIndex = 218
         ' 
@@ -659,7 +643,7 @@ Partial Class AdminDashboard2
         ' Guna2TextBox3
         ' 
         Guna2TextBox3.BackColor = Color.Transparent
-        Guna2TextBox3.CustomizableEdges = CustomizableEdges16
+        Guna2TextBox3.CustomizableEdges = CustomizableEdges105
         Guna2TextBox3.DefaultText = ""
         Guna2TextBox3.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         Guna2TextBox3.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -675,7 +659,7 @@ Partial Class AdminDashboard2
         Guna2TextBox3.PlaceholderText = ""
         Guna2TextBox3.ReadOnly = True
         Guna2TextBox3.SelectedText = ""
-        Guna2TextBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges17
+        Guna2TextBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges106
         Guna2TextBox3.Size = New Size(650, 159)
         Guna2TextBox3.TabIndex = 236
         ' 
@@ -700,14 +684,14 @@ Partial Class AdminDashboard2
         SearchPanel4.Controls.Add(NameTextBox)
         SearchPanel4.Controls.Add(SearchTransactionButton)
         SearchPanel4.Controls.Add(TransactionIdTextBox)
-        SearchPanel4.CustomizableEdges = CustomizableEdges26
+        SearchPanel4.CustomizableEdges = CustomizableEdges107
         SearchPanel4.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         SearchPanel4.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         SearchPanel4.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         SearchPanel4.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         SearchPanel4.Location = New Point(1225, 68)
         SearchPanel4.Name = "SearchPanel4"
-        SearchPanel4.ShadowDecoration.CustomizableEdges = CustomizableEdges27
+        SearchPanel4.ShadowDecoration.CustomizableEdges = CustomizableEdges108
         SearchPanel4.Size = New Size(639, 68)
         SearchPanel4.TabIndex = 244
         SearchPanel4.Visible = False
@@ -717,14 +701,14 @@ Partial Class AdminDashboard2
         ad_patientpanel.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_patientpanel.Controls.Add(guna2HtmlLabel6)
         ad_patientpanel.Controls.Add(guna2CustomGradientPanel3)
-        ad_patientpanel.CustomizableEdges = CustomizableEdges30
+        ad_patientpanel.CustomizableEdges = CustomizableEdges111
         ad_patientpanel.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_patientpanel.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_patientpanel.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_patientpanel.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         ad_patientpanel.Location = New Point(241, 190)
         ad_patientpanel.Name = "ad_patientpanel"
-        ad_patientpanel.ShadowDecoration.CustomizableEdges = CustomizableEdges31
+        ad_patientpanel.ShadowDecoration.CustomizableEdges = CustomizableEdges112
         ad_patientpanel.Size = New Size(1601, 861)
         ad_patientpanel.TabIndex = 249
         ' 
@@ -744,14 +728,14 @@ Partial Class AdminDashboard2
         ' 
         guna2CustomGradientPanel3.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel3.Controls.Add(PatientDataGridViewList2)
-        guna2CustomGradientPanel3.CustomizableEdges = CustomizableEdges28
+        guna2CustomGradientPanel3.CustomizableEdges = CustomizableEdges109
         guna2CustomGradientPanel3.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel3.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel3.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel3.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         guna2CustomGradientPanel3.Location = New Point(3, 56)
         guna2CustomGradientPanel3.Name = "guna2CustomGradientPanel3"
-        guna2CustomGradientPanel3.ShadowDecoration.CustomizableEdges = CustomizableEdges29
+        guna2CustomGradientPanel3.ShadowDecoration.CustomizableEdges = CustomizableEdges110
         guna2CustomGradientPanel3.Size = New Size(1574, 741)
         guna2CustomGradientPanel3.TabIndex = 142
         ' 
@@ -760,43 +744,43 @@ Partial Class AdminDashboard2
         PatientDataGridViewList2.AllowUserToAddRows = False
         PatientDataGridViewList2.AllowUserToResizeColumns = False
         PatientDataGridViewList2.AllowUserToResizeRows = False
-        DataGridViewCellStyle1.BackColor = Color.FromArgb(CByte(160), CByte(160), CByte(160))
-        DataGridViewCellStyle1.Font = New Font("Segoe UI", 9F)
-        DataGridViewCellStyle1.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        DataGridViewCellStyle1.SelectionForeColor = Color.Black
-        PatientDataGridViewList2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle17.BackColor = Color.FromArgb(CByte(160), CByte(160), CByte(160))
+        DataGridViewCellStyle17.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle17.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle17.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
+        DataGridViewCellStyle17.SelectionForeColor = Color.Black
+        PatientDataGridViewList2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle17
         PatientDataGridViewList2.BackgroundColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
-        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        DataGridViewCellStyle2.Font = New Font("Tahoma", 9.75F)
-        DataGridViewCellStyle2.ForeColor = Color.White
-        DataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
-        PatientDataGridViewList2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle18.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle18.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        DataGridViewCellStyle18.Font = New Font("Tahoma", 9.75F)
+        DataGridViewCellStyle18.ForeColor = Color.White
+        DataGridViewCellStyle18.SelectionBackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        DataGridViewCellStyle18.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle18.WrapMode = DataGridViewTriState.True
+        PatientDataGridViewList2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle18
         PatientDataGridViewList2.ColumnHeadersHeight = 39
         PatientDataGridViewList2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
-        DataGridViewCellStyle3.Font = New Font("Microsoft Sans Serif", 9F)
-        DataGridViewCellStyle3.ForeColor = Color.Black
-        DataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        DataGridViewCellStyle3.SelectionForeColor = Color.Black
-        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
-        PatientDataGridViewList2.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle19.Alignment = DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle19.BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
+        DataGridViewCellStyle19.Font = New Font("Microsoft Sans Serif", 9F)
+        DataGridViewCellStyle19.ForeColor = Color.Black
+        DataGridViewCellStyle19.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
+        DataGridViewCellStyle19.SelectionForeColor = Color.Black
+        DataGridViewCellStyle19.WrapMode = DataGridViewTriState.False
+        PatientDataGridViewList2.DefaultCellStyle = DataGridViewCellStyle19
         PatientDataGridViewList2.GridColor = Color.FromArgb(CByte(179), CByte(230), CByte(251))
         PatientDataGridViewList2.Location = New Point(5, 3)
         PatientDataGridViewList2.Name = "PatientDataGridViewList2"
         PatientDataGridViewList2.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
-        DataGridViewCellStyle4.Font = New Font("Segoe UI", 9F)
-        DataGridViewCellStyle4.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
-        DataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = DataGridViewTriState.True
-        PatientDataGridViewList2.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle20.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle20.BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
+        DataGridViewCellStyle20.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle20.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle20.SelectionBackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
+        DataGridViewCellStyle20.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle20.WrapMode = DataGridViewTriState.True
+        PatientDataGridViewList2.RowHeadersDefaultCellStyle = DataGridViewCellStyle20
         PatientDataGridViewList2.RowHeadersVisible = False
         PatientDataGridViewList2.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
         PatientDataGridViewList2.RowTemplate.Height = 35
@@ -831,14 +815,14 @@ Partial Class AdminDashboard2
         ad_AppointmentPanel.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_AppointmentPanel.Controls.Add(guna2HtmlLabel5)
         ad_AppointmentPanel.Controls.Add(guna2CustomGradientPanel5)
-        ad_AppointmentPanel.CustomizableEdges = CustomizableEdges34
+        ad_AppointmentPanel.CustomizableEdges = CustomizableEdges115
         ad_AppointmentPanel.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_AppointmentPanel.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_AppointmentPanel.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_AppointmentPanel.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         ad_AppointmentPanel.Location = New Point(244, 184)
         ad_AppointmentPanel.Name = "ad_AppointmentPanel"
-        ad_AppointmentPanel.ShadowDecoration.CustomizableEdges = CustomizableEdges35
+        ad_AppointmentPanel.ShadowDecoration.CustomizableEdges = CustomizableEdges116
         ad_AppointmentPanel.Size = New Size(1601, 861)
         ad_AppointmentPanel.TabIndex = 179
         ' 
@@ -858,14 +842,14 @@ Partial Class AdminDashboard2
         ' 
         guna2CustomGradientPanel5.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel5.Controls.Add(AppointmentDataGridViewList2)
-        guna2CustomGradientPanel5.CustomizableEdges = CustomizableEdges32
+        guna2CustomGradientPanel5.CustomizableEdges = CustomizableEdges113
         guna2CustomGradientPanel5.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel5.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel5.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel5.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         guna2CustomGradientPanel5.Location = New Point(3, 72)
         guna2CustomGradientPanel5.Name = "guna2CustomGradientPanel5"
-        guna2CustomGradientPanel5.ShadowDecoration.CustomizableEdges = CustomizableEdges33
+        guna2CustomGradientPanel5.ShadowDecoration.CustomizableEdges = CustomizableEdges114
         guna2CustomGradientPanel5.Size = New Size(1574, 725)
         guna2CustomGradientPanel5.TabIndex = 142
         ' 
@@ -874,43 +858,43 @@ Partial Class AdminDashboard2
         AppointmentDataGridViewList2.AllowUserToAddRows = False
         AppointmentDataGridViewList2.AllowUserToResizeColumns = False
         AppointmentDataGridViewList2.AllowUserToResizeRows = False
-        DataGridViewCellStyle5.BackColor = Color.FromArgb(CByte(160), CByte(160), CByte(160))
-        DataGridViewCellStyle5.Font = New Font("Segoe UI", 9F)
-        DataGridViewCellStyle5.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        DataGridViewCellStyle5.SelectionForeColor = Color.Black
-        AppointmentDataGridViewList2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle21.BackColor = Color.FromArgb(CByte(160), CByte(160), CByte(160))
+        DataGridViewCellStyle21.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle21.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle21.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
+        DataGridViewCellStyle21.SelectionForeColor = Color.Black
+        AppointmentDataGridViewList2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle21
         AppointmentDataGridViewList2.BackgroundColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
-        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        DataGridViewCellStyle6.Font = New Font("Tahoma", 9.75F)
-        DataGridViewCellStyle6.ForeColor = Color.White
-        DataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        DataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = DataGridViewTriState.True
-        AppointmentDataGridViewList2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle22.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle22.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        DataGridViewCellStyle22.Font = New Font("Tahoma", 9.75F)
+        DataGridViewCellStyle22.ForeColor = Color.White
+        DataGridViewCellStyle22.SelectionBackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        DataGridViewCellStyle22.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle22.WrapMode = DataGridViewTriState.True
+        AppointmentDataGridViewList2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle22
         AppointmentDataGridViewList2.ColumnHeadersHeight = 39
         AppointmentDataGridViewList2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        DataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle7.BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
-        DataGridViewCellStyle7.Font = New Font("Microsoft Sans Serif", 9F)
-        DataGridViewCellStyle7.ForeColor = Color.Black
-        DataGridViewCellStyle7.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        DataGridViewCellStyle7.SelectionForeColor = Color.Black
-        DataGridViewCellStyle7.WrapMode = DataGridViewTriState.False
-        AppointmentDataGridViewList2.DefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle23.Alignment = DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle23.BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
+        DataGridViewCellStyle23.Font = New Font("Microsoft Sans Serif", 9F)
+        DataGridViewCellStyle23.ForeColor = Color.Black
+        DataGridViewCellStyle23.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
+        DataGridViewCellStyle23.SelectionForeColor = Color.Black
+        DataGridViewCellStyle23.WrapMode = DataGridViewTriState.False
+        AppointmentDataGridViewList2.DefaultCellStyle = DataGridViewCellStyle23
         AppointmentDataGridViewList2.GridColor = Color.FromArgb(CByte(179), CByte(230), CByte(251))
         AppointmentDataGridViewList2.Location = New Point(8, 6)
         AppointmentDataGridViewList2.Name = "AppointmentDataGridViewList2"
         AppointmentDataGridViewList2.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
-        DataGridViewCellStyle8.Font = New Font("Segoe UI", 9F)
-        DataGridViewCellStyle8.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle8.SelectionBackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
-        DataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = DataGridViewTriState.True
-        AppointmentDataGridViewList2.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle24.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle24.BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
+        DataGridViewCellStyle24.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle24.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle24.SelectionBackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
+        DataGridViewCellStyle24.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle24.WrapMode = DataGridViewTriState.True
+        AppointmentDataGridViewList2.RowHeadersDefaultCellStyle = DataGridViewCellStyle24
         AppointmentDataGridViewList2.RowHeadersVisible = False
         AppointmentDataGridViewList2.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
         AppointmentDataGridViewList2.RowTemplate.Height = 35
@@ -947,14 +931,14 @@ Partial Class AdminDashboard2
         ad_docpanel.Controls.Add(Guna2HtmlLabel7)
         ad_docpanel.Controls.Add(guna2CustomGradientPanel4)
         ad_docpanel.Controls.Add(AddDoctor)
-        ad_docpanel.CustomizableEdges = CustomizableEdges39
+        ad_docpanel.CustomizableEdges = CustomizableEdges120
         ad_docpanel.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_docpanel.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_docpanel.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_docpanel.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         ad_docpanel.Location = New Point(257, 188)
         ad_docpanel.Name = "ad_docpanel"
-        ad_docpanel.ShadowDecoration.CustomizableEdges = CustomizableEdges40
+        ad_docpanel.ShadowDecoration.CustomizableEdges = CustomizableEdges121
         ad_docpanel.Size = New Size(1601, 861)
         ad_docpanel.TabIndex = 248
         ' 
@@ -986,14 +970,14 @@ Partial Class AdminDashboard2
         ' 
         guna2CustomGradientPanel4.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel4.Controls.Add(DoctorDataGridViewList2)
-        guna2CustomGradientPanel4.CustomizableEdges = CustomizableEdges36
+        guna2CustomGradientPanel4.CustomizableEdges = CustomizableEdges117
         guna2CustomGradientPanel4.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel4.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel4.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel4.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         guna2CustomGradientPanel4.Location = New Point(3, 83)
         guna2CustomGradientPanel4.Name = "guna2CustomGradientPanel4"
-        guna2CustomGradientPanel4.ShadowDecoration.CustomizableEdges = CustomizableEdges37
+        guna2CustomGradientPanel4.ShadowDecoration.CustomizableEdges = CustomizableEdges118
         guna2CustomGradientPanel4.Size = New Size(1574, 714)
         guna2CustomGradientPanel4.TabIndex = 142
         ' 
@@ -1002,43 +986,43 @@ Partial Class AdminDashboard2
         DoctorDataGridViewList2.AllowUserToAddRows = False
         DoctorDataGridViewList2.AllowUserToResizeColumns = False
         DoctorDataGridViewList2.AllowUserToResizeRows = False
-        DataGridViewCellStyle9.BackColor = Color.FromArgb(CByte(160), CByte(160), CByte(160))
-        DataGridViewCellStyle9.Font = New Font("Segoe UI", 9F)
-        DataGridViewCellStyle9.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle9.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        DataGridViewCellStyle9.SelectionForeColor = Color.Black
-        DoctorDataGridViewList2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle25.BackColor = Color.FromArgb(CByte(160), CByte(160), CByte(160))
+        DataGridViewCellStyle25.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle25.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle25.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
+        DataGridViewCellStyle25.SelectionForeColor = Color.Black
+        DoctorDataGridViewList2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle25
         DoctorDataGridViewList2.BackgroundColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
-        DataGridViewCellStyle10.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle10.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        DataGridViewCellStyle10.Font = New Font("Tahoma", 9.75F)
-        DataGridViewCellStyle10.ForeColor = Color.White
-        DataGridViewCellStyle10.SelectionBackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        DataGridViewCellStyle10.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle10.WrapMode = DataGridViewTriState.True
-        DoctorDataGridViewList2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle26.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle26.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        DataGridViewCellStyle26.Font = New Font("Tahoma", 9.75F)
+        DataGridViewCellStyle26.ForeColor = Color.White
+        DataGridViewCellStyle26.SelectionBackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        DataGridViewCellStyle26.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle26.WrapMode = DataGridViewTriState.True
+        DoctorDataGridViewList2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle26
         DoctorDataGridViewList2.ColumnHeadersHeight = 39
         DoctorDataGridViewList2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        DataGridViewCellStyle11.Alignment = DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle11.BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
-        DataGridViewCellStyle11.Font = New Font("Microsoft Sans Serif", 9F)
-        DataGridViewCellStyle11.ForeColor = Color.Black
-        DataGridViewCellStyle11.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        DataGridViewCellStyle11.SelectionForeColor = Color.Black
-        DataGridViewCellStyle11.WrapMode = DataGridViewTriState.False
-        DoctorDataGridViewList2.DefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle27.Alignment = DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle27.BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
+        DataGridViewCellStyle27.Font = New Font("Microsoft Sans Serif", 9F)
+        DataGridViewCellStyle27.ForeColor = Color.Black
+        DataGridViewCellStyle27.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
+        DataGridViewCellStyle27.SelectionForeColor = Color.Black
+        DataGridViewCellStyle27.WrapMode = DataGridViewTriState.False
+        DoctorDataGridViewList2.DefaultCellStyle = DataGridViewCellStyle27
         DoctorDataGridViewList2.GridColor = Color.FromArgb(CByte(179), CByte(230), CByte(251))
         DoctorDataGridViewList2.Location = New Point(4, 3)
         DoctorDataGridViewList2.Name = "DoctorDataGridViewList2"
         DoctorDataGridViewList2.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle12.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle12.BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
-        DataGridViewCellStyle12.Font = New Font("Segoe UI", 9F)
-        DataGridViewCellStyle12.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle12.SelectionBackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
-        DataGridViewCellStyle12.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle12.WrapMode = DataGridViewTriState.True
-        DoctorDataGridViewList2.RowHeadersDefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle28.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle28.BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
+        DataGridViewCellStyle28.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle28.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle28.SelectionBackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
+        DataGridViewCellStyle28.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle28.WrapMode = DataGridViewTriState.True
+        DoctorDataGridViewList2.RowHeadersDefaultCellStyle = DataGridViewCellStyle28
         DoctorDataGridViewList2.RowHeadersVisible = False
         DoctorDataGridViewList2.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
         DoctorDataGridViewList2.RowTemplate.Height = 35
@@ -1081,7 +1065,7 @@ Partial Class AdminDashboard2
         AddDoctor.Location = New Point(1391, 27)
         AddDoctor.Name = "AddDoctor"
         AddDoctor.PressedState.ImageSize = New Size(64, 64)
-        AddDoctor.ShadowDecoration.CustomizableEdges = CustomizableEdges38
+        AddDoctor.ShadowDecoration.CustomizableEdges = CustomizableEdges119
         AddDoctor.Size = New Size(45, 39)
         AddDoctor.TabIndex = 177
         ' 
@@ -1092,14 +1076,14 @@ Partial Class AdminDashboard2
         ad_staffpanel.Controls.Add(Guna2HtmlLabel10)
         ad_staffpanel.Controls.Add(AddStaffLabel)
         ad_staffpanel.Controls.Add(AddButton)
-        ad_staffpanel.CustomizableEdges = CustomizableEdges42
+        ad_staffpanel.CustomizableEdges = CustomizableEdges123
         ad_staffpanel.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_staffpanel.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_staffpanel.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_staffpanel.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         ad_staffpanel.Location = New Point(264, 187)
         ad_staffpanel.Name = "ad_staffpanel"
-        ad_staffpanel.ShadowDecoration.CustomizableEdges = CustomizableEdges43
+        ad_staffpanel.ShadowDecoration.CustomizableEdges = CustomizableEdges124
         ad_staffpanel.Size = New Size(1601, 861)
         ad_staffpanel.TabIndex = 247
         ad_staffpanel.Visible = False
@@ -1109,43 +1093,43 @@ Partial Class AdminDashboard2
         StaffDataGridViewList2.AllowUserToAddRows = False
         StaffDataGridViewList2.AllowUserToResizeColumns = False
         StaffDataGridViewList2.AllowUserToResizeRows = False
-        DataGridViewCellStyle13.BackColor = Color.FromArgb(CByte(160), CByte(160), CByte(160))
-        DataGridViewCellStyle13.Font = New Font("Segoe UI", 9F)
-        DataGridViewCellStyle13.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle13.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        DataGridViewCellStyle13.SelectionForeColor = Color.Black
-        StaffDataGridViewList2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle29.BackColor = Color.FromArgb(CByte(160), CByte(160), CByte(160))
+        DataGridViewCellStyle29.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle29.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle29.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
+        DataGridViewCellStyle29.SelectionForeColor = Color.Black
+        StaffDataGridViewList2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle29
         StaffDataGridViewList2.BackgroundColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
-        DataGridViewCellStyle14.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle14.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        DataGridViewCellStyle14.Font = New Font("Tahoma", 9.75F)
-        DataGridViewCellStyle14.ForeColor = Color.White
-        DataGridViewCellStyle14.SelectionBackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        DataGridViewCellStyle14.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle14.WrapMode = DataGridViewTriState.True
-        StaffDataGridViewList2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle30.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle30.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        DataGridViewCellStyle30.Font = New Font("Tahoma", 9.75F)
+        DataGridViewCellStyle30.ForeColor = Color.White
+        DataGridViewCellStyle30.SelectionBackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        DataGridViewCellStyle30.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle30.WrapMode = DataGridViewTriState.True
+        StaffDataGridViewList2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle30
         StaffDataGridViewList2.ColumnHeadersHeight = 39
         StaffDataGridViewList2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        DataGridViewCellStyle15.Alignment = DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle15.BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
-        DataGridViewCellStyle15.Font = New Font("Microsoft Sans Serif", 9F)
-        DataGridViewCellStyle15.ForeColor = Color.Black
-        DataGridViewCellStyle15.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        DataGridViewCellStyle15.SelectionForeColor = Color.Black
-        DataGridViewCellStyle15.WrapMode = DataGridViewTriState.False
-        StaffDataGridViewList2.DefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle31.Alignment = DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle31.BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
+        DataGridViewCellStyle31.Font = New Font("Microsoft Sans Serif", 9F)
+        DataGridViewCellStyle31.ForeColor = Color.Black
+        DataGridViewCellStyle31.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
+        DataGridViewCellStyle31.SelectionForeColor = Color.Black
+        DataGridViewCellStyle31.WrapMode = DataGridViewTriState.False
+        StaffDataGridViewList2.DefaultCellStyle = DataGridViewCellStyle31
         StaffDataGridViewList2.GridColor = Color.FromArgb(CByte(179), CByte(230), CByte(251))
         StaffDataGridViewList2.Location = New Point(14, 87)
         StaffDataGridViewList2.Name = "StaffDataGridViewList2"
         StaffDataGridViewList2.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle16.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle16.BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
-        DataGridViewCellStyle16.Font = New Font("Segoe UI", 9F)
-        DataGridViewCellStyle16.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle16.SelectionBackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
-        DataGridViewCellStyle16.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle16.WrapMode = DataGridViewTriState.True
-        StaffDataGridViewList2.RowHeadersDefaultCellStyle = DataGridViewCellStyle16
+        DataGridViewCellStyle32.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle32.BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
+        DataGridViewCellStyle32.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle32.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle32.SelectionBackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
+        DataGridViewCellStyle32.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle32.WrapMode = DataGridViewTriState.True
+        StaffDataGridViewList2.RowHeadersDefaultCellStyle = DataGridViewCellStyle32
         StaffDataGridViewList2.RowHeadersVisible = False
         StaffDataGridViewList2.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
         StaffDataGridViewList2.RowTemplate.Height = 35
@@ -1212,7 +1196,7 @@ Partial Class AdminDashboard2
         AddButton.Location = New Point(1416, 25)
         AddButton.Name = "AddButton"
         AddButton.PressedState.ImageSize = New Size(64, 64)
-        AddButton.ShadowDecoration.CustomizableEdges = CustomizableEdges41
+        AddButton.ShadowDecoration.CustomizableEdges = CustomizableEdges122
         AddButton.Size = New Size(45, 39)
         AddButton.TabIndex = 173
         ' 
@@ -1220,49 +1204,49 @@ Partial Class AdminDashboard2
         ' 
         SearchPanel3.BorderColor = Color.Transparent
         SearchPanel3.BorderThickness = 2
-        SearchPanel3.Controls.Add(Guna2Button1)
+        SearchPanel3.Controls.Add(ResetAppointmentButton)
         SearchPanel3.Controls.Add(Guna2HtmlLabel11)
-        SearchPanel3.Controls.Add(Guna2TextBox1)
-        SearchPanel3.Controls.Add(Guna2Button2)
-        SearchPanel3.Controls.Add(Guna2TextBox4)
-        SearchPanel3.CustomizableEdges = CustomizableEdges81
+        SearchPanel3.Controls.Add(SearchAppointmentName)
+        SearchPanel3.Controls.Add(SearchAppointmentButton)
+        SearchPanel3.Controls.Add(SearchAppointmentID)
+        SearchPanel3.CustomizableEdges = CustomizableEdges133
         SearchPanel3.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         SearchPanel3.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         SearchPanel3.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         SearchPanel3.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         SearchPanel3.Location = New Point(1225, 68)
         SearchPanel3.Name = "SearchPanel3"
-        SearchPanel3.ShadowDecoration.CustomizableEdges = CustomizableEdges82
+        SearchPanel3.ShadowDecoration.CustomizableEdges = CustomizableEdges134
         SearchPanel3.Size = New Size(639, 68)
         SearchPanel3.TabIndex = 245
         SearchPanel3.Visible = False
         ' 
-        ' Guna2Button1
+        ' ResetAppointmentButton
         ' 
-        Guna2Button1.BackColor = Color.Transparent
-        Guna2Button1.BorderColor = Color.FromArgb(CByte(93), CByte(202), CByte(209))
-        Guna2Button1.BorderRadius = 15
-        Guna2Button1.Cursor = Cursors.Hand
-        Guna2Button1.CustomBorderColor = Color.Cyan
-        Guna2Button1.CustomizableEdges = CustomizableEdges73
-        Guna2Button1.DisabledState.BorderColor = Color.DarkGray
-        Guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray
-        Guna2Button1.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2Button1.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Guna2Button1.FillColor = Color.White
-        Guna2Button1.Font = New Font("Arial", 9.75F, FontStyle.Bold)
-        Guna2Button1.ForeColor = Color.Black
-        Guna2Button1.ImageAlign = HorizontalAlignment.Left
-        Guna2Button1.ImageOffset = New Point(2, 0)
-        Guna2Button1.ImageSize = New Size(40, 40)
-        Guna2Button1.Location = New Point(536, 11)
-        Guna2Button1.Margin = New Padding(3, 2, 3, 2)
-        Guna2Button1.Name = "Guna2Button1"
-        Guna2Button1.ShadowDecoration.CustomizableEdges = CustomizableEdges74
-        Guna2Button1.Size = New Size(100, 48)
-        Guna2Button1.TabIndex = 219
-        Guna2Button1.Text = "Reset"
-        Guna2Button1.TextFormatNoPrefix = True
+        ResetAppointmentButton.BackColor = Color.Transparent
+        ResetAppointmentButton.BorderColor = Color.FromArgb(CByte(93), CByte(202), CByte(209))
+        ResetAppointmentButton.BorderRadius = 15
+        ResetAppointmentButton.Cursor = Cursors.Hand
+        ResetAppointmentButton.CustomBorderColor = Color.Cyan
+        ResetAppointmentButton.CustomizableEdges = CustomizableEdges125
+        ResetAppointmentButton.DisabledState.BorderColor = Color.DarkGray
+        ResetAppointmentButton.DisabledState.CustomBorderColor = Color.DarkGray
+        ResetAppointmentButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        ResetAppointmentButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        ResetAppointmentButton.FillColor = Color.White
+        ResetAppointmentButton.Font = New Font("Arial", 9.75F, FontStyle.Bold)
+        ResetAppointmentButton.ForeColor = Color.Black
+        ResetAppointmentButton.ImageAlign = HorizontalAlignment.Left
+        ResetAppointmentButton.ImageOffset = New Point(2, 0)
+        ResetAppointmentButton.ImageSize = New Size(40, 40)
+        ResetAppointmentButton.Location = New Point(536, 11)
+        ResetAppointmentButton.Margin = New Padding(3, 2, 3, 2)
+        ResetAppointmentButton.Name = "ResetAppointmentButton"
+        ResetAppointmentButton.ShadowDecoration.CustomizableEdges = CustomizableEdges126
+        ResetAppointmentButton.Size = New Size(100, 48)
+        ResetAppointmentButton.TabIndex = 219
+        ResetAppointmentButton.Text = "Reset"
+        ResetAppointmentButton.TextFormatNoPrefix = True
         ' 
         ' Guna2HtmlLabel11
         ' 
@@ -1276,277 +1260,135 @@ Partial Class AdminDashboard2
         Guna2HtmlLabel11.TabIndex = 220
         Guna2HtmlLabel11.Text = "OR"
         ' 
-        ' Guna2TextBox1
+        ' SearchAppointmentName
         ' 
-        Guna2TextBox1.BackColor = Color.Transparent
-        Guna2TextBox1.BorderColor = Color.FromArgb(CByte(93), CByte(202), CByte(209))
-        Guna2TextBox1.BorderRadius = 8
-        Guna2TextBox1.BorderThickness = 0
-        Guna2TextBox1.Cursor = Cursors.IBeam
-        Guna2TextBox1.CustomizableEdges = CustomizableEdges75
-        Guna2TextBox1.DefaultText = ""
-        Guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        Guna2TextBox1.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        Guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox1.FillColor = SystemColors.Window
-        Guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox1.Font = New Font("Segoe UI", 9F)
-        Guna2TextBox1.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
-        Guna2TextBox1.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox1.Location = New Point(15, 12)
-        Guna2TextBox1.Margin = New Padding(3, 4, 3, 4)
-        Guna2TextBox1.Name = "Guna2TextBox1"
-        Guna2TextBox1.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
-        Guna2TextBox1.PlaceholderText = "Name"
-        Guna2TextBox1.SelectedText = ""
-        Guna2TextBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges76
-        Guna2TextBox1.Size = New Size(253, 48)
-        Guna2TextBox1.TabIndex = 218
+        SearchAppointmentName.BackColor = Color.Transparent
+        SearchAppointmentName.BorderColor = Color.FromArgb(CByte(93), CByte(202), CByte(209))
+        SearchAppointmentName.BorderRadius = 8
+        SearchAppointmentName.BorderThickness = 0
+        SearchAppointmentName.Cursor = Cursors.IBeam
+        SearchAppointmentName.CustomizableEdges = CustomizableEdges127
+        SearchAppointmentName.DefaultText = ""
+        SearchAppointmentName.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        SearchAppointmentName.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        SearchAppointmentName.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        SearchAppointmentName.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        SearchAppointmentName.FillColor = SystemColors.Window
+        SearchAppointmentName.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        SearchAppointmentName.Font = New Font("Segoe UI", 9F)
+        SearchAppointmentName.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
+        SearchAppointmentName.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        SearchAppointmentName.Location = New Point(15, 12)
+        SearchAppointmentName.Margin = New Padding(3, 4, 3, 4)
+        SearchAppointmentName.Name = "SearchAppointmentName"
+        SearchAppointmentName.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
+        SearchAppointmentName.PlaceholderText = "Name"
+        SearchAppointmentName.SelectedText = ""
+        SearchAppointmentName.ShadowDecoration.CustomizableEdges = CustomizableEdges128
+        SearchAppointmentName.Size = New Size(253, 48)
+        SearchAppointmentName.TabIndex = 218
         ' 
-        ' Guna2Button2
+        ' SearchAppointmentButton
         ' 
-        Guna2Button2.BackColor = Color.Transparent
-        Guna2Button2.BorderColor = Color.FromArgb(CByte(93), CByte(202), CByte(209))
-        Guna2Button2.BorderRadius = 15
-        Guna2Button2.Cursor = Cursors.Hand
-        Guna2Button2.CustomBorderColor = Color.Cyan
-        Guna2Button2.CustomizableEdges = CustomizableEdges77
-        Guna2Button2.DisabledState.BorderColor = Color.DarkGray
-        Guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray
-        Guna2Button2.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2Button2.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Guna2Button2.FillColor = Color.White
-        Guna2Button2.Font = New Font("Arial", 9.75F, FontStyle.Bold)
-        Guna2Button2.ForeColor = Color.Black
-        Guna2Button2.ImageAlign = HorizontalAlignment.Left
-        Guna2Button2.ImageOffset = New Point(2, 0)
-        Guna2Button2.ImageSize = New Size(40, 40)
-        Guna2Button2.Location = New Point(430, 12)
-        Guna2Button2.Margin = New Padding(3, 2, 3, 2)
-        Guna2Button2.Name = "Guna2Button2"
-        Guna2Button2.ShadowDecoration.CustomizableEdges = CustomizableEdges78
-        Guna2Button2.Size = New Size(100, 48)
-        Guna2Button2.TabIndex = 218
-        Guna2Button2.Text = "Search"
-        Guna2Button2.TextFormatNoPrefix = True
+        SearchAppointmentButton.BackColor = Color.Transparent
+        SearchAppointmentButton.BorderColor = Color.FromArgb(CByte(93), CByte(202), CByte(209))
+        SearchAppointmentButton.BorderRadius = 15
+        SearchAppointmentButton.Cursor = Cursors.Hand
+        SearchAppointmentButton.CustomBorderColor = Color.Cyan
+        SearchAppointmentButton.CustomizableEdges = CustomizableEdges129
+        SearchAppointmentButton.DisabledState.BorderColor = Color.DarkGray
+        SearchAppointmentButton.DisabledState.CustomBorderColor = Color.DarkGray
+        SearchAppointmentButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        SearchAppointmentButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        SearchAppointmentButton.FillColor = Color.White
+        SearchAppointmentButton.Font = New Font("Arial", 9.75F, FontStyle.Bold)
+        SearchAppointmentButton.ForeColor = Color.Black
+        SearchAppointmentButton.ImageAlign = HorizontalAlignment.Left
+        SearchAppointmentButton.ImageOffset = New Point(2, 0)
+        SearchAppointmentButton.ImageSize = New Size(40, 40)
+        SearchAppointmentButton.Location = New Point(430, 12)
+        SearchAppointmentButton.Margin = New Padding(3, 2, 3, 2)
+        SearchAppointmentButton.Name = "SearchAppointmentButton"
+        SearchAppointmentButton.ShadowDecoration.CustomizableEdges = CustomizableEdges130
+        SearchAppointmentButton.Size = New Size(100, 48)
+        SearchAppointmentButton.TabIndex = 218
+        SearchAppointmentButton.Text = "Search"
+        SearchAppointmentButton.TextFormatNoPrefix = True
         ' 
-        ' Guna2TextBox4
+        ' SearchAppointmentID
         ' 
-        Guna2TextBox4.BackColor = Color.Transparent
-        Guna2TextBox4.BorderColor = Color.Transparent
-        Guna2TextBox4.BorderRadius = 8
-        Guna2TextBox4.BorderThickness = 0
-        Guna2TextBox4.Cursor = Cursors.IBeam
-        Guna2TextBox4.CustomizableEdges = CustomizableEdges79
-        Guna2TextBox4.DefaultText = ""
-        Guna2TextBox4.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        Guna2TextBox4.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        Guna2TextBox4.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox4.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox4.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox4.Font = New Font("Segoe UI", 9F)
-        Guna2TextBox4.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
-        Guna2TextBox4.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox4.Location = New Point(325, 12)
-        Guna2TextBox4.Margin = New Padding(3, 4, 3, 4)
-        Guna2TextBox4.Name = "Guna2TextBox4"
-        Guna2TextBox4.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
-        Guna2TextBox4.PlaceholderText = "ID"
-        Guna2TextBox4.SelectedText = ""
-        Guna2TextBox4.ShadowDecoration.CustomizableEdges = CustomizableEdges80
-        Guna2TextBox4.Size = New Size(83, 48)
-        Guna2TextBox4.TabIndex = 213
-        ' 
-        ' SearchPanel2
-        ' 
-        SearchPanel2.BorderColor = Color.Transparent
-        SearchPanel2.BorderThickness = 2
-        SearchPanel2.Controls.Add(Guna2Button3)
-        SearchPanel2.Controls.Add(Guna2HtmlLabel12)
-        SearchPanel2.Controls.Add(Guna2TextBox5)
-        SearchPanel2.Controls.Add(Guna2Button4)
-        SearchPanel2.Controls.Add(Guna2TextBox6)
-        SearchPanel2.CustomizableEdges = CustomizableEdges61
-        SearchPanel2.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        SearchPanel2.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        SearchPanel2.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        SearchPanel2.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
-        SearchPanel2.Location = New Point(1225, 68)
-        SearchPanel2.Name = "SearchPanel2"
-        SearchPanel2.ShadowDecoration.CustomizableEdges = CustomizableEdges62
-        SearchPanel2.Size = New Size(639, 68)
-        SearchPanel2.TabIndex = 245
-        SearchPanel2.Visible = False
-        ' 
-        ' Guna2Button3
-        ' 
-        Guna2Button3.BackColor = Color.Transparent
-        Guna2Button3.BorderColor = Color.FromArgb(CByte(93), CByte(202), CByte(209))
-        Guna2Button3.BorderRadius = 15
-        Guna2Button3.Cursor = Cursors.Hand
-        Guna2Button3.CustomBorderColor = Color.Cyan
-        Guna2Button3.CustomizableEdges = CustomizableEdges53
-        Guna2Button3.DisabledState.BorderColor = Color.DarkGray
-        Guna2Button3.DisabledState.CustomBorderColor = Color.DarkGray
-        Guna2Button3.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2Button3.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Guna2Button3.FillColor = Color.White
-        Guna2Button3.Font = New Font("Arial", 9.75F, FontStyle.Bold)
-        Guna2Button3.ForeColor = Color.Black
-        Guna2Button3.ImageAlign = HorizontalAlignment.Left
-        Guna2Button3.ImageOffset = New Point(2, 0)
-        Guna2Button3.ImageSize = New Size(40, 40)
-        Guna2Button3.Location = New Point(536, 11)
-        Guna2Button3.Margin = New Padding(3, 2, 3, 2)
-        Guna2Button3.Name = "Guna2Button3"
-        Guna2Button3.ShadowDecoration.CustomizableEdges = CustomizableEdges54
-        Guna2Button3.Size = New Size(100, 48)
-        Guna2Button3.TabIndex = 219
-        Guna2Button3.Text = "Reset"
-        Guna2Button3.TextFormatNoPrefix = True
-        ' 
-        ' Guna2HtmlLabel12
-        ' 
-        Guna2HtmlLabel12.BackColor = Color.Transparent
-        Guna2HtmlLabel12.Font = New Font("Tahoma", 9.75F)
-        Guna2HtmlLabel12.ForeColor = SystemColors.Control
-        Guna2HtmlLabel12.Location = New Point(285, 28)
-        Guna2HtmlLabel12.Margin = New Padding(3, 2, 3, 2)
-        Guna2HtmlLabel12.Name = "Guna2HtmlLabel12"
-        Guna2HtmlLabel12.Size = New Size(20, 18)
-        Guna2HtmlLabel12.TabIndex = 220
-        Guna2HtmlLabel12.Text = "OR"
-        ' 
-        ' Guna2TextBox5
-        ' 
-        Guna2TextBox5.BackColor = Color.Transparent
-        Guna2TextBox5.BorderColor = Color.FromArgb(CByte(93), CByte(202), CByte(209))
-        Guna2TextBox5.BorderRadius = 8
-        Guna2TextBox5.BorderThickness = 0
-        Guna2TextBox5.Cursor = Cursors.IBeam
-        Guna2TextBox5.CustomizableEdges = CustomizableEdges55
-        Guna2TextBox5.DefaultText = ""
-        Guna2TextBox5.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        Guna2TextBox5.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        Guna2TextBox5.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox5.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox5.FillColor = SystemColors.Window
-        Guna2TextBox5.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox5.Font = New Font("Segoe UI", 9F)
-        Guna2TextBox5.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
-        Guna2TextBox5.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox5.Location = New Point(15, 12)
-        Guna2TextBox5.Margin = New Padding(3, 4, 3, 4)
-        Guna2TextBox5.Name = "Guna2TextBox5"
-        Guna2TextBox5.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
-        Guna2TextBox5.PlaceholderText = "Name"
-        Guna2TextBox5.SelectedText = ""
-        Guna2TextBox5.ShadowDecoration.CustomizableEdges = CustomizableEdges56
-        Guna2TextBox5.Size = New Size(253, 48)
-        Guna2TextBox5.TabIndex = 218
-        ' 
-        ' Guna2Button4
-        ' 
-        Guna2Button4.BackColor = Color.Transparent
-        Guna2Button4.BorderColor = Color.FromArgb(CByte(93), CByte(202), CByte(209))
-        Guna2Button4.BorderRadius = 15
-        Guna2Button4.Cursor = Cursors.Hand
-        Guna2Button4.CustomBorderColor = Color.Cyan
-        Guna2Button4.CustomizableEdges = CustomizableEdges57
-        Guna2Button4.DisabledState.BorderColor = Color.DarkGray
-        Guna2Button4.DisabledState.CustomBorderColor = Color.DarkGray
-        Guna2Button4.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2Button4.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Guna2Button4.FillColor = Color.White
-        Guna2Button4.Font = New Font("Arial", 9.75F, FontStyle.Bold)
-        Guna2Button4.ForeColor = Color.Black
-        Guna2Button4.ImageAlign = HorizontalAlignment.Left
-        Guna2Button4.ImageOffset = New Point(2, 0)
-        Guna2Button4.ImageSize = New Size(40, 40)
-        Guna2Button4.Location = New Point(430, 12)
-        Guna2Button4.Margin = New Padding(3, 2, 3, 2)
-        Guna2Button4.Name = "Guna2Button4"
-        Guna2Button4.ShadowDecoration.CustomizableEdges = CustomizableEdges58
-        Guna2Button4.Size = New Size(100, 48)
-        Guna2Button4.TabIndex = 218
-        Guna2Button4.Text = "Search"
-        Guna2Button4.TextFormatNoPrefix = True
-        ' 
-        ' Guna2TextBox6
-        ' 
-        Guna2TextBox6.BackColor = Color.Transparent
-        Guna2TextBox6.BorderColor = Color.Transparent
-        Guna2TextBox6.BorderRadius = 8
-        Guna2TextBox6.BorderThickness = 0
-        Guna2TextBox6.Cursor = Cursors.IBeam
-        Guna2TextBox6.CustomizableEdges = CustomizableEdges59
-        Guna2TextBox6.DefaultText = ""
-        Guna2TextBox6.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        Guna2TextBox6.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        Guna2TextBox6.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox6.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox6.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox6.Font = New Font("Segoe UI", 9F)
-        Guna2TextBox6.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
-        Guna2TextBox6.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox6.Location = New Point(325, 12)
-        Guna2TextBox6.Margin = New Padding(3, 4, 3, 4)
-        Guna2TextBox6.Name = "Guna2TextBox6"
-        Guna2TextBox6.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
-        Guna2TextBox6.PlaceholderText = "ID"
-        Guna2TextBox6.SelectedText = ""
-        Guna2TextBox6.ShadowDecoration.CustomizableEdges = CustomizableEdges60
-        Guna2TextBox6.Size = New Size(83, 48)
-        Guna2TextBox6.TabIndex = 213
+        SearchAppointmentID.BackColor = Color.Transparent
+        SearchAppointmentID.BorderColor = Color.Transparent
+        SearchAppointmentID.BorderRadius = 8
+        SearchAppointmentID.BorderThickness = 0
+        SearchAppointmentID.Cursor = Cursors.IBeam
+        SearchAppointmentID.CustomizableEdges = CustomizableEdges131
+        SearchAppointmentID.DefaultText = ""
+        SearchAppointmentID.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        SearchAppointmentID.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        SearchAppointmentID.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        SearchAppointmentID.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        SearchAppointmentID.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        SearchAppointmentID.Font = New Font("Segoe UI", 9F)
+        SearchAppointmentID.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
+        SearchAppointmentID.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        SearchAppointmentID.Location = New Point(325, 12)
+        SearchAppointmentID.Margin = New Padding(3, 4, 3, 4)
+        SearchAppointmentID.Name = "SearchAppointmentID"
+        SearchAppointmentID.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
+        SearchAppointmentID.PlaceholderText = "ID"
+        SearchAppointmentID.SelectedText = ""
+        SearchAppointmentID.ShadowDecoration.CustomizableEdges = CustomizableEdges132
+        SearchAppointmentID.Size = New Size(83, 48)
+        SearchAppointmentID.TabIndex = 213
         ' 
         ' SearchPanel1
         ' 
         SearchPanel1.BorderColor = Color.Transparent
         SearchPanel1.BorderThickness = 2
-        SearchPanel1.Controls.Add(Guna2Button5)
+        SearchPanel1.Controls.Add(ResetDoctorButton)
         SearchPanel1.Controls.Add(Guna2HtmlLabel13)
-        SearchPanel1.Controls.Add(Guna2TextBox7)
-        SearchPanel1.Controls.Add(Guna2Button6)
-        SearchPanel1.Controls.Add(Guna2TextBox8)
-        SearchPanel1.CustomizableEdges = CustomizableEdges71
+        SearchPanel1.Controls.Add(SearchDoctorName)
+        SearchPanel1.Controls.Add(SearchDoctorButton)
+        SearchPanel1.Controls.Add(SearchDoctorID)
+        SearchPanel1.CustomizableEdges = CustomizableEdges143
         SearchPanel1.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         SearchPanel1.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         SearchPanel1.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         SearchPanel1.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         SearchPanel1.Location = New Point(1225, 68)
         SearchPanel1.Name = "SearchPanel1"
-        SearchPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges72
+        SearchPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges144
         SearchPanel1.Size = New Size(639, 68)
         SearchPanel1.TabIndex = 245
         SearchPanel1.Visible = False
         ' 
-        ' Guna2Button5
+        ' ResetDoctorButton
         ' 
-        Guna2Button5.BackColor = Color.Transparent
-        Guna2Button5.BorderColor = Color.FromArgb(CByte(93), CByte(202), CByte(209))
-        Guna2Button5.BorderRadius = 15
-        Guna2Button5.Cursor = Cursors.Hand
-        Guna2Button5.CustomBorderColor = Color.Cyan
-        Guna2Button5.CustomizableEdges = CustomizableEdges63
-        Guna2Button5.DisabledState.BorderColor = Color.DarkGray
-        Guna2Button5.DisabledState.CustomBorderColor = Color.DarkGray
-        Guna2Button5.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2Button5.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Guna2Button5.FillColor = Color.White
-        Guna2Button5.Font = New Font("Arial", 9.75F, FontStyle.Bold)
-        Guna2Button5.ForeColor = Color.Black
-        Guna2Button5.ImageAlign = HorizontalAlignment.Left
-        Guna2Button5.ImageOffset = New Point(2, 0)
-        Guna2Button5.ImageSize = New Size(40, 40)
-        Guna2Button5.Location = New Point(536, 11)
-        Guna2Button5.Margin = New Padding(3, 2, 3, 2)
-        Guna2Button5.Name = "Guna2Button5"
-        Guna2Button5.ShadowDecoration.CustomizableEdges = CustomizableEdges64
-        Guna2Button5.Size = New Size(100, 48)
-        Guna2Button5.TabIndex = 219
-        Guna2Button5.Text = "Reset"
-        Guna2Button5.TextFormatNoPrefix = True
+        ResetDoctorButton.BackColor = Color.Transparent
+        ResetDoctorButton.BorderColor = Color.FromArgb(CByte(93), CByte(202), CByte(209))
+        ResetDoctorButton.BorderRadius = 15
+        ResetDoctorButton.Cursor = Cursors.Hand
+        ResetDoctorButton.CustomBorderColor = Color.Cyan
+        ResetDoctorButton.CustomizableEdges = CustomizableEdges135
+        ResetDoctorButton.DisabledState.BorderColor = Color.DarkGray
+        ResetDoctorButton.DisabledState.CustomBorderColor = Color.DarkGray
+        ResetDoctorButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        ResetDoctorButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        ResetDoctorButton.FillColor = Color.White
+        ResetDoctorButton.Font = New Font("Arial", 9.75F, FontStyle.Bold)
+        ResetDoctorButton.ForeColor = Color.Black
+        ResetDoctorButton.ImageAlign = HorizontalAlignment.Left
+        ResetDoctorButton.ImageOffset = New Point(2, 0)
+        ResetDoctorButton.ImageSize = New Size(40, 40)
+        ResetDoctorButton.Location = New Point(536, 11)
+        ResetDoctorButton.Margin = New Padding(3, 2, 3, 2)
+        ResetDoctorButton.Name = "ResetDoctorButton"
+        ResetDoctorButton.ShadowDecoration.CustomizableEdges = CustomizableEdges136
+        ResetDoctorButton.Size = New Size(100, 48)
+        ResetDoctorButton.TabIndex = 219
+        ResetDoctorButton.Text = "Reset"
+        ResetDoctorButton.TextFormatNoPrefix = True
         ' 
         ' Guna2HtmlLabel13
         ' 
@@ -1560,87 +1402,99 @@ Partial Class AdminDashboard2
         Guna2HtmlLabel13.TabIndex = 220
         Guna2HtmlLabel13.Text = "OR"
         ' 
-        ' Guna2TextBox7
+        ' SearchDoctorName
         ' 
-        Guna2TextBox7.BackColor = Color.Transparent
-        Guna2TextBox7.BorderColor = Color.FromArgb(CByte(93), CByte(202), CByte(209))
-        Guna2TextBox7.BorderRadius = 8
-        Guna2TextBox7.BorderThickness = 0
-        Guna2TextBox7.Cursor = Cursors.IBeam
-        Guna2TextBox7.CustomizableEdges = CustomizableEdges65
-        Guna2TextBox7.DefaultText = ""
-        Guna2TextBox7.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        Guna2TextBox7.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        Guna2TextBox7.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox7.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox7.FillColor = SystemColors.Window
-        Guna2TextBox7.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox7.Font = New Font("Segoe UI", 9F)
-        Guna2TextBox7.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
-        Guna2TextBox7.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox7.Location = New Point(15, 12)
-        Guna2TextBox7.Margin = New Padding(3, 4, 3, 4)
-        Guna2TextBox7.Name = "Guna2TextBox7"
-        Guna2TextBox7.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
-        Guna2TextBox7.PlaceholderText = "Name"
-        Guna2TextBox7.SelectedText = ""
-        Guna2TextBox7.ShadowDecoration.CustomizableEdges = CustomizableEdges66
-        Guna2TextBox7.Size = New Size(253, 48)
-        Guna2TextBox7.TabIndex = 218
+        SearchDoctorName.BackColor = Color.Transparent
+        SearchDoctorName.BorderColor = Color.FromArgb(CByte(93), CByte(202), CByte(209))
+        SearchDoctorName.BorderRadius = 8
+        SearchDoctorName.BorderThickness = 0
+        SearchDoctorName.Cursor = Cursors.IBeam
+        SearchDoctorName.CustomizableEdges = CustomizableEdges137
+        SearchDoctorName.DefaultText = ""
+        SearchDoctorName.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        SearchDoctorName.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        SearchDoctorName.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        SearchDoctorName.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        SearchDoctorName.FillColor = SystemColors.Window
+        SearchDoctorName.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        SearchDoctorName.Font = New Font("Segoe UI", 9F)
+        SearchDoctorName.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
+        SearchDoctorName.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        SearchDoctorName.Location = New Point(15, 12)
+        SearchDoctorName.Margin = New Padding(3, 4, 3, 4)
+        SearchDoctorName.Name = "SearchDoctorName"
+        SearchDoctorName.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
+        SearchDoctorName.PlaceholderText = "Name"
+        SearchDoctorName.SelectedText = ""
+        SearchDoctorName.ShadowDecoration.CustomizableEdges = CustomizableEdges138
+        SearchDoctorName.Size = New Size(253, 48)
+        SearchDoctorName.TabIndex = 218
         ' 
-        ' Guna2Button6
+        ' SearchDoctorButton
         ' 
-        Guna2Button6.BackColor = Color.Transparent
-        Guna2Button6.BorderColor = Color.FromArgb(CByte(93), CByte(202), CByte(209))
-        Guna2Button6.BorderRadius = 15
-        Guna2Button6.Cursor = Cursors.Hand
-        Guna2Button6.CustomBorderColor = Color.Cyan
-        Guna2Button6.CustomizableEdges = CustomizableEdges67
-        Guna2Button6.DisabledState.BorderColor = Color.DarkGray
-        Guna2Button6.DisabledState.CustomBorderColor = Color.DarkGray
-        Guna2Button6.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2Button6.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Guna2Button6.FillColor = Color.White
-        Guna2Button6.Font = New Font("Arial", 9.75F, FontStyle.Bold)
-        Guna2Button6.ForeColor = Color.Black
-        Guna2Button6.ImageAlign = HorizontalAlignment.Left
-        Guna2Button6.ImageOffset = New Point(2, 0)
-        Guna2Button6.ImageSize = New Size(40, 40)
-        Guna2Button6.Location = New Point(430, 12)
-        Guna2Button6.Margin = New Padding(3, 2, 3, 2)
-        Guna2Button6.Name = "Guna2Button6"
-        Guna2Button6.ShadowDecoration.CustomizableEdges = CustomizableEdges68
-        Guna2Button6.Size = New Size(100, 48)
-        Guna2Button6.TabIndex = 218
-        Guna2Button6.Text = "Search"
-        Guna2Button6.TextFormatNoPrefix = True
+        SearchDoctorButton.BackColor = Color.Transparent
+        SearchDoctorButton.BorderColor = Color.FromArgb(CByte(93), CByte(202), CByte(209))
+        SearchDoctorButton.BorderRadius = 15
+        SearchDoctorButton.Cursor = Cursors.Hand
+        SearchDoctorButton.CustomBorderColor = Color.Cyan
+        SearchDoctorButton.CustomizableEdges = CustomizableEdges139
+        SearchDoctorButton.DisabledState.BorderColor = Color.DarkGray
+        SearchDoctorButton.DisabledState.CustomBorderColor = Color.DarkGray
+        SearchDoctorButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        SearchDoctorButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        SearchDoctorButton.FillColor = Color.White
+        SearchDoctorButton.Font = New Font("Arial", 9.75F, FontStyle.Bold)
+        SearchDoctorButton.ForeColor = Color.Black
+        SearchDoctorButton.ImageAlign = HorizontalAlignment.Left
+        SearchDoctorButton.ImageOffset = New Point(2, 0)
+        SearchDoctorButton.ImageSize = New Size(40, 40)
+        SearchDoctorButton.Location = New Point(430, 12)
+        SearchDoctorButton.Margin = New Padding(3, 2, 3, 2)
+        SearchDoctorButton.Name = "SearchDoctorButton"
+        SearchDoctorButton.ShadowDecoration.CustomizableEdges = CustomizableEdges140
+        SearchDoctorButton.Size = New Size(100, 48)
+        SearchDoctorButton.TabIndex = 218
+        SearchDoctorButton.Text = "Search"
+        SearchDoctorButton.TextFormatNoPrefix = True
         ' 
-        ' Guna2TextBox8
+        ' SearchDoctorID
         ' 
-        Guna2TextBox8.BackColor = Color.Transparent
-        Guna2TextBox8.BorderColor = Color.Transparent
-        Guna2TextBox8.BorderRadius = 8
-        Guna2TextBox8.BorderThickness = 0
-        Guna2TextBox8.Cursor = Cursors.IBeam
-        Guna2TextBox8.CustomizableEdges = CustomizableEdges69
-        Guna2TextBox8.DefaultText = ""
-        Guna2TextBox8.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        Guna2TextBox8.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        Guna2TextBox8.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox8.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox8.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox8.Font = New Font("Segoe UI", 9F)
-        Guna2TextBox8.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
-        Guna2TextBox8.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox8.Location = New Point(325, 12)
-        Guna2TextBox8.Margin = New Padding(3, 4, 3, 4)
-        Guna2TextBox8.Name = "Guna2TextBox8"
-        Guna2TextBox8.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
-        Guna2TextBox8.PlaceholderText = "ID"
-        Guna2TextBox8.SelectedText = ""
-        Guna2TextBox8.ShadowDecoration.CustomizableEdges = CustomizableEdges70
-        Guna2TextBox8.Size = New Size(83, 48)
-        Guna2TextBox8.TabIndex = 213
+        SearchDoctorID.BackColor = Color.Transparent
+        SearchDoctorID.BorderColor = Color.Transparent
+        SearchDoctorID.BorderRadius = 8
+        SearchDoctorID.BorderThickness = 0
+        SearchDoctorID.Cursor = Cursors.IBeam
+        SearchDoctorID.CustomizableEdges = CustomizableEdges141
+        SearchDoctorID.DefaultText = ""
+        SearchDoctorID.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        SearchDoctorID.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        SearchDoctorID.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        SearchDoctorID.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        SearchDoctorID.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        SearchDoctorID.Font = New Font("Segoe UI", 9F)
+        SearchDoctorID.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
+        SearchDoctorID.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        SearchDoctorID.Location = New Point(325, 12)
+        SearchDoctorID.Margin = New Padding(3, 4, 3, 4)
+        SearchDoctorID.Name = "SearchDoctorID"
+        SearchDoctorID.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
+        SearchDoctorID.PlaceholderText = "ID"
+        SearchDoctorID.SelectedText = ""
+        SearchDoctorID.ShadowDecoration.CustomizableEdges = CustomizableEdges142
+        SearchDoctorID.Size = New Size(83, 48)
+        SearchDoctorID.TabIndex = 213
+        ' 
+        ' Guna2HtmlLabel12
+        ' 
+        Guna2HtmlLabel12.BackColor = Color.Transparent
+        Guna2HtmlLabel12.Font = New Font("Tahoma", 9.75F)
+        Guna2HtmlLabel12.ForeColor = SystemColors.Control
+        Guna2HtmlLabel12.Location = New Point(285, 28)
+        Guna2HtmlLabel12.Margin = New Padding(3, 2, 3, 2)
+        Guna2HtmlLabel12.Name = "Guna2HtmlLabel12"
+        Guna2HtmlLabel12.Size = New Size(20, 18)
+        Guna2HtmlLabel12.TabIndex = 220
+        Guna2HtmlLabel12.Text = "OR"
         ' 
         ' AdminDashboard2
         ' 
@@ -1653,15 +1507,14 @@ Partial Class AdminDashboard2
         Controls.Add(Guna2HtmlLabel3)
         Controls.Add(Guna2HtmlLabel1)
         Controls.Add(Guna2TextBox3)
-        Controls.Add(SearchPanel4)
         Controls.Add(ad_patientpanel)
         Controls.Add(ad_AppointmentPanel)
         Controls.Add(ad_docpanel)
         Controls.Add(ad_staffpanel)
         Controls.Add(Guna2CustomGradientPanel2)
-        Controls.Add(SearchPanel2)
-        Controls.Add(SearchPanel1)
         Controls.Add(SearchPanel3)
+        Controls.Add(SearchPanel4)
+        Controls.Add(SearchPanel1)
         FormBorderStyle = FormBorderStyle.None
         Margin = New Padding(3, 2, 3, 2)
         Name = "AdminDashboard2"
@@ -1694,8 +1547,6 @@ Partial Class AdminDashboard2
         CType(StaffDataGridViewList2, ComponentModel.ISupportInitialize).EndInit()
         SearchPanel3.ResumeLayout(False)
         SearchPanel3.PerformLayout()
-        SearchPanel2.ResumeLayout(False)
-        SearchPanel2.PerformLayout()
         SearchPanel1.ResumeLayout(False)
         SearchPanel1.PerformLayout()
         ResumeLayout(False)
@@ -1748,22 +1599,17 @@ Partial Class AdminDashboard2
     Private WithEvents guna2CirclePictureBox1 As Guna.UI2.WinForms.Guna2CirclePictureBox
     Friend WithEvents Guna2PictureBox3 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
-    Private WithEvents SearchPanel2 As Guna.UI2.WinForms.Guna2CustomGradientPanel
-    Private WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
-    Private WithEvents Guna2HtmlLabel12 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Private WithEvents Guna2TextBox5 As Guna.UI2.WinForms.Guna2TextBox
-    Private WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
-    Private WithEvents Guna2TextBox6 As Guna.UI2.WinForms.Guna2TextBox
     Private WithEvents SearchPanel1 As Guna.UI2.WinForms.Guna2CustomGradientPanel
-    Private WithEvents Guna2Button5 As Guna.UI2.WinForms.Guna2Button
+    Private WithEvents ResetDoctorButton As Guna.UI2.WinForms.Guna2Button
     Private WithEvents Guna2HtmlLabel13 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Private WithEvents Guna2TextBox7 As Guna.UI2.WinForms.Guna2TextBox
-    Private WithEvents Guna2Button6 As Guna.UI2.WinForms.Guna2Button
-    Private WithEvents Guna2TextBox8 As Guna.UI2.WinForms.Guna2TextBox
+    Private WithEvents SearchDoctorName As Guna.UI2.WinForms.Guna2TextBox
+    Private WithEvents SearchDoctorButton As Guna.UI2.WinForms.Guna2Button
+    Private WithEvents SearchDoctorID As Guna.UI2.WinForms.Guna2TextBox
     Private WithEvents SearchPanel3 As Guna.UI2.WinForms.Guna2CustomGradientPanel
-    Private WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Private WithEvents ResetAppointmentButton As Guna.UI2.WinForms.Guna2Button
     Private WithEvents Guna2HtmlLabel11 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Private WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
-    Private WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
-    Private WithEvents Guna2TextBox4 As Guna.UI2.WinForms.Guna2TextBox
+    Private WithEvents SearchAppointmentName As Guna.UI2.WinForms.Guna2TextBox
+    Private WithEvents SearchAppointmentButton As Guna.UI2.WinForms.Guna2Button
+    Private WithEvents SearchAppointmentID As Guna.UI2.WinForms.Guna2TextBox
+    Private WithEvents Guna2HtmlLabel12 As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class

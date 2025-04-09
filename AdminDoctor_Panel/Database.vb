@@ -1227,5 +1227,186 @@ Public Class Database
 
         Return appointmentTable
     End Function
+    Public Shared Function PatientList() As DataTable
+        Dim query As String = "SELECT id AS 'Patient ID', p_Firstname AS 'First Name', p_middleName AS 'Middle Name', P_lastname AS 'Last Name', p_suffix AS 'Suffix', p_sex AS 'Sex', P_bdate AS 'Birth Date', p_address AS 'Full Address' FROM tb_patientinfo"
+
+        Dim PatientTable As New DataTable()
+
+        Try
+            Using conn As New SqlConnection(connectionString)
+                conn.Open()
+                Using cmd As New SqlCommand(query, conn)
+                    Using adapter As New SqlDataAdapter(cmd)
+                        adapter.Fill(PatientTable)
+                    End Using
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show($"Error retrieving patient list: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+
+        Return PatientTable
+    End Function
+    Public Shared Function AppointmentList() As DataTable
+        Dim AppointmentTable As New DataTable()
+
+        Try
+            Dim query As String = "SELECT id AS 'Transaction ID', ah_patient_name AS 'Patient Name', ah_doctor_name AS 'Doctor Name', ah_Specialization AS 'Specialization', ah_time AS 'Time Slot', ah_date AS 'Date', ah_consfee AS 'Consultation Fee' FROM tb_appointmenthistory"
+
+            Using conn As New SqlConnection(connectionString)
+                conn.Open()
+                Using cmd As New SqlCommand(query, conn)
+                    Using adapter As New SqlDataAdapter(cmd)
+                        adapter.Fill(AppointmentTable)
+                    End Using
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show($"Error retrieving appointment list: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+
+        Return AppointmentTable
+    End Function
+
+    Public Shared Function ViewPatientAppointments(patientName As String) As DataTable
+        Dim AppointmentTable As New DataTable()
+        Dim query As String = "SELECT id, ah_status AS 'Status', ah_doctor_name AS 'Doctor Name', ah_specialization AS 'Specialization', ah_time AS 'Appointment Time', ah_date AS 'Appointment Date', ah_consfee AS 'Consultation Fee' FROM tb_appointmenthistory WHERE ah_Patient_Name = @PatientName AND (ah_status = 'Accepted' OR ah_status = 'Pending' OR ah_status = 'Declined')"
+
+        Try
+            Using conn As New SqlConnection(connectionString)
+                conn.Open()
+                Using cmd As New SqlCommand(query, conn)
+                    cmd.Parameters.AddWithValue("@PatientName", patientName)
+                    Using adapter As New SqlDataAdapter(cmd)
+                        adapter.Fill(AppointmentTable)
+                    End Using
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show($"Error retrieving appointment list: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+
+        Return AppointmentTable
+    End Function
+
+    Public Shared Function DeleteAppointmentByPatient(accountId As Integer) As Boolean
+        Dim query As String = "DELETE FROM tb_appointmenthistory WHERE id = @ID AND (ah_status = 'Pending' OR ah_status = 'Declined')"
+
+        Using connection As SqlConnection = GetConnection()
+            Using cmd As New SqlCommand(query, connection)
+                cmd.Parameters.AddWithValue("@ID", accountId)
+
+                Try
+                    connection.Open()
+                    Dim rowsAffected As Integer = cmd.ExecuteNonQuery()
+
+                    If rowsAffected = 0 Then
+                        Console.WriteLine("No record found with the specified ID.")
+                        Return False
+                    End If
+
+                    Return True
+                Catch ex As Exception
+                    Console.WriteLine("Error deleting appointment: " & ex.Message)
+                    Return False
+                End Try
+            End Using
+        End Using
+    End Function
+
+    Public Shared Function GetInvoiceList(fullName As String) As DataTable
+        Dim query As String = "SELECT id as 'ID', ah_Patient_Name AS 'Patient Name', ah_specialization AS 'Specialization', ah_Doctor_Name AS 'Doctor Name', ah_Time AS 'Time', ah_date AS 'Date', ah_status AS 'Status' FROM tb_appointmenthistory WHERE ah_Patient_Name = @FullName AND (ah_status = 'Completed' OR ah_status = 'InvoiceChecked')"
+
+        Dim invoiceTable As New DataTable()
+
+        Try
+            Using conn As New SqlConnection(connectionString)
+                conn.Open()
+                Using cmd As New SqlCommand(query, conn)
+                    cmd.Parameters.AddWithValue("@FullName", fullName)
+                    Using adapter As New SqlDataAdapter(cmd)
+                        adapter.Fill(invoiceTable)
+                    End Using
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show($"Error retrieving invoice list: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+
+        Return invoiceTable
+    End Function
+
+    Public Shared Function GetAppointmentById(id As Integer) As Appointment
+        Dim query As String = "SELECT * FROM tb_appointmenthistory WHERE id = @ID"
+
+        Dim appoint As New Appointment()
+
+        Using con As SqlConnection = GetConnection()
+            Using cmd As New SqlCommand(query, con)
+                cmd.Parameters.AddWithValue("@ID", id)
+                con.Open()
+
+                Using reader As SqlDataReader = cmd.ExecuteReader()
+                    While reader.Read()
+                        appoint.PatientName = reader.GetString("ah_Patient_Name")
+                        appoint.DoctorName = reader.GetString("ah_Doctor_Name")
+                        appoint.ConsultationFee = reader.GetDecimal("ah_consfee")
+                        appoint.Time = TimeSpan.Parse(reader.GetString("ah_time"))
+                        appoint.Date = reader.GetDateTime("ah_date")
+                        appoint.Specialization = reader.GetString("ah_specialization")
+                        appoint.ConfineDays = reader.GetInt32("confinement_days")
+
+                        appoint.Diagnosis = New DiagnosisModel() With {
+                        .DoctorOrders = reader.GetString("d_doctoroder"),
+                        .Prescription = reader.GetString("d_prescription")
+                    }
+                    End While
+                End Using
+            End Using
+        End Using
+
+        Return appoint
+    End Function
+    Public Shared Function IsEmailExisted(role As Role, user As UserModel) As Boolean
+        Using connection As SqlConnection = GetConnection()
+            connection.Open()
+
+            ' Get the table name based on the role
+            Dim tablename As String = ProcessMethods.GetTablenameByRole(role)
+
+            ' Prepare the query with role-specific column names
+            Dim query As String = $"SELECT COUNT(*) FROM {tablename} WHERE email = @Email AND {(If(role = Role.Patient, "P_", ""))}username = @Username"
+            Dim command As New SqlCommand(query, connection)
+
+            command.Parameters.AddWithValue("@Email", user.Email)
+            command.Parameters.AddWithValue("@Username", user.UserName)
+
+            ' Execute the query and get the result
+            Dim result As Integer = Convert.ToInt32(command.ExecuteScalar())
+
+            ' Return true if a matching email and username exist, otherwise false
+            Return result <> 0
+        End Using
+    End Function
+    Public Shared Sub UpdateUserPassword(role As Role, user As UserModel)
+        Using connection As SqlConnection = GetConnection()
+            connection.Open()
+            Dim tblName As String = ProcessMethods.GetTablenameByRole(role)
+
+            Try
+                Dim query As String = $"UPDATE {tblName} SET {(If(role = Role.Patient, "P_", ""))}password = @Password WHERE email = @Email AND {(If(role = Role.Patient, "P_", ""))}username = @UserName"
+                Dim cmd As New SqlCommand(query, connection)
+
+                cmd.Parameters.AddWithValue("@Password", user.Password)
+                cmd.Parameters.AddWithValue("@Email", user.Email)
+                cmd.Parameters.AddWithValue("@UserName", user.UserName)
+
+                cmd.ExecuteScalar()
+                Return
+            Catch ex As Exception
+                Throw ex
+            End Try
+        End Using
+    End Sub
 
 End Class

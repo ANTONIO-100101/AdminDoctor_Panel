@@ -26,9 +26,8 @@ Public Class AdminDashboard2
         ShowPatientTab()
     End Sub
     Private Sub ShowPatientTab()
-        SearchPanel4.Visible = False
-        SearchPanel2.Visible = False
-        SearchPanel1.Visible = True
+        SearchPanel4.Visible = True
+        SearchPanel1.Visible = False
         SearchPanel3.Visible = False
         ad_patientpanel.Visible = True
         ad_docpanel.Visible = False
@@ -47,9 +46,8 @@ Public Class AdminDashboard2
     End Sub
 
     Private Sub ad_appointment_Click(sender As Object, e As EventArgs) Handles ad_appointment.Click
-        SearchPanel3.Visible = False
-        SearchPanel4.Visible = True
-        SearchPanel2.Visible = False
+        SearchPanel3.Visible = True
+        SearchPanel4.Visible = False
         SearchPanel1.Visible = False
 
         ad_AppointmentPanel.Visible = True
@@ -72,20 +70,6 @@ Public Class AdminDashboard2
         adminAddDoctor.Show()
         Debug.WriteLine("AddDoctor button clicked")
     End Sub
-
-    Private Sub ShowStaffList()
-        Try
-            Dim staffData As DataTable = Database.StaffList()
-            If staffData.Rows.Count > 0 Then
-                StaffDataGridViewList2.DataSource = staffData
-            Else
-                MessageBox.Show("No staff data found.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            End If
-        Catch ex As Exception
-            MessageBox.Show($"Error loading staff data: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
-    End Sub
-
     Private Sub ShowDoctorList()
         Try
             Dim DoctorData As DataTable = Database.DoctorList()
@@ -311,7 +295,7 @@ Public Class AdminDashboard2
     End Sub
 
 
-    Private Sub SearchTransactionButton_Click(sender As Object, e As EventArgs)
+    Private Sub SearchTransactionButton_Click(sender As Object, e As EventArgs) Handles SearchTransactionButton.Click
         Dim transactionId As String = TransactionIdTextBox.Text.Trim()
         Dim patientName As String = NameTextBox.Text.Trim()
 
@@ -363,7 +347,7 @@ Public Class AdminDashboard2
         End If
     End Sub
 
-    Private Sub ResetTransactionFilterButton_Click(sender As Object, e As EventArgs)
+    Private Sub ResetTransactionFilterButton_Click(sender As Object, e As EventArgs) Handles ResetTransactionFilterButton.Click
         Try
             Dim dataSource As DataTable = CType(PatientDataGridViewList2.DataSource, DataTable)
 
@@ -379,7 +363,7 @@ Public Class AdminDashboard2
     End Sub
 
 
-    Private Sub SearchDoctorButton_Click(sender As Object, e As EventArgs)
+    Private Sub SearchDoctorButton_Click(sender As Object, e As EventArgs) Handles SearchDoctorButton.Click
         Dim transactionId As String = SearchDoctorID.Text.Trim()
         Dim patientName As String = SearchDoctorName.Text.Trim()
 
@@ -431,7 +415,7 @@ Public Class AdminDashboard2
         End If
     End Sub
 
-    Private Sub ResetDoctorButton_Click(sender As Object, e As EventArgs)
+    Private Sub ResetDoctorButton_Click(sender As Object, e As EventArgs) Handles ResetDoctorButton.Click
         Try
             Dim dataSource As DataTable = CType(DoctorDataGridViewList2.DataSource, DataTable)
 
@@ -446,7 +430,7 @@ Public Class AdminDashboard2
         End Try
     End Sub
 
-    Private Sub AppointmentSearchButton_Click(sender As Object, e As EventArgs)
+    Private Sub AppointmentSearchButton_Click(sender As Object, e As EventArgs) Handles SearchAppointmentButton.Click
         Dim transactionId As String = SearchAppointmentID.Text.Trim()
         Dim patientName As String = SearchAppointmentName.Text.Trim()
 
@@ -498,7 +482,7 @@ Public Class AdminDashboard2
         End If
     End Sub
 
-    Private Sub ResetAppointmentButton_Click(sender As Object, e As EventArgs)
+    Private Sub ResetAppointmentButton_Click(sender As Object, e As EventArgs) Handles ResetAppointmentButton.Click
         Try
             Dim dataSource As DataTable = CType(AppointmentDataGridViewList2.DataSource, DataTable)
 
@@ -547,6 +531,9 @@ Public Class AdminDashboard2
 
     Private Sub ad_doctor_Click(sender As Object, e As EventArgs) Handles ad_doctor.Click
         SearchPanel4.Visible = False
+        SearchPanel3.Visible = False
+        SearchPanel1.Visible = True
+
         ad_docpanel.Visible = True
         ad_staffpanel.Visible = False
         ad_patientpanel.Visible = False

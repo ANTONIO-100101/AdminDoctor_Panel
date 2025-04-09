@@ -103,11 +103,11 @@ Partial Class PatientDashboard
         Dim CustomizableEdges67 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges73 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges74 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges68 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges69 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges70 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges71 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges72 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges68 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges69 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         ViewAppointmentPanel = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         DeleteButton = New Guna.UI2.WinForms.Guna2Button()
         ViewButton = New Guna.UI2.WinForms.Guna2Button()
@@ -164,9 +164,9 @@ Partial Class PatientDashboard
         Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Guna2CustomGradientPanel3 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
+        Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Guna2CirclePictureBox2 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         ViewAppointmentPanel.SuspendLayout()
         CType(AppointmentDataGridViewList2, ComponentModel.ISupportInitialize).BeginInit()
         InvoicePanel.SuspendLayout()
@@ -180,9 +180,9 @@ Partial Class PatientDashboard
         CType(guna2CirclePictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SearchPanel.SuspendLayout()
         Guna2CustomGradientPanel3.SuspendLayout()
+        CType(Guna2PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(Guna2CirclePictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(Guna2PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(Guna2PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' ViewAppointmentPanel
@@ -1282,6 +1282,21 @@ Partial Class PatientDashboard
         Guna2CustomGradientPanel3.Size = New Size(1694, 922)
         Guna2CustomGradientPanel3.TabIndex = 266
         ' 
+        ' Guna2PictureBox2
+        ' 
+        Guna2PictureBox2.BackColor = Color.Transparent
+        Guna2PictureBox2.CustomizableEdges = CustomizableEdges68
+        Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), Image)
+        Guna2PictureBox2.ImageRotate = 0F
+        Guna2PictureBox2.Location = New Point(763, 519)
+        Guna2PictureBox2.Margin = New Padding(3, 2, 3, 2)
+        Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Guna2PictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges69
+        Guna2PictureBox2.Size = New Size(929, 402)
+        Guna2PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
+        Guna2PictureBox2.TabIndex = 150
+        Guna2PictureBox2.TabStop = False
+        ' 
         ' Guna2CirclePictureBox2
         ' 
         Guna2CirclePictureBox2.BackColor = Color.Transparent
@@ -1314,21 +1329,6 @@ Partial Class PatientDashboard
         Guna2PictureBox1.TabIndex = 149
         Guna2PictureBox1.TabStop = False
         ' 
-        ' Guna2PictureBox2
-        ' 
-        Guna2PictureBox2.BackColor = Color.Transparent
-        Guna2PictureBox2.CustomizableEdges = CustomizableEdges68
-        Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), Image)
-        Guna2PictureBox2.ImageRotate = 0F
-        Guna2PictureBox2.Location = New Point(763, 519)
-        Guna2PictureBox2.Margin = New Padding(3, 2, 3, 2)
-        Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Guna2PictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges69
-        Guna2PictureBox2.Size = New Size(929, 402)
-        Guna2PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
-        Guna2PictureBox2.TabIndex = 150
-        Guna2PictureBox2.TabStop = False
-        ' 
         ' PatientDashboard
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -1341,10 +1341,10 @@ Partial Class PatientDashboard
         Controls.Add(Staff_ExitButton)
         Controls.Add(SearchPanel)
         Controls.Add(Guna2TextBox3)
-        Controls.Add(Guna2CustomGradientPanel3)
-        Controls.Add(InvoicePanel)
         Controls.Add(BookAppPanel)
         Controls.Add(ViewAppointmentPanel)
+        Controls.Add(Guna2CustomGradientPanel3)
+        Controls.Add(InvoicePanel)
         FormBorderStyle = FormBorderStyle.None
         Margin = New Padding(3, 2, 3, 2)
         Name = "PatientDashboard"
@@ -1370,9 +1370,9 @@ Partial Class PatientDashboard
         SearchPanel.ResumeLayout(False)
         SearchPanel.PerformLayout()
         Guna2CustomGradientPanel3.ResumeLayout(False)
+        CType(Guna2PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(Guna2CirclePictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(Guna2PictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        CType(Guna2PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub

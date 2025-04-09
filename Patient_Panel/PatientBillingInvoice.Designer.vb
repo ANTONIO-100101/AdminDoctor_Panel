@@ -87,6 +87,7 @@ Partial Class PatientBillingInvoice
         pbilling_DataGridView3 = New Guna.UI2.WinForms.Guna2DataGridView()
         guna2CustomGradientPanel4 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         pbilling_DataGridView2 = New Guna.UI2.WinForms.Guna2DataGridView()
+        guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Guna2CustomGradientPanel2 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         pbilling_DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
         guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
@@ -105,7 +106,8 @@ Partial Class PatientBillingInvoice
         Guna2CustomGradientPanel6 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
-        guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        PrintPreviewDialog1 = New PrintPreviewDialog()
+        PrintDocument1 = New Printing.PrintDocument()
         Guna2CustomGradientPanel1.SuspendLayout()
         PrintablePanel.SuspendLayout()
         guna2CustomGradientPanel5.SuspendLayout()
@@ -435,6 +437,18 @@ Partial Class PatientBillingInvoice
         pbilling_DataGridView2.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
         pbilling_DataGridView2.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
         ' 
+        ' guna2HtmlLabel1
+        ' 
+        guna2HtmlLabel1.BackColor = Color.Transparent
+        guna2HtmlLabel1.Font = New Font("Arial", 14.25F, FontStyle.Bold)
+        guna2HtmlLabel1.ForeColor = Color.Black
+        guna2HtmlLabel1.Location = New Point(94, 37)
+        guna2HtmlLabel1.Margin = New Padding(3, 2, 3, 2)
+        guna2HtmlLabel1.Name = "guna2HtmlLabel1"
+        guna2HtmlLabel1.Size = New Size(82, 24)
+        guna2HtmlLabel1.TabIndex = 142
+        guna2HtmlLabel1.Text = "InfoCare"
+        ' 
         ' Guna2CustomGradientPanel2
         ' 
         Guna2CustomGradientPanel2.BorderColor = Color.Black
@@ -531,7 +545,7 @@ Partial Class PatientBillingInvoice
         pbilling_TimeTextbox.ForeColor = Color.Black
         pbilling_TimeTextbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         pbilling_TimeTextbox.Location = New Point(73, 37)
-        pbilling_TimeTextbox.Margin = New Padding(4, 4, 4, 4)
+        pbilling_TimeTextbox.Margin = New Padding(4)
         pbilling_TimeTextbox.Name = "pbilling_TimeTextbox"
         pbilling_TimeTextbox.PlaceholderForeColor = Color.Black
         pbilling_TimeTextbox.PlaceholderText = ""
@@ -556,7 +570,7 @@ Partial Class PatientBillingInvoice
         pbilling_DateTextbox.ForeColor = Color.Black
         pbilling_DateTextbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         pbilling_DateTextbox.Location = New Point(73, 0)
-        pbilling_DateTextbox.Margin = New Padding(4, 4, 4, 4)
+        pbilling_DateTextbox.Margin = New Padding(4)
         pbilling_DateTextbox.Name = "pbilling_DateTextbox"
         pbilling_DateTextbox.PlaceholderForeColor = Color.Black
         pbilling_DateTextbox.PlaceholderText = ""
@@ -687,7 +701,7 @@ Partial Class PatientBillingInvoice
         pbilling_PatientNameTextbox.ForeColor = Color.Black
         pbilling_PatientNameTextbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         pbilling_PatientNameTextbox.Location = New Point(86, 0)
-        pbilling_PatientNameTextbox.Margin = New Padding(4, 4, 4, 4)
+        pbilling_PatientNameTextbox.Margin = New Padding(4)
         pbilling_PatientNameTextbox.Name = "pbilling_PatientNameTextbox"
         pbilling_PatientNameTextbox.PlaceholderForeColor = Color.Black
         pbilling_PatientNameTextbox.PlaceholderText = ""
@@ -740,17 +754,15 @@ Partial Class PatientBillingInvoice
         guna2CirclePictureBox1.TabIndex = 143
         guna2CirclePictureBox1.TabStop = False
         ' 
-        ' guna2HtmlLabel1
+        ' PrintPreviewDialog1
         ' 
-        guna2HtmlLabel1.BackColor = Color.Transparent
-        guna2HtmlLabel1.Font = New Font("Arial", 14.25F, FontStyle.Bold)
-        guna2HtmlLabel1.ForeColor = Color.Black
-        guna2HtmlLabel1.Location = New Point(94, 37)
-        guna2HtmlLabel1.Margin = New Padding(3, 2, 3, 2)
-        guna2HtmlLabel1.Name = "guna2HtmlLabel1"
-        guna2HtmlLabel1.Size = New Size(82, 24)
-        guna2HtmlLabel1.TabIndex = 142
-        guna2HtmlLabel1.Text = "InfoCare"
+        PrintPreviewDialog1.AutoScrollMargin = New Size(0, 0)
+        PrintPreviewDialog1.AutoScrollMinSize = New Size(0, 0)
+        PrintPreviewDialog1.ClientSize = New Size(400, 300)
+        PrintPreviewDialog1.Enabled = True
+        PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), Icon)
+        PrintPreviewDialog1.Name = "PrintPreviewDialog1"
+        PrintPreviewDialog1.Visible = False
         ' 
         ' PatientBillingInvoice
         ' 
@@ -822,4 +834,6 @@ Partial Class PatientBillingInvoice
     Private WithEvents guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
     Private WithEvents guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Private WithEvents guna2CirclePictureBox1 As Guna.UI2.WinForms.Guna2CirclePictureBox
+    Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
 End Class

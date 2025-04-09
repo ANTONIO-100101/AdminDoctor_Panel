@@ -362,7 +362,7 @@ Public Class PatientDashboard
 
     Private Sub ViewButton_Click(sender As Object, e As EventArgs) Handles ViewButton.Click
         If AppointmentDataGridViewList2.SelectedRows.Count > 0 Then
-            Dim appointmentId As Integer = Convert.ToInt32(AppointmentDataGridViewList2.SelectedRows(0).Cells("Transaction ID").Value)
+            Dim appointmentId As Integer = Convert.ToInt32(AppointmentDataGridViewList2.SelectedRows(0).Cells("ID").Value)
 
             Database.viewDocument(
             appointmentId,
