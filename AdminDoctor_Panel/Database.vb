@@ -859,11 +859,11 @@ Public Class Database
 
     Public Shared Function SaveAppointment(patientName As String, specialization As String, doctorName As String, timeSlot As String, appointmentDate As DateTime, consFee As Decimal) As Boolean
         Try
-            Using connection As New MySqlConnection(connectionString)
+            Using connection As New SqlConnection(connectionString)
                 Dim query As String = "INSERT INTO tb_appointmenthistory (ah_Patient_Name, ah_Specialization, ah_Doctor_Name, ah_time, ah_date, ah_consfee, ah_status) 
                      VALUES (@PatientName, @Specialization, @DoctorName, @TimeSlot, @AppointmentDate, @ConsFee, @Pending)"
 
-                Using command As New MySqlCommand(query, connection)
+                Using command As New SqlCommand(query, connection)
                     command.Parameters.AddWithValue("@PatientName", patientName)
                     command.Parameters.AddWithValue("@Specialization", specialization)
                     command.Parameters.AddWithValue("@DoctorName", doctorName)
@@ -885,5 +885,347 @@ Public Class Database
         End Try
     End Function
 
+    Public Shared Function ViewAppointments(doctorFullName As String) As DataTable
+        Dim query As String = "SELECT ah_Patient_Name AS 'Patient Name', id, ah_Specialization AS 'Doctor Specialization', ah_time AS 'Appointment Time', ah_date AS 'Appointment Date', ah_consfee AS 'Consultation Fee' FROM tb_appointmenthistory " &
+                          "WHERE ah_status = 'Accepted' AND ah_Doctor_Name = @DoctorFullName"
+
+        Dim AppointmentTable As New DataTable()
+
+        Try
+            Using conn As New SqlConnection(connectionString)
+                conn.Open()
+                Using cmd As New SqlCommand(query, conn)
+                    cmd.Parameters.AddWithValue("@DoctorFullName", doctorFullName)
+                    Using adapter As New SqlDataAdapter(cmd)
+                        adapter.Fill(AppointmentTable)
+                    End Using
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show($"Error retrieving appointment list: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+
+        Return AppointmentTable
+    End Function
+
+    Public Shared Function ViewCompletedAppointments(doctorFullName As String) As DataTable
+        Dim query As String = "SELECT id, ah_Patient_Name as 'Patient Name', ah_doctor_name as 'Doctor Name', ah_specialization as 'Specialization', ah_time as 'Appointment Time', ah_date as 'Appointment Date', ah_consfee as 'Consultation Fee' FROM tb_appointmenthistory " &
+                          "WHERE ah_status = 'Completed'"
+
+        'aayusin pa yung sa doctor for now completed muna
+        Dim AppointmentTable As New DataTable()
+
+        Try
+            Using conn As New SqlConnection(connectionString)
+                conn.Open()
+                Using cmd As New SqlCommand(query, conn)
+                    cmd.Parameters.AddWithValue("@DoctorFullName", doctorFullName)
+                    Using adapter As New SqlDataAdapter(cmd)
+                        adapter.Fill(AppointmentTable)
+                    End Using
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show($"Error retrieving appointment list: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+
+        Return AppointmentTable
+    End Function
+
+    Public Shared Function PendingAppointmentList(doctorFullName As String) As DataTable
+        Dim query As String = "SELECT ah_Patient_Name AS 'Patient Name', id , ah_Specialization AS 'Doctor Specialization', ah_time AS 'Appointment Time', ah_date AS 'Appointment Date', ah_consfee AS 'Consultation Fee' FROM tb_appointmenthistory " &
+                          "WHERE ah_status = 'Pending' AND ah_Doctor_Name = @DoctorFullName"
+
+        Dim appointmentTable As New DataTable()
+
+        Try
+            Using conn As New SqlConnection(connectionString)
+                conn.Open()
+                Using cmd As New SqlCommand(query, conn)
+                    cmd.Parameters.AddWithValue("@DoctorFullName", doctorFullName)
+
+                    Using adapter As New SqlDataAdapter(cmd)
+                        adapter.Fill(appointmentTable)
+                    End Using
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show($"Error retrieving appointment list: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+
+        Return appointmentTable
+    End Function
+
+    Public Shared Function DeclinedAppointments(doctorFullName As String) As DataTable
+        Dim query As String = "SELECT ah_Patient_Name AS 'Patient Name', id AS 'Transaction ID', ah_Specialization AS 'Doctor Specialization', ah_time AS 'Appointment Time', ah_date AS 'Appointment Date', ah_consfee AS 'Consultation Fee'  FROM tb_appointmenthistory " &
+                          "WHERE ah_status = 'Declined' AND ah_Doctor_Name = @DoctorFullName"
+
+        Dim AppointmentTable As New DataTable()
+
+        Try
+            Using conn As New SqlConnection(connectionString)
+                conn.Open()
+                Using cmd As New SqlCommand(query, conn)
+                    cmd.Parameters.AddWithValue("@DoctorFullName", doctorFullName)
+                    Using adapter As New SqlDataAdapter(cmd)
+                        adapter.Fill(AppointmentTable)
+                    End Using
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show($"Error retrieving appointment list: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+
+        Return AppointmentTable
+    End Function
+
+    Public Shared Sub ReconsiderAppointment(appointmentId As Integer)
+        Dim updateQuery As String = "UPDATE tb_appointmenthistory SET ah_status = 'Pending' WHERE id = @id AND ah_status = 'Declined'"
+
+        Try
+            Using conn As New SqlConnection(connectionString)
+                conn.Open()
+                Using cmd As New SqlCommand(updateQuery, conn)
+                    cmd.Parameters.AddWithValue("@id", appointmentId)
+                    cmd.ExecuteNonQuery()
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show($"Error reconsidering appointment: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
+    Public Shared Function ChecOutList() As DataTable
+        Dim query As String = "SELECT ah_patient_name AS 'Patient Name', ah_Consfee AS 'Consultation Fee', ah_time AS 'Appointment Time', ah_date AS 'Appointment Date' FROM tb_appointmenthistory WHERE ah_status = 'CheckOut'"
+
+        Dim CheckoutTable As New DataTable()
+
+        Try
+            Using conn As New SqlConnection(connectionString)
+                conn.Open()
+                Using cmd As New SqlCommand(query, conn)
+                    Using adapter As New SqlDataAdapter(cmd)
+                        adapter.Fill(CheckoutTable)
+                    End Using
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show($"Error retrieving list: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+
+        Return CheckoutTable
+    End Function
+    Public Shared Sub CreateDiagnosis(appointmentId As Integer, onSuccess As Action(Of Dictionary(Of String, String)), onFailure As Action(Of String))
+        Try
+            Using connection As New SqlConnection(connectionString)
+                connection.Open()
+
+                Dim getPatientNameQuery As String = "SELECT ah_Patient_Name FROM tb_appointmenthistory WHERE id = @appointmentId AND ah_status = 'Accepted'"
+                Dim patientName As String = String.Empty
+
+                Using command As New SqlCommand(getPatientNameQuery, connection)
+                    command.Parameters.AddWithValue("@appointmentId", appointmentId)
+
+                    Dim result As Object = command.ExecuteScalar()
+                    If result Is Nothing Then
+                        onFailure?.Invoke("No patient associated with this appointment.")
+                        Return
+                    End If
+
+                    patientName = result.ToString()
+                End Using
+
+                Dim nameParts As String() = patientName.Split(","c)
+                If nameParts.Length < 2 Then
+                    onFailure?.Invoke("Invalid patient name format in the database.")
+                    Return
+                End If
+
+                Dim lastName As String = nameParts(0).Trim()
+                Dim firstName As String = nameParts(1).Trim()
+
+                Dim getPatientDetailsQuery As String = "SELECT P_Firstname, P_Lastname, P_Bdate, P_Height, P_Weight, P_BMI, " &
+                                                    "P_Blood_Type, P_Alergy, P_Medication, P_PrevSurgery, P_Precondition, P_Treatment " &
+                                                    "FROM tb_patientinfo WHERE P_Firstname = @firstName AND P_Lastname = @lastName"
+
+                Using command As New SqlCommand(getPatientDetailsQuery, connection)
+                    command.Parameters.AddWithValue("@firstName", firstName)
+                    command.Parameters.AddWithValue("@lastName", lastName)
+
+                    Using reader As SqlDataReader = command.ExecuteReader()
+                        If reader.Read() Then
+                            Dim patientDetails As New Dictionary(Of String, String) From {
+                            {"P_Firstname", reader("P_Firstname").ToString()},
+                            {"P_Lastname", reader("P_Lastname").ToString()},
+                            {"P_Bdate", reader("P_Bdate").ToString()},
+                            {"P_Height", reader("P_Height").ToString()},
+                            {"P_Weight", reader("P_Weight").ToString()},
+                            {"P_BMI", reader("P_BMI").ToString()},
+                            {"P_Blood_Type", reader("P_Blood_Type").ToString()},
+                            {"P_Alergy", reader("P_Alergy").ToString()},
+                            {"P_Medication", reader("P_Medication").ToString()},
+                            {"P_PrevSurgery", reader("P_PrevSurgery").ToString()},
+                            {"P_Precondition", reader("P_Precondition").ToString()},
+                            {"P_Treatment", reader("P_Treatment").ToString()}
+                        }
+
+                            onSuccess?.Invoke(patientDetails)
+                        Else
+                            onFailure?.Invoke("Patient details not found.")
+                        End If
+                    End Using
+                End Using
+            End Using
+        Catch ex As Exception
+            onFailure?.Invoke($"An error occurred: {ex.Message}")
+        End Try
+    End Sub
+
+    Public Shared Sub AcceptAppointment(appointmentId As Integer)
+        Dim updateQuery As String = "UPDATE tb_appointmenthistory SET ah_status = 'Accepted' WHERE id = @id AND ah_status = 'Pending'"
+
+        Try
+            Using conn As New SqlConnection(connectionString)
+                conn.Open()
+                Using cmd As New SqlCommand(updateQuery, conn)
+                    cmd.Parameters.AddWithValue("@id", appointmentId)
+
+                    cmd.ExecuteNonQuery()
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show($"Error accepting appointment: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+    Public Shared Sub DeclineAppointment(appointmentId As Integer)
+        Dim query As String = "UPDATE tb_appointmenthistory SET ah_status = 'Declined' WHERE id = @id AND ah_status = 'Pending'"
+
+        Try
+            Using conn As New SqlConnection(connectionString)
+                conn.Open()
+                Using cmd As New SqlCommand(query, conn)
+                    cmd.Parameters.AddWithValue("@id", appointmentId)
+                    cmd.ExecuteNonQuery()
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show($"Error declining appointment: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+    Public Shared Sub viewDocument(appointmentId As Integer, onSuccess As Action(Of Dictionary(Of String, String)), onFailure As Action(Of String))
+        Try
+            Using connection As New SqlConnection(connectionString)
+                connection.Open()
+
+                Dim getPatientNameQuery As String = "SELECT * FROM tb_appointmenthistory WHERE id = @appointmentId"
+                Using command As New SqlCommand(getPatientNameQuery, connection)
+                    command.Parameters.AddWithValue("@appointmentId", appointmentId)
+
+                    Using reader As SqlDataReader = command.ExecuteReader()
+                        If reader.Read() Then
+                            Dim patientName As String = reader("ah_Patient_Name").ToString()
+                            Dim doctorName As String = reader("ah_Doctor_Name").ToString()
+                            Dim nameParts As String() = patientName.Split(","c)
+                            Dim doctorParts As String() = doctorName.Split(","c)
+
+                            If nameParts.Length < 2 OrElse doctorParts.Length < 2 Then
+                                onFailure?.Invoke("Invalid patient or doctor name format in the database.")
+                                Return
+                            End If
+
+                            Dim patientFirstName As String = nameParts(1).Trim()
+                            Dim patientLastName As String = nameParts(0).Trim()
+                            Dim doctorFirstName As String = doctorParts(1).Trim()
+                            Dim doctorLastName As String = doctorParts(0).Trim()
+
+                            Dim patientDetails As New Dictionary(Of String, String) From {
+                            {"P_Firstname", patientFirstName},
+                            {"P_Lastname", patientLastName},
+                            {"P_Bdate", reader("P_bdate").ToString()},
+                            {"P_Height", reader("P_height").ToString()},
+                            {"P_Weight", reader("P_weight").ToString()},
+                            {"P_BMI", reader("P_bmi").ToString()},
+                            {"P_Blood_Type", reader("P_Blood_type").ToString()},
+                            {"P_Alergy", reader("P_alergy").ToString()},
+                            {"P_Medication", reader("P_medication").ToString()},
+                            {"P_PrevSurgery", reader("P_prevsurgery").ToString()},
+                            {"P_Precondition", reader("P_precondition").ToString()},
+                            {"P_Treatment", reader("P_treatment").ToString()},
+                            {"ah_DoctorFirstName", doctorFirstName},
+                            {"ah_DoctorLastName", doctorLastName},
+                            {"ah_Time", reader("ah_time").ToString()},
+                            {"ah_Date", reader("ah_date").ToString()},
+                            {"ah_Consfee", reader("ah_Consfee").ToString()},
+                            {"d_diagnosis", reader("d_diagnosis").ToString()},
+                            {"d_additionalnotes", reader("d_additionalnotes").ToString()},
+                            {"d_doctoroder", reader("d_doctoroder").ToString()},
+                            {"d_prescription", reader("d_prescription").ToString()}
+                        }
+
+                            onSuccess?.Invoke(patientDetails)
+                        Else
+                            onFailure?.Invoke("Appointment details not found.")
+                        End If
+                    End Using
+                End Using
+            End Using
+        Catch ex As Exception
+            onFailure?.Invoke($"An error occurred: {ex.Message}")
+        End Try
+    End Sub
+    Public Sub CheckOutAppointment(appointmentID As Integer)
+        Dim updateQuery As String = "UPDATE tb_appointmenthistory SET ah_status = 'CheckOut' WHERE id = @id AND ah_status = 'Completed'"
+
+        Try
+            Using conn As New SqlConnection(connectionString)
+                conn.Open()
+                Using cmd As New SqlCommand(updateQuery, conn)
+                    cmd.Parameters.AddWithValue("@id", appointmentID)
+                    cmd.ExecuteNonQuery()
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show($"Error CheckOut appointment: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+    Public Shared Function GetDoctorSpecialization(doctorFullName As String) As String
+        Dim specialization As String = String.Empty
+        Dim query As String = "SELECT specialization FROM tb_doctorinfo WHERE CONCAT('Dr. ', Lastname, ', ', Firstname) = @doctorName"
+
+        Using conn As New SqlConnection(connectionString)
+            conn.Open()
+            Using cmd As New SqlCommand(query, conn)
+                cmd.Parameters.AddWithValue("@doctorName", doctorFullName)
+                Dim result As Object = cmd.ExecuteScalar()
+                If result IsNot Nothing Then
+                    specialization = result.ToString()
+                End If
+            End Using
+        End Using
+
+        Return specialization
+    End Function
+    Public Shared Function CheckOutAppointmentList(doctorFullName As String) As DataTable
+        Dim query As String = "SELECT ah_Patient_Name, id, ah_Specialization, ah_doctor_name, ah_time, ah_date, ah_consfee FROM tb_appointmenthistory " &
+                          "WHERE ah_status = 'CheckOut' AND ah_Doctor_Name = @DoctorFullName"
+
+        Dim appointmentTable As New DataTable()
+        Try
+            Using conn As SqlConnection = GetConnection()
+                conn.Open()
+                Using cmd As New SqlCommand(query, conn)
+                    cmd.Parameters.AddWithValue("@DoctorFullName", doctorFullName)
+
+                    Using adapter As New SqlDataAdapter(cmd)
+                        adapter.Fill(appointmentTable)
+                    End Using
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show($"Error retrieving appointment list: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+
+        Return appointmentTable
+    End Function
 
 End Class

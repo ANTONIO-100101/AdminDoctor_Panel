@@ -38,23 +38,18 @@ Partial Class DoctorDashboard
         Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges40 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges41 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges42 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges43 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges44 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges29 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges30 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges34 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges35 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -64,15 +59,20 @@ Partial Class DoctorDashboard
         Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges38 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges39 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges29 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges30 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges31 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges32 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges33 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges34 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges35 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges43 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges44 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges36 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges37 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges38 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges39 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges40 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges41 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges42 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         CompletedAppointmentsButton = New Guna.UI2.WinForms.Guna2Button()
         RejectedRequestsButton = New Guna.UI2.WinForms.Guna2Button()
@@ -317,7 +317,7 @@ Partial Class DoctorDashboard
         ' 
         Staff_ExitButton.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Staff_ExitButton.Cursor = Cursors.Hand
-        Staff_ExitButton.CustomizableEdges = CustomizableEdges40
+        Staff_ExitButton.CustomizableEdges = CustomizableEdges15
         Staff_ExitButton.DisabledState.BorderColor = Color.DarkGray
         Staff_ExitButton.DisabledState.CustomBorderColor = Color.DarkGray
         Staff_ExitButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -328,7 +328,7 @@ Partial Class DoctorDashboard
         Staff_ExitButton.Location = New Point(1877, 0)
         Staff_ExitButton.Margin = New Padding(3, 2, 3, 2)
         Staff_ExitButton.Name = "Staff_ExitButton"
-        Staff_ExitButton.ShadowDecoration.CustomizableEdges = CustomizableEdges41
+        Staff_ExitButton.ShadowDecoration.CustomizableEdges = CustomizableEdges16
         Staff_ExitButton.Size = New Size(43, 26)
         Staff_ExitButton.TabIndex = 253
         Staff_ExitButton.Text = "X"
@@ -347,7 +347,7 @@ Partial Class DoctorDashboard
         Staff_MinimizeButton.Margin = New Padding(3, 2, 3, 2)
         Staff_MinimizeButton.Name = "Staff_MinimizeButton"
         Staff_MinimizeButton.PressedState.ImageSize = New Size(20, 30)
-        Staff_MinimizeButton.ShadowDecoration.CustomizableEdges = CustomizableEdges42
+        Staff_MinimizeButton.ShadowDecoration.CustomizableEdges = CustomizableEdges17
         Staff_MinimizeButton.Size = New Size(43, 26)
         Staff_MinimizeButton.TabIndex = 254
         ' 
@@ -378,7 +378,7 @@ Partial Class DoctorDashboard
         ' Guna2TextBox3
         ' 
         Guna2TextBox3.BackColor = Color.Transparent
-        Guna2TextBox3.CustomizableEdges = CustomizableEdges43
+        Guna2TextBox3.CustomizableEdges = CustomizableEdges18
         Guna2TextBox3.DefaultText = ""
         Guna2TextBox3.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         Guna2TextBox3.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -393,7 +393,7 @@ Partial Class DoctorDashboard
         Guna2TextBox3.PlaceholderText = ""
         Guna2TextBox3.ReadOnly = True
         Guna2TextBox3.SelectedText = ""
-        Guna2TextBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges44
+        Guna2TextBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges19
         Guna2TextBox3.Size = New Size(650, 159)
         Guna2TextBox3.TabIndex = 251
         ' 
@@ -432,14 +432,14 @@ Partial Class DoctorDashboard
         ad_docpanel.Controls.Add(DeclineButton)
         ad_docpanel.Controls.Add(AcceptButton)
         ad_docpanel.Controls.Add(ReconsiderButton)
-        ad_docpanel.CustomizableEdges = CustomizableEdges29
+        ad_docpanel.CustomizableEdges = CustomizableEdges34
         ad_docpanel.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_docpanel.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_docpanel.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_docpanel.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         ad_docpanel.Location = New Point(225, 152)
         ad_docpanel.Name = "ad_docpanel"
-        ad_docpanel.ShadowDecoration.CustomizableEdges = CustomizableEdges30
+        ad_docpanel.ShadowDecoration.CustomizableEdges = CustomizableEdges35
         ad_docpanel.Size = New Size(1691, 913)
         ad_docpanel.TabIndex = 264
         ' 
@@ -529,7 +529,7 @@ Partial Class DoctorDashboard
         InvoiceButton.BackColor = Color.Transparent
         InvoiceButton.BorderRadius = 15
         InvoiceButton.Cursor = Cursors.Hand
-        InvoiceButton.CustomizableEdges = CustomizableEdges15
+        InvoiceButton.CustomizableEdges = CustomizableEdges20
         InvoiceButton.DisabledState.BorderColor = Color.DarkGray
         InvoiceButton.DisabledState.CustomBorderColor = Color.DarkGray
         InvoiceButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -543,7 +543,7 @@ Partial Class DoctorDashboard
         InvoiceButton.Location = New Point(1503, 19)
         InvoiceButton.Margin = New Padding(3, 2, 3, 2)
         InvoiceButton.Name = "InvoiceButton"
-        InvoiceButton.ShadowDecoration.CustomizableEdges = CustomizableEdges16
+        InvoiceButton.ShadowDecoration.CustomizableEdges = CustomizableEdges21
         InvoiceButton.Size = New Size(172, 54)
         InvoiceButton.TabIndex = 152
         InvoiceButton.Text = "Invoice"
@@ -555,7 +555,7 @@ Partial Class DoctorDashboard
         CheckOutButton.BackColor = Color.Transparent
         CheckOutButton.BorderRadius = 15
         CheckOutButton.Cursor = Cursors.Hand
-        CheckOutButton.CustomizableEdges = CustomizableEdges17
+        CheckOutButton.CustomizableEdges = CustomizableEdges22
         CheckOutButton.DisabledState.BorderColor = Color.DarkGray
         CheckOutButton.DisabledState.CustomBorderColor = Color.DarkGray
         CheckOutButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -569,7 +569,7 @@ Partial Class DoctorDashboard
         CheckOutButton.Location = New Point(247, 20)
         CheckOutButton.Margin = New Padding(3, 2, 3, 2)
         CheckOutButton.Name = "CheckOutButton"
-        CheckOutButton.ShadowDecoration.CustomizableEdges = CustomizableEdges18
+        CheckOutButton.ShadowDecoration.CustomizableEdges = CustomizableEdges23
         CheckOutButton.Size = New Size(172, 54)
         CheckOutButton.TabIndex = 151
         CheckOutButton.Text = "Checkout"
@@ -581,7 +581,7 @@ Partial Class DoctorDashboard
         ViewButton.BackColor = Color.Transparent
         ViewButton.BorderRadius = 15
         ViewButton.Cursor = Cursors.Hand
-        ViewButton.CustomizableEdges = CustomizableEdges19
+        ViewButton.CustomizableEdges = CustomizableEdges24
         ViewButton.DisabledState.BorderColor = Color.DarkGray
         ViewButton.DisabledState.CustomBorderColor = Color.DarkGray
         ViewButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -595,7 +595,7 @@ Partial Class DoctorDashboard
         ViewButton.Location = New Point(22, 20)
         ViewButton.Margin = New Padding(3, 2, 3, 2)
         ViewButton.Name = "ViewButton"
-        ViewButton.ShadowDecoration.CustomizableEdges = CustomizableEdges20
+        ViewButton.ShadowDecoration.CustomizableEdges = CustomizableEdges25
         ViewButton.Size = New Size(172, 54)
         ViewButton.TabIndex = 150
         ViewButton.Text = "View Document"
@@ -606,7 +606,7 @@ Partial Class DoctorDashboard
         ' 
         CreateDiagnosisButton.BackColor = Color.Transparent
         CreateDiagnosisButton.BorderRadius = 15
-        CreateDiagnosisButton.CustomizableEdges = CustomizableEdges21
+        CreateDiagnosisButton.CustomizableEdges = CustomizableEdges26
         CreateDiagnosisButton.DisabledState.BorderColor = Color.DarkGray
         CreateDiagnosisButton.DisabledState.CustomBorderColor = Color.DarkGray
         CreateDiagnosisButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -620,7 +620,7 @@ Partial Class DoctorDashboard
         CreateDiagnosisButton.Location = New Point(23, 20)
         CreateDiagnosisButton.Margin = New Padding(3, 2, 3, 2)
         CreateDiagnosisButton.Name = "CreateDiagnosisButton"
-        CreateDiagnosisButton.ShadowDecoration.CustomizableEdges = CustomizableEdges22
+        CreateDiagnosisButton.ShadowDecoration.CustomizableEdges = CustomizableEdges27
         CreateDiagnosisButton.Size = New Size(172, 54)
         CreateDiagnosisButton.TabIndex = 143
         CreateDiagnosisButton.Text = "Create Diagnosis"
@@ -631,7 +631,7 @@ Partial Class DoctorDashboard
         ' 
         DeclineButton.BackColor = Color.Transparent
         DeclineButton.BorderRadius = 15
-        DeclineButton.CustomizableEdges = CustomizableEdges23
+        DeclineButton.CustomizableEdges = CustomizableEdges28
         DeclineButton.DisabledState.BorderColor = Color.DarkGray
         DeclineButton.DisabledState.CustomBorderColor = Color.DarkGray
         DeclineButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -644,7 +644,7 @@ Partial Class DoctorDashboard
         DeclineButton.Location = New Point(1503, 19)
         DeclineButton.Margin = New Padding(3, 2, 3, 2)
         DeclineButton.Name = "DeclineButton"
-        DeclineButton.ShadowDecoration.CustomizableEdges = CustomizableEdges24
+        DeclineButton.ShadowDecoration.CustomizableEdges = CustomizableEdges29
         DeclineButton.Size = New Size(172, 54)
         DeclineButton.TabIndex = 147
         DeclineButton.Text = "Decline"
@@ -656,7 +656,7 @@ Partial Class DoctorDashboard
         AcceptButton.BackColor = Color.Transparent
         AcceptButton.BorderRadius = 15
         AcceptButton.Cursor = Cursors.Hand
-        AcceptButton.CustomizableEdges = CustomizableEdges25
+        AcceptButton.CustomizableEdges = CustomizableEdges30
         AcceptButton.DisabledState.BorderColor = Color.DarkGray
         AcceptButton.DisabledState.CustomBorderColor = Color.DarkGray
         AcceptButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -669,7 +669,7 @@ Partial Class DoctorDashboard
         AcceptButton.Location = New Point(1292, 19)
         AcceptButton.Margin = New Padding(3, 2, 3, 2)
         AcceptButton.Name = "AcceptButton"
-        AcceptButton.ShadowDecoration.CustomizableEdges = CustomizableEdges26
+        AcceptButton.ShadowDecoration.CustomizableEdges = CustomizableEdges31
         AcceptButton.Size = New Size(172, 54)
         AcceptButton.TabIndex = 146
         AcceptButton.Text = "Accept"
@@ -681,7 +681,7 @@ Partial Class DoctorDashboard
         ReconsiderButton.BackColor = Color.Transparent
         ReconsiderButton.BorderRadius = 15
         ReconsiderButton.Cursor = Cursors.Hand
-        ReconsiderButton.CustomizableEdges = CustomizableEdges27
+        ReconsiderButton.CustomizableEdges = CustomizableEdges32
         ReconsiderButton.DisabledState.BorderColor = Color.DarkGray
         ReconsiderButton.DisabledState.CustomBorderColor = Color.DarkGray
         ReconsiderButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -694,7 +694,7 @@ Partial Class DoctorDashboard
         ReconsiderButton.Location = New Point(1291, 19)
         ReconsiderButton.Margin = New Padding(3, 2, 3, 2)
         ReconsiderButton.Name = "ReconsiderButton"
-        ReconsiderButton.ShadowDecoration.CustomizableEdges = CustomizableEdges28
+        ReconsiderButton.ShadowDecoration.CustomizableEdges = CustomizableEdges33
         ReconsiderButton.Size = New Size(172, 54)
         ReconsiderButton.TabIndex = 153
         ReconsiderButton.Text = "Reconsider"
@@ -707,7 +707,7 @@ Partial Class DoctorDashboard
         Guna2CustomGradientPanel2.Controls.Add(Guna2PictureBox2)
         Guna2CustomGradientPanel2.Controls.Add(Guna2CirclePictureBox2)
         Guna2CustomGradientPanel2.Controls.Add(Guna2PictureBox1)
-        Guna2CustomGradientPanel2.CustomizableEdges = CustomizableEdges38
+        Guna2CustomGradientPanel2.CustomizableEdges = CustomizableEdges43
         Guna2CustomGradientPanel2.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel2.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel2.FillColor3 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
@@ -715,20 +715,20 @@ Partial Class DoctorDashboard
         Guna2CustomGradientPanel2.Location = New Point(226, 158)
         Guna2CustomGradientPanel2.Margin = New Padding(3, 2, 3, 2)
         Guna2CustomGradientPanel2.Name = "Guna2CustomGradientPanel2"
-        Guna2CustomGradientPanel2.ShadowDecoration.CustomizableEdges = CustomizableEdges39
+        Guna2CustomGradientPanel2.ShadowDecoration.CustomizableEdges = CustomizableEdges44
         Guna2CustomGradientPanel2.Size = New Size(1694, 922)
         Guna2CustomGradientPanel2.TabIndex = 265
         ' 
         ' Guna2PictureBox3
         ' 
         Guna2PictureBox3.BackColor = Color.Transparent
-        Guna2PictureBox3.CustomizableEdges = CustomizableEdges31
+        Guna2PictureBox3.CustomizableEdges = CustomizableEdges36
         Guna2PictureBox3.Image = CType(resources.GetObject("Guna2PictureBox3.Image"), Image)
         Guna2PictureBox3.ImageRotate = 0F
         Guna2PictureBox3.Location = New Point(1125, 518)
         Guna2PictureBox3.Margin = New Padding(3, 2, 3, 2)
         Guna2PictureBox3.Name = "Guna2PictureBox3"
-        Guna2PictureBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges32
+        Guna2PictureBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges37
         Guna2PictureBox3.Size = New Size(748, 412)
         Guna2PictureBox3.TabIndex = 151
         Guna2PictureBox3.TabStop = False
@@ -736,13 +736,13 @@ Partial Class DoctorDashboard
         ' Guna2PictureBox2
         ' 
         Guna2PictureBox2.BackColor = Color.Transparent
-        Guna2PictureBox2.CustomizableEdges = CustomizableEdges33
+        Guna2PictureBox2.CustomizableEdges = CustomizableEdges38
         Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), Image)
         Guna2PictureBox2.ImageRotate = 0F
         Guna2PictureBox2.Location = New Point(545, 532)
         Guna2PictureBox2.Margin = New Padding(3, 2, 3, 2)
         Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Guna2PictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges34
+        Guna2PictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges39
         Guna2PictureBox2.Size = New Size(748, 412)
         Guna2PictureBox2.TabIndex = 150
         Guna2PictureBox2.TabStop = False
@@ -756,7 +756,7 @@ Partial Class DoctorDashboard
         Guna2CirclePictureBox2.InitialImage = CType(resources.GetObject("Guna2CirclePictureBox2.InitialImage"), Image)
         Guna2CirclePictureBox2.Location = New Point(586, 124)
         Guna2CirclePictureBox2.Name = "Guna2CirclePictureBox2"
-        Guna2CirclePictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges35
+        Guna2CirclePictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges40
         Guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Guna2CirclePictureBox2.Size = New Size(608, 422)
         Guna2CirclePictureBox2.SizeMode = PictureBoxSizeMode.Zoom
@@ -767,13 +767,13 @@ Partial Class DoctorDashboard
         ' Guna2PictureBox1
         ' 
         Guna2PictureBox1.BackColor = Color.Transparent
-        Guna2PictureBox1.CustomizableEdges = CustomizableEdges36
+        Guna2PictureBox1.CustomizableEdges = CustomizableEdges41
         Guna2PictureBox1.Image = CType(resources.GetObject("Guna2PictureBox1.Image"), Image)
         Guna2PictureBox1.ImageRotate = 0F
         Guna2PictureBox1.Location = New Point(-37, 532)
         Guna2PictureBox1.Margin = New Padding(3, 2, 3, 2)
         Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Guna2PictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges37
+        Guna2PictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges42
         Guna2PictureBox1.Size = New Size(748, 412)
         Guna2PictureBox1.TabIndex = 149
         Guna2PictureBox1.TabStop = False
@@ -783,8 +783,6 @@ Partial Class DoctorDashboard
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1920, 1080)
-        Controls.Add(ad_docpanel)
-        Controls.Add(Guna2CustomGradientPanel2)
         Controls.Add(guna2CustomGradientPanel1)
         Controls.Add(NameLabel)
         Controls.Add(ad_guna2HtmlLabel2)
@@ -793,6 +791,8 @@ Partial Class DoctorDashboard
         Controls.Add(Guna2HtmlLabel3)
         Controls.Add(Guna2HtmlLabel1)
         Controls.Add(Guna2TextBox3)
+        Controls.Add(ad_docpanel)
+        Controls.Add(Guna2CustomGradientPanel2)
         FormBorderStyle = FormBorderStyle.None
         Margin = New Padding(3, 2, 3, 2)
         Name = "DoctorDashboard"

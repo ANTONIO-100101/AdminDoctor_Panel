@@ -199,6 +199,8 @@ Partial Class ViewPatientInformation2
         guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         guna2Panel14 = New Guna.UI2.WinForms.Guna2Panel()
         guna2HtmlLabel14 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        PrintPreviewDialog1 = New PrintPreviewDialog()
+        PrintDocument1 = New Printing.PrintDocument()
         Guna2CustomGradientPanel1.SuspendLayout()
         PrintablePanel.SuspendLayout()
         guna2Panel25.SuspendLayout()
@@ -1497,6 +1499,16 @@ Partial Class ViewPatientInformation2
         guna2HtmlLabel14.TabIndex = 0
         guna2HtmlLabel14.Text = "Patient Medical Record"
         ' 
+        ' PrintPreviewDialog1
+        ' 
+        PrintPreviewDialog1.AutoScrollMargin = New Size(0, 0)
+        PrintPreviewDialog1.AutoScrollMinSize = New Size(0, 0)
+        PrintPreviewDialog1.ClientSize = New Size(400, 300)
+        PrintPreviewDialog1.Enabled = True
+        PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), Icon)
+        PrintPreviewDialog1.Name = "PrintPreviewDialog1"
+        PrintPreviewDialog1.Visible = False
+        ' 
         ' ViewPatientInformation2
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -1637,4 +1649,6 @@ Partial Class ViewPatientInformation2
     Friend WithEvents viewinfo_PrintBtn As Guna.UI2.WinForms.Guna2ImageButton
     Friend WithEvents CreatePDFButton As Guna.UI2.WinForms.Guna2ImageButton
     Private WithEvents Guna2HtmlLabel25 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
 End Class

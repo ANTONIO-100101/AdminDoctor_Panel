@@ -4452,6 +4452,14 @@
   <metadata name="guna2BorderlessForm1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>14, 34</value>
   </metadata>
+  <data name="Staff_MinimizeButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAGdJREFUeF7t0KEBwDAMwLD+//TGHZx1QOImPgcAAAAAAAAAAAAAAAAAAAAAAPiZ
+        h0/1/9CAXf0/NGBX/w8N2NX/QwN29f/QgF39PzRgV/8PDdjV/wAAAAAAAAAAAAAAAAAAAAAAwG0vgjV1
+        JitI4SwAAAAASUVORK5CYII=
+</value>
+  </data>
   <metadata name="checkboxcolumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -20364,14 +20372,6 @@
         YXj/+DD88cuPw//57+/D//u//xl///ztx+HHHz4NTx8exjHo6nA93Nwth/bGmW7xuyU461fflxmYfGZI
         eiRAFVx2HCfmsHxPDgd2DvBOWjhbRBKwBxkBmu63RCeD580J0DK+b4kQbRCUdzgB4vX0dfuor6ke/z+G
         gQxstuzHbQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="Staff_MinimizeButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAGdJREFUeF7t0KEBwDAMwLD+//TGHZx1QOImPgcAAAAAAAAAAAAAAAAAAAAAAPiZ
-        h0/1/9CAXf0/NGBX/w8N2NX/QwN29f/QgF39PzRgV/8PDdjV/wAAAAAAAAAAAAAAAAAAAAAAwG0vgjV1
-        JitI4SwAAAAASUVORK5CYII=
 </value>
   </data>
 </root>
