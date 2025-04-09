@@ -1,5 +1,6 @@
 ﻿Imports System.Globalization
 Imports AdminDoctor_Panel
+Imports AdminDoctor_Panel.Infocare_Project_1
 Imports AdminDoctor_Panel.Infocare_Project_1.Object_Models
 
 Public Class PatientDashboard
@@ -266,5 +267,336 @@ Public Class PatientDashboard
             End Try
         End If
     End Sub
+
+    Private Sub ShowAppointmentList()
+        Try
+            Dim AppointmentData As DataTable = Database.AppointmentList()
+            If AppointmentData.Rows.Count > 0 Then
+                AppointmentDataGridViewList2.DataSource = AppointmentData
+            Else
+                MessageBox.Show("No Appointment History data found.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End If
+        Catch ex As Exception
+            MessageBox.Show($"Error loading Appointment History data: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
+    Private Sub Staff_ExitButton_Click(sender As Object, e As EventArgs) Handles Staff_ExitButton.Click
+        Dim confirm As DialogResult = MessageBox.Show("Are you sure you want to close? Unsaved changes will be lost.", "Please Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+
+        If confirm = DialogResult.Yes Then
+            Me.Close()
+        End If
+    End Sub
+
+    Private Sub Staff_MinimizeButton_Click(sender As Object, e As EventArgs) Handles Staff_MinimizeButton.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    'Private Sub pd_logoutlabel_Click(sender As Object, e As EventArgs) Handles pd_logoutlabel.Click
+    '    Dim confirm As DialogResult = MessageBox.Show("Are you sure you want to Log Out?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+    '    If confirm = DialogResult.Yes Then
+    '        Dim patientLoginForm As New StaffLogin()
+    '        patientLoginForm.Show()
+    '        Me.Hide()
+    '    End If
+    'End Sub
+
+    'Private Sub LogOutButton_Click(sender As Object, e As EventArgs) Handles LogOutButton.Click
+    '    ' No implementation yet
+    'End Sub
+
+    Private Sub pd_HomeButton_Click(sender As Object, e As EventArgs) Handles pd_HomeButton.Click
+        Dim confirm As DialogResult = MessageBox.Show("Are you sure you want to Log Out?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If confirm = DialogResult.Yes Then
+            Dim patientLoginForm As New PatientLogin()
+            patientLoginForm.Show()
+            Me.Hide()
+        End If
+    End Sub
+
+    'Private Sub PatientRegistrationButton_Click(sender As Object, e As EventArgs) Handles PatientRegistrationButton.Click
+    '    ' No implementation yet
+    'End Sub
+
+    Private Sub guna2Button1_Click(sender As Object, e As EventArgs) Handles guna2Button1.Click
+        InvoicePanel.Visible = False
+        SearchPanel.Visible = True
+        ViewButton.Visible = True
+        DeleteButton.Visible = True
+        AppointmentLabel.Text = "My Appointments"
+        SelectPatientPanel.Visible = False
+        SpecPanel.Visible = False
+        pd_DoctorPanel.Visible = False
+        BookingPanel.Visible = False
+        BookAppPanel.Visible = False
+        ViewAppointmentPanel.Visible = True
+
+        Dim patientName As String = $"{patient.LastName}, {patient.FirstName}"
+        Dim viewcompletedappoointment As DataTable = Database.ViewPatientAppointments(patientName)
+
+        If viewcompletedappoointment.Rows.Count <> 0 Then
+            AppointmentDataGridViewList2.Visible = True
+            AppointmentDataGridViewList2.DataSource = viewcompletedappoointment
+            Return
+        End If
+
+        MessageBox.Show("You have no Appointments.", "Appoinment Msg")
+        AppointmentDataGridViewList2.Visible = False
+    End Sub
+
+    Private Sub AppointmentDataGridViewList2_CellBeginEdit(sender As Object, e As DataGridViewCellCancelEventArgs) Handles AppointmentDataGridViewList2.CellBeginEdit
+        If e.ColumnIndex <> 0 Then
+            e.Cancel = True
+        End If
+    End Sub
+
+    Private Sub AppointmentDataGridViewList2_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles AppointmentDataGridViewList2.CellValueChanged
+        If e.RowIndex >= 0 AndAlso e.ColumnIndex = 0 Then
+            Dim isChecked As Boolean = CBool(AppointmentDataGridViewList2.Rows(e.RowIndex).Cells(0).Value)
+
+            If isChecked Then
+                For Each row As DataGridViewRow In AppointmentDataGridViewList2.Rows
+                    If row.Index <> e.RowIndex Then
+                        Dim checkBoxCell As DataGridViewCheckBoxCell = TryCast(row.Cells(0), DataGridViewCheckBoxCell)
+                        If checkBoxCell IsNot Nothing Then
+                            checkBoxCell.Value = False
+                        End If
+                    End If
+                Next
+            End If
+        End If
+
+        Console.WriteLine("After CellValueChanged:")
+        For Each row As DataGridViewRow In AppointmentDataGridViewList2.Rows
+            Console.WriteLine($"Row {row.Index}: Visible={row.Visible}, Checked={(If(row.Cells(0).Value IsNot Nothing, row.Cells(0).Value.ToString(), "null"))}")
+        Next
+    End Sub
+
+    Private Sub AppointmentDataGridViewList2_CurrentCellDirtyStateChanged(sender As Object, e As EventArgs) Handles AppointmentDataGridViewList2.CurrentCellDirtyStateChanged
+        If TypeOf AppointmentDataGridViewList2.CurrentCell Is DataGridViewCheckBoxCell Then
+            AppointmentDataGridViewList2.CommitEdit(DataGridViewDataErrorContexts.Commit)
+        End If
+    End Sub
+
+    Private Sub ViewButton_Click(sender As Object, e As EventArgs) Handles ViewButton.Click
+        If AppointmentDataGridViewList2.SelectedRows.Count > 0 Then
+            Dim appointmentId As Integer = Convert.ToInt32(AppointmentDataGridViewList2.SelectedRows(0).Cells("Transaction ID").Value)
+
+            Database.viewDocument(
+            appointmentId,
+            Sub(patientDetails)
+                Dim viewpatientinfo As New ViewPatientInformation2()
+
+                viewpatientinfo.SetDetails(
+                    patientDetails("P_Firstname"),
+                    patientDetails("P_Lastname"),
+                    patientDetails("P_Bdate"),
+                    patientDetails("P_Height"),
+                    patientDetails("P_Weight"),
+                    patientDetails("P_BMI"),
+                    patientDetails("P_Blood_Type"),
+                    patientDetails("P_Alergy"),
+                    patientDetails("P_Medication"),
+                    patientDetails("P_PrevSurgery"),
+                    patientDetails("P_Precondition"),
+                    patientDetails("P_Treatment"),
+                    patientDetails("ah_DoctorFirstName"),
+                    patientDetails("ah_DoctorLastName"),
+                    patientDetails("ah_Time"),
+                    patientDetails("ah_Date"),
+                    patientDetails("ah_Consfee"),
+                    patientDetails("d_diagnosis"),
+                    patientDetails("d_additionalnotes"),
+                    patientDetails("d_doctoroder"),
+                    patientDetails("d_prescription")
+                )
+
+                viewpatientinfo.Show()
+            End Sub,
+            Sub(errorMessage)
+                MessageBox.Show(errorMessage)
+            End Sub
+        )
+        Else
+            MessageBox.Show("Please select an appointment.")
+        End If
+    End Sub
+
+    Private Sub SearchTransactionButton_Click(sender As Object, e As EventArgs) Handles SearchTransactionButton.Click
+        Dim transactionId As String = TransactionIdTextBox.Text.Trim()
+        Dim patientName As String = NameTextBox.Text.Trim()
+
+        If Not String.IsNullOrEmpty(patientName) AndAlso patientName.Any(AddressOf Char.IsDigit) Then
+            MessageBox.Show("Patient name cannot contain numbers.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
+        End If
+
+        If Not String.IsNullOrEmpty(transactionId) AndAlso Not transactionId.All(AddressOf Char.IsDigit) Then
+            MessageBox.Show("Transaction ID must contain only numeric values.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
+        End If
+
+        If Not String.IsNullOrEmpty(transactionId) OrElse Not String.IsNullOrEmpty(patientName) Then
+            Try
+                Dim dataSource As DataTable = TryCast(AppointmentDataGridViewList2.DataSource, DataTable)
+
+                If dataSource IsNot Nothing Then
+                    Dim filter As String = ""
+
+                    If Not String.IsNullOrEmpty(transactionId) Then
+                        filter = $"Convert([Transaction ID], 'System.String') LIKE '%{transactionId}%'"
+                    End If
+
+                    If Not String.IsNullOrEmpty(patientName) Then
+                        If Not String.IsNullOrEmpty(filter) Then
+                            filter += " OR "
+                        End If
+
+                        Dim nameParts As String() = patientName.Split(","c)
+
+                        If nameParts.Length = 2 Then
+                            Dim lastName As String = nameParts(0).Trim()
+                            Dim firstName As String = nameParts(1).Trim()
+
+                            filter += $"[Patient Name] LIKE '%{lastName}%' AND [Patient Name] LIKE '%{firstName}%'"
+                        Else
+                            filter += $"[Patient Name] LIKE '%{patientName}%'"
+                        End If
+                    End If
+
+                    dataSource.DefaultView.RowFilter = filter
+                End If
+            Catch ex As Exception
+                MessageBox.Show($"Error while filtering data: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End Try
+        Else
+            MessageBox.Show("Please enter either a transaction ID or a patient name to search.", "Input Required", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
+    End Sub
+
+
+    Private Sub ResetTransactionFilterButton_Click(sender As Object, e As EventArgs) Handles ResetTransactionFilterButton.Click
+        Try
+            Dim dataSource As DataTable = TryCast(AppointmentDataGridViewList2.DataSource, DataTable)
+
+            If dataSource IsNot Nothing Then
+                dataSource.DefaultView.RowFilter = String.Empty
+                TransactionIdTextBox.Clear()
+                NameTextBox.Clear()
+            End If
+        Catch ex As Exception
+            MessageBox.Show($"Error while resetting filter: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
+
+    Private Sub SelectPatientPanel_Paint(sender As Object, e As PaintEventArgs) Handles SelectPatientPanel.Paint
+        ' No implementation provided in original C#
+    End Sub
+
+
+    Private Sub MyProfileTabBtn_Click(sender As Object, e As EventArgs) Handles MyProfileTabBtn.Click
+        Dim form As New PatientRegisterForm(ModalMode.Edit, patient.AccountID, PanelMode.Patient)
+        form.ShowDialog()
+    End Sub
+
+
+    Private Sub DeleteButton_Click(sender As Object, e As EventArgs) Handles DeleteButton.Click
+        If AppointmentDataGridViewList2.SelectedRows.Count > 0 Then
+            Dim appointmentId As Integer = Convert.ToInt32(AppointmentDataGridViewList2.SelectedRows(0).Cells("Transaction ID").Value)
+
+            Dim result As DialogResult = MessageBox.Show(
+            "Are you sure you want to delete this appointment?",
+            "Delete Appointment",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Question
+        )
+
+            If result = DialogResult.Yes Then
+                Dim isDeleted As Boolean = Database.DeleteAppointmentByPatient(appointmentId)
+
+                If isDeleted Then
+                    MessageBox.Show("Appointment successfully deleted.", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    RefreshAppointmentList()
+                Else
+                    MessageBox.Show("You can delete Pending and Declined appointment only. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End If
+            End If
+        Else
+            MessageBox.Show("Please select an appointment to delete.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+    End Sub
+
+
+    Private Sub RefreshAppointmentList()
+        Dim patientName As String = $"{patient.LastName}, {patient.FirstName}"
+        AppointmentDataGridViewList2.DataSource = Database.ViewPatientAppointments(patientName)
+    End Sub
+
+    Private Sub LoadInvoiceData()
+        Dim fullName As String = $"{patient.LastName}, {patient.FirstName}"
+        Dim data As DataTable = Database.GetInvoiceList(fullName)
+        InvoiceDataGridView.DataSource = data
+    End Sub
+
+
+    Private Sub guna2Button5_Click(sender As Object, e As EventArgs) Handles guna2Button5.Click
+        SearchPanel.Visible = True
+        ViewButton.Visible = False
+        DeleteButton.Visible = False
+        SpecPanel.Visible = False
+        BookAppPanel.Visible = False
+
+        InvoicePanel.Visible = True
+        InvoiceBtn.Visible = True
+        InvoiceDataGridView.Visible = True
+        InvoiceHeadTitle.Visible = True
+
+        ViewAppointmentPanel.Visible = False
+        LoadInvoiceData()
+    End Sub
+
+
+    Private Sub AppointmentDataGridViewList2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles AppointmentDataGridViewList2.CellContentClick
+        ' No implementation provided in original C#
+    End Sub
+
+
+    Private Sub BookingPanel_Paint(sender As Object, e As PaintEventArgs) Handles BookingPanel.Paint
+        ' No implementation provided in original C#
+    End Sub
+
+
+    Private Sub InvoiceDataGridView_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles InvoiceDataGridView.CellValueChanged
+        If e.RowIndex >= 0 AndAlso e.ColumnIndex = 0 Then
+            Dim isChecked As Boolean = Convert.ToBoolean(InvoiceDataGridView.Rows(e.RowIndex).Cells(0).Value)
+
+            If isChecked Then
+                For Each row As DataGridViewRow In InvoiceDataGridView.Rows
+                    If row.Index <> e.RowIndex Then
+                        Dim checkBoxCell As DataGridViewCheckBoxCell = TryCast(row.Cells(0), DataGridViewCheckBoxCell)
+                        If checkBoxCell IsNot Nothing Then
+                            checkBoxCell.Value = False
+                        End If
+                    End If
+                Next
+            End If
+        End If
+    End Sub
+
+    Private Sub InvoiceBtn_Click(sender As Object, e As EventArgs) Handles InvoiceBtn.Click
+        If InvoiceDataGridView.SelectedRows.Count > 0 Then
+            Dim appointmentId As Integer = Convert.ToInt32(InvoiceDataGridView.SelectedRows(0).Cells("ID").Value)
+
+            Dim appointment As Appointment = Database.GetAppointmentById(appointmentId)
+
+            Dim bill As New PatientBillingInvoice(appointment)
+            bill.ShowDialog()
+        Else
+            MessageBox.Show("Please select an invoice record first.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
+    End Sub
+
 
 End Class
