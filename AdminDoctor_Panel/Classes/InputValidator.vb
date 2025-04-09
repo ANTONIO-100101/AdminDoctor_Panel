@@ -52,14 +52,22 @@ Namespace Infocare_Project_1.Classes
         End Function
 
         Public Function ValidateAllFieldsFilled(textBoxes() As Guna2TextBox, errorMessage As String) As Boolean
+            Dim allFieldsFilled As Boolean = True
+
             For Each textBox As Guna2TextBox In textBoxes
                 If Not IsNotEmpty(textBox) Then
-                    MessageBox.Show(errorMessage, "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                    textBox.Focus()
-                    Return False
+                    textBox.BorderColor = Drawing.Color.Red
+                    allFieldsFilled = False
+                Else
+                    textBox.BorderColor = Drawing.Color.LightBlue
                 End If
             Next
-            Return True
+
+            If Not allFieldsFilled Then
+                MessageBox.Show(errorMessage, "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            End If
+
+            Return allFieldsFilled
         End Function
     End Module
 End Namespace

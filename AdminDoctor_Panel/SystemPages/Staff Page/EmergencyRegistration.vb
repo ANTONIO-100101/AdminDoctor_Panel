@@ -61,7 +61,7 @@ Public Class EmergencyRegistration
         }
     End Function
 
-    Private Sub RegisterButton_Click(sender As Object, e As EventArgs)
+    Private Sub RegisterButton_Click(sender As Object, e As EventArgs) Handles RegisterButton.Click
         'VALIDATION
 
         If Not FirstnameTxtbox.Text.All(Function(c) Char.IsLetter(c) OrElse Char.IsWhiteSpace(c)) AndAlso Not String.IsNullOrEmpty(FirstnameTxtbox.Text) Then
@@ -198,7 +198,7 @@ Public Class EmergencyRegistration
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub BackButton_Click(sender As Object, e As EventArgs)
+    Private Sub BackButton_Click(sender As Object, e As EventArgs) Handles BackButton.Click
         Dim confirm As DialogResult = DialogResult.Cancel
         If mode = ModalMode.Add Then
             confirm = MessageBox.Show("Are you sure you want to go back? Your progress will be lost.", "Back to Page 2", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
@@ -219,7 +219,7 @@ Public Class EmergencyRegistration
         End If
     End Sub
 
-    Private Sub ExitButton_Click(sender As Object, e As EventArgs)
+    Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
         Dim confirm As DialogResult = MessageBox.Show("Are you sure to cancel " & If(mode = ModalMode.Add, "registration", "close") & "?", "Cancel registration", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
         If confirm = DialogResult.Yes Then
             Try

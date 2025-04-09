@@ -74,9 +74,9 @@ Public Class PatientRegisterForm
             .LastName = LastNameTxtbox.Text,
             .UserName = UsernameTextbox.Text,
             .Password = PasswordTextBox.Text,
-            .MiddleName = MiddleNameTxtbox.Text,
+            .MiddleName = If(String.IsNullOrWhiteSpace(MiddleNameTxtbox.Text), "", MiddleNameTxtbox.Text),
             .BirthDate = BdayDateTimePicker.Value,
-            .Suffix = SuffixTxtbox.Text,
+            .Suffix = If(String.IsNullOrWhiteSpace(SuffixTxtbox.Text), "", SuffixTxtbox.Text),
             .Email = EmailTxtbox.Text,
             .ContactNumber = ContactNumberTxtbox.Text,
             .Sex = SexCombobox.SelectedItem.ToString()
@@ -121,7 +121,8 @@ Public Class PatientRegisterForm
             Return
         End If
 
-        If Not MiddleNameTxtbox.Text.All(Function(c) Char.IsLetter(c) OrElse Char.IsWhiteSpace(c) OrElse c = "/"c) AndAlso Not String.IsNullOrEmpty(MiddleNameTxtbox.Text) Then
+        If Not String.IsNullOrEmpty(MiddleNameTxtbox.Text) AndAlso
+       Not MiddleNameTxtbox.Text.All(Function(c) Char.IsLetter(c) OrElse Char.IsWhiteSpace(c) OrElse c = "/"c) Then
             MessageBox.Show("Middle name must contain only letters, spaces, and the '/' character.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
         End If
@@ -145,8 +146,8 @@ Public Class PatientRegisterForm
         End If
 
         If Not InputValidator.ValidateAlphabetic(FirstnameTxtbox, "First name must contain only letters. ex. (Juan)") OrElse
-            Not InputValidator.ValidateAlphabetic(LastNameTxtbox, "Last name must contain only letters. ex. (Dela Cruz)") OrElse
-            Not InputValidator.ValidateAlphabetic(CityTxtbox, "City must contain only letters. ex. (Caloocan)") Then
+       Not InputValidator.ValidateAlphabetic(LastNameTxtbox, "Last name must contain only letters. ex. (Dela Cruz)") OrElse
+       Not InputValidator.ValidateAlphabetic(CityTxtbox, "City must contain only letters. ex. (Caloocan)") Then
             Return
         End If
 
@@ -156,16 +157,17 @@ Public Class PatientRegisterForm
         End If
 
         If Not InputValidator.ValidateNumeric(ContactNumberTxtbox, "Contact number must contain only numbers. ex.(09777864220)") OrElse
-            Not InputValidator.ValidateNumeric(ZipCodeTxtbox, "Zip Code must contain only numbers. ex. (1400)") OrElse
-            Not InputValidator.ValidateNumeric(ZoneTxtbox, "Zone must contain only numbers. ex. (1)") OrElse
-            Not InputValidator.ValidateNumeric(HouseNoTxtbox, "House No must contain only numbers. ex. (14)") Then
+       Not InputValidator.ValidateNumeric(ZipCodeTxtbox, "Zip Code must contain only numbers. ex. (1400)") OrElse
+       Not InputValidator.ValidateNumeric(ZoneTxtbox, "Zone must contain only numbers. ex. (1)") OrElse
+       Not InputValidator.ValidateNumeric(HouseNoTxtbox, "House No must contain only numbers. ex. (14)") Then
             Return
         End If
 
         Dim validSuffixes As String() = {"Jr.", "Sr.", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "Jr", "Sr", "N/A"}
         Dim enteredText As String = SuffixTxtbox.Text.Trim()
 
-        If Not String.IsNullOrEmpty(enteredText) AndAlso Not validSuffixes.Any(Function(suffix) String.Equals(suffix, enteredText, StringComparison.OrdinalIgnoreCase)) Then
+        If Not String.IsNullOrEmpty(SuffixTxtbox.Text) AndAlso
+       Not validSuffixes.Contains(SuffixTxtbox.Text.Trim(), StringComparer.OrdinalIgnoreCase) Then
             MessageBox.Show("Please enter a valid suffix (e.g., Jr., Sr., I, II, III, IV, etc.).", "Invalid Suffix", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
         End If
@@ -193,33 +195,34 @@ Public Class PatientRegisterForm
             Return
         End If
 
-        Dim requiredTextBoxes As Guna2TextBox() = {FirstnameTxtbox, LastNameTxtbox, MiddleNameTxtbox, SuffixTxtbox, CityTxtbox,
-                                                  ContactNumberTxtbox, ZipCodeTxtbox, ZoneTxtbox, StreetTxtbox, BarangayTxtbox, EmailTxtbox}
+        Dim requiredTextBoxes As Guna2TextBox() = {FirstnameTxtbox, LastNameTxtbox, CityTxtbox,
+                                               ContactNumberTxtbox, ZipCodeTxtbox, ZoneTxtbox, StreetTxtbox, BarangayTxtbox, EmailTxtbox}
 
         If Not InputValidator.ValidateAllFieldsFilled(requiredTextBoxes, "Please fill out all fields.") Then
             Return
         End If
 
         Dim address As New AddressModel() With {
-            .HouseNo = houseNo,
-            .Street = StreetTxtbox.Text,
-            .Barangay = BarangayTxtbox.Text,
-            .City = CityTxtbox.Text,
-            .ZipCode = ZipCode,
-            .Zone = Zone
-        }
+        .houseNo = houseNo,
+        .Street = StreetTxtbox.Text,
+        .Barangay = BarangayTxtbox.Text,
+        .City = CityTxtbox.Text,
+        .ZipCode = ZipCode,
+        .Zone = Zone
+    }
 
         Dim newPatient As New PatientModel() With {
-            .UserName = UsernameTextbox.Text,
-            .FirstName = FirstnameTxtbox.Text,
-            .LastName = LastNameTxtbox.Text,
-            .MiddleName = MiddleNameTxtbox.Text,
-            .Password = PasswordTextBox.Text,
-            .ContactNumber = ContactNumberTxtbox.Text,
-            .Email = EmailTxtbox.Text,
-            .Address = address,
-            .Sex = SexCombobox.SelectedItem.ToString()
-        }
+        .username = UsernameTextbox.Text,
+        .FirstName = FirstnameTxtbox.Text,
+        .LastName = LastNameTxtbox.Text,
+        .MiddleName = If(String.IsNullOrWhiteSpace(MiddleNameTxtbox.Text), "", MiddleNameTxtbox.Text), ' Fix applied
+        .Suffix = If(String.IsNullOrWhiteSpace(SuffixTxtbox.Text), "", SuffixTxtbox.Text), ' Fix applied
+        .password = PasswordTextBox.Text,
+        .contactNumber = ContactNumberTxtbox.Text,
+        .Email = EmailTxtbox.Text,
+        .address = address,
+        .Sex = SexCombobox.SelectedItem.ToString()
+    }
 
         Me.Cursor = Cursors.WaitCursor
         Dim editedInfo As PatientModel = SetupObj()
@@ -237,10 +240,14 @@ Public Class PatientRegisterForm
         Me.Hide()
     End Sub
 
+
+
     Private Sub UsernameTxtbox_TextChanged(sender As Object, e As EventArgs) Handles UsernameTextbox.TextChanged
+        If _placeHolderHandler Is Nothing Then
+            _placeHolderHandler = New PlaceHolderHandler()
+        End If
         _placeHolderHandler.HandleTextBoxPlaceholder(EmailTxtbox, EmailLabel, "Email")
     End Sub
-
     Private Sub ContactNumberTxtbox_TextChanged(sender As Object, e As EventArgs) Handles ContactNumberTxtbox.TextChanged
         _placeHolderHandler.HandleTextBoxPlaceholder(ContactNumberTxtbox, ContactNumberLabel, "Contact Number")
     End Sub
@@ -269,4 +276,16 @@ Public Class PatientRegisterForm
         End If
     End Sub
 
+    Private Sub BackButton_Click(sender As Object, e As EventArgs) Handles BackButton.Click
+        Dim textBoxes As Control() = {
+            EmailTxtbox, FirstnameTxtbox, LastNameTxtbox, MiddleNameTxtbox, SuffixTxtbox, CityTxtbox,
+            ContactNumberTxtbox, ZipCodeTxtbox, ZoneTxtbox, StreetTxtbox, BarangayTxtbox
+        }
+
+        Dim confirm As DialogResult = MessageBox.Show("Are you sure you want to go back?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+
+        If confirm = DialogResult.Yes Then
+            Me.Hide()
+        End If
+    End Sub
 End Class

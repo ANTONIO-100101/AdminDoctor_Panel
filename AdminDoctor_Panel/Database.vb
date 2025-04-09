@@ -441,11 +441,11 @@ Public Class Database
 
                 If mode = ModalMode.Add Then
                     query = "INSERT INTO tb_patientinfo (p_FirstName, p_LastName, p_MiddleName, p_Suffix, p_Username, P_Password, P_ContactNumber, P_Bdate, P_Sex, P_Address, email) " &
-                        "VALUES (@FirstName, @LastName, @MiddleName, @Suffix, @Username, @Password, @ContactNumber, @Bdate, @Sex, @Address, @Email)"
+                    "VALUES (@FirstName, @LastName, @MiddleName, @Suffix, @Username, @Password, @ContactNumber, @Bdate, @Sex, @Address, @Email)"
                 Else
                     query = "UPDATE tb_patientinfo SET p_FirstName = @FirstName, p_LastName = @LastName, p_MiddleName = @MiddleName, " &
-                        "p_Suffix = @Suffix, p_username = @Username, P_ContactNumber = @ContactNumber, P_Bdate = @Bdate, " &
-                        "P_Sex = @Sex, P_Address = @Address, email = @Email WHERE P_username = @Username"
+                    "p_Suffix = @Suffix, p_username = @Username, P_ContactNumber = @ContactNumber, P_Bdate = @Bdate, " &
+                    "P_Sex = @Sex, P_Address = @Address, email = @Email WHERE P_username = @Username"
                 End If
 
                 Dim command As New SqlCommand(query, connection)
@@ -457,7 +457,7 @@ Public Class Database
                 command.Parameters.AddWithValue("@Username", patient.UserName)
                 command.Parameters.AddWithValue("@Password", ProcessMethods.HashCharacter(patient.Password))
                 command.Parameters.AddWithValue("@ContactNumber", patient.ContactNumber)
-                command.Parameters.AddWithValue("@Bdate", patient.BirthDate.ToString("dd-MM-yyyy"))
+                command.Parameters.AddWithValue("@Bdate", patient.BirthDate)
                 command.Parameters.AddWithValue("@Sex", patient.Sex.ToString())
                 command.Parameters.AddWithValue("@Email", patient.Email)
                 command.Parameters.AddWithValue("@Address", patient.Address.FullAddress)
@@ -474,15 +474,25 @@ Public Class Database
         Dim query As String
 
         If mode = ModalMode.Add Then
-            query = "INSERT INTO tb_patientinfo (P_Height, P_Weight, P_BMI, P_Blood_Type, P_Precondition, P_Treatment, P_PrevSurgery, P_Username, P_Alergy, P_Medication) " &
-                "VALUES (@Height, @Weight, @BMI, @BloodType, @PreCon, @Treatment, @PrevSurg, @Username, @Allergy, @Medication) " &
-                "ON DUPLICATE KEY UPDATE P_Height = IFNULL(@Height, P_Height), P_Weight = IFNULL(@Weight, P_Weight), P_BMI = IFNULL(@BMI, P_BMI), " &
-                "P_Blood_Type = IFNULL(@BloodType, P_Blood_Type), P_Precondition = IFNULL(@PreCon, P_Precondition), P_Treatment = IFNULL(@Treatment, P_Treatment), " &
-                "P_PrevSurgery = IFNULL(@PrevSurg, P_PrevSurgery), P_Alergy = IFNULL(@Allergy, P_Alergy), P_Medication = IFNULL(@Medication, P_Medication)"
+            query = "MERGE INTO tb_patientinfo AS target " &
+            "USING (SELECT @Height AS P_Height, @Weight AS P_Weight, @BMI AS P_BMI, @BloodType AS P_Blood_Type, " &
+            "@PreCon AS P_Precondition, @Treatment AS P_Treatment, @PrevSurg AS P_PrevSurgery, @Username AS P_Username, " &
+            "@Allergy AS P_Alergy, @Medication AS P_Medication) AS source " &
+            "ON target.P_Username = source.P_Username " &
+            "WHEN MATCHED THEN " &
+            "UPDATE SET P_Height = ISNULL(source.P_Height, target.P_Height), P_Weight = ISNULL(source.P_Weight, target.P_Weight), " &
+            "P_BMI = ISNULL(source.P_BMI, target.P_BMI), P_Blood_Type = ISNULL(source.P_Blood_Type, target.P_Blood_Type), " &
+            "P_Precondition = ISNULL(source.P_Precondition, target.P_Precondition), P_Treatment = ISNULL(source.P_Treatment, target.P_Treatment), " &
+            "P_PrevSurgery = ISNULL(source.P_PrevSurgery, target.P_PrevSurgery), P_Alergy = ISNULL(source.P_Alergy, target.P_Alergy), " &
+            "P_Medication = ISNULL(source.P_Medication, target.P_Medication) " &
+            "WHEN NOT MATCHED THEN " &
+            "INSERT (P_Height, P_Weight, P_BMI, P_Blood_Type, P_Precondition, P_Treatment, P_PrevSurgery, P_Username, P_Alergy, P_Medication) " &
+            "VALUES (source.P_Height, source.P_Weight, source.P_BMI, source.P_Blood_Type, source.P_Precondition, source.P_Treatment, " &
+            "source.P_PrevSurgery, source.P_Username, source.P_Alergy, source.P_Medication);"
         Else
             query = "UPDATE tb_patientinfo SET P_Height = @Height, P_Weight = @Weight, P_BMI = @BMI, P_Blood_Type = @BloodType, " &
-                "P_Precondition = @PreCon, P_Treatment = @Treatment, P_PrevSurgery = @PrevSurg, P_Alergy = @Allergy, P_Medication = @Medication " &
-                "WHERE P_username = @Username"
+            "P_Precondition = @PreCon, P_Treatment = @Treatment, P_PrevSurgery = @PrevSurg, P_Alergy = @Allergy, P_Medication = @Medication " &
+            "WHERE P_Username = @Username"
         End If
 
         Using connection As SqlConnection = GetConnection()
@@ -508,13 +518,20 @@ Public Class Database
         Dim query As String
 
         If mode = ModalMode.Add Then
-            query = "INSERT INTO tb_patientinfo (P_username, Eme_Firstname, Eme_Middlename, Eme_Lastname, Eme_Suffix, Eme_Address) " &
-                "VALUES (@P_username, @Eme_Firstname, @Eme_Middlename, @Eme_Lastname, @Eme_Suffix, @Eme_Address) " &
-                "ON DUPLICATE KEY UPDATE Eme_Firstname = @Eme_Firstname, Eme_Middlename = @Eme_Middlename, Eme_Lastname = @Eme_Lastname, " &
-                "Eme_Suffix = @Eme_Suffix, Eme_Address = @Eme_Address"
+            query = "MERGE INTO tb_patientinfo AS target " &
+            "USING (SELECT @P_username AS P_Username, @Eme_Firstname AS Eme_Firstname, @Eme_Middlename AS Eme_Middlename, " &
+            "@Eme_Lastname AS Eme_Lastname, @Eme_Suffix AS Eme_Suffix, @Eme_Address AS Eme_Address) AS source " &
+            "ON target.P_Username = source.P_Username " &
+            "WHEN MATCHED THEN " &
+            "UPDATE SET Eme_Firstname = ISNULL(source.Eme_Firstname, target.Eme_Firstname), Eme_Middlename = ISNULL(source.Eme_Middlename, target.Eme_Middlename), " &
+            "Eme_Lastname = ISNULL(source.Eme_Lastname, target.Eme_Lastname), Eme_Suffix = ISNULL(source.Eme_Suffix, target.Eme_Suffix), " &
+            "Eme_Address = ISNULL(source.Eme_Address, target.Eme_Address) " &
+            "WHEN NOT MATCHED THEN " &
+            "INSERT (P_Username, Eme_Firstname, Eme_Middlename, Eme_Lastname, Eme_Suffix, Eme_Address) " &
+            "VALUES (source.P_Username, source.Eme_Firstname, source.Eme_Middlename, source.Eme_Lastname, source.Eme_Suffix, source.Eme_Address);"
         Else
             query = "UPDATE tb_patientinfo SET Eme_Firstname = @Eme_Firstname, Eme_Middlename = @Eme_Middlename, " &
-                "Eme_Lastname = @Eme_Lastname, Eme_Suffix = @Eme_Suffix, Eme_Address = @Eme_Address WHERE P_username = @P_username"
+            "Eme_Lastname = @Eme_Lastname, Eme_Suffix = @Eme_Suffix, Eme_Address = @Eme_Address WHERE P_Username = @P_username"
         End If
 
         Using connection As SqlConnection = GetConnection()
@@ -533,10 +550,12 @@ Public Class Database
                 connection.Open()
                 command.ExecuteNonQuery()
             Catch ex As Exception
-                Throw New Exception("Error updating patient data: " & ex.Message)
+                Throw New Exception("Error updating emergency contact data: " & ex.Message)
             End Try
         End Using
     End Sub
+
+
 
     Public Shared Function GetPatientName(ByVal patient As PatientModel) As String
         Using connection = GetConnection()

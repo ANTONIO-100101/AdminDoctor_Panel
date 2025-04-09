@@ -56,8 +56,8 @@ Public Class PatientLogin
     Private Sub staff_HomeButton_Click(sender As Object, e As EventArgs) Handles staff_HomeButton.Click
         Dim confirm As DialogResult = MessageBox.Show("Are you sure you want to go back?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If confirm = DialogResult.Yes Then
-            Dim homeForm As New HomeForm()
-            homeForm.Show()
+            Dim Landpage As New LandingPage()
+            Landpage.Show()
             Me.Hide()
         End If
     End Sub
@@ -81,6 +81,7 @@ Public Class PatientLogin
         If confirm = DialogResult.Yes Then
             Dim patientRegisterForm As New PatientRegisterForm(ModalMode.Add)
             patientRegisterForm.Show()
+            Me.Hide()
         End If
     End Sub
 End Class

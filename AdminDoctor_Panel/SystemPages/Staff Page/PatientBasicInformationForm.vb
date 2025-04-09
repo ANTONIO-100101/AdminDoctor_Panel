@@ -55,7 +55,7 @@ Partial Public Class PatientBasicInformationForm
         End Try
     End Sub
 
-    Private Sub ExitButton_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Private Sub ExitButton_Click(ByVal sender As Object, ByVal e As EventArgs) Handles ExitButton.Click
         Dim confirm As DialogResult = MessageBox.Show($"Are you sure you want to {(If(mode = ModalMode.Add, "cancel registration", "close"))}?", "Cancel registration", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
 
         If confirm = DialogResult.Yes Then
@@ -72,7 +72,7 @@ Partial Public Class PatientBasicInformationForm
         End If
     End Sub
 
-    Private Sub RegisterButton_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Private Sub RegisterButton_Click(ByVal sender As Object, ByVal e As EventArgs) Handles RegisterButton.Click
         If Not ProcessMethods.IsValidTextInput(AlergyTextbox.Text) Then
             MessageBox.Show("Alergy field must contain only letters, spaces, or 'N/A'.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
@@ -126,7 +126,7 @@ Partial Public Class PatientBasicInformationForm
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub BackButton_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Private Sub BackButton_Click(ByVal sender As Object, ByVal e As EventArgs) Handles BackButton.Click
         Dim confirm As DialogResult = DialogResult.Cancel
 
         If mode = ModalMode.Add Then
@@ -162,7 +162,7 @@ Partial Public Class PatientBasicInformationForm
         End If
     End Sub
 
-    Private Sub DeleteBtn_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Private Sub DeleteBtn_Click(ByVal sender As Object, ByVal e As EventArgs) Handles DeleteBtn.Click
         Dim isDelete As DialogResult = MessageBox.Show("Are you sure you want to delete this information?", "Patient Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If isDelete = DialogResult.No Then Return
         DeletePatientAndReload.Invoke()
