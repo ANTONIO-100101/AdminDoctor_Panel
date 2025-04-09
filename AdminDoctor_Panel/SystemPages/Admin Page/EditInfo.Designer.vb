@@ -108,7 +108,7 @@ Partial Class EditInfo
         Guna2CustomGradientPanel1.Margin = New Padding(3, 2, 3, 2)
         Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
         Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges22
-        Guna2CustomGradientPanel1.Size = New Size(1920, 1080)
+        Guna2CustomGradientPanel1.Size = New Size(1344, 703)
         Guna2CustomGradientPanel1.TabIndex = 40
         ' 
         ' guna2TextBox1
@@ -126,7 +126,7 @@ Partial Class EditInfo
         guna2TextBox1.Font = New Font("Segoe UI", 9F)
         guna2TextBox1.ForeColor = SystemColors.ActiveCaptionText
         guna2TextBox1.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        guna2TextBox1.Location = New Point(1182, 373)
+        guna2TextBox1.Location = New Point(893, 349)
         guna2TextBox1.Margin = New Padding(3, 4, 3, 4)
         guna2TextBox1.Name = "guna2TextBox1"
         guna2TextBox1.PlaceholderText = ""
@@ -140,7 +140,7 @@ Partial Class EditInfo
         guna2HtmlLabel10.BackColor = Color.Transparent
         guna2HtmlLabel10.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
         guna2HtmlLabel10.ForeColor = Color.White
-        guna2HtmlLabel10.Location = New Point(1182, 350)
+        guna2HtmlLabel10.Location = New Point(893, 326)
         guna2HtmlLabel10.Name = "guna2HtmlLabel10"
         guna2HtmlLabel10.Size = New Size(61, 19)
         guna2HtmlLabel10.TabIndex = 58
@@ -160,7 +160,7 @@ Partial Class EditInfo
         cancelBtn.FillColor = SystemColors.Control
         cancelBtn.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         cancelBtn.ForeColor = Color.FromArgb(CByte(0), CByte(0), CByte(192))
-        cancelBtn.Location = New Point(1142, 620)
+        cancelBtn.Location = New Point(730, 596)
         cancelBtn.Name = "cancelBtn"
         cancelBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges4
         cancelBtn.Size = New Size(199, 65)
@@ -181,7 +181,7 @@ Partial Class EditInfo
         saveChanges.FillColor = Color.Navy
         saveChanges.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         saveChanges.ForeColor = Color.White
-        saveChanges.Location = New Point(906, 620)
+        saveChanges.Location = New Point(490, 596)
         saveChanges.Name = "saveChanges"
         saveChanges.ShadowDecoration.CustomizableEdges = CustomizableEdges6
         saveChanges.Size = New Size(199, 65)
@@ -193,11 +193,11 @@ Partial Class EditInfo
         guna2HtmlLabel9.BackColor = Color.Transparent
         guna2HtmlLabel9.Font = New Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         guna2HtmlLabel9.ForeColor = Color.White
-        guna2HtmlLabel9.Location = New Point(728, 174)
+        guna2HtmlLabel9.Location = New Point(524, 152)
         guna2HtmlLabel9.Name = "guna2HtmlLabel9"
-        guna2HtmlLabel9.Size = New Size(377, 27)
+        guna2HtmlLabel9.Size = New Size(389, 27)
         guna2HtmlLabel9.TabIndex = 55
-        guna2HtmlLabel9.Text = "Edit and save yur personal information."
+        guna2HtmlLabel9.Text = "Edit and save your personal information."
         ' 
         ' emailTextbox
         ' 
@@ -214,7 +214,7 @@ Partial Class EditInfo
         emailTextbox.Font = New Font("Segoe UI", 9F)
         emailTextbox.ForeColor = SystemColors.ActiveCaptionText
         emailTextbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        emailTextbox.Location = New Point(764, 478)
+        emailTextbox.Location = New Point(475, 454)
         emailTextbox.Margin = New Padding(3, 4, 3, 4)
         emailTextbox.Name = "emailTextbox"
         emailTextbox.PlaceholderText = ""
@@ -228,7 +228,7 @@ Partial Class EditInfo
         guna2HtmlLabel8.BackColor = Color.Transparent
         guna2HtmlLabel8.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
         guna2HtmlLabel8.ForeColor = Color.White
-        guna2HtmlLabel8.Location = New Point(764, 452)
+        guna2HtmlLabel8.Location = New Point(475, 428)
         guna2HtmlLabel8.Name = "guna2HtmlLabel8"
         guna2HtmlLabel8.Size = New Size(35, 19)
         guna2HtmlLabel8.TabIndex = 53
@@ -249,7 +249,7 @@ Partial Class EditInfo
         contactnumberTextbox.Font = New Font("Segoe UI", 9F)
         contactnumberTextbox.ForeColor = SystemColors.ActiveCaptionText
         contactnumberTextbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        contactnumberTextbox.Location = New Point(350, 478)
+        contactnumberTextbox.Location = New Point(61, 454)
         contactnumberTextbox.Margin = New Padding(3, 4, 3, 4)
         contactnumberTextbox.Name = "contactnumberTextbox"
         contactnumberTextbox.PlaceholderText = ""
@@ -263,7 +263,7 @@ Partial Class EditInfo
         guna2HtmlLabel7.BackColor = Color.Transparent
         guna2HtmlLabel7.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
         guna2HtmlLabel7.ForeColor = Color.White
-        guna2HtmlLabel7.Location = New Point(350, 452)
+        guna2HtmlLabel7.Location = New Point(61, 428)
         guna2HtmlLabel7.Name = "guna2HtmlLabel7"
         guna2HtmlLabel7.Size = New Size(102, 19)
         guna2HtmlLabel7.TabIndex = 51
@@ -284,7 +284,7 @@ Partial Class EditInfo
         suffixTextbox.Font = New Font("Segoe UI", 9F)
         suffixTextbox.ForeColor = SystemColors.ActiveCaptionText
         suffixTextbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        suffixTextbox.Location = New Point(1182, 271)
+        suffixTextbox.Location = New Point(893, 247)
         suffixTextbox.Margin = New Padding(3, 4, 3, 4)
         suffixTextbox.Name = "suffixTextbox"
         suffixTextbox.PlaceholderText = ""
@@ -298,7 +298,7 @@ Partial Class EditInfo
         guna2HtmlLabel6.BackColor = Color.Transparent
         guna2HtmlLabel6.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
         guna2HtmlLabel6.ForeColor = Color.White
-        guna2HtmlLabel6.Location = New Point(1182, 246)
+        guna2HtmlLabel6.Location = New Point(893, 222)
         guna2HtmlLabel6.Name = "guna2HtmlLabel6"
         guna2HtmlLabel6.Size = New Size(36, 19)
         guna2HtmlLabel6.TabIndex = 49
@@ -319,7 +319,7 @@ Partial Class EditInfo
         usernameTextbox.Font = New Font("Segoe UI", 9F)
         usernameTextbox.ForeColor = SystemColors.ActiveCaptionText
         usernameTextbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        usernameTextbox.Location = New Point(764, 373)
+        usernameTextbox.Location = New Point(475, 349)
         usernameTextbox.Margin = New Padding(3, 4, 3, 4)
         usernameTextbox.Name = "usernameTextbox"
         usernameTextbox.PlaceholderText = ""
@@ -333,7 +333,7 @@ Partial Class EditInfo
         guna2HtmlLabel4.BackColor = Color.Transparent
         guna2HtmlLabel4.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
         guna2HtmlLabel4.ForeColor = Color.White
-        guna2HtmlLabel4.Location = New Point(764, 350)
+        guna2HtmlLabel4.Location = New Point(475, 326)
         guna2HtmlLabel4.Name = "guna2HtmlLabel4"
         guna2HtmlLabel4.Size = New Size(64, 19)
         guna2HtmlLabel4.TabIndex = 47
@@ -354,7 +354,7 @@ Partial Class EditInfo
         middlenameTextbox.Font = New Font("Segoe UI", 9F)
         middlenameTextbox.ForeColor = SystemColors.ActiveCaptionText
         middlenameTextbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        middlenameTextbox.Location = New Point(350, 373)
+        middlenameTextbox.Location = New Point(61, 349)
         middlenameTextbox.Margin = New Padding(3, 4, 3, 4)
         middlenameTextbox.Name = "middlenameTextbox"
         middlenameTextbox.PlaceholderText = ""
@@ -368,7 +368,7 @@ Partial Class EditInfo
         guna2HtmlLabel5.BackColor = Color.Transparent
         guna2HtmlLabel5.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
         guna2HtmlLabel5.ForeColor = Color.White
-        guna2HtmlLabel5.Location = New Point(350, 350)
+        guna2HtmlLabel5.Location = New Point(61, 326)
         guna2HtmlLabel5.Name = "guna2HtmlLabel5"
         guna2HtmlLabel5.Size = New Size(78, 19)
         guna2HtmlLabel5.TabIndex = 45
@@ -389,7 +389,7 @@ Partial Class EditInfo
         lastnameTextbox.Font = New Font("Segoe UI", 9F)
         lastnameTextbox.ForeColor = SystemColors.ActiveCaptionText
         lastnameTextbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        lastnameTextbox.Location = New Point(764, 272)
+        lastnameTextbox.Location = New Point(475, 248)
         lastnameTextbox.Margin = New Padding(3, 4, 3, 4)
         lastnameTextbox.Name = "lastnameTextbox"
         lastnameTextbox.PlaceholderText = ""
@@ -403,7 +403,7 @@ Partial Class EditInfo
         guna2HtmlLabel3.BackColor = Color.Transparent
         guna2HtmlLabel3.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
         guna2HtmlLabel3.ForeColor = Color.White
-        guna2HtmlLabel3.Location = New Point(767, 246)
+        guna2HtmlLabel3.Location = New Point(478, 222)
         guna2HtmlLabel3.Name = "guna2HtmlLabel3"
         guna2HtmlLabel3.Size = New Size(61, 19)
         guna2HtmlLabel3.TabIndex = 43
@@ -424,7 +424,7 @@ Partial Class EditInfo
         firstnameTextbox.Font = New Font("Segoe UI", 9F)
         firstnameTextbox.ForeColor = SystemColors.ActiveCaptionText
         firstnameTextbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        firstnameTextbox.Location = New Point(350, 271)
+        firstnameTextbox.Location = New Point(61, 247)
         firstnameTextbox.Margin = New Padding(3, 4, 3, 4)
         firstnameTextbox.Name = "firstnameTextbox"
         firstnameTextbox.PlaceholderText = ""
@@ -438,7 +438,7 @@ Partial Class EditInfo
         guna2HtmlLabel2.BackColor = Color.Transparent
         guna2HtmlLabel2.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
         guna2HtmlLabel2.ForeColor = Color.White
-        guna2HtmlLabel2.Location = New Point(350, 246)
+        guna2HtmlLabel2.Location = New Point(61, 222)
         guna2HtmlLabel2.Name = "guna2HtmlLabel2"
         guna2HtmlLabel2.Size = New Size(63, 19)
         guna2HtmlLabel2.TabIndex = 41
@@ -449,7 +449,7 @@ Partial Class EditInfo
         guna2HtmlLabel1.BackColor = Color.Transparent
         guna2HtmlLabel1.Font = New Font("Microsoft Sans Serif", 28F, FontStyle.Bold)
         guna2HtmlLabel1.ForeColor = Color.White
-        guna2HtmlLabel1.Location = New Point(767, 112)
+        guna2HtmlLabel1.Location = New Point(563, 90)
         guna2HtmlLabel1.Name = "guna2HtmlLabel1"
         guna2HtmlLabel1.Size = New Size(281, 44)
         guna2HtmlLabel1.TabIndex = 40
@@ -459,7 +459,7 @@ Partial Class EditInfo
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1920, 1080)
+        ClientSize = New Size(1344, 703)
         Controls.Add(Guna2CustomGradientPanel1)
         FormBorderStyle = FormBorderStyle.None
         Margin = New Padding(3, 2, 3, 2)
