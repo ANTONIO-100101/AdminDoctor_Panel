@@ -69,4 +69,12 @@ Partial Public Class DoctorLogin
             Me.Close()
         End If
     End Sub
+
+    Private Sub PasswordLabel_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub guna2CustomGradientPanel1_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
 End Class

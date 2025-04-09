@@ -124,7 +124,7 @@ Partial Class AdminLogin
         EnterButton.FillColor = Color.RoyalBlue
         EnterButton.Font = New Font("Microsoft Sans Serif", 11.999999F)
         EnterButton.ForeColor = SystemColors.Control
-        EnterButton.Location = New Point(248, 719)
+        EnterButton.Location = New Point(243, 723)
         EnterButton.Margin = New Padding(3, 2, 3, 2)
         EnterButton.Name = "EnterButton"
         EnterButton.ShadowDecoration.CustomizableEdges = CustomizableEdges5

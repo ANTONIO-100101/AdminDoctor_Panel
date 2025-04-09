@@ -51,4 +51,8 @@
         adminAddDoctor.Show()
         Debug.WriteLine("AddDoctor button clicked")
     End Sub
+
+    Private Sub Guna2TextBox2_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
 End Class

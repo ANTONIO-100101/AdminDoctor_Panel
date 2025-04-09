@@ -12,4 +12,8 @@ Public Class DoctorDashboard
 
         NameLabel.Text = $"Dr. {doctor.LastName}, {doctor.FirstName}"
     End Sub
+
+    Private Sub guna2CirclePictureBox1_Click(sender As Object, e As EventArgs)
+
+    End Sub
 End Class

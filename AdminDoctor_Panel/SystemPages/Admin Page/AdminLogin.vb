@@ -65,4 +65,8 @@ Public Class AdminLogin
     Private Sub MinimizeButton_Click(sender As Object, e As EventArgs) Handles MinimizeButton.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
+
+    Private Sub guna2CustomGradientPanel1_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
 End Class

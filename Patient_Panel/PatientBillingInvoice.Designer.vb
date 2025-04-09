@@ -87,7 +87,6 @@ Partial Class PatientBillingInvoice
         pbilling_DataGridView3 = New Guna.UI2.WinForms.Guna2DataGridView()
         guna2CustomGradientPanel4 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         pbilling_DataGridView2 = New Guna.UI2.WinForms.Guna2DataGridView()
-        guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Guna2CustomGradientPanel2 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         pbilling_DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
         guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
@@ -106,6 +105,7 @@ Partial Class PatientBillingInvoice
         Guna2CustomGradientPanel6 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
+        guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Guna2CustomGradientPanel1.SuspendLayout()
         PrintablePanel.SuspendLayout()
         guna2CustomGradientPanel5.SuspendLayout()
@@ -137,14 +137,15 @@ Partial Class PatientBillingInvoice
         Guna2CustomGradientPanel1.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel1.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         Guna2CustomGradientPanel1.Location = New Point(-1, -2)
+        Guna2CustomGradientPanel1.Margin = New Padding(3, 2, 3, 2)
         Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
         Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges41
-        Guna2CustomGradientPanel1.Size = New Size(1007, 1108)
+        Guna2CustomGradientPanel1.Size = New Size(1923, 1086)
         Guna2CustomGradientPanel1.TabIndex = 0
         ' 
         ' pbilling_MinimizeButton
         ' 
-        pbilling_MinimizeButton.BackColor = SystemColors.ActiveCaption
+        pbilling_MinimizeButton.BackColor = Color.FromArgb(CByte(0), CByte(192), CByte(192))
         pbilling_MinimizeButton.Cursor = Cursors.Hand
         pbilling_MinimizeButton.CustomizableEdges = CustomizableEdges1
         pbilling_MinimizeButton.DisabledState.BorderColor = Color.DarkGray
@@ -154,10 +155,11 @@ Partial Class PatientBillingInvoice
         pbilling_MinimizeButton.FillColor = Color.Transparent
         pbilling_MinimizeButton.Font = New Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold Or FontStyle.Italic)
         pbilling_MinimizeButton.ForeColor = SystemColors.Window
-        pbilling_MinimizeButton.Location = New Point(901, 3)
+        pbilling_MinimizeButton.Location = New Point(1816, 0)
+        pbilling_MinimizeButton.Margin = New Padding(3, 2, 3, 2)
         pbilling_MinimizeButton.Name = "pbilling_MinimizeButton"
         pbilling_MinimizeButton.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        pbilling_MinimizeButton.Size = New Size(49, 35)
+        pbilling_MinimizeButton.Size = New Size(56, 47)
         pbilling_MinimizeButton.TabIndex = 174
         pbilling_MinimizeButton.Text = "<"
         ' 
@@ -171,12 +173,13 @@ Partial Class PatientBillingInvoice
         pbilling_ExitButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         pbilling_ExitButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         pbilling_ExitButton.FillColor = Color.Transparent
-        pbilling_ExitButton.Font = New Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold)
+        pbilling_ExitButton.Font = New Font("Microsoft Sans Serif", 11F, FontStyle.Bold)
         pbilling_ExitButton.ForeColor = SystemColors.Window
-        pbilling_ExitButton.Location = New Point(957, 3)
+        pbilling_ExitButton.Location = New Point(1867, 0)
+        pbilling_ExitButton.Margin = New Padding(3, 2, 3, 2)
         pbilling_ExitButton.Name = "pbilling_ExitButton"
         pbilling_ExitButton.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        pbilling_ExitButton.Size = New Size(49, 35)
+        pbilling_ExitButton.Size = New Size(56, 47)
         pbilling_ExitButton.TabIndex = 173
         pbilling_ExitButton.Text = "X"
         ' 
@@ -191,13 +194,12 @@ Partial Class PatientBillingInvoice
         pbilling_CreatePDFButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         pbilling_CreatePDFButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         pbilling_CreatePDFButton.FillColor = Color.Red
-        pbilling_CreatePDFButton.Font = New Font("Segoe UI", 9F)
+        pbilling_CreatePDFButton.Font = New Font("Arial", 13F)
         pbilling_CreatePDFButton.ForeColor = Color.White
-        pbilling_CreatePDFButton.Location = New Point(782, 1046)
-        pbilling_CreatePDFButton.Margin = New Padding(3, 4, 3, 4)
+        pbilling_CreatePDFButton.Location = New Point(1341, 901)
         pbilling_CreatePDFButton.Name = "pbilling_CreatePDFButton"
         pbilling_CreatePDFButton.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        pbilling_CreatePDFButton.Size = New Size(104, 47)
+        pbilling_CreatePDFButton.Size = New Size(148, 62)
         pbilling_CreatePDFButton.TabIndex = 172
         pbilling_CreatePDFButton.Text = "Create PDF"
         ' 
@@ -212,13 +214,12 @@ Partial Class PatientBillingInvoice
         pbilling_PrintButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         pbilling_PrintButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         pbilling_PrintButton.FillColor = Color.Red
-        pbilling_PrintButton.Font = New Font("Segoe UI", 9F)
+        pbilling_PrintButton.Font = New Font("Arial", 13F)
         pbilling_PrintButton.ForeColor = Color.White
-        pbilling_PrintButton.Location = New Point(659, 1046)
-        pbilling_PrintButton.Margin = New Padding(3, 4, 3, 4)
+        pbilling_PrintButton.Location = New Point(1166, 901)
         pbilling_PrintButton.Name = "pbilling_PrintButton"
         pbilling_PrintButton.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        pbilling_PrintButton.Size = New Size(104, 45)
+        pbilling_PrintButton.Size = New Size(148, 62)
         pbilling_PrintButton.TabIndex = 170
         pbilling_PrintButton.Text = "Print"
         ' 
@@ -240,11 +241,10 @@ Partial Class PatientBillingInvoice
         PrintablePanel.Controls.Add(Guna2CustomGradientPanel6)
         PrintablePanel.Controls.Add(guna2CirclePictureBox1)
         PrintablePanel.CustomizableEdges = CustomizableEdges38
-        PrintablePanel.Location = New Point(99, 43)
-        PrintablePanel.Margin = New Padding(3, 4, 3, 4)
+        PrintablePanel.Location = New Point(253, 117)
         PrintablePanel.Name = "PrintablePanel"
         PrintablePanel.ShadowDecoration.CustomizableEdges = CustomizableEdges39
-        PrintablePanel.Size = New Size(799, 984)
+        PrintablePanel.Size = New Size(1379, 738)
         PrintablePanel.TabIndex = 2
         ' 
         ' guna2TextBox1
@@ -258,14 +258,14 @@ Partial Class PatientBillingInvoice
         guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         guna2TextBox1.Font = New Font("Segoe UI", 9F)
         guna2TextBox1.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        guna2TextBox1.Location = New Point(637, 55)
-        guna2TextBox1.Margin = New Padding(3, 5, 3, 5)
+        guna2TextBox1.Location = New Point(1190, 32)
+        guna2TextBox1.Margin = New Padding(3, 4, 3, 4)
         guna2TextBox1.Name = "guna2TextBox1"
         guna2TextBox1.PlaceholderText = ""
         guna2TextBox1.ReadOnly = True
         guna2TextBox1.SelectedText = ""
         guna2TextBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        guna2TextBox1.Size = New Size(53, 51)
+        guna2TextBox1.Size = New Size(46, 38)
         guna2TextBox1.TabIndex = 176
         guna2TextBox1.TextAlign = HorizontalAlignment.Center
         ' 
@@ -273,22 +273,20 @@ Partial Class PatientBillingInvoice
         ' 
         guna2HtmlLabel2.BackColor = Color.Transparent
         guna2HtmlLabel2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        guna2HtmlLabel2.Location = New Point(459, 63)
-        guna2HtmlLabel2.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel2.Location = New Point(1035, 38)
         guna2HtmlLabel2.Name = "guna2HtmlLabel2"
-        guna2HtmlLabel2.Size = New Size(177, 30)
+        guna2HtmlLabel2.Size = New Size(144, 23)
         guna2HtmlLabel2.TabIndex = 175
         guna2HtmlLabel2.Text = "Confinement Days"
         ' 
         ' pbilling_TotalLabel
         ' 
         pbilling_TotalLabel.BackColor = Color.Transparent
-        pbilling_TotalLabel.Font = New Font("Nirmala UI", 12F, FontStyle.Bold)
+        pbilling_TotalLabel.Font = New Font("Microsoft Sans Serif", 14F, FontStyle.Bold)
         pbilling_TotalLabel.ForeColor = Color.Black
-        pbilling_TotalLabel.Location = New Point(713, 923)
-        pbilling_TotalLabel.Margin = New Padding(3, 4, 3, 4)
+        pbilling_TotalLabel.Location = New Point(1233, 691)
         pbilling_TotalLabel.Name = "pbilling_TotalLabel"
-        pbilling_TotalLabel.Size = New Size(48, 30)
+        pbilling_TotalLabel.Size = New Size(41, 26)
         pbilling_TotalLabel.TabIndex = 174
         pbilling_TotalLabel.Text = "total"
         ' 
@@ -297,10 +295,9 @@ Partial Class PatientBillingInvoice
         pbilling_Total.BackColor = Color.Transparent
         pbilling_Total.Font = New Font("Nirmala UI", 12F, FontStyle.Bold)
         pbilling_Total.ForeColor = Color.Black
-        pbilling_Total.Location = New Point(630, 923)
-        pbilling_Total.Margin = New Padding(3, 4, 3, 4)
+        pbilling_Total.Location = New Point(1160, 691)
         pbilling_Total.Name = "pbilling_Total"
-        pbilling_Total.Size = New Size(71, 30)
+        pbilling_Total.Size = New Size(56, 23)
         pbilling_Total.TabIndex = 173
         pbilling_Total.Text = "TOTAL:"
         ' 
@@ -314,11 +311,10 @@ Partial Class PatientBillingInvoice
         guna2CustomGradientPanel5.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel5.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel5.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
-        guna2CustomGradientPanel5.Location = New Point(33, 709)
-        guna2CustomGradientPanel5.Margin = New Padding(3, 4, 3, 4)
+        guna2CustomGradientPanel5.Location = New Point(29, 532)
         guna2CustomGradientPanel5.Name = "guna2CustomGradientPanel5"
         guna2CustomGradientPanel5.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        guna2CustomGradientPanel5.Size = New Size(741, 187)
+        guna2CustomGradientPanel5.Size = New Size(1329, 140)
         guna2CustomGradientPanel5.TabIndex = 155
         ' 
         ' pbilling_DataGridView3
@@ -344,13 +340,11 @@ Partial Class PatientBillingInvoice
         DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
         pbilling_DataGridView3.DefaultCellStyle = DataGridViewCellStyle3
         pbilling_DataGridView3.GridColor = Color.Black
-        pbilling_DataGridView3.Location = New Point(9, 11)
-        pbilling_DataGridView3.Margin = New Padding(3, 4, 3, 4)
+        pbilling_DataGridView3.Location = New Point(8, 8)
         pbilling_DataGridView3.Name = "pbilling_DataGridView3"
         pbilling_DataGridView3.RowHeadersVisible = False
         pbilling_DataGridView3.RowHeadersWidth = 51
-        pbilling_DataGridView3.RowTemplate.Height = 25
-        pbilling_DataGridView3.Size = New Size(722, 160)
+        pbilling_DataGridView3.Size = New Size(1306, 120)
         pbilling_DataGridView3.TabIndex = 0
         pbilling_DataGridView3.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White
         pbilling_DataGridView3.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -384,11 +378,10 @@ Partial Class PatientBillingInvoice
         guna2CustomGradientPanel4.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel4.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel4.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
-        guna2CustomGradientPanel4.Location = New Point(33, 492)
-        guna2CustomGradientPanel4.Margin = New Padding(3, 4, 3, 4)
+        guna2CustomGradientPanel4.Location = New Point(29, 369)
         guna2CustomGradientPanel4.Name = "guna2CustomGradientPanel4"
         guna2CustomGradientPanel4.ShadowDecoration.CustomizableEdges = CustomizableEdges14
-        guna2CustomGradientPanel4.Size = New Size(741, 187)
+        guna2CustomGradientPanel4.Size = New Size(1329, 140)
         guna2CustomGradientPanel4.TabIndex = 154
         ' 
         ' pbilling_DataGridView2
@@ -414,13 +407,11 @@ Partial Class PatientBillingInvoice
         DataGridViewCellStyle6.WrapMode = DataGridViewTriState.False
         pbilling_DataGridView2.DefaultCellStyle = DataGridViewCellStyle6
         pbilling_DataGridView2.GridColor = Color.Black
-        pbilling_DataGridView2.Location = New Point(9, 11)
-        pbilling_DataGridView2.Margin = New Padding(3, 4, 3, 4)
+        pbilling_DataGridView2.Location = New Point(8, 8)
         pbilling_DataGridView2.Name = "pbilling_DataGridView2"
         pbilling_DataGridView2.RowHeadersVisible = False
         pbilling_DataGridView2.RowHeadersWidth = 51
-        pbilling_DataGridView2.RowTemplate.Height = 25
-        pbilling_DataGridView2.Size = New Size(722, 160)
+        pbilling_DataGridView2.Size = New Size(1306, 120)
         pbilling_DataGridView2.TabIndex = 0
         pbilling_DataGridView2.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White
         pbilling_DataGridView2.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -444,17 +435,6 @@ Partial Class PatientBillingInvoice
         pbilling_DataGridView2.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
         pbilling_DataGridView2.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
         ' 
-        ' guna2HtmlLabel1
-        ' 
-        guna2HtmlLabel1.BackColor = Color.Transparent
-        guna2HtmlLabel1.Font = New Font("Arial", 14.25F, FontStyle.Bold)
-        guna2HtmlLabel1.ForeColor = Color.Black
-        guna2HtmlLabel1.Location = New Point(107, 49)
-        guna2HtmlLabel1.Name = "guna2HtmlLabel1"
-        guna2HtmlLabel1.Size = New Size(100, 31)
-        guna2HtmlLabel1.TabIndex = 142
-        guna2HtmlLabel1.Text = "InfoCare"
-        ' 
         ' Guna2CustomGradientPanel2
         ' 
         Guna2CustomGradientPanel2.BorderColor = Color.Black
@@ -465,11 +445,10 @@ Partial Class PatientBillingInvoice
         Guna2CustomGradientPanel2.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel2.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel2.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
-        Guna2CustomGradientPanel2.Location = New Point(33, 272)
-        Guna2CustomGradientPanel2.Margin = New Padding(3, 4, 3, 4)
+        Guna2CustomGradientPanel2.Location = New Point(29, 204)
         Guna2CustomGradientPanel2.Name = "Guna2CustomGradientPanel2"
         Guna2CustomGradientPanel2.ShadowDecoration.CustomizableEdges = CustomizableEdges16
-        Guna2CustomGradientPanel2.Size = New Size(741, 187)
+        Guna2CustomGradientPanel2.Size = New Size(1329, 140)
         Guna2CustomGradientPanel2.TabIndex = 153
         ' 
         ' pbilling_DataGridView1
@@ -495,13 +474,11 @@ Partial Class PatientBillingInvoice
         DataGridViewCellStyle9.WrapMode = DataGridViewTriState.False
         pbilling_DataGridView1.DefaultCellStyle = DataGridViewCellStyle9
         pbilling_DataGridView1.GridColor = Color.Black
-        pbilling_DataGridView1.Location = New Point(9, 11)
-        pbilling_DataGridView1.Margin = New Padding(3, 4, 3, 4)
+        pbilling_DataGridView1.Location = New Point(11, 10)
         pbilling_DataGridView1.Name = "pbilling_DataGridView1"
         pbilling_DataGridView1.RowHeadersVisible = False
         pbilling_DataGridView1.RowHeadersWidth = 51
-        pbilling_DataGridView1.RowTemplate.Height = 25
-        pbilling_DataGridView1.Size = New Size(722, 160)
+        pbilling_DataGridView1.Size = New Size(1306, 120)
         pbilling_DataGridView1.TabIndex = 0
         pbilling_DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White
         pbilling_DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -534,11 +511,10 @@ Partial Class PatientBillingInvoice
         guna2Panel5.Controls.Add(guna2Panel2)
         guna2Panel5.Controls.Add(guna2Panel3)
         guna2Panel5.CustomizableEdges = CustomizableEdges25
-        guna2Panel5.Location = New Point(458, 155)
-        guna2Panel5.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel5.Location = New Point(1034, 107)
         guna2Panel5.Name = "guna2Panel5"
         guna2Panel5.ShadowDecoration.CustomizableEdges = CustomizableEdges26
-        guna2Panel5.Size = New Size(315, 97)
+        guna2Panel5.Size = New Size(276, 73)
         guna2Panel5.TabIndex = 152
         ' 
         ' pbilling_TimeTextbox
@@ -554,14 +530,14 @@ Partial Class PatientBillingInvoice
         pbilling_TimeTextbox.Font = New Font("Segoe UI", 12F)
         pbilling_TimeTextbox.ForeColor = Color.Black
         pbilling_TimeTextbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        pbilling_TimeTextbox.Location = New Point(83, 49)
-        pbilling_TimeTextbox.Margin = New Padding(5)
+        pbilling_TimeTextbox.Location = New Point(73, 37)
+        pbilling_TimeTextbox.Margin = New Padding(4, 4, 4, 4)
         pbilling_TimeTextbox.Name = "pbilling_TimeTextbox"
         pbilling_TimeTextbox.PlaceholderForeColor = Color.Black
         pbilling_TimeTextbox.PlaceholderText = ""
         pbilling_TimeTextbox.SelectedText = ""
         pbilling_TimeTextbox.ShadowDecoration.CustomizableEdges = CustomizableEdges18
-        pbilling_TimeTextbox.Size = New Size(232, 48)
+        pbilling_TimeTextbox.Size = New Size(203, 36)
         pbilling_TimeTextbox.TabIndex = 148
         pbilling_TimeTextbox.TextAlign = HorizontalAlignment.Right
         ' 
@@ -579,14 +555,14 @@ Partial Class PatientBillingInvoice
         pbilling_DateTextbox.Font = New Font("Segoe UI", 12F)
         pbilling_DateTextbox.ForeColor = Color.Black
         pbilling_DateTextbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        pbilling_DateTextbox.Location = New Point(83, 0)
-        pbilling_DateTextbox.Margin = New Padding(5)
+        pbilling_DateTextbox.Location = New Point(73, 0)
+        pbilling_DateTextbox.Margin = New Padding(4, 4, 4, 4)
         pbilling_DateTextbox.Name = "pbilling_DateTextbox"
         pbilling_DateTextbox.PlaceholderForeColor = Color.Black
         pbilling_DateTextbox.PlaceholderText = ""
         pbilling_DateTextbox.SelectedText = ""
         pbilling_DateTextbox.ShadowDecoration.CustomizableEdges = CustomizableEdges20
-        pbilling_DateTextbox.Size = New Size(232, 49)
+        pbilling_DateTextbox.Size = New Size(203, 37)
         pbilling_DateTextbox.TabIndex = 147
         pbilling_DateTextbox.TextAlign = HorizontalAlignment.Right
         ' 
@@ -597,20 +573,18 @@ Partial Class PatientBillingInvoice
         guna2Panel2.Controls.Add(guna2HtmlLabel3)
         guna2Panel2.CustomizableEdges = CustomizableEdges21
         guna2Panel2.Location = New Point(1, 0)
-        guna2Panel2.Margin = New Padding(3, 4, 3, 4)
         guna2Panel2.Name = "guna2Panel2"
         guna2Panel2.ShadowDecoration.CustomizableEdges = CustomizableEdges22
-        guna2Panel2.Size = New Size(82, 49)
+        guna2Panel2.Size = New Size(72, 37)
         guna2Panel2.TabIndex = 145
         ' 
         ' guna2HtmlLabel3
         ' 
         guna2HtmlLabel3.BackColor = Color.Transparent
         guna2HtmlLabel3.Font = New Font("Nirmala UI", 12F, FontStyle.Bold)
-        guna2HtmlLabel3.Location = New Point(18, 9)
-        guna2HtmlLabel3.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel3.Location = New Point(16, 7)
         guna2HtmlLabel3.Name = "guna2HtmlLabel3"
-        guna2HtmlLabel3.Size = New Size(48, 30)
+        guna2HtmlLabel3.Size = New Size(39, 23)
         guna2HtmlLabel3.TabIndex = 0
         guna2HtmlLabel3.Text = "Date"
         ' 
@@ -620,21 +594,19 @@ Partial Class PatientBillingInvoice
         guna2Panel3.BorderThickness = 1
         guna2Panel3.Controls.Add(guna2HtmlLabel4)
         guna2Panel3.CustomizableEdges = CustomizableEdges23
-        guna2Panel3.Location = New Point(1, 48)
-        guna2Panel3.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel3.Location = New Point(1, 36)
         guna2Panel3.Name = "guna2Panel3"
         guna2Panel3.ShadowDecoration.CustomizableEdges = CustomizableEdges24
-        guna2Panel3.Size = New Size(82, 48)
+        guna2Panel3.Size = New Size(72, 36)
         guna2Panel3.TabIndex = 146
         ' 
         ' guna2HtmlLabel4
         ' 
         guna2HtmlLabel4.BackColor = Color.Transparent
         guna2HtmlLabel4.Font = New Font("Nirmala UI", 11.25F, FontStyle.Bold)
-        guna2HtmlLabel4.Location = New Point(18, 9)
-        guna2HtmlLabel4.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel4.Location = New Point(16, 7)
         guna2HtmlLabel4.Name = "guna2HtmlLabel4"
-        guna2HtmlLabel4.Size = New Size(46, 27)
+        guna2HtmlLabel4.Size = New Size(38, 22)
         guna2HtmlLabel4.TabIndex = 153
         guna2HtmlLabel4.Text = "Time"
         ' 
@@ -648,11 +620,10 @@ Partial Class PatientBillingInvoice
         guna2CustomGradientPanel3.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel3.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel3.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
-        guna2CustomGradientPanel3.Location = New Point(458, 121)
-        guna2CustomGradientPanel3.Margin = New Padding(3, 4, 3, 4)
+        guna2CustomGradientPanel3.Location = New Point(1034, 82)
         guna2CustomGradientPanel3.Name = "guna2CustomGradientPanel3"
         guna2CustomGradientPanel3.ShadowDecoration.CustomizableEdges = CustomizableEdges28
-        guna2CustomGradientPanel3.Size = New Size(315, 35)
+        guna2CustomGradientPanel3.Size = New Size(276, 26)
         guna2CustomGradientPanel3.TabIndex = 151
         ' 
         ' guna2HtmlLabel6
@@ -660,10 +631,9 @@ Partial Class PatientBillingInvoice
         guna2HtmlLabel6.BackColor = Color.Transparent
         guna2HtmlLabel6.Font = New Font("Nirmala UI", 12F, FontStyle.Bold)
         guna2HtmlLabel6.ForeColor = Color.White
-        guna2HtmlLabel6.Location = New Point(80, 1)
-        guna2HtmlLabel6.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel6.Location = New Point(70, 1)
         guna2HtmlLabel6.Name = "guna2HtmlLabel6"
-        guna2HtmlLabel6.Size = New Size(175, 30)
+        guna2HtmlLabel6.Size = New Size(142, 23)
         guna2HtmlLabel6.TabIndex = 0
         guna2HtmlLabel6.Text = "MEDICAL INVOICE"
         ' 
@@ -674,11 +644,10 @@ Partial Class PatientBillingInvoice
         guna2Panel4.Controls.Add(guna2Panel6)
         guna2Panel4.Controls.Add(pbilling_PatientNameTextbox)
         guna2Panel4.CustomizableEdges = CustomizableEdges33
-        guna2Panel4.Location = New Point(33, 183)
-        guna2Panel4.Margin = New Padding(3, 4, 3, 4)
+        guna2Panel4.Location = New Point(29, 137)
         guna2Panel4.Name = "guna2Panel4"
         guna2Panel4.ShadowDecoration.CustomizableEdges = CustomizableEdges34
-        guna2Panel4.Size = New Size(315, 49)
+        guna2Panel4.Size = New Size(276, 37)
         guna2Panel4.TabIndex = 150
         ' 
         ' guna2Panel6
@@ -688,20 +657,18 @@ Partial Class PatientBillingInvoice
         guna2Panel6.Controls.Add(guna2HtmlLabel7)
         guna2Panel6.CustomizableEdges = CustomizableEdges29
         guna2Panel6.Location = New Point(1, 0)
-        guna2Panel6.Margin = New Padding(3, 4, 3, 4)
         guna2Panel6.Name = "guna2Panel6"
         guna2Panel6.ShadowDecoration.CustomizableEdges = CustomizableEdges30
-        guna2Panel6.Size = New Size(97, 48)
+        guna2Panel6.Size = New Size(85, 36)
         guna2Panel6.TabIndex = 153
         ' 
         ' guna2HtmlLabel7
         ' 
         guna2HtmlLabel7.BackColor = Color.Transparent
         guna2HtmlLabel7.Font = New Font("Nirmala UI", 12F, FontStyle.Bold)
-        guna2HtmlLabel7.Location = New Point(22, 9)
-        guna2HtmlLabel7.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel7.Location = New Point(19, 7)
         guna2HtmlLabel7.Name = "guna2HtmlLabel7"
-        guna2HtmlLabel7.Size = New Size(59, 30)
+        guna2HtmlLabel7.Size = New Size(49, 23)
         guna2HtmlLabel7.TabIndex = 0
         guna2HtmlLabel7.Text = "Name"
         ' 
@@ -719,14 +686,14 @@ Partial Class PatientBillingInvoice
         pbilling_PatientNameTextbox.Font = New Font("Segoe UI", 12F)
         pbilling_PatientNameTextbox.ForeColor = Color.Black
         pbilling_PatientNameTextbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        pbilling_PatientNameTextbox.Location = New Point(98, 0)
-        pbilling_PatientNameTextbox.Margin = New Padding(5)
+        pbilling_PatientNameTextbox.Location = New Point(86, 0)
+        pbilling_PatientNameTextbox.Margin = New Padding(4, 4, 4, 4)
         pbilling_PatientNameTextbox.Name = "pbilling_PatientNameTextbox"
         pbilling_PatientNameTextbox.PlaceholderForeColor = Color.Black
         pbilling_PatientNameTextbox.PlaceholderText = ""
         pbilling_PatientNameTextbox.SelectedText = ""
         pbilling_PatientNameTextbox.ShadowDecoration.CustomizableEdges = CustomizableEdges32
-        pbilling_PatientNameTextbox.Size = New Size(216, 48)
+        pbilling_PatientNameTextbox.Size = New Size(189, 36)
         pbilling_PatientNameTextbox.TabIndex = 154
         pbilling_PatientNameTextbox.TextAlign = HorizontalAlignment.Right
         ' 
@@ -740,11 +707,10 @@ Partial Class PatientBillingInvoice
         Guna2CustomGradientPanel6.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel6.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel6.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
-        Guna2CustomGradientPanel6.Location = New Point(33, 149)
-        Guna2CustomGradientPanel6.Margin = New Padding(3, 4, 3, 4)
+        Guna2CustomGradientPanel6.Location = New Point(29, 112)
         Guna2CustomGradientPanel6.Name = "Guna2CustomGradientPanel6"
         Guna2CustomGradientPanel6.ShadowDecoration.CustomizableEdges = CustomizableEdges36
-        Guna2CustomGradientPanel6.Size = New Size(315, 35)
+        Guna2CustomGradientPanel6.Size = New Size(276, 26)
         Guna2CustomGradientPanel6.TabIndex = 149
         ' 
         ' guna2HtmlLabel5
@@ -752,10 +718,9 @@ Partial Class PatientBillingInvoice
         guna2HtmlLabel5.BackColor = Color.Transparent
         guna2HtmlLabel5.Font = New Font("Nirmala UI", 12F, FontStyle.Bold)
         guna2HtmlLabel5.ForeColor = Color.White
-        guna2HtmlLabel5.Location = New Point(123, 0)
-        guna2HtmlLabel5.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel5.Location = New Point(108, 0)
         guna2HtmlLabel5.Name = "guna2HtmlLabel5"
-        guna2HtmlLabel5.Size = New Size(86, 30)
+        guna2HtmlLabel5.Size = New Size(69, 23)
         guna2HtmlLabel5.TabIndex = 0
         guna2HtmlLabel5.Text = "PATIENT"
         ' 
@@ -766,24 +731,36 @@ Partial Class PatientBillingInvoice
         guna2CirclePictureBox1.Image = CType(resources.GetObject("guna2CirclePictureBox1.Image"), Image)
         guna2CirclePictureBox1.ImageRotate = 0F
         guna2CirclePictureBox1.InitialImage = CType(resources.GetObject("guna2CirclePictureBox1.InitialImage"), Image)
-        guna2CirclePictureBox1.Location = New Point(3, 4)
-        guna2CirclePictureBox1.Margin = New Padding(3, 4, 3, 4)
+        guna2CirclePictureBox1.Location = New Point(3, 3)
         guna2CirclePictureBox1.Name = "guna2CirclePictureBox1"
         guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges37
         guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        guna2CirclePictureBox1.Size = New Size(104, 112)
+        guna2CirclePictureBox1.Size = New Size(91, 84)
         guna2CirclePictureBox1.SizeMode = PictureBoxSizeMode.Zoom
         guna2CirclePictureBox1.TabIndex = 143
         guna2CirclePictureBox1.TabStop = False
         ' 
+        ' guna2HtmlLabel1
+        ' 
+        guna2HtmlLabel1.BackColor = Color.Transparent
+        guna2HtmlLabel1.Font = New Font("Arial", 14.25F, FontStyle.Bold)
+        guna2HtmlLabel1.ForeColor = Color.Black
+        guna2HtmlLabel1.Location = New Point(94, 37)
+        guna2HtmlLabel1.Margin = New Padding(3, 2, 3, 2)
+        guna2HtmlLabel1.Name = "guna2HtmlLabel1"
+        guna2HtmlLabel1.Size = New Size(82, 24)
+        guna2HtmlLabel1.TabIndex = 142
+        guna2HtmlLabel1.Text = "InfoCare"
+        ' 
         ' PatientBillingInvoice
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1004, 1102)
+        ClientSize = New Size(1920, 1080)
         ControlBox = False
         Controls.Add(Guna2CustomGradientPanel1)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(3, 2, 3, 2)
         Name = "PatientBillingInvoice"
         StartPosition = FormStartPosition.CenterScreen
         Text = "PatientBillingInvoice"
@@ -826,7 +803,6 @@ Partial Class PatientBillingInvoice
     Private WithEvents pbilling_DataGridView3 As Guna.UI2.WinForms.Guna2DataGridView
     Private WithEvents guna2CustomGradientPanel4 As Guna.UI2.WinForms.Guna2CustomGradientPanel
     Private WithEvents pbilling_DataGridView2 As Guna.UI2.WinForms.Guna2DataGridView
-    Private WithEvents guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Private WithEvents Guna2CustomGradientPanel2 As Guna.UI2.WinForms.Guna2CustomGradientPanel
     Private WithEvents pbilling_DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
     Private WithEvents guna2Panel5 As Guna.UI2.WinForms.Guna2Panel
@@ -844,5 +820,6 @@ Partial Class PatientBillingInvoice
     Private WithEvents pbilling_PatientNameTextbox As Guna.UI2.WinForms.Guna2TextBox
     Private WithEvents Guna2CustomGradientPanel6 As Guna.UI2.WinForms.Guna2CustomGradientPanel
     Private WithEvents guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Private WithEvents guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Private WithEvents guna2CirclePictureBox1 As Guna.UI2.WinForms.Guna2CirclePictureBox
 End Class

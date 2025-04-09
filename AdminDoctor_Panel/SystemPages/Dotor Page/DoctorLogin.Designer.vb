@@ -86,7 +86,7 @@ Partial Class DoctorLogin
         guna2CustomGradientPanel1.Location = New Point(-2, -1)
         guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1"
         guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges20
-        guna2CustomGradientPanel1.Size = New Size(988, 588)
+        guna2CustomGradientPanel1.Size = New Size(1920, 1080)
         guna2CustomGradientPanel1.TabIndex = 177
         ' 
         ' doctor_MinimizeButton
@@ -99,7 +99,7 @@ Partial Class DoctorLogin
         doctor_MinimizeButton.ImageOffset = New Point(0, 0)
         doctor_MinimizeButton.ImageRotate = 0F
         doctor_MinimizeButton.ImageSize = New Size(20, 30)
-        doctor_MinimizeButton.Location = New Point(894, 0)
+        doctor_MinimizeButton.Location = New Point(1807, 13)
         doctor_MinimizeButton.Margin = New Padding(3, 2, 3, 2)
         doctor_MinimizeButton.Name = "doctor_MinimizeButton"
         doctor_MinimizeButton.PressedState.ImageSize = New Size(20, 30)
@@ -110,12 +110,12 @@ Partial Class DoctorLogin
         ' guna2HtmlLabel1
         ' 
         guna2HtmlLabel1.BackColor = Color.Transparent
-        guna2HtmlLabel1.Font = New Font("Arial", 30F, FontStyle.Bold)
+        guna2HtmlLabel1.Font = New Font("Arial", 40F, FontStyle.Bold)
         guna2HtmlLabel1.ForeColor = Color.White
-        guna2HtmlLabel1.Location = New Point(189, 386)
+        guna2HtmlLabel1.Location = New Point(513, 654)
         guna2HtmlLabel1.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel1.Name = "guna2HtmlLabel1"
-        guna2HtmlLabel1.Size = New Size(162, 48)
+        guna2HtmlLabel1.Size = New Size(217, 64)
         guna2HtmlLabel1.TabIndex = 142
         guna2HtmlLabel1.Text = "InfoCare"
         ' 
@@ -129,13 +129,13 @@ Partial Class DoctorLogin
         doctor_ExitButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         doctor_ExitButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         doctor_ExitButton.FillColor = Color.Transparent
-        doctor_ExitButton.Font = New Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold)
+        doctor_ExitButton.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Bold)
         doctor_ExitButton.ForeColor = Color.White
-        doctor_ExitButton.Location = New Point(942, 0)
+        doctor_ExitButton.Location = New Point(1853, 0)
         doctor_ExitButton.Margin = New Padding(3, 2, 3, 2)
         doctor_ExitButton.Name = "doctor_ExitButton"
         doctor_ExitButton.ShadowDecoration.CustomizableEdges = CustomizableEdges3
-        doctor_ExitButton.Size = New Size(43, 26)
+        doctor_ExitButton.Size = New Size(67, 53)
         doctor_ExitButton.TabIndex = 72
         doctor_ExitButton.Text = "X"
         ' 
@@ -146,11 +146,11 @@ Partial Class DoctorLogin
         guna2CirclePictureBox3.Image = CType(resources.GetObject("guna2CirclePictureBox3.Image"), Image)
         guna2CirclePictureBox3.ImageRotate = 0F
         guna2CirclePictureBox3.InitialImage = CType(resources.GetObject("guna2CirclePictureBox3.InitialImage"), Image)
-        guna2CirclePictureBox3.Location = New Point(46, 32)
+        guna2CirclePictureBox3.Location = New Point(329, 144)
         guna2CirclePictureBox3.Name = "guna2CirclePictureBox3"
         guna2CirclePictureBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges4
         guna2CirclePictureBox3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        guna2CirclePictureBox3.Size = New Size(466, 400)
+        guna2CirclePictureBox3.Size = New Size(585, 505)
         guna2CirclePictureBox3.SizeMode = PictureBoxSizeMode.Zoom
         guna2CirclePictureBox3.TabIndex = 143
         guna2CirclePictureBox3.TabStop = False
@@ -172,19 +172,19 @@ Partial Class DoctorLogin
         guna2GradientPanel1.Controls.Add(guna2CirclePictureBox2)
         guna2GradientPanel1.Controls.Add(guna2PictureBox8)
         guna2GradientPanel1.CustomizableEdges = CustomizableEdges17
-        guna2GradientPanel1.Location = New Point(541, 40)
+        guna2GradientPanel1.Location = New Point(1173, 121)
         guna2GradientPanel1.Name = "guna2GradientPanel1"
         guna2GradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges18
-        guna2GradientPanel1.Size = New Size(413, 482)
+        guna2GradientPanel1.Size = New Size(665, 889)
         guna2GradientPanel1.TabIndex = 173
         ' 
         ' forgotPassBtn
         ' 
         forgotPassBtn.AutoSize = True
-        forgotPassBtn.Font = New Font("Arial", 8.25F, FontStyle.Bold Or FontStyle.Underline)
-        forgotPassBtn.Location = New Point(74, 458)
+        forgotPassBtn.Font = New Font("Arial Narrow", 9.75F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
+        forgotPassBtn.Location = New Point(433, 683)
         forgotPassBtn.Name = "forgotPassBtn"
-        forgotPassBtn.Size = New Size(109, 14)
+        forgotPassBtn.Size = New Size(104, 16)
         forgotPassBtn.TabIndex = 178
         forgotPassBtn.Text = "Forgot Password?"
         ' 
@@ -202,10 +202,11 @@ Partial Class DoctorLogin
         staff_HomeButton.Image = CType(resources.GetObject("staff_HomeButton.Image"), Image)
         staff_HomeButton.ImageAlign = HorizontalAlignment.Left
         staff_HomeButton.ImageOffset = New Point(5, 0)
-        staff_HomeButton.Location = New Point(367, 2)
+        staff_HomeButton.ImageSize = New Size(35, 35)
+        staff_HomeButton.Location = New Point(601, 4)
         staff_HomeButton.Name = "staff_HomeButton"
         staff_HomeButton.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        staff_HomeButton.Size = New Size(44, 45)
+        staff_HomeButton.Size = New Size(63, 54)
         staff_HomeButton.TabIndex = 165
         staff_HomeButton.TextAlign = HorizontalAlignment.Right
         staff_HomeButton.TextOffset = New Point(2, 0)
@@ -223,11 +224,11 @@ Partial Class DoctorLogin
         doctor_EnterButton.FillColor = Color.RoyalBlue
         doctor_EnterButton.Font = New Font("Microsoft Sans Serif", 11.999999F)
         doctor_EnterButton.ForeColor = SystemColors.Control
-        doctor_EnterButton.Location = New Point(133, 398)
+        doctor_EnterButton.Location = New Point(248, 719)
         doctor_EnterButton.Margin = New Padding(3, 2, 3, 2)
         doctor_EnterButton.Name = "doctor_EnterButton"
         doctor_EnterButton.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        doctor_EnterButton.Size = New Size(185, 48)
+        doctor_EnterButton.Size = New Size(199, 65)
         doctor_EnterButton.TabIndex = 4
         doctor_EnterButton.Text = "Log in"
         ' 
@@ -235,10 +236,10 @@ Partial Class DoctorLogin
         ' 
         doctor_showpass.AutoSize = True
         doctor_showpass.Cursor = Cursors.Hand
-        doctor_showpass.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        doctor_showpass.Location = New Point(94, 376)
+        doctor_showpass.Font = New Font("Microsoft Sans Serif", 11F)
+        doctor_showpass.Location = New Point(137, 683)
         doctor_showpass.Name = "doctor_showpass"
-        doctor_showpass.Size = New Size(114, 19)
+        doctor_showpass.Size = New Size(136, 22)
         doctor_showpass.TabIndex = 3
         doctor_showpass.Text = "Show Password"
         doctor_showpass.UseVisualStyleBackColor = True
@@ -246,12 +247,12 @@ Partial Class DoctorLogin
         ' PasswordLabel
         ' 
         PasswordLabel.BackColor = Color.Transparent
-        PasswordLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
+        PasswordLabel.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         PasswordLabel.ForeColor = Color.Black
-        PasswordLabel.Location = New Point(94, 303)
+        PasswordLabel.Location = New Point(133, 575)
         PasswordLabel.Margin = New Padding(3, 2, 3, 2)
         PasswordLabel.Name = "PasswordLabel"
-        PasswordLabel.Size = New Size(53, 15)
+        PasswordLabel.Size = New Size(75, 23)
         PasswordLabel.TabIndex = 163
         PasswordLabel.Text = "Password"
         PasswordLabel.Visible = False
@@ -260,23 +261,23 @@ Partial Class DoctorLogin
         ' 
         label2.AutoSize = True
         label2.BackColor = Color.Transparent
-        label2.Font = New Font("Arial", 11.25F)
+        label2.Font = New Font("Arial", 18.25F)
         label2.ForeColor = Color.Black
-        label2.Location = New Point(150, 208)
+        label2.Location = New Point(229, 394)
         label2.Name = "label2"
-        label2.Size = New Size(125, 17)
+        label2.Size = New Size(213, 28)
         label2.TabIndex = 146
         label2.Text = "Welcome, doctor!"
         ' 
         ' UserNameLabel
         ' 
         UserNameLabel.BackColor = Color.Transparent
-        UserNameLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
+        UserNameLabel.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         UserNameLabel.ForeColor = Color.Black
-        UserNameLabel.Location = New Point(93, 231)
+        UserNameLabel.Location = New Point(133, 454)
         UserNameLabel.Margin = New Padding(3, 2, 3, 2)
         UserNameLabel.Name = "UserNameLabel"
-        UserNameLabel.Size = New Size(55, 15)
+        UserNameLabel.Size = New Size(80, 23)
         UserNameLabel.TabIndex = 162
         UserNameLabel.Text = "Username"
         UserNameLabel.Visible = False
@@ -285,11 +286,11 @@ Partial Class DoctorLogin
         ' 
         label1.AutoSize = True
         label1.BackColor = Color.Transparent
-        label1.Font = New Font("Microsoft Sans Serif", 24F)
+        label1.Font = New Font("Microsoft Sans Serif", 30F)
         label1.ForeColor = Color.Black
-        label1.Location = New Point(164, 172)
+        label1.Location = New Point(267, 345)
         label1.Name = "label1"
-        label1.Size = New Size(106, 37)
+        label1.Size = New Size(130, 46)
         label1.TabIndex = 145
         label1.Text = "Log In"
         ' 
@@ -308,14 +309,14 @@ Partial Class DoctorLogin
         doctor_UsernameTxtbox.Font = New Font("Segoe UI", 9F)
         doctor_UsernameTxtbox.ForeColor = Color.Black
         doctor_UsernameTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        doctor_UsernameTxtbox.Location = New Point(91, 251)
+        doctor_UsernameTxtbox.Location = New Point(133, 483)
         doctor_UsernameTxtbox.Margin = New Padding(3, 4, 3, 4)
         doctor_UsernameTxtbox.Name = "doctor_UsernameTxtbox"
         doctor_UsernameTxtbox.PlaceholderForeColor = Color.Black
         doctor_UsernameTxtbox.PlaceholderText = ""
         doctor_UsernameTxtbox.SelectedText = ""
         doctor_UsernameTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        doctor_UsernameTxtbox.Size = New Size(279, 46)
+        doctor_UsernameTxtbox.Size = New Size(408, 72)
         doctor_UsernameTxtbox.TabIndex = 1
         ' 
         ' doctor_PasswordTxtbox
@@ -333,7 +334,7 @@ Partial Class DoctorLogin
         doctor_PasswordTxtbox.Font = New Font("Segoe UI", 9F)
         doctor_PasswordTxtbox.ForeColor = Color.Black
         doctor_PasswordTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        doctor_PasswordTxtbox.Location = New Point(93, 323)
+        doctor_PasswordTxtbox.Location = New Point(133, 604)
         doctor_PasswordTxtbox.Margin = New Padding(3, 4, 3, 4)
         doctor_PasswordTxtbox.Name = "doctor_PasswordTxtbox"
         doctor_PasswordTxtbox.PasswordChar = "●"c
@@ -341,7 +342,7 @@ Partial Class DoctorLogin
         doctor_PasswordTxtbox.PlaceholderText = ""
         doctor_PasswordTxtbox.SelectedText = ""
         doctor_PasswordTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        doctor_PasswordTxtbox.Size = New Size(277, 46)
+        doctor_PasswordTxtbox.Size = New Size(408, 72)
         doctor_PasswordTxtbox.TabIndex = 2
         ' 
         ' guna2CirclePictureBox1
@@ -350,11 +351,11 @@ Partial Class DoctorLogin
         guna2CirclePictureBox1.FillColor = SystemColors.Control
         guna2CirclePictureBox1.Image = CType(resources.GetObject("guna2CirclePictureBox1.Image"), Image)
         guna2CirclePictureBox1.ImageRotate = 0F
-        guna2CirclePictureBox1.Location = New Point(32, 256)
+        guna2CirclePictureBox1.Location = New Point(32, 487)
         guna2CirclePictureBox1.Name = "guna2CirclePictureBox1"
         guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges13
         guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        guna2CirclePictureBox1.Size = New Size(52, 38)
+        guna2CirclePictureBox1.Size = New Size(65, 56)
         guna2CirclePictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         guna2CirclePictureBox1.TabIndex = 100
         guna2CirclePictureBox1.TabStop = False
@@ -364,11 +365,11 @@ Partial Class DoctorLogin
         guna2CirclePictureBox2.FillColor = SystemColors.Control
         guna2CirclePictureBox2.Image = CType(resources.GetObject("guna2CirclePictureBox2.Image"), Image)
         guna2CirclePictureBox2.ImageRotate = 0F
-        guna2CirclePictureBox2.Location = New Point(32, 328)
+        guna2CirclePictureBox2.Location = New Point(32, 604)
         guna2CirclePictureBox2.Name = "guna2CirclePictureBox2"
         guna2CirclePictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges14
         guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        guna2CirclePictureBox2.Size = New Size(52, 39)
+        guna2CirclePictureBox2.Size = New Size(65, 56)
         guna2CirclePictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
         guna2CirclePictureBox2.TabIndex = 101
         guna2CirclePictureBox2.TabStop = False
@@ -378,10 +379,10 @@ Partial Class DoctorLogin
         guna2PictureBox8.CustomizableEdges = CustomizableEdges15
         guna2PictureBox8.Image = CType(resources.GetObject("guna2PictureBox8.Image"), Image)
         guna2PictureBox8.ImageRotate = 0F
-        guna2PictureBox8.Location = New Point(133, 25)
+        guna2PictureBox8.Location = New Point(193, 41)
         guna2PictureBox8.Name = "guna2PictureBox8"
         guna2PictureBox8.ShadowDecoration.CustomizableEdges = CustomizableEdges16
-        guna2PictureBox8.Size = New Size(185, 144)
+        guna2PictureBox8.Size = New Size(309, 305)
         guna2PictureBox8.SizeMode = PictureBoxSizeMode.StretchImage
         guna2PictureBox8.TabIndex = 164
         guna2PictureBox8.TabStop = False
@@ -390,13 +391,14 @@ Partial Class DoctorLogin
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(985, 541)
+        ClientSize = New Size(1920, 1080)
         Controls.Add(guna2CustomGradientPanel1)
         FormBorderStyle = FormBorderStyle.None
         Margin = New Padding(3, 2, 3, 2)
         Name = "DoctorLogin"
         StartPosition = FormStartPosition.CenterScreen
         Text = "DoctorLogin"
+        WindowState = FormWindowState.Maximized
         guna2CustomGradientPanel1.ResumeLayout(False)
         guna2CustomGradientPanel1.PerformLayout()
         CType(guna2CirclePictureBox3, ComponentModel.ISupportInitialize).EndInit()

@@ -29,10 +29,10 @@ Partial Class LandingPage
         Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LandingPage))
         Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(components)
         Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
@@ -40,12 +40,12 @@ Partial Class LandingPage
         Label2 = New Label()
         Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
-        Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Guna2CustomGradientPanel1.SuspendLayout()
         CType(guna2CirclePictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(Guna2PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(Guna2PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(Guna2PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Guna2BorderlessForm1
@@ -72,7 +72,7 @@ Partial Class LandingPage
         Guna2CustomGradientPanel1.Margin = New Padding(3, 2, 3, 2)
         Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
         Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges9
-        Guna2CustomGradientPanel1.Size = New Size(999, 560)
+        Guna2CustomGradientPanel1.Size = New Size(1920, 1080)
         Guna2CustomGradientPanel1.TabIndex = 0
         ' 
         ' guna2Button1
@@ -89,10 +89,10 @@ Partial Class LandingPage
         guna2Button1.FillColor = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         guna2Button1.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         guna2Button1.ForeColor = Color.White
-        guna2Button1.Location = New Point(450, 324)
+        guna2Button1.Location = New Point(888, 642)
         guna2Button1.Name = "guna2Button1"
         guna2Button1.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        guna2Button1.Size = New Size(180, 45)
+        guna2Button1.Size = New Size(197, 64)
         guna2Button1.TabIndex = 150
         guna2Button1.Text = "Enter"
         guna2Button1.UseTransparentBackground = True
@@ -101,11 +101,11 @@ Partial Class LandingPage
         ' 
         label1.AutoSize = True
         label1.BackColor = Color.Transparent
-        label1.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        label1.Font = New Font("Microsoft Sans Serif", 17.25F, FontStyle.Bold)
         label1.ForeColor = SystemColors.ControlLightLight
-        label1.Location = New Point(412, 275)
+        label1.Location = New Point(848, 569)
         label1.Name = "label1"
-        label1.Size = New Size(248, 24)
+        label1.Size = New Size(312, 29)
         label1.TabIndex = 148
         label1.Text = "Your Health is our Priority"
         ' 
@@ -115,7 +115,7 @@ Partial Class LandingPage
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = SystemColors.ControlLightLight
-        Label2.Location = New Point(162, 286)
+        Label2.Location = New Point(636, 598)
         Label2.Name = "Label2"
         Label2.Size = New Size(714, 24)
         Label2.TabIndex = 149
@@ -124,12 +124,12 @@ Partial Class LandingPage
         ' Guna2HtmlLabel1
         ' 
         Guna2HtmlLabel1.BackColor = Color.Transparent
-        Guna2HtmlLabel1.Font = New Font("Microsoft Sans Serif", 36F, FontStyle.Bold)
+        Guna2HtmlLabel1.Font = New Font("Microsoft Sans Serif", 40F, FontStyle.Bold)
         Guna2HtmlLabel1.ForeColor = Color.White
-        Guna2HtmlLabel1.Location = New Point(290, 220)
+        Guna2HtmlLabel1.Location = New Point(748, 504)
         Guna2HtmlLabel1.Margin = New Padding(3, 2, 3, 2)
         Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Guna2HtmlLabel1.Size = New Size(462, 57)
+        Guna2HtmlLabel1.Size = New Size(508, 63)
         Guna2HtmlLabel1.TabIndex = 147
         Guna2HtmlLabel1.Text = "Welcome to Infocare"
         Guna2HtmlLabel1.UseGdiPlusTextRendering = True
@@ -141,30 +141,15 @@ Partial Class LandingPage
         guna2CirclePictureBox1.Image = CType(resources.GetObject("guna2CirclePictureBox1.Image"), Image)
         guna2CirclePictureBox1.ImageRotate = 0F
         guna2CirclePictureBox1.InitialImage = CType(resources.GetObject("guna2CirclePictureBox1.InitialImage"), Image)
-        guna2CirclePictureBox1.Location = New Point(383, 3)
+        guna2CirclePictureBox1.Location = New Point(748, 129)
         guna2CirclePictureBox1.Name = "guna2CirclePictureBox1"
         guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges3
         guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        guna2CirclePictureBox1.Size = New Size(313, 256)
+        guna2CirclePictureBox1.Size = New Size(493, 428)
         guna2CirclePictureBox1.SizeMode = PictureBoxSizeMode.Zoom
         guna2CirclePictureBox1.TabIndex = 144
         guna2CirclePictureBox1.TabStop = False
         guna2CirclePictureBox1.UseTransparentBackground = True
-        ' 
-        ' Guna2PictureBox2
-        ' 
-        Guna2PictureBox2.BackColor = Color.Transparent
-        Guna2PictureBox2.CustomizableEdges = CustomizableEdges4
-        Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), Image)
-        Guna2PictureBox2.ImageRotate = 0F
-        Guna2PictureBox2.Location = New Point(501, 286)
-        Guna2PictureBox2.Margin = New Padding(3, 2, 3, 2)
-        Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Guna2PictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges5
-        Guna2PictureBox2.Size = New Size(611, 302)
-        Guna2PictureBox2.TabIndex = 146
-        Guna2PictureBox2.TabStop = False
-        Guna2PictureBox2.UseTransparentBackground = True
         ' 
         ' Guna2PictureBox1
         ' 
@@ -172,19 +157,37 @@ Partial Class LandingPage
         Guna2PictureBox1.CustomizableEdges = CustomizableEdges6
         Guna2PictureBox1.Image = CType(resources.GetObject("Guna2PictureBox1.Image"), Image)
         Guna2PictureBox1.ImageRotate = 0F
-        Guna2PictureBox1.Location = New Point(0, 299)
+        Guna2PictureBox1.Location = New Point(-2, 598)
         Guna2PictureBox1.Margin = New Padding(3, 2, 3, 2)
         Guna2PictureBox1.Name = "Guna2PictureBox1"
         Guna2PictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges7
-        Guna2PictureBox1.Size = New Size(611, 302)
-        Guna2PictureBox1.TabIndex = 145
+        Guna2PictureBox1.Size = New Size(973, 481)
+        Guna2PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
+        Guna2PictureBox1.TabIndex = 155
         Guna2PictureBox1.TabStop = False
+        Guna2PictureBox1.UseTransparentBackground = True
+        ' 
+        ' Guna2PictureBox2
+        ' 
+        Guna2PictureBox2.BackColor = Color.Transparent
+        Guna2PictureBox2.CustomizableEdges = CustomizableEdges4
+        Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), Image)
+        Guna2PictureBox2.ImageRotate = 0F
+        Guna2PictureBox2.Location = New Point(963, 598)
+        Guna2PictureBox2.Margin = New Padding(3, 2, 3, 2)
+        Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Guna2PictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges5
+        Guna2PictureBox2.Size = New Size(973, 481)
+        Guna2PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
+        Guna2PictureBox2.TabIndex = 156
+        Guna2PictureBox2.TabStop = False
+        Guna2PictureBox2.UseTransparentBackground = True
         ' 
         ' LandingPage
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(999, 553)
+        ClientSize = New Size(1920, 1080)
         ControlBox = False
         Controls.Add(Guna2CustomGradientPanel1)
         FormBorderStyle = FormBorderStyle.None
@@ -194,19 +197,19 @@ Partial Class LandingPage
         Guna2CustomGradientPanel1.ResumeLayout(False)
         Guna2CustomGradientPanel1.PerformLayout()
         CType(guna2CirclePictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        CType(Guna2PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(Guna2PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        CType(Guna2PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
     Friend WithEvents Guna2BorderlessForm1 As Guna.UI2.WinForms.Guna2BorderlessForm
     Friend WithEvents Guna2CustomGradientPanel1 As Guna.UI2.WinForms.Guna2CustomGradientPanel
-    Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
     Private WithEvents guna2CirclePictureBox1 As Guna.UI2.WinForms.Guna2CirclePictureBox
-    Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Private WithEvents label1 As Label
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Private WithEvents guna2Button1 As Guna.UI2.WinForms.Guna2Button
     Private WithEvents Label2 As Label
+    Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
 
 End Class
