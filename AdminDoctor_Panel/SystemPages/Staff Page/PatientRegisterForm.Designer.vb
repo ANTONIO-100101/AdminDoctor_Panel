@@ -175,7 +175,7 @@ Partial Class PatientRegisterForm
         Guna2CustomGradientPanel1.Margin = New Padding(3, 2, 3, 2)
         Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
         Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges44
-        Guna2CustomGradientPanel1.Size = New Size(1051, 592)
+        Guna2CustomGradientPanel1.Size = New Size(1920, 1080)
         Guna2CustomGradientPanel1.TabIndex = 0
         ' 
         ' EnterButton
@@ -190,7 +190,7 @@ Partial Class PatientRegisterForm
         EnterButton.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         EnterButton.Font = New Font("Microsoft Sans Serif", 11.999999F)
         EnterButton.ForeColor = Color.White
-        EnterButton.Location = New Point(466, 496)
+        EnterButton.Location = New Point(884, 985)
         EnterButton.Margin = New Padding(3, 2, 3, 2)
         EnterButton.Name = "EnterButton"
         EnterButton.ShadowDecoration.CustomizableEdges = CustomizableEdges2
@@ -203,7 +203,7 @@ Partial Class PatientRegisterForm
         passValidatorMsg.BackColor = Color.Transparent
         passValidatorMsg.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
         passValidatorMsg.ForeColor = Color.Red
-        passValidatorMsg.Location = New Point(766, 394)
+        passValidatorMsg.Location = New Point(1315, 427)
         passValidatorMsg.Margin = New Padding(3, 2, 3, 2)
         passValidatorMsg.Name = "passValidatorMsg"
         passValidatorMsg.Size = New Size(138, 15)
@@ -215,8 +215,8 @@ Partial Class PatientRegisterForm
         ' 
         PasswordLabel.BackColor = Color.Transparent
         PasswordLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
-        PasswordLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        PasswordLabel.Location = New Point(773, 326)
+        PasswordLabel.ForeColor = Color.White
+        PasswordLabel.Location = New Point(1313, 348)
         PasswordLabel.Margin = New Padding(3, 2, 3, 2)
         PasswordLabel.Name = "PasswordLabel"
         PasswordLabel.Size = New Size(53, 15)
@@ -242,7 +242,7 @@ Partial Class PatientRegisterForm
         PasswordTextBox.IconRightCursor = Cursors.Hand
         PasswordTextBox.IconRightOffset = New Point(8, 0)
         PasswordTextBox.IconRightSize = New Size(20, 13)
-        PasswordTextBox.Location = New Point(766, 343)
+        PasswordTextBox.Location = New Point(1307, 364)
         PasswordTextBox.Margin = New Padding(3, 4, 3, 4)
         PasswordTextBox.Name = "PasswordTextBox"
         PasswordTextBox.PasswordChar = "●"c
@@ -250,7 +250,7 @@ Partial Class PatientRegisterForm
         PasswordTextBox.PlaceholderText = "Password"
         PasswordTextBox.SelectedText = ""
         PasswordTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        PasswordTextBox.Size = New Size(187, 46)
+        PasswordTextBox.Size = New Size(250, 60)
         PasswordTextBox.TabIndex = 290
         PasswordTextBox.Tag = "Show"
         ' 
@@ -258,8 +258,8 @@ Partial Class PatientRegisterForm
         ' 
         UsernameLabel.BackColor = Color.Transparent
         UsernameLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
-        UsernameLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        UsernameLabel.Location = New Point(582, 326)
+        UsernameLabel.ForeColor = Color.White
+        UsernameLabel.Location = New Point(1036, 349)
         UsernameLabel.Margin = New Padding(3, 2, 3, 2)
         UsernameLabel.Name = "UsernameLabel"
         UsernameLabel.Size = New Size(55, 15)
@@ -282,14 +282,14 @@ Partial Class PatientRegisterForm
         UsernameTextbox.Font = New Font("Segoe UI", 9F)
         UsernameTextbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         UsernameTextbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        UsernameTextbox.Location = New Point(576, 343)
+        UsernameTextbox.Location = New Point(1032, 364)
         UsernameTextbox.Margin = New Padding(3, 4, 3, 4)
         UsernameTextbox.Name = "UsernameTextbox"
         UsernameTextbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         UsernameTextbox.PlaceholderText = "Username"
         UsernameTextbox.SelectedText = ""
         UsernameTextbox.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        UsernameTextbox.Size = New Size(185, 46)
+        UsernameTextbox.Size = New Size(250, 60)
         UsernameTextbox.TabIndex = 288
         ' 
         ' DeleteBtn
@@ -304,7 +304,7 @@ Partial Class PatientRegisterForm
         DeleteBtn.FillColor = Color.Red
         DeleteBtn.Font = New Font("Microsoft Sans Serif", 9.75F)
         DeleteBtn.ForeColor = Color.White
-        DeleteBtn.Location = New Point(796, 491)
+        DeleteBtn.Location = New Point(1525, 522)
         DeleteBtn.Margin = New Padding(3, 2, 3, 2)
         DeleteBtn.Name = "DeleteBtn"
         DeleteBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges8
@@ -323,7 +323,7 @@ Partial Class PatientRegisterForm
         BackButton.ImageOffset = New Point(0, 0)
         BackButton.ImageRotate = 0F
         BackButton.ImageSize = New Size(40, 45)
-        BackButton.Location = New Point(110, 40)
+        BackButton.Location = New Point(10, 21)
         BackButton.Name = "BackButton"
         BackButton.PressedState.ImageSize = New Size(64, 64)
         BackButton.ShadowDecoration.CustomizableEdges = CustomizableEdges9
@@ -334,8 +334,8 @@ Partial Class PatientRegisterForm
         ' 
         guna2HtmlLabel1.BackColor = Color.Transparent
         guna2HtmlLabel1.Font = New Font("Impact", 15F)
-        guna2HtmlLabel1.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel1.Location = New Point(174, 50)
+        guna2HtmlLabel1.ForeColor = Color.White
+        guna2HtmlLabel1.Location = New Point(74, 30)
         guna2HtmlLabel1.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel1.Name = "guna2HtmlLabel1"
         guna2HtmlLabel1.Size = New Size(44, 27)
@@ -348,7 +348,7 @@ Partial Class PatientRegisterForm
         guna2PictureBox8.CustomizableEdges = CustomizableEdges10
         guna2PictureBox8.Image = CType(resources.GetObject("guna2PictureBox8.Image"), Image)
         guna2PictureBox8.ImageRotate = 0F
-        guna2PictureBox8.Location = New Point(283, 38)
+        guna2PictureBox8.Location = New Point(616, 60)
         guna2PictureBox8.Name = "guna2PictureBox8"
         guna2PictureBox8.ShadowDecoration.CustomizableEdges = CustomizableEdges11
         guna2PictureBox8.Size = New Size(87, 75)
@@ -366,7 +366,7 @@ Partial Class PatientRegisterForm
         MinimizeButton.ImageOffset = New Point(0, 0)
         MinimizeButton.ImageRotate = 0F
         MinimizeButton.ImageSize = New Size(20, 30)
-        MinimizeButton.Location = New Point(904, 22)
+        MinimizeButton.Location = New Point(1831, 3)
         MinimizeButton.Margin = New Padding(3, 2, 3, 2)
         MinimizeButton.Name = "MinimizeButton"
         MinimizeButton.PressedState.ImageSize = New Size(20, 30)
@@ -378,8 +378,8 @@ Partial Class PatientRegisterForm
         ' 
         CityLabel.BackColor = Color.Transparent
         CityLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
-        CityLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        CityLabel.Location = New Point(845, 227)
+        CityLabel.ForeColor = Color.White
+        CityLabel.Location = New Point(1431, 249)
         CityLabel.Margin = New Padding(3, 2, 3, 2)
         CityLabel.Name = "CityLabel"
         CityLabel.Size = New Size(23, 15)
@@ -391,8 +391,8 @@ Partial Class PatientRegisterForm
         ' 
         BarangayLabel.BackColor = Color.Transparent
         BarangayLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
-        BarangayLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        BarangayLabel.Location = New Point(710, 227)
+        BarangayLabel.ForeColor = Color.White
+        BarangayLabel.Location = New Point(1158, 249)
         BarangayLabel.Margin = New Padding(3, 2, 3, 2)
         BarangayLabel.Name = "BarangayLabel"
         BarangayLabel.Size = New Size(52, 15)
@@ -404,8 +404,8 @@ Partial Class PatientRegisterForm
         ' 
         StreetLabel.BackColor = Color.Transparent
         StreetLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
-        StreetLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        StreetLabel.Location = New Point(578, 227)
+        StreetLabel.ForeColor = Color.White
+        StreetLabel.Location = New Point(893, 249)
         StreetLabel.Margin = New Padding(3, 2, 3, 2)
         StreetLabel.Name = "StreetLabel"
         StreetLabel.Size = New Size(33, 15)
@@ -417,8 +417,8 @@ Partial Class PatientRegisterForm
         ' 
         SuffixLabel.BackColor = Color.Transparent
         SuffixLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
-        SuffixLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        SuffixLabel.Location = New Point(382, 227)
+        SuffixLabel.ForeColor = Color.White
+        SuffixLabel.Location = New Point(625, 248)
         SuffixLabel.Margin = New Padding(3, 2, 3, 2)
         SuffixLabel.Name = "SuffixLabel"
         SuffixLabel.Size = New Size(33, 15)
@@ -430,8 +430,8 @@ Partial Class PatientRegisterForm
         ' 
         MiddleNameLabel.BackColor = Color.Transparent
         MiddleNameLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
-        MiddleNameLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        MiddleNameLabel.Location = New Point(198, 227)
+        MiddleNameLabel.ForeColor = Color.White
+        MiddleNameLabel.Location = New Point(346, 248)
         MiddleNameLabel.Margin = New Padding(3, 2, 3, 2)
         MiddleNameLabel.Name = "MiddleNameLabel"
         MiddleNameLabel.Size = New Size(72, 15)
@@ -443,8 +443,8 @@ Partial Class PatientRegisterForm
         ' 
         ZoneLabel.BackColor = Color.Transparent
         ZoneLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
-        ZoneLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        ZoneLabel.Location = New Point(845, 164)
+        ZoneLabel.ForeColor = Color.White
+        ZoneLabel.Location = New Point(1430, 165)
         ZoneLabel.Margin = New Padding(3, 2, 3, 2)
         ZoneLabel.Name = "ZoneLabel"
         ZoneLabel.Size = New Size(30, 15)
@@ -456,8 +456,8 @@ Partial Class PatientRegisterForm
         ' 
         ZipCodeLabel.BackColor = Color.Transparent
         ZipCodeLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
-        ZipCodeLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        ZipCodeLabel.Location = New Point(710, 164)
+        ZipCodeLabel.ForeColor = Color.White
+        ZipCodeLabel.Location = New Point(1160, 164)
         ZipCodeLabel.Margin = New Padding(3, 2, 3, 2)
         ZipCodeLabel.Name = "ZipCodeLabel"
         ZipCodeLabel.Size = New Size(50, 15)
@@ -469,8 +469,8 @@ Partial Class PatientRegisterForm
         ' 
         HouseLabel.BackColor = Color.Transparent
         HouseLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
-        HouseLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        HouseLabel.Location = New Point(578, 164)
+        HouseLabel.ForeColor = Color.White
+        HouseLabel.Location = New Point(893, 164)
         HouseLabel.Margin = New Padding(3, 2, 3, 2)
         HouseLabel.Name = "HouseLabel"
         HouseLabel.Size = New Size(58, 15)
@@ -482,8 +482,8 @@ Partial Class PatientRegisterForm
         ' 
         LastNameLabel.BackColor = Color.Transparent
         LastNameLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
-        LastNameLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        LastNameLabel.Location = New Point(382, 164)
+        LastNameLabel.ForeColor = Color.White
+        LastNameLabel.Location = New Point(622, 164)
         LastNameLabel.Margin = New Padding(3, 2, 3, 2)
         LastNameLabel.Name = "LastNameLabel"
         LastNameLabel.Size = New Size(56, 15)
@@ -495,8 +495,8 @@ Partial Class PatientRegisterForm
         ' 
         FirstNameLabel.BackColor = Color.Transparent
         FirstNameLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
-        FirstNameLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        FirstNameLabel.Location = New Point(199, 164)
+        FirstNameLabel.ForeColor = Color.White
+        FirstNameLabel.Location = New Point(347, 163)
         FirstNameLabel.Margin = New Padding(3, 2, 3, 2)
         FirstNameLabel.Name = "FirstNameLabel"
         FirstNameLabel.Size = New Size(57, 15)
@@ -508,8 +508,8 @@ Partial Class PatientRegisterForm
         ' 
         ContactNumberLabel.BackColor = Color.Transparent
         ContactNumberLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
-        ContactNumberLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        ContactNumberLabel.Location = New Point(382, 326)
+        ContactNumberLabel.ForeColor = Color.White
+        ContactNumberLabel.Location = New Point(759, 348)
         ContactNumberLabel.Margin = New Padding(3, 2, 3, 2)
         ContactNumberLabel.Name = "ContactNumberLabel"
         ContactNumberLabel.Size = New Size(89, 15)
@@ -521,8 +521,8 @@ Partial Class PatientRegisterForm
         ' 
         EmailLabel.BackColor = Color.Transparent
         EmailLabel.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
-        EmailLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        EmailLabel.Location = New Point(197, 326)
+        EmailLabel.ForeColor = Color.White
+        EmailLabel.Location = New Point(477, 348)
         EmailLabel.Margin = New Padding(3, 2, 3, 2)
         EmailLabel.Name = "EmailLabel"
         EmailLabel.Size = New Size(31, 15)
@@ -535,7 +535,7 @@ Partial Class PatientRegisterForm
         guna2HtmlLabel11.BackColor = Color.Transparent
         guna2HtmlLabel11.Font = New Font("Microsoft Sans Serif", 18F)
         guna2HtmlLabel11.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel11.Location = New Point(536, 547)
+        guna2HtmlLabel11.Location = New Point(959, 1036)
         guna2HtmlLabel11.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel11.Name = "guna2HtmlLabel11"
         guna2HtmlLabel11.Size = New Size(36, 31)
@@ -557,14 +557,14 @@ Partial Class PatientRegisterForm
         CityTxtbox.Font = New Font("Segoe UI", 9F)
         CityTxtbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         CityTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        CityTxtbox.Location = New Point(842, 242)
+        CityTxtbox.Location = New Point(1426, 264)
         CityTxtbox.Margin = New Padding(3, 4, 3, 4)
         CityTxtbox.Name = "CityTxtbox"
         CityTxtbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         CityTxtbox.PlaceholderText = "City"
         CityTxtbox.SelectedText = ""
         CityTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges14
-        CityTxtbox.Size = New Size(112, 46)
+        CityTxtbox.Size = New Size(250, 60)
         CityTxtbox.TabIndex = 256
         ' 
         ' StreetTxtbox
@@ -582,14 +582,14 @@ Partial Class PatientRegisterForm
         StreetTxtbox.Font = New Font("Segoe UI", 9F)
         StreetTxtbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         StreetTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        StreetTxtbox.Location = New Point(573, 242)
+        StreetTxtbox.Location = New Point(887, 264)
         StreetTxtbox.Margin = New Padding(3, 4, 3, 4)
         StreetTxtbox.Name = "StreetTxtbox"
         StreetTxtbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         StreetTxtbox.PlaceholderText = "Street"
         StreetTxtbox.SelectedText = ""
         StreetTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges16
-        StreetTxtbox.Size = New Size(112, 46)
+        StreetTxtbox.Size = New Size(250, 60)
         StreetTxtbox.TabIndex = 254
         ' 
         ' ZoneTxtbox
@@ -607,14 +607,14 @@ Partial Class PatientRegisterForm
         ZoneTxtbox.Font = New Font("Segoe UI", 9F)
         ZoneTxtbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         ZoneTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        ZoneTxtbox.Location = New Point(842, 179)
+        ZoneTxtbox.Location = New Point(1425, 179)
         ZoneTxtbox.Margin = New Padding(3, 4, 3, 4)
         ZoneTxtbox.Name = "ZoneTxtbox"
         ZoneTxtbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         ZoneTxtbox.PlaceholderText = "Zone"
         ZoneTxtbox.SelectedText = ""
         ZoneTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges18
-        ZoneTxtbox.Size = New Size(112, 46)
+        ZoneTxtbox.Size = New Size(250, 60)
         ZoneTxtbox.TabIndex = 253
         ' 
         ' ZipCodeTxtbox
@@ -632,14 +632,14 @@ Partial Class PatientRegisterForm
         ZipCodeTxtbox.Font = New Font("Segoe UI", 9F)
         ZipCodeTxtbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         ZipCodeTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        ZipCodeTxtbox.Location = New Point(705, 179)
+        ZipCodeTxtbox.Location = New Point(1155, 179)
         ZipCodeTxtbox.Margin = New Padding(3, 4, 3, 4)
         ZipCodeTxtbox.Name = "ZipCodeTxtbox"
         ZipCodeTxtbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         ZipCodeTxtbox.PlaceholderText = "Zip Code"
         ZipCodeTxtbox.SelectedText = ""
         ZipCodeTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges20
-        ZipCodeTxtbox.Size = New Size(112, 46)
+        ZipCodeTxtbox.Size = New Size(250, 60)
         ZipCodeTxtbox.TabIndex = 252
         ' 
         ' HouseNoTxtbox
@@ -657,14 +657,14 @@ Partial Class PatientRegisterForm
         HouseNoTxtbox.Font = New Font("Segoe UI", 9F)
         HouseNoTxtbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         HouseNoTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        HouseNoTxtbox.Location = New Point(573, 179)
+        HouseNoTxtbox.Location = New Point(887, 180)
         HouseNoTxtbox.Margin = New Padding(3, 4, 3, 4)
         HouseNoTxtbox.Name = "HouseNoTxtbox"
         HouseNoTxtbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         HouseNoTxtbox.PlaceholderText = "House no"
         HouseNoTxtbox.SelectedText = ""
         HouseNoTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges22
-        HouseNoTxtbox.Size = New Size(112, 46)
+        HouseNoTxtbox.Size = New Size(250, 60)
         HouseNoTxtbox.TabIndex = 251
         ' 
         ' SexCombobox
@@ -679,10 +679,10 @@ Partial Class PatientRegisterForm
         SexCombobox.ForeColor = Color.FromArgb(CByte(68), CByte(88), CByte(112))
         SexCombobox.ItemHeight = 30
         SexCombobox.Items.AddRange(New Object() {"Male", "Female"})
-        SexCombobox.Location = New Point(425, 425)
+        SexCombobox.Location = New Point(1002, 450)
         SexCombobox.Name = "SexCombobox"
         SexCombobox.ShadowDecoration.CustomizableEdges = CustomizableEdges24
-        SexCombobox.Size = New Size(104, 36)
+        SexCombobox.Size = New Size(250, 36)
         SexCombobox.TabIndex = 258
         ' 
         ' BarangayTxtbox
@@ -700,14 +700,14 @@ Partial Class PatientRegisterForm
         BarangayTxtbox.Font = New Font("Segoe UI", 9F)
         BarangayTxtbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         BarangayTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        BarangayTxtbox.Location = New Point(705, 242)
+        BarangayTxtbox.Location = New Point(1154, 264)
         BarangayTxtbox.Margin = New Padding(3, 4, 3, 4)
         BarangayTxtbox.Name = "BarangayTxtbox"
         BarangayTxtbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         BarangayTxtbox.PlaceholderText = "Barangay"
         BarangayTxtbox.SelectedText = ""
         BarangayTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges26
-        BarangayTxtbox.Size = New Size(112, 46)
+        BarangayTxtbox.Size = New Size(250, 60)
         BarangayTxtbox.TabIndex = 255
         ' 
         ' ExitButton
@@ -721,7 +721,7 @@ Partial Class PatientRegisterForm
         ExitButton.FillColor = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         ExitButton.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold)
         ExitButton.ForeColor = SystemColors.Window
-        ExitButton.Location = New Point(947, 22)
+        ExitButton.Location = New Point(1874, 3)
         ExitButton.Margin = New Padding(3, 2, 3, 2)
         ExitButton.Name = "ExitButton"
         ExitButton.ShadowDecoration.CustomizableEdges = CustomizableEdges28
@@ -744,14 +744,14 @@ Partial Class PatientRegisterForm
         ContactNumberTxtbox.Font = New Font("Segoe UI", 9F)
         ContactNumberTxtbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         ContactNumberTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        ContactNumberTxtbox.Location = New Point(375, 343)
+        ContactNumberTxtbox.Location = New Point(752, 363)
         ContactNumberTxtbox.Margin = New Padding(3, 4, 3, 4)
         ContactNumberTxtbox.Name = "ContactNumberTxtbox"
         ContactNumberTxtbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         ContactNumberTxtbox.PlaceholderText = "Contact Number"
         ContactNumberTxtbox.SelectedText = ""
         ContactNumberTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges30
-        ContactNumberTxtbox.Size = New Size(177, 46)
+        ContactNumberTxtbox.Size = New Size(250, 60)
         ContactNumberTxtbox.TabIndex = 245
         ' 
         ' guna2HtmlLabel7
@@ -771,7 +771,7 @@ Partial Class PatientRegisterForm
         guna2HtmlLabel6.BackColor = Color.Transparent
         guna2HtmlLabel6.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
         guna2HtmlLabel6.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel6.Location = New Point(381, 293)
+        guna2HtmlLabel6.Location = New Point(356, 348)
         guna2HtmlLabel6.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel6.Name = "guna2HtmlLabel6"
         guna2HtmlLabel6.Size = New Size(93, 15)
@@ -793,14 +793,14 @@ Partial Class PatientRegisterForm
         SuffixTxtbox.Font = New Font("Segoe UI", 9F)
         SuffixTxtbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         SuffixTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        SuffixTxtbox.Location = New Point(375, 242)
+        SuffixTxtbox.Location = New Point(621, 264)
         SuffixTxtbox.Margin = New Padding(3, 4, 3, 4)
         SuffixTxtbox.Name = "SuffixTxtbox"
         SuffixTxtbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         SuffixTxtbox.PlaceholderText = "Suffix"
         SuffixTxtbox.SelectedText = ""
         SuffixTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges32
-        SuffixTxtbox.Size = New Size(177, 46)
+        SuffixTxtbox.Size = New Size(250, 60)
         SuffixTxtbox.TabIndex = 250
         ' 
         ' EmailTxtbox
@@ -818,14 +818,14 @@ Partial Class PatientRegisterForm
         EmailTxtbox.Font = New Font("Segoe UI", 9F)
         EmailTxtbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         EmailTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        EmailTxtbox.Location = New Point(191, 343)
+        EmailTxtbox.Location = New Point(472, 363)
         EmailTxtbox.Margin = New Padding(3, 4, 3, 4)
         EmailTxtbox.Name = "EmailTxtbox"
         EmailTxtbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         EmailTxtbox.PlaceholderText = "Email"
         EmailTxtbox.SelectedText = ""
         EmailTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges34
-        EmailTxtbox.Size = New Size(177, 46)
+        EmailTxtbox.Size = New Size(250, 60)
         EmailTxtbox.TabIndex = 244
         ' 
         ' guna2HtmlLabel5
@@ -861,12 +861,12 @@ Partial Class PatientRegisterForm
         BdayDateTimePicker.Font = New Font("Segoe UI", 9F)
         BdayDateTimePicker.ForeColor = Color.Black
         BdayDateTimePicker.Format = DateTimePickerFormat.Long
-        BdayDateTimePicker.Location = New Point(192, 425)
+        BdayDateTimePicker.Location = New Point(710, 450)
         BdayDateTimePicker.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         BdayDateTimePicker.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         BdayDateTimePicker.Name = "BdayDateTimePicker"
         BdayDateTimePicker.ShadowDecoration.CustomizableEdges = CustomizableEdges36
-        BdayDateTimePicker.Size = New Size(227, 36)
+        BdayDateTimePicker.Size = New Size(250, 60)
         BdayDateTimePicker.TabIndex = 257
         BdayDateTimePicker.Value = New Date(2024, 11, 26, 2, 2, 47, 709)
         ' 
@@ -885,25 +885,25 @@ Partial Class PatientRegisterForm
         LastNameTxtbox.Font = New Font("Segoe UI", 9F)
         LastNameTxtbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         LastNameTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        LastNameTxtbox.Location = New Point(375, 179)
+        LastNameTxtbox.Location = New Point(618, 179)
         LastNameTxtbox.Margin = New Padding(3, 4, 3, 4)
         LastNameTxtbox.Name = "LastNameTxtbox"
         LastNameTxtbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         LastNameTxtbox.PlaceholderText = "Last name"
         LastNameTxtbox.SelectedText = ""
         LastNameTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges38
-        LastNameTxtbox.Size = New Size(177, 46)
+        LastNameTxtbox.Size = New Size(250, 60)
         LastNameTxtbox.TabIndex = 248
         ' 
         ' PageTitle
         ' 
         PageTitle.BackColor = Color.Transparent
-        PageTitle.Font = New Font("Tahoma", 26.25F, FontStyle.Bold)
-        PageTitle.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        PageTitle.Location = New Point(375, 59)
+        PageTitle.Font = New Font("Tahoma", 48F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        PageTitle.ForeColor = Color.White
+        PageTitle.Location = New Point(710, 55)
         PageTitle.Margin = New Padding(3, 2, 3, 2)
         PageTitle.Name = "PageTitle"
-        PageTitle.Size = New Size(359, 44)
+        PageTitle.Size = New Size(650, 79)
         PageTitle.TabIndex = 260
         PageTitle.Text = "Patient Registration"
         ' 
@@ -922,14 +922,14 @@ Partial Class PatientRegisterForm
         FirstnameTxtbox.Font = New Font("Segoe UI", 9F)
         FirstnameTxtbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         FirstnameTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        FirstnameTxtbox.Location = New Point(191, 179)
+        FirstnameTxtbox.Location = New Point(342, 179)
         FirstnameTxtbox.Margin = New Padding(3, 4, 3, 4)
         FirstnameTxtbox.Name = "FirstnameTxtbox"
         FirstnameTxtbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         FirstnameTxtbox.PlaceholderText = "First name"
         FirstnameTxtbox.SelectedText = ""
         FirstnameTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges40
-        FirstnameTxtbox.Size = New Size(177, 46)
+        FirstnameTxtbox.Size = New Size(250, 60)
         FirstnameTxtbox.TabIndex = 247
         ' 
         ' MiddleNameTxtbox
@@ -947,14 +947,14 @@ Partial Class PatientRegisterForm
         MiddleNameTxtbox.Font = New Font("Segoe UI", 9F)
         MiddleNameTxtbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         MiddleNameTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        MiddleNameTxtbox.Location = New Point(191, 242)
+        MiddleNameTxtbox.Location = New Point(343, 263)
         MiddleNameTxtbox.Margin = New Padding(3, 4, 3, 4)
         MiddleNameTxtbox.Name = "MiddleNameTxtbox"
         MiddleNameTxtbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         MiddleNameTxtbox.PlaceholderText = "Middle name"
         MiddleNameTxtbox.SelectedText = ""
         MiddleNameTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges42
-        MiddleNameTxtbox.Size = New Size(177, 46)
+        MiddleNameTxtbox.Size = New Size(250, 60)
         MiddleNameTxtbox.TabIndex = 249
         ' 
         ' guna2HtmlLabel3
@@ -981,7 +981,7 @@ Partial Class PatientRegisterForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1049, 592)
+        ClientSize = New Size(1920, 1080)
         Controls.Add(Guna2CustomGradientPanel1)
         FormBorderStyle = FormBorderStyle.None
         Margin = New Padding(3, 2, 3, 2)
