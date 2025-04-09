@@ -81,7 +81,6 @@ Public Class PatientLogin
         If confirm = DialogResult.Yes Then
             Dim patientRegisterForm As New PatientRegisterForm(ModalMode.Add)
             patientRegisterForm.Show()
-            Me.Hide()
         End If
     End Sub
 End Class

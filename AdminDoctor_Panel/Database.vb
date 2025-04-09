@@ -334,7 +334,7 @@ Public Class Database
                 user.MiddleName = reader.GetString(reader.GetOrdinal("P_Middlename"))
                 user.UserName = reader.GetString(reader.GetOrdinal("P_username"))
                 user.ContactNumber = reader.GetString(reader.GetOrdinal("P_ContactNumber"))
-                user.BirthDate = DateTime.ParseExact(reader.GetString(reader.GetOrdinal("P_Bdate")), "dd-MM-yyyy", CultureInfo.InvariantCulture)
+                user.BirthDate = reader.GetDateTime(reader.GetOrdinal("P_Bdate"))
                 user.Sex = reader.GetString(reader.GetOrdinal("P_Sex"))
                 user.Suffix = If(reader.IsDBNull(reader.GetOrdinal("P_Suffix")), "n/a", reader.GetString(reader.GetOrdinal("P_Suffix")))
                 user.Email = If(reader.IsDBNull(reader.GetOrdinal("email")), "", reader.GetString(reader.GetOrdinal("email")))
@@ -656,5 +656,234 @@ Public Class Database
             End Try
         End Using
     End Sub
+
+    Public Shared Function GetSpecialization() As List(Of String)
+        Dim specializationSet As New HashSet(Of String)(StringComparer.OrdinalIgnoreCase)
+
+        Dim query As String = "SELECT Specialization FROM tb_doctorinfo"
+
+        Using connection As SqlConnection = GetConnection()
+            Dim command As New SqlCommand(query, connection)
+
+            Try
+                connection.Open()
+                Using reader As SqlDataReader = command.ExecuteReader()
+                    While reader.Read()
+                        Dim specializations As String = If(reader("Specialization")?.ToString(), String.Empty)
+                        If Not String.IsNullOrEmpty(specializations) Then
+                            ' Split and trim each specialization
+                            For Each spec As String In specializations.Split(New Char() {","c}, StringSplitOptions.RemoveEmptyEntries)
+                                specializationSet.Add(spec.Trim())
+                            Next
+                        End If
+                    End While
+                End Using
+            Catch ex As Exception
+                Throw New Exception("Error getting specializations: " & ex.Message)
+            End Try
+        End Using
+
+        Return specializationSet.ToList()
+    End Function
+
+    Public Shared Function GetDoctorNames(specialization As String) As List(Of String)
+        Dim doctorNames As New List(Of String)()
+
+        Dim query As String = "
+        SELECT DISTINCT CONCAT('Dr. ', last_name, ', ', first_name) AS doctor_name
+        FROM tb_doctor_specializations ds
+        JOIN tb_doctorinfo di ON ds.doctor_id = di.doctor_id
+        WHERE ds.specialization = @Specialization;
+        "
+
+        Using connection As SqlConnection = GetConnection()
+            Dim command As New SqlCommand(query, connection)
+            command.Parameters.AddWithValue("@Specialization", specialization)
+
+            Try
+                connection.Open()
+                Using reader As SqlDataReader = command.ExecuteReader()
+                    While reader.Read()
+                        doctorNames.Add(reader("doctor_name").ToString())
+                    End While
+                End Using
+            Catch ex As Exception
+                Throw New Exception("Error getting doctor names: " & ex.Message)
+            End Try
+        End Using
+
+        Return doctorNames
+    End Function
+
+    Public Shared Function GetDoctorAvailableTimes(doctorName As String, specialization As String) As List(Of String)
+        Dim availableTimes As New List(Of String)()
+
+        Dim query As String = "
+    SELECT DISTINCT di.start_time, di.end_time, di.day_availability 
+    FROM tb_doctorinfo di
+    JOIN tb_doctor_specializations ds ON di.doctor_id = ds.doctor_id
+    WHERE CONCAT('Dr. ', di.last_name, ', ', di.first_name) = @DoctorName
+      AND ds.specialization = @Specialization;
+"
+
+        Using connection As SqlConnection = GetConnection()
+            Dim cmd As New SqlCommand(query, connection)
+            cmd.Parameters.AddWithValue("@DoctorName", doctorName)
+            cmd.Parameters.AddWithValue("@Specialization", specialization)
+
+            Try
+                connection.Open()
+                Using reader As SqlDataReader = cmd.ExecuteReader()
+                    While reader.Read()
+                        Dim startTime As TimeSpan = DirectCast(reader("start_time"), TimeSpan)
+                        Dim endTime As TimeSpan = DirectCast(reader("end_time"), TimeSpan)
+
+                        Dim totalDuration As TimeSpan = endTime - startTime
+                        Dim slotDuration As TimeSpan = TimeSpan.FromTicks(totalDuration.Ticks \ 4)
+
+                        Dim currentTime As TimeSpan = startTime
+
+                        For i As Integer = 0 To 3
+                            availableTimes.Add(currentTime.ToString("hh\:mm"))
+                            currentTime = currentTime.Add(slotDuration)
+                        Next
+                    End While
+                End Using
+            Catch ex As Exception
+                Throw New Exception($"Error fetching available times: {ex.Message}")
+            End Try
+        End Using
+
+        Return availableTimes
+    End Function
+
+    Public Shared Function GetDoctorAvailability(doctorName As String) As String
+        Dim query As String = "
+    SELECT day_availability 
+    FROM tb_doctorinfo 
+    WHERE CONCAT('Dr. ', last_name, ', ', first_name) = @DoctorName"
+
+        Using connection As SqlConnection = GetConnection()
+            Dim command As New SqlCommand(query, connection)
+            command.Parameters.AddWithValue("@DoctorName", doctorName)
+
+            Try
+                connection.Open()
+                Dim result As Object = command.ExecuteScalar()
+                If result IsNot Nothing Then
+                    Dim dayAvailability As String = result.ToString().Replace("-", ",")
+                    Return dayAvailability
+                End If
+                Return String.Empty
+            Catch ex As Exception
+                Throw New Exception("Error fetching doctor availability: " & ex.Message)
+            End Try
+        End Using
+    End Function
+
+    Public Shared Function GetConsultationFee(doctorName As String) As Decimal?
+        Using connection As SqlConnection = GetConnection()
+            Dim query As String = "SELECT consultation_fee 
+                           FROM tb_doctorinfo 
+                           WHERE CONCAT('Dr. ', last_name, ', ', first_name) = @doctorName"
+
+            Dim command As New SqlCommand(query, connection)
+            command.Parameters.AddWithValue("@doctorName", doctorName)
+
+            Try
+                connection.Open()
+                Using reader As SqlDataReader = command.ExecuteReader()
+                    If reader.Read() Then
+                        If reader.IsDBNull(reader.GetOrdinal("consultation_fee")) Then
+                            Return Nothing
+                        Else
+                            Return reader.GetDecimal("consultation_fee")
+                        End If
+                    Else
+                        Return Nothing
+                    End If
+                End Using
+            Catch ex As Exception
+                Throw New Exception("Error fetching consultation fee: " & ex.Message)
+            End Try
+        End Using
+    End Function
+
+    Public Shared Function IsPatientAppointmentPendingOrAccepted(patientName As String) As Boolean
+        Try
+            Using connection As New SqlConnection(connectionString)
+                connection.Open()
+                Dim query As String = "
+        SELECT COUNT(*) 
+        FROM tb_appointmenthistory 
+        WHERE ah_Patient_Name = @PatientName 
+          AND ah_status IN ('Pending', 'Accepted')"
+
+                Using command As New SqlCommand(query, connection)
+                    command.Parameters.AddWithValue("@PatientName", patientName)
+
+                    Dim count As Integer = Convert.ToInt32(command.ExecuteScalar())
+                    Return count > 5
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show($"Error checking appointment status: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return False
+        End Try
+    End Function
+
+    Public Shared Function IsDoctorOccupied(doctorName As String, appointmentDate As DateTime) As Boolean
+        Try
+            Using connection As New SqlConnection(connectionString)
+                connection.Open()
+                Dim query As String = "
+        SELECT COUNT(*) 
+        FROM tb_appointmenthistory 
+        WHERE ah_Doctor_Name = @DoctorName 
+          AND ah_date = @AppointmentDate 
+          AND ah_status IN ('Pending', 'Accepted')"
+
+                Using command As New SqlCommand(query, connection)
+                    command.Parameters.AddWithValue("@DoctorName", doctorName)
+                    command.Parameters.AddWithValue("@AppointmentDate", appointmentDate.Date)
+
+                    Dim count As Integer = Convert.ToInt32(command.ExecuteScalar())
+                    Return count > 0
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show($"Error checking doctor's availability: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return False
+        End Try
+    End Function
+
+    Public Shared Function SaveAppointment(patientName As String, specialization As String, doctorName As String, timeSlot As String, appointmentDate As DateTime, consFee As Decimal) As Boolean
+        Try
+            Using connection As New MySqlConnection(connectionString)
+                Dim query As String = "INSERT INTO tb_appointmenthistory (ah_Patient_Name, ah_Specialization, ah_Doctor_Name, ah_time, ah_date, ah_consfee, ah_status) 
+                     VALUES (@PatientName, @Specialization, @DoctorName, @TimeSlot, @AppointmentDate, @ConsFee, @Pending)"
+
+                Using command As New MySqlCommand(query, connection)
+                    command.Parameters.AddWithValue("@PatientName", patientName)
+                    command.Parameters.AddWithValue("@Specialization", specialization)
+                    command.Parameters.AddWithValue("@DoctorName", doctorName)
+                    command.Parameters.AddWithValue("@TimeSlot", timeSlot)
+                    command.Parameters.AddWithValue("@AppointmentDate", appointmentDate)
+                    command.Parameters.AddWithValue("@ConsFee", consFee)
+                    command.Parameters.AddWithValue("@Pending", "Pending")
+
+                    connection.Open()
+
+                    Dim rowsAffected As Integer = command.ExecuteNonQuery()
+
+                    Return rowsAffected > 0
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show($"An error occurred while saving the appointment: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return False
+        End Try
+    End Function
+
 
 End Class
