@@ -86,7 +86,7 @@ Partial Class DoctorLogin
         guna2CustomGradientPanel1.Location = New Point(-2, -1)
         guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1"
         guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges20
-        guna2CustomGradientPanel1.Size = New Size(1920, 1080)
+        guna2CustomGradientPanel1.Size = New Size(1925, 1084)
         guna2CustomGradientPanel1.TabIndex = 177
         ' 
         ' doctor_MinimizeButton
@@ -306,11 +306,11 @@ Partial Class DoctorLogin
         doctor_UsernameTxtbox.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         doctor_UsernameTxtbox.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         doctor_UsernameTxtbox.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        doctor_UsernameTxtbox.Font = New Font("Segoe UI", 9F)
+        doctor_UsernameTxtbox.Font = New Font("Microsoft Sans Serif", 11F)
         doctor_UsernameTxtbox.ForeColor = Color.Black
         doctor_UsernameTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         doctor_UsernameTxtbox.Location = New Point(133, 483)
-        doctor_UsernameTxtbox.Margin = New Padding(3, 4, 3, 4)
+        doctor_UsernameTxtbox.Margin = New Padding(4, 5, 4, 5)
         doctor_UsernameTxtbox.Name = "doctor_UsernameTxtbox"
         doctor_UsernameTxtbox.PlaceholderForeColor = Color.Black
         doctor_UsernameTxtbox.PlaceholderText = ""
@@ -331,11 +331,11 @@ Partial Class DoctorLogin
         doctor_PasswordTxtbox.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         doctor_PasswordTxtbox.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         doctor_PasswordTxtbox.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        doctor_PasswordTxtbox.Font = New Font("Segoe UI", 9F)
+        doctor_PasswordTxtbox.Font = New Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         doctor_PasswordTxtbox.ForeColor = Color.Black
         doctor_PasswordTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         doctor_PasswordTxtbox.Location = New Point(133, 604)
-        doctor_PasswordTxtbox.Margin = New Padding(3, 4, 3, 4)
+        doctor_PasswordTxtbox.Margin = New Padding(4, 5, 4, 5)
         doctor_PasswordTxtbox.Name = "doctor_PasswordTxtbox"
         doctor_PasswordTxtbox.PasswordChar = "●"c
         doctor_PasswordTxtbox.PlaceholderForeColor = Color.Black

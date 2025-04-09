@@ -137,7 +137,7 @@ Partial Class AdminLogin
         admin_showpass.AutoSize = True
         admin_showpass.Cursor = Cursors.Hand
         admin_showpass.Font = New Font("Microsoft Sans Serif", 11F)
-        admin_showpass.Location = New Point(137, 683)
+        admin_showpass.Location = New Point(133, 684)
         admin_showpass.Name = "admin_showpass"
         admin_showpass.Size = New Size(136, 22)
         admin_showpass.TabIndex = 3
@@ -254,11 +254,11 @@ Partial Class AdminLogin
         UsernameTxtbox.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         UsernameTxtbox.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         UsernameTxtbox.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        UsernameTxtbox.Font = New Font("Segoe UI", 9F)
+        UsernameTxtbox.Font = New Font("Microsoft Sans Serif", 11F)
         UsernameTxtbox.ForeColor = Color.Black
         UsernameTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         UsernameTxtbox.Location = New Point(133, 483)
-        UsernameTxtbox.Margin = New Padding(3, 4, 3, 4)
+        UsernameTxtbox.Margin = New Padding(4, 5, 4, 5)
         UsernameTxtbox.Name = "UsernameTxtbox"
         UsernameTxtbox.PlaceholderForeColor = Color.Black
         UsernameTxtbox.PlaceholderText = ""
@@ -279,11 +279,11 @@ Partial Class AdminLogin
         PasswordTxtbox.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         PasswordTxtbox.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         PasswordTxtbox.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        PasswordTxtbox.Font = New Font("Segoe UI", 9F)
+        PasswordTxtbox.Font = New Font("Microsoft Sans Serif", 11F)
         PasswordTxtbox.ForeColor = Color.Black
         PasswordTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         PasswordTxtbox.Location = New Point(133, 604)
-        PasswordTxtbox.Margin = New Padding(3, 4, 3, 4)
+        PasswordTxtbox.Margin = New Padding(4, 5, 4, 5)
         PasswordTxtbox.Name = "PasswordTxtbox"
         PasswordTxtbox.PasswordChar = "●"c
         PasswordTxtbox.PlaceholderForeColor = Color.Black

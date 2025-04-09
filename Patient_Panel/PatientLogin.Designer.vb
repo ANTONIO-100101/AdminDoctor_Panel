@@ -87,7 +87,7 @@ Partial Class PatientLogin
         guna2CustomGradientPanel1.Location = New Point(-1, -1)
         guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1"
         guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges20
-        guna2CustomGradientPanel1.Size = New Size(1926, 1080)
+        guna2CustomGradientPanel1.Size = New Size(1923, 1083)
         guna2CustomGradientPanel1.TabIndex = 175
         ' 
         ' MinimizeButton
@@ -320,11 +320,11 @@ Partial Class PatientLogin
         UsernameTxtbox.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         UsernameTxtbox.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         UsernameTxtbox.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        UsernameTxtbox.Font = New Font("Segoe UI", 9F)
+        UsernameTxtbox.Font = New Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         UsernameTxtbox.ForeColor = Color.Black
         UsernameTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         UsernameTxtbox.Location = New Point(133, 483)
-        UsernameTxtbox.Margin = New Padding(3, 4, 3, 4)
+        UsernameTxtbox.Margin = New Padding(4, 5, 4, 5)
         UsernameTxtbox.Name = "UsernameTxtbox"
         UsernameTxtbox.PlaceholderForeColor = Color.Black
         UsernameTxtbox.PlaceholderText = ""
@@ -345,11 +345,11 @@ Partial Class PatientLogin
         PasswordTxtbox.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         PasswordTxtbox.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         PasswordTxtbox.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        PasswordTxtbox.Font = New Font("Segoe UI", 9F)
+        PasswordTxtbox.Font = New Font("Microsoft Sans Serif", 11F)
         PasswordTxtbox.ForeColor = Color.Black
         PasswordTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         PasswordTxtbox.Location = New Point(133, 604)
-        PasswordTxtbox.Margin = New Padding(3, 4, 3, 4)
+        PasswordTxtbox.Margin = New Padding(4, 5, 4, 5)
         PasswordTxtbox.Name = "PasswordTxtbox"
         PasswordTxtbox.PasswordChar = "●"c
         PasswordTxtbox.PlaceholderForeColor = Color.Black
