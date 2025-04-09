@@ -402,7 +402,7 @@ Partial Class DoctorDashboard
         NameLabel.BackColor = Color.Transparent
         NameLabel.Font = New Font("Tahoma", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         NameLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        NameLabel.Location = New Point(1706, 52)
+        NameLabel.Location = New Point(1021, 53)
         NameLabel.Margin = New Padding(3, 2, 3, 2)
         NameLabel.Name = "NameLabel"
         NameLabel.Size = New Size(122, 41)
@@ -414,7 +414,7 @@ Partial Class DoctorDashboard
         ad_guna2HtmlLabel2.BackColor = Color.Transparent
         ad_guna2HtmlLabel2.Font = New Font("Tahoma", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         ad_guna2HtmlLabel2.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        ad_guna2HtmlLabel2.Location = New Point(1541, 52)
+        ad_guna2HtmlLabel2.Location = New Point(938, 58)
         ad_guna2HtmlLabel2.Margin = New Padding(3, 2, 3, 2)
         ad_guna2HtmlLabel2.Name = "ad_guna2HtmlLabel2"
         ad_guna2HtmlLabel2.Size = New Size(70, 35)
