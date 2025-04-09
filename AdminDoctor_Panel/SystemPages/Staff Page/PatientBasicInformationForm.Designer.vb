@@ -25,6 +25,8 @@ Partial Class PatientBasicInformationForm
         components = New ComponentModel.Container()
         Dim CustomizableEdges29 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges30 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -40,8 +42,6 @@ Partial Class PatientBasicInformationForm
         Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -55,7 +55,7 @@ Partial Class PatientBasicInformationForm
         Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
-        guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(components)
+        RegisterButton = New Guna.UI2.WinForms.Guna2Button()
         DeleteBtn = New Guna.UI2.WinForms.Guna2Button()
         guna2HtmlLabel21 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         guna2PictureBox3 = New Guna.UI2.WinForms.Guna2PictureBox()
@@ -78,7 +78,6 @@ Partial Class PatientBasicInformationForm
         guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         BloodTypeComboBox = New Guna.UI2.WinForms.Guna2ComboBox()
         PreviousSurgeryTextBox = New Guna.UI2.WinForms.Guna2TextBox()
-        RegisterButton = New Guna.UI2.WinForms.Guna2Button()
         guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         guna2HtmlLabel9 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         guna2HtmlLabel10 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -92,12 +91,16 @@ Partial Class PatientBasicInformationForm
         ExitButton = New Guna.UI2.WinForms.Guna2Button()
         HeightTextBox = New Guna.UI2.WinForms.Guna2TextBox()
         WeightTextBox = New Guna.UI2.WinForms.Guna2TextBox()
+        guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(components)
+        Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Guna2CustomGradientPanel1.SuspendLayout()
         CType(guna2PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Guna2CustomGradientPanel1
         ' 
+        Guna2CustomGradientPanel1.BackColor = Color.White
+        Guna2CustomGradientPanel1.Controls.Add(Guna2HtmlLabel2)
         Guna2CustomGradientPanel1.Controls.Add(RegisterButton)
         Guna2CustomGradientPanel1.Controls.Add(DeleteBtn)
         Guna2CustomGradientPanel1.Controls.Add(guna2HtmlLabel21)
@@ -113,7 +116,6 @@ Partial Class PatientBasicInformationForm
         Guna2CustomGradientPanel1.Controls.Add(guna2HtmlLabel14)
         Guna2CustomGradientPanel1.Controls.Add(AlergyTextbox)
         Guna2CustomGradientPanel1.Controls.Add(guna2HtmlLabel12)
-        Guna2CustomGradientPanel1.Controls.Add(guna2HtmlLabel13)
         Guna2CustomGradientPanel1.Controls.Add(MedicationTxtbox)
         Guna2CustomGradientPanel1.Controls.Add(guna2HtmlLabel8)
         Guna2CustomGradientPanel1.Controls.Add(guna2HtmlLabel11)
@@ -134,24 +136,38 @@ Partial Class PatientBasicInformationForm
         Guna2CustomGradientPanel1.Controls.Add(ExitButton)
         Guna2CustomGradientPanel1.Controls.Add(HeightTextBox)
         Guna2CustomGradientPanel1.Controls.Add(WeightTextBox)
+        Guna2CustomGradientPanel1.Controls.Add(guna2HtmlLabel13)
         Guna2CustomGradientPanel1.CustomizableEdges = CustomizableEdges29
         Guna2CustomGradientPanel1.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel1.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel1.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel1.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
-        Guna2CustomGradientPanel1.Location = New Point(-1, -7)
+        Guna2CustomGradientPanel1.Location = New Point(-1, -5)
+        Guna2CustomGradientPanel1.Margin = New Padding(3, 2, 3, 2)
         Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
         Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges30
-        Guna2CustomGradientPanel1.Size = New Size(1203, 797)
+        Guna2CustomGradientPanel1.Size = New Size(1920, 1080)
         Guna2CustomGradientPanel1.TabIndex = 0
         ' 
-        ' guna2BorderlessForm1
+        ' RegisterButton
         ' 
-        guna2BorderlessForm1.BorderRadius = 15
-        guna2BorderlessForm1.ContainerControl = Me
-        guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6R
-        guna2BorderlessForm1.DragStartTransparencyValue = 1R
-        guna2BorderlessForm1.TransparentWhileDrag = True
+        RegisterButton.BackColor = Color.Transparent
+        RegisterButton.BorderRadius = 15
+        RegisterButton.CustomizableEdges = CustomizableEdges1
+        RegisterButton.DisabledState.BorderColor = Color.DarkGray
+        RegisterButton.DisabledState.CustomBorderColor = Color.DarkGray
+        RegisterButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        RegisterButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        RegisterButton.FillColor = Color.Blue
+        RegisterButton.Font = New Font("Microsoft Sans Serif", 11.999999F)
+        RegisterButton.ForeColor = SystemColors.Window
+        RegisterButton.Location = New Point(884, 985)
+        RegisterButton.Margin = New Padding(3, 2, 3, 2)
+        RegisterButton.Name = "RegisterButton"
+        RegisterButton.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        RegisterButton.Size = New Size(200, 50)
+        RegisterButton.TabIndex = 3
+        RegisterButton.Text = "Continue"
         ' 
         ' DeleteBtn
         ' 
@@ -165,10 +181,11 @@ Partial Class PatientBasicInformationForm
         DeleteBtn.FillColor = Color.Red
         DeleteBtn.Font = New Font("Microsoft Sans Serif", 9.75F)
         DeleteBtn.ForeColor = Color.White
-        DeleteBtn.Location = New Point(890, 665)
+        DeleteBtn.Location = New Point(1210, 732)
+        DeleteBtn.Margin = New Padding(3, 2, 3, 2)
         DeleteBtn.Name = "DeleteBtn"
         DeleteBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        DeleteBtn.Size = New Size(143, 49)
+        DeleteBtn.Size = New Size(150, 46)
         DeleteBtn.TabIndex = 218
         DeleteBtn.Text = "Delete Patient"
         DeleteBtn.Visible = False
@@ -178,9 +195,10 @@ Partial Class PatientBasicInformationForm
         guna2HtmlLabel21.BackColor = Color.Transparent
         guna2HtmlLabel21.Font = New Font("Tahoma", 26.25F, FontStyle.Bold)
         guna2HtmlLabel21.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel21.Location = New Point(349, 46)
+        guna2HtmlLabel21.Location = New Point(305, 34)
+        guna2HtmlLabel21.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel21.Name = "guna2HtmlLabel21"
-        guna2HtmlLabel21.Size = New Size(555, 55)
+        guna2HtmlLabel21.Size = New Size(445, 44)
         guna2HtmlLabel21.TabIndex = 251
         guna2HtmlLabel21.Text = "Basic Health Information"
         ' 
@@ -190,11 +208,10 @@ Partial Class PatientBasicInformationForm
         guna2PictureBox3.CustomizableEdges = CustomizableEdges5
         guna2PictureBox3.Image = CType(resources.GetObject("guna2PictureBox3.Image"), Image)
         guna2PictureBox3.ImageRotate = 0F
-        guna2PictureBox3.Location = New Point(243, 30)
-        guna2PictureBox3.Margin = New Padding(3, 4, 3, 4)
+        guna2PictureBox3.Location = New Point(616, 60)
         guna2PictureBox3.Name = "guna2PictureBox3"
         guna2PictureBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        guna2PictureBox3.Size = New Size(100, 88)
+        guna2PictureBox3.Size = New Size(88, 66)
         guna2PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
         guna2PictureBox3.TabIndex = 252
         guna2PictureBox3.TabStop = False
@@ -209,22 +226,22 @@ Partial Class PatientBasicInformationForm
         BackButton.ImageOffset = New Point(0, 0)
         BackButton.ImageRotate = 0F
         BackButton.ImageSize = New Size(40, 45)
-        BackButton.Location = New Point(100, 34)
-        BackButton.Margin = New Padding(3, 4, 3, 4)
+        BackButton.Location = New Point(10, 21)
         BackButton.Name = "BackButton"
         BackButton.PressedState.ImageSize = New Size(64, 64)
         BackButton.ShadowDecoration.CustomizableEdges = CustomizableEdges7
-        BackButton.Size = New Size(67, 58)
+        BackButton.Size = New Size(59, 44)
         BackButton.TabIndex = 250
         ' 
         ' guna2HtmlLabel20
         ' 
         guna2HtmlLabel20.BackColor = Color.Transparent
         guna2HtmlLabel20.Font = New Font("Impact", 15F)
-        guna2HtmlLabel20.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel20.Location = New Point(173, 46)
+        guna2HtmlLabel20.ForeColor = Color.White
+        guna2HtmlLabel20.Location = New Point(74, 30)
+        guna2HtmlLabel20.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel20.Name = "guna2HtmlLabel20"
-        guna2HtmlLabel20.Size = New Size(54, 34)
+        guna2HtmlLabel20.Size = New Size(44, 27)
         guna2HtmlLabel20.TabIndex = 249
         guna2HtmlLabel20.Text = "Back"
         ' 
@@ -238,11 +255,12 @@ Partial Class PatientBasicInformationForm
         MinimizeButton.ImageOffset = New Point(0, 0)
         MinimizeButton.ImageRotate = 0F
         MinimizeButton.ImageSize = New Size(20, 30)
-        MinimizeButton.Location = New Point(1002, 14)
+        MinimizeButton.Location = New Point(1831, 3)
+        MinimizeButton.Margin = New Padding(3, 2, 3, 2)
         MinimizeButton.Name = "MinimizeButton"
         MinimizeButton.PressedState.ImageSize = New Size(20, 30)
         MinimizeButton.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        MinimizeButton.Size = New Size(21, 23)
+        MinimizeButton.Size = New Size(43, 26)
         MinimizeButton.TabIndex = 248
         ' 
         ' guna2HtmlLabel19
@@ -250,9 +268,10 @@ Partial Class PatientBasicInformationForm
         guna2HtmlLabel19.BackColor = Color.Transparent
         guna2HtmlLabel19.Font = New Font("Microsoft Sans Serif", 18F)
         guna2HtmlLabel19.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel19.Location = New Point(564, 743)
+        guna2HtmlLabel19.Location = New Point(964, 1039)
+        guna2HtmlLabel19.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel19.Name = "guna2HtmlLabel19"
-        guna2HtmlLabel19.Size = New Size(45, 38)
+        guna2HtmlLabel19.Size = New Size(36, 31)
         guna2HtmlLabel19.TabIndex = 243
         guna2HtmlLabel19.Text = "2/3"
         ' 
@@ -261,9 +280,10 @@ Partial Class PatientBasicInformationForm
         guna2HtmlLabel18.BackColor = Color.Transparent
         guna2HtmlLabel18.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
         guna2HtmlLabel18.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel18.Location = New Point(760, 613)
+        guna2HtmlLabel18.Location = New Point(665, 460)
+        guna2HtmlLabel18.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel18.Name = "guna2HtmlLabel18"
-        guna2HtmlLabel18.Size = New Size(117, 21)
+        guna2HtmlLabel18.Size = New Size(93, 15)
         guna2HtmlLabel18.TabIndex = 242
         guna2HtmlLabel18.Text = "Type N/A if none"
         ' 
@@ -272,9 +292,10 @@ Partial Class PatientBasicInformationForm
         guna2HtmlLabel17.BackColor = Color.Transparent
         guna2HtmlLabel17.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
         guna2HtmlLabel17.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel17.Location = New Point(518, 613)
+        guna2HtmlLabel17.Location = New Point(453, 460)
+        guna2HtmlLabel17.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel17.Name = "guna2HtmlLabel17"
-        guna2HtmlLabel17.Size = New Size(117, 21)
+        guna2HtmlLabel17.Size = New Size(93, 15)
         guna2HtmlLabel17.TabIndex = 241
         guna2HtmlLabel17.Text = "Type N/A if none"
         ' 
@@ -283,9 +304,10 @@ Partial Class PatientBasicInformationForm
         guna2HtmlLabel16.BackColor = Color.Transparent
         guna2HtmlLabel16.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
         guna2HtmlLabel16.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel16.Location = New Point(284, 613)
+        guna2HtmlLabel16.Location = New Point(248, 460)
+        guna2HtmlLabel16.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel16.Name = "guna2HtmlLabel16"
-        guna2HtmlLabel16.Size = New Size(117, 21)
+        guna2HtmlLabel16.Size = New Size(93, 15)
         guna2HtmlLabel16.TabIndex = 240
         guna2HtmlLabel16.Text = "Type N/A if none"
         ' 
@@ -294,9 +316,10 @@ Partial Class PatientBasicInformationForm
         guna2HtmlLabel15.BackColor = Color.Transparent
         guna2HtmlLabel15.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
         guna2HtmlLabel15.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel15.Location = New Point(371, 494)
+        guna2HtmlLabel15.Location = New Point(325, 370)
+        guna2HtmlLabel15.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel15.Name = "guna2HtmlLabel15"
-        guna2HtmlLabel15.Size = New Size(117, 21)
+        guna2HtmlLabel15.Size = New Size(93, 15)
         guna2HtmlLabel15.TabIndex = 239
         guna2HtmlLabel15.Text = "Type N/A if none"
         ' 
@@ -305,9 +328,10 @@ Partial Class PatientBasicInformationForm
         guna2HtmlLabel14.BackColor = Color.Transparent
         guna2HtmlLabel14.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
         guna2HtmlLabel14.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel14.Location = New Point(612, 494)
+        guna2HtmlLabel14.Location = New Point(536, 370)
+        guna2HtmlLabel14.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel14.Name = "guna2HtmlLabel14"
-        guna2HtmlLabel14.Size = New Size(117, 21)
+        guna2HtmlLabel14.Size = New Size(93, 15)
         guna2HtmlLabel14.TabIndex = 238
         guna2HtmlLabel14.Text = "Type N/A if none"
         ' 
@@ -326,24 +350,25 @@ Partial Class PatientBasicInformationForm
         AlergyTextbox.Font = New Font("Segoe UI", 9F)
         AlergyTextbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         AlergyTextbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        AlergyTextbox.Location = New Point(357, 437)
-        AlergyTextbox.Margin = New Padding(3, 5, 3, 5)
+        AlergyTextbox.Location = New Point(692, 533)
+        AlergyTextbox.Margin = New Padding(3, 4, 3, 4)
         AlergyTextbox.Name = "AlergyTextbox"
         AlergyTextbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         AlergyTextbox.PlaceholderText = ""
         AlergyTextbox.SelectedText = ""
         AlergyTextbox.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        AlergyTextbox.Size = New Size(174, 39)
+        AlergyTextbox.Size = New Size(250, 60)
         AlergyTextbox.TabIndex = 217
         ' 
         ' guna2HtmlLabel12
         ' 
         guna2HtmlLabel12.BackColor = Color.Transparent
         guna2HtmlLabel12.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
-        guna2HtmlLabel12.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel12.Location = New Point(364, 410)
+        guna2HtmlLabel12.ForeColor = Color.White
+        guna2HtmlLabel12.Location = New Point(698, 515)
+        guna2HtmlLabel12.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel12.Name = "guna2HtmlLabel12"
-        guna2HtmlLabel12.Size = New Size(58, 23)
+        guna2HtmlLabel12.Size = New Size(47, 19)
         guna2HtmlLabel12.TabIndex = 237
         guna2HtmlLabel12.Text = "Allergy"
         ' 
@@ -351,10 +376,11 @@ Partial Class PatientBasicInformationForm
         ' 
         guna2HtmlLabel13.BackColor = Color.Transparent
         guna2HtmlLabel13.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
-        guna2HtmlLabel13.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel13.Location = New Point(604, 410)
+        guna2HtmlLabel13.ForeColor = Color.White
+        guna2HtmlLabel13.Location = New Point(1008, 515)
+        guna2HtmlLabel13.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel13.Name = "guna2HtmlLabel13"
-        guna2HtmlLabel13.Size = New Size(90, 23)
+        guna2HtmlLabel13.Size = New Size(72, 19)
         guna2HtmlLabel13.TabIndex = 236
         guna2HtmlLabel13.Text = "Medication"
         ' 
@@ -373,14 +399,14 @@ Partial Class PatientBasicInformationForm
         MedicationTxtbox.Font = New Font("Segoe UI", 9F)
         MedicationTxtbox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         MedicationTxtbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        MedicationTxtbox.Location = New Point(604, 437)
-        MedicationTxtbox.Margin = New Padding(3, 5, 3, 5)
+        MedicationTxtbox.Location = New Point(999, 533)
+        MedicationTxtbox.Margin = New Padding(3, 4, 3, 4)
         MedicationTxtbox.Name = "MedicationTxtbox"
         MedicationTxtbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         MedicationTxtbox.PlaceholderText = ""
         MedicationTxtbox.SelectedText = ""
         MedicationTxtbox.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        MedicationTxtbox.Size = New Size(174, 39)
+        MedicationTxtbox.Size = New Size(250, 60)
         MedicationTxtbox.TabIndex = 219
         ' 
         ' guna2HtmlLabel8
@@ -388,9 +414,10 @@ Partial Class PatientBasicInformationForm
         guna2HtmlLabel8.BackColor = Color.Transparent
         guna2HtmlLabel8.Font = New Font("Segoe UI", 8.25F)
         guna2HtmlLabel8.ForeColor = SystemColors.Control
-        guna2HtmlLabel8.Location = New Point(581, 383)
+        guna2HtmlLabel8.Location = New Point(999, 501)
+        guna2HtmlLabel8.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel8.Name = "guna2HtmlLabel8"
-        guna2HtmlLabel8.Size = New Size(417, 21)
+        guna2HtmlLabel8.Size = New Size(348, 15)
         guna2HtmlLabel8.TabIndex = 235
         guna2HtmlLabel8.Text = "_____________________________________________________________________"
         ' 
@@ -399,9 +426,10 @@ Partial Class PatientBasicInformationForm
         guna2HtmlLabel11.BackColor = Color.Transparent
         guna2HtmlLabel11.Font = New Font("Segoe UI", 8.25F)
         guna2HtmlLabel11.ForeColor = SystemColors.Control
-        guna2HtmlLabel11.Location = New Point(189, 383)
+        guna2HtmlLabel11.Location = New Point(594, 501)
+        guna2HtmlLabel11.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel11.Name = "guna2HtmlLabel11"
-        guna2HtmlLabel11.Size = New Size(417, 21)
+        guna2HtmlLabel11.Size = New Size(348, 15)
         guna2HtmlLabel11.TabIndex = 234
         guna2HtmlLabel11.Text = "_____________________________________________________________________"
         ' 
@@ -409,11 +437,10 @@ Partial Class PatientBasicInformationForm
         ' 
         NameLabel.BackColor = Color.Transparent
         NameLabel.Font = New Font("Tahoma", 15.75F, FontStyle.Bold)
-        NameLabel.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        NameLabel.Location = New Point(513, 127)
-        NameLabel.Margin = New Padding(3, 4, 3, 4)
+        NameLabel.ForeColor = Color.White
+        NameLabel.Location = New Point(971, 139)
         NameLabel.Name = "NameLabel"
-        NameLabel.Size = New Size(80, 33)
+        NameLabel.Size = New Size(65, 27)
         NameLabel.TabIndex = 233
         NameLabel.Text = "NAME"
         ' 
@@ -421,11 +448,10 @@ Partial Class PatientBasicInformationForm
         ' 
         guna2HtmlLabel1.BackColor = Color.Transparent
         guna2HtmlLabel1.Font = New Font("Tahoma", 15.75F, FontStyle.Bold)
-        guna2HtmlLabel1.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel1.Location = New Point(465, 127)
-        guna2HtmlLabel1.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel1.ForeColor = Color.White
+        guna2HtmlLabel1.Location = New Point(923, 139)
         guna2HtmlLabel1.Name = "guna2HtmlLabel1"
-        guna2HtmlLabel1.Size = New Size(45, 33)
+        guna2HtmlLabel1.Size = New Size(36, 27)
         guna2HtmlLabel1.TabIndex = 232
         guna2HtmlLabel1.Text = "HI!"
         ' 
@@ -440,11 +466,10 @@ Partial Class PatientBasicInformationForm
         BloodTypeComboBox.Font = New Font("Segoe UI", 10F)
         BloodTypeComboBox.ForeColor = Color.FromArgb(CByte(68), CByte(88), CByte(112))
         BloodTypeComboBox.ItemHeight = 30
-        BloodTypeComboBox.Location = New Point(592, 311)
-        BloodTypeComboBox.Margin = New Padding(3, 4, 3, 4)
+        BloodTypeComboBox.Location = New Point(1023, 398)
         BloodTypeComboBox.Name = "BloodTypeComboBox"
         BloodTypeComboBox.ShadowDecoration.CustomizableEdges = CustomizableEdges14
-        BloodTypeComboBox.Size = New Size(174, 36)
+        BloodTypeComboBox.Size = New Size(250, 36)
         BloodTypeComboBox.TabIndex = 216
         ' 
         ' PreviousSurgeryTextBox
@@ -462,43 +487,25 @@ Partial Class PatientBasicInformationForm
         PreviousSurgeryTextBox.Font = New Font("Segoe UI", 9F)
         PreviousSurgeryTextBox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         PreviousSurgeryTextBox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        PreviousSurgeryTextBox.Location = New Point(277, 555)
-        PreviousSurgeryTextBox.Margin = New Padding(3, 5, 3, 5)
+        PreviousSurgeryTextBox.Location = New Point(573, 621)
+        PreviousSurgeryTextBox.Margin = New Padding(3, 4, 3, 4)
         PreviousSurgeryTextBox.Name = "PreviousSurgeryTextBox"
         PreviousSurgeryTextBox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         PreviousSurgeryTextBox.PlaceholderText = ""
         PreviousSurgeryTextBox.SelectedText = ""
         PreviousSurgeryTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges16
-        PreviousSurgeryTextBox.Size = New Size(174, 39)
+        PreviousSurgeryTextBox.Size = New Size(250, 60)
         PreviousSurgeryTextBox.TabIndex = 220
-        ' 
-        ' RegisterButton
-        ' 
-        RegisterButton.BackColor = Color.Transparent
-        RegisterButton.BorderRadius = 15
-        RegisterButton.CustomizableEdges = CustomizableEdges1
-        RegisterButton.DisabledState.BorderColor = Color.DarkGray
-        RegisterButton.DisabledState.CustomBorderColor = Color.DarkGray
-        RegisterButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        RegisterButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        RegisterButton.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        RegisterButton.Font = New Font("Microsoft Sans Serif", 11.999999F)
-        RegisterButton.ForeColor = Color.White
-        RegisterButton.Location = New Point(492, 665)
-        RegisterButton.Name = "RegisterButton"
-        RegisterButton.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        RegisterButton.Size = New Size(174, 49)
-        RegisterButton.TabIndex = 3
-        RegisterButton.Text = "Continue"
         ' 
         ' guna2HtmlLabel6
         ' 
         guna2HtmlLabel6.BackColor = Color.Transparent
         guna2HtmlLabel6.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
-        guna2HtmlLabel6.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel6.Location = New Point(284, 529)
+        guna2HtmlLabel6.ForeColor = Color.White
+        guna2HtmlLabel6.Location = New Point(582, 603)
+        guna2HtmlLabel6.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel6.Name = "guna2HtmlLabel6"
-        guna2HtmlLabel6.Size = New Size(132, 23)
+        guna2HtmlLabel6.Size = New Size(107, 19)
         guna2HtmlLabel6.TabIndex = 230
         guna2HtmlLabel6.Text = "Previous Surgery"
         ' 
@@ -506,10 +513,11 @@ Partial Class PatientBasicInformationForm
         ' 
         guna2HtmlLabel9.BackColor = Color.Transparent
         guna2HtmlLabel9.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
-        guna2HtmlLabel9.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel9.Location = New Point(746, 529)
+        guna2HtmlLabel9.ForeColor = Color.White
+        guna2HtmlLabel9.Location = New Point(1115, 603)
+        guna2HtmlLabel9.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel9.Name = "guna2HtmlLabel9"
-        guna2HtmlLabel9.Size = New Size(82, 23)
+        guna2HtmlLabel9.Size = New Size(67, 19)
         guna2HtmlLabel9.TabIndex = 229
         guna2HtmlLabel9.Text = "Treatment"
         ' 
@@ -517,10 +525,11 @@ Partial Class PatientBasicInformationForm
         ' 
         guna2HtmlLabel10.BackColor = Color.Transparent
         guna2HtmlLabel10.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
-        guna2HtmlLabel10.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel10.Location = New Point(514, 529)
+        guna2HtmlLabel10.ForeColor = Color.White
+        guna2HtmlLabel10.Location = New Point(848, 603)
+        guna2HtmlLabel10.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel10.Name = "guna2HtmlLabel10"
-        guna2HtmlLabel10.Size = New Size(110, 23)
+        guna2HtmlLabel10.Size = New Size(89, 19)
         guna2HtmlLabel10.TabIndex = 228
         guna2HtmlLabel10.Text = "Pre-Condition"
         ' 
@@ -539,14 +548,14 @@ Partial Class PatientBasicInformationForm
         TreatmentTextBox.Font = New Font("Segoe UI", 9F)
         TreatmentTextBox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         TreatmentTextBox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        TreatmentTextBox.Location = New Point(746, 555)
-        TreatmentTextBox.Margin = New Padding(3, 5, 3, 5)
+        TreatmentTextBox.Location = New Point(1110, 621)
+        TreatmentTextBox.Margin = New Padding(3, 4, 3, 4)
         TreatmentTextBox.Name = "TreatmentTextBox"
         TreatmentTextBox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         TreatmentTextBox.PlaceholderText = ""
         TreatmentTextBox.SelectedText = ""
         TreatmentTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges18
-        TreatmentTextBox.Size = New Size(174, 39)
+        TreatmentTextBox.Size = New Size(250, 60)
         TreatmentTextBox.TabIndex = 222
         ' 
         ' preConditionTextBox
@@ -564,24 +573,25 @@ Partial Class PatientBasicInformationForm
         preConditionTextBox.Font = New Font("Segoe UI", 9F)
         preConditionTextBox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         preConditionTextBox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        preConditionTextBox.Location = New Point(514, 555)
-        preConditionTextBox.Margin = New Padding(3, 5, 3, 5)
+        preConditionTextBox.Location = New Point(842, 621)
+        preConditionTextBox.Margin = New Padding(3, 4, 3, 4)
         preConditionTextBox.Name = "preConditionTextBox"
         preConditionTextBox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         preConditionTextBox.PlaceholderText = ""
         preConditionTextBox.SelectedText = ""
         preConditionTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges20
-        preConditionTextBox.Size = New Size(174, 39)
+        preConditionTextBox.Size = New Size(250, 60)
         preConditionTextBox.TabIndex = 221
         ' 
         ' guna2HtmlLabel7
         ' 
         guna2HtmlLabel7.BackColor = Color.Transparent
         guna2HtmlLabel7.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
-        guna2HtmlLabel7.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel7.Location = New Point(357, 279)
+        guna2HtmlLabel7.ForeColor = Color.White
+        guna2HtmlLabel7.Location = New Point(683, 378)
+        guna2HtmlLabel7.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel7.Name = "guna2HtmlLabel7"
-        guna2HtmlLabel7.Size = New Size(33, 23)
+        guna2HtmlLabel7.Size = New Size(27, 19)
         guna2HtmlLabel7.TabIndex = 227
         guna2HtmlLabel7.Text = "BMI"
         ' 
@@ -589,10 +599,11 @@ Partial Class PatientBasicInformationForm
         ' 
         guna2HtmlLabel5.BackColor = Color.Transparent
         guna2HtmlLabel5.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
-        guna2HtmlLabel5.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel5.Location = New Point(592, 279)
+        guna2HtmlLabel5.ForeColor = Color.White
+        guna2HtmlLabel5.Location = New Point(1026, 378)
+        guna2HtmlLabel5.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel5.Name = "guna2HtmlLabel5"
-        guna2HtmlLabel5.Size = New Size(89, 23)
+        guna2HtmlLabel5.Size = New Size(73, 19)
         guna2HtmlLabel5.TabIndex = 226
         guna2HtmlLabel5.Text = "Blood Type"
         ' 
@@ -600,10 +611,11 @@ Partial Class PatientBasicInformationForm
         ' 
         guna2HtmlLabel4.BackColor = Color.Transparent
         guna2HtmlLabel4.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
-        guna2HtmlLabel4.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel4.Location = New Point(592, 170)
+        guna2HtmlLabel4.ForeColor = Color.White
+        guna2HtmlLabel4.Location = New Point(1025, 291)
+        guna2HtmlLabel4.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel4.Name = "guna2HtmlLabel4"
-        guna2HtmlLabel4.Size = New Size(59, 23)
+        guna2HtmlLabel4.Size = New Size(48, 19)
         guna2HtmlLabel4.TabIndex = 225
         guna2HtmlLabel4.Text = "Weight"
         ' 
@@ -611,10 +623,11 @@ Partial Class PatientBasicInformationForm
         ' 
         guna2HtmlLabel3.BackColor = Color.Transparent
         guna2HtmlLabel3.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
-        guna2HtmlLabel3.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2HtmlLabel3.Location = New Point(357, 170)
+        guna2HtmlLabel3.ForeColor = Color.White
+        guna2HtmlLabel3.Location = New Point(682, 291)
+        guna2HtmlLabel3.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel3.Name = "guna2HtmlLabel3"
-        guna2HtmlLabel3.Size = New Size(55, 23)
+        guna2HtmlLabel3.Size = New Size(45, 19)
         guna2HtmlLabel3.TabIndex = 224
         guna2HtmlLabel3.Text = "Height"
         ' 
@@ -633,15 +646,15 @@ Partial Class PatientBasicInformationForm
         BmiTextBox.Font = New Font("Segoe UI", 9F)
         BmiTextBox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         BmiTextBox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        BmiTextBox.Location = New Point(357, 306)
-        BmiTextBox.Margin = New Padding(3, 5, 3, 5)
+        BmiTextBox.Location = New Point(680, 398)
+        BmiTextBox.Margin = New Padding(3, 4, 3, 4)
         BmiTextBox.Name = "BmiTextBox"
         BmiTextBox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         BmiTextBox.PlaceholderText = ""
         BmiTextBox.ReadOnly = True
         BmiTextBox.SelectedText = ""
         BmiTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges22
-        BmiTextBox.Size = New Size(174, 49)
+        BmiTextBox.Size = New Size(250, 60)
         BmiTextBox.TabIndex = 215
         ' 
         ' ExitButton
@@ -655,10 +668,11 @@ Partial Class PatientBasicInformationForm
         ExitButton.FillColor = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         ExitButton.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold)
         ExitButton.ForeColor = Color.White
-        ExitButton.Location = New Point(1048, 14)
+        ExitButton.Location = New Point(1874, 3)
+        ExitButton.Margin = New Padding(3, 2, 3, 2)
         ExitButton.Name = "ExitButton"
         ExitButton.ShadowDecoration.CustomizableEdges = CustomizableEdges24
-        ExitButton.Size = New Size(55, 45)
+        ExitButton.Size = New Size(43, 26)
         ExitButton.TabIndex = 223
         ExitButton.Text = "X"
         ' 
@@ -677,14 +691,14 @@ Partial Class PatientBasicInformationForm
         HeightTextBox.Font = New Font("Segoe UI", 9F)
         HeightTextBox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         HeightTextBox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        HeightTextBox.Location = New Point(357, 197)
-        HeightTextBox.Margin = New Padding(3, 5, 3, 5)
+        HeightTextBox.Location = New Point(680, 312)
+        HeightTextBox.Margin = New Padding(3, 4, 3, 4)
         HeightTextBox.Name = "HeightTextBox"
         HeightTextBox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         HeightTextBox.PlaceholderText = "(in meter)"
         HeightTextBox.SelectedText = ""
         HeightTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges26
-        HeightTextBox.Size = New Size(174, 49)
+        HeightTextBox.Size = New Size(250, 60)
         HeightTextBox.TabIndex = 213
         ' 
         ' WeightTextBox
@@ -702,23 +716,44 @@ Partial Class PatientBasicInformationForm
         WeightTextBox.Font = New Font("Segoe UI", 9F)
         WeightTextBox.ForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         WeightTextBox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        WeightTextBox.Location = New Point(592, 197)
-        WeightTextBox.Margin = New Padding(3, 5, 3, 5)
+        WeightTextBox.Location = New Point(1023, 312)
+        WeightTextBox.Margin = New Padding(3, 4, 3, 4)
         WeightTextBox.Name = "WeightTextBox"
         WeightTextBox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         WeightTextBox.PlaceholderText = "(in kg)"
         WeightTextBox.SelectedText = ""
         WeightTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges28
-        WeightTextBox.Size = New Size(174, 49)
+        WeightTextBox.Size = New Size(250, 60)
         WeightTextBox.TabIndex = 214
+        ' 
+        ' guna2BorderlessForm1
+        ' 
+        guna2BorderlessForm1.BorderRadius = 15
+        guna2BorderlessForm1.ContainerControl = Me
+        guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6R
+        guna2BorderlessForm1.DragStartTransparencyValue = 1R
+        guna2BorderlessForm1.TransparentWhileDrag = True
+        ' 
+        ' Guna2HtmlLabel2
+        ' 
+        Guna2HtmlLabel2.BackColor = Color.Transparent
+        Guna2HtmlLabel2.Font = New Font("Tahoma", 48F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Guna2HtmlLabel2.ForeColor = Color.FromArgb(CByte(110), CByte(177), CByte(247))
+        Guna2HtmlLabel2.Location = New Point(710, 55)
+        Guna2HtmlLabel2.Margin = New Padding(3, 2, 3, 2)
+        Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
+        Guna2HtmlLabel2.Size = New Size(580, 79)
+        Guna2HtmlLabel2.TabIndex = 278
+        Guna2HtmlLabel2.Text = "Basic Information"
         ' 
         ' PatientBasicInformationForm
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1194, 786)
+        ClientSize = New Size(1920, 1080)
         Controls.Add(Guna2CustomGradientPanel1)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(3, 2, 3, 2)
         Name = "PatientBasicInformationForm"
         StartPosition = FormStartPosition.CenterScreen
         Text = "PatientBasicInformationForm"
@@ -766,4 +801,5 @@ Partial Class PatientBasicInformationForm
     Private WithEvents HeightTextBox As Guna.UI2.WinForms.Guna2TextBox
     Private WithEvents WeightTextBox As Guna.UI2.WinForms.Guna2TextBox
     Private WithEvents guna2BorderlessForm1 As Guna.UI2.WinForms.Guna2BorderlessForm
+    Private WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class
