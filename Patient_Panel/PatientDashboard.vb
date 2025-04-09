@@ -292,20 +292,6 @@ Public Class PatientDashboard
     Private Sub Staff_MinimizeButton_Click(sender As Object, e As EventArgs) Handles Staff_MinimizeButton.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
-
-    'Private Sub pd_logoutlabel_Click(sender As Object, e As EventArgs) Handles pd_logoutlabel.Click
-    '    Dim confirm As DialogResult = MessageBox.Show("Are you sure you want to Log Out?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
-    '    If confirm = DialogResult.Yes Then
-    '        Dim patientLoginForm As New StaffLogin()
-    '        patientLoginForm.Show()
-    '        Me.Hide()
-    '    End If
-    'End Sub
-
-    'Private Sub LogOutButton_Click(sender As Object, e As EventArgs) Handles LogOutButton.Click
-    '    ' No implementation yet
-    'End Sub
-
     Private Sub pd_HomeButton_Click(sender As Object, e As EventArgs) Handles pd_HomeButton.Click
         Dim confirm As DialogResult = MessageBox.Show("Are you sure you want to Log Out?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If confirm = DialogResult.Yes Then
@@ -314,11 +300,6 @@ Public Class PatientDashboard
             Me.Hide()
         End If
     End Sub
-
-    'Private Sub PatientRegistrationButton_Click(sender As Object, e As EventArgs) Handles PatientRegistrationButton.Click
-    '    ' No implementation yet
-    'End Sub
-
     Private Sub guna2Button1_Click(sender As Object, e As EventArgs) Handles guna2Button1.Click
         InvoicePanel.Visible = False
         SearchPanel.Visible = True
@@ -489,13 +470,6 @@ Public Class PatientDashboard
             MessageBox.Show($"Error while resetting filter: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
-
-
-    Private Sub SelectPatientPanel_Paint(sender As Object, e As PaintEventArgs) Handles SelectPatientPanel.Paint
-        ' No implementation provided in original C#
-    End Sub
-
-
     Private Sub MyProfileTabBtn_Click(sender As Object, e As EventArgs) Handles MyProfileTabBtn.Click
         Dim form As New PatientRegisterForm(ModalMode.Edit, patient.AccountID, PanelMode.Patient)
         form.ShowDialog()
@@ -556,18 +530,6 @@ Public Class PatientDashboard
         ViewAppointmentPanel.Visible = False
         LoadInvoiceData()
     End Sub
-
-
-    Private Sub AppointmentDataGridViewList2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles AppointmentDataGridViewList2.CellContentClick
-        ' No implementation provided in original C#
-    End Sub
-
-
-    Private Sub BookingPanel_Paint(sender As Object, e As PaintEventArgs) Handles BookingPanel.Paint
-        ' No implementation provided in original C#
-    End Sub
-
-
     Private Sub InvoiceDataGridView_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles InvoiceDataGridView.CellValueChanged
         If e.RowIndex >= 0 AndAlso e.ColumnIndex = 0 Then
             Dim isChecked As Boolean = Convert.ToBoolean(InvoiceDataGridView.Rows(e.RowIndex).Cells(0).Value)

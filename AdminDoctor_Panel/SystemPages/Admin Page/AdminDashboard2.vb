@@ -10,8 +10,6 @@ Imports System.Diagnostics
 Imports System.Drawing
 Imports System.Linq
 Imports System.Text
-Imports System.Threading.Tasks
-Imports System.Windows.Forms
 
 Public Class AdminDashboard2
 
@@ -26,42 +24,6 @@ Public Class AdminDashboard2
 
     Private Sub AdminDashboard2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ShowPatientTab()
-    End Sub
-
-    Private Sub ad_PatientList_Click(sender As Object, e As EventArgs) Handles ad_PatientList.Click
-        SearchPanel4.Visible = False
-        SearchPanel3.Visible = False
-        SearchPanel2.Visible = True
-        SearchPanel1.Visible = False
-        ad_staffpanel.Visible = True
-        ad_docpanel.Visible = False
-        ad_patientpanel.Visible = False
-        ad_AppointmentPanel.Visible = False
-
-        StaffDataGridViewList2.Visible = True
-        DoctorDataGridViewList2.Visible = False
-        PatientDataGridViewList2.Visible = False
-        AppointmentDataGridViewList2.Visible = False
-
-        ShowStaffList()
-    End Sub
-
-    Private Sub ad_AppointmentList_Click(sender As Object, e As EventArgs) Handles ad_AppointmentList.Click
-        SearchPanel3.Visible = True
-        SearchPanel4.Visible = False
-        SearchPanel2.Visible = False
-        SearchPanel1.Visible = False
-        ad_docpanel.Visible = True
-        ad_staffpanel.Visible = False
-        ad_patientpanel.Visible = False
-        ad_AppointmentPanel.Visible = False
-
-        DoctorDataGridViewList2.Visible = True
-        StaffDataGridViewList2.Visible = False
-        PatientDataGridViewList2.Visible = False
-        AppointmentDataGridViewList2.Visible = False
-
-        ShowDoctorList()
     End Sub
     Private Sub ShowPatientTab()
         SearchPanel4.Visible = False
@@ -109,15 +71,6 @@ Public Class AdminDashboard2
 
         adminAddDoctor.Show()
         Debug.WriteLine("AddDoctor button clicked")
-    End Sub
-
-    Private Sub ad_DoctorList_Click(sender As Object, e As EventArgs) Handles ad_DoctorList.Click
-
-    End Sub
-
-    Private Sub BackButton_Click_1(sender As Object, e As EventArgs) Handles BackButton.Click
-        Dim addstaff As New AddStaff()
-        addstaff.Show()
     End Sub
 
     Private Sub ShowStaffList()
@@ -425,71 +378,6 @@ Public Class AdminDashboard2
         End Try
     End Sub
 
-    Private Sub guna2Button2_Click(sender As Object, e As EventArgs)
-        Dim transactionId As String = Guna2TextBox2.Text.Trim()
-        Dim patientName As String = guna2TextBox1.Text.Trim()
-
-        If Not String.IsNullOrEmpty(patientName) AndAlso patientName.Any(AddressOf Char.IsDigit) Then
-            MessageBox.Show("Staff name cannot contain numbers.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Return
-        End If
-
-        If Not String.IsNullOrEmpty(transactionId) AndAlso Not transactionId.All(AddressOf Char.IsDigit) Then
-            MessageBox.Show("Staff ID must contain only numeric values.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Return
-        End If
-
-        If Not String.IsNullOrEmpty(transactionId) OrElse Not String.IsNullOrEmpty(patientName) Then
-            Try
-                Dim dataSource As DataTable = CType(StaffDataGridViewList2.DataSource, DataTable)
-
-                If dataSource IsNot Nothing Then
-                    Dim filter As String = ""
-
-                    If Not String.IsNullOrEmpty(transactionId) Then
-                        filter = $"Convert([Staff ID], 'System.String') LIKE '%{transactionId}%'"
-                    End If
-
-                    If Not String.IsNullOrEmpty(patientName) Then
-                        If Not String.IsNullOrEmpty(filter) Then
-                            filter &= " OR "
-                        End If
-
-                        Dim nameParts As String() = patientName.Split(","c)
-
-                        If nameParts.Length = 2 Then
-                            Dim lastName As String = nameParts(0).Trim()
-                            Dim firstName As String = nameParts(1).Trim()
-
-                            filter &= $"[First Name] LIKE '%{firstName}%' OR [Last Name] LIKE '%{lastName}%'"
-                        Else
-                            filter &= $"[First Name] LIKE '%{patientName}%' OR [Last Name] LIKE '%{patientName}%'"
-                        End If
-                    End If
-
-                    dataSource.DefaultView.RowFilter = filter
-                End If
-            Catch ex As Exception
-                MessageBox.Show($"Error while filtering data: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            End Try
-        Else
-            MessageBox.Show("Please enter either a Staff ID or a staff name to search.", "Input Required", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-        End If
-    End Sub
-
-    Private Sub guna2Button1_Click(sender As Object, e As EventArgs)
-        Try
-            Dim dataSource As DataTable = CType(StaffDataGridViewList2.DataSource, DataTable)
-
-            If dataSource IsNot Nothing Then
-                dataSource.DefaultView.RowFilter = String.Empty
-                Guna2TextBox2.Clear()
-                guna2TextBox1.Clear()
-            End If
-        Catch ex As Exception
-            MessageBox.Show($"Error while resetting filter: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
-    End Sub
 
     Private Sub SearchDoctorButton_Click(sender As Object, e As EventArgs)
         Dim transactionId As String = SearchDoctorID.Text.Trim()
@@ -633,24 +521,8 @@ Public Class AdminDashboard2
 
             Me.Cursor = Cursors.WaitCursor
             Dim regForm As New PatientRegisterForm(ModalMode.Edit, patientID)
-            AddHandler regForm.ReloadResults, AddressOf ShowPatientTab
+            AddHandler regForm.FormClosed, AddressOf ShowPatientTab
             regForm.ShowDialog()
-
-            Me.Cursor = Cursors.Default
-        End If
-    End Sub
-
-    Private Sub StaffDataGridViewList2_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs)
-        If e.RowIndex >= 0 Then
-            Dim selectedRow As DataGridViewRow = StaffDataGridViewList2.Rows(e.RowIndex)
-
-            Dim patientID As Integer = Integer.Parse(selectedRow.Cells(0).Value.ToString())
-
-            Me.Cursor = Cursors.WaitCursor
-
-            Dim staffForm As New AddStaff(ModalMode.Edit, patientID)
-            AddHandler staffForm.ReloadStaffs, AddressOf ShowStaffList
-            staffForm.ShowDialog()
 
             Me.Cursor = Cursors.Default
         End If
@@ -673,8 +545,6 @@ Public Class AdminDashboard2
     End Sub
 
 
-
-
     Private Sub ad_doctor_Click(sender As Object, e As EventArgs) Handles ad_doctor.Click
         SearchPanel4.Visible = False
         ad_docpanel.Visible = True
@@ -690,21 +560,4 @@ Public Class AdminDashboard2
 
         ShowDoctorList()
     End Sub
-
-
-
-
-    Private Sub Guna2TextBox2_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-
-
-
-
-
-
-
-
-
 End Class
