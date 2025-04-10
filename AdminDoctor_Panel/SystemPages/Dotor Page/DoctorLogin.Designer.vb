@@ -255,7 +255,6 @@ Partial Class DoctorLogin
         PasswordLabel.Size = New Size(75, 23)
         PasswordLabel.TabIndex = 163
         PasswordLabel.Text = "Password"
-        PasswordLabel.Visible = False
         ' 
         ' label2
         ' 
@@ -280,7 +279,6 @@ Partial Class DoctorLogin
         UserNameLabel.Size = New Size(80, 23)
         UserNameLabel.TabIndex = 162
         UserNameLabel.Text = "Username"
-        UserNameLabel.Visible = False
         ' 
         ' label1
         ' 

@@ -65,21 +65,15 @@ Partial Public Class ViewPatientInformation2
         e.Graphics.DrawImage(memorying, 0, 0, PrintablePanel.Width * scale, PrintablePanel.Height * scale)
     End Sub
 
-    Private Sub viewinfo_BackBtn_Click(sender As Object, e As EventArgs)
-        Dim confirm As DialogResult = MessageBox.Show("Are you sure you want to Exit?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
-        If confirm = DialogResult.Yes Then
-            Me.Hide()
-        End If
-    End Sub
 
-    Private Sub viewinfo_PrintBtn_Click(sender As Object, e As EventArgs)
+    Private Sub viewinfo_PrintBtn_Click(sender As Object, e As EventArgs) Handles viewinfo_PrintBtn.Click
         Dim confirm As DialogResult = MessageBox.Show("Are you sure you want to Print this form?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If confirm = DialogResult.Yes Then
             Print(Me.PrintablePanel)
         End If
     End Sub
 
-    Private Sub ExitButton_Click(sender As Object, e As EventArgs)
+    Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
         Dim confirm As DialogResult = MessageBox.Show("Are you sure you want to Exit?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If confirm = DialogResult.Yes Then
             Me.Hide()
@@ -100,7 +94,7 @@ Partial Public Class ViewPatientInformation2
         printDocument.Print()
     End Sub
 
-    Private Sub CreatePDFButton_Click(sender As Object, e As EventArgs)
+    Private Sub CreatePDFButton_Click(sender As Object, e As EventArgs) Handles CreatePDFButton.Click
         Dim confirm As DialogResult = MessageBox.Show("Are you sure you want to make PDF of form?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If confirm = DialogResult.Yes Then
             Dim saveFileDialog As New SaveFileDialog()
@@ -111,4 +105,6 @@ Partial Public Class ViewPatientInformation2
             End If
         End If
     End Sub
+
+
 End Class

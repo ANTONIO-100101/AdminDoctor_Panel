@@ -136,10 +136,10 @@ Partial Public Class AdminAddDoctor
 
         Dim specializations As New List(Of String)()
         For Each control As Object In flowLayoutPanel1.Controls
-            If TypeOf control Is Guna.UI2.WinForms.Guna2TextBox Then
-                Dim specializationTextBox As Guna.UI2.WinForms.Guna2TextBox = CType(control, Guna.UI2.WinForms.Guna2TextBox)
-                If Not String.IsNullOrWhiteSpace(specializationTextBox.Text.Trim()) Then
-                    specializations.Add(specializationTextBox.Text.Trim())
+            If TypeOf control Is ComboBox Then
+                Dim specializationComboBox As ComboBox = CType(control, ComboBox)
+                If specializationComboBox.SelectedItem IsNot Nothing AndAlso Not String.IsNullOrWhiteSpace(specializationComboBox.SelectedItem.ToString()) Then
+                    specializations.Add(specializationComboBox.SelectedItem.ToString())
                 End If
             End If
         Next

@@ -45,11 +45,6 @@ Partial Class DoctorDashboard
         Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges34 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges35 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -62,6 +57,11 @@ Partial Class DoctorDashboard
         Dim CustomizableEdges29 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges30 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges31 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim CustomizableEdges32 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges33 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges43 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -91,15 +91,15 @@ Partial Class DoctorDashboard
         NameLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
         ad_guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         ad_docpanel = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
-        DataGridViewList = New Guna.UI2.WinForms.Guna2DataGridView()
-        checkboxcolumn = New DataGridViewCheckBoxColumn()
         InvoiceButton = New Guna.UI2.WinForms.Guna2Button()
         CheckOutButton = New Guna.UI2.WinForms.Guna2Button()
-        ViewButton = New Guna.UI2.WinForms.Guna2Button()
         CreateDiagnosisButton = New Guna.UI2.WinForms.Guna2Button()
         DeclineButton = New Guna.UI2.WinForms.Guna2Button()
         AcceptButton = New Guna.UI2.WinForms.Guna2Button()
         ReconsiderButton = New Guna.UI2.WinForms.Guna2Button()
+        DataGridViewList = New Guna.UI2.WinForms.Guna2DataGridView()
+        checkboxcolumn = New DataGridViewCheckBoxColumn()
+        ViewButton = New Guna.UI2.WinForms.Guna2Button()
         Guna2CustomGradientPanel2 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         Guna2PictureBox3 = New Guna.UI2.WinForms.Guna2PictureBox()
         Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
@@ -424,24 +424,175 @@ Partial Class DoctorDashboard
         ' ad_docpanel
         ' 
         ad_docpanel.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        ad_docpanel.Controls.Add(DataGridViewList)
         ad_docpanel.Controls.Add(InvoiceButton)
         ad_docpanel.Controls.Add(CheckOutButton)
-        ad_docpanel.Controls.Add(ViewButton)
         ad_docpanel.Controls.Add(CreateDiagnosisButton)
         ad_docpanel.Controls.Add(DeclineButton)
         ad_docpanel.Controls.Add(AcceptButton)
         ad_docpanel.Controls.Add(ReconsiderButton)
+        ad_docpanel.Controls.Add(DataGridViewList)
+        ad_docpanel.Controls.Add(ViewButton)
         ad_docpanel.CustomizableEdges = CustomizableEdges34
         ad_docpanel.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_docpanel.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_docpanel.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         ad_docpanel.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
-        ad_docpanel.Location = New Point(225, 152)
+        ad_docpanel.Location = New Point(225, 166)
         ad_docpanel.Name = "ad_docpanel"
         ad_docpanel.ShadowDecoration.CustomizableEdges = CustomizableEdges35
         ad_docpanel.Size = New Size(1691, 913)
         ad_docpanel.TabIndex = 264
+        ' 
+        ' InvoiceButton
+        ' 
+        InvoiceButton.BackColor = Color.Transparent
+        InvoiceButton.BorderRadius = 15
+        InvoiceButton.Cursor = Cursors.Hand
+        InvoiceButton.CustomizableEdges = CustomizableEdges20
+        InvoiceButton.DisabledState.BorderColor = Color.DarkGray
+        InvoiceButton.DisabledState.CustomBorderColor = Color.DarkGray
+        InvoiceButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        InvoiceButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        InvoiceButton.FillColor = Color.PowderBlue
+        InvoiceButton.Font = New Font("Nirmala UI", 9.75F, FontStyle.Bold)
+        InvoiceButton.ForeColor = Color.Black
+        InvoiceButton.ImageAlign = HorizontalAlignment.Left
+        InvoiceButton.ImageOffset = New Point(2, 0)
+        InvoiceButton.ImageSize = New Size(40, 40)
+        InvoiceButton.Location = New Point(1503, 19)
+        InvoiceButton.Margin = New Padding(3, 2, 3, 2)
+        InvoiceButton.Name = "InvoiceButton"
+        InvoiceButton.ShadowDecoration.CustomizableEdges = CustomizableEdges21
+        InvoiceButton.Size = New Size(172, 54)
+        InvoiceButton.TabIndex = 152
+        InvoiceButton.Text = "Invoice"
+        InvoiceButton.TextFormatNoPrefix = True
+        InvoiceButton.Visible = False
+        ' 
+        ' CheckOutButton
+        ' 
+        CheckOutButton.BackColor = Color.Transparent
+        CheckOutButton.BorderRadius = 15
+        CheckOutButton.Cursor = Cursors.Hand
+        CheckOutButton.CustomizableEdges = CustomizableEdges22
+        CheckOutButton.DisabledState.BorderColor = Color.DarkGray
+        CheckOutButton.DisabledState.CustomBorderColor = Color.DarkGray
+        CheckOutButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        CheckOutButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        CheckOutButton.FillColor = SystemColors.ButtonFace
+        CheckOutButton.Font = New Font("Nirmala UI", 9.75F, FontStyle.Bold)
+        CheckOutButton.ForeColor = Color.Black
+        CheckOutButton.ImageAlign = HorizontalAlignment.Left
+        CheckOutButton.ImageOffset = New Point(2, 0)
+        CheckOutButton.ImageSize = New Size(40, 40)
+        CheckOutButton.Location = New Point(247, 20)
+        CheckOutButton.Margin = New Padding(3, 2, 3, 2)
+        CheckOutButton.Name = "CheckOutButton"
+        CheckOutButton.ShadowDecoration.CustomizableEdges = CustomizableEdges23
+        CheckOutButton.Size = New Size(172, 54)
+        CheckOutButton.TabIndex = 151
+        CheckOutButton.Text = "Checkout"
+        CheckOutButton.TextFormatNoPrefix = True
+        CheckOutButton.Visible = False
+        ' 
+        ' CreateDiagnosisButton
+        ' 
+        CreateDiagnosisButton.BackColor = Color.Transparent
+        CreateDiagnosisButton.BorderRadius = 15
+        CreateDiagnosisButton.CustomizableEdges = CustomizableEdges24
+        CreateDiagnosisButton.DisabledState.BorderColor = Color.DarkGray
+        CreateDiagnosisButton.DisabledState.CustomBorderColor = Color.DarkGray
+        CreateDiagnosisButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        CreateDiagnosisButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        CreateDiagnosisButton.FillColor = SystemColors.ButtonFace
+        CreateDiagnosisButton.Font = New Font("Nirmala UI", 9.75F, FontStyle.Bold)
+        CreateDiagnosisButton.ForeColor = Color.Black
+        CreateDiagnosisButton.ImageAlign = HorizontalAlignment.Left
+        CreateDiagnosisButton.ImageOffset = New Point(2, 0)
+        CreateDiagnosisButton.ImageSize = New Size(40, 40)
+        CreateDiagnosisButton.Location = New Point(23, 20)
+        CreateDiagnosisButton.Margin = New Padding(3, 2, 3, 2)
+        CreateDiagnosisButton.Name = "CreateDiagnosisButton"
+        CreateDiagnosisButton.ShadowDecoration.CustomizableEdges = CustomizableEdges25
+        CreateDiagnosisButton.Size = New Size(172, 54)
+        CreateDiagnosisButton.TabIndex = 143
+        CreateDiagnosisButton.Text = "Create Diagnosis"
+        CreateDiagnosisButton.TextFormatNoPrefix = True
+        CreateDiagnosisButton.Visible = False
+        ' 
+        ' DeclineButton
+        ' 
+        DeclineButton.BackColor = Color.Transparent
+        DeclineButton.BorderRadius = 15
+        DeclineButton.CustomizableEdges = CustomizableEdges26
+        DeclineButton.DisabledState.BorderColor = Color.DarkGray
+        DeclineButton.DisabledState.CustomBorderColor = Color.DarkGray
+        DeclineButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        DeclineButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        DeclineButton.FillColor = SystemColors.ButtonFace
+        DeclineButton.Font = New Font("Nirmala UI", 9.75F, FontStyle.Bold)
+        DeclineButton.ForeColor = Color.Black
+        DeclineButton.ImageAlign = HorizontalAlignment.Left
+        DeclineButton.ImageSize = New Size(40, 40)
+        DeclineButton.Location = New Point(1503, 19)
+        DeclineButton.Margin = New Padding(3, 2, 3, 2)
+        DeclineButton.Name = "DeclineButton"
+        DeclineButton.ShadowDecoration.CustomizableEdges = CustomizableEdges27
+        DeclineButton.Size = New Size(172, 54)
+        DeclineButton.TabIndex = 147
+        DeclineButton.Text = "Decline"
+        DeclineButton.TextFormatNoPrefix = True
+        DeclineButton.Visible = False
+        ' 
+        ' AcceptButton
+        ' 
+        AcceptButton.BackColor = Color.Transparent
+        AcceptButton.BorderRadius = 15
+        AcceptButton.Cursor = Cursors.Hand
+        AcceptButton.CustomizableEdges = CustomizableEdges28
+        AcceptButton.DisabledState.BorderColor = Color.DarkGray
+        AcceptButton.DisabledState.CustomBorderColor = Color.DarkGray
+        AcceptButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        AcceptButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        AcceptButton.FillColor = SystemColors.ButtonFace
+        AcceptButton.Font = New Font("Nirmala UI", 9.75F, FontStyle.Bold)
+        AcceptButton.ForeColor = Color.Black
+        AcceptButton.ImageAlign = HorizontalAlignment.Left
+        AcceptButton.ImageSize = New Size(40, 40)
+        AcceptButton.Location = New Point(1292, 19)
+        AcceptButton.Margin = New Padding(3, 2, 3, 2)
+        AcceptButton.Name = "AcceptButton"
+        AcceptButton.ShadowDecoration.CustomizableEdges = CustomizableEdges29
+        AcceptButton.Size = New Size(172, 54)
+        AcceptButton.TabIndex = 146
+        AcceptButton.Text = "Accept"
+        AcceptButton.TextFormatNoPrefix = True
+        AcceptButton.Visible = False
+        ' 
+        ' ReconsiderButton
+        ' 
+        ReconsiderButton.BackColor = Color.Transparent
+        ReconsiderButton.BorderRadius = 15
+        ReconsiderButton.Cursor = Cursors.Hand
+        ReconsiderButton.CustomizableEdges = CustomizableEdges30
+        ReconsiderButton.DisabledState.BorderColor = Color.DarkGray
+        ReconsiderButton.DisabledState.CustomBorderColor = Color.DarkGray
+        ReconsiderButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        ReconsiderButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        ReconsiderButton.FillColor = SystemColors.ButtonFace
+        ReconsiderButton.Font = New Font("Nirmala UI", 9.75F, FontStyle.Bold)
+        ReconsiderButton.ForeColor = Color.Black
+        ReconsiderButton.ImageAlign = HorizontalAlignment.Left
+        ReconsiderButton.ImageSize = New Size(40, 40)
+        ReconsiderButton.Location = New Point(1291, 19)
+        ReconsiderButton.Margin = New Padding(3, 2, 3, 2)
+        ReconsiderButton.Name = "ReconsiderButton"
+        ReconsiderButton.ShadowDecoration.CustomizableEdges = CustomizableEdges31
+        ReconsiderButton.Size = New Size(172, 54)
+        ReconsiderButton.TabIndex = 153
+        ReconsiderButton.Text = "Reconsider"
+        ReconsiderButton.TextFormatNoPrefix = True
+        ReconsiderButton.Visible = False
         ' 
         ' DataGridViewList
         ' 
@@ -524,64 +675,12 @@ Partial Class DoctorDashboard
         checkboxcolumn.Name = "checkboxcolumn"
         checkboxcolumn.Resizable = DataGridViewTriState.False
         ' 
-        ' InvoiceButton
-        ' 
-        InvoiceButton.BackColor = Color.Transparent
-        InvoiceButton.BorderRadius = 15
-        InvoiceButton.Cursor = Cursors.Hand
-        InvoiceButton.CustomizableEdges = CustomizableEdges20
-        InvoiceButton.DisabledState.BorderColor = Color.DarkGray
-        InvoiceButton.DisabledState.CustomBorderColor = Color.DarkGray
-        InvoiceButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        InvoiceButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        InvoiceButton.FillColor = Color.PowderBlue
-        InvoiceButton.Font = New Font("Nirmala UI", 9.75F, FontStyle.Bold)
-        InvoiceButton.ForeColor = Color.Black
-        InvoiceButton.ImageAlign = HorizontalAlignment.Left
-        InvoiceButton.ImageOffset = New Point(2, 0)
-        InvoiceButton.ImageSize = New Size(40, 40)
-        InvoiceButton.Location = New Point(1503, 19)
-        InvoiceButton.Margin = New Padding(3, 2, 3, 2)
-        InvoiceButton.Name = "InvoiceButton"
-        InvoiceButton.ShadowDecoration.CustomizableEdges = CustomizableEdges21
-        InvoiceButton.Size = New Size(172, 54)
-        InvoiceButton.TabIndex = 152
-        InvoiceButton.Text = "Invoice"
-        InvoiceButton.TextFormatNoPrefix = True
-        InvoiceButton.Visible = False
-        ' 
-        ' CheckOutButton
-        ' 
-        CheckOutButton.BackColor = Color.Transparent
-        CheckOutButton.BorderRadius = 15
-        CheckOutButton.Cursor = Cursors.Hand
-        CheckOutButton.CustomizableEdges = CustomizableEdges22
-        CheckOutButton.DisabledState.BorderColor = Color.DarkGray
-        CheckOutButton.DisabledState.CustomBorderColor = Color.DarkGray
-        CheckOutButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        CheckOutButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        CheckOutButton.FillColor = SystemColors.ButtonFace
-        CheckOutButton.Font = New Font("Nirmala UI", 9.75F, FontStyle.Bold)
-        CheckOutButton.ForeColor = Color.Black
-        CheckOutButton.ImageAlign = HorizontalAlignment.Left
-        CheckOutButton.ImageOffset = New Point(2, 0)
-        CheckOutButton.ImageSize = New Size(40, 40)
-        CheckOutButton.Location = New Point(247, 20)
-        CheckOutButton.Margin = New Padding(3, 2, 3, 2)
-        CheckOutButton.Name = "CheckOutButton"
-        CheckOutButton.ShadowDecoration.CustomizableEdges = CustomizableEdges23
-        CheckOutButton.Size = New Size(172, 54)
-        CheckOutButton.TabIndex = 151
-        CheckOutButton.Text = "Checkout"
-        CheckOutButton.TextFormatNoPrefix = True
-        CheckOutButton.Visible = False
-        ' 
         ' ViewButton
         ' 
         ViewButton.BackColor = Color.Transparent
         ViewButton.BorderRadius = 15
         ViewButton.Cursor = Cursors.Hand
-        ViewButton.CustomizableEdges = CustomizableEdges24
+        ViewButton.CustomizableEdges = CustomizableEdges32
         ViewButton.DisabledState.BorderColor = Color.DarkGray
         ViewButton.DisabledState.CustomBorderColor = Color.DarkGray
         ViewButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -595,111 +694,12 @@ Partial Class DoctorDashboard
         ViewButton.Location = New Point(22, 20)
         ViewButton.Margin = New Padding(3, 2, 3, 2)
         ViewButton.Name = "ViewButton"
-        ViewButton.ShadowDecoration.CustomizableEdges = CustomizableEdges25
+        ViewButton.ShadowDecoration.CustomizableEdges = CustomizableEdges33
         ViewButton.Size = New Size(172, 54)
         ViewButton.TabIndex = 150
         ViewButton.Text = "View Document"
         ViewButton.TextFormatNoPrefix = True
         ViewButton.Visible = False
-        ' 
-        ' CreateDiagnosisButton
-        ' 
-        CreateDiagnosisButton.BackColor = Color.Transparent
-        CreateDiagnosisButton.BorderRadius = 15
-        CreateDiagnosisButton.CustomizableEdges = CustomizableEdges26
-        CreateDiagnosisButton.DisabledState.BorderColor = Color.DarkGray
-        CreateDiagnosisButton.DisabledState.CustomBorderColor = Color.DarkGray
-        CreateDiagnosisButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        CreateDiagnosisButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        CreateDiagnosisButton.FillColor = SystemColors.ButtonFace
-        CreateDiagnosisButton.Font = New Font("Nirmala UI", 9.75F, FontStyle.Bold)
-        CreateDiagnosisButton.ForeColor = Color.Black
-        CreateDiagnosisButton.ImageAlign = HorizontalAlignment.Left
-        CreateDiagnosisButton.ImageOffset = New Point(2, 0)
-        CreateDiagnosisButton.ImageSize = New Size(40, 40)
-        CreateDiagnosisButton.Location = New Point(23, 20)
-        CreateDiagnosisButton.Margin = New Padding(3, 2, 3, 2)
-        CreateDiagnosisButton.Name = "CreateDiagnosisButton"
-        CreateDiagnosisButton.ShadowDecoration.CustomizableEdges = CustomizableEdges27
-        CreateDiagnosisButton.Size = New Size(172, 54)
-        CreateDiagnosisButton.TabIndex = 143
-        CreateDiagnosisButton.Text = "Create Diagnosis"
-        CreateDiagnosisButton.TextFormatNoPrefix = True
-        CreateDiagnosisButton.Visible = False
-        ' 
-        ' DeclineButton
-        ' 
-        DeclineButton.BackColor = Color.Transparent
-        DeclineButton.BorderRadius = 15
-        DeclineButton.CustomizableEdges = CustomizableEdges28
-        DeclineButton.DisabledState.BorderColor = Color.DarkGray
-        DeclineButton.DisabledState.CustomBorderColor = Color.DarkGray
-        DeclineButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        DeclineButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        DeclineButton.FillColor = SystemColors.ButtonFace
-        DeclineButton.Font = New Font("Nirmala UI", 9.75F, FontStyle.Bold)
-        DeclineButton.ForeColor = Color.Black
-        DeclineButton.ImageAlign = HorizontalAlignment.Left
-        DeclineButton.ImageSize = New Size(40, 40)
-        DeclineButton.Location = New Point(1503, 19)
-        DeclineButton.Margin = New Padding(3, 2, 3, 2)
-        DeclineButton.Name = "DeclineButton"
-        DeclineButton.ShadowDecoration.CustomizableEdges = CustomizableEdges29
-        DeclineButton.Size = New Size(172, 54)
-        DeclineButton.TabIndex = 147
-        DeclineButton.Text = "Decline"
-        DeclineButton.TextFormatNoPrefix = True
-        DeclineButton.Visible = False
-        ' 
-        ' AcceptButton
-        ' 
-        AcceptButton.BackColor = Color.Transparent
-        AcceptButton.BorderRadius = 15
-        AcceptButton.Cursor = Cursors.Hand
-        AcceptButton.CustomizableEdges = CustomizableEdges30
-        AcceptButton.DisabledState.BorderColor = Color.DarkGray
-        AcceptButton.DisabledState.CustomBorderColor = Color.DarkGray
-        AcceptButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        AcceptButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        AcceptButton.FillColor = SystemColors.ButtonFace
-        AcceptButton.Font = New Font("Nirmala UI", 9.75F, FontStyle.Bold)
-        AcceptButton.ForeColor = Color.Black
-        AcceptButton.ImageAlign = HorizontalAlignment.Left
-        AcceptButton.ImageSize = New Size(40, 40)
-        AcceptButton.Location = New Point(1292, 19)
-        AcceptButton.Margin = New Padding(3, 2, 3, 2)
-        AcceptButton.Name = "AcceptButton"
-        AcceptButton.ShadowDecoration.CustomizableEdges = CustomizableEdges31
-        AcceptButton.Size = New Size(172, 54)
-        AcceptButton.TabIndex = 146
-        AcceptButton.Text = "Accept"
-        AcceptButton.TextFormatNoPrefix = True
-        AcceptButton.Visible = False
-        ' 
-        ' ReconsiderButton
-        ' 
-        ReconsiderButton.BackColor = Color.Transparent
-        ReconsiderButton.BorderRadius = 15
-        ReconsiderButton.Cursor = Cursors.Hand
-        ReconsiderButton.CustomizableEdges = CustomizableEdges32
-        ReconsiderButton.DisabledState.BorderColor = Color.DarkGray
-        ReconsiderButton.DisabledState.CustomBorderColor = Color.DarkGray
-        ReconsiderButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        ReconsiderButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        ReconsiderButton.FillColor = SystemColors.ButtonFace
-        ReconsiderButton.Font = New Font("Nirmala UI", 9.75F, FontStyle.Bold)
-        ReconsiderButton.ForeColor = Color.Black
-        ReconsiderButton.ImageAlign = HorizontalAlignment.Left
-        ReconsiderButton.ImageSize = New Size(40, 40)
-        ReconsiderButton.Location = New Point(1291, 19)
-        ReconsiderButton.Margin = New Padding(3, 2, 3, 2)
-        ReconsiderButton.Name = "ReconsiderButton"
-        ReconsiderButton.ShadowDecoration.CustomizableEdges = CustomizableEdges33
-        ReconsiderButton.Size = New Size(172, 54)
-        ReconsiderButton.TabIndex = 153
-        ReconsiderButton.Text = "Reconsider"
-        ReconsiderButton.TextFormatNoPrefix = True
-        ReconsiderButton.Visible = False
         ' 
         ' Guna2CustomGradientPanel2
         ' 
@@ -712,7 +712,7 @@ Partial Class DoctorDashboard
         Guna2CustomGradientPanel2.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel2.FillColor3 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         Guna2CustomGradientPanel2.FillColor4 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        Guna2CustomGradientPanel2.Location = New Point(226, 158)
+        Guna2CustomGradientPanel2.Location = New Point(225, 166)
         Guna2CustomGradientPanel2.Margin = New Padding(3, 2, 3, 2)
         Guna2CustomGradientPanel2.Name = "Guna2CustomGradientPanel2"
         Guna2CustomGradientPanel2.ShadowDecoration.CustomizableEdges = CustomizableEdges44

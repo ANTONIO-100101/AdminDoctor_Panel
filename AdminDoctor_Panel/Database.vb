@@ -1157,7 +1157,7 @@ Public Class Database
                             {"ah_Consfee", reader("ah_Consfee").ToString()},
                             {"d_diagnosis", reader("d_diagnosis").ToString()},
                             {"d_additionalnotes", reader("d_additionalnotes").ToString()},
-                            {"d_doctoroder", reader("d_doctoroder").ToString()},
+                            {"d_doctororder", reader("d_doctororder").ToString()},
                             {"d_prescription", reader("d_prescription").ToString()}
                         }
 
@@ -1189,7 +1189,7 @@ Public Class Database
     End Sub
     Public Shared Function GetDoctorSpecialization(doctorFullName As String) As String
         Dim specialization As String = String.Empty
-        Dim query As String = "SELECT specialization FROM tb_doctorinfo WHERE CONCAT('Dr. ', Lastname, ', ', Firstname) = @doctorName"
+        Dim query As String = "SELECT specialization FROM tb_doctorinfo WHERE CONCAT('Dr. ', last_name, ', ', first_name) = @doctorName"
 
         Using conn As New SqlConnection(connectionString)
             conn.Open()
@@ -1356,7 +1356,7 @@ Public Class Database
                         appoint.ConfineDays = reader.GetInt32("confinement_days")
 
                         appoint.Diagnosis = New DiagnosisModel() With {
-                        .DoctorOrders = reader.GetString("d_doctoroder"),
+                        .DoctorOrders = reader.GetString("d_doctororder"),
                         .Prescription = reader.GetString("d_prescription")
                     }
                     End While

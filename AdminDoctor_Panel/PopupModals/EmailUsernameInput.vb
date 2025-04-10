@@ -91,7 +91,11 @@ Partial Public Class EmailUsernameInput
         Me.Close()
     End Sub
 
-    Private Sub closeBtn_Click(sender As Object, e As EventArgs) Handles closeBtn.Click
-        Me.Close()
+    Private Sub closeBtn_Click_1(sender As Object, e As EventArgs) Handles closeBtn.Click
+        Dim result As DialogResult = MessageBox.Show("Are you sure you want to cancel?", "Confirm Close", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+
+        If result = DialogResult.Yes Then
+            Me.Close()
+        End If
     End Sub
 End Class

@@ -560,4 +560,12 @@ Public Class AdminDashboard2
             Me.Cursor = Cursors.Default
         End If
     End Sub
+
+    Private Sub ExitButton_Click_1(sender As Object, e As EventArgs) Handles ExitButton.Click
+        Dim result As DialogResult = MessageBox.Show("Are you sure you want to exit Infocare?", "Confirm Close", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+
+        If result = DialogResult.Yes Then
+            Me.Close()
+        End If
+    End Sub
 End Class

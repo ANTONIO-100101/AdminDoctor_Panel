@@ -60,7 +60,7 @@ Partial Public Class ResetPassword
         otpModal.Close()
     End Sub
 
-    Private Sub showPass_CheckedChanged(sender As Object, e As EventArgs)
+    Private Sub showPass_CheckedChanged(sender As Object, e As EventArgs) Handles showPass.CheckedChanged
         If TypeOf sender Is Guna2CheckBox Then
             Dim checkBox As Guna2CheckBox = CType(sender, Guna2CheckBox)
             If checkBox.Checked Then
@@ -96,6 +96,14 @@ Partial Public Class ResetPassword
                 passValidatorMsg.Text = "*" & msg
                 passValidatorMsg.ForeColor = Color.Red
             End If
+        End If
+    End Sub
+
+    Private Sub closeBtn_Click(sender As Object, e As EventArgs) Handles closeBtn.Click
+        Dim result As DialogResult = MessageBox.Show("Are you sure you want to cancel?", "Confirm Close", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+
+        If result = DialogResult.Yes Then
+            Me.Close()
         End If
     End Sub
 End Class

@@ -40,20 +40,32 @@ Public Class OTP_Modal
         If box.Text <> "" AndAlso index < 5 Then
             verifyBoxes(index + 1).Focus()
         End If
+
+        ' Enable submit button if all OTP fields are filled
         submitBtn.Enabled = rawOTP.All(Function(text) Not String.IsNullOrEmpty(text?.Trim()))
+        Debug.WriteLine($"Submit Button Enabled: {submitBtn.Enabled}")
     End Sub
 
     Private Sub submitBtn_Click(sender As Object, e As EventArgs) Handles submitBtn.Click
-        Dim inputOtp As String = String.Join("", rawOTP)
-        Debug.WriteLine($"Input OTP: {inputOtp}")
+        Try
+            Dim inputOtp As String = String.Join("", rawOTP)
+            Debug.WriteLine($"Input OTP: {inputOtp}")
 
-        If ProcessMethods.ValidateOTP(inputOtp, totp) Then
-            ' Raise event with the OTP value
-            RaiseEvent SavePass(inputOtp)
-            Dim resetModal As New ResetPassword(emailInput, Me)
-            AddHandler resetModal.SavePass, AddressOf SavePassHandler ' Corrected here
-            resetModal.ShowDialog()
-        End If
+            If ProcessMethods.ValidateOTP(inputOtp, totp) Then
+                'RaiseEvent Raise event with the OTP value
+                Dim resetModal As New ResetPassword(emailInput, Me)
+                AddHandler resetModal.SavePass, Sub(newPass)
+                                                    SavePassHandler(newPass)
+                                                    RaiseEvent SavePass(newPass) ' Forward it to main form or wherever it's needed
+                                                End Sub
+                resetModal.ShowDialog()
+            Else
+                MessageBox.Show("Invalid OTP. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        Catch ex As Exception
+            Debug.WriteLine($"Exception: {ex.Message}")
+            MessageBox.Show("An error occurred. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
     End Sub
 
     ' 🔹 Updated to Dynamically Get the Email from `UserModel`
@@ -65,5 +77,13 @@ Public Class OTP_Modal
     Private Sub SavePassHandler(newPass As String)
         ' Handle the password reset logic here
         Debug.WriteLine($"New Pass: {newPass}")
+    End Sub
+
+    Private Sub closeBtn_Click(sender As Object, e As EventArgs) Handles closeBtn.Click
+        Dim result As DialogResult = MessageBox.Show("Are you sure you want to cancel?", "Confirm Close", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+
+        If result = DialogResult.Yes Then
+            Me.Close()
+        End If
     End Sub
 End Class

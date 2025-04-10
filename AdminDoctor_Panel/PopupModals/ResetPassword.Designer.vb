@@ -23,12 +23,14 @@ Partial Class ResetPassword
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(components)
         passValidatorMsg = New Guna.UI2.WinForms.Guna2HtmlLabel()
         showPass = New Guna.UI2.WinForms.Guna2CheckBox()
@@ -37,6 +39,7 @@ Partial Class ResetPassword
         newpassTextbox = New Guna.UI2.WinForms.Guna2TextBox()
         guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        closeBtn = New Guna.UI2.WinForms.Guna2Button()
         SuspendLayout()
         ' 
         ' guna2BorderlessForm1
@@ -57,7 +60,6 @@ Partial Class ResetPassword
         passValidatorMsg.Size = New Size(138, 15)
         passValidatorMsg.TabIndex = 202
         passValidatorMsg.Text = "*At least 8 characters long"
-        passValidatorMsg.Visible = False
         ' 
         ' showPass
         ' 
@@ -80,17 +82,17 @@ Partial Class ResetPassword
         ' 
         savePassBtn.BackColor = Color.Transparent
         savePassBtn.BorderRadius = 5
-        savePassBtn.CustomizableEdges = CustomizableEdges1
+        savePassBtn.CustomizableEdges = CustomizableEdges3
         savePassBtn.DisabledState.BorderColor = Color.DarkGray
         savePassBtn.DisabledState.CustomBorderColor = Color.DarkGray
         savePassBtn.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         savePassBtn.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        savePassBtn.FillColor = Color.MidnightBlue
+        savePassBtn.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         savePassBtn.Font = New Font("Segoe UI", 9F)
         savePassBtn.ForeColor = Color.White
         savePassBtn.Location = New Point(167, 309)
         savePassBtn.Name = "savePassBtn"
-        savePassBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        savePassBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges4
         savePassBtn.Size = New Size(180, 45)
         savePassBtn.TabIndex = 200
         savePassBtn.Text = "Save Password"
@@ -99,7 +101,7 @@ Partial Class ResetPassword
         ' 
         confirmpassTextbox.BorderColor = SystemColors.ControlDarkDark
         confirmpassTextbox.BorderRadius = 5
-        confirmpassTextbox.CustomizableEdges = CustomizableEdges3
+        confirmpassTextbox.CustomizableEdges = CustomizableEdges5
         confirmpassTextbox.DefaultText = ""
         confirmpassTextbox.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         confirmpassTextbox.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -116,7 +118,7 @@ Partial Class ResetPassword
         confirmpassTextbox.PlaceholderForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
         confirmpassTextbox.PlaceholderText = "Confirm Password"
         confirmpassTextbox.SelectedText = ""
-        confirmpassTextbox.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        confirmpassTextbox.ShadowDecoration.CustomizableEdges = CustomizableEdges6
         confirmpassTextbox.Size = New Size(336, 42)
         confirmpassTextbox.TabIndex = 199
         ' 
@@ -124,7 +126,7 @@ Partial Class ResetPassword
         ' 
         newpassTextbox.BorderColor = SystemColors.ControlDarkDark
         newpassTextbox.BorderRadius = 5
-        newpassTextbox.CustomizableEdges = CustomizableEdges5
+        newpassTextbox.CustomizableEdges = CustomizableEdges7
         newpassTextbox.DefaultText = ""
         newpassTextbox.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         newpassTextbox.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -141,7 +143,7 @@ Partial Class ResetPassword
         newpassTextbox.PlaceholderForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
         newpassTextbox.PlaceholderText = "New Password"
         newpassTextbox.SelectedText = ""
-        newpassTextbox.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        newpassTextbox.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         newpassTextbox.Size = New Size(336, 42)
         newpassTextbox.TabIndex = 198
         ' 
@@ -165,11 +167,32 @@ Partial Class ResetPassword
         guna2HtmlLabel1.TabIndex = 196
         guna2HtmlLabel1.Text = "Reset Your Password"
         ' 
+        ' closeBtn
+        ' 
+        closeBtn.BackColor = Color.Transparent
+        closeBtn.Cursor = Cursors.Hand
+        closeBtn.CustomizableEdges = CustomizableEdges1
+        closeBtn.DisabledState.BorderColor = Color.DarkGray
+        closeBtn.DisabledState.CustomBorderColor = Color.DarkGray
+        closeBtn.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        closeBtn.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        closeBtn.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        closeBtn.Font = New Font("Microsoft Sans Serif", 12.75F, FontStyle.Bold)
+        closeBtn.ForeColor = Color.White
+        closeBtn.Location = New Point(480, -1)
+        closeBtn.Margin = New Padding(3, 2, 3, 2)
+        closeBtn.Name = "closeBtn"
+        closeBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        closeBtn.Size = New Size(38, 29)
+        closeBtn.TabIndex = 239
+        closeBtn.Text = "X"
+        ' 
         ' ResetPassword
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(519, 394)
+        Controls.Add(closeBtn)
         Controls.Add(passValidatorMsg)
         Controls.Add(showPass)
         Controls.Add(savePassBtn)
@@ -194,4 +217,5 @@ Partial Class ResetPassword
     Private WithEvents newpassTextbox As Guna.UI2.WinForms.Guna2TextBox
     Private WithEvents guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
     Private WithEvents guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Private WithEvents closeBtn As Guna.UI2.WinForms.Guna2Button
 End Class

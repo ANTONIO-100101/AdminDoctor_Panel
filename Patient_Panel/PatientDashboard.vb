@@ -389,7 +389,7 @@ Public Class PatientDashboard
                     patientDetails("ah_Consfee"),
                     patientDetails("d_diagnosis"),
                     patientDetails("d_additionalnotes"),
-                    patientDetails("d_doctoroder"),
+                    patientDetails("d_doctororder"),
                     patientDetails("d_prescription")
                 )
 

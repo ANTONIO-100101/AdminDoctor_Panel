@@ -22,23 +22,26 @@ Partial Class LandForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LandForm))
-        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LandForm))
         Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         EnterButton = New Guna.UI2.WinForms.Guna2Button()
         Guna2CirclePictureBox2 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        ExitButton = New Guna.UI2.WinForms.Guna2Button()
         Guna2CustomGradientPanel1.SuspendLayout()
         CType(Guna2PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(guna2CirclePictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -48,12 +51,13 @@ Partial Class LandForm
         ' 
         ' Guna2CustomGradientPanel1
         ' 
+        Guna2CustomGradientPanel1.Controls.Add(ExitButton)
         Guna2CustomGradientPanel1.Controls.Add(Guna2PictureBox2)
         Guna2CustomGradientPanel1.Controls.Add(guna2CirclePictureBox1)
         Guna2CustomGradientPanel1.Controls.Add(EnterButton)
         Guna2CustomGradientPanel1.Controls.Add(Guna2CirclePictureBox2)
         Guna2CustomGradientPanel1.Controls.Add(Guna2PictureBox1)
-        Guna2CustomGradientPanel1.CustomizableEdges = CustomizableEdges9
+        Guna2CustomGradientPanel1.CustomizableEdges = CustomizableEdges11
         Guna2CustomGradientPanel1.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel1.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel1.FillColor3 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
@@ -61,20 +65,20 @@ Partial Class LandForm
         Guna2CustomGradientPanel1.Location = New Point(-1, 0)
         Guna2CustomGradientPanel1.Margin = New Padding(3, 2, 3, 2)
         Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
-        Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges12
         Guna2CustomGradientPanel1.Size = New Size(1925, 1080)
         Guna2CustomGradientPanel1.TabIndex = 1
         ' 
         ' Guna2PictureBox2
         ' 
         Guna2PictureBox2.BackColor = Color.Transparent
-        Guna2PictureBox2.CustomizableEdges = CustomizableEdges1
+        Guna2PictureBox2.CustomizableEdges = CustomizableEdges3
         Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), Image)
         Guna2PictureBox2.ImageRotate = 0F
         Guna2PictureBox2.Location = New Point(963, 598)
         Guna2PictureBox2.Margin = New Padding(3, 2, 3, 2)
         Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Guna2PictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        Guna2PictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges4
         Guna2PictureBox2.Size = New Size(973, 481)
         Guna2PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
         Guna2PictureBox2.TabIndex = 155
@@ -90,7 +94,7 @@ Partial Class LandForm
         guna2CirclePictureBox1.InitialImage = CType(resources.GetObject("guna2CirclePictureBox1.InitialImage"), Image)
         guna2CirclePictureBox1.Location = New Point(1260, 219)
         guna2CirclePictureBox1.Name = "guna2CirclePictureBox1"
-        guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges3
+        guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges5
         guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         guna2CirclePictureBox1.Size = New Size(447, 396)
         guna2CirclePictureBox1.SizeMode = PictureBoxSizeMode.Zoom
@@ -105,7 +109,7 @@ Partial Class LandForm
         EnterButton.BorderRadius = 25
         EnterButton.BorderThickness = 1
         EnterButton.Cursor = Cursors.Hand
-        EnterButton.CustomizableEdges = CustomizableEdges4
+        EnterButton.CustomizableEdges = CustomizableEdges6
         EnterButton.DisabledState.BorderColor = Color.DarkGray
         EnterButton.DisabledState.CustomBorderColor = Color.DarkGray
         EnterButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -116,7 +120,7 @@ Partial Class LandForm
         EnterButton.Location = New Point(426, 551)
         EnterButton.Margin = New Padding(3, 2, 3, 2)
         EnterButton.Name = "EnterButton"
-        EnterButton.ShadowDecoration.CustomizableEdges = CustomizableEdges5
+        EnterButton.ShadowDecoration.CustomizableEdges = CustomizableEdges7
         EnterButton.Size = New Size(166, 64)
         EnterButton.TabIndex = 153
         EnterButton.Text = "Enter"
@@ -131,7 +135,7 @@ Partial Class LandForm
         Guna2CirclePictureBox2.InitialImage = CType(resources.GetObject("Guna2CirclePictureBox2.InitialImage"), Image)
         Guna2CirclePictureBox2.Location = New Point(341, 188)
         Guna2CirclePictureBox2.Name = "Guna2CirclePictureBox2"
-        Guna2CirclePictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        Guna2CirclePictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         Guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Guna2CirclePictureBox2.Size = New Size(750, 600)
         Guna2CirclePictureBox2.SizeMode = PictureBoxSizeMode.Zoom
@@ -142,18 +146,38 @@ Partial Class LandForm
         ' Guna2PictureBox1
         ' 
         Guna2PictureBox1.BackColor = Color.Transparent
-        Guna2PictureBox1.CustomizableEdges = CustomizableEdges7
+        Guna2PictureBox1.CustomizableEdges = CustomizableEdges9
         Guna2PictureBox1.Image = CType(resources.GetObject("Guna2PictureBox1.Image"), Image)
         Guna2PictureBox1.ImageRotate = 0F
         Guna2PictureBox1.Location = New Point(-2, 598)
         Guna2PictureBox1.Margin = New Padding(3, 2, 3, 2)
         Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Guna2PictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges8
+        Guna2PictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges10
         Guna2PictureBox1.Size = New Size(973, 481)
         Guna2PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         Guna2PictureBox1.TabIndex = 154
         Guna2PictureBox1.TabStop = False
         Guna2PictureBox1.UseTransparentBackground = True
+        ' 
+        ' ExitButton
+        ' 
+        ExitButton.BackColor = Color.Transparent
+        ExitButton.Cursor = Cursors.Hand
+        ExitButton.CustomizableEdges = CustomizableEdges1
+        ExitButton.DisabledState.BorderColor = Color.DarkGray
+        ExitButton.DisabledState.CustomBorderColor = Color.DarkGray
+        ExitButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        ExitButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        ExitButton.FillColor = Color.Transparent
+        ExitButton.Font = New Font("Microsoft Sans Serif", 16F, FontStyle.Bold)
+        ExitButton.ForeColor = Color.White
+        ExitButton.Location = New Point(1867, 0)
+        ExitButton.Margin = New Padding(3, 2, 3, 2)
+        ExitButton.Name = "ExitButton"
+        ExitButton.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        ExitButton.Size = New Size(58, 53)
+        ExitButton.TabIndex = 229
+        ExitButton.Text = "X"
         ' 
         ' LandForm
         ' 
@@ -180,4 +204,5 @@ Partial Class LandForm
     Private WithEvents EnterButton As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
+    Private WithEvents ExitButton As Guna.UI2.WinForms.Guna2Button
 End Class

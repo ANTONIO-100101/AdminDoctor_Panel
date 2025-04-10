@@ -22,12 +22,15 @@ Partial Class HomeForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(HomeForm))
+        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(HomeForm))
+        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
+        ExitButton = New Guna.UI2.WinForms.Guna2Button()
         Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -41,6 +44,7 @@ Partial Class HomeForm
         ' 
         ' Guna2CustomGradientPanel1
         ' 
+        Guna2CustomGradientPanel1.Controls.Add(ExitButton)
         Guna2CustomGradientPanel1.Controls.Add(Guna2HtmlLabel6)
         Guna2CustomGradientPanel1.Controls.Add(Guna2HtmlLabel5)
         Guna2CustomGradientPanel1.Controls.Add(Guna2HtmlLabel4)
@@ -49,7 +53,7 @@ Partial Class HomeForm
         Guna2CustomGradientPanel1.Controls.Add(Guna2HtmlLabel1)
         Guna2CustomGradientPanel1.Controls.Add(DoctorEnterButton)
         Guna2CustomGradientPanel1.Controls.Add(AdminEnterButton)
-        Guna2CustomGradientPanel1.CustomizableEdges = CustomizableEdges3
+        Guna2CustomGradientPanel1.CustomizableEdges = CustomizableEdges5
         Guna2CustomGradientPanel1.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel1.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel1.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
@@ -57,16 +61,36 @@ Partial Class HomeForm
         Guna2CustomGradientPanel1.Location = New Point(-6, -4)
         Guna2CustomGradientPanel1.Margin = New Padding(3, 2, 3, 2)
         Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
-        Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges6
         Guna2CustomGradientPanel1.Size = New Size(1932, 1086)
         Guna2CustomGradientPanel1.TabIndex = 0
+        ' 
+        ' ExitButton
+        ' 
+        ExitButton.BackColor = Color.Transparent
+        ExitButton.Cursor = Cursors.Hand
+        ExitButton.CustomizableEdges = CustomizableEdges1
+        ExitButton.DisabledState.BorderColor = Color.DarkGray
+        ExitButton.DisabledState.CustomBorderColor = Color.DarkGray
+        ExitButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        ExitButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        ExitButton.FillColor = Color.Transparent
+        ExitButton.Font = New Font("Microsoft Sans Serif", 16F, FontStyle.Bold)
+        ExitButton.ForeColor = Color.White
+        ExitButton.Location = New Point(1871, 2)
+        ExitButton.Margin = New Padding(3, 2, 3, 2)
+        ExitButton.Name = "ExitButton"
+        ExitButton.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        ExitButton.Size = New Size(58, 53)
+        ExitButton.TabIndex = 227
+        ExitButton.Text = "X"
         ' 
         ' Guna2HtmlLabel6
         ' 
         Guna2HtmlLabel6.BackColor = Color.Transparent
         Guna2HtmlLabel6.Font = New Font("Tahoma", 17F, FontStyle.Bold)
         Guna2HtmlLabel6.ForeColor = Color.Gainsboro
-        Guna2HtmlLabel6.Location = New Point(924, 246)
+        Guna2HtmlLabel6.Location = New Point(859, 246)
         Guna2HtmlLabel6.Margin = New Padding(3, 2, 3, 2)
         Guna2HtmlLabel6.Name = "Guna2HtmlLabel6"
         Guna2HtmlLabel6.Size = New Size(310, 30)
@@ -78,7 +102,7 @@ Partial Class HomeForm
         Guna2HtmlLabel5.BackColor = Color.Transparent
         Guna2HtmlLabel5.Font = New Font("Tahoma", 60F, FontStyle.Bold)
         Guna2HtmlLabel5.ForeColor = Color.DarkGray
-        Guna2HtmlLabel5.Location = New Point(897, 143)
+        Guna2HtmlLabel5.Location = New Point(827, 143)
         Guna2HtmlLabel5.Margin = New Padding(3, 2, 3, 2)
         Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
         Guna2HtmlLabel5.Size = New Size(357, 99)
@@ -90,7 +114,7 @@ Partial Class HomeForm
         Guna2HtmlLabel4.BackColor = Color.Transparent
         Guna2HtmlLabel4.Font = New Font("Tahoma", 25F, FontStyle.Bold)
         Guna2HtmlLabel4.ForeColor = Color.Gainsboro
-        Guna2HtmlLabel4.Location = New Point(989, 327)
+        Guna2HtmlLabel4.Location = New Point(922, 320)
         Guna2HtmlLabel4.Margin = New Padding(3, 2, 3, 2)
         Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
         Guna2HtmlLabel4.Size = New Size(170, 42)
@@ -102,7 +126,7 @@ Partial Class HomeForm
         Guna2HtmlLabel3.BackColor = Color.Transparent
         Guna2HtmlLabel3.Font = New Font("Tahoma", 25F, FontStyle.Bold)
         Guna2HtmlLabel3.ForeColor = Color.Gainsboro
-        Guna2HtmlLabel3.Location = New Point(468, 262)
+        Guna2HtmlLabel3.Location = New Point(439, 263)
         Guna2HtmlLabel3.Margin = New Padding(3, 2, 3, 2)
         Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
         Guna2HtmlLabel3.Size = New Size(1158, 42)
@@ -114,7 +138,7 @@ Partial Class HomeForm
         Guna2HtmlLabel2.BackColor = Color.Transparent
         Guna2HtmlLabel2.Font = New Font("Tahoma", 25F, FontStyle.Bold)
         Guna2HtmlLabel2.ForeColor = Color.Gainsboro
-        Guna2HtmlLabel2.Location = New Point(1322, 897)
+        Guna2HtmlLabel2.Location = New Point(1309, 883)
         Guna2HtmlLabel2.Margin = New Padding(3, 2, 3, 2)
         Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
         Guna2HtmlLabel2.Size = New Size(121, 42)
@@ -126,7 +150,7 @@ Partial Class HomeForm
         Guna2HtmlLabel1.BackColor = Color.Transparent
         Guna2HtmlLabel1.Font = New Font("Tahoma", 25F, FontStyle.Bold)
         Guna2HtmlLabel1.ForeColor = Color.Gainsboro
-        Guna2HtmlLabel1.Location = New Point(672, 897)
+        Guna2HtmlLabel1.Location = New Point(600, 883)
         Guna2HtmlLabel1.Margin = New Padding(3, 2, 3, 2)
         Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
         Guna2HtmlLabel1.Size = New Size(144, 42)
@@ -136,18 +160,19 @@ Partial Class HomeForm
         ' DoctorEnterButton
         ' 
         DoctorEnterButton.BackColor = Color.Transparent
-        DoctorEnterButton.CheckedState.ImageSize = New Size(64, 64)
+        DoctorEnterButton.CheckedState.ImageSize = New Size(0, 0)
         DoctorEnterButton.Cursor = Cursors.Hand
-        DoctorEnterButton.HoverState.ImageSize = New Size(64, 64)
+        DoctorEnterButton.HoverState.ImageSize = New Size(500, 500)
         DoctorEnterButton.Image = CType(resources.GetObject("DoctorEnterButton.Image"), Image)
         DoctorEnterButton.ImageOffset = New Point(0, 0)
         DoctorEnterButton.ImageRotate = 0F
         DoctorEnterButton.ImageSize = New Size(500, 500)
-        DoctorEnterButton.Location = New Point(505, 399)
+        DoctorEnterButton.Location = New Point(414, 370)
         DoctorEnterButton.Margin = New Padding(3, 2, 3, 2)
         DoctorEnterButton.Name = "DoctorEnterButton"
-        DoctorEnterButton.PressedState.ImageSize = New Size(64, 64)
-        DoctorEnterButton.ShadowDecoration.CustomizableEdges = CustomizableEdges1
+        DoctorEnterButton.PressedState.ImageOffset = New Point(500, 500)
+        DoctorEnterButton.PressedState.ImageSize = New Size(500, 500)
+        DoctorEnterButton.ShadowDecoration.CustomizableEdges = CustomizableEdges3
         DoctorEnterButton.Size = New Size(490, 478)
         DoctorEnterButton.TabIndex = 1
         DoctorEnterButton.UseTransparentBackground = True
@@ -155,19 +180,20 @@ Partial Class HomeForm
         ' AdminEnterButton
         ' 
         AdminEnterButton.BackColor = Color.Transparent
-        AdminEnterButton.CheckedState.ImageSize = New Size(64, 64)
+        AdminEnterButton.CheckedState.ImageSize = New Size(0, 0)
         AdminEnterButton.Cursor = Cursors.Hand
-        AdminEnterButton.HoverState.ImageSize = New Size(64, 64)
+        AdminEnterButton.HoverState.ImageSize = New Size(500, 500)
         AdminEnterButton.Image = CType(resources.GetObject("AdminEnterButton.Image"), Image)
         AdminEnterButton.ImageOffset = New Point(0, 0)
         AdminEnterButton.ImageRotate = 0F
         AdminEnterButton.ImageSize = New Size(500, 500)
-        AdminEnterButton.Location = New Point(1163, 416)
+        AdminEnterButton.Location = New Point(1147, 399)
         AdminEnterButton.Margin = New Padding(3, 2, 3, 2)
         AdminEnterButton.Name = "AdminEnterButton"
-        AdminEnterButton.PressedState.ImageSize = New Size(64, 64)
-        AdminEnterButton.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        AdminEnterButton.Size = New Size(463, 461)
+        AdminEnterButton.PressedState.ImageOffset = New Point(500, 500)
+        AdminEnterButton.PressedState.ImageSize = New Size(500, 500)
+        AdminEnterButton.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        AdminEnterButton.Size = New Size(500, 500)
         AdminEnterButton.TabIndex = 0
         AdminEnterButton.UseTransparentBackground = True
         ' 
@@ -197,4 +223,5 @@ Partial Class HomeForm
     Private WithEvents Guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
     Private WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
     Private WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Private WithEvents ExitButton As Guna.UI2.WinForms.Guna2Button
 End Class

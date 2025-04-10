@@ -7,25 +7,18 @@ Public Class DoctorDashboard
 
     Public Sub New(doctor As DoctorModel)
         InitializeComponent()
-        Guna2CustomGradientPanel2.Visible = True
         Me.doctor = doctor
-
         NameLabel.Text = $"Dr. {doctor.LastName}, {doctor.FirstName}"
     End Sub
-
-    Private Sub guna2CirclePictureBox1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
     Private Sub DoctorDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LoadPendingAppointments()
-        LoadCompletedAppointments()
-        LoadRejectedAppointments()
+        Guna2CustomGradientPanel2.Visible = True
+        ad_docpanel.Visible = False
     End Sub
+
 
     Private Sub LoadPendingApprovals(haveAnError As Boolean)
         DataGridViewList.DataSource = Nothing
-
+        ad_docpanel.Visible = True
         Guna2CustomGradientPanel2.Visible = False
 
         ReconsiderButton.Visible = False
@@ -69,7 +62,7 @@ Public Class DoctorDashboard
 
     Private Sub AppointmentListButton_Click(sender As Object, e As EventArgs) Handles AppointmentListButton.Click
         DataGridViewList.DataSource = Nothing
-
+        ad_docpanel.Visible = True
         Guna2CustomGradientPanel2.Visible = False
 
         ReconsiderButton.Visible = False
@@ -126,6 +119,7 @@ Public Class DoctorDashboard
     End Sub
 
     Private Sub LoadCompletedAppointments(Optional includeAnErrorValidation As Boolean = True)
+        ad_docpanel.Visible = True
         Guna2CustomGradientPanel2.Visible = False
 
         Dim doctorFullName As String = $"Dr. {doctor.LastName}, {doctor.FirstName}"
@@ -146,6 +140,7 @@ Public Class DoctorDashboard
     End Sub
 
     Private Sub LoadPendingAppointments()
+        ad_docpanel.Visible = True
         Guna2CustomGradientPanel2.Visible = False
 
         Dim doctorFullName As String = $"Dr. {doctor.LastName}, {doctor.FirstName}"
@@ -166,6 +161,7 @@ Public Class DoctorDashboard
     End Sub
 
     Private Sub LoadRejectedAppointments()
+        ad_docpanel.Visible = True
         Guna2CustomGradientPanel2.Visible = False
 
         Dim doctorFullName As String = $"Dr. {doctor.LastName}, {doctor.FirstName}"
@@ -184,6 +180,7 @@ Public Class DoctorDashboard
             MessageBox.Show($"An error occurred while loading rejected appointments: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
 
     Private Sub pd_HomeButton_Click(sender As Object, e As EventArgs) Handles pd_HomeButton.Click
         Dim confirm As DialogResult = MessageBox.Show("Are you sure you want to Log Out?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
@@ -228,11 +225,6 @@ Public Class DoctorDashboard
     Private Sub Staff_MinimizeButton_Click(sender As Object, e As EventArgs) Handles Staff_MinimizeButton.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
-
-    Private Sub DoctorDashboard_Load_2(sender As Object, e As EventArgs) Handles MyBase.Load
-        LoadPendingApprovals(False)
-    End Sub
-
     Private Sub CreateDiagnosisButton_Click(sender As Object, e As EventArgs) Handles CreateDiagnosisButton.Click
         If DataGridViewList.SelectedRows.Count > 0 Then
             Dim appointmentId As Integer = Convert.ToInt32(DataGridViewList.SelectedRows(0).Cells("id").Value)
@@ -404,7 +396,7 @@ Public Class DoctorDashboard
                     patientDetails("ah_Consfee"),
                     patientDetails("d_diagnosis"),
                     patientDetails("d_additionalnotes"),
-                    patientDetails("d_doctoroder"),
+                    patientDetails("d_doctororder"),
                     patientDetails("d_prescription")
                 )
 

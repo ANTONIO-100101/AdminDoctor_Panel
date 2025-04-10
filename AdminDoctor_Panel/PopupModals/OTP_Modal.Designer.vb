@@ -23,20 +23,22 @@ Partial Class OTP_Modal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges23 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges25 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges29 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges30 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges31 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges32 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(components)
         submitBtn = New Guna.UI2.WinForms.Guna2Button()
         verifyBox6 = New Guna.UI2.WinForms.Guna2TextBox()
@@ -48,6 +50,7 @@ Partial Class OTP_Modal
         EmailTextBasis = New Guna.UI2.WinForms.Guna2HtmlLabel()
         guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        closeBtn = New Guna.UI2.WinForms.Guna2Button()
         SuspendLayout()
         ' 
         ' guna2BorderlessForm1
@@ -60,18 +63,18 @@ Partial Class OTP_Modal
         ' submitBtn
         ' 
         submitBtn.BorderRadius = 5
-        submitBtn.CustomizableEdges = CustomizableEdges1
+        submitBtn.CustomizableEdges = CustomizableEdges19
         submitBtn.DisabledState.BorderColor = Color.DarkGray
         submitBtn.DisabledState.CustomBorderColor = Color.DarkGray
         submitBtn.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         submitBtn.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         submitBtn.Enabled = False
-        submitBtn.FillColor = Color.MidnightBlue
+        submitBtn.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         submitBtn.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
         submitBtn.ForeColor = Color.White
         submitBtn.Location = New Point(192, 270)
         submitBtn.Name = "submitBtn"
-        submitBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        submitBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges20
         submitBtn.Size = New Size(180, 45)
         submitBtn.TabIndex = 19
         submitBtn.Text = "Continue"
@@ -80,7 +83,7 @@ Partial Class OTP_Modal
         ' 
         verifyBox6.BorderColor = SystemColors.ControlDarkDark
         verifyBox6.BorderRadius = 5
-        verifyBox6.CustomizableEdges = CustomizableEdges3
+        verifyBox6.CustomizableEdges = CustomizableEdges21
         verifyBox6.DefaultText = ""
         verifyBox6.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         verifyBox6.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -97,7 +100,7 @@ Partial Class OTP_Modal
         verifyBox6.PlaceholderForeColor = SystemColors.ControlDarkDark
         verifyBox6.PlaceholderText = "X"
         verifyBox6.SelectedText = ""
-        verifyBox6.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        verifyBox6.ShadowDecoration.CustomizableEdges = CustomizableEdges22
         verifyBox6.Size = New Size(53, 62)
         verifyBox6.TabIndex = 18
         verifyBox6.Tag = "5"
@@ -107,7 +110,7 @@ Partial Class OTP_Modal
         ' 
         verifyBox5.BorderColor = SystemColors.ControlDarkDark
         verifyBox5.BorderRadius = 5
-        verifyBox5.CustomizableEdges = CustomizableEdges5
+        verifyBox5.CustomizableEdges = CustomizableEdges23
         verifyBox5.DefaultText = ""
         verifyBox5.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         verifyBox5.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -124,7 +127,7 @@ Partial Class OTP_Modal
         verifyBox5.PlaceholderForeColor = SystemColors.ControlDarkDark
         verifyBox5.PlaceholderText = "X"
         verifyBox5.SelectedText = ""
-        verifyBox5.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        verifyBox5.ShadowDecoration.CustomizableEdges = CustomizableEdges24
         verifyBox5.Size = New Size(53, 62)
         verifyBox5.TabIndex = 17
         verifyBox5.Tag = "4"
@@ -134,7 +137,7 @@ Partial Class OTP_Modal
         ' 
         verifyBox4.BorderColor = SystemColors.ControlDarkDark
         verifyBox4.BorderRadius = 5
-        verifyBox4.CustomizableEdges = CustomizableEdges7
+        verifyBox4.CustomizableEdges = CustomizableEdges25
         verifyBox4.DefaultText = ""
         verifyBox4.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         verifyBox4.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -151,7 +154,7 @@ Partial Class OTP_Modal
         verifyBox4.PlaceholderForeColor = SystemColors.ControlDarkDark
         verifyBox4.PlaceholderText = "X"
         verifyBox4.SelectedText = ""
-        verifyBox4.ShadowDecoration.CustomizableEdges = CustomizableEdges8
+        verifyBox4.ShadowDecoration.CustomizableEdges = CustomizableEdges26
         verifyBox4.Size = New Size(53, 62)
         verifyBox4.TabIndex = 16
         verifyBox4.Tag = "3"
@@ -161,7 +164,7 @@ Partial Class OTP_Modal
         ' 
         verifyBox3.BorderColor = SystemColors.ControlDarkDark
         verifyBox3.BorderRadius = 5
-        verifyBox3.CustomizableEdges = CustomizableEdges9
+        verifyBox3.CustomizableEdges = CustomizableEdges27
         verifyBox3.DefaultText = ""
         verifyBox3.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         verifyBox3.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -178,7 +181,7 @@ Partial Class OTP_Modal
         verifyBox3.PlaceholderForeColor = SystemColors.ControlDarkDark
         verifyBox3.PlaceholderText = "X"
         verifyBox3.SelectedText = ""
-        verifyBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        verifyBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges28
         verifyBox3.Size = New Size(53, 62)
         verifyBox3.TabIndex = 15
         verifyBox3.Tag = "2"
@@ -188,7 +191,7 @@ Partial Class OTP_Modal
         ' 
         verifyBox2.BorderColor = SystemColors.ControlDarkDark
         verifyBox2.BorderRadius = 5
-        verifyBox2.CustomizableEdges = CustomizableEdges11
+        verifyBox2.CustomizableEdges = CustomizableEdges29
         verifyBox2.DefaultText = ""
         verifyBox2.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         verifyBox2.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -205,7 +208,7 @@ Partial Class OTP_Modal
         verifyBox2.PlaceholderForeColor = SystemColors.ControlDarkDark
         verifyBox2.PlaceholderText = "X"
         verifyBox2.SelectedText = ""
-        verifyBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges12
+        verifyBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges30
         verifyBox2.Size = New Size(53, 62)
         verifyBox2.TabIndex = 14
         verifyBox2.Tag = "1"
@@ -215,7 +218,7 @@ Partial Class OTP_Modal
         ' 
         verifyBox1.BorderColor = SystemColors.ControlDarkDark
         verifyBox1.BorderRadius = 5
-        verifyBox1.CustomizableEdges = CustomizableEdges13
+        verifyBox1.CustomizableEdges = CustomizableEdges31
         verifyBox1.DefaultText = ""
         verifyBox1.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         verifyBox1.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -232,7 +235,7 @@ Partial Class OTP_Modal
         verifyBox1.PlaceholderForeColor = SystemColors.ControlDarkDark
         verifyBox1.PlaceholderText = "X"
         verifyBox1.SelectedText = ""
-        verifyBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges14
+        verifyBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges32
         verifyBox1.Size = New Size(53, 62)
         verifyBox1.TabIndex = 13
         verifyBox1.Tag = "0"
@@ -241,8 +244,8 @@ Partial Class OTP_Modal
         ' EmailTextBasis
         ' 
         EmailTextBasis.BackColor = Color.Transparent
-        EmailTextBasis.Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold)
-        EmailTextBasis.ForeColor = Color.MidnightBlue
+        EmailTextBasis.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        EmailTextBasis.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         EmailTextBasis.Location = New Point(192, 111)
         EmailTextBasis.Name = "EmailTextBasis"
         EmailTextBasis.Size = New Size(199, 23)
@@ -252,7 +255,7 @@ Partial Class OTP_Modal
         ' guna2HtmlLabel2
         ' 
         guna2HtmlLabel2.BackColor = Color.Transparent
-        guna2HtmlLabel2.Font = New Font("Segoe UI", 12.0F)
+        guna2HtmlLabel2.Font = New Font("Segoe UI", 12F)
         guna2HtmlLabel2.Location = New Point(115, 82)
         guna2HtmlLabel2.Name = "guna2HtmlLabel2"
         guna2HtmlLabel2.Size = New Size(366, 23)
@@ -262,18 +265,39 @@ Partial Class OTP_Modal
         ' guna2HtmlLabel1
         ' 
         guna2HtmlLabel1.BackColor = Color.Transparent
-        guna2HtmlLabel1.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold)
+        guna2HtmlLabel1.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
         guna2HtmlLabel1.Location = New Point(192, 34)
         guna2HtmlLabel1.Name = "guna2HtmlLabel1"
         guna2HtmlLabel1.Size = New Size(205, 34)
         guna2HtmlLabel1.TabIndex = 10
         guna2HtmlLabel1.Text = "Email Verification"
         ' 
+        ' closeBtn
+        ' 
+        closeBtn.BackColor = Color.Transparent
+        closeBtn.Cursor = Cursors.Hand
+        closeBtn.CustomizableEdges = CustomizableEdges17
+        closeBtn.DisabledState.BorderColor = Color.DarkGray
+        closeBtn.DisabledState.CustomBorderColor = Color.DarkGray
+        closeBtn.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        closeBtn.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        closeBtn.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        closeBtn.Font = New Font("Microsoft Sans Serif", 12.75F, FontStyle.Bold)
+        closeBtn.ForeColor = Color.White
+        closeBtn.Location = New Point(537, -1)
+        closeBtn.Margin = New Padding(3, 2, 3, 2)
+        closeBtn.Name = "closeBtn"
+        closeBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges18
+        closeBtn.Size = New Size(38, 29)
+        closeBtn.TabIndex = 239
+        closeBtn.Text = "X"
+        ' 
         ' OTP_Modal
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(575, 354)
+        Controls.Add(closeBtn)
         Controls.Add(submitBtn)
         Controls.Add(verifyBox6)
         Controls.Add(verifyBox5)
@@ -304,4 +328,5 @@ Partial Class OTP_Modal
     Private WithEvents EmailTextBasis As Guna.UI2.WinForms.Guna2HtmlLabel
     Private WithEvents guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
     Private WithEvents guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Private WithEvents closeBtn As Guna.UI2.WinForms.Guna2Button
 End Class
