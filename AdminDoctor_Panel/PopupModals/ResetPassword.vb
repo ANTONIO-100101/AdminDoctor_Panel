@@ -79,7 +79,7 @@ Partial Public Class ResetPassword
         End If
     End Sub
 
-    Private Sub newpassTextbox_TextChanged(sender As Object, e As EventArgs)
+    Private Sub newpassTextbox_TextChanged(sender As Object, e As EventArgs) Handles newpassTextbox.TextChanged
         If newpassTextbox.Text.Trim() = "" Then
             passValidatorMsg.Visible = False
         Else

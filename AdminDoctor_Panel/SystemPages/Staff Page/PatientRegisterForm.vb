@@ -288,4 +288,45 @@ Public Class PatientRegisterForm
             Me.Hide()
         End If
     End Sub
+
+    Private Sub Guna2CustomGradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles Guna2CustomGradientPanel1.Paint
+
+    End Sub
+
+    Private Sub PasswordTextBox_TextChanged(sender As Object, e As EventArgs) Handles PasswordTextBox.TextChanged
+        If PasswordTextBox.Text.Trim() = "" Then
+            passValidatorMsg.Visible = False
+        Else
+            passValidatorMsg.Visible = True
+            Dim msg As String = If(Not Regex.IsMatch(PasswordTextBox.Text, "[A-Z]"), "Add at least one uppercase letter",
+                                       If(Not Regex.IsMatch(PasswordTextBox.Text, "[^a-zA-Z0-9\s]"), "Add At least one special character",
+                                       If(Not Regex.IsMatch(PasswordTextBox.Text, "[\d]"), "Add At least one number",
+                                       If(Not Regex.IsMatch(PasswordTextBox.Text, ".{8,}"), "Must have at least 8 characters long", ""))))
+
+            If msg = "" Then
+                passValidatorMsg.Text = "*Strong Enough"
+                passValidatorMsg.ForeColor = Color.Green
+            Else
+                passValidatorMsg.Text = "*" & msg
+                passValidatorMsg.ForeColor = Color.Red
+            End If
+        End If
+    End Sub
+
+
+
+
+    Private Sub DeleteBtn_Click(sender As Object, e As EventArgs) Handles DeleteBtn.Click
+        'Dim isDelete As DialogResult = MessageBox.Show("Are you sure you want to delete this information?", "Patient Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+
+        'If isDelete = DialogResult.No Then
+        '    Return
+        'End If
+
+        'DeletePatientAndReload()
+        'Me.Hide()
+
+    End Sub
+
+
 End Class

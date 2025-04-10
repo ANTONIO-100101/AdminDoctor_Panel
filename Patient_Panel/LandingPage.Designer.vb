@@ -25,6 +25,8 @@ Partial Class LandingPage
         components = New ComponentModel.Container()
         Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LandingPage))
@@ -33,10 +35,9 @@ Partial Class LandingPage
         Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(components)
         Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
+        ExitButton = New Guna.UI2.WinForms.Guna2Button()
         guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         label1 = New Label()
         Label2 = New Label()
@@ -44,7 +45,6 @@ Partial Class LandingPage
         guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        ExitButton = New Guna.UI2.WinForms.Guna2Button()
         Guna2CustomGradientPanel1.SuspendLayout()
         CType(guna2CirclePictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(Guna2PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
@@ -78,6 +78,26 @@ Partial Class LandingPage
         Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges11
         Guna2CustomGradientPanel1.Size = New Size(1920, 1080)
         Guna2CustomGradientPanel1.TabIndex = 0
+        ' 
+        ' ExitButton
+        ' 
+        ExitButton.BackColor = Color.Transparent
+        ExitButton.Cursor = Cursors.Hand
+        ExitButton.CustomizableEdges = CustomizableEdges1
+        ExitButton.DisabledState.BorderColor = Color.DarkGray
+        ExitButton.DisabledState.CustomBorderColor = Color.DarkGray
+        ExitButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        ExitButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        ExitButton.FillColor = Color.Transparent
+        ExitButton.Font = New Font("Microsoft Sans Serif", 16F, FontStyle.Bold)
+        ExitButton.ForeColor = Color.White
+        ExitButton.Location = New Point(1862, 0)
+        ExitButton.Margin = New Padding(3, 2, 3, 2)
+        ExitButton.Name = "ExitButton"
+        ExitButton.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        ExitButton.Size = New Size(58, 53)
+        ExitButton.TabIndex = 228
+        ExitButton.Text = "X"
         ' 
         ' guna2Button1
         ' 
@@ -186,26 +206,6 @@ Partial Class LandingPage
         Guna2PictureBox1.TabIndex = 155
         Guna2PictureBox1.TabStop = False
         Guna2PictureBox1.UseTransparentBackground = True
-        ' 
-        ' ExitButton
-        ' 
-        ExitButton.BackColor = Color.Transparent
-        ExitButton.Cursor = Cursors.Hand
-        ExitButton.CustomizableEdges = CustomizableEdges1
-        ExitButton.DisabledState.BorderColor = Color.DarkGray
-        ExitButton.DisabledState.CustomBorderColor = Color.DarkGray
-        ExitButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        ExitButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        ExitButton.FillColor = Color.Transparent
-        ExitButton.Font = New Font("Microsoft Sans Serif", 16F, FontStyle.Bold)
-        ExitButton.ForeColor = Color.White
-        ExitButton.Location = New Point(1862, 0)
-        ExitButton.Margin = New Padding(3, 2, 3, 2)
-        ExitButton.Name = "ExitButton"
-        ExitButton.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        ExitButton.Size = New Size(58, 53)
-        ExitButton.TabIndex = 228
-        ExitButton.Text = "X"
         ' 
         ' LandingPage
         ' 
