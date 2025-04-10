@@ -51,9 +51,10 @@ Partial Class ResetPassword
         passValidatorMsg.BackColor = Color.Transparent
         passValidatorMsg.Font = New Font("Segoe UI", 8.25F, FontStyle.Bold)
         passValidatorMsg.ForeColor = Color.Red
-        passValidatorMsg.Location = New Point(109, 233)
+        passValidatorMsg.Location = New Point(95, 175)
+        passValidatorMsg.Margin = New Padding(3, 2, 3, 2)
         passValidatorMsg.Name = "passValidatorMsg"
-        passValidatorMsg.Size = New Size(178, 21)
+        passValidatorMsg.Size = New Size(138, 15)
         passValidatorMsg.TabIndex = 202
         passValidatorMsg.Text = "*At least 8 characters long"
         passValidatorMsg.Visible = False
@@ -65,10 +66,9 @@ Partial Class ResetPassword
         showPass.CheckedState.BorderRadius = 0
         showPass.CheckedState.BorderThickness = 0
         showPass.CheckedState.FillColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        showPass.Location = New Point(109, 359)
-        showPass.Margin = New Padding(3, 4, 3, 4)
+        showPass.Location = New Point(95, 269)
         showPass.Name = "showPass"
-        showPass.Size = New Size(138, 24)
+        showPass.Size = New Size(113, 19)
         showPass.TabIndex = 201
         showPass.Text = "Show Passwords"
         showPass.UncheckedState.BorderColor = Color.FromArgb(CByte(125), CByte(137), CByte(149))
@@ -88,11 +88,10 @@ Partial Class ResetPassword
         savePassBtn.FillColor = Color.MidnightBlue
         savePassBtn.Font = New Font("Segoe UI", 9F)
         savePassBtn.ForeColor = Color.White
-        savePassBtn.Location = New Point(191, 412)
-        savePassBtn.Margin = New Padding(3, 4, 3, 4)
+        savePassBtn.Location = New Point(167, 309)
         savePassBtn.Name = "savePassBtn"
         savePassBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        savePassBtn.Size = New Size(206, 60)
+        savePassBtn.Size = New Size(180, 45)
         savePassBtn.TabIndex = 200
         savePassBtn.Text = "Save Password"
         ' 
@@ -110,15 +109,15 @@ Partial Class ResetPassword
         confirmpassTextbox.Font = New Font("Segoe UI", 9F)
         confirmpassTextbox.ForeColor = SystemColors.ActiveCaptionText
         confirmpassTextbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        confirmpassTextbox.Location = New Point(109, 273)
-        confirmpassTextbox.Margin = New Padding(3, 5, 3, 5)
+        confirmpassTextbox.Location = New Point(95, 205)
+        confirmpassTextbox.Margin = New Padding(3, 4, 3, 4)
         confirmpassTextbox.Name = "confirmpassTextbox"
         confirmpassTextbox.PasswordChar = "●"c
         confirmpassTextbox.PlaceholderForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
         confirmpassTextbox.PlaceholderText = "Confirm Password"
         confirmpassTextbox.SelectedText = ""
         confirmpassTextbox.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        confirmpassTextbox.Size = New Size(384, 56)
+        confirmpassTextbox.Size = New Size(336, 42)
         confirmpassTextbox.TabIndex = 199
         ' 
         ' newpassTextbox
@@ -135,25 +134,24 @@ Partial Class ResetPassword
         newpassTextbox.Font = New Font("Segoe UI", 9F)
         newpassTextbox.ForeColor = SystemColors.ActiveCaptionText
         newpassTextbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        newpassTextbox.Location = New Point(109, 171)
-        newpassTextbox.Margin = New Padding(3, 5, 3, 5)
+        newpassTextbox.Location = New Point(95, 128)
+        newpassTextbox.Margin = New Padding(3, 4, 3, 4)
         newpassTextbox.Name = "newpassTextbox"
         newpassTextbox.PasswordChar = "●"c
         newpassTextbox.PlaceholderForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
         newpassTextbox.PlaceholderText = "New Password"
         newpassTextbox.SelectedText = ""
         newpassTextbox.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        newpassTextbox.Size = New Size(384, 56)
+        newpassTextbox.Size = New Size(336, 42)
         newpassTextbox.TabIndex = 198
         ' 
         ' guna2HtmlLabel2
         ' 
         guna2HtmlLabel2.BackColor = Color.Transparent
         guna2HtmlLabel2.Font = New Font("Segoe UI", 12F)
-        guna2HtmlLabel2.Location = New Point(149, 92)
-        guna2HtmlLabel2.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel2.Location = New Point(130, 69)
         guna2HtmlLabel2.Name = "guna2HtmlLabel2"
-        guna2HtmlLabel2.Size = New Size(334, 30)
+        guna2HtmlLabel2.Size = New Size(267, 23)
         guna2HtmlLabel2.TabIndex = 197
         guna2HtmlLabel2.Text = "Set the new password of your account"
         ' 
@@ -161,18 +159,17 @@ Partial Class ResetPassword
         ' 
         guna2HtmlLabel1.BackColor = Color.Transparent
         guna2HtmlLabel1.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
-        guna2HtmlLabel1.Location = New Point(163, 39)
-        guna2HtmlLabel1.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel1.Location = New Point(143, 29)
         guna2HtmlLabel1.Name = "guna2HtmlLabel1"
-        guna2HtmlLabel1.Size = New Size(295, 43)
+        guna2HtmlLabel1.Size = New Size(243, 34)
         guna2HtmlLabel1.TabIndex = 196
         guna2HtmlLabel1.Text = "Reset Your Password"
         ' 
         ' ResetPassword
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(593, 525)
+        ClientSize = New Size(519, 394)
         Controls.Add(passValidatorMsg)
         Controls.Add(showPass)
         Controls.Add(savePassBtn)
@@ -181,6 +178,7 @@ Partial Class ResetPassword
         Controls.Add(guna2HtmlLabel2)
         Controls.Add(guna2HtmlLabel1)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(3, 2, 3, 2)
         Name = "ResetPassword"
         StartPosition = FormStartPosition.CenterScreen
         Text = "ResetPassword"

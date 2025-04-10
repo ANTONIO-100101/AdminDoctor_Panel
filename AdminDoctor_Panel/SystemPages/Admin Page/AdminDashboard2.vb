@@ -16,6 +16,9 @@ Public Class AdminDashboard2
     Public Sub New()
         InitializeComponent()
 
+        ' Ensure the panel is visible when the form loads
+        Guna2CustomGradientPanel2.Visible = True
+
         ad_staffpanel.Visible = False
         ad_docpanel.Visible = False
         ad_patientpanel.Visible = False
@@ -23,9 +26,14 @@ Public Class AdminDashboard2
     End Sub
 
     Private Sub AdminDashboard2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ShowPatientTab()
+        ' Show the panel when the form loads
+        Guna2CustomGradientPanel2.Visible = True
     End Sub
+
     Private Sub ShowPatientTab()
+        ' Hide the panel when switching tabs
+        Guna2CustomGradientPanel2.Visible = False
+
         SearchPanel4.Visible = True
         SearchPanel1.Visible = False
         SearchPanel3.Visible = False
@@ -41,11 +49,15 @@ Public Class AdminDashboard2
 
         ShowPatientList()
     End Sub
+
     Private Sub ad_patientBtn_Click(sender As Object, e As EventArgs) Handles ad_patientBtn.Click
         ShowPatientTab()
     End Sub
 
     Private Sub ad_appointment_Click(sender As Object, e As EventArgs) Handles ad_appointment.Click
+        ' Hide the panel when switching tabs
+        Guna2CustomGradientPanel2.Visible = False
+
         SearchPanel3.Visible = True
         SearchPanel4.Visible = False
         SearchPanel1.Visible = False
@@ -61,6 +73,27 @@ Public Class AdminDashboard2
         DoctorDataGridViewList2.Visible = False
 
         ShowAppointmentList()
+    End Sub
+
+    Private Sub ad_doctor_Click(sender As Object, e As EventArgs) Handles ad_doctor.Click
+        ' Hide the panel when switching tabs
+        Guna2CustomGradientPanel2.Visible = False
+
+        SearchPanel4.Visible = False
+        SearchPanel3.Visible = False
+        SearchPanel1.Visible = True
+
+        ad_docpanel.Visible = True
+        ad_staffpanel.Visible = False
+        ad_patientpanel.Visible = False
+        ad_AppointmentPanel.Visible = False
+
+        DoctorDataGridViewList2.Visible = True
+        StaffDataGridViewList2.Visible = False
+        PatientDataGridViewList2.Visible = False
+        AppointmentDataGridViewList2.Visible = False
+
+        ShowDoctorList()
     End Sub
     Private Sub AddDoctor_Click(sender As Object, e As EventArgs) Handles AddDoctor.Click
         Dim adminAddDoctor As New AdminAddDoctor()
@@ -526,25 +559,5 @@ Public Class AdminDashboard2
 
             Me.Cursor = Cursors.Default
         End If
-    End Sub
-
-
-    Private Sub ad_doctor_Click(sender As Object, e As EventArgs) Handles ad_doctor.Click
-        SearchPanel4.Visible = False
-        SearchPanel3.Visible = False
-        SearchPanel1.Visible = True
-
-        ad_docpanel.Visible = True
-        ad_staffpanel.Visible = False
-        ad_patientpanel.Visible = False
-        ad_AppointmentPanel.Visible = False
-        Guna2CustomGradientPanel2.Visible = False
-
-        DoctorDataGridViewList2.Visible = True
-        StaffDataGridViewList2.Visible = False
-        PatientDataGridViewList2.Visible = False
-        AppointmentDataGridViewList2.Visible = False
-
-        ShowDoctorList()
     End Sub
 End Class

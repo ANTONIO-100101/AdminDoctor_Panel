@@ -101,6 +101,8 @@ Partial Class DoctorBillingInvoice
         Guna2CustomGradientPanel5 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
+        PrintDocument1 = New Printing.PrintDocument()
+        PrintPreviewDialog1 = New PrintPreviewDialog()
         Guna2CustomGradientPanel1.SuspendLayout()
         PrintablePanel.SuspendLayout()
         guna2Panel8.SuspendLayout()
@@ -390,7 +392,7 @@ Partial Class DoctorBillingInvoice
         billing_TimeTextBox.ForeColor = Color.Black
         billing_TimeTextBox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         billing_TimeTextBox.Location = New Point(73, 37)
-        billing_TimeTextBox.Margin = New Padding(4, 4, 4, 4)
+        billing_TimeTextBox.Margin = New Padding(4)
         billing_TimeTextBox.Name = "billing_TimeTextBox"
         billing_TimeTextBox.PlaceholderForeColor = Color.Black
         billing_TimeTextBox.PlaceholderText = ""
@@ -415,7 +417,7 @@ Partial Class DoctorBillingInvoice
         billing_DateTextBox.ForeColor = Color.Black
         billing_DateTextBox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         billing_DateTextBox.Location = New Point(73, 0)
-        billing_DateTextBox.Margin = New Padding(4, 4, 4, 4)
+        billing_DateTextBox.Margin = New Padding(4)
         billing_DateTextBox.Name = "billing_DateTextBox"
         billing_DateTextBox.PlaceholderForeColor = Color.Black
         billing_DateTextBox.PlaceholderText = ""
@@ -548,7 +550,7 @@ Partial Class DoctorBillingInvoice
         billing_Specialization.ForeColor = Color.Black
         billing_Specialization.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         billing_Specialization.Location = New Point(140, 36)
-        billing_Specialization.Margin = New Padding(4, 4, 4, 4)
+        billing_Specialization.Margin = New Padding(4)
         billing_Specialization.Name = "billing_Specialization"
         billing_Specialization.PlaceholderForeColor = Color.Black
         billing_Specialization.PlaceholderText = ""
@@ -573,7 +575,7 @@ Partial Class DoctorBillingInvoice
         billing_DoctorNameTextbox.ForeColor = Color.Black
         billing_DoctorNameTextbox.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         billing_DoctorNameTextbox.Location = New Point(86, 0)
-        billing_DoctorNameTextbox.Margin = New Padding(4, 4, 4, 4)
+        billing_DoctorNameTextbox.Margin = New Padding(4)
         billing_DoctorNameTextbox.Name = "billing_DoctorNameTextbox"
         billing_DoctorNameTextbox.PlaceholderForeColor = Color.Black
         billing_DoctorNameTextbox.PlaceholderText = ""
@@ -648,6 +650,16 @@ Partial Class DoctorBillingInvoice
         guna2CirclePictureBox1.TabIndex = 143
         guna2CirclePictureBox1.TabStop = False
         ' 
+        ' PrintPreviewDialog1
+        ' 
+        PrintPreviewDialog1.AutoScrollMargin = New Size(0, 0)
+        PrintPreviewDialog1.AutoScrollMinSize = New Size(0, 0)
+        PrintPreviewDialog1.ClientSize = New Size(400, 300)
+        PrintPreviewDialog1.Enabled = True
+        PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), Icon)
+        PrintPreviewDialog1.Name = "PrintPreviewDialog1"
+        PrintPreviewDialog1.Visible = False
+        ' 
         ' DoctorBillingInvoice
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -715,4 +727,6 @@ Partial Class DoctorBillingInvoice
     Private WithEvents guna2Button1 As Guna.UI2.WinForms.Guna2Button
     Private WithEvents CreatePDFButton As Guna.UI2.WinForms.Guna2Button
     Private WithEvents viewinfo_PrintBtn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
+    Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
 End Class

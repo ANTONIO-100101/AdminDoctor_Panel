@@ -4,24 +4,23 @@ Imports OtpNet
 Public Class OTP_Modal
     Inherits Form
 
-    Private user As New UserModel()
+    Private user As UserModel
     Public Event SavePass As Action(Of String) ' Declare the event here
-    Private otp As String
     Private totp As Totp
-    Private email As String
+    Private emailInput As Form
 
     Private verifyBoxes As Guna2TextBox()
     Private rawOTP As String() = New String(5) {}
-    Private emailInput As Form
 
-    Public Sub New(totp As Totp, emailInput As Form, email As String)
+    ' 🔹 Updated Constructor to Accept `UserModel` Instead of Just `Email`
+    Public Sub New(totp As Totp, emailInput As Form, user As UserModel)
         Me.totp = totp
         Me.emailInput = emailInput
+        Me.user = user
         InitializeComponent()
         SubscribeTextChanged()
 
         Me.verifyBoxes = New Guna2TextBox() {verifyBox1, verifyBox2, verifyBox3, verifyBox4, verifyBox5, verifyBox6}
-        Me.email = email
     End Sub
 
     Private Sub SubscribeTextChanged()
@@ -44,7 +43,7 @@ Public Class OTP_Modal
         submitBtn.Enabled = rawOTP.All(Function(text) Not String.IsNullOrEmpty(text?.Trim()))
     End Sub
 
-    Private Sub submitBtn_Click(sender As Object, e As EventArgs)
+    Private Sub submitBtn_Click(sender As Object, e As EventArgs) Handles submitBtn.Click
         Dim inputOtp As String = String.Join("", rawOTP)
         Debug.WriteLine($"Input OTP: {inputOtp}")
 
@@ -57,8 +56,9 @@ Public Class OTP_Modal
         End If
     End Sub
 
-    Private Sub OTP_Modal_Load(sender As Object, e As EventArgs)
-        EmailTextBasis.Text = email
+    ' 🔹 Updated to Dynamically Get the Email from `UserModel`
+    Private Sub OTP_Modal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        EmailTextBasis.Text = user.Email
     End Sub
 
     ' Event handler method

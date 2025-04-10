@@ -6,7 +6,7 @@ Imports Microsoft.Data.SqlClient
 
 Public Class Database
     Private Shared ReadOnly connectionString As String = "Server=.\SQLEXPRESS;Database=InfoCare;Integrated Security=True;TrustServerCertificate=True;"
-    Private Shared Function GetConnection() As SqlConnection
+    Public Shared Function GetConnection() As SqlConnection
         Return New SqlConnection(connectionString)
     End Function
 
@@ -30,15 +30,16 @@ Public Class Database
                 Dim tableColumn As String = If(role = Role.Admin, "A_", If(role = Role.Staff, "S_", If(role = Role.Patient, "P_", "")))
 
                 Dim query As String = If(role = Role.Staff,
-                                    $"SELECT COUNT(*) FROM {tableName} WHERE Username = @Username AND Password = @Password;",
-                                    $"SELECT COUNT(*) FROM {tableName} WHERE {tableColumn}Username = @Username AND {tableColumn}Password = @Password;")
+                                $"SELECT COUNT(*) FROM {tableName} WHERE Username = @Username AND Password = @Password;",
+                                $"SELECT COUNT(*) FROM {tableName} WHERE {tableColumn}Username = @Username AND {tableColumn}Password = @Password;")
 
                 Dim command As New SqlCommand(query, connection)
 
-                Dim hashedPassword As String = ProcessMethods.HashCharacter(password)
+                ' Skip hashing for Admins, but hash for other roles
+                Dim finalPassword As String = If(role = Role.Admin, password, ProcessMethods.HashCharacter(password))
 
                 command.Parameters.AddWithValue("@Username", username)
-                command.Parameters.AddWithValue("@Password", hashedPassword)
+                command.Parameters.AddWithValue("@Password", finalPassword)
 
                 connection.Open()
 
@@ -50,8 +51,6 @@ Public Class Database
             End Try
         End Using
     End Function
-
-
     Public Shared Function DoctorList() As DataTable
         Dim query As String = "SELECT doctor_id as 'Doctor ID', first_name AS 'First Name', last_name AS 'Last Name', email AS 'Email', phone_number AS 'Phone Number', consultation_fee AS 'Consultation Fee' FROM tb_doctorinfo"
         Dim DoctorTable As New DataTable()
@@ -1406,6 +1405,22 @@ Public Class Database
             Catch ex As Exception
                 Throw ex
             End Try
+        End Using
+    End Sub
+    Public Shared Sub UpdateStatus(doctorName As String)
+        Dim query As String = "UPDATE tb_appointmenthistory " &
+                          "SET ah_status = @status " &
+                          "WHERE ah_Doctor_Name = @doctorName AND ah_status = 'Checkout'"
+
+        Using conn As New SqlConnection(connectionString)
+            Using cmd As New SqlCommand(query, conn)
+                Dim status As String = "InvoiceChecked"
+                cmd.Parameters.AddWithValue("@status", status)
+                cmd.Parameters.AddWithValue("@doctorName", doctorName)
+
+                conn.Open()
+                cmd.ExecuteNonQuery()
+            End Using
         End Using
     End Sub
 

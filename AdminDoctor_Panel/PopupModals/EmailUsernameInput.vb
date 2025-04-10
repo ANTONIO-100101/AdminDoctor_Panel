@@ -3,6 +3,9 @@ Imports AdminDoctor_Panel.Infocare_Project_1.Object_Models
 Imports Guna.UI2.WinForms
 Imports OtpNet
 Imports System.Diagnostics
+Imports SendGrid
+Imports SendGrid.Helpers.Mail
+
 Partial Public Class EmailUsernameInput
     Inherits Form
 
@@ -69,7 +72,8 @@ Partial Public Class EmailUsernameInput
         submitBtn.Enabled = True
         Me.Cursor = Cursors.Default
 
-        Dim otpModal As New OTP_Modal(totp, Me, user.Email)
+        ' 🔹 Pass `user` instead of `user.Email` so OTP_Modal gets the latest email
+        Dim otpModal As New OTP_Modal(totp, Me, user)
         AddHandler otpModal.SavePass, AddressOf SavePass
         otpModal.ShowDialog()
     End Sub

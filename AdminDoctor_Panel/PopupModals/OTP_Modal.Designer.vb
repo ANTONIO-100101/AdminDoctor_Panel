@@ -69,11 +69,10 @@ Partial Class OTP_Modal
         submitBtn.FillColor = Color.MidnightBlue
         submitBtn.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
         submitBtn.ForeColor = Color.White
-        submitBtn.Location = New Point(219, 360)
-        submitBtn.Margin = New Padding(3, 4, 3, 4)
+        submitBtn.Location = New Point(192, 270)
         submitBtn.Name = "submitBtn"
         submitBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        submitBtn.Size = New Size(206, 60)
+        submitBtn.Size = New Size(180, 45)
         submitBtn.TabIndex = 19
         submitBtn.Text = "Continue"
         ' 
@@ -91,15 +90,15 @@ Partial Class OTP_Modal
         verifyBox6.Font = New Font("Segoe UI", 9.75F)
         verifyBox6.ForeColor = SystemColors.ActiveCaptionText
         verifyBox6.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        verifyBox6.Location = New Point(542, 224)
-        verifyBox6.Margin = New Padding(3, 5, 3, 5)
+        verifyBox6.Location = New Point(474, 168)
+        verifyBox6.Margin = New Padding(3, 4, 3, 4)
         verifyBox6.MaxLength = 1
         verifyBox6.Name = "verifyBox6"
         verifyBox6.PlaceholderForeColor = SystemColors.ControlDarkDark
         verifyBox6.PlaceholderText = "X"
         verifyBox6.SelectedText = ""
         verifyBox6.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        verifyBox6.Size = New Size(61, 83)
+        verifyBox6.Size = New Size(53, 62)
         verifyBox6.TabIndex = 18
         verifyBox6.Tag = "5"
         verifyBox6.TextAlign = HorizontalAlignment.Center
@@ -118,15 +117,15 @@ Partial Class OTP_Modal
         verifyBox5.Font = New Font("Segoe UI", 9.75F)
         verifyBox5.ForeColor = SystemColors.ActiveCaptionText
         verifyBox5.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        verifyBox5.Location = New Point(444, 224)
-        verifyBox5.Margin = New Padding(3, 5, 3, 5)
+        verifyBox5.Location = New Point(388, 168)
+        verifyBox5.Margin = New Padding(3, 4, 3, 4)
         verifyBox5.MaxLength = 1
         verifyBox5.Name = "verifyBox5"
         verifyBox5.PlaceholderForeColor = SystemColors.ControlDarkDark
         verifyBox5.PlaceholderText = "X"
         verifyBox5.SelectedText = ""
         verifyBox5.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        verifyBox5.Size = New Size(61, 83)
+        verifyBox5.Size = New Size(53, 62)
         verifyBox5.TabIndex = 17
         verifyBox5.Tag = "4"
         verifyBox5.TextAlign = HorizontalAlignment.Center
@@ -145,15 +144,15 @@ Partial Class OTP_Modal
         verifyBox4.Font = New Font("Segoe UI", 9.75F)
         verifyBox4.ForeColor = SystemColors.ActiveCaptionText
         verifyBox4.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        verifyBox4.Location = New Point(350, 224)
-        verifyBox4.Margin = New Padding(3, 5, 3, 5)
+        verifyBox4.Location = New Point(306, 168)
+        verifyBox4.Margin = New Padding(3, 4, 3, 4)
         verifyBox4.MaxLength = 1
         verifyBox4.Name = "verifyBox4"
         verifyBox4.PlaceholderForeColor = SystemColors.ControlDarkDark
         verifyBox4.PlaceholderText = "X"
         verifyBox4.SelectedText = ""
         verifyBox4.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        verifyBox4.Size = New Size(61, 83)
+        verifyBox4.Size = New Size(53, 62)
         verifyBox4.TabIndex = 16
         verifyBox4.Tag = "3"
         verifyBox4.TextAlign = HorizontalAlignment.Center
@@ -172,15 +171,15 @@ Partial Class OTP_Modal
         verifyBox3.Font = New Font("Segoe UI", 9.75F)
         verifyBox3.ForeColor = SystemColors.ActiveCaptionText
         verifyBox3.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        verifyBox3.Location = New Point(260, 224)
-        verifyBox3.Margin = New Padding(3, 5, 3, 5)
+        verifyBox3.Location = New Point(228, 168)
+        verifyBox3.Margin = New Padding(3, 4, 3, 4)
         verifyBox3.MaxLength = 1
         verifyBox3.Name = "verifyBox3"
         verifyBox3.PlaceholderForeColor = SystemColors.ControlDarkDark
         verifyBox3.PlaceholderText = "X"
         verifyBox3.SelectedText = ""
         verifyBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        verifyBox3.Size = New Size(61, 83)
+        verifyBox3.Size = New Size(53, 62)
         verifyBox3.TabIndex = 15
         verifyBox3.Tag = "2"
         verifyBox3.TextAlign = HorizontalAlignment.Center
@@ -199,15 +198,15 @@ Partial Class OTP_Modal
         verifyBox2.Font = New Font("Segoe UI", 9.75F)
         verifyBox2.ForeColor = SystemColors.ActiveCaptionText
         verifyBox2.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        verifyBox2.Location = New Point(171, 224)
-        verifyBox2.Margin = New Padding(3, 5, 3, 5)
+        verifyBox2.Location = New Point(150, 168)
+        verifyBox2.Margin = New Padding(3, 4, 3, 4)
         verifyBox2.MaxLength = 1
         verifyBox2.Name = "verifyBox2"
         verifyBox2.PlaceholderForeColor = SystemColors.ControlDarkDark
         verifyBox2.PlaceholderText = "X"
         verifyBox2.SelectedText = ""
         verifyBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        verifyBox2.Size = New Size(61, 83)
+        verifyBox2.Size = New Size(53, 62)
         verifyBox2.TabIndex = 14
         verifyBox2.Tag = "1"
         verifyBox2.TextAlign = HorizontalAlignment.Center
@@ -226,15 +225,15 @@ Partial Class OTP_Modal
         verifyBox1.Font = New Font("Segoe UI", 9.75F)
         verifyBox1.ForeColor = SystemColors.ActiveCaptionText
         verifyBox1.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        verifyBox1.Location = New Point(80, 224)
-        verifyBox1.Margin = New Padding(3, 5, 3, 5)
+        verifyBox1.Location = New Point(70, 168)
+        verifyBox1.Margin = New Padding(3, 4, 3, 4)
         verifyBox1.MaxLength = 1
         verifyBox1.Name = "verifyBox1"
         verifyBox1.PlaceholderForeColor = SystemColors.ControlDarkDark
         verifyBox1.PlaceholderText = "X"
         verifyBox1.SelectedText = ""
         verifyBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges14
-        verifyBox1.Size = New Size(61, 83)
+        verifyBox1.Size = New Size(53, 62)
         verifyBox1.TabIndex = 13
         verifyBox1.Tag = "0"
         verifyBox1.TextAlign = HorizontalAlignment.Center
@@ -242,42 +241,39 @@ Partial Class OTP_Modal
         ' EmailTextBasis
         ' 
         EmailTextBasis.BackColor = Color.Transparent
-        EmailTextBasis.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        EmailTextBasis.Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold)
         EmailTextBasis.ForeColor = Color.MidnightBlue
-        EmailTextBasis.Location = New Point(219, 148)
-        EmailTextBasis.Margin = New Padding(3, 4, 3, 4)
+        EmailTextBasis.Location = New Point(192, 111)
         EmailTextBasis.Name = "EmailTextBasis"
-        EmailTextBasis.Size = New Size(247, 30)
+        EmailTextBasis.Size = New Size(199, 23)
         EmailTextBasis.TabIndex = 12
         EmailTextBasis.Text = "jmjmtuba0987@gmail.com"
         ' 
         ' guna2HtmlLabel2
         ' 
         guna2HtmlLabel2.BackColor = Color.Transparent
-        guna2HtmlLabel2.Font = New Font("Segoe UI", 12F)
-        guna2HtmlLabel2.Location = New Point(131, 110)
-        guna2HtmlLabel2.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel2.Font = New Font("Segoe UI", 12.0F)
+        guna2HtmlLabel2.Location = New Point(115, 82)
         guna2HtmlLabel2.Name = "guna2HtmlLabel2"
-        guna2HtmlLabel2.Size = New Size(455, 30)
+        guna2HtmlLabel2.Size = New Size(366, 23)
         guna2HtmlLabel2.TabIndex = 11
         guna2HtmlLabel2.Text = "Enter your OTP (One Time Password) that we sent to"
         ' 
         ' guna2HtmlLabel1
         ' 
         guna2HtmlLabel1.BackColor = Color.Transparent
-        guna2HtmlLabel1.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
-        guna2HtmlLabel1.Location = New Point(219, 46)
-        guna2HtmlLabel1.Margin = New Padding(3, 4, 3, 4)
+        guna2HtmlLabel1.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold)
+        guna2HtmlLabel1.Location = New Point(192, 34)
         guna2HtmlLabel1.Name = "guna2HtmlLabel1"
-        guna2HtmlLabel1.Size = New Size(253, 43)
+        guna2HtmlLabel1.Size = New Size(205, 34)
         guna2HtmlLabel1.TabIndex = 10
         guna2HtmlLabel1.Text = "Email Verification"
         ' 
         ' OTP_Modal
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(657, 472)
+        ClientSize = New Size(575, 354)
         Controls.Add(submitBtn)
         Controls.Add(verifyBox6)
         Controls.Add(verifyBox5)
@@ -289,6 +285,7 @@ Partial Class OTP_Modal
         Controls.Add(guna2HtmlLabel2)
         Controls.Add(guna2HtmlLabel1)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(3, 2, 3, 2)
         Name = "OTP_Modal"
         StartPosition = FormStartPosition.CenterScreen
         Text = "OTP_Modal"

@@ -37,7 +37,7 @@ Partial Public Class ResetPassword
         textBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255)
     End Sub
 
-    Private Sub savePassBtn_Click(sender As Object, e As EventArgs)
+    Private Sub savePassBtn_Click(sender As Object, e As EventArgs) Handles savePassBtn.Click
         If Not ProcessMethods.ValidateFields(textBoxes) Then
             MessageBox.Show("These Fields Cannot be empty", "Reset Password", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Return
