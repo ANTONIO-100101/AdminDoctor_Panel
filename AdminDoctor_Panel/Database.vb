@@ -5,7 +5,7 @@ Imports AdminDoctor_Panel.Infocare_Project_1.Object_Models
 Imports Microsoft.Data.SqlClient
 
 Public Class Database
-    Private Shared ReadOnly connectionString As String = "Server=.\SQLEXPRESS;Database=InfoCare;Integrated Security=True;TrustServerCertificate=True;"
+    Private Shared ReadOnly connectionString As String = "Server=JMGENGGENG\SQLEXPRESS;Database=InfoCare;Integrated Security=True;TrustServerCertificate=True;"
     Public Shared Function GetConnection() As SqlConnection
         Return New SqlConnection(connectionString)
     End Function
@@ -52,7 +52,7 @@ Public Class Database
         End Using
     End Function
     Public Shared Function DoctorList() As DataTable
-        Dim query As String = "SELECT doctor_id as 'Doctor ID', first_name AS 'First Name', last_name AS 'Last Name', email AS 'Email', phone_number AS 'Phone Number', consultation_fee AS 'Consultation Fee' FROM tb_doctorinfo"
+        Dim query As String = "SELECT doctor_id as 'Doctor ID', first_name AS 'First Name', last_name AS 'Last Name', email AS 'Email', phone_number AS 'Phone Number', consultation_fee AS 'Consultation Fee', serial_number AS 'Serial Number' FROM tb_doctorinfo"
         Dim DoctorTable As New DataTable()
 
         Try

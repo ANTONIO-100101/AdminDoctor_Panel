@@ -40,6 +40,7 @@ Partial Public Class AdminAddDoctor
     End Function
 
     Public Sub FillUpFields(doctor As DoctorModel)
+        SerialNoTextBox.Text = doctor.SerialNumber
         FirstNameTextBox.Text = doctor.FirstName
         ConsultationFeeTextBox.Text = doctor.ConsultationFee.ToString()
         LastNameTextbox.Text = doctor.LastName
@@ -78,6 +79,9 @@ Partial Public Class AdminAddDoctor
 
     Private Sub BackButton_Click(sender As Object, e As EventArgs) Handles BackButton.Click
         Me.Hide()
+    End Sub
+    Private Sub SerialNoTextBox_TextChanged(sender As Object, e As EventArgs) Handles SerialNoTextBox.TextChanged
+        _placeHolderHandler.HandleTextBoxPlaceholder(SerialNoTextBox, SNLabel, "Serial Number")
     End Sub
 
     Private Sub RegisterButton_Click(sender As Object, e As EventArgs) Handles RegisterButton.Click
@@ -155,6 +159,15 @@ Partial Public Class AdminAddDoctor
             MessageBox.Show("Please enter a valid Consultation Fee.")
             Return
         End If
+        If String.IsNullOrWhiteSpace(SerialNoTextBox.Text.Trim()) Then
+            MessageBox.Show("Serial Number cannot be empty.")
+            Return
+        End If
+        If Not Regex.IsMatch(SerialNoTextBox.Text.Trim(), "^[A-Za-z0-9\-]+$") Then
+            MessageBox.Show("Serial Number can only contain letters, numbers, and dashes.")
+            Return
+        End If
+
 
         Dim newDoctorInfo As New DoctorModel With {
             .AccountID = If(mode = ModalMode.Edit, doctor.AccountID, 0),
@@ -166,7 +179,8 @@ Partial Public Class AdminAddDoctor
             .Password = If(mode = ModalMode.Edit, doctor.Password, PasswordTextBox.Text.Trim()),
             .Email = emailTextBox.Text,
             .ConsultationFee = If(Decimal.TryParse(ConsultationFeeTextBox.Text, Nothing), Convert.ToDecimal(ConsultationFeeTextBox.Text), 0),
-            .Specialty = specializations
+            .Specialty = specializations,
+            .SerialNumber = SerialNoTextBox.Text.Trim()
         }
 
         Dim selectedTimeSlot As String = TimeComboBox.SelectedItem.ToString()
@@ -349,5 +363,9 @@ Partial Public Class AdminAddDoctor
             MessageBox.Show("Doctor removed successfully!")
             Me.Close()
         End If
+    End Sub
+
+    Private Sub Guna2ContextMenuStrip1_Opening(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles Guna2ContextMenuStrip1.Opening
+
     End Sub
 End Class

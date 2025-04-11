@@ -12,7 +12,7 @@ Namespace Infocare_Project_1.Object_Models
     ''' </summary>
     Public Class DoctorModel
         Inherits UserModel
-
+        Public Property SerialNumber As String
         Public Property Specialty As List(Of String)
         Public Property ConsultationFee As Decimal
         Public Property StartTime As TimeSpan
