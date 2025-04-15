@@ -52,7 +52,7 @@ Public Class Database
         End Using
     End Function
     Public Shared Function DoctorList() As DataTable
-        Dim query As String = "SELECT doctor_id as 'Doctor ID', first_name AS 'First Name', last_name AS 'Last Name', email AS 'Email', phone_number AS 'Phone Number', consultation_fee AS 'Consultation Fee', serial_number AS 'Serial Number' FROM tb_doctorinfo"
+        Dim query As String = "SELECT doctor_id as 'Doctor ID', first_name AS 'First Name', last_name AS 'Last Name', email AS 'Email', phone_number AS 'Phone Number', consultation_fee AS 'Consultation Fee', serial_number AS 'License Number' FROM tb_doctorinfo"
         Dim DoctorTable As New DataTable()
 
         Try

@@ -104,7 +104,6 @@ Public Class DoctorDashboard
             e.Cancel = True ' Prevent editing for other columns
         End If
     End Sub
-
     Private Sub DataGridViewList_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewList.CellValueChanged
         If e.RowIndex >= 0 AndAlso e.ColumnIndex = 0 Then ' Assuming the checkbox column is the first column
             ' Check if any checkbox is checked
@@ -226,8 +225,15 @@ Public Class DoctorDashboard
         Me.WindowState = FormWindowState.Minimized
     End Sub
     Private Sub CreateDiagnosisButton_Click(sender As Object, e As EventArgs) Handles CreateDiagnosisButton.Click
-        If DataGridViewList.SelectedRows.Count > 0 Then
-            Dim appointmentId As Integer = Convert.ToInt32(DataGridViewList.SelectedRows(0).Cells("id").Value)
+        Dim selectedRows = DataGridViewList.Rows.Cast(Of DataGridViewRow)().
+                       Where(Function(r)
+                                 Dim cellValue = r.Cells("checkboxcolumn").Value
+                                 Return cellValue IsNot Nothing AndAlso cellValue.ToString().ToLower() = "true"
+                             End Function).
+                       ToList()
+
+        If selectedRows.Count = 1 Then
+            Dim appointmentId As Integer = Convert.ToInt32(selectedRows(0).Cells("id").Value)
 
             Database.CreateDiagnosis(
             appointmentId,
@@ -235,7 +241,6 @@ Public Class DoctorDashboard
                 Dim doctorFullName As String = $"Dr. {doctor.LastName}, {doctor.FirstName}"
 
                 Dim doctorMedicalRecord As New DoctorMedicalRecord()
-
                 doctorMedicalRecord.SetDoctorName(doctorFullName)
 
                 doctorMedicalRecord.SetPatientDetails(
@@ -262,7 +267,7 @@ Public Class DoctorDashboard
             End Sub
         )
         Else
-            MessageBox.Show("Please select an appointment.")
+            MessageBox.Show("Please select only one appointment using the checkbox.")
         End If
     End Sub
 
@@ -459,12 +464,17 @@ Public Class DoctorDashboard
 
             _doctorBillingInvoice = New DoctorBillingInvoice()
 
+            AddHandler _doctorBillingInvoice.FormClosed, Sub()
+                                                             _doctorBillingInvoice = Nothing
+                                                         End Sub
+
             Dim currentDate As String = DateTime.Now.ToString("yyyy-MM-dd")
 
             _doctorBillingInvoice.SetDoctorDetails(doctorFullName, specialization, currentDate, checkoutAppointments)
 
             _doctorBillingInvoice.Show()
         Else
+            _doctorBillingInvoice.Show()
             _doctorBillingInvoice.BringToFront()
         End If
     End Sub

@@ -94,7 +94,7 @@ Partial Public Class DoctorBillingInvoice
     End Sub
 
     Private Sub guna2Button1_Click(sender As Object, e As EventArgs) Handles guna2Button1.Click
-        Dim confirm As DialogResult = MessageBox.Show("Are you sure you want to go back?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        Dim confirm As DialogResult = MessageBox.Show("Are you sure you want to checkout?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If confirm = DialogResult.Yes Then
             Try
                 Dim checkoutTable As DataTable = CType(billing_DataGridView.DataSource, DataTable)
@@ -108,7 +108,7 @@ Partial Public Class DoctorBillingInvoice
                 End If
 
                 For Each row As DataRow In checkoutTable.Rows
-                    Dim [date] As String = Convert.ToDateTime(row("ah_date")).ToString("dd-MM-yyyy")
+                    Dim [date] As String = Convert.ToDateTime(row("Appointment Date")).ToString("dd-MM-yyyy")
                     Database.UpdateStatus(doctorName)
                 Next
 
@@ -116,7 +116,9 @@ Partial Public Class DoctorBillingInvoice
             Catch ex As Exception
                 MessageBox.Show($"Error updating statuses: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End Try
-            Me.Hide()
+
+            Me.Close()
         End If
     End Sub
+
 End Class
