@@ -105,6 +105,7 @@ Partial Class DoctorDashboard
         Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Guna2CirclePictureBox2 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        SfCalendar1 = New Syncfusion.WinForms.Input.SfCalendar()
         guna2CustomGradientPanel1.SuspendLayout()
         CType(guna2CirclePictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         ad_docpanel.SuspendLayout()
@@ -424,6 +425,7 @@ Partial Class DoctorDashboard
         ' ad_docpanel
         ' 
         ad_docpanel.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        ad_docpanel.Controls.Add(SfCalendar1)
         ad_docpanel.Controls.Add(InvoiceButton)
         ad_docpanel.Controls.Add(CheckOutButton)
         ad_docpanel.Controls.Add(CreateDiagnosisButton)
@@ -624,7 +626,7 @@ Partial Class DoctorDashboard
         DataGridViewCellStyle4.WrapMode = DataGridViewTriState.False
         DataGridViewList.DefaultCellStyle = DataGridViewCellStyle4
         DataGridViewList.GridColor = Color.FromArgb(CByte(179), CByte(230), CByte(251))
-        DataGridViewList.Location = New Point(19, 97)
+        DataGridViewList.Location = New Point(511, 97)
         DataGridViewList.Name = "DataGridViewList"
         DataGridViewList.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft
@@ -638,7 +640,7 @@ Partial Class DoctorDashboard
         DataGridViewList.RowHeadersVisible = False
         DataGridViewList.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
         DataGridViewList.RowTemplate.Height = 35
-        DataGridViewList.Size = New Size(1663, 807)
+        DataGridViewList.Size = New Size(1171, 807)
         DataGridViewList.TabIndex = 149
         DataGridViewList.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.LightBlue
         DataGridViewList.ThemeStyle.AlternatingRowsStyle.BackColor = Color.FromArgb(CByte(160), CByte(160), CByte(160))
@@ -778,6 +780,14 @@ Partial Class DoctorDashboard
         Guna2PictureBox1.TabIndex = 149
         Guna2PictureBox1.TabStop = False
         ' 
+        ' SfCalendar1
+        ' 
+        SfCalendar1.Location = New Point(43, 201)
+        SfCalendar1.Name = "SfCalendar1"
+        SfCalendar1.Size = New Size(420, 440)
+        SfCalendar1.TabIndex = 154
+        SfCalendar1.Text = "SfCalendar1"
+        ' 
         ' DoctorDashboard
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -844,4 +854,5 @@ Partial Class DoctorDashboard
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
     Private WithEvents Guna2CirclePictureBox2 As Guna.UI2.WinForms.Guna2CirclePictureBox
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents SfCalendar1 As Syncfusion.WinForms.Input.SfCalendar
 End Class

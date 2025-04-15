@@ -479,4 +479,21 @@ Public Class DoctorDashboard
         End If
     End Sub
 
+    'Private Sub SfCalendar1_SelectionChanged(sender As Object, e As EventArgs) Handles SfCalendar1.SelectionChanged
+    '    If SfCalendar1.SelectedDate IsNot Nothing Then
+    '        Dim selectedDate As Date = SfCalendar1.SelectedDate.Value.Date
+    '        LoadAppointmentsByDate(selectedDate)
+    '    End If
+    'End Sub
+
+    'Private Sub LoadAppointmentsByDate(selectedDate As Date)
+    '    Dim doctorFullName As String = $"Dr. {doctor.LastName}, {doctor.FirstName}"
+    '    Dim allAppointments As DataTable = Database.ViewAppointments(doctorFullName)
+
+    '    Dim view As New DataView(allAppointments)
+    '    view.RowFilter = $"CONVERT([Appointment Date], System.String) = '{selectedDate.ToString("MM/dd/yyyy")}'"
+
+    '    DataGridViewList.DataSource = view
+    'End Sub
+
 End Class
