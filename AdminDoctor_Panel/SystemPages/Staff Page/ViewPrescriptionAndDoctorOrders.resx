@@ -118,6 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="CreatePDFButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DgAACw4BQL7hQQAAAelJREFUaEPtmE1OwzAQhbviTsAFQFylDkdgxd9V2GD3CHATaDlC3V2R27E0HeVR
+        K/VrXNRPmo3fJN+MkizayeTMCdOFuD5mWX81rIhd1l8NukCge+gCge6hCwS6hy4Q6B66QKB76AKB7qEL
+        BLqHLhDoHrpAoHvoAoHuoQuEgzwPb+sL5+OrC/En36jhWrgQn9PMdo9J5+NLzwVtl49Pdo/0OBcpvJ8t
+        L23WGu59eSXLLGx22Hs5AnBeGDQKnBcGIzL1qzvn47wL8Xs6W93qDM4LgxFJC+S5XIhfJuufFwYj8m8W
+        Sa9TWiYt4UK80RmcFwaNAueFQaPAeWHQKHBeGDQKnBcGitxzrLJ+DeyBgcKK2GX9GtgDA0VJTw1KPLAH
+        BoqSnhqUeGAPDBQlPTUo8cAeGCj6epyPn/l8aKV76Hvmc31mgT0wUPT11FikC/FD3zOf6zML7IGBoqSn
+        BiUe2JN/6qafkTbLwIsrs88zDcvrzaw+zm02Sf9K5Bvsq53rBrxa9puw2H5UzsdHe+3276DtMpsn81fp
+        64YsYr8JS0//TqUnkZbo/TuohHwje14buocuEOiePsHAV2un7DeTz/VZVfoENRax30w+12dVoQsEuocu
+        EOgeukCge9Q7fZSy/mpYEbus/8wp8Qs/nTPzROac7wAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="BackButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -296,18 +310,18 @@
         SZIkSZIkSZIkSZIkSZIkSZIkSZLW4v8DV8bvQf8vetoAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pd_BookAppointment.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="viewinfo_PrintBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAHpSURBVGhD7ZhNTsMwEIW74k7ABUBcpQ5HYMXfVdhg9whw
-        E2g5Qt1dkduxNB3lUSv1a1zUT5qN3yTfjJIs2snkzAnThbg+Zll/NayIXdZfDbpAoHvoAoHuoQsEuocu
-        EOgeukCge+gCge6hCwS6hy4Q6B66QKB76AKB7qELhIM8D2/rC+fjqwvxJ9+o4Vq4EJ/TzHaPSefjS88F
-        bZePT3aP9DgXKbyfLS9t1hrufXklyyxsdth7OQJwXhg0CpwXBiMy9as75+O8C/F7Olvd6gzOC4MRSQvk
-        uVyIXybrnxcGI/JvFkmvU1omLeFCvNEZnBcGjQLnhUGjwHlh0ChwXhg0CpwXBorcc6yyfg3sgYHCithl
-        /RrYAwNFSU8NSjywBwaKkp4alHhgDwwUJT01KPHAHhgo+nqcj5/5fGile+h75nN9ZoE9MFD09dRYpAvx
-        Q98zn+szC+yBgaKkpwYlHtiTf+qmn5E2y8CLK7PPMw3L682sPs5tNkn/SuQb7Kud6wa8WvabsNh+VM7H
-        R3vt9u+g7TKbJ/NX6euGLGK/CUtP/06lJ5GW6P07qIR8I3teG7qHLhDonj7BwFdrp+w3k8/1WVX6BDUW
-        sd9MPtdnVaELBLqHLhDoHrpAoHvUO32Usv5qWBG7rP/MKfELP50z80TmnO8AAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DwAACw8BkvkDpQAAAelJREFUaEPtmE1OwzAQhbviTsAFQFylDkdgxd9V2GD3CHATaDlC3V2R27E0HeVR
+        K/VrXNRPmo3fJN+MkizayeTMCdOFuD5mWX81rIhd1l8NukCge+gCge6hCwS6hy4Q6B66QKB76AKB7qEL
+        BLqHLhDoHrpAoHvoAoHuoQuEgzwPb+sL5+OrC/En36jhWrgQn9PMdo9J5+NLzwVtl49Pdo/0OBcpvJ8t
+        L23WGu59eSXLLGx22Hs5AnBeGDQKnBcGIzL1qzvn47wL8Xs6W93qDM4LgxFJC+S5XIhfJuufFwYj8m8W
+        Sa9TWiYt4UK80RmcFwaNAueFQaPAeWHQKHBeGDQKnBcGitxzrLJ+DeyBgcKK2GX9GtgDA0VJTw1KPLAH
+        BoqSnhqUeGAPDBQlPTUo8cAeGCj6epyPn/l8aKV76Hvmc31mgT0wUPT11FikC/FD3zOf6zML7IGBoqSn
+        BiUe2JN/6qafkTbLwIsrs88zDcvrzaw+zm02Sf9K5Bvsq53rBrxa9puw2H5UzsdHe+3276DtMpsn81fp
+        64YsYr8JS0//TqUnkZbo/TuohHwje14buocuEOiePsHAV2un7DeTz/VZVfoENRax30w+12dVoQsEuocu
+        EOgeukCge9Q7fZSy/mpYEbus/8wp8Qs/nTPzROac7wAAAABJRU5ErkJggg==
 </value>
   </data>
   <metadata name="PrintDocument1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

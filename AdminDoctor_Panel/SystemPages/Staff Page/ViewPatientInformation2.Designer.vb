@@ -24,6 +24,8 @@ Partial Class ViewPatientInformation2
     Private Sub InitializeComponent()
         Dim CustomizableEdges100 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges101 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ViewPatientInformation2))
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -122,9 +124,12 @@ Partial Class ViewPatientInformation2
         Dim CustomizableEdges93 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges96 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges97 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ViewPatientInformation2))
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
+        Guna2HtmlLabel29 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Guna2HtmlLabel28 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Guna2HtmlLabel27 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Guna2HtmlLabel26 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Guna2ImageButton1 = New Guna.UI2.WinForms.Guna2ImageButton()
         Guna2HtmlLabel25 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Guna2HtmlLabel13 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         viewinfo_PrintBtn = New Guna.UI2.WinForms.Guna2ImageButton()
@@ -202,11 +207,6 @@ Partial Class ViewPatientInformation2
         guna2HtmlLabel14 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         PrintPreviewDialog1 = New PrintPreviewDialog()
         PrintDocument1 = New Printing.PrintDocument()
-        Guna2HtmlLabel29 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Guna2HtmlLabel28 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Guna2HtmlLabel27 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Guna2HtmlLabel26 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Guna2ImageButton1 = New Guna.UI2.WinForms.Guna2ImageButton()
         Guna2CustomGradientPanel1.SuspendLayout()
         PrintablePanel.SuspendLayout()
         guna2Panel25.SuspendLayout()
@@ -259,6 +259,66 @@ Partial Class ViewPatientInformation2
         Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges101
         Guna2CustomGradientPanel1.Size = New Size(925, 891)
         Guna2CustomGradientPanel1.TabIndex = 0
+        ' 
+        ' Guna2HtmlLabel29
+        ' 
+        Guna2HtmlLabel29.BackColor = Color.Transparent
+        Guna2HtmlLabel29.Font = New Font("Nirmala UI", 10.75F, FontStyle.Bold)
+        Guna2HtmlLabel29.ForeColor = Color.White
+        Guna2HtmlLabel29.Location = New Point(814, 591)
+        Guna2HtmlLabel29.Name = "Guna2HtmlLabel29"
+        Guna2HtmlLabel29.Size = New Size(103, 21)
+        Guna2HtmlLabel29.TabIndex = 177
+        Guna2HtmlLabel29.Text = "Doctor's Order"
+        ' 
+        ' Guna2HtmlLabel28
+        ' 
+        Guna2HtmlLabel28.BackColor = Color.Transparent
+        Guna2HtmlLabel28.Font = New Font("Nirmala UI", 10.75F, FontStyle.Bold)
+        Guna2HtmlLabel28.ForeColor = Color.White
+        Guna2HtmlLabel28.Location = New Point(851, 571)
+        Guna2HtmlLabel28.Name = "Guna2HtmlLabel28"
+        Guna2HtmlLabel28.Size = New Size(28, 21)
+        Guna2HtmlLabel28.TabIndex = 176
+        Guna2HtmlLabel28.Text = "and"
+        ' 
+        ' Guna2HtmlLabel27
+        ' 
+        Guna2HtmlLabel27.BackColor = Color.Transparent
+        Guna2HtmlLabel27.Font = New Font("Nirmala UI", 10.75F, FontStyle.Bold)
+        Guna2HtmlLabel27.ForeColor = Color.White
+        Guna2HtmlLabel27.Location = New Point(825, 547)
+        Guna2HtmlLabel27.Name = "Guna2HtmlLabel27"
+        Guna2HtmlLabel27.Size = New Size(84, 21)
+        Guna2HtmlLabel27.TabIndex = 175
+        Guna2HtmlLabel27.Text = "Prescription"
+        ' 
+        ' Guna2HtmlLabel26
+        ' 
+        Guna2HtmlLabel26.BackColor = Color.Transparent
+        Guna2HtmlLabel26.Font = New Font("Nirmala UI", 10.75F, FontStyle.Bold)
+        Guna2HtmlLabel26.ForeColor = Color.White
+        Guna2HtmlLabel26.Location = New Point(849, 524)
+        Guna2HtmlLabel26.Name = "Guna2HtmlLabel26"
+        Guna2HtmlLabel26.Size = New Size(35, 21)
+        Guna2HtmlLabel26.TabIndex = 174
+        Guna2HtmlLabel26.Text = "Print"
+        ' 
+        ' Guna2ImageButton1
+        ' 
+        Guna2ImageButton1.BackColor = Color.Transparent
+        Guna2ImageButton1.CheckedState.ImageSize = New Size(64, 64)
+        Guna2ImageButton1.HoverState.ImageSize = New Size(64, 64)
+        Guna2ImageButton1.Image = CType(resources.GetObject("Guna2ImageButton1.Image"), Image)
+        Guna2ImageButton1.ImageOffset = New Point(0, 0)
+        Guna2ImageButton1.ImageRotate = 0F
+        Guna2ImageButton1.Location = New Point(832, 476)
+        Guna2ImageButton1.Margin = New Padding(3, 2, 3, 2)
+        Guna2ImageButton1.Name = "Guna2ImageButton1"
+        Guna2ImageButton1.PressedState.ImageSize = New Size(64, 64)
+        Guna2ImageButton1.ShadowDecoration.CustomizableEdges = CustomizableEdges1
+        Guna2ImageButton1.Size = New Size(70, 51)
+        Guna2ImageButton1.TabIndex = 173
         ' 
         ' Guna2HtmlLabel25
         ' 
@@ -1520,66 +1580,6 @@ Partial Class ViewPatientInformation2
         PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), Icon)
         PrintPreviewDialog1.Name = "PrintPreviewDialog1"
         PrintPreviewDialog1.Visible = False
-        ' 
-        ' Guna2HtmlLabel29
-        ' 
-        Guna2HtmlLabel29.BackColor = Color.Transparent
-        Guna2HtmlLabel29.Font = New Font("Nirmala UI", 10.75F, FontStyle.Bold)
-        Guna2HtmlLabel29.ForeColor = Color.White
-        Guna2HtmlLabel29.Location = New Point(814, 591)
-        Guna2HtmlLabel29.Name = "Guna2HtmlLabel29"
-        Guna2HtmlLabel29.Size = New Size(103, 21)
-        Guna2HtmlLabel29.TabIndex = 177
-        Guna2HtmlLabel29.Text = "Doctor's Order"
-        ' 
-        ' Guna2HtmlLabel28
-        ' 
-        Guna2HtmlLabel28.BackColor = Color.Transparent
-        Guna2HtmlLabel28.Font = New Font("Nirmala UI", 10.75F, FontStyle.Bold)
-        Guna2HtmlLabel28.ForeColor = Color.White
-        Guna2HtmlLabel28.Location = New Point(851, 571)
-        Guna2HtmlLabel28.Name = "Guna2HtmlLabel28"
-        Guna2HtmlLabel28.Size = New Size(28, 21)
-        Guna2HtmlLabel28.TabIndex = 176
-        Guna2HtmlLabel28.Text = "and"
-        ' 
-        ' Guna2HtmlLabel27
-        ' 
-        Guna2HtmlLabel27.BackColor = Color.Transparent
-        Guna2HtmlLabel27.Font = New Font("Nirmala UI", 10.75F, FontStyle.Bold)
-        Guna2HtmlLabel27.ForeColor = Color.White
-        Guna2HtmlLabel27.Location = New Point(825, 547)
-        Guna2HtmlLabel27.Name = "Guna2HtmlLabel27"
-        Guna2HtmlLabel27.Size = New Size(84, 21)
-        Guna2HtmlLabel27.TabIndex = 175
-        Guna2HtmlLabel27.Text = "Prescription"
-        ' 
-        ' Guna2HtmlLabel26
-        ' 
-        Guna2HtmlLabel26.BackColor = Color.Transparent
-        Guna2HtmlLabel26.Font = New Font("Nirmala UI", 10.75F, FontStyle.Bold)
-        Guna2HtmlLabel26.ForeColor = Color.White
-        Guna2HtmlLabel26.Location = New Point(849, 524)
-        Guna2HtmlLabel26.Name = "Guna2HtmlLabel26"
-        Guna2HtmlLabel26.Size = New Size(35, 21)
-        Guna2HtmlLabel26.TabIndex = 174
-        Guna2HtmlLabel26.Text = "Print"
-        ' 
-        ' Guna2ImageButton1
-        ' 
-        Guna2ImageButton1.BackColor = Color.Transparent
-        Guna2ImageButton1.CheckedState.ImageSize = New Size(64, 64)
-        Guna2ImageButton1.HoverState.ImageSize = New Size(64, 64)
-        Guna2ImageButton1.Image = CType(resources.GetObject("Guna2ImageButton1.Image"), Image)
-        Guna2ImageButton1.ImageOffset = New Point(0, 0)
-        Guna2ImageButton1.ImageRotate = 0F
-        Guna2ImageButton1.Location = New Point(832, 476)
-        Guna2ImageButton1.Margin = New Padding(3, 2, 3, 2)
-        Guna2ImageButton1.Name = "Guna2ImageButton1"
-        Guna2ImageButton1.PressedState.ImageSize = New Size(64, 64)
-        Guna2ImageButton1.ShadowDecoration.CustomizableEdges = CustomizableEdges1
-        Guna2ImageButton1.Size = New Size(70, 51)
-        Guna2ImageButton1.TabIndex = 173
         ' 
         ' ViewPatientInformation2
         ' 

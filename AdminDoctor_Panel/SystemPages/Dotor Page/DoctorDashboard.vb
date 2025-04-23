@@ -235,47 +235,55 @@ Public Class DoctorDashboard
     End Sub
 
     Private Sub CreateDiagnosisButton_Click(sender As Object, e As EventArgs) Handles CreateDiagnosisButton.Click
-        If DataGridViewList.SelectedRows.Count > 0 Then
-            Dim selectedRow As DataGridViewRow = DataGridViewList.SelectedRows(0)
-            Dim appointmentDate As Date = Convert.ToDateTime(selectedRow.Cells("Appointment Date").Value)
-            Dim today As Date = Date.Today
+        Dim selectedCount As Integer = DataGridViewList.SelectedRows.Count
 
-            If appointmentDate <> today Then
-                MessageBox.Show("You can only create a diagnosis on the day of the appointment.", "Invalid Date", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                Return
-            End If
-
-            Dim appointmentId As Integer = Convert.ToInt32(selectedRow.Cells("id").Value)
-
-            Database.viewDocument(
-            appointmentId,
-            Sub(patientDetails)
-                Dim doctorMedicalRecord As New DoctorMedicalRecord()
-                doctorMedicalRecord.SetPatientDetails(
-                    patientDetails("P_Firstname"),
-                    patientDetails("P_Lastname"),
-                    patientDetails("P_Bdate"),
-                    patientDetails("P_Height"),
-                    patientDetails("P_Weight"),
-                    patientDetails("P_BMI"),
-                    patientDetails("P_Blood_Type"),
-                    patientDetails("P_Alergy"),
-                    patientDetails("P_Medication"),
-                    patientDetails("P_PrevSurgery"),
-                    patientDetails("P_Precondition"),
-                    patientDetails("P_Treatment")
-                )
-
-                AddHandler doctorMedicalRecord.LoadAppointmentsList, AddressOf LoadAppointmentsList
-                doctorMedicalRecord.Show()
-            End Sub,
-            Sub(errorMessage)
-                MessageBox.Show(errorMessage)
-            End Sub
-        )
-        Else
-            MessageBox.Show("Please select an appointment.")
+        If selectedCount = 0 Then
+            MessageBox.Show("Please select an appointment.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
         End If
+
+        If selectedCount > 1 Then
+            MessageBox.Show("Please select only one appointment.", "Multiple Selections", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
+        End If
+
+        Dim selectedRow As DataGridViewRow = DataGridViewList.SelectedRows(0)
+        Dim appointmentDate As Date = Convert.ToDateTime(selectedRow.Cells("Appointment Date").Value)
+        Dim today As Date = Date.Today
+
+        If appointmentDate.Date <> today Then
+            MessageBox.Show("You can only create a diagnosis on the day of the appointment.", "Invalid Date", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
+        End If
+
+        Dim appointmentId As Integer = Convert.ToInt32(selectedRow.Cells("id").Value)
+
+        Database.viewDocument(
+        appointmentId,
+        Sub(patientDetails)
+            Dim doctorMedicalRecord As New DoctorMedicalRecord()
+            doctorMedicalRecord.SetPatientDetails(
+                patientDetails("P_Firstname"),
+                patientDetails("P_Lastname"),
+                patientDetails("P_Bdate"),
+                patientDetails("P_Height"),
+                patientDetails("P_Weight"),
+                patientDetails("P_BMI"),
+                patientDetails("P_Blood_Type"),
+                patientDetails("P_Alergy"),
+                patientDetails("P_Medication"),
+                patientDetails("P_PrevSurgery"),
+                patientDetails("P_Precondition"),
+                patientDetails("P_Treatment")
+            )
+
+            AddHandler doctorMedicalRecord.LoadAppointmentsList, AddressOf LoadAppointmentsList
+            doctorMedicalRecord.Show()
+        End Sub,
+        Sub(errorMessage)
+            MessageBox.Show(errorMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Sub
+    )
     End Sub
 
     Private Sub AcceptButton_Click(sender As Object, e As EventArgs) Handles AcceptButton.Click

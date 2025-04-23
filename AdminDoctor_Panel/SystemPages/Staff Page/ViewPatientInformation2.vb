@@ -1,4 +1,5 @@
 ﻿Imports System.Drawing.Printing
+Imports Guna.UI2.WinForms
 
 Partial Public Class ViewPatientInformation2
     Inherits Form
@@ -44,9 +45,9 @@ Partial Public Class ViewPatientInformation2
         Dim ps As New PrinterSettings()
         PrintPanel = PrintablePanel
         getprintarea(PrintPanel)
-        printPreviewDialog1.Document = printDocument1
-        AddHandler printDocument1.PrintPage, AddressOf printDocument1_PrintPage
-        printPreviewDialog1.ShowDialog()
+        PrintPreviewDialog1.Document = PrintDocument1
+        AddHandler PrintDocument1.PrintPage, AddressOf printDocument1_PrintPage
+        PrintPreviewDialog1.ShowDialog()
     End Sub
 
     Private memorying As Bitmap
@@ -106,5 +107,28 @@ Partial Public Class ViewPatientInformation2
         End If
     End Sub
 
+    Private Sub Guna2ImageButton1_Click(sender As Object, e As EventArgs) Handles Guna2ImageButton1.Click
+        Dim firstName As String = viewinfo_Fname.Text
+        Dim lastName As String = viewinfo_Lname.Text
+        Dim birthDate As String = viewinfo_Bdate.Text
+        Dim doctorFirstName As String = diagnosis_Fname.Text
+        Dim doctorLastName As String = diagnosis_Lname.Text
+        Dim appointmentDate As String = appointmentdateTextBox.Text
+        Dim prescription As String = viewinfo_prescription.Text
+        Dim doctorOrder As String = viewinfo_DoctorOrder.Text
+
+        Dim prescriptionForm As New ViewPrescriptionAndDoctorOrders()
+        prescriptionForm.SetDetails(
+            firstName,
+            lastName,
+            birthDate,
+            doctorFirstName,
+            doctorLastName,
+            appointmentDate,
+            prescription,
+            doctorOrder
+        )
+        prescriptionForm.Show()
+    End Sub
 
 End Class

@@ -34,18 +34,17 @@ Partial Public Class DoctorDiagnosisRecord
     End Sub
 
     Private Function GetValueFromFlowLayout(panel As FlowLayoutPanel) As String
-        Dim list As New Dictionary(Of String, Decimal)()
+        Dim list As New List(Of String)()
 
         For Each control As Control In panel.Controls
             Dim desc As DescPrice = TryCast(control, DescPrice)
             If desc IsNot Nothing Then
-                list.Add(desc.Desc, desc.Price)
+                list.Add(desc.Desc)
             End If
         Next
 
-        Return String.Join(", ", list.Select(Function(vp) $"{vp.Key} {vp.Value}"))
+        Return String.Join(", ", list)
     End Function
-
     Private Sub SaveButton_Click(sender As Object, e As EventArgs) Handles SaveButton.Click
         Dim diagnosis As String = DiagnosisTextBox.Text.Trim()
         Dim doctorOrder As String = GetValueFromFlowLayout(DoctorOrdersFlowLayoutPanel)
@@ -84,8 +83,6 @@ Partial Public Class DoctorDiagnosisRecord
         }
 
         Database.ExecuteQuery(query, parameters)
-
-        MessageBox.Show("Appointment details saved successfully and marked as completed.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
         Me.Close()
         prevForm.Close()
