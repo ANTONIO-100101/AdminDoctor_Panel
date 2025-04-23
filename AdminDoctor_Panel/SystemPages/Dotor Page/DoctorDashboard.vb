@@ -226,24 +226,22 @@ Public Class DoctorDashboard
     End Sub
 
     Private Sub CreateDiagnosisButton_Click(sender As Object, e As EventArgs) Handles CreateDiagnosisButton.Click
-        Dim selectedRows = DataGridViewList.Rows.Cast(Of DataGridViewRow)().
-                       Where(Function(r)
-                                 Dim cellValue = r.Cells("checkboxcolumn").Value
-                                 Return cellValue IsNot Nothing AndAlso cellValue.ToString().ToLower() = "true"
-                             End Function).
-                       ToList()
+        If DataGridViewList.SelectedRows.Count > 0 Then
+            Dim selectedRow As DataGridViewRow = DataGridViewList.SelectedRows(0)
+            Dim appointmentDate As Date = Convert.ToDateTime(selectedRow.Cells("Appointment Date").Value)
+            Dim today As Date = Date.Today
 
-        If selectedRows.Count = 1 Then
-            Dim appointmentId As Integer = Convert.ToInt32(selectedRows(0).Cells("id").Value)
+            If appointmentDate <> today Then
+                MessageBox.Show("You can only create a diagnosis on the day of the appointment.", "Invalid Date", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Return
+            End If
 
-            Database.CreateDiagnosis(
+            Dim appointmentId As Integer = Convert.ToInt32(selectedRow.Cells("id").Value)
+
+            Database.viewDocument(
             appointmentId,
             Sub(patientDetails)
-                Dim doctorFullName As String = $"Dr. {doctor.LastName}, {doctor.FirstName}"
-
                 Dim doctorMedicalRecord As New DoctorMedicalRecord()
-                doctorMedicalRecord.SetDoctorName(doctorFullName)
-
                 doctorMedicalRecord.SetPatientDetails(
                     patientDetails("P_Firstname"),
                     patientDetails("P_Lastname"),
@@ -260,7 +258,6 @@ Public Class DoctorDashboard
                 )
 
                 AddHandler doctorMedicalRecord.LoadAppointmentsList, AddressOf LoadAppointmentsList
-
                 doctorMedicalRecord.Show()
             End Sub,
             Sub(errorMessage)
@@ -268,7 +265,7 @@ Public Class DoctorDashboard
             End Sub
         )
         Else
-            MessageBox.Show("Please select only one appointment using the checkbox.")
+            MessageBox.Show("Please select an appointment.")
         End If
     End Sub
 
