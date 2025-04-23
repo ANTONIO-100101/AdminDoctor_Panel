@@ -10,11 +10,11 @@ Public Class DoctorDashboard
         Me.doctor = doctor
         NameLabel.Text = $"Dr. {doctor.LastName}, {doctor.FirstName}"
     End Sub
+
     Private Sub DoctorDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Guna2CustomGradientPanel2.Visible = True
         ad_docpanel.Visible = False
     End Sub
-
 
     Private Sub LoadPendingApprovals(haveAnError As Boolean)
         DataGridViewList.DataSource = Nothing
@@ -104,6 +104,7 @@ Public Class DoctorDashboard
             e.Cancel = True ' Prevent editing for other columns
         End If
     End Sub
+
     Private Sub DataGridViewList_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewList.CellValueChanged
         If e.RowIndex >= 0 AndAlso e.ColumnIndex = 0 Then ' Assuming the checkbox column is the first column
             ' Check if any checkbox is checked
@@ -180,7 +181,6 @@ Public Class DoctorDashboard
         End Try
     End Sub
 
-
     Private Sub pd_HomeButton_Click(sender As Object, e As EventArgs) Handles pd_HomeButton.Click
         Dim confirm As DialogResult = MessageBox.Show("Are you sure you want to Log Out?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If confirm = DialogResult.Yes Then
@@ -224,6 +224,7 @@ Public Class DoctorDashboard
     Private Sub Staff_MinimizeButton_Click(sender As Object, e As EventArgs) Handles Staff_MinimizeButton.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
+
     Private Sub CreateDiagnosisButton_Click(sender As Object, e As EventArgs) Handles CreateDiagnosisButton.Click
         Dim selectedRows = DataGridViewList.Rows.Cast(Of DataGridViewRow)().
                        Where(Function(r)
@@ -479,21 +480,45 @@ Public Class DoctorDashboard
         End If
     End Sub
 
-    'Private Sub SfCalendar1_SelectionChanged(sender As Object, e As EventArgs) Handles SfCalendar1.SelectionChanged
-    '    If SfCalendar1.SelectedDate IsNot Nothing Then
-    '        Dim selectedDate As Date = SfCalendar1.SelectedDate.Value.Date
-    '        LoadAppointmentsByDate(selectedDate)
-    '    End If
-    'End Sub
+    Private Sub SfCalendar1_SelectionChanged(sender As Object, e As EventArgs) Handles SfCalendar1.SelectionChanged
+        If SfCalendar1.SelectedDate IsNot Nothing Then
+            Dim selectedDate As Date = SfCalendar1.SelectedDate.Value.Date
+            LoadAppointmentsByDate(selectedDate)
+        End If
+    End Sub
 
-    'Private Sub LoadAppointmentsByDate(selectedDate As Date)
-    '    Dim doctorFullName As String = $"Dr. {doctor.LastName}, {doctor.FirstName}"
-    '    Dim allAppointments As DataTable = Database.ViewAppointments(doctorFullName)
+    Private Sub LoadAppointmentsByDate(selectedDate As Date)
+        Dim doctorFullName As String = $"Dr. {doctor.LastName}, {doctor.FirstName}"
 
-    '    Dim view As New DataView(allAppointments)
-    '    view.RowFilter = $"CONVERT([Appointment Date], System.String) = '{selectedDate.ToString("MM/dd/yyyy")}'"
+        ' Show loading indicator if you have one
+        ad_docpanel.Visible = True
+        Guna2CustomGradientPanel2.Visible = False
 
-    '    DataGridViewList.DataSource = view
-    'End Sub
+        ' Set button visibility
+        ReconsiderButton.Visible = False
+        AcceptButton.Visible = False
+        DeclineButton.Visible = False
+        CreateDiagnosisButton.Visible = True
+        ViewButton.Visible = False
+        CheckOutButton.Visible = False
+        InvoiceButton.Visible = False
+
+        Try
+            ' Get appointments for the selected date
+            Dim appointments As DataTable = Database.ViewAppointmentsByDate(doctorFullName, selectedDate)
+
+            If appointments IsNot Nothing AndAlso appointments.Rows.Count > 0 Then
+                DataGridViewList.DataSource = appointments
+                DataGridViewList.AutoGenerateColumns = True
+                DataGridViewList.AllowUserToAddRows = False
+                DataGridViewList.Visible = True
+            Else
+                DataGridViewList.DataSource = Nothing
+                MessageBox.Show($"No appointments found for {selectedDate.ToString("dd/MM/yyyy")}", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End If
+        Catch ex As Exception
+            MessageBox.Show($"An error occurred while loading appointments: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
 
 End Class

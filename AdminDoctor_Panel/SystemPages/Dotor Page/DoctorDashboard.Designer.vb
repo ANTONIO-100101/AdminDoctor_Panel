@@ -91,6 +91,7 @@ Partial Class DoctorDashboard
         NameLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
         ad_guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         ad_docpanel = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
+        SfCalendar1 = New Syncfusion.WinForms.Input.SfCalendar()
         InvoiceButton = New Guna.UI2.WinForms.Guna2Button()
         CheckOutButton = New Guna.UI2.WinForms.Guna2Button()
         CreateDiagnosisButton = New Guna.UI2.WinForms.Guna2Button()
@@ -105,7 +106,6 @@ Partial Class DoctorDashboard
         Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Guna2CirclePictureBox2 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        SfCalendar1 = New Syncfusion.WinForms.Input.SfCalendar()
         guna2CustomGradientPanel1.SuspendLayout()
         CType(guna2CirclePictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         ad_docpanel.SuspendLayout()
@@ -445,6 +445,14 @@ Partial Class DoctorDashboard
         ad_docpanel.Size = New Size(1691, 913)
         ad_docpanel.TabIndex = 264
         ' 
+        ' SfCalendar1
+        ' 
+        SfCalendar1.Location = New Point(43, 201)
+        SfCalendar1.Name = "SfCalendar1"
+        SfCalendar1.Size = New Size(420, 440)
+        SfCalendar1.TabIndex = 154
+        SfCalendar1.Text = "SfCalendar1"
+        ' 
         ' InvoiceButton
         ' 
         InvoiceButton.BackColor = Color.Transparent
@@ -779,14 +787,6 @@ Partial Class DoctorDashboard
         Guna2PictureBox1.Size = New Size(748, 412)
         Guna2PictureBox1.TabIndex = 149
         Guna2PictureBox1.TabStop = False
-        ' 
-        ' SfCalendar1
-        ' 
-        SfCalendar1.Location = New Point(43, 201)
-        SfCalendar1.Name = "SfCalendar1"
-        SfCalendar1.Size = New Size(420, 440)
-        SfCalendar1.TabIndex = 154
-        SfCalendar1.Text = "SfCalendar1"
         ' 
         ' DoctorDashboard
         ' 

@@ -1423,5 +1423,31 @@ Public Class Database
             End Using
         End Using
     End Sub
+    Public Shared Function ViewAppointmentsByDate(doctorFullName As String, appointmentDate As Date) As DataTable
+        Dim query As String = "SELECT ah_Patient_Name AS 'Patient Name', id, ah_Specialization AS 'Doctor Specialization', " &
+                             "ah_time AS 'Appointment Time', CONVERT(varchar, ah_date, 103) AS 'Appointment Date', " &
+                             "ah_consfee AS 'Consultation Fee' FROM tb_appointmenthistory " &
+                             "WHERE ah_status = 'Accepted' AND ah_Doctor_Name = @DoctorFullName " &
+                             "AND CONVERT(date, ah_date) = @AppointmentDate"
+
+        Dim AppointmentTable As New DataTable()
+
+        Try
+            Using conn As New SqlConnection(connectionString)
+                conn.Open()
+                Using cmd As New SqlCommand(query, conn)
+                    cmd.Parameters.AddWithValue("@DoctorFullName", doctorFullName)
+                    cmd.Parameters.AddWithValue("@AppointmentDate", appointmentDate.Date)
+                    Using adapter As New SqlDataAdapter(cmd)
+                        adapter.Fill(AppointmentTable)
+                    End Using
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show($"Error retrieving appointment list: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+
+        Return AppointmentTable
+    End Function
 
 End Class
