@@ -49,6 +49,15 @@ Public Class DoctorDashboard
     End Sub
 
     Private Sub ApprovalPendingButton_Click(sender As Object, e As EventArgs) Handles ApprovalPendingButton.Click
+
+        ReconsiderButton.Visible = False
+        CreateDiagnosisButton.Visible = False
+        AcceptButton.Visible = True
+        DeclineButton.Visible = True
+        ViewButton.Visible = False
+        CheckOutButton.Visible = False
+        InvoiceButton.Visible = False
+
         LoadPendingApprovals(True)
     End Sub
 
@@ -314,13 +323,13 @@ Public Class DoctorDashboard
     End Sub
 
     Private Sub RejectedRequestsButton_Click(sender As Object, e As EventArgs) Handles RejectedRequestsButton.Click
-        DataGridViewList.DataSource = Nothing
-
         ReconsiderButton.Visible = True
         AcceptButton.Visible = False
         DeclineButton.Visible = False
         CreateDiagnosisButton.Visible = False
         ViewButton.Visible = False
+
+        LoadRejectedAppointments()
 
         Dim doctorFullName As String = $"Dr. {doctor.LastName}, {doctor.FirstName}"
         Dim declinedappointment As DataTable = Database.DeclinedAppointments(doctorFullName)
@@ -340,9 +349,7 @@ Public Class DoctorDashboard
     End Sub
 
     Private Sub CompletedAppointmentsButton_Click(sender As Object, e As EventArgs) Handles CompletedAppointmentsButton.Click
-        Guna2CustomGradientPanel2.Visible = False
-
-        DataGridViewList.DataSource = Nothing
+        ' Set button visibility for completed appointments
         ReconsiderButton.Visible = False
         AcceptButton.Visible = False
         DeclineButton.Visible = False
@@ -350,6 +357,8 @@ Public Class DoctorDashboard
         ViewButton.Visible = True
         CheckOutButton.Visible = True
         InvoiceButton.Visible = True
+
+        LoadCompletedAppointments()
 
         Dim doctorFullName As String = $"Dr. {doctor.LastName}, {doctor.FirstName}"
         Dim viewcompletedappoointment As DataTable = Database.ViewCompletedAppointments(doctorFullName)
@@ -491,18 +500,23 @@ Public Class DoctorDashboard
         ad_docpanel.Visible = True
         Guna2CustomGradientPanel2.Visible = False
 
-        ' Set button visibility
-        ReconsiderButton.Visible = False
-        AcceptButton.Visible = False
-        DeclineButton.Visible = False
-        CreateDiagnosisButton.Visible = True
-        ViewButton.Visible = False
-        CheckOutButton.Visible = False
-        InvoiceButton.Visible = False
-
         Try
-            ' Get appointments for the selected date
-            Dim appointments As DataTable = Database.ViewAppointmentsByDate(doctorFullName, selectedDate)
+            Dim appointments As DataTable = Nothing
+
+            ' Determine which appointments to load based on which button was clicked last
+            If ReconsiderButton.Visible Then
+                ' Rejected appointments
+                appointments = Database.ViewRejectedAppointmentsByDate(doctorFullName, selectedDate)
+            ElseIf AcceptButton.Visible Then
+                ' Pending appointments
+                appointments = Database.ViewPendingAppointmentsByDate(doctorFullName, selectedDate)
+            ElseIf ViewButton.Visible Then
+                ' Completed appointments
+                appointments = Database.ViewCompletedAppointmentsByDate(doctorFullName, selectedDate)
+            Else
+                ' Default to accepted appointments
+                appointments = Database.ViewAppointmentsByDate(doctorFullName, selectedDate)
+            End If
 
             If appointments IsNot Nothing AndAlso appointments.Rows.Count > 0 Then
                 DataGridViewList.DataSource = appointments
