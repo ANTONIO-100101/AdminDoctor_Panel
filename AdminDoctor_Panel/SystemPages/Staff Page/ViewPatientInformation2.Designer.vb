@@ -22,107 +22,108 @@ Partial Class ViewPatientInformation2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim CustomizableEdges99 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges100 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ViewPatientInformation2))
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges101 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges97 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges98 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges98 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges99 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges23 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges25 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges31 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges32 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges23 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges29 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges30 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges35 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges36 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges32 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges33 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges34 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges39 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges40 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges30 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges31 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges36 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges37 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges38 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges43 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges44 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges34 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges35 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges40 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges41 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges42 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges38 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges39 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges44 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges45 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges42 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges43 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges46 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges49 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges50 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges47 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges48 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges53 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges54 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges50 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges51 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges52 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges57 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges58 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges48 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges49 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges54 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges55 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges56 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges61 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges62 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges52 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges53 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges58 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges59 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges60 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges65 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges66 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges56 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges57 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges62 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges63 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges64 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges69 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges70 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges60 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges61 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges66 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges67 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges68 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges73 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges74 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges64 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges65 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges70 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges71 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges72 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges77 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges78 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges68 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges69 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges74 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges75 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges76 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges81 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges82 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges72 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges73 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges78 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges79 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges80 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges85 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges86 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges76 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges77 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges82 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges83 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges84 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges89 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges90 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges80 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges81 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges86 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges87 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges88 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges93 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges94 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges84 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges85 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges90 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges91 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges92 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges88 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges89 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges94 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges95 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges92 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges93 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges96 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges97 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ViewPatientInformation2))
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         Guna2HtmlLabel25 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Guna2HtmlLabel13 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -201,6 +202,11 @@ Partial Class ViewPatientInformation2
         guna2HtmlLabel14 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         PrintPreviewDialog1 = New PrintPreviewDialog()
         PrintDocument1 = New Printing.PrintDocument()
+        Guna2HtmlLabel29 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Guna2HtmlLabel28 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Guna2HtmlLabel27 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Guna2HtmlLabel26 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Guna2ImageButton1 = New Guna.UI2.WinForms.Guna2ImageButton()
         Guna2CustomGradientPanel1.SuspendLayout()
         PrintablePanel.SuspendLayout()
         guna2Panel25.SuspendLayout()
@@ -231,13 +237,18 @@ Partial Class ViewPatientInformation2
         ' 
         ' Guna2CustomGradientPanel1
         ' 
+        Guna2CustomGradientPanel1.Controls.Add(Guna2HtmlLabel29)
+        Guna2CustomGradientPanel1.Controls.Add(Guna2HtmlLabel28)
+        Guna2CustomGradientPanel1.Controls.Add(Guna2HtmlLabel27)
+        Guna2CustomGradientPanel1.Controls.Add(Guna2HtmlLabel26)
+        Guna2CustomGradientPanel1.Controls.Add(Guna2ImageButton1)
         Guna2CustomGradientPanel1.Controls.Add(Guna2HtmlLabel25)
         Guna2CustomGradientPanel1.Controls.Add(Guna2HtmlLabel13)
         Guna2CustomGradientPanel1.Controls.Add(viewinfo_PrintBtn)
         Guna2CustomGradientPanel1.Controls.Add(CreatePDFButton)
         Guna2CustomGradientPanel1.Controls.Add(ExitButton)
         Guna2CustomGradientPanel1.Controls.Add(PrintablePanel)
-        Guna2CustomGradientPanel1.CustomizableEdges = CustomizableEdges99
+        Guna2CustomGradientPanel1.CustomizableEdges = CustomizableEdges100
         Guna2CustomGradientPanel1.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel1.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel1.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
@@ -245,7 +256,7 @@ Partial Class ViewPatientInformation2
         Guna2CustomGradientPanel1.Location = New Point(0, -3)
         Guna2CustomGradientPanel1.Margin = New Padding(3, 2, 3, 2)
         Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
-        Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges100
+        Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges101
         Guna2CustomGradientPanel1.Size = New Size(925, 891)
         Guna2CustomGradientPanel1.TabIndex = 0
         ' 
@@ -283,7 +294,7 @@ Partial Class ViewPatientInformation2
         viewinfo_PrintBtn.Margin = New Padding(3, 2, 3, 2)
         viewinfo_PrintBtn.Name = "viewinfo_PrintBtn"
         viewinfo_PrintBtn.PressedState.ImageSize = New Size(64, 64)
-        viewinfo_PrintBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges1
+        viewinfo_PrintBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges2
         viewinfo_PrintBtn.Size = New Size(70, 51)
         viewinfo_PrintBtn.TabIndex = 166
         ' 
@@ -299,15 +310,16 @@ Partial Class ViewPatientInformation2
         CreatePDFButton.Margin = New Padding(3, 2, 3, 2)
         CreatePDFButton.Name = "CreatePDFButton"
         CreatePDFButton.PressedState.ImageSize = New Size(64, 64)
-        CreatePDFButton.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        CreatePDFButton.ShadowDecoration.CustomizableEdges = CustomizableEdges3
         CreatePDFButton.Size = New Size(70, 51)
         CreatePDFButton.TabIndex = 165
         ' 
         ' ExitButton
         ' 
         ExitButton.BackColor = Color.Red
+        ExitButton.BorderStyle = Drawing2D.DashStyle.Custom
         ExitButton.Cursor = Cursors.Hand
-        ExitButton.CustomizableEdges = CustomizableEdges3
+        ExitButton.CustomizableEdges = CustomizableEdges4
         ExitButton.DisabledState.BorderColor = Color.DarkGray
         ExitButton.DisabledState.CustomBorderColor = Color.DarkGray
         ExitButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -318,7 +330,7 @@ Partial Class ViewPatientInformation2
         ExitButton.Location = New Point(882, 2)
         ExitButton.Margin = New Padding(3, 2, 3, 2)
         ExitButton.Name = "ExitButton"
-        ExitButton.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        ExitButton.ShadowDecoration.CustomizableEdges = CustomizableEdges5
         ExitButton.Size = New Size(43, 26)
         ExitButton.TabIndex = 164
         ExitButton.Text = "X"
@@ -351,11 +363,11 @@ Partial Class ViewPatientInformation2
         PrintablePanel.Controls.Add(guna2Panel3)
         PrintablePanel.Controls.Add(guna2Panel1)
         PrintablePanel.Controls.Add(guna2Panel14)
-        PrintablePanel.CustomizableEdges = CustomizableEdges97
+        PrintablePanel.CustomizableEdges = CustomizableEdges98
         PrintablePanel.FillColor = Color.White
         PrintablePanel.Location = New Point(117, 53)
         PrintablePanel.Name = "PrintablePanel"
-        PrintablePanel.ShadowDecoration.CustomizableEdges = CustomizableEdges98
+        PrintablePanel.ShadowDecoration.CustomizableEdges = CustomizableEdges99
         PrintablePanel.Size = New Size(694, 814)
         PrintablePanel.TabIndex = 7
         ' 
@@ -366,10 +378,10 @@ Partial Class ViewPatientInformation2
         guna2Panel25.BorderThickness = 1
         guna2Panel25.Controls.Add(appointmentdateTextBox)
         guna2Panel25.Controls.Add(guna2HtmlLabel24)
-        guna2Panel25.CustomizableEdges = CustomizableEdges7
+        guna2Panel25.CustomizableEdges = CustomizableEdges8
         guna2Panel25.Location = New Point(250, 514)
         guna2Panel25.Name = "guna2Panel25"
-        guna2Panel25.ShadowDecoration.CustomizableEdges = CustomizableEdges8
+        guna2Panel25.ShadowDecoration.CustomizableEdges = CustomizableEdges9
         guna2Panel25.Size = New Size(198, 73)
         guna2Panel25.TabIndex = 37
         ' 
@@ -378,7 +390,7 @@ Partial Class ViewPatientInformation2
         appointmentdateTextBox.BackColor = Color.White
         appointmentdateTextBox.BorderColor = Color.Black
         appointmentdateTextBox.BorderRadius = 8
-        appointmentdateTextBox.CustomizableEdges = CustomizableEdges5
+        appointmentdateTextBox.CustomizableEdges = CustomizableEdges6
         appointmentdateTextBox.DefaultText = "Appointment Date"
         appointmentdateTextBox.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         appointmentdateTextBox.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -395,7 +407,7 @@ Partial Class ViewPatientInformation2
         appointmentdateTextBox.PlaceholderText = ""
         appointmentdateTextBox.ReadOnly = True
         appointmentdateTextBox.SelectedText = ""
-        appointmentdateTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        appointmentdateTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges7
         appointmentdateTextBox.Size = New Size(177, 36)
         appointmentdateTextBox.TabIndex = 0
         ' 
@@ -416,10 +428,10 @@ Partial Class ViewPatientInformation2
         guna2Panel24.BorderThickness = 1
         guna2Panel24.Controls.Add(appointmenttimeTextBox)
         guna2Panel24.Controls.Add(guna2HtmlLabel23)
-        guna2Panel24.CustomizableEdges = CustomizableEdges11
+        guna2Panel24.CustomizableEdges = CustomizableEdges12
         guna2Panel24.Location = New Point(52, 514)
         guna2Panel24.Name = "guna2Panel24"
-        guna2Panel24.ShadowDecoration.CustomizableEdges = CustomizableEdges12
+        guna2Panel24.ShadowDecoration.CustomizableEdges = CustomizableEdges13
         guna2Panel24.Size = New Size(198, 73)
         guna2Panel24.TabIndex = 36
         ' 
@@ -428,7 +440,7 @@ Partial Class ViewPatientInformation2
         appointmenttimeTextBox.BackColor = Color.White
         appointmenttimeTextBox.BorderColor = Color.Black
         appointmenttimeTextBox.BorderRadius = 8
-        appointmenttimeTextBox.CustomizableEdges = CustomizableEdges9
+        appointmenttimeTextBox.CustomizableEdges = CustomizableEdges10
         appointmenttimeTextBox.DefaultText = "Appointment Time"
         appointmenttimeTextBox.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         appointmenttimeTextBox.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -445,7 +457,7 @@ Partial Class ViewPatientInformation2
         appointmenttimeTextBox.PlaceholderText = ""
         appointmenttimeTextBox.ReadOnly = True
         appointmenttimeTextBox.SelectedText = ""
-        appointmenttimeTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        appointmenttimeTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges11
         appointmenttimeTextBox.Size = New Size(177, 36)
         appointmenttimeTextBox.TabIndex = 0
         ' 
@@ -466,10 +478,10 @@ Partial Class ViewPatientInformation2
         guna2Panel19.BorderThickness = 1
         guna2Panel19.Controls.Add(viewinfo_prescription)
         guna2Panel19.Controls.Add(guna2HtmlLabel19)
-        guna2Panel19.CustomizableEdges = CustomizableEdges15
+        guna2Panel19.CustomizableEdges = CustomizableEdges16
         guna2Panel19.Location = New Point(52, 697)
         guna2Panel19.Name = "guna2Panel19"
-        guna2Panel19.ShadowDecoration.CustomizableEdges = CustomizableEdges16
+        guna2Panel19.ShadowDecoration.CustomizableEdges = CustomizableEdges17
         guna2Panel19.Size = New Size(396, 109)
         guna2Panel19.TabIndex = 29
         ' 
@@ -478,7 +490,7 @@ Partial Class ViewPatientInformation2
         viewinfo_prescription.BackColor = Color.White
         viewinfo_prescription.BorderColor = Color.Black
         viewinfo_prescription.BorderRadius = 8
-        viewinfo_prescription.CustomizableEdges = CustomizableEdges13
+        viewinfo_prescription.CustomizableEdges = CustomizableEdges14
         viewinfo_prescription.DefaultText = "Prescription"
         viewinfo_prescription.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         viewinfo_prescription.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -496,7 +508,7 @@ Partial Class ViewPatientInformation2
         viewinfo_prescription.PlaceholderText = ""
         viewinfo_prescription.ReadOnly = True
         viewinfo_prescription.SelectedText = ""
-        viewinfo_prescription.ShadowDecoration.CustomizableEdges = CustomizableEdges14
+        viewinfo_prescription.ShadowDecoration.CustomizableEdges = CustomizableEdges15
         viewinfo_prescription.Size = New Size(374, 75)
         viewinfo_prescription.TabIndex = 4
         ' 
@@ -517,10 +529,10 @@ Partial Class ViewPatientInformation2
         guna2Panel18.BorderThickness = 1
         guna2Panel18.Controls.Add(viewinfo_diagnosis)
         guna2Panel18.Controls.Add(guna2HtmlLabel18)
-        guna2Panel18.CustomizableEdges = CustomizableEdges19
+        guna2Panel18.CustomizableEdges = CustomizableEdges20
         guna2Panel18.Location = New Point(52, 588)
         guna2Panel18.Name = "guna2Panel18"
-        guna2Panel18.ShadowDecoration.CustomizableEdges = CustomizableEdges20
+        guna2Panel18.ShadowDecoration.CustomizableEdges = CustomizableEdges21
         guna2Panel18.Size = New Size(396, 109)
         guna2Panel18.TabIndex = 28
         ' 
@@ -529,7 +541,7 @@ Partial Class ViewPatientInformation2
         viewinfo_diagnosis.BackColor = Color.White
         viewinfo_diagnosis.BorderColor = Color.Black
         viewinfo_diagnosis.BorderRadius = 8
-        viewinfo_diagnosis.CustomizableEdges = CustomizableEdges17
+        viewinfo_diagnosis.CustomizableEdges = CustomizableEdges18
         viewinfo_diagnosis.DefaultText = "Diagnosis"
         viewinfo_diagnosis.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         viewinfo_diagnosis.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -547,7 +559,7 @@ Partial Class ViewPatientInformation2
         viewinfo_diagnosis.PlaceholderText = ""
         viewinfo_diagnosis.ReadOnly = True
         viewinfo_diagnosis.SelectedText = ""
-        viewinfo_diagnosis.ShadowDecoration.CustomizableEdges = CustomizableEdges18
+        viewinfo_diagnosis.ShadowDecoration.CustomizableEdges = CustomizableEdges19
         viewinfo_diagnosis.Size = New Size(375, 75)
         viewinfo_diagnosis.TabIndex = 3
         ' 
@@ -568,10 +580,10 @@ Partial Class ViewPatientInformation2
         guna2Panel23.BorderThickness = 1
         guna2Panel23.Controls.Add(consultationTextBox)
         guna2Panel23.Controls.Add(guna2HtmlLabel22)
-        guna2Panel23.CustomizableEdges = CustomizableEdges23
+        guna2Panel23.CustomizableEdges = CustomizableEdges24
         guna2Panel23.Location = New Point(250, 441)
         guna2Panel23.Name = "guna2Panel23"
-        guna2Panel23.ShadowDecoration.CustomizableEdges = CustomizableEdges24
+        guna2Panel23.ShadowDecoration.CustomizableEdges = CustomizableEdges25
         guna2Panel23.Size = New Size(198, 73)
         guna2Panel23.TabIndex = 35
         ' 
@@ -580,7 +592,7 @@ Partial Class ViewPatientInformation2
         consultationTextBox.BackColor = Color.White
         consultationTextBox.BorderColor = Color.Black
         consultationTextBox.BorderRadius = 8
-        consultationTextBox.CustomizableEdges = CustomizableEdges21
+        consultationTextBox.CustomizableEdges = CustomizableEdges22
         consultationTextBox.DefaultText = "Consultation Fee"
         consultationTextBox.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         consultationTextBox.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -597,7 +609,7 @@ Partial Class ViewPatientInformation2
         consultationTextBox.PlaceholderText = ""
         consultationTextBox.ReadOnly = True
         consultationTextBox.SelectedText = ""
-        consultationTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges22
+        consultationTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges23
         consultationTextBox.Size = New Size(177, 36)
         consultationTextBox.TabIndex = 0
         ' 
@@ -618,10 +630,10 @@ Partial Class ViewPatientInformation2
         guna2Panel22.BorderThickness = 1
         guna2Panel22.Controls.Add(specializationTextBox)
         guna2Panel22.Controls.Add(guna2HtmlLabel17)
-        guna2Panel22.CustomizableEdges = CustomizableEdges27
+        guna2Panel22.CustomizableEdges = CustomizableEdges28
         guna2Panel22.Location = New Point(52, 441)
         guna2Panel22.Name = "guna2Panel22"
-        guna2Panel22.ShadowDecoration.CustomizableEdges = CustomizableEdges28
+        guna2Panel22.ShadowDecoration.CustomizableEdges = CustomizableEdges29
         guna2Panel22.Size = New Size(198, 73)
         guna2Panel22.TabIndex = 34
         ' 
@@ -630,7 +642,7 @@ Partial Class ViewPatientInformation2
         specializationTextBox.BackColor = Color.White
         specializationTextBox.BorderColor = Color.Black
         specializationTextBox.BorderRadius = 8
-        specializationTextBox.CustomizableEdges = CustomizableEdges25
+        specializationTextBox.CustomizableEdges = CustomizableEdges26
         specializationTextBox.DefaultText = "Specialization"
         specializationTextBox.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         specializationTextBox.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -647,7 +659,7 @@ Partial Class ViewPatientInformation2
         specializationTextBox.PlaceholderText = ""
         specializationTextBox.ReadOnly = True
         specializationTextBox.SelectedText = ""
-        specializationTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges26
+        specializationTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges27
         specializationTextBox.Size = New Size(177, 36)
         specializationTextBox.TabIndex = 0
         ' 
@@ -668,10 +680,10 @@ Partial Class ViewPatientInformation2
         guna2Panel21.BorderThickness = 1
         guna2Panel21.Controls.Add(viewinfo_AdditionalNotes)
         guna2Panel21.Controls.Add(guna2HtmlLabel21)
-        guna2Panel21.CustomizableEdges = CustomizableEdges31
+        guna2Panel21.CustomizableEdges = CustomizableEdges32
         guna2Panel21.Location = New Point(448, 508)
         guna2Panel21.Name = "guna2Panel21"
-        guna2Panel21.ShadowDecoration.CustomizableEdges = CustomizableEdges32
+        guna2Panel21.ShadowDecoration.CustomizableEdges = CustomizableEdges33
         guna2Panel21.Size = New Size(198, 163)
         guna2Panel21.TabIndex = 31
         ' 
@@ -680,7 +692,7 @@ Partial Class ViewPatientInformation2
         viewinfo_AdditionalNotes.BackColor = Color.White
         viewinfo_AdditionalNotes.BorderColor = Color.Black
         viewinfo_AdditionalNotes.BorderRadius = 8
-        viewinfo_AdditionalNotes.CustomizableEdges = CustomizableEdges29
+        viewinfo_AdditionalNotes.CustomizableEdges = CustomizableEdges30
         viewinfo_AdditionalNotes.DefaultText = "Additional Notes"
         viewinfo_AdditionalNotes.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         viewinfo_AdditionalNotes.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -698,7 +710,7 @@ Partial Class ViewPatientInformation2
         viewinfo_AdditionalNotes.PlaceholderText = ""
         viewinfo_AdditionalNotes.ReadOnly = True
         viewinfo_AdditionalNotes.SelectedText = ""
-        viewinfo_AdditionalNotes.ShadowDecoration.CustomizableEdges = CustomizableEdges30
+        viewinfo_AdditionalNotes.ShadowDecoration.CustomizableEdges = CustomizableEdges31
         viewinfo_AdditionalNotes.Size = New Size(175, 116)
         viewinfo_AdditionalNotes.TabIndex = 7
         ' 
@@ -719,10 +731,10 @@ Partial Class ViewPatientInformation2
         guna2Panel20.BorderThickness = 1
         guna2Panel20.Controls.Add(viewinfo_DoctorOrder)
         guna2Panel20.Controls.Add(guna2HtmlLabel20)
-        guna2Panel20.CustomizableEdges = CustomizableEdges35
+        guna2Panel20.CustomizableEdges = CustomizableEdges36
         guna2Panel20.Location = New Point(448, 368)
         guna2Panel20.Name = "guna2Panel20"
-        guna2Panel20.ShadowDecoration.CustomizableEdges = CustomizableEdges36
+        guna2Panel20.ShadowDecoration.CustomizableEdges = CustomizableEdges37
         guna2Panel20.Size = New Size(198, 140)
         guna2Panel20.TabIndex = 30
         ' 
@@ -731,7 +743,7 @@ Partial Class ViewPatientInformation2
         viewinfo_DoctorOrder.BackColor = Color.White
         viewinfo_DoctorOrder.BorderColor = Color.Black
         viewinfo_DoctorOrder.BorderRadius = 8
-        viewinfo_DoctorOrder.CustomizableEdges = CustomizableEdges33
+        viewinfo_DoctorOrder.CustomizableEdges = CustomizableEdges34
         viewinfo_DoctorOrder.DefaultText = "Doctor's Order"
         viewinfo_DoctorOrder.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         viewinfo_DoctorOrder.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -749,7 +761,7 @@ Partial Class ViewPatientInformation2
         viewinfo_DoctorOrder.PlaceholderText = ""
         viewinfo_DoctorOrder.ReadOnly = True
         viewinfo_DoctorOrder.SelectedText = ""
-        viewinfo_DoctorOrder.ShadowDecoration.CustomizableEdges = CustomizableEdges34
+        viewinfo_DoctorOrder.ShadowDecoration.CustomizableEdges = CustomizableEdges35
         viewinfo_DoctorOrder.Size = New Size(175, 106)
         viewinfo_DoctorOrder.TabIndex = 4
         ' 
@@ -769,10 +781,10 @@ Partial Class ViewPatientInformation2
         guna2Panel17.BorderColor = Color.Black
         guna2Panel17.BorderThickness = 1
         guna2Panel17.Controls.Add(diagnosis_Lname)
-        guna2Panel17.CustomizableEdges = CustomizableEdges39
+        guna2Panel17.CustomizableEdges = CustomizableEdges40
         guna2Panel17.Location = New Point(250, 368)
         guna2Panel17.Name = "guna2Panel17"
-        guna2Panel17.ShadowDecoration.CustomizableEdges = CustomizableEdges40
+        guna2Panel17.ShadowDecoration.CustomizableEdges = CustomizableEdges41
         guna2Panel17.Size = New Size(198, 73)
         guna2Panel17.TabIndex = 27
         ' 
@@ -781,7 +793,7 @@ Partial Class ViewPatientInformation2
         diagnosis_Lname.BackColor = Color.White
         diagnosis_Lname.BorderColor = Color.Black
         diagnosis_Lname.BorderRadius = 8
-        diagnosis_Lname.CustomizableEdges = CustomizableEdges37
+        diagnosis_Lname.CustomizableEdges = CustomizableEdges38
         diagnosis_Lname.DefaultText = "Last Name"
         diagnosis_Lname.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         diagnosis_Lname.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -798,7 +810,7 @@ Partial Class ViewPatientInformation2
         diagnosis_Lname.PlaceholderText = ""
         diagnosis_Lname.ReadOnly = True
         diagnosis_Lname.SelectedText = ""
-        diagnosis_Lname.ShadowDecoration.CustomizableEdges = CustomizableEdges38
+        diagnosis_Lname.ShadowDecoration.CustomizableEdges = CustomizableEdges39
         diagnosis_Lname.Size = New Size(177, 36)
         diagnosis_Lname.TabIndex = 0
         ' 
@@ -809,10 +821,10 @@ Partial Class ViewPatientInformation2
         guna2Panel16.BorderThickness = 1
         guna2Panel16.Controls.Add(diagnosis_Fname)
         guna2Panel16.Controls.Add(guna2HtmlLabel16)
-        guna2Panel16.CustomizableEdges = CustomizableEdges43
+        guna2Panel16.CustomizableEdges = CustomizableEdges44
         guna2Panel16.Location = New Point(52, 368)
         guna2Panel16.Name = "guna2Panel16"
-        guna2Panel16.ShadowDecoration.CustomizableEdges = CustomizableEdges44
+        guna2Panel16.ShadowDecoration.CustomizableEdges = CustomizableEdges45
         guna2Panel16.Size = New Size(198, 73)
         guna2Panel16.TabIndex = 26
         ' 
@@ -821,7 +833,7 @@ Partial Class ViewPatientInformation2
         diagnosis_Fname.BackColor = Color.White
         diagnosis_Fname.BorderColor = Color.Black
         diagnosis_Fname.BorderRadius = 8
-        diagnosis_Fname.CustomizableEdges = CustomizableEdges41
+        diagnosis_Fname.CustomizableEdges = CustomizableEdges42
         diagnosis_Fname.DefaultText = "First Name"
         diagnosis_Fname.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         diagnosis_Fname.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -838,7 +850,7 @@ Partial Class ViewPatientInformation2
         diagnosis_Fname.PlaceholderText = ""
         diagnosis_Fname.ReadOnly = True
         diagnosis_Fname.SelectedText = ""
-        diagnosis_Fname.ShadowDecoration.CustomizableEdges = CustomizableEdges42
+        diagnosis_Fname.ShadowDecoration.CustomizableEdges = CustomizableEdges43
         diagnosis_Fname.Size = New Size(177, 36)
         diagnosis_Fname.TabIndex = 0
         ' 
@@ -858,10 +870,10 @@ Partial Class ViewPatientInformation2
         guna2Panel15.BorderColor = Color.Black
         guna2Panel15.BorderThickness = 1
         guna2Panel15.Controls.Add(guna2HtmlLabel15)
-        guna2Panel15.CustomizableEdges = CustomizableEdges45
+        guna2Panel15.CustomizableEdges = CustomizableEdges46
         guna2Panel15.Location = New Point(52, 340)
         guna2Panel15.Name = "guna2Panel15"
-        guna2Panel15.ShadowDecoration.CustomizableEdges = CustomizableEdges46
+        guna2Panel15.ShadowDecoration.CustomizableEdges = CustomizableEdges47
         guna2Panel15.Size = New Size(594, 28)
         guna2Panel15.TabIndex = 25
         ' 
@@ -882,10 +894,10 @@ Partial Class ViewPatientInformation2
         guna2Panel13.BorderThickness = 1
         guna2Panel13.Controls.Add(viewinfo_Treatment)
         guna2Panel13.Controls.Add(guna2HtmlLabel12)
-        guna2Panel13.CustomizableEdges = CustomizableEdges49
+        guna2Panel13.CustomizableEdges = CustomizableEdges50
         guna2Panel13.Location = New Point(448, 267)
         guna2Panel13.Name = "guna2Panel13"
-        guna2Panel13.ShadowDecoration.CustomizableEdges = CustomizableEdges50
+        guna2Panel13.ShadowDecoration.CustomizableEdges = CustomizableEdges51
         guna2Panel13.Size = New Size(198, 73)
         guna2Panel13.TabIndex = 23
         ' 
@@ -894,7 +906,7 @@ Partial Class ViewPatientInformation2
         viewinfo_Treatment.BackColor = Color.White
         viewinfo_Treatment.BorderColor = Color.Black
         viewinfo_Treatment.BorderRadius = 8
-        viewinfo_Treatment.CustomizableEdges = CustomizableEdges47
+        viewinfo_Treatment.CustomizableEdges = CustomizableEdges48
         viewinfo_Treatment.DefaultText = ""
         viewinfo_Treatment.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         viewinfo_Treatment.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -912,7 +924,7 @@ Partial Class ViewPatientInformation2
         viewinfo_Treatment.PlaceholderText = ""
         viewinfo_Treatment.ReadOnly = True
         viewinfo_Treatment.SelectedText = ""
-        viewinfo_Treatment.ShadowDecoration.CustomizableEdges = CustomizableEdges48
+        viewinfo_Treatment.ShadowDecoration.CustomizableEdges = CustomizableEdges49
         viewinfo_Treatment.Size = New Size(177, 36)
         viewinfo_Treatment.TabIndex = 0
         ' 
@@ -933,10 +945,10 @@ Partial Class ViewPatientInformation2
         guna2Panel12.BorderThickness = 1
         guna2Panel12.Controls.Add(viewinfo_Precon)
         guna2Panel12.Controls.Add(guna2HtmlLabel11)
-        guna2Panel12.CustomizableEdges = CustomizableEdges53
+        guna2Panel12.CustomizableEdges = CustomizableEdges54
         guna2Panel12.Location = New Point(250, 267)
         guna2Panel12.Name = "guna2Panel12"
-        guna2Panel12.ShadowDecoration.CustomizableEdges = CustomizableEdges54
+        guna2Panel12.ShadowDecoration.CustomizableEdges = CustomizableEdges55
         guna2Panel12.Size = New Size(198, 73)
         guna2Panel12.TabIndex = 22
         ' 
@@ -945,7 +957,7 @@ Partial Class ViewPatientInformation2
         viewinfo_Precon.BackColor = Color.White
         viewinfo_Precon.BorderColor = Color.Black
         viewinfo_Precon.BorderRadius = 8
-        viewinfo_Precon.CustomizableEdges = CustomizableEdges51
+        viewinfo_Precon.CustomizableEdges = CustomizableEdges52
         viewinfo_Precon.DefaultText = "Pre-Condition"
         viewinfo_Precon.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         viewinfo_Precon.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -962,7 +974,7 @@ Partial Class ViewPatientInformation2
         viewinfo_Precon.PlaceholderText = ""
         viewinfo_Precon.ReadOnly = True
         viewinfo_Precon.SelectedText = ""
-        viewinfo_Precon.ShadowDecoration.CustomizableEdges = CustomizableEdges52
+        viewinfo_Precon.ShadowDecoration.CustomizableEdges = CustomizableEdges53
         viewinfo_Precon.Size = New Size(177, 36)
         viewinfo_Precon.TabIndex = 0
         ' 
@@ -983,10 +995,10 @@ Partial Class ViewPatientInformation2
         guna2Panel11.BorderThickness = 1
         guna2Panel11.Controls.Add(viewinfo_Prevsur)
         guna2Panel11.Controls.Add(guna2HtmlLabel10)
-        guna2Panel11.CustomizableEdges = CustomizableEdges57
+        guna2Panel11.CustomizableEdges = CustomizableEdges58
         guna2Panel11.Location = New Point(52, 267)
         guna2Panel11.Name = "guna2Panel11"
-        guna2Panel11.ShadowDecoration.CustomizableEdges = CustomizableEdges58
+        guna2Panel11.ShadowDecoration.CustomizableEdges = CustomizableEdges59
         guna2Panel11.Size = New Size(198, 73)
         guna2Panel11.TabIndex = 21
         ' 
@@ -995,7 +1007,7 @@ Partial Class ViewPatientInformation2
         viewinfo_Prevsur.BackColor = Color.White
         viewinfo_Prevsur.BorderColor = Color.Black
         viewinfo_Prevsur.BorderRadius = 8
-        viewinfo_Prevsur.CustomizableEdges = CustomizableEdges55
+        viewinfo_Prevsur.CustomizableEdges = CustomizableEdges56
         viewinfo_Prevsur.DefaultText = "Previous Surgery"
         viewinfo_Prevsur.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         viewinfo_Prevsur.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -1012,7 +1024,7 @@ Partial Class ViewPatientInformation2
         viewinfo_Prevsur.PlaceholderText = ""
         viewinfo_Prevsur.ReadOnly = True
         viewinfo_Prevsur.SelectedText = ""
-        viewinfo_Prevsur.ShadowDecoration.CustomizableEdges = CustomizableEdges56
+        viewinfo_Prevsur.ShadowDecoration.CustomizableEdges = CustomizableEdges57
         viewinfo_Prevsur.Size = New Size(172, 36)
         viewinfo_Prevsur.TabIndex = 0
         ' 
@@ -1033,10 +1045,10 @@ Partial Class ViewPatientInformation2
         guna2Panel10.BorderThickness = 1
         guna2Panel10.Controls.Add(viewinfo_Medic)
         guna2Panel10.Controls.Add(guna2HtmlLabel9)
-        guna2Panel10.CustomizableEdges = CustomizableEdges61
+        guna2Panel10.CustomizableEdges = CustomizableEdges62
         guna2Panel10.Location = New Point(448, 194)
         guna2Panel10.Name = "guna2Panel10"
-        guna2Panel10.ShadowDecoration.CustomizableEdges = CustomizableEdges62
+        guna2Panel10.ShadowDecoration.CustomizableEdges = CustomizableEdges63
         guna2Panel10.Size = New Size(198, 73)
         guna2Panel10.TabIndex = 20
         ' 
@@ -1045,7 +1057,7 @@ Partial Class ViewPatientInformation2
         viewinfo_Medic.BackColor = Color.White
         viewinfo_Medic.BorderColor = Color.Black
         viewinfo_Medic.BorderRadius = 8
-        viewinfo_Medic.CustomizableEdges = CustomizableEdges59
+        viewinfo_Medic.CustomizableEdges = CustomizableEdges60
         viewinfo_Medic.DefaultText = "Medication"
         viewinfo_Medic.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         viewinfo_Medic.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -1062,7 +1074,7 @@ Partial Class ViewPatientInformation2
         viewinfo_Medic.PlaceholderText = ""
         viewinfo_Medic.ReadOnly = True
         viewinfo_Medic.SelectedText = ""
-        viewinfo_Medic.ShadowDecoration.CustomizableEdges = CustomizableEdges60
+        viewinfo_Medic.ShadowDecoration.CustomizableEdges = CustomizableEdges61
         viewinfo_Medic.Size = New Size(177, 36)
         viewinfo_Medic.TabIndex = 0
         ' 
@@ -1083,10 +1095,10 @@ Partial Class ViewPatientInformation2
         guna2Panel9.BorderThickness = 1
         guna2Panel9.Controls.Add(viewinfo_Allergy)
         guna2Panel9.Controls.Add(guna2HtmlLabel8)
-        guna2Panel9.CustomizableEdges = CustomizableEdges65
+        guna2Panel9.CustomizableEdges = CustomizableEdges66
         guna2Panel9.Location = New Point(250, 194)
         guna2Panel9.Name = "guna2Panel9"
-        guna2Panel9.ShadowDecoration.CustomizableEdges = CustomizableEdges66
+        guna2Panel9.ShadowDecoration.CustomizableEdges = CustomizableEdges67
         guna2Panel9.Size = New Size(198, 73)
         guna2Panel9.TabIndex = 19
         ' 
@@ -1095,7 +1107,7 @@ Partial Class ViewPatientInformation2
         viewinfo_Allergy.BackColor = Color.White
         viewinfo_Allergy.BorderColor = Color.Black
         viewinfo_Allergy.BorderRadius = 8
-        viewinfo_Allergy.CustomizableEdges = CustomizableEdges63
+        viewinfo_Allergy.CustomizableEdges = CustomizableEdges64
         viewinfo_Allergy.DefaultText = "Allergy"
         viewinfo_Allergy.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         viewinfo_Allergy.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -1112,7 +1124,7 @@ Partial Class ViewPatientInformation2
         viewinfo_Allergy.PlaceholderText = ""
         viewinfo_Allergy.ReadOnly = True
         viewinfo_Allergy.SelectedText = ""
-        viewinfo_Allergy.ShadowDecoration.CustomizableEdges = CustomizableEdges64
+        viewinfo_Allergy.ShadowDecoration.CustomizableEdges = CustomizableEdges65
         viewinfo_Allergy.Size = New Size(177, 36)
         viewinfo_Allergy.TabIndex = 0
         ' 
@@ -1133,10 +1145,10 @@ Partial Class ViewPatientInformation2
         guna2Panel8.BorderThickness = 1
         guna2Panel8.Controls.Add(viewifo_Btype)
         guna2Panel8.Controls.Add(guna2HtmlLabel7)
-        guna2Panel8.CustomizableEdges = CustomizableEdges69
+        guna2Panel8.CustomizableEdges = CustomizableEdges70
         guna2Panel8.Location = New Point(52, 194)
         guna2Panel8.Name = "guna2Panel8"
-        guna2Panel8.ShadowDecoration.CustomizableEdges = CustomizableEdges70
+        guna2Panel8.ShadowDecoration.CustomizableEdges = CustomizableEdges71
         guna2Panel8.Size = New Size(198, 73)
         guna2Panel8.TabIndex = 18
         ' 
@@ -1145,7 +1157,7 @@ Partial Class ViewPatientInformation2
         viewifo_Btype.BackColor = Color.White
         viewifo_Btype.BorderColor = Color.Black
         viewifo_Btype.BorderRadius = 8
-        viewifo_Btype.CustomizableEdges = CustomizableEdges67
+        viewifo_Btype.CustomizableEdges = CustomizableEdges68
         viewifo_Btype.DefaultText = "Blood Type"
         viewifo_Btype.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         viewifo_Btype.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -1162,7 +1174,7 @@ Partial Class ViewPatientInformation2
         viewifo_Btype.PlaceholderText = ""
         viewifo_Btype.ReadOnly = True
         viewifo_Btype.SelectedText = ""
-        viewifo_Btype.ShadowDecoration.CustomizableEdges = CustomizableEdges68
+        viewifo_Btype.ShadowDecoration.CustomizableEdges = CustomizableEdges69
         viewifo_Btype.Size = New Size(177, 36)
         viewifo_Btype.TabIndex = 0
         ' 
@@ -1183,10 +1195,10 @@ Partial Class ViewPatientInformation2
         guna2Panel7.BorderThickness = 1
         guna2Panel7.Controls.Add(viewinfo_Bmi)
         guna2Panel7.Controls.Add(guna2HtmlLabel6)
-        guna2Panel7.CustomizableEdges = CustomizableEdges73
+        guna2Panel7.CustomizableEdges = CustomizableEdges74
         guna2Panel7.Location = New Point(448, 121)
         guna2Panel7.Name = "guna2Panel7"
-        guna2Panel7.ShadowDecoration.CustomizableEdges = CustomizableEdges74
+        guna2Panel7.ShadowDecoration.CustomizableEdges = CustomizableEdges75
         guna2Panel7.Size = New Size(198, 73)
         guna2Panel7.TabIndex = 17
         ' 
@@ -1195,7 +1207,7 @@ Partial Class ViewPatientInformation2
         viewinfo_Bmi.BackColor = Color.White
         viewinfo_Bmi.BorderColor = Color.Black
         viewinfo_Bmi.BorderRadius = 8
-        viewinfo_Bmi.CustomizableEdges = CustomizableEdges71
+        viewinfo_Bmi.CustomizableEdges = CustomizableEdges72
         viewinfo_Bmi.DefaultText = "BMI"
         viewinfo_Bmi.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         viewinfo_Bmi.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -1212,7 +1224,7 @@ Partial Class ViewPatientInformation2
         viewinfo_Bmi.PlaceholderText = ""
         viewinfo_Bmi.ReadOnly = True
         viewinfo_Bmi.SelectedText = ""
-        viewinfo_Bmi.ShadowDecoration.CustomizableEdges = CustomizableEdges72
+        viewinfo_Bmi.ShadowDecoration.CustomizableEdges = CustomizableEdges73
         viewinfo_Bmi.Size = New Size(177, 36)
         viewinfo_Bmi.TabIndex = 0
         ' 
@@ -1233,10 +1245,10 @@ Partial Class ViewPatientInformation2
         guna2Panel6.BorderThickness = 1
         guna2Panel6.Controls.Add(viewinfo_Weight)
         guna2Panel6.Controls.Add(guna2HtmlLabel5)
-        guna2Panel6.CustomizableEdges = CustomizableEdges77
+        guna2Panel6.CustomizableEdges = CustomizableEdges78
         guna2Panel6.Location = New Point(250, 121)
         guna2Panel6.Name = "guna2Panel6"
-        guna2Panel6.ShadowDecoration.CustomizableEdges = CustomizableEdges78
+        guna2Panel6.ShadowDecoration.CustomizableEdges = CustomizableEdges79
         guna2Panel6.Size = New Size(198, 73)
         guna2Panel6.TabIndex = 14
         ' 
@@ -1245,7 +1257,7 @@ Partial Class ViewPatientInformation2
         viewinfo_Weight.BackColor = Color.White
         viewinfo_Weight.BorderColor = Color.Black
         viewinfo_Weight.BorderRadius = 8
-        viewinfo_Weight.CustomizableEdges = CustomizableEdges75
+        viewinfo_Weight.CustomizableEdges = CustomizableEdges76
         viewinfo_Weight.DefaultText = "Weight"
         viewinfo_Weight.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         viewinfo_Weight.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -1262,7 +1274,7 @@ Partial Class ViewPatientInformation2
         viewinfo_Weight.PlaceholderText = ""
         viewinfo_Weight.ReadOnly = True
         viewinfo_Weight.SelectedText = ""
-        viewinfo_Weight.ShadowDecoration.CustomizableEdges = CustomizableEdges76
+        viewinfo_Weight.ShadowDecoration.CustomizableEdges = CustomizableEdges77
         viewinfo_Weight.Size = New Size(177, 36)
         viewinfo_Weight.TabIndex = 0
         ' 
@@ -1283,10 +1295,10 @@ Partial Class ViewPatientInformation2
         guna2Panel5.BorderThickness = 1
         guna2Panel5.Controls.Add(viewinfo_Height)
         guna2Panel5.Controls.Add(guna2HtmlLabel4)
-        guna2Panel5.CustomizableEdges = CustomizableEdges81
+        guna2Panel5.CustomizableEdges = CustomizableEdges82
         guna2Panel5.Location = New Point(52, 121)
         guna2Panel5.Name = "guna2Panel5"
-        guna2Panel5.ShadowDecoration.CustomizableEdges = CustomizableEdges82
+        guna2Panel5.ShadowDecoration.CustomizableEdges = CustomizableEdges83
         guna2Panel5.Size = New Size(198, 73)
         guna2Panel5.TabIndex = 16
         ' 
@@ -1295,7 +1307,7 @@ Partial Class ViewPatientInformation2
         viewinfo_Height.BackColor = Color.White
         viewinfo_Height.BorderColor = Color.Black
         viewinfo_Height.BorderRadius = 8
-        viewinfo_Height.CustomizableEdges = CustomizableEdges79
+        viewinfo_Height.CustomizableEdges = CustomizableEdges80
         viewinfo_Height.DefaultText = "Height"
         viewinfo_Height.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         viewinfo_Height.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -1312,7 +1324,7 @@ Partial Class ViewPatientInformation2
         viewinfo_Height.PlaceholderText = ""
         viewinfo_Height.ReadOnly = True
         viewinfo_Height.SelectedText = ""
-        viewinfo_Height.ShadowDecoration.CustomizableEdges = CustomizableEdges80
+        viewinfo_Height.ShadowDecoration.CustomizableEdges = CustomizableEdges81
         viewinfo_Height.Size = New Size(177, 36)
         viewinfo_Height.TabIndex = 0
         ' 
@@ -1333,10 +1345,10 @@ Partial Class ViewPatientInformation2
         guna2Panel4.BorderThickness = 1
         guna2Panel4.Controls.Add(viewinfo_Bdate)
         guna2Panel4.Controls.Add(guna2HtmlLabel3)
-        guna2Panel4.CustomizableEdges = CustomizableEdges85
+        guna2Panel4.CustomizableEdges = CustomizableEdges86
         guna2Panel4.Location = New Point(448, 48)
         guna2Panel4.Name = "guna2Panel4"
-        guna2Panel4.ShadowDecoration.CustomizableEdges = CustomizableEdges86
+        guna2Panel4.ShadowDecoration.CustomizableEdges = CustomizableEdges87
         guna2Panel4.Size = New Size(198, 73)
         guna2Panel4.TabIndex = 15
         ' 
@@ -1345,7 +1357,7 @@ Partial Class ViewPatientInformation2
         viewinfo_Bdate.BackColor = Color.White
         viewinfo_Bdate.BorderColor = Color.Black
         viewinfo_Bdate.BorderRadius = 8
-        viewinfo_Bdate.CustomizableEdges = CustomizableEdges83
+        viewinfo_Bdate.CustomizableEdges = CustomizableEdges84
         viewinfo_Bdate.DefaultText = "Date of Birth"
         viewinfo_Bdate.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         viewinfo_Bdate.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -1362,7 +1374,7 @@ Partial Class ViewPatientInformation2
         viewinfo_Bdate.PlaceholderText = ""
         viewinfo_Bdate.ReadOnly = True
         viewinfo_Bdate.SelectedText = ""
-        viewinfo_Bdate.ShadowDecoration.CustomizableEdges = CustomizableEdges84
+        viewinfo_Bdate.ShadowDecoration.CustomizableEdges = CustomizableEdges85
         viewinfo_Bdate.Size = New Size(177, 36)
         viewinfo_Bdate.TabIndex = 0
         ' 
@@ -1383,10 +1395,10 @@ Partial Class ViewPatientInformation2
         guna2Panel3.BorderThickness = 1
         guna2Panel3.Controls.Add(viewinfo_Lname)
         guna2Panel3.Controls.Add(guna2HtmlLabel2)
-        guna2Panel3.CustomizableEdges = CustomizableEdges89
+        guna2Panel3.CustomizableEdges = CustomizableEdges90
         guna2Panel3.Location = New Point(250, 48)
         guna2Panel3.Name = "guna2Panel3"
-        guna2Panel3.ShadowDecoration.CustomizableEdges = CustomizableEdges90
+        guna2Panel3.ShadowDecoration.CustomizableEdges = CustomizableEdges91
         guna2Panel3.Size = New Size(198, 73)
         guna2Panel3.TabIndex = 14
         ' 
@@ -1395,7 +1407,7 @@ Partial Class ViewPatientInformation2
         viewinfo_Lname.BackColor = Color.White
         viewinfo_Lname.BorderColor = Color.Black
         viewinfo_Lname.BorderRadius = 8
-        viewinfo_Lname.CustomizableEdges = CustomizableEdges87
+        viewinfo_Lname.CustomizableEdges = CustomizableEdges88
         viewinfo_Lname.DefaultText = "Last"
         viewinfo_Lname.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         viewinfo_Lname.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -1412,7 +1424,7 @@ Partial Class ViewPatientInformation2
         viewinfo_Lname.PlaceholderText = ""
         viewinfo_Lname.ReadOnly = True
         viewinfo_Lname.SelectedText = ""
-        viewinfo_Lname.ShadowDecoration.CustomizableEdges = CustomizableEdges88
+        viewinfo_Lname.ShadowDecoration.CustomizableEdges = CustomizableEdges89
         viewinfo_Lname.Size = New Size(177, 36)
         viewinfo_Lname.TabIndex = 0
         ' 
@@ -1433,10 +1445,10 @@ Partial Class ViewPatientInformation2
         guna2Panel1.BorderThickness = 1
         guna2Panel1.Controls.Add(viewinfo_Fname)
         guna2Panel1.Controls.Add(guna2HtmlLabel1)
-        guna2Panel1.CustomizableEdges = CustomizableEdges93
+        guna2Panel1.CustomizableEdges = CustomizableEdges94
         guna2Panel1.Location = New Point(52, 48)
         guna2Panel1.Name = "guna2Panel1"
-        guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges94
+        guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges95
         guna2Panel1.Size = New Size(198, 73)
         guna2Panel1.TabIndex = 13
         ' 
@@ -1445,7 +1457,7 @@ Partial Class ViewPatientInformation2
         viewinfo_Fname.BackColor = Color.White
         viewinfo_Fname.BorderColor = Color.Black
         viewinfo_Fname.BorderRadius = 8
-        viewinfo_Fname.CustomizableEdges = CustomizableEdges91
+        viewinfo_Fname.CustomizableEdges = CustomizableEdges92
         viewinfo_Fname.DefaultText = "First"
         viewinfo_Fname.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         viewinfo_Fname.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -1462,7 +1474,7 @@ Partial Class ViewPatientInformation2
         viewinfo_Fname.PlaceholderText = ""
         viewinfo_Fname.ReadOnly = True
         viewinfo_Fname.SelectedText = ""
-        viewinfo_Fname.ShadowDecoration.CustomizableEdges = CustomizableEdges92
+        viewinfo_Fname.ShadowDecoration.CustomizableEdges = CustomizableEdges93
         viewinfo_Fname.Size = New Size(177, 36)
         viewinfo_Fname.TabIndex = 0
         ' 
@@ -1482,10 +1494,10 @@ Partial Class ViewPatientInformation2
         guna2Panel14.BorderColor = Color.Black
         guna2Panel14.BorderThickness = 1
         guna2Panel14.Controls.Add(guna2HtmlLabel14)
-        guna2Panel14.CustomizableEdges = CustomizableEdges95
+        guna2Panel14.CustomizableEdges = CustomizableEdges96
         guna2Panel14.Location = New Point(52, 20)
         guna2Panel14.Name = "guna2Panel14"
-        guna2Panel14.ShadowDecoration.CustomizableEdges = CustomizableEdges96
+        guna2Panel14.ShadowDecoration.CustomizableEdges = CustomizableEdges97
         guna2Panel14.Size = New Size(594, 28)
         guna2Panel14.TabIndex = 24
         ' 
@@ -1508,6 +1520,66 @@ Partial Class ViewPatientInformation2
         PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), Icon)
         PrintPreviewDialog1.Name = "PrintPreviewDialog1"
         PrintPreviewDialog1.Visible = False
+        ' 
+        ' Guna2HtmlLabel29
+        ' 
+        Guna2HtmlLabel29.BackColor = Color.Transparent
+        Guna2HtmlLabel29.Font = New Font("Nirmala UI", 10.75F, FontStyle.Bold)
+        Guna2HtmlLabel29.ForeColor = Color.White
+        Guna2HtmlLabel29.Location = New Point(814, 591)
+        Guna2HtmlLabel29.Name = "Guna2HtmlLabel29"
+        Guna2HtmlLabel29.Size = New Size(103, 21)
+        Guna2HtmlLabel29.TabIndex = 177
+        Guna2HtmlLabel29.Text = "Doctor's Order"
+        ' 
+        ' Guna2HtmlLabel28
+        ' 
+        Guna2HtmlLabel28.BackColor = Color.Transparent
+        Guna2HtmlLabel28.Font = New Font("Nirmala UI", 10.75F, FontStyle.Bold)
+        Guna2HtmlLabel28.ForeColor = Color.White
+        Guna2HtmlLabel28.Location = New Point(851, 571)
+        Guna2HtmlLabel28.Name = "Guna2HtmlLabel28"
+        Guna2HtmlLabel28.Size = New Size(28, 21)
+        Guna2HtmlLabel28.TabIndex = 176
+        Guna2HtmlLabel28.Text = "and"
+        ' 
+        ' Guna2HtmlLabel27
+        ' 
+        Guna2HtmlLabel27.BackColor = Color.Transparent
+        Guna2HtmlLabel27.Font = New Font("Nirmala UI", 10.75F, FontStyle.Bold)
+        Guna2HtmlLabel27.ForeColor = Color.White
+        Guna2HtmlLabel27.Location = New Point(825, 547)
+        Guna2HtmlLabel27.Name = "Guna2HtmlLabel27"
+        Guna2HtmlLabel27.Size = New Size(84, 21)
+        Guna2HtmlLabel27.TabIndex = 175
+        Guna2HtmlLabel27.Text = "Prescription"
+        ' 
+        ' Guna2HtmlLabel26
+        ' 
+        Guna2HtmlLabel26.BackColor = Color.Transparent
+        Guna2HtmlLabel26.Font = New Font("Nirmala UI", 10.75F, FontStyle.Bold)
+        Guna2HtmlLabel26.ForeColor = Color.White
+        Guna2HtmlLabel26.Location = New Point(849, 524)
+        Guna2HtmlLabel26.Name = "Guna2HtmlLabel26"
+        Guna2HtmlLabel26.Size = New Size(35, 21)
+        Guna2HtmlLabel26.TabIndex = 174
+        Guna2HtmlLabel26.Text = "Print"
+        ' 
+        ' Guna2ImageButton1
+        ' 
+        Guna2ImageButton1.BackColor = Color.Transparent
+        Guna2ImageButton1.CheckedState.ImageSize = New Size(64, 64)
+        Guna2ImageButton1.HoverState.ImageSize = New Size(64, 64)
+        Guna2ImageButton1.Image = CType(resources.GetObject("Guna2ImageButton1.Image"), Image)
+        Guna2ImageButton1.ImageOffset = New Point(0, 0)
+        Guna2ImageButton1.ImageRotate = 0F
+        Guna2ImageButton1.Location = New Point(832, 476)
+        Guna2ImageButton1.Margin = New Padding(3, 2, 3, 2)
+        Guna2ImageButton1.Name = "Guna2ImageButton1"
+        Guna2ImageButton1.PressedState.ImageSize = New Size(64, 64)
+        Guna2ImageButton1.ShadowDecoration.CustomizableEdges = CustomizableEdges1
+        Guna2ImageButton1.Size = New Size(70, 51)
+        Guna2ImageButton1.TabIndex = 173
         ' 
         ' ViewPatientInformation2
         ' 
@@ -1651,4 +1723,9 @@ Partial Class ViewPatientInformation2
     Private WithEvents Guna2HtmlLabel25 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
     Friend WithEvents PrintDocument1 As Printing.PrintDocument
+    Private WithEvents Guna2HtmlLabel29 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Private WithEvents Guna2HtmlLabel28 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Private WithEvents Guna2HtmlLabel27 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Private WithEvents Guna2HtmlLabel26 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2ImageButton1 As Guna.UI2.WinForms.Guna2ImageButton
 End Class
