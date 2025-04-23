@@ -7,16 +7,46 @@ Public Class PatientDashboard
     Inherits Form
 
     Private patient As PatientModel
+    Private Property CurrentAccessiblePanel As Panel = Nothing
 
     Public Sub New(patient As PatientModel)
         InitializeComponent()
         Me.patient = patient
-
         NameLabel.Text = $"{patient.FirstName}!"
+    End Sub
+
+    Private Sub SetPanelAccessibility(panelToEnable As Panel)
+        ' Disable all panels first
+        SpecialPanel.Enabled = False
+        DoccPanel.Enabled = False
+        TimeePanel.Enabled = False
+        ConfirmBookBtn.Enabled = False
+
+        ' Enable the specified panel
+        panelToEnable.Enabled = True
+        CurrentAccessiblePanel = panelToEnable
+
+        ' Additional logic for when returning to previous panels
+        If panelToEnable Is SpecialPanel Then
+            ' When going back to SpecialPanel, reset other panels if needed
+            pd_DocBox.SelectedIndex = 0
+            TimeCombobox.Items.Clear()
+            TimeCombobox.Enabled = True
+        ElseIf panelToEnable Is DoccPanel Then
+            ' When going back to DoccPanel, reset time selection
+            TimeCombobox.Items.Clear()
+            TimeCombobox.Enabled = True
+        End If
     End Sub
 
     Private Sub PatientDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Guna2CustomGradientPanel3.Visible = True
+
+        ' Initialize panel states
+        SpecialPanel.Visible = False
+        DoccPanel.Visible = False
+        TimeePanel.Visible = False
+        ConfirmBookBtn.Visible = False
 
         LoadSpecializations()
         AppointmentDatePicker.MinDate = DateTime.Today
@@ -24,102 +54,136 @@ Public Class PatientDashboard
         InvoicePanel.Visible = False
     End Sub
 
-
     Private Sub HomeDisplay()
-        SelectPatientPanel.Visible = False
         SpecPanel.Visible = True
         BookAppPanel.Visible = True
-        pd_DoctorPanel.Visible = False
-        BookingPanel.Visible = False
-
         LoadSpecializations()
     End Sub
 
     Private Sub pd_BookAppointment_Click(sender As Object, e As EventArgs) Handles pd_BookAppointment.Click
         HomeDisplay()
         Guna2CustomGradientPanel3.Visible = False
+
+        ' Show all panels but only enable SpecialPanel initially
+        SpecPanel.Visible = True
+        SpecialPanel.Visible = True
+        DoccPanel.Visible = True
+        TimeePanel.Visible = True
+        ConfirmBookBtn.Visible = True
+
+        SetPanelAccessibility(SpecialPanel)
     End Sub
 
-
-    Private Sub pd_SpecBtn_Click(sender As Object, e As EventArgs) Handles pd_SpecBtn.Click
-        If pd_SpecBox.SelectedItem Is Nothing OrElse pd_SpecBox.SelectedItem.ToString() = "Select" Then
+    Private Sub pd_SpecBtn_Click(sender As Object, e As EventArgs)
+        If pd_SpecBox.SelectedItem Is Nothing OrElse pd_SpecBox.SelectedItem.ToString = "Select" Then
             MessageBox.Show("Please select a valid doctor's specialization.")
             Return
         End If
 
-        Dim selectedSpecialization As String = pd_SpecBox.SelectedItem.ToString()
-        Dim result As DialogResult = MessageBox.Show($"You selected '{selectedSpecialization}' as the specialization. Would you like to proceed?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        Dim selectedSpecialization = pd_SpecBox.SelectedItem.ToString
+        Dim result = MessageBox.Show($"You selected '{selectedSpecialization}' as the specialization. Would you like to proceed?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
 
         If result = DialogResult.Yes Then
-            SelectPatientPanel.Visible = False
-            SpecPanel.Visible = False
-            pd_DoctorPanel.Visible = True
-            BookAppPanel.Visible = True
+            ' Move to next panel (DoccPanel)
+            SetPanelAccessibility(DoccPanel)
 
-            Dim doctorNames As List(Of String) = Database.GetDoctorNames(selectedSpecialization)
+            ' Load doctors for the selected specialization
+            Dim doctorNames = Database.GetDoctorNames(selectedSpecialization)
             pd_DocBox.Items.Clear()
             pd_DocBox.Items.Add("Select")
 
-            For Each doctorName As String In doctorNames
+            For Each doctorName In doctorNames
                 pd_DocBox.Items.Add(doctorName)
             Next
 
             pd_DocBox.SelectedIndex = 0
-        ElseIf result = DialogResult.No Then
-            SpecPanel.Visible = True
-            BookAppPanel.Visible = True
         End If
 
         LoadConsFee()
     End Sub
 
-    Private Sub pd_DocBtn_Click(sender As Object, e As EventArgs) Handles pd_DocBtn.Click
-        If pd_DocBox.SelectedItem Is Nothing OrElse pd_DocBox.SelectedItem.ToString() = "Select" Then
+    Private Sub pd_DocBtn_Click(sender As Object, e As EventArgs)
+        If pd_DocBox.SelectedItem Is Nothing OrElse pd_DocBox.SelectedItem.ToString = "Select" Then
+            MessageBox.Show("Please select a valid doctor.")
             Return
         End If
 
-        Dim selectedDoctor As String = pd_DocBox.SelectedItem.ToString()
-        Dim selectedSpecialization As String = pd_SpecBox.SelectedItem.ToString()
-        Dim timeSlots As List(Of String) = Database.GetDoctorAvailableTimes(selectedDoctor, selectedSpecialization)
+        Dim selectedDoctor = pd_DocBox.SelectedItem.ToString
+        Dim selectedSpecialization = pd_SpecBox.SelectedItem.ToString
 
-        SelectPatientPanel.Visible = False
-        SpecPanel.Visible = False
-        pd_DoctorPanel.Visible = False
-        BookAppPanel.Visible = True
-        BookingPanel.Visible = True
+        ' Add confirmation dialog
+        Dim result = MessageBox.Show($"You selected Dr. {selectedDoctor} ({selectedSpecialization}). Would you like to proceed?",
+                               "Confirmation",
+                               MessageBoxButtons.YesNo,
+                               MessageBoxIcon.Question)
 
-        If timeSlots.Count > 0 Then
+        If result = DialogResult.Yes Then
+            Dim timeSlots = Database.GetDoctorAvailableTimes(selectedDoctor, selectedSpecialization)
+
+            ' Move to next panel (TimeePanel)
+            SetPanelAccessibility(TimeePanel)
+
+            ' Load available time slots
             TimeCombobox.Items.Clear()
             TimeCombobox.Items.Add("Select a Time Slot")
 
-            For Each timeSlot As String In timeSlots
-                TimeCombobox.Items.Add(timeSlot)
-            Next
+            If timeSlots.Count > 0 Then
+                For Each timeSlot In timeSlots
+                    TimeCombobox.Items.Add(timeSlot)
+                Next
+                TimeCombobox.SelectedIndex = 0
+            Else
+                MessageBox.Show("No time slots found for this doctor and specialization.", "No Availability", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            End If
 
-            TimeCombobox.SelectedIndex = 0
-        Else
-            MessageBox.Show("No time slots found for this doctor and specialization.", "No Availability", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            ' Make the button unclickable after proceeding
+            ' pd_DocBtn.Enabled = False
+        End If
+    End Sub
+
+    Private Sub DateTimeBtn_Click(sender As Object, e As EventArgs)
+        If TimeCombobox.SelectedItem Is Nothing OrElse TimeCombobox.SelectedItem.ToString = "Select a Time Slot" Then
+            MessageBox.Show("Please select a valid time slot.", "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
+        End If
+
+        ' Show confirmation dialog
+        Dim selectedTime = TimeCombobox.SelectedItem.ToString
+        Dim result = MessageBox.Show($"You selected the time slot: {selectedTime}. Would you like to proceed?",
+                          "Confirm Time Selection",
+                          MessageBoxButtons.YesNo,
+                          MessageBoxIcon.Question)
+
+        If result = DialogResult.Yes Then
+            ' Enable the confirmation button
+            ConfirmBookBtn.Enabled = True
+
+            ' Disable components to lock in selection
+            TimeCombobox.Enabled = False
+            AppointmentDatePicker.Enabled = False ' 🔒 This disables the date picker
+            ' Optionally disable this button too if needed
+            ' DateTimeBtn1.Enabled = False 
         End If
     End Sub
 
     Private Sub pd_DocBox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles pd_DocBox.SelectedIndexChanged
-        If pd_DocBox.SelectedItem IsNot Nothing AndAlso pd_DocBox.SelectedItem.ToString() <> "Select" Then
-            Dim selectedDoctor As String = pd_DocBox.SelectedItem.ToString()
-            Dim availability As String = Database.GetDoctorAvailability(selectedDoctor)
+        If pd_DocBox.SelectedItem IsNot Nothing AndAlso pd_DocBox.SelectedItem.ToString <> "Select" Then
+            Dim selectedDoctor = pd_DocBox.SelectedItem.ToString
+            Dim availability = Database.GetDoctorAvailability(selectedDoctor)
 
             If Not String.IsNullOrEmpty(availability) Then
-                Dim availableDays As List(Of DayOfWeek) = ParseDayAvailability(availability)
+                Dim availableDays = ParseDayAvailability(availability)
                 ConfigureMonthCalendar(AppointmentDatePicker, availableDays)
             Else
                 MessageBox.Show("No date availability data found for the selected doctor.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
 
             Try
-                Dim consultationFee As Decimal? = Database.GetConsultationFee(selectedDoctor)
+                Dim consultationFee = Database.GetConsultationFee(selectedDoctor)
                 If consultationFee.HasValue Then
-                    ConsFeeLbl.Text = $"{consultationFee:C}"
+                    ConsFeeLbl1.Text = $"{consultationFee:C}"
                 Else
-                    ConsFeeLbl.Text = "Not Available"
+                    ConsFeeLbl1.Text = "Not Available"
                 End If
             Catch ex As Exception
                 MessageBox.Show($"An error occurred while loading the consultation fee: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -198,9 +262,9 @@ Public Class PatientDashboard
             Dim consultationFee As Nullable(Of Decimal) = Database.GetConsultationFee(selectedDoctor)
 
             If consultationFee.HasValue Then
-                ConsFeeLbl.Text = $"{consultationFee:C}"
+                ConsFeeLbl1.Text = $"{consultationFee:C}"
             Else
-                ConsFeeLbl.Text = "Not Available"
+                ConsFeeLbl1.Text = "Not Available"
             End If
         Catch ex As Exception
             MessageBox.Show($"An error occurred while loading consultation fee: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -208,7 +272,7 @@ Public Class PatientDashboard
     End Sub
 
     Private Sub ConfirmBookBtn_Click(sender As Object, e As EventArgs) Handles ConfirmBookBtn.Click
-        Dim result As DialogResult = MessageBox.Show(
+        Dim result = MessageBox.Show(
             "Are you sure you want to confirm this booking?",
             "Confirm Booking",
             MessageBoxButtons.YesNo,
@@ -217,11 +281,11 @@ Public Class PatientDashboard
 
         If result = DialogResult.Yes Then
             Try
-                Dim selectedPatient As String = $"{patient.LastName}, {patient.FirstName}"
-                Dim selectedDoctor As String = If(pd_DocBox.SelectedItem?.ToString(), String.Empty)
-                Dim selectedTimeSlot As String = If(TimeCombobox.SelectedItem?.ToString(), String.Empty)
-                Dim appointmentDate As DateTime = AppointmentDatePicker.SelectionStart
-                Dim specialization As String = If(pd_SpecBox.SelectedItem?.ToString(), String.Empty)
+                Dim selectedPatient = $"{patient.LastName}, {patient.FirstName}"
+                Dim selectedDoctor = If(pd_DocBox.SelectedItem?.ToString, String.Empty)
+                Dim selectedTimeSlot = If(TimeCombobox.SelectedItem?.ToString, String.Empty)
+                Dim appointmentDate = AppointmentDatePicker.SelectionStart
+                Dim specialization = If(pd_SpecBox.SelectedItem?.ToString, String.Empty)
 
                 If String.IsNullOrWhiteSpace(selectedPatient) OrElse
                    String.IsNullOrWhiteSpace(selectedDoctor) OrElse
@@ -246,15 +310,15 @@ Public Class PatientDashboard
                     Return
                 End If
 
-                Dim feeText As String = ConsFeeLbl.Text.Trim().Replace("$", "").Replace("€", "").Replace("£", "").Trim()
-                feeText = New String(feeText.Where(Function(c) Char.IsDigit(c) OrElse c = "."c).ToArray())
+                Dim feeText = ConsFeeLbl1.Text.Trim.Replace("$", "").Replace("€", "").Replace("£", "").Trim
+                feeText = New String(feeText.Where(Function(c) Char.IsDigit(c) OrElse c = "."c).ToArray)
                 Dim consultationFee As Decimal = 0
                 If Not Decimal.TryParse(feeText, NumberStyles.AllowDecimalPoint, CultureInfo.InvariantCulture, consultationFee) Then
                     MessageBox.Show("Invalid consultation fee format. Please check the fee and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                     Return
                 End If
 
-                Dim appointmentSaved As Boolean = Database.SaveAppointment(selectedPatient, specialization, selectedDoctor, selectedTimeSlot, appointmentDate, consultationFee)
+                Dim appointmentSaved = Database.SaveAppointment(selectedPatient, specialization, selectedDoctor, selectedTimeSlot, appointmentDate, consultationFee)
 
                 If appointmentSaved Then
                     MessageBox.Show("Appointment saved successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -292,6 +356,7 @@ Public Class PatientDashboard
     Private Sub Staff_MinimizeButton_Click(sender As Object, e As EventArgs) Handles Staff_MinimizeButton.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
+
     Private Sub pd_HomeButton_Click(sender As Object, e As EventArgs) Handles pd_HomeButton.Click
         Dim confirm As DialogResult = MessageBox.Show("Are you sure you want to Log Out?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If confirm = DialogResult.Yes Then
@@ -300,16 +365,14 @@ Public Class PatientDashboard
             Me.Hide()
         End If
     End Sub
+
     Private Sub guna2Button1_Click(sender As Object, e As EventArgs) Handles guna2Button1.Click
         InvoicePanel.Visible = False
         SearchPanel.Visible = True
         ViewButton.Visible = True
         DeleteButton.Visible = True
         AppointmentLabel.Text = "My Appointments"
-        SelectPatientPanel.Visible = False
         SpecPanel.Visible = False
-        pd_DoctorPanel.Visible = False
-        BookingPanel.Visible = False
         BookAppPanel.Visible = False
         ViewAppointmentPanel.Visible = True
 
@@ -347,11 +410,6 @@ Public Class PatientDashboard
                 Next
             End If
         End If
-
-        Console.WriteLine("After CellValueChanged:")
-        For Each row As DataGridViewRow In AppointmentDataGridViewList2.Rows
-            Console.WriteLine($"Row {row.Index}: Visible={row.Visible}, Checked={(If(row.Cells(0).Value IsNot Nothing, row.Cells(0).Value.ToString(), "null"))}")
-        Next
     End Sub
 
     Private Sub AppointmentDataGridViewList2_CurrentCellDirtyStateChanged(sender As Object, e As EventArgs) Handles AppointmentDataGridViewList2.CurrentCellDirtyStateChanged
@@ -456,7 +514,6 @@ Public Class PatientDashboard
         End If
     End Sub
 
-
     Private Sub ResetTransactionFilterButton_Click(sender As Object, e As EventArgs) Handles ResetTransactionFilterButton.Click
         Try
             Dim dataSource As DataTable = TryCast(AppointmentDataGridViewList2.DataSource, DataTable)
@@ -470,11 +527,11 @@ Public Class PatientDashboard
             MessageBox.Show($"Error while resetting filter: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
     Private Sub MyProfileTabBtn_Click(sender As Object, e As EventArgs) Handles MyProfileTabBtn.Click
         Dim form As New PatientRegisterForm(ModalMode.Edit, patient.AccountID, PanelMode.Patient)
         form.ShowDialog()
     End Sub
-
 
     Private Sub DeleteButton_Click(sender As Object, e As EventArgs) Handles DeleteButton.Click
         If AppointmentDataGridViewList2.SelectedRows.Count > 0 Then
@@ -502,7 +559,6 @@ Public Class PatientDashboard
         End If
     End Sub
 
-
     Private Sub RefreshAppointmentList()
         Dim patientName As String = $"{patient.LastName}, {patient.FirstName}"
         AppointmentDataGridViewList2.DataSource = Database.ViewPatientAppointments(patientName)
@@ -513,7 +569,6 @@ Public Class PatientDashboard
         Dim data As DataTable = Database.GetInvoiceList(fullName)
         InvoiceDataGridView.DataSource = data
     End Sub
-
 
     Private Sub guna2Button5_Click(sender As Object, e As EventArgs) Handles guna2Button5.Click
         SearchPanel.Visible = True
@@ -530,6 +585,7 @@ Public Class PatientDashboard
         ViewAppointmentPanel.Visible = False
         LoadInvoiceData()
     End Sub
+
     Private Sub InvoiceDataGridView_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles InvoiceDataGridView.CellValueChanged
         If e.RowIndex >= 0 AndAlso e.ColumnIndex = 0 Then
             Dim isChecked As Boolean = Convert.ToBoolean(InvoiceDataGridView.Rows(e.RowIndex).Cells(0).Value)
@@ -560,5 +616,157 @@ Public Class PatientDashboard
         End If
     End Sub
 
+    Private Sub TimeCombobox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TimeCombobox.SelectedIndexChanged
+        ' Optional: Add any time selection change logic here
+    End Sub
+
+    Private Sub pd_SpecBtn_Click_1(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub pd_SpecBtn1_Click(sender As Object, e As EventArgs) Handles pd_SpecBtn1.Click
+        If pd_SpecBox.SelectedItem Is Nothing OrElse pd_SpecBox.SelectedItem.ToString = "Select" Then
+            MessageBox.Show("Please select a valid doctor's specialization.")
+            Return
+        End If
+
+        Dim selectedSpecialization = pd_SpecBox.SelectedItem.ToString
+        Dim result = MessageBox.Show($"You selected '{selectedSpecialization}' as the specialization. Would you like to proceed?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+
+        If result = DialogResult.Yes Then
+            ' Move to next panel (DoccPanel)
+            SetPanelAccessibility(DoccPanel)
+
+            ' Load doctors for the selected specialization
+            Dim doctorNames = Database.GetDoctorNames(selectedSpecialization)
+            pd_DocBox.Items.Clear()
+            pd_DocBox.Items.Add("Select")
+
+            For Each doctorName In doctorNames
+                pd_DocBox.Items.Add(doctorName)
+            Next
+
+            pd_DocBox.SelectedIndex = 0
+        End If
+    End Sub
+
+    Private Sub pd_DocBtn1_Click(sender As Object, e As EventArgs) Handles pd_DocBtn1.Click
+        If pd_DocBox.SelectedItem Is Nothing OrElse pd_DocBox.SelectedItem.ToString = "Select" Then
+            MessageBox.Show("Please select a valid doctor.")
+            Return
+        End If
+
+        Dim selectedDoctor = pd_DocBox.SelectedItem.ToString
+        Dim selectedSpecialization = pd_SpecBox.SelectedItem.ToString
+
+        ' Add confirmation dialog
+        Dim result = MessageBox.Show($"You selected Dr. {selectedDoctor} ({selectedSpecialization}). Would you like to proceed?",
+                               "Confirmation",
+                               MessageBoxButtons.YesNo,
+                               MessageBoxIcon.Question)
+
+        If result = DialogResult.Yes Then
+            Dim timeSlots = Database.GetDoctorAvailableTimes(selectedDoctor, selectedSpecialization)
+
+            ' Move to next panel (TimeePanel)
+            SetPanelAccessibility(TimeePanel)
+
+            ' Load available time slots
+            TimeCombobox.Items.Clear()
+            TimeCombobox.Items.Add("Select a Time Slot")
+
+            If timeSlots.Count > 0 Then
+                For Each timeSlot In timeSlots
+                    TimeCombobox.Items.Add(timeSlot)
+                Next
+                TimeCombobox.SelectedIndex = 0
+            Else
+                MessageBox.Show("No time slots found for this doctor and specialization.", "No Availability", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            End If
+
+            ' Make the button unclickable after proceeding
+            'pd_DocBtn.Enabled = False
+        End If
+    End Sub
+
+    Private Sub DateTimeBtn1_Click(sender As Object, e As EventArgs) Handles DateTimeBtn1.Click
+        ' Check if a valid time slot is selected
+        If TimeCombobox.SelectedItem Is Nothing OrElse TimeCombobox.SelectedItem.ToString() = "Select a Time Slot" Then
+            MessageBox.Show("Please select a valid time slot.", "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
+        End If
+
+        ' Show confirmation dialog
+        Dim selectedTime = TimeCombobox.SelectedItem.ToString()
+        Dim result = MessageBox.Show($"You selected the time slot: {selectedTime}. Would you like to proceed?",
+                              "Confirm Time Selection",
+                              MessageBoxButtons.YesNo,
+                              MessageBoxIcon.Question)
+
+        If result = DialogResult.Yes Then
+            ' Enable the confirmation button
+            ConfirmBookBtn.Enabled = True
+            ' Disable this button to prevent multiple clicks
+            'DateTimeBtn.Enabled = False
+            ' No panel is accessible now, only the button
+            CurrentAccessiblePanel = Nothing
+
+            ' Optional: You might want to disable the TimeCombobox as well
+            TimeCombobox.Enabled = False
+        End If
+    End Sub
+
+    Private Sub DocBack_Click(sender As Object, e As EventArgs) Handles DocBack.Click
+        Dim result = MessageBox.Show(
+        "Are you sure you want to go back? Any selected doctor will be cleared.",
+        "Confirm Navigation",
+        MessageBoxButtons.YesNo,
+        MessageBoxIcon.Question
+    )
+
+        If result = DialogResult.Yes Then
+            ' Return to SpecialPanel
+            SetPanelAccessibility(SpecialPanel)
+
+            ' Optional: Clear doctor selection if needed
+            ' pd_DocBox.SelectedIndex = 0
+        End If
+    End Sub
+
+    Private Sub TimeBack_Click(sender As Object, e As EventArgs) Handles TimeBack.Click
+        Dim result = MessageBox.Show(
+        "Are you sure you want to go back? Selected time slot will be lost.",
+        "Confirm Navigation",
+        MessageBoxButtons.YesNo,
+        MessageBoxIcon.Question
+    )
+
+        If result = DialogResult.Yes Then
+            ' Return to DoccPanel
+            SetPanelAccessibility(DoccPanel)
+
+            ' Optional: Clear time selection if needed
+            ' TimeCombobox.SelectedIndex = 0
+            ' TimeCombobox.Enabled = True
+        End If
+    End Sub
+
+    Private Sub ConfBack_Click(sender As Object, e As EventArgs) Handles ConfBack.Click
+        Dim result = MessageBox.Show(
+            "Are you sure you want to go back? Your current selections might be lost.",
+            "Confirm Navigation",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Question
+        )
+
+        If result = DialogResult.Yes Then
+            ' Return to TimeePanel
+            SetPanelAccessibility(TimeePanel)
+
+            ' Re-enable the time selection controls
+            TimeCombobox.Enabled = True
+            ConfirmBookBtn.Enabled = False
+        End If
+    End Sub
 
 End Class

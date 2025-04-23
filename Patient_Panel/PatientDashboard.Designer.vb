@@ -43,48 +43,48 @@ Partial Class PatientDashboard
         Dim DataGridViewCellStyle9 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle10 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle8 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim CustomizableEdges37 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges38 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges35 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges36 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges33 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges34 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PatientDashboard))
         Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges23 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges29 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges30 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges25 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges35 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges36 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges23 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges25 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges31 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges32 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges33 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges34 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges29 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges30 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges37 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges38 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges39 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges40 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges41 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges42 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges43 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges44 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PatientDashboard))
         Dim CustomizableEdges45 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges46 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges47 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges62 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges63 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges60 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges61 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges58 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges59 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges46 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges47 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges48 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges49 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges50 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -95,19 +95,17 @@ Partial Class PatientDashboard
         Dim CustomizableEdges55 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges56 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges57 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges58 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges59 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges62 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges63 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges64 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges65 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges71 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges72 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges66 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges67 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges73 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges74 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges68 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges69 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges70 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges71 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges72 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         ViewAppointmentPanel = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         DeleteButton = New Guna.UI2.WinForms.Guna2Button()
         ViewButton = New Guna.UI2.WinForms.Guna2Button()
@@ -120,26 +118,27 @@ Partial Class PatientDashboard
         InvoiceDataGridView = New Guna.UI2.WinForms.Guna2DataGridView()
         dataGridViewCheckBoxColumn1 = New DataGridViewCheckBoxColumn()
         BookAppPanel = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
-        BookingPanel = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
-        AppointmentDatePicker = New MonthCalendar()
-        guna2HtmlLabel10 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        ConsFeeLbl = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
-        guna2HtmlLabel7 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        ConfirmBookBtn = New Guna.UI2.WinForms.Guna2Button()
-        TimeCombobox = New Guna.UI2.WinForms.Guna2ComboBox()
         SpecPanel = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
-        guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        pd_SpecBtn = New Guna.UI2.WinForms.Guna2Button()
-        pd_SpecBox = New Guna.UI2.WinForms.Guna2ComboBox()
-        pd_DoctorPanel = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
+        ConfBack = New Guna.UI2.WinForms.Guna2ImageButton()
+        ConfirmBookBtn = New Guna.UI2.WinForms.Guna2Button()
+        TimeePanel = New Guna.UI2.WinForms.Guna2Panel()
+        TimeBack = New Guna.UI2.WinForms.Guna2ImageButton()
+        DateTimeBtn1 = New Guna.UI2.WinForms.Guna2ImageButton()
+        Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        AppointmentDatePicker = New MonthCalendar()
+        ConsFeeLbl1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Guna2TextBox4 = New Guna.UI2.WinForms.Guna2TextBox()
+        Guna2HtmlLabel13 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        TimeCombobox = New Guna.UI2.WinForms.Guna2ComboBox()
+        DoccPanel = New Guna.UI2.WinForms.Guna2Panel()
+        DocBack = New Guna.UI2.WinForms.Guna2ImageButton()
+        pd_DocBtn1 = New Guna.UI2.WinForms.Guna2ImageButton()
         guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        pd_DocBtn = New Guna.UI2.WinForms.Guna2Button()
         pd_DocBox = New Guna.UI2.WinForms.Guna2ComboBox()
-        SelectPatientPanel = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
-        guna2HtmlLabel11 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        EnterPatientButton = New Guna.UI2.WinForms.Guna2Button()
-        PatientComboBox = New Guna.UI2.WinForms.Guna2ComboBox()
+        SpecialPanel = New Guna.UI2.WinForms.Guna2Panel()
+        pd_SpecBtn1 = New Guna.UI2.WinForms.Guna2ImageButton()
+        guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        pd_SpecBox = New Guna.UI2.WinForms.Guna2ComboBox()
         ResetTransactionFilterButton = New Guna.UI2.WinForms.Guna2Button()
         SearchTransactionButton = New Guna.UI2.WinForms.Guna2Button()
         TransactionIdTextBox = New Guna.UI2.WinForms.Guna2TextBox()
@@ -167,15 +166,18 @@ Partial Class PatientDashboard
         Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Guna2CirclePictureBox2 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        guna2HtmlLabel7 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        ConsFeeLbl = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        guna2HtmlLabel10 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         ViewAppointmentPanel.SuspendLayout()
         CType(AppointmentDataGridViewList2, ComponentModel.ISupportInitialize).BeginInit()
         InvoicePanel.SuspendLayout()
         CType(InvoiceDataGridView, ComponentModel.ISupportInitialize).BeginInit()
         BookAppPanel.SuspendLayout()
-        BookingPanel.SuspendLayout()
         SpecPanel.SuspendLayout()
-        pd_DoctorPanel.SuspendLayout()
-        SelectPatientPanel.SuspendLayout()
+        TimeePanel.SuspendLayout()
+        DoccPanel.SuspendLayout()
+        SpecialPanel.SuspendLayout()
         guna2CustomGradientPanel1.SuspendLayout()
         CType(guna2CirclePictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SearchPanel.SuspendLayout()
@@ -487,127 +489,189 @@ Partial Class PatientDashboard
         ' 
         ' BookAppPanel
         ' 
-        BookAppPanel.Controls.Add(BookingPanel)
         BookAppPanel.Controls.Add(SpecPanel)
-        BookAppPanel.Controls.Add(pd_DoctorPanel)
-        BookAppPanel.Controls.Add(SelectPatientPanel)
-        BookAppPanel.CustomizableEdges = CustomizableEdges37
+        BookAppPanel.CustomizableEdges = CustomizableEdges35
         BookAppPanel.Location = New Point(241, 190)
         BookAppPanel.Name = "BookAppPanel"
-        BookAppPanel.ShadowDecoration.CustomizableEdges = CustomizableEdges38
+        BookAppPanel.ShadowDecoration.CustomizableEdges = CustomizableEdges36
         BookAppPanel.Size = New Size(1601, 861)
         BookAppPanel.TabIndex = 224
         BookAppPanel.Visible = False
         ' 
-        ' BookingPanel
+        ' SpecPanel
         ' 
-        BookingPanel.Controls.Add(AppointmentDatePicker)
-        BookingPanel.Controls.Add(guna2HtmlLabel10)
-        BookingPanel.Controls.Add(ConsFeeLbl)
-        BookingPanel.Controls.Add(guna2TextBox1)
-        BookingPanel.Controls.Add(guna2HtmlLabel7)
-        BookingPanel.Controls.Add(ConfirmBookBtn)
-        BookingPanel.Controls.Add(TimeCombobox)
-        BookingPanel.CustomizableEdges = CustomizableEdges17
-        BookingPanel.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        BookingPanel.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        BookingPanel.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        BookingPanel.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
-        BookingPanel.Location = New Point(10, 15)
-        BookingPanel.Name = "BookingPanel"
-        BookingPanel.ShadowDecoration.CustomizableEdges = CustomizableEdges18
-        BookingPanel.Size = New Size(1574, 774)
-        BookingPanel.TabIndex = 140
-        BookingPanel.Visible = False
+        SpecPanel.Controls.Add(ConfBack)
+        SpecPanel.Controls.Add(ConfirmBookBtn)
+        SpecPanel.Controls.Add(TimeePanel)
+        SpecPanel.Controls.Add(DoccPanel)
+        SpecPanel.Controls.Add(SpecialPanel)
+        SpecPanel.CustomizableEdges = CustomizableEdges33
+        SpecPanel.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        SpecPanel.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        SpecPanel.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        SpecPanel.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
+        SpecPanel.Location = New Point(10, 18)
+        SpecPanel.Name = "SpecPanel"
+        SpecPanel.ShadowDecoration.CustomizableEdges = CustomizableEdges34
+        SpecPanel.Size = New Size(1574, 774)
+        SpecPanel.TabIndex = 137
+        SpecPanel.Visible = False
         ' 
-        ' AppointmentDatePicker
+        ' ConfBack
         ' 
-        AppointmentDatePicker.Cursor = Cursors.Hand
-        AppointmentDatePicker.Location = New Point(279, 306)
-        AppointmentDatePicker.Name = "AppointmentDatePicker"
-        AppointmentDatePicker.TabIndex = 166
-        ' 
-        ' guna2HtmlLabel10
-        ' 
-        guna2HtmlLabel10.BackColor = Color.Transparent
-        guna2HtmlLabel10.Font = New Font("Segoe UI", 14F, FontStyle.Bold)
-        guna2HtmlLabel10.ForeColor = SystemColors.Control
-        guna2HtmlLabel10.Location = New Point(1011, 199)
-        guna2HtmlLabel10.Name = "guna2HtmlLabel10"
-        guna2HtmlLabel10.Size = New Size(157, 27)
-        guna2HtmlLabel10.TabIndex = 162
-        guna2HtmlLabel10.Text = "Consultation " & vbCrLf & "Fee:"
-        ' 
-        ' ConsFeeLbl
-        ' 
-        ConsFeeLbl.BackColor = SystemColors.Control
-        ConsFeeLbl.Font = New Font("Tahoma", 10.25F, FontStyle.Bold)
-        ConsFeeLbl.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        ConsFeeLbl.Location = New Point(1205, 196)
-        ConsFeeLbl.Name = "ConsFeeLbl"
-        ConsFeeLbl.Size = New Size(12, 19)
-        ConsFeeLbl.TabIndex = 161
-        ConsFeeLbl.Text = "0"
-        ' 
-        ' guna2TextBox1
-        ' 
-        guna2TextBox1.BackColor = SystemColors.Control
-        guna2TextBox1.BorderColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        guna2TextBox1.BorderThickness = 2
-        guna2TextBox1.CustomizableEdges = CustomizableEdges11
-        guna2TextBox1.DefaultText = ""
-        guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        guna2TextBox1.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        guna2TextBox1.FillColor = SystemColors.Control
-        guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        guna2TextBox1.Font = New Font("Segoe UI", 9F)
-        guna2TextBox1.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        guna2TextBox1.Location = New Point(1187, 189)
-        guna2TextBox1.Margin = New Padding(3, 4, 3, 4)
-        guna2TextBox1.Name = "guna2TextBox1"
-        guna2TextBox1.PlaceholderText = ""
-        guna2TextBox1.ReadOnly = True
-        guna2TextBox1.SelectedText = ""
-        guna2TextBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        guna2TextBox1.Size = New Size(124, 37)
-        guna2TextBox1.TabIndex = 163
-        ' 
-        ' guna2HtmlLabel7
-        ' 
-        guna2HtmlLabel7.BackColor = Color.Transparent
-        guna2HtmlLabel7.Font = New Font("Arial", 25F)
-        guna2HtmlLabel7.ForeColor = SystemColors.Control
-        guna2HtmlLabel7.Location = New Point(569, 71)
-        guna2HtmlLabel7.Margin = New Padding(3, 2, 3, 2)
-        guna2HtmlLabel7.Name = "guna2HtmlLabel7"
-        guna2HtmlLabel7.Size = New Size(500, 40)
-        guna2HtmlLabel7.TabIndex = 140
-        guna2HtmlLabel7.Text = "Select Date and Time Appointment"
+        ConfBack.BackColor = Color.Transparent
+        ConfBack.CheckedState.ImageSize = New Size(64, 64)
+        ConfBack.Cursor = Cursors.Hand
+        ConfBack.HoverState.ImageSize = New Size(64, 64)
+        ConfBack.Image = CType(resources.GetObject("ConfBack.Image"), Image)
+        ConfBack.ImageOffset = New Point(0, 0)
+        ConfBack.ImageRotate = 0F
+        ConfBack.ImageSize = New Size(50, 50)
+        ConfBack.Location = New Point(528, 658)
+        ConfBack.Name = "ConfBack"
+        ConfBack.PressedState.ImageSize = New Size(64, 64)
+        ConfBack.ShadowDecoration.CustomizableEdges = CustomizableEdges11
+        ConfBack.Size = New Size(56, 41)
+        ConfBack.TabIndex = 177
         ' 
         ' ConfirmBookBtn
         ' 
         ConfirmBookBtn.Cursor = Cursors.Hand
-        ConfirmBookBtn.CustomizableEdges = CustomizableEdges13
+        ConfirmBookBtn.CustomizableEdges = CustomizableEdges12
         ConfirmBookBtn.DisabledState.BorderColor = Color.DarkGray
         ConfirmBookBtn.DisabledState.CustomBorderColor = Color.DarkGray
         ConfirmBookBtn.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         ConfirmBookBtn.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         ConfirmBookBtn.Font = New Font("Arial", 13F)
         ConfirmBookBtn.ForeColor = Color.White
-        ConfirmBookBtn.Location = New Point(1051, 430)
+        ConfirmBookBtn.Location = New Point(598, 649)
         ConfirmBookBtn.Name = "ConfirmBookBtn"
-        ConfirmBookBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges14
+        ConfirmBookBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges13
         ConfirmBookBtn.Size = New Size(228, 63)
-        ConfirmBookBtn.TabIndex = 0
+        ConfirmBookBtn.TabIndex = 170
         ConfirmBookBtn.Text = "Confirm"
+        ' 
+        ' TimeePanel
+        ' 
+        TimeePanel.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        TimeePanel.Controls.Add(TimeBack)
+        TimeePanel.Controls.Add(DateTimeBtn1)
+        TimeePanel.Controls.Add(Guna2HtmlLabel4)
+        TimeePanel.Controls.Add(AppointmentDatePicker)
+        TimeePanel.Controls.Add(ConsFeeLbl1)
+        TimeePanel.Controls.Add(Guna2TextBox4)
+        TimeePanel.Controls.Add(Guna2HtmlLabel13)
+        TimeePanel.Controls.Add(TimeCombobox)
+        TimeePanel.CustomizableEdges = CustomizableEdges20
+        TimeePanel.Location = New Point(704, 79)
+        TimeePanel.Name = "TimeePanel"
+        TimeePanel.ShadowDecoration.CustomizableEdges = CustomizableEdges21
+        TimeePanel.Size = New Size(818, 457)
+        TimeePanel.TabIndex = 169
+        ' 
+        ' TimeBack
+        ' 
+        TimeBack.CheckedState.ImageSize = New Size(64, 64)
+        TimeBack.Cursor = Cursors.Hand
+        TimeBack.HoverState.ImageSize = New Size(64, 64)
+        TimeBack.Image = CType(resources.GetObject("TimeBack.Image"), Image)
+        TimeBack.ImageOffset = New Point(0, 0)
+        TimeBack.ImageRotate = 0F
+        TimeBack.ImageSize = New Size(50, 50)
+        TimeBack.Location = New Point(3, 3)
+        TimeBack.Name = "TimeBack"
+        TimeBack.PressedState.ImageSize = New Size(64, 64)
+        TimeBack.ShadowDecoration.CustomizableEdges = CustomizableEdges14
+        TimeBack.Size = New Size(56, 41)
+        TimeBack.TabIndex = 176
+        ' 
+        ' DateTimeBtn1
+        ' 
+        DateTimeBtn1.CheckedState.ImageSize = New Size(64, 64)
+        DateTimeBtn1.Cursor = Cursors.Hand
+        DateTimeBtn1.HoverState.ImageSize = New Size(64, 64)
+        DateTimeBtn1.Image = CType(resources.GetObject("DateTimeBtn1.Image"), Image)
+        DateTimeBtn1.ImageOffset = New Point(0, 0)
+        DateTimeBtn1.ImageRotate = 0F
+        DateTimeBtn1.ImageSize = New Size(60, 60)
+        DateTimeBtn1.Location = New Point(396, 371)
+        DateTimeBtn1.Name = "DateTimeBtn1"
+        DateTimeBtn1.PressedState.ImageSize = New Size(64, 64)
+        DateTimeBtn1.ShadowDecoration.CustomizableEdges = CustomizableEdges15
+        DateTimeBtn1.Size = New Size(82, 69)
+        DateTimeBtn1.TabIndex = 175
+        ' 
+        ' Guna2HtmlLabel4
+        ' 
+        Guna2HtmlLabel4.BackColor = Color.Transparent
+        Guna2HtmlLabel4.Font = New Font("Segoe UI", 14F, FontStyle.Bold)
+        Guna2HtmlLabel4.ForeColor = SystemColors.Control
+        Guna2HtmlLabel4.Location = New Point(465, 181)
+        Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
+        Guna2HtmlLabel4.Size = New Size(157, 27)
+        Guna2HtmlLabel4.TabIndex = 171
+        Guna2HtmlLabel4.Text = "Consultation " & vbCrLf & "Fee:"
+        ' 
+        ' AppointmentDatePicker
+        ' 
+        AppointmentDatePicker.Cursor = Cursors.Hand
+        AppointmentDatePicker.Location = New Point(177, 171)
+        AppointmentDatePicker.Name = "AppointmentDatePicker"
+        AppointmentDatePicker.TabIndex = 173
+        ' 
+        ' ConsFeeLbl1
+        ' 
+        ConsFeeLbl1.BackColor = SystemColors.Control
+        ConsFeeLbl1.Font = New Font("Tahoma", 10.25F, FontStyle.Bold)
+        ConsFeeLbl1.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        ConsFeeLbl1.Location = New Point(659, 178)
+        ConsFeeLbl1.Name = "ConsFeeLbl1"
+        ConsFeeLbl1.Size = New Size(12, 19)
+        ConsFeeLbl1.TabIndex = 170
+        ConsFeeLbl1.Text = "0"
+        ' 
+        ' Guna2TextBox4
+        ' 
+        Guna2TextBox4.BackColor = SystemColors.Control
+        Guna2TextBox4.BorderColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        Guna2TextBox4.BorderThickness = 2
+        Guna2TextBox4.CustomizableEdges = CustomizableEdges16
+        Guna2TextBox4.DefaultText = ""
+        Guna2TextBox4.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        Guna2TextBox4.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        Guna2TextBox4.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        Guna2TextBox4.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        Guna2TextBox4.FillColor = SystemColors.Control
+        Guna2TextBox4.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        Guna2TextBox4.Font = New Font("Segoe UI", 9F)
+        Guna2TextBox4.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        Guna2TextBox4.Location = New Point(641, 171)
+        Guna2TextBox4.Margin = New Padding(3, 4, 3, 4)
+        Guna2TextBox4.Name = "Guna2TextBox4"
+        Guna2TextBox4.PlaceholderText = ""
+        Guna2TextBox4.ReadOnly = True
+        Guna2TextBox4.SelectedText = ""
+        Guna2TextBox4.ShadowDecoration.CustomizableEdges = CustomizableEdges17
+        Guna2TextBox4.Size = New Size(124, 37)
+        Guna2TextBox4.TabIndex = 172
+        ' 
+        ' Guna2HtmlLabel13
+        ' 
+        Guna2HtmlLabel13.BackColor = Color.Transparent
+        Guna2HtmlLabel13.Font = New Font("Arial", 20F)
+        Guna2HtmlLabel13.ForeColor = SystemColors.Control
+        Guna2HtmlLabel13.Location = New Point(246, 71)
+        Guna2HtmlLabel13.Margin = New Padding(3, 2, 3, 2)
+        Guna2HtmlLabel13.Name = "Guna2HtmlLabel13"
+        Guna2HtmlLabel13.Size = New Size(425, 34)
+        Guna2HtmlLabel13.TabIndex = 169
+        Guna2HtmlLabel13.Text = "Select Date and Time Appointment"
         ' 
         ' TimeCombobox
         ' 
         TimeCombobox.BackColor = Color.Transparent
         TimeCombobox.Cursor = Cursors.Hand
-        TimeCombobox.CustomizableEdges = CustomizableEdges15
+        TimeCombobox.CustomizableEdges = CustomizableEdges18
         TimeCombobox.DrawMode = DrawMode.OwnerDrawFixed
         TimeCombobox.DropDownStyle = ComboBoxStyle.DropDownList
         TimeCombobox.FocusedColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
@@ -615,123 +679,74 @@ Partial Class PatientDashboard
         TimeCombobox.Font = New Font("Segoe UI", 10F)
         TimeCombobox.ForeColor = Color.FromArgb(CByte(68), CByte(88), CByte(112))
         TimeCombobox.ItemHeight = 30
-        TimeCombobox.Location = New Point(203, 199)
+        TimeCombobox.Location = New Point(53, 123)
         TimeCombobox.Name = "TimeCombobox"
-        TimeCombobox.ShadowDecoration.CustomizableEdges = CustomizableEdges16
+        TimeCombobox.ShadowDecoration.CustomizableEdges = CustomizableEdges19
         TimeCombobox.Size = New Size(441, 36)
-        TimeCombobox.TabIndex = 0
+        TimeCombobox.TabIndex = 168
         ' 
-        ' SpecPanel
+        ' DoccPanel
         ' 
-        SpecPanel.Controls.Add(guna2HtmlLabel5)
-        SpecPanel.Controls.Add(pd_SpecBtn)
-        SpecPanel.Controls.Add(pd_SpecBox)
-        SpecPanel.CustomizableEdges = CustomizableEdges23
-        SpecPanel.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        SpecPanel.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        SpecPanel.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        SpecPanel.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
-        SpecPanel.Location = New Point(10, 18)
-        SpecPanel.Name = "SpecPanel"
-        SpecPanel.ShadowDecoration.CustomizableEdges = CustomizableEdges24
-        SpecPanel.Size = New Size(1574, 774)
-        SpecPanel.TabIndex = 137
-        SpecPanel.Visible = False
+        DoccPanel.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        DoccPanel.Controls.Add(DocBack)
+        DoccPanel.Controls.Add(pd_DocBtn1)
+        DoccPanel.Controls.Add(guna2HtmlLabel6)
+        DoccPanel.Controls.Add(pd_DocBox)
+        DoccPanel.CustomizableEdges = CustomizableEdges26
+        DoccPanel.Location = New Point(76, 318)
+        DoccPanel.Name = "DoccPanel"
+        DoccPanel.ShadowDecoration.CustomizableEdges = CustomizableEdges27
+        DoccPanel.Size = New Size(543, 148)
+        DoccPanel.TabIndex = 168
         ' 
-        ' guna2HtmlLabel5
+        ' DocBack
         ' 
-        guna2HtmlLabel5.BackColor = Color.Transparent
-        guna2HtmlLabel5.Font = New Font("Arial", 40F)
-        guna2HtmlLabel5.ForeColor = SystemColors.Control
-        guna2HtmlLabel5.Location = New Point(437, 170)
-        guna2HtmlLabel5.Margin = New Padding(3, 2, 3, 2)
-        guna2HtmlLabel5.Name = "guna2HtmlLabel5"
-        guna2HtmlLabel5.Size = New Size(790, 62)
-        guna2HtmlLabel5.TabIndex = 140
-        guna2HtmlLabel5.Text = "Select your doctor's specialization"
+        DocBack.CheckedState.ImageSize = New Size(64, 64)
+        DocBack.Cursor = Cursors.Hand
+        DocBack.HoverState.ImageSize = New Size(64, 64)
+        DocBack.Image = CType(resources.GetObject("DocBack.Image"), Image)
+        DocBack.ImageOffset = New Point(0, 0)
+        DocBack.ImageRotate = 0F
+        DocBack.ImageSize = New Size(30, 30)
+        DocBack.Location = New Point(3, 3)
+        DocBack.Name = "DocBack"
+        DocBack.PressedState.ImageSize = New Size(64, 64)
+        DocBack.ShadowDecoration.CustomizableEdges = CustomizableEdges22
+        DocBack.Size = New Size(48, 31)
+        DocBack.TabIndex = 146
         ' 
-        ' pd_SpecBtn
+        ' pd_DocBtn1
         ' 
-        pd_SpecBtn.CustomizableEdges = CustomizableEdges19
-        pd_SpecBtn.DisabledState.BorderColor = Color.DarkGray
-        pd_SpecBtn.DisabledState.CustomBorderColor = Color.DarkGray
-        pd_SpecBtn.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        pd_SpecBtn.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        pd_SpecBtn.Font = New Font("Segoe UI", 9F)
-        pd_SpecBtn.ForeColor = Color.White
-        pd_SpecBtn.Location = New Point(685, 366)
-        pd_SpecBtn.Name = "pd_SpecBtn"
-        pd_SpecBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges20
-        pd_SpecBtn.Size = New Size(180, 45)
-        pd_SpecBtn.TabIndex = 0
-        pd_SpecBtn.Text = "Confirm"
-        ' 
-        ' pd_SpecBox
-        ' 
-        pd_SpecBox.BackColor = Color.Transparent
-        pd_SpecBox.CustomizableEdges = CustomizableEdges21
-        pd_SpecBox.DrawMode = DrawMode.OwnerDrawFixed
-        pd_SpecBox.DropDownStyle = ComboBoxStyle.DropDownList
-        pd_SpecBox.FocusedColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        pd_SpecBox.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        pd_SpecBox.Font = New Font("Segoe UI", 10F)
-        pd_SpecBox.ForeColor = Color.FromArgb(CByte(68), CByte(88), CByte(112))
-        pd_SpecBox.ItemHeight = 30
-        pd_SpecBox.Location = New Point(569, 278)
-        pd_SpecBox.Name = "pd_SpecBox"
-        pd_SpecBox.ShadowDecoration.CustomizableEdges = CustomizableEdges22
-        pd_SpecBox.Size = New Size(441, 36)
-        pd_SpecBox.TabIndex = 0
-        ' 
-        ' pd_DoctorPanel
-        ' 
-        pd_DoctorPanel.Controls.Add(guna2HtmlLabel6)
-        pd_DoctorPanel.Controls.Add(pd_DocBtn)
-        pd_DoctorPanel.Controls.Add(pd_DocBox)
-        pd_DoctorPanel.CustomizableEdges = CustomizableEdges29
-        pd_DoctorPanel.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        pd_DoctorPanel.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        pd_DoctorPanel.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        pd_DoctorPanel.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
-        pd_DoctorPanel.Location = New Point(10, 15)
-        pd_DoctorPanel.Name = "pd_DoctorPanel"
-        pd_DoctorPanel.ShadowDecoration.CustomizableEdges = CustomizableEdges30
-        pd_DoctorPanel.Size = New Size(1574, 774)
-        pd_DoctorPanel.TabIndex = 139
-        pd_DoctorPanel.Visible = False
+        pd_DocBtn1.CheckedState.ImageSize = New Size(64, 64)
+        pd_DocBtn1.Cursor = Cursors.Hand
+        pd_DocBtn1.HoverState.ImageSize = New Size(64, 64)
+        pd_DocBtn1.Image = CType(resources.GetObject("pd_DocBtn1.Image"), Image)
+        pd_DocBtn1.ImageOffset = New Point(0, 0)
+        pd_DocBtn1.ImageRotate = 0F
+        pd_DocBtn1.ImageSize = New Size(40, 40)
+        pd_DocBtn1.Location = New Point(452, 66)
+        pd_DocBtn1.Name = "pd_DocBtn1"
+        pd_DocBtn1.PressedState.ImageSize = New Size(64, 64)
+        pd_DocBtn1.ShadowDecoration.CustomizableEdges = CustomizableEdges23
+        pd_DocBtn1.Size = New Size(55, 46)
+        pd_DocBtn1.TabIndex = 145
         ' 
         ' guna2HtmlLabel6
         ' 
         guna2HtmlLabel6.BackColor = Color.Transparent
-        guna2HtmlLabel6.Font = New Font("Arial", 40F)
+        guna2HtmlLabel6.Font = New Font("Arial", 20F)
         guna2HtmlLabel6.ForeColor = SystemColors.Control
-        guna2HtmlLabel6.Location = New Point(633, 195)
+        guna2HtmlLabel6.Location = New Point(154, 24)
         guna2HtmlLabel6.Margin = New Padding(3, 2, 3, 2)
         guna2HtmlLabel6.Name = "guna2HtmlLabel6"
-        guna2HtmlLabel6.Size = New Size(364, 62)
-        guna2HtmlLabel6.TabIndex = 140
+        guna2HtmlLabel6.Size = New Size(191, 34)
+        guna2HtmlLabel6.TabIndex = 143
         guna2HtmlLabel6.Text = "Select a Doctor"
-        ' 
-        ' pd_DocBtn
-        ' 
-        pd_DocBtn.CustomizableEdges = CustomizableEdges25
-        pd_DocBtn.DisabledState.BorderColor = Color.DarkGray
-        pd_DocBtn.DisabledState.CustomBorderColor = Color.DarkGray
-        pd_DocBtn.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        pd_DocBtn.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        pd_DocBtn.Font = New Font("Segoe UI", 9F)
-        pd_DocBtn.ForeColor = Color.White
-        pd_DocBtn.Location = New Point(720, 357)
-        pd_DocBtn.Name = "pd_DocBtn"
-        pd_DocBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges26
-        pd_DocBtn.Size = New Size(180, 45)
-        pd_DocBtn.TabIndex = 0
-        pd_DocBtn.Text = "Confirm"
         ' 
         ' pd_DocBox
         ' 
         pd_DocBox.BackColor = Color.Transparent
-        pd_DocBox.CustomizableEdges = CustomizableEdges27
+        pd_DocBox.CustomizableEdges = CustomizableEdges24
         pd_DocBox.DrawMode = DrawMode.OwnerDrawFixed
         pd_DocBox.DropDownStyle = ComboBoxStyle.DropDownList
         pd_DocBox.FocusedColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
@@ -740,73 +755,69 @@ Partial Class PatientDashboard
         pd_DocBox.ForeColor = Color.FromArgb(CByte(68), CByte(88), CByte(112))
         pd_DocBox.ItemHeight = 30
         pd_DocBox.Items.AddRange(New Object() {"Balmond", "Nana", "Mentos"})
-        pd_DocBox.Location = New Point(592, 281)
+        pd_DocBox.Location = New Point(97, 76)
         pd_DocBox.Name = "pd_DocBox"
-        pd_DocBox.ShadowDecoration.CustomizableEdges = CustomizableEdges28
-        pd_DocBox.Size = New Size(441, 36)
-        pd_DocBox.TabIndex = 0
+        pd_DocBox.ShadowDecoration.CustomizableEdges = CustomizableEdges25
+        pd_DocBox.Size = New Size(349, 36)
+        pd_DocBox.TabIndex = 142
         ' 
-        ' SelectPatientPanel
+        ' SpecialPanel
         ' 
-        SelectPatientPanel.Controls.Add(guna2HtmlLabel11)
-        SelectPatientPanel.Controls.Add(EnterPatientButton)
-        SelectPatientPanel.Controls.Add(PatientComboBox)
-        SelectPatientPanel.CustomizableEdges = CustomizableEdges35
-        SelectPatientPanel.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        SelectPatientPanel.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        SelectPatientPanel.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
-        SelectPatientPanel.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
-        SelectPatientPanel.Location = New Point(10, 15)
-        SelectPatientPanel.Name = "SelectPatientPanel"
-        SelectPatientPanel.ShadowDecoration.CustomizableEdges = CustomizableEdges36
-        SelectPatientPanel.Size = New Size(1574, 774)
-        SelectPatientPanel.TabIndex = 140
-        SelectPatientPanel.Visible = False
+        SpecialPanel.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        SpecialPanel.Controls.Add(pd_SpecBtn1)
+        SpecialPanel.Controls.Add(guna2HtmlLabel5)
+        SpecialPanel.Controls.Add(pd_SpecBox)
+        SpecialPanel.CustomizableEdges = CustomizableEdges31
+        SpecialPanel.Location = New Point(76, 150)
+        SpecialPanel.Name = "SpecialPanel"
+        SpecialPanel.ShadowDecoration.CustomizableEdges = CustomizableEdges32
+        SpecialPanel.Size = New Size(543, 137)
+        SpecialPanel.TabIndex = 167
         ' 
-        ' guna2HtmlLabel11
+        ' pd_SpecBtn1
         ' 
-        guna2HtmlLabel11.BackColor = Color.Transparent
-        guna2HtmlLabel11.Font = New Font("Arial", 40F)
-        guna2HtmlLabel11.ForeColor = SystemColors.Control
-        guna2HtmlLabel11.Location = New Point(633, 195)
-        guna2HtmlLabel11.Margin = New Padding(3, 2, 3, 2)
-        guna2HtmlLabel11.Name = "guna2HtmlLabel11"
-        guna2HtmlLabel11.Size = New Size(370, 62)
-        guna2HtmlLabel11.TabIndex = 140
-        guna2HtmlLabel11.Text = "Select a Patient"
+        pd_SpecBtn1.CheckedState.ImageSize = New Size(64, 64)
+        pd_SpecBtn1.Cursor = Cursors.Hand
+        pd_SpecBtn1.HoverState.ImageSize = New Size(64, 64)
+        pd_SpecBtn1.Image = CType(resources.GetObject("pd_SpecBtn1.Image"), Image)
+        pd_SpecBtn1.ImageOffset = New Point(0, 0)
+        pd_SpecBtn1.ImageRotate = 0F
+        pd_SpecBtn1.ImageSize = New Size(40, 40)
+        pd_SpecBtn1.Location = New Point(444, 61)
+        pd_SpecBtn1.Name = "pd_SpecBtn1"
+        pd_SpecBtn1.PressedState.ImageSize = New Size(64, 64)
+        pd_SpecBtn1.ShadowDecoration.CustomizableEdges = CustomizableEdges28
+        pd_SpecBtn1.Size = New Size(55, 46)
+        pd_SpecBtn1.TabIndex = 144
         ' 
-        ' EnterPatientButton
+        ' guna2HtmlLabel5
         ' 
-        EnterPatientButton.CustomizableEdges = CustomizableEdges31
-        EnterPatientButton.DisabledState.BorderColor = Color.DarkGray
-        EnterPatientButton.DisabledState.CustomBorderColor = Color.DarkGray
-        EnterPatientButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        EnterPatientButton.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        EnterPatientButton.Font = New Font("Segoe UI", 9F)
-        EnterPatientButton.ForeColor = Color.White
-        EnterPatientButton.Location = New Point(720, 357)
-        EnterPatientButton.Name = "EnterPatientButton"
-        EnterPatientButton.ShadowDecoration.CustomizableEdges = CustomizableEdges32
-        EnterPatientButton.Size = New Size(180, 45)
-        EnterPatientButton.TabIndex = 0
-        EnterPatientButton.Text = "Confirm"
+        guna2HtmlLabel5.BackColor = Color.Transparent
+        guna2HtmlLabel5.Font = New Font("Arial", 20F)
+        guna2HtmlLabel5.ForeColor = Color.White
+        guna2HtmlLabel5.Location = New Point(64, 32)
+        guna2HtmlLabel5.Margin = New Padding(3, 2, 3, 2)
+        guna2HtmlLabel5.Name = "guna2HtmlLabel5"
+        guna2HtmlLabel5.Size = New Size(414, 34)
+        guna2HtmlLabel5.TabIndex = 143
+        guna2HtmlLabel5.Text = "Select your doctor's specialization"
         ' 
-        ' PatientComboBox
+        ' pd_SpecBox
         ' 
-        PatientComboBox.BackColor = Color.Transparent
-        PatientComboBox.CustomizableEdges = CustomizableEdges33
-        PatientComboBox.DrawMode = DrawMode.OwnerDrawFixed
-        PatientComboBox.DropDownStyle = ComboBoxStyle.DropDownList
-        PatientComboBox.FocusedColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        PatientComboBox.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        PatientComboBox.Font = New Font("Segoe UI", 10F)
-        PatientComboBox.ForeColor = Color.FromArgb(CByte(68), CByte(88), CByte(112))
-        PatientComboBox.ItemHeight = 30
-        PatientComboBox.Location = New Point(592, 281)
-        PatientComboBox.Name = "PatientComboBox"
-        PatientComboBox.ShadowDecoration.CustomizableEdges = CustomizableEdges34
-        PatientComboBox.Size = New Size(441, 36)
-        PatientComboBox.TabIndex = 0
+        pd_SpecBox.BackColor = Color.Transparent
+        pd_SpecBox.CustomizableEdges = CustomizableEdges29
+        pd_SpecBox.DrawMode = DrawMode.OwnerDrawFixed
+        pd_SpecBox.DropDownStyle = ComboBoxStyle.DropDownList
+        pd_SpecBox.FocusedColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        pd_SpecBox.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        pd_SpecBox.Font = New Font("Segoe UI", 10F)
+        pd_SpecBox.ForeColor = Color.FromArgb(CByte(68), CByte(88), CByte(112))
+        pd_SpecBox.ItemHeight = 30
+        pd_SpecBox.Location = New Point(89, 71)
+        pd_SpecBox.Name = "pd_SpecBox"
+        pd_SpecBox.ShadowDecoration.CustomizableEdges = CustomizableEdges30
+        pd_SpecBox.Size = New Size(349, 36)
+        pd_SpecBox.TabIndex = 142
         ' 
         ' ResetTransactionFilterButton
         ' 
@@ -815,7 +826,7 @@ Partial Class PatientDashboard
         ResetTransactionFilterButton.BorderRadius = 15
         ResetTransactionFilterButton.Cursor = Cursors.Hand
         ResetTransactionFilterButton.CustomBorderColor = Color.Cyan
-        ResetTransactionFilterButton.CustomizableEdges = CustomizableEdges39
+        ResetTransactionFilterButton.CustomizableEdges = CustomizableEdges37
         ResetTransactionFilterButton.DisabledState.BorderColor = Color.DarkGray
         ResetTransactionFilterButton.DisabledState.CustomBorderColor = Color.DarkGray
         ResetTransactionFilterButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -829,7 +840,7 @@ Partial Class PatientDashboard
         ResetTransactionFilterButton.Location = New Point(536, 11)
         ResetTransactionFilterButton.Margin = New Padding(3, 2, 3, 2)
         ResetTransactionFilterButton.Name = "ResetTransactionFilterButton"
-        ResetTransactionFilterButton.ShadowDecoration.CustomizableEdges = CustomizableEdges40
+        ResetTransactionFilterButton.ShadowDecoration.CustomizableEdges = CustomizableEdges38
         ResetTransactionFilterButton.Size = New Size(100, 48)
         ResetTransactionFilterButton.TabIndex = 219
         ResetTransactionFilterButton.Text = "Reset"
@@ -842,7 +853,7 @@ Partial Class PatientDashboard
         SearchTransactionButton.BorderRadius = 15
         SearchTransactionButton.Cursor = Cursors.Hand
         SearchTransactionButton.CustomBorderColor = Color.Cyan
-        SearchTransactionButton.CustomizableEdges = CustomizableEdges41
+        SearchTransactionButton.CustomizableEdges = CustomizableEdges39
         SearchTransactionButton.DisabledState.BorderColor = Color.DarkGray
         SearchTransactionButton.DisabledState.CustomBorderColor = Color.DarkGray
         SearchTransactionButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -856,7 +867,7 @@ Partial Class PatientDashboard
         SearchTransactionButton.Location = New Point(430, 12)
         SearchTransactionButton.Margin = New Padding(3, 2, 3, 2)
         SearchTransactionButton.Name = "SearchTransactionButton"
-        SearchTransactionButton.ShadowDecoration.CustomizableEdges = CustomizableEdges42
+        SearchTransactionButton.ShadowDecoration.CustomizableEdges = CustomizableEdges40
         SearchTransactionButton.Size = New Size(100, 48)
         SearchTransactionButton.TabIndex = 218
         SearchTransactionButton.Text = "Search"
@@ -869,7 +880,7 @@ Partial Class PatientDashboard
         TransactionIdTextBox.BorderRadius = 8
         TransactionIdTextBox.BorderThickness = 0
         TransactionIdTextBox.Cursor = Cursors.IBeam
-        TransactionIdTextBox.CustomizableEdges = CustomizableEdges43
+        TransactionIdTextBox.CustomizableEdges = CustomizableEdges41
         TransactionIdTextBox.DefaultText = ""
         TransactionIdTextBox.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         TransactionIdTextBox.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -885,7 +896,7 @@ Partial Class PatientDashboard
         TransactionIdTextBox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         TransactionIdTextBox.PlaceholderText = "ID"
         TransactionIdTextBox.SelectedText = ""
-        TransactionIdTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges44
+        TransactionIdTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges42
         TransactionIdTextBox.Size = New Size(83, 48)
         TransactionIdTextBox.TabIndex = 213
         ' 
@@ -903,7 +914,7 @@ Partial Class PatientDashboard
         Staff_MinimizeButton.Margin = New Padding(3, 2, 3, 2)
         Staff_MinimizeButton.Name = "Staff_MinimizeButton"
         Staff_MinimizeButton.PressedState.ImageSize = New Size(20, 30)
-        Staff_MinimizeButton.ShadowDecoration.CustomizableEdges = CustomizableEdges45
+        Staff_MinimizeButton.ShadowDecoration.CustomizableEdges = CustomizableEdges43
         Staff_MinimizeButton.Size = New Size(57, 45)
         Staff_MinimizeButton.TabIndex = 230
         ' 
@@ -911,7 +922,7 @@ Partial Class PatientDashboard
         ' 
         Staff_ExitButton.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Staff_ExitButton.Cursor = Cursors.Hand
-        Staff_ExitButton.CustomizableEdges = CustomizableEdges46
+        Staff_ExitButton.CustomizableEdges = CustomizableEdges44
         Staff_ExitButton.DisabledState.BorderColor = Color.DarkGray
         Staff_ExitButton.DisabledState.CustomBorderColor = Color.DarkGray
         Staff_ExitButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -922,7 +933,7 @@ Partial Class PatientDashboard
         Staff_ExitButton.Location = New Point(1862, 0)
         Staff_ExitButton.Margin = New Padding(3, 2, 3, 2)
         Staff_ExitButton.Name = "Staff_ExitButton"
-        Staff_ExitButton.ShadowDecoration.CustomizableEdges = CustomizableEdges47
+        Staff_ExitButton.ShadowDecoration.CustomizableEdges = CustomizableEdges45
         Staff_ExitButton.Size = New Size(57, 45)
         Staff_ExitButton.TabIndex = 229
         Staff_ExitButton.Text = "X"
@@ -942,7 +953,7 @@ Partial Class PatientDashboard
         NameTextBox.BorderRadius = 8
         NameTextBox.BorderThickness = 0
         NameTextBox.Cursor = Cursors.IBeam
-        NameTextBox.CustomizableEdges = CustomizableEdges62
+        NameTextBox.CustomizableEdges = CustomizableEdges60
         NameTextBox.DefaultText = ""
         NameTextBox.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         NameTextBox.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -959,7 +970,7 @@ Partial Class PatientDashboard
         NameTextBox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         NameTextBox.PlaceholderText = "Name"
         NameTextBox.SelectedText = ""
-        NameTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges63
+        NameTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges61
         NameTextBox.Size = New Size(253, 48)
         NameTextBox.TabIndex = 218
         ' 
@@ -976,14 +987,14 @@ Partial Class PatientDashboard
         guna2CustomGradientPanel1.Controls.Add(pd_HomeButton)
         guna2CustomGradientPanel1.Controls.Add(guna2CirclePictureBox1)
         guna2CustomGradientPanel1.Controls.Add(Guna2TextBox2)
-        guna2CustomGradientPanel1.CustomizableEdges = CustomizableEdges60
+        guna2CustomGradientPanel1.CustomizableEdges = CustomizableEdges58
         guna2CustomGradientPanel1.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel1.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel1.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         guna2CustomGradientPanel1.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         guna2CustomGradientPanel1.Location = New Point(-1, -2)
         guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1"
-        guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges61
+        guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges59
         guna2CustomGradientPanel1.Size = New Size(226, 1080)
         guna2CustomGradientPanel1.TabIndex = 222
         ' 
@@ -993,7 +1004,7 @@ Partial Class PatientDashboard
         guna2Button5.BorderRadius = 25
         guna2Button5.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton
         guna2Button5.Cursor = Cursors.Hand
-        guna2Button5.CustomizableEdges = CustomizableEdges48
+        guna2Button5.CustomizableEdges = CustomizableEdges46
         guna2Button5.DisabledState.BorderColor = Color.DarkGray
         guna2Button5.DisabledState.CustomBorderColor = Color.DarkGray
         guna2Button5.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -1008,7 +1019,7 @@ Partial Class PatientDashboard
         guna2Button5.Location = New Point(16, 723)
         guna2Button5.Margin = New Padding(3, 2, 3, 2)
         guna2Button5.Name = "guna2Button5"
-        guna2Button5.ShadowDecoration.CustomizableEdges = CustomizableEdges49
+        guna2Button5.ShadowDecoration.CustomizableEdges = CustomizableEdges47
         guna2Button5.Size = New Size(178, 69)
         guna2Button5.TabIndex = 148
         guna2Button5.Text = "Invoice"
@@ -1020,7 +1031,7 @@ Partial Class PatientDashboard
         MyProfileTabBtn.BorderRadius = 25
         MyProfileTabBtn.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton
         MyProfileTabBtn.Cursor = Cursors.Hand
-        MyProfileTabBtn.CustomizableEdges = CustomizableEdges50
+        MyProfileTabBtn.CustomizableEdges = CustomizableEdges48
         MyProfileTabBtn.DisabledState.BorderColor = Color.DarkGray
         MyProfileTabBtn.DisabledState.CustomBorderColor = Color.DarkGray
         MyProfileTabBtn.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -1035,7 +1046,7 @@ Partial Class PatientDashboard
         MyProfileTabBtn.Location = New Point(16, 599)
         MyProfileTabBtn.Margin = New Padding(3, 2, 3, 2)
         MyProfileTabBtn.Name = "MyProfileTabBtn"
-        MyProfileTabBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges51
+        MyProfileTabBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges49
         MyProfileTabBtn.Size = New Size(178, 69)
         MyProfileTabBtn.TabIndex = 147
         MyProfileTabBtn.Text = "My Profile"
@@ -1058,7 +1069,7 @@ Partial Class PatientDashboard
         guna2Button1.BorderRadius = 25
         guna2Button1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton
         guna2Button1.Cursor = Cursors.Hand
-        guna2Button1.CustomizableEdges = CustomizableEdges52
+        guna2Button1.CustomizableEdges = CustomizableEdges50
         guna2Button1.DisabledState.BorderColor = Color.DarkGray
         guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray
         guna2Button1.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -1073,7 +1084,7 @@ Partial Class PatientDashboard
         guna2Button1.Location = New Point(16, 476)
         guna2Button1.Margin = New Padding(3, 2, 3, 2)
         guna2Button1.Name = "guna2Button1"
-        guna2Button1.ShadowDecoration.CustomizableEdges = CustomizableEdges53
+        guna2Button1.ShadowDecoration.CustomizableEdges = CustomizableEdges51
         guna2Button1.Size = New Size(178, 69)
         guna2Button1.TabIndex = 144
         guna2Button1.Text = "Appointments"
@@ -1108,7 +1119,7 @@ Partial Class PatientDashboard
         pd_BookAppointment.BackColor = Color.Transparent
         pd_BookAppointment.BorderRadius = 25
         pd_BookAppointment.Cursor = Cursors.Hand
-        pd_BookAppointment.CustomizableEdges = CustomizableEdges54
+        pd_BookAppointment.CustomizableEdges = CustomizableEdges52
         pd_BookAppointment.DisabledState.BorderColor = Color.DarkGray
         pd_BookAppointment.DisabledState.CustomBorderColor = Color.DarkGray
         pd_BookAppointment.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -1122,7 +1133,7 @@ Partial Class PatientDashboard
         pd_BookAppointment.Location = New Point(16, 346)
         pd_BookAppointment.Margin = New Padding(3, 2, 3, 2)
         pd_BookAppointment.Name = "pd_BookAppointment"
-        pd_BookAppointment.ShadowDecoration.CustomizableEdges = CustomizableEdges55
+        pd_BookAppointment.ShadowDecoration.CustomizableEdges = CustomizableEdges53
         pd_BookAppointment.Size = New Size(178, 69)
         pd_BookAppointment.TabIndex = 136
         pd_BookAppointment.Text = "Book Check Up "
@@ -1143,7 +1154,7 @@ Partial Class PatientDashboard
         pd_HomeButton.Image = CType(resources.GetObject("pd_HomeButton.Image"), Image)
         pd_HomeButton.Location = New Point(8, 956)
         pd_HomeButton.Name = "pd_HomeButton"
-        pd_HomeButton.ShadowDecoration.CustomizableEdges = CustomizableEdges56
+        pd_HomeButton.ShadowDecoration.CustomizableEdges = CustomizableEdges54
         pd_HomeButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         pd_HomeButton.Size = New Size(54, 44)
         pd_HomeButton.TabIndex = 107
@@ -1157,7 +1168,7 @@ Partial Class PatientDashboard
         guna2CirclePictureBox1.InitialImage = CType(resources.GetObject("guna2CirclePictureBox1.InitialImage"), Image)
         guna2CirclePictureBox1.Location = New Point(28, -3)
         guna2CirclePictureBox1.Name = "guna2CirclePictureBox1"
-        guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges57
+        guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges55
         guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         guna2CirclePictureBox1.Size = New Size(182, 152)
         guna2CirclePictureBox1.SizeMode = PictureBoxSizeMode.Zoom
@@ -1168,7 +1179,7 @@ Partial Class PatientDashboard
         ' 
         Guna2TextBox2.BackColor = Color.Transparent
         Guna2TextBox2.BorderRadius = 40
-        Guna2TextBox2.CustomizableEdges = CustomizableEdges58
+        Guna2TextBox2.CustomizableEdges = CustomizableEdges56
         Guna2TextBox2.DefaultText = ""
         Guna2TextBox2.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         Guna2TextBox2.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -1182,7 +1193,7 @@ Partial Class PatientDashboard
         Guna2TextBox2.PlaceholderText = ""
         Guna2TextBox2.ReadOnly = True
         Guna2TextBox2.SelectedText = ""
-        Guna2TextBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges59
+        Guna2TextBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges57
         Guna2TextBox2.Size = New Size(254, 74)
         Guna2TextBox2.TabIndex = 149
         ' 
@@ -1195,14 +1206,14 @@ Partial Class PatientDashboard
         SearchPanel.Controls.Add(NameTextBox)
         SearchPanel.Controls.Add(SearchTransactionButton)
         SearchPanel.Controls.Add(TransactionIdTextBox)
-        SearchPanel.CustomizableEdges = CustomizableEdges64
+        SearchPanel.CustomizableEdges = CustomizableEdges62
         SearchPanel.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         SearchPanel.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         SearchPanel.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         SearchPanel.FillColor4 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
         SearchPanel.Location = New Point(1225, 68)
         SearchPanel.Name = "SearchPanel"
-        SearchPanel.ShadowDecoration.CustomizableEdges = CustomizableEdges65
+        SearchPanel.ShadowDecoration.CustomizableEdges = CustomizableEdges63
         SearchPanel.Size = New Size(639, 68)
         SearchPanel.TabIndex = 232
         SearchPanel.Visible = False
@@ -1222,7 +1233,7 @@ Partial Class PatientDashboard
         ' Guna2TextBox3
         ' 
         Guna2TextBox3.BackColor = Color.Transparent
-        Guna2TextBox3.CustomizableEdges = CustomizableEdges66
+        Guna2TextBox3.CustomizableEdges = CustomizableEdges64
         Guna2TextBox3.DefaultText = ""
         Guna2TextBox3.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         Guna2TextBox3.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -1237,7 +1248,7 @@ Partial Class PatientDashboard
         Guna2TextBox3.PlaceholderText = ""
         Guna2TextBox3.ReadOnly = True
         Guna2TextBox3.SelectedText = ""
-        Guna2TextBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges67
+        Guna2TextBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges65
         Guna2TextBox3.Size = New Size(650, 159)
         Guna2TextBox3.TabIndex = 150
         ' 
@@ -1270,7 +1281,7 @@ Partial Class PatientDashboard
         Guna2CustomGradientPanel3.Controls.Add(Guna2PictureBox2)
         Guna2CustomGradientPanel3.Controls.Add(Guna2CirclePictureBox2)
         Guna2CustomGradientPanel3.Controls.Add(Guna2PictureBox1)
-        Guna2CustomGradientPanel3.CustomizableEdges = CustomizableEdges73
+        Guna2CustomGradientPanel3.CustomizableEdges = CustomizableEdges71
         Guna2CustomGradientPanel3.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel3.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel3.FillColor3 = Color.FromArgb(CByte(110), CByte(177), CByte(247))
@@ -1278,20 +1289,20 @@ Partial Class PatientDashboard
         Guna2CustomGradientPanel3.Location = New Point(225, 152)
         Guna2CustomGradientPanel3.Margin = New Padding(3, 2, 3, 2)
         Guna2CustomGradientPanel3.Name = "Guna2CustomGradientPanel3"
-        Guna2CustomGradientPanel3.ShadowDecoration.CustomizableEdges = CustomizableEdges74
+        Guna2CustomGradientPanel3.ShadowDecoration.CustomizableEdges = CustomizableEdges72
         Guna2CustomGradientPanel3.Size = New Size(1694, 922)
         Guna2CustomGradientPanel3.TabIndex = 266
         ' 
         ' Guna2PictureBox2
         ' 
         Guna2PictureBox2.BackColor = Color.Transparent
-        Guna2PictureBox2.CustomizableEdges = CustomizableEdges68
+        Guna2PictureBox2.CustomizableEdges = CustomizableEdges66
         Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), Image)
         Guna2PictureBox2.ImageRotate = 0F
         Guna2PictureBox2.Location = New Point(763, 519)
         Guna2PictureBox2.Margin = New Padding(3, 2, 3, 2)
         Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Guna2PictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges69
+        Guna2PictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges67
         Guna2PictureBox2.Size = New Size(929, 402)
         Guna2PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
         Guna2PictureBox2.TabIndex = 150
@@ -1306,7 +1317,7 @@ Partial Class PatientDashboard
         Guna2CirclePictureBox2.InitialImage = CType(resources.GetObject("Guna2CirclePictureBox2.InitialImage"), Image)
         Guna2CirclePictureBox2.Location = New Point(586, 124)
         Guna2CirclePictureBox2.Name = "Guna2CirclePictureBox2"
-        Guna2CirclePictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges70
+        Guna2CirclePictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges68
         Guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Guna2CirclePictureBox2.Size = New Size(608, 422)
         Guna2CirclePictureBox2.SizeMode = PictureBoxSizeMode.Zoom
@@ -1317,17 +1328,51 @@ Partial Class PatientDashboard
         ' Guna2PictureBox1
         ' 
         Guna2PictureBox1.BackColor = Color.Transparent
-        Guna2PictureBox1.CustomizableEdges = CustomizableEdges71
+        Guna2PictureBox1.CustomizableEdges = CustomizableEdges69
         Guna2PictureBox1.Image = CType(resources.GetObject("Guna2PictureBox1.Image"), Image)
         Guna2PictureBox1.ImageRotate = 0F
         Guna2PictureBox1.Location = New Point(-37, 542)
         Guna2PictureBox1.Margin = New Padding(3, 2, 3, 2)
         Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Guna2PictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges72
+        Guna2PictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges70
         Guna2PictureBox1.Size = New Size(804, 402)
         Guna2PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         Guna2PictureBox1.TabIndex = 149
         Guna2PictureBox1.TabStop = False
+        ' 
+        ' guna2HtmlLabel7
+        ' 
+        guna2HtmlLabel7.BackColor = Color.Transparent
+        guna2HtmlLabel7.Font = New Font("Arial", 25F)
+        guna2HtmlLabel7.ForeColor = SystemColors.Control
+        guna2HtmlLabel7.Location = New Point(569, 71)
+        guna2HtmlLabel7.Margin = New Padding(3, 2, 3, 2)
+        guna2HtmlLabel7.Name = "guna2HtmlLabel7"
+        guna2HtmlLabel7.Size = New Size(500, 40)
+        guna2HtmlLabel7.TabIndex = 140
+        guna2HtmlLabel7.Text = "Select Date and Time Appointment"
+        ' 
+        ' ConsFeeLbl
+        ' 
+        ConsFeeLbl.BackColor = SystemColors.Control
+        ConsFeeLbl.Font = New Font("Tahoma", 10.25F, FontStyle.Bold)
+        ConsFeeLbl.ForeColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
+        ConsFeeLbl.Location = New Point(1205, 196)
+        ConsFeeLbl.Name = "ConsFeeLbl"
+        ConsFeeLbl.Size = New Size(12, 19)
+        ConsFeeLbl.TabIndex = 161
+        ConsFeeLbl.Text = "0"
+        ' 
+        ' guna2HtmlLabel10
+        ' 
+        guna2HtmlLabel10.BackColor = Color.Transparent
+        guna2HtmlLabel10.Font = New Font("Segoe UI", 14F, FontStyle.Bold)
+        guna2HtmlLabel10.ForeColor = SystemColors.Control
+        guna2HtmlLabel10.Location = New Point(1011, 199)
+        guna2HtmlLabel10.Name = "guna2HtmlLabel10"
+        guna2HtmlLabel10.Size = New Size(157, 27)
+        guna2HtmlLabel10.TabIndex = 162
+        guna2HtmlLabel10.Text = "Consultation " & vbCrLf & "Fee:"
         ' 
         ' PatientDashboard
         ' 
@@ -1356,14 +1401,13 @@ Partial Class PatientDashboard
         InvoicePanel.PerformLayout()
         CType(InvoiceDataGridView, ComponentModel.ISupportInitialize).EndInit()
         BookAppPanel.ResumeLayout(False)
-        BookingPanel.ResumeLayout(False)
-        BookingPanel.PerformLayout()
         SpecPanel.ResumeLayout(False)
-        SpecPanel.PerformLayout()
-        pd_DoctorPanel.ResumeLayout(False)
-        pd_DoctorPanel.PerformLayout()
-        SelectPatientPanel.ResumeLayout(False)
-        SelectPatientPanel.PerformLayout()
+        TimeePanel.ResumeLayout(False)
+        TimeePanel.PerformLayout()
+        DoccPanel.ResumeLayout(False)
+        DoccPanel.PerformLayout()
+        SpecialPanel.ResumeLayout(False)
+        SpecialPanel.PerformLayout()
         guna2CustomGradientPanel1.ResumeLayout(False)
         guna2CustomGradientPanel1.PerformLayout()
         CType(guna2CirclePictureBox1, ComponentModel.ISupportInitialize).EndInit()
@@ -1389,25 +1433,6 @@ Partial Class PatientDashboard
     Private WithEvents dataGridViewCheckBoxColumn1 As DataGridViewCheckBoxColumn
     Private WithEvents BookAppPanel As Guna.UI2.WinForms.Guna2CustomGradientPanel
     Private WithEvents SpecPanel As Guna.UI2.WinForms.Guna2CustomGradientPanel
-    Private WithEvents guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Private WithEvents pd_SpecBtn As Guna.UI2.WinForms.Guna2Button
-    Private WithEvents pd_SpecBox As Guna.UI2.WinForms.Guna2ComboBox
-    Private WithEvents pd_DoctorPanel As Guna.UI2.WinForms.Guna2CustomGradientPanel
-    Private WithEvents guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Private WithEvents pd_DocBtn As Guna.UI2.WinForms.Guna2Button
-    Private WithEvents pd_DocBox As Guna.UI2.WinForms.Guna2ComboBox
-    Private WithEvents SelectPatientPanel As Guna.UI2.WinForms.Guna2CustomGradientPanel
-    Private WithEvents guna2HtmlLabel11 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Private WithEvents EnterPatientButton As Guna.UI2.WinForms.Guna2Button
-    Private WithEvents PatientComboBox As Guna.UI2.WinForms.Guna2ComboBox
-    Private WithEvents BookingPanel As Guna.UI2.WinForms.Guna2CustomGradientPanel
-    Private WithEvents AppointmentDatePicker As MonthCalendar
-    Private WithEvents guna2HtmlLabel10 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Private WithEvents ConsFeeLbl As Guna.UI2.WinForms.Guna2HtmlLabel
-    Private WithEvents guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
-    Private WithEvents guna2HtmlLabel7 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Private WithEvents ConfirmBookBtn As Guna.UI2.WinForms.Guna2Button
-    Private WithEvents TimeCombobox As Guna.UI2.WinForms.Guna2ComboBox
     Private WithEvents ResetTransactionFilterButton As Guna.UI2.WinForms.Guna2Button
     Private WithEvents SearchTransactionButton As Guna.UI2.WinForms.Guna2Button
     Private WithEvents TransactionIdTextBox As Guna.UI2.WinForms.Guna2TextBox
@@ -1435,4 +1460,27 @@ Partial Class PatientDashboard
     Private WithEvents Guna2CirclePictureBox2 As Guna.UI2.WinForms.Guna2CirclePictureBox
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
+    Private WithEvents guna2HtmlLabel7 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Private WithEvents ConsFeeLbl As Guna.UI2.WinForms.Guna2HtmlLabel
+    Private WithEvents guna2HtmlLabel10 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents SpecialPanel As Guna.UI2.WinForms.Guna2Panel
+    Private WithEvents guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Private WithEvents pd_SpecBox As Guna.UI2.WinForms.Guna2ComboBox
+    Private WithEvents ConfirmBookBtn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents TimeePanel As Guna.UI2.WinForms.Guna2Panel
+    Private WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Private WithEvents AppointmentDatePicker As MonthCalendar
+    Private WithEvents ConsFeeLbl1 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Private WithEvents Guna2TextBox4 As Guna.UI2.WinForms.Guna2TextBox
+    Private WithEvents Guna2HtmlLabel13 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Private WithEvents TimeCombobox As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents DoccPanel As Guna.UI2.WinForms.Guna2Panel
+    Private WithEvents guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Private WithEvents pd_DocBox As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents pd_SpecBtn1 As Guna.UI2.WinForms.Guna2ImageButton
+    Friend WithEvents DateTimeBtn1 As Guna.UI2.WinForms.Guna2ImageButton
+    Friend WithEvents pd_DocBtn1 As Guna.UI2.WinForms.Guna2ImageButton
+    Friend WithEvents TimeBack As Guna.UI2.WinForms.Guna2ImageButton
+    Friend WithEvents DocBack As Guna.UI2.WinForms.Guna2ImageButton
+    Friend WithEvents ConfBack As Guna.UI2.WinForms.Guna2ImageButton
 End Class
