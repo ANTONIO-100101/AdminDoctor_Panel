@@ -5,7 +5,7 @@ Imports AdminDoctor_Panel.Infocare_Project_1.Object_Models
 Imports Microsoft.Data.SqlClient
 
 Public Class Database
-    Private Shared ReadOnly connectionString As String = "Server=JMGENGGENG\SQLEXPRESS;Database=InfoCare;Integrated Security=True;TrustServerCertificate=True;"
+    Private Shared ReadOnly connectionString As String = "Server=localhost\SQLEXPRESS02;Database=InfoCare;Integrated Security=True;TrustServerCertificate=True;"
     Public Shared Function GetConnection() As SqlConnection
         Return New SqlConnection(connectionString)
     End Function

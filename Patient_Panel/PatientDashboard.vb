@@ -8,6 +8,8 @@ Public Class PatientDashboard
 
     Private patient As PatientModel
     Private Property CurrentAccessiblePanel As Panel = Nothing
+    Private suppressAvailabilityCheck As Boolean = False
+
 
     Public Sub New(patient As PatientModel)
         InitializeComponent()
@@ -16,15 +18,25 @@ Public Class PatientDashboard
     End Sub
 
     Private Sub SetPanelAccessibility(panelToEnable As Panel)
-        ' Disable all panels first
+
         SpecialPanel.Enabled = False
         DoccPanel.Enabled = False
         TimeePanel.Enabled = False
         ConfirmBookBtn.Enabled = False
 
+        ' Manage ConfBack button state based on current panel
+        If panelToEnable Is SpecialPanel Then
+            ConfBack.Enabled = False ' Disable when at first panel
+        Else
+            ConfBack.Enabled = True ' Enable when in other panels
+        End If
+
         ' Enable the specified panel
         panelToEnable.Enabled = True
         CurrentAccessiblePanel = panelToEnable
+
+        ' Update panel colors
+        UpdatePanelColors(panelToEnable)
 
         ' Additional logic for when returning to previous panels
         If panelToEnable Is SpecialPanel Then
@@ -49,9 +61,13 @@ Public Class PatientDashboard
         ConfirmBookBtn.Visible = False
 
         LoadSpecializations()
-        AppointmentDatePicker.MinDate = DateTime.Today
+        ' Set initial date range (3 days from today to 5 months from today)
+        AppointmentDatePicker.MinDate = DateTime.Today.AddDays(3)
         AppointmentDatePicker.MaxDate = DateTime.Today.AddMonths(5)
         InvoicePanel.Visible = False
+
+        ' Initialize panel colors
+        UpdatePanelColors(Nothing)
     End Sub
 
     Private Sub HomeDisplay()
@@ -61,8 +77,12 @@ Public Class PatientDashboard
     End Sub
 
     Private Sub pd_BookAppointment_Click(sender As Object, e As EventArgs) Handles pd_BookAppointment.Click
+        suppressAvailabilityCheck = True ' Temporarily suppress availability check
         HomeDisplay()
         Guna2CustomGradientPanel3.Visible = False
+
+        ' Clear any previous selections
+        ClearAllSelections()
 
         ' Show all panels but only enable SpecialPanel initially
         SpecPanel.Visible = True
@@ -72,7 +92,10 @@ Public Class PatientDashboard
         ConfirmBookBtn.Visible = True
 
         SetPanelAccessibility(SpecialPanel)
+
+        suppressAvailabilityCheck = False ' Re-enable availability check afterward
     End Sub
+
 
     Private Sub pd_SpecBtn_Click(sender As Object, e As EventArgs)
         If pd_SpecBox.SelectedItem Is Nothing OrElse pd_SpecBox.SelectedItem.ToString = "Select" Then
@@ -174,9 +197,10 @@ Public Class PatientDashboard
             If Not String.IsNullOrEmpty(availability) Then
                 Dim availableDays = ParseDayAvailability(availability)
                 ConfigureMonthCalendar(AppointmentDatePicker, availableDays)
-            Else
+            ElseIf Not suppressAvailabilityCheck Then
                 MessageBox.Show("No date availability data found for the selected doctor.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
+
 
             Try
                 Dim consultationFee = Database.GetConsultationFee(selectedDoctor)
@@ -207,7 +231,7 @@ Public Class PatientDashboard
 
     Private Sub ConfigureMonthCalendar(calendar As MonthCalendar, availableDays As List(Of DayOfWeek))
         Dim today As DateTime = DateTime.Today
-        Dim minDate As DateTime = today.AddDays(4)
+        Dim minDate As DateTime = today.AddDays(3)
         Dim maxDate As DateTime = today.AddMonths(5)
 
         calendar.MinDate = minDate
@@ -273,11 +297,11 @@ Public Class PatientDashboard
 
     Private Sub ConfirmBookBtn_Click(sender As Object, e As EventArgs) Handles ConfirmBookBtn.Click
         Dim result = MessageBox.Show(
-            "Are you sure you want to confirm this booking?",
-            "Confirm Booking",
-            MessageBoxButtons.YesNo,
-            MessageBoxIcon.Question
-        )
+        "Are you sure you want to confirm this booking?",
+        "Confirm Booking",
+        MessageBoxButtons.YesNo,
+        MessageBoxIcon.Question
+    )
 
         If result = DialogResult.Yes Then
             Try
@@ -287,28 +311,34 @@ Public Class PatientDashboard
                 Dim appointmentDate = AppointmentDatePicker.SelectionStart
                 Dim specialization = If(pd_SpecBox.SelectedItem?.ToString, String.Empty)
 
-                If String.IsNullOrWhiteSpace(selectedPatient) OrElse
-                   String.IsNullOrWhiteSpace(selectedDoctor) OrElse
-                   String.IsNullOrWhiteSpace(selectedTimeSlot) OrElse
-                   String.IsNullOrWhiteSpace(specialization) Then
-                    MessageBox.Show("Please ensure all fields are filled out correctly.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                    Return
-                End If
-
-                If selectedTimeSlot = "Select a Time Slot" Then
-                    MessageBox.Show("Please select a valid time slot.", "Invalid Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                    Return
-                End If
+                ' ... [existing validation code] ...
 
                 If Database.IsPatientAppointmentPendingOrAccepted(selectedPatient) Then
-                    MessageBox.Show("This patient already has a pending or accepted appointment. They cannot book another appointment until the current one is completed.", "Booking Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                    MessageBox.Show("This patient already has a pending or accepted appointment. They cannot book another appointment until the current one is completed.",
+                 "Booking Error",
+                 MessageBoxButtons.OK,
+                 MessageBoxIcon.Warning)
+
+                    ' Disable ConfBack button when there's a conflict
+                    ConfBack.Enabled = False
+                    ResetFormToInitialState()
                     Return
                 End If
 
                 If Database.IsDoctorOccupied(selectedDoctor, appointmentDate) Then
-                    MessageBox.Show("This doctor is already occupied for the selected date. Please choose another doctor or date.", "Booking Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                    MessageBox.Show("This doctor is already occupied for the selected date. Please choose another doctor or date.",
+                "Booking Error",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning)
+
+                    ' Disable ConfBack button when there's a conflict
+                    ConfBack.Enabled = False
+                    pd_SpecBox.Enabled = True
+                    pd_SpecBtn1.Enabled = True
+                    ConfirmBookBtn.Enabled = False
                     Return
                 End If
+
 
                 Dim feeText = ConsFeeLbl1.Text.Trim.Replace("$", "").Replace("€", "").Replace("£", "").Trim
                 feeText = New String(feeText.Where(Function(c) Char.IsDigit(c) OrElse c = "."c).ToArray)
@@ -367,6 +397,18 @@ Public Class PatientDashboard
     End Sub
 
     Private Sub guna2Button1_Click(sender As Object, e As EventArgs) Handles guna2Button1.Click
+
+        If IsAppointmentFilled() Then
+            Dim result = MessageBox.Show("You have unsaved appointment details. Are you sure you want to exit?",
+                                     "Confirmation",
+                                     MessageBoxButtons.YesNo,
+                                     MessageBoxIcon.Question)
+
+            If result = DialogResult.No Then
+                Return
+            End If
+        End If
+
         InvoicePanel.Visible = False
         SearchPanel.Visible = True
         ViewButton.Visible = True
@@ -528,10 +570,25 @@ Public Class PatientDashboard
         End Try
     End Sub
 
+
+
     Private Sub MyProfileTabBtn_Click(sender As Object, e As EventArgs) Handles MyProfileTabBtn.Click
+        If IsAppointmentFilled() Then
+            Dim result = MessageBox.Show("You have unsaved appointment details. Are you sure you want to exit?",
+                                     "Confirmation",
+                                     MessageBoxButtons.YesNo,
+                                     MessageBoxIcon.Question)
+
+            If result = DialogResult.No Then
+                Return
+            End If
+        End If
+
+        ' Open the profile if the user confirms
         Dim form As New PatientRegisterForm(ModalMode.Edit, patient.AccountID, PanelMode.Patient)
         form.ShowDialog()
     End Sub
+
 
     Private Sub DeleteButton_Click(sender As Object, e As EventArgs) Handles DeleteButton.Click
         If AppointmentDataGridViewList2.SelectedRows.Count > 0 Then
@@ -571,6 +628,18 @@ Public Class PatientDashboard
     End Sub
 
     Private Sub guna2Button5_Click(sender As Object, e As EventArgs) Handles guna2Button5.Click
+        If IsAppointmentFilled() Then
+            Dim result = MessageBox.Show("You have unsaved appointment details. Are you sure you want to exit?",
+                                     "Confirmation",
+                                     MessageBoxButtons.YesNo,
+                                     MessageBoxIcon.Question)
+
+            If result = DialogResult.No Then
+                Return
+            End If
+        End If
+
+        ' Proceed with showing the invoice panel if the user confirms
         SearchPanel.Visible = True
         ViewButton.Visible = False
         DeleteButton.Visible = False
@@ -683,38 +752,39 @@ Public Class PatientDashboard
             Else
                 MessageBox.Show("No time slots found for this doctor and specialization.", "No Availability", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             End If
-
+            AppointmentDatePicker.Enabled = True
+            DateTimeBtn1.Enabled = True
             ' Make the button unclickable after proceeding
             'pd_DocBtn.Enabled = False
         End If
     End Sub
 
+
     Private Sub DateTimeBtn1_Click(sender As Object, e As EventArgs) Handles DateTimeBtn1.Click
-        ' Check if a valid time slot is selected
         If TimeCombobox.SelectedItem Is Nothing OrElse TimeCombobox.SelectedItem.ToString() = "Select a Time Slot" Then
             MessageBox.Show("Please select a valid time slot.", "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
         End If
 
-        ' Show confirmation dialog
         Dim selectedTime = TimeCombobox.SelectedItem.ToString()
         Dim result = MessageBox.Show($"You selected the time slot: {selectedTime}. Would you like to proceed?",
-                              "Confirm Time Selection",
-                              MessageBoxButtons.YesNo,
-                              MessageBoxIcon.Question)
+                                 "Confirm Time Selection",
+                                 MessageBoxButtons.YesNo,
+                                 MessageBoxIcon.Question)
 
         If result = DialogResult.Yes Then
-            ' Enable the confirmation button
             ConfirmBookBtn.Enabled = True
-            ' Disable this button to prevent multiple clicks
-            'DateTimeBtn.Enabled = False
-            ' No panel is accessible now, only the button
-            CurrentAccessiblePanel = Nothing
 
-            ' Optional: You might want to disable the TimeCombobox as well
+            DateTimeBtn1.Enabled = False
+
+
             TimeCombobox.Enabled = False
+            AppointmentDatePicker.Enabled = False
+
+            CurrentAccessiblePanel = Nothing
         End If
     End Sub
+
 
     Private Sub DocBack_Click(sender As Object, e As EventArgs) Handles DocBack.Click
         Dim result = MessageBox.Show(
@@ -725,11 +795,8 @@ Public Class PatientDashboard
     )
 
         If result = DialogResult.Yes Then
-            ' Return to SpecialPanel
             SetPanelAccessibility(SpecialPanel)
-
-            ' Optional: Clear doctor selection if needed
-            ' pd_DocBox.SelectedIndex = 0
+            ConfBack.Enabled = False ' Disable when going back to first panel
         End If
     End Sub
 
@@ -742,12 +809,8 @@ Public Class PatientDashboard
     )
 
         If result = DialogResult.Yes Then
-            ' Return to DoccPanel
             SetPanelAccessibility(DoccPanel)
-
-            ' Optional: Clear time selection if needed
-            ' TimeCombobox.SelectedIndex = 0
-            ' TimeCombobox.Enabled = True
+            ConfBack.Enabled = True ' Keep enabled when going back to doctor panel
         End If
     End Sub
 
@@ -766,7 +829,104 @@ Public Class PatientDashboard
             ' Re-enable the time selection controls
             TimeCombobox.Enabled = True
             ConfirmBookBtn.Enabled = False
+            AppointmentDatePicker.Enabled = True
+            DateTimeBtn1.Enabled = True
         End If
     End Sub
 
+    Private Sub pd_SpecBox_SelectedIndexChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Function IsAppointmentFilled() As Boolean
+        Return Not (String.IsNullOrEmpty(pd_SpecBox.SelectedItem?.ToString()) OrElse
+                pd_SpecBox.SelectedItem.ToString = "Select" OrElse
+                String.IsNullOrEmpty(pd_DocBox.SelectedItem?.ToString()) OrElse
+                pd_DocBox.SelectedItem.ToString = "Select" OrElse
+                String.IsNullOrEmpty(TimeCombobox.SelectedItem?.ToString()) OrElse
+                TimeCombobox.SelectedItem.ToString = "Select a Time Slot")
+    End Function
+
+    Private Sub ResetFormToInitialState()
+        pd_SpecBox.SelectedIndex = 0
+        pd_DocBox.Items.Clear()
+        pd_DocBox.Items.Add("Select")
+        pd_DocBox.SelectedIndex = 0
+        TimeCombobox.Items.Clear()
+        TimeCombobox.Items.Add("Select a Time Slot")
+        TimeCombobox.SelectedIndex = 0
+
+        ' Reset the date picker with 3-day minimum
+        Try
+            Dim minDate As DateTime = DateTime.Today.AddDays(3)
+            AppointmentDatePicker.MinDate = minDate
+            AppointmentDatePicker.MaxDate = DateTime.Today.AddMonths(5)
+            AppointmentDatePicker.SelectionStart = minDate
+            AppointmentDatePicker.SelectionEnd = minDate
+        Catch ex As Exception
+            MessageBox.Show("Error resetting date picker: " & ex.Message)
+        End Try
+
+        ' Reset fee display
+        ConsFeeLbl1.Text = "$0.00"
+
+        ' Reset panel states
+        SetPanelAccessibility(SpecialPanel)
+
+        ' Enable all necessary buttons
+        pd_SpecBtn1.Enabled = True
+        pd_DocBtn1.Enabled = True
+        DateTimeBtn1.Enabled = True
+
+        ' Reset the accessible panel
+        CurrentAccessiblePanel = SpecialPanel
+        ConfBack.Enabled = True
+
+    End Sub
+
+    Private Sub ClearAllSelections()
+        pd_SpecBox.SelectedIndex = 0
+        pd_DocBox.Items.Clear()
+        pd_DocBox.Items.Add("Select")
+        pd_DocBox.SelectedIndex = 0
+        TimeCombobox.Items.Clear()
+        TimeCombobox.Items.Add("Select a Time Slot")
+        TimeCombobox.SelectedIndex = 0
+
+        ' Safely reset the date picker with 3-day minimum
+        Try
+            Dim minDate As DateTime = DateTime.Today.AddDays(3)
+            AppointmentDatePicker.MinDate = minDate
+            AppointmentDatePicker.MaxDate = DateTime.Today.AddMonths(5)
+            AppointmentDatePicker.SelectionStart = minDate
+            AppointmentDatePicker.SelectionEnd = minDate
+        Catch ex As Exception
+            MessageBox.Show("Error resetting date picker: " & ex.Message)
+        End Try
+
+        ConsFeeLbl1.Text = "$0.00"
+    End Sub
+
+    Private Sub UpdatePanelColors(activePanel As Panel)
+        ' Reset all panels to default color (13, 41, 80)
+        SpecialPanel.BackColor = Color.FromArgb(13, 41, 80)
+        DoccPanel.BackColor = Color.FromArgb(13, 41, 80)
+        TimeePanel.BackColor = Color.FromArgb(13, 41, 80)
+
+        ' Reset button color (assuming ConfirmBookBtn is a Guna2Button)
+        ConfirmBookBtn.FillColor = Color.FromArgb(13, 41, 80)
+
+        ' Set the active panel to green (66, 136, 62)
+        If activePanel IsNot Nothing Then
+            activePanel.BackColor = Color.FromArgb(66, 136, 62)
+        End If
+
+        ' Special case for ConfirmBookBtn when it's active
+        If CurrentAccessiblePanel Is Nothing AndAlso ConfirmBookBtn.Enabled Then
+            ConfirmBookBtn.FillColor = Color.FromArgb(66, 136, 62)
+        End If
+    End Sub
+
+
 End Class
+
