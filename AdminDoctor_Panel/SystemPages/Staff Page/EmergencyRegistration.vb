@@ -31,8 +31,12 @@ Public Class EmergencyRegistration
 
     Private Sub EmergencyRegistration_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadPatientName()
-        FillUpFields()
+
+        If mode = ModalMode.Edit Then
+            FillUpFields()
+        End If
     End Sub
+
 
     Private Sub LoadPatientName()
         Dim fullName As String = Database.GetPatientName(patient)

@@ -5,7 +5,7 @@ Imports AdminDoctor_Panel.Infocare_Project_1.Object_Models
 Imports Microsoft.Data.SqlClient
 
 Public Class Database
-    Private Shared ReadOnly connectionString As String = "Server=localhost\SQLEXPRESS02;Database=InfoCare;Integrated Security=True;TrustServerCertificate=True;"
+    Private Shared ReadOnly connectionString As String = "Server=JMGENGGENG\SQLEXPRESS;Database=InfoCare;Integrated Security=True;TrustServerCertificate=True;"
     Public Shared Function GetConnection() As SqlConnection
         Return New SqlConnection(connectionString)
     End Function
@@ -136,15 +136,15 @@ Public Class Database
 
                 If mode = ModalMode.Add Then
                     query = "INSERT INTO tb_doctorinfo " &
-                        "(first_name, middlename, last_name, username, password, consultation_fee, start_time, end_time, day_availability, phone_number, email) " &
-                        "VALUES (@FirstName, @MiddleName, @LastName, @Username, @Password, @ConsultationFee, @StartTime, @EndTime, @DayAvailability, @ContactNumber, @Email); " &
+                        "(first_name, middlename, last_name, username, password, consultation_fee, start_time, end_time, day_availability, phone_number, email, serial_number) " &
+                        "VALUES (@FirstName, @MiddleName, @LastName, @Username, @Password, @ConsultationFee, @StartTime, @EndTime, @DayAvailability, @ContactNumber, @Email, @SerialNumber); " &
                         "SELECT SCOPE_IDENTITY();"
                 Else
                     query = "UPDATE tb_doctorinfo " &
                         "SET firstname = @FirstName, lastname = @LastName, " &
                         "middlename = @MiddleName, username = @Username, " &
                         "consultationfee = @ConsultationFee, start_time = @StartTime, " &
-                        "end_time = @EndTime, day_availability = @DayAvailability, contactnumber = @ContactNumber, " &
+                        "end_time = @EndTime, day_availability = @DayAvailability, contactnumber = @ContactNumber, @SerialNumber" &
                         "email = @Email WHERE doctor_id = @AccountID"
                 End If
 
@@ -163,6 +163,7 @@ Public Class Database
                 command.Parameters.AddWithValue("@ContactNumber", doctor.ContactNumber)
                 command.Parameters.AddWithValue("@Email", doctor.Email)
                 command.Parameters.AddWithValue("@AccountID", doctor.AccountID)
+                command.Parameters.AddWithValue("@SerialNumber", doctor.SerialNumber)
 
                 Dim doctorId As Integer
                 If mode = ModalMode.Add Then
@@ -827,31 +828,6 @@ Public Class Database
             End Using
         Catch ex As Exception
             MessageBox.Show($"Error checking appointment status: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            Return False
-        End Try
-    End Function
-
-    Public Shared Function IsDoctorOccupied(doctorName As String, appointmentDate As DateTime) As Boolean
-        Try
-            Using connection As New SqlConnection(connectionString)
-                connection.Open()
-                Dim query As String = "
-        SELECT COUNT(*) 
-        FROM tb_appointmenthistory 
-        WHERE ah_Doctor_Name = @DoctorName 
-          AND ah_date = @AppointmentDate 
-          AND ah_status IN ('Pending', 'Accepted')"
-
-                Using command As New SqlCommand(query, connection)
-                    command.Parameters.AddWithValue("@DoctorName", doctorName)
-                    command.Parameters.AddWithValue("@AppointmentDate", appointmentDate.Date)
-
-                    Dim count As Integer = Convert.ToInt32(command.ExecuteScalar())
-                    Return count > 0
-                End Using
-            End Using
-        Catch ex As Exception
-            MessageBox.Show($"Error checking doctor's availability: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Return False
         End Try
     End Function
@@ -1530,6 +1506,93 @@ Public Class Database
 
         Return AppointmentTable
     End Function
+
+    Public Function IsDoctorTimeSlotBooked(doctorName As String, appointmentDate As DateTime, timeSlot As String) As Boolean
+        Dim query As String = "SELECT COUNT(*) FROM Appointments WHERE DoctorName = @DoctorName AND AppointmentDate = @AppointmentDate AND TimeSlot = @TimeSlot AND Status IN ('Pending', 'Accepted')"
+
+        Using conn As New SqlConnection(connectionString)
+            Using cmd As New SqlCommand(query, conn)
+                cmd.Parameters.AddWithValue("@DoctorName", doctorName)
+                cmd.Parameters.AddWithValue("@AppointmentDate", appointmentDate.Date)
+                cmd.Parameters.AddWithValue("@TimeSlot", timeSlot)
+
+                conn.Open()
+                Dim count As Integer = CInt(cmd.ExecuteScalar())
+                Return count > 0
+            End Using
+        End Using
+    End Function
+    Public Function GetDoctorAvailableTimes(doctorName As String, specialization As String, selectedDate As DateTime) As List(Of String)
+        Dim availableTimes As New List(Of String)()
+        Dim allTimeSlots As List(Of String) = GetDefaultTimeSlots() ' Get all possible time slots
+        Dim bookedTimeSlots As New List(Of String)()
+
+        ' Get already booked time slots for this doctor on this date
+        Dim query As String = "SELECT TimeSlot FROM Appointments WHERE DoctorName = @DoctorName AND AppointmentDate = @AppointmentDate AND Status IN ('Pending', 'Accepted')"
+
+        Using conn As New SqlConnection(connectionString)
+            Using cmd As New SqlCommand(query, conn)
+                cmd.Parameters.AddWithValue("@DoctorName", doctorName)
+                cmd.Parameters.AddWithValue("@AppointmentDate", selectedDate.Date)
+
+                conn.Open()
+                Using reader As SqlDataReader = cmd.ExecuteReader()
+                    While reader.Read()
+                        bookedTimeSlots.Add(reader("TimeSlot").ToString())
+                    End While
+                End Using
+            End Using
+        End Using
+
+        ' Filter out the booked time slots
+        For Each timeSlot In allTimeSlots
+            If Not bookedTimeSlots.Contains(timeSlot) Then
+                availableTimes.Add(timeSlot)
+            End If
+        Next
+
+        Return availableTimes
+    End Function
+
+    Private Function GetDefaultTimeSlots() As List(Of String)
+
+        Return New List(Of String) From {
+            "9:00 AM - 10:00 AM",
+            "10:00 AM - 11:00 AM",
+            "11:00 AM - 12:00 PM",
+            "1:00 PM - 2:00 PM",
+            "2:00 PM - 3:00 PM",
+            "3:00 PM - 4:00 PM",
+            "4:00 PM - 5:00 PM"
+        }
+    End Function
+    Public Shared Function IsDoctorTimeSlotOccupied(doctorName As String, appointmentDate As DateTime, timeSlot As String) As Boolean
+        Try
+            Using connection As New SqlConnection(connectionString)
+                connection.Open()
+                Dim query As String = "
+        SELECT COUNT(*) 
+        FROM tb_appointmenthistory 
+        WHERE ah_Doctor_Name = @DoctorName 
+          AND ah_date = @AppointmentDate 
+          AND ah_time = @TimeSlot
+          AND ah_status IN ('Pending', 'Accepted')"
+
+                Using command As New SqlCommand(query, connection)
+                    command.Parameters.AddWithValue("@DoctorName", doctorName)
+                    command.Parameters.AddWithValue("@AppointmentDate", appointmentDate.Date)
+                    command.Parameters.AddWithValue("@TimeSlot", timeSlot)
+
+                    Dim count As Integer = Convert.ToInt32(command.ExecuteScalar())
+                    Return count > 0
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show($"Error checking doctor's availability: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return False
+        End Try
+    End Function
+
 
 
 End Class

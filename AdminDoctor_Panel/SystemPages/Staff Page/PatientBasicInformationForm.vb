@@ -98,7 +98,10 @@ Partial Public Class PatientBasicInformationForm
         patient.HealthInfo = healthInfo
         Dim editedInfo As PatientModel = SetupInfo()
 
-        Database.PatientRegFunc(patient, patient.UserName, height, weight, bmi, bloodType, preCon, treatment, prevSurg, allergy, medication, mode)
+        Database.PatientRegFunc(
+    editedInfo, patient.UserName, editedInfo.HealthInfo.Height, editedInfo.HealthInfo.Weight, editedInfo.HealthInfo.BMI, editedInfo.HealthInfo.BloodType, editedInfo.HealthInfo.PreCon, editedInfo.HealthInfo.Treatment, editedInfo.HealthInfo.PrevSurg, editedInfo.HealthInfo.Alergy, editedInfo.HealthInfo.Medication, mode
+)
+
 
         Dim emergencyRegistration As New EmergencyRegistration(patient, mode, panelMode)
         emergencyRegistration.ReloadResults = ReloadResults
@@ -117,10 +120,16 @@ Partial Public Class PatientBasicInformationForm
         healthInfo.Height = Double.Parse(HeightTextBox.Text)
         healthInfo.BMI = Double.Parse(BmiTextBox.Text)
         healthInfo.BloodType = BloodTypeComboBox.SelectedItem.ToString()
+        healthInfo.PreCon = preConditionTextBox.Text
+        healthInfo.Treatment = TreatmentTextBox.Text
+        healthInfo.PrevSurg = PreviousSurgeryTextBox.Text
+        healthInfo.Alergy = AlergyTextbox.Text
+        healthInfo.Medication = MedicationTxtbox.Text
 
         editedInfo.HealthInfo = healthInfo
         Return editedInfo
     End Function
+
 
     Private Sub MinimizeButton_Click(ByVal sender As Object, ByVal e As EventArgs)
         Me.WindowState = FormWindowState.Minimized
@@ -149,11 +158,21 @@ Partial Public Class PatientBasicInformationForm
     End Sub
 
     Public Sub FillUpFields()
-        HeightTextBox.Text = patient.HealthInfo.Height.ToString()
-        WeightTextBox.Text = patient.HealthInfo.Weight.ToString()
-        BmiTextBox.Text = patient.HealthInfo.BMI.ToString()
-        BloodTypeComboBox.SelectedItem = If(String.IsNullOrEmpty(patient.HealthInfo.BloodType), "Select BloodType", patient.HealthInfo.BloodType)
+        If patient.HealthInfo IsNot Nothing Then
+            HeightTextBox.Text = patient.HealthInfo.Height.ToString()
+            WeightTextBox.Text = patient.HealthInfo.Weight.ToString()
+            BmiTextBox.Text = patient.HealthInfo.BMI.ToString()
+            BloodTypeComboBox.SelectedItem = If(String.IsNullOrEmpty(patient.HealthInfo.BloodType), "Select BloodType", patient.HealthInfo.BloodType)
+        End If
+
+        ' Now populate additional health fields
+        preConditionTextBox.Text = patient.HealthInfo.PreCon
+        TreatmentTextBox.Text = patient.HealthInfo.Treatment
+        PreviousSurgeryTextBox.Text = patient.HealthInfo.PrevSurg
+        AlergyTextbox.Text = patient.HealthInfo.Alergy
+        MedicationTxtbox.Text = patient.HealthInfo.Medication
     End Sub
+
 
     Private Sub PatientBasicInformationForm_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
         LoadPatientName()

@@ -201,27 +201,39 @@ Public Class DoctorDashboard
 
     Private Sub ReconsiderButton_Click(sender As Object, e As EventArgs) Handles ReconsiderButton.Click
         Try
-            ' Reconsider the selected appointments
+            Dim today As Date = Date.Today
+            Dim anyReconsidered As Boolean = False
+
             For Each row As DataGridViewRow In DataGridViewList.Rows
                 If TypeOf row.Cells("checkboxcolumn") Is DataGridViewCheckBoxCell Then
                     Dim checkBoxCell As DataGridViewCheckBoxCell = DirectCast(row.Cells("checkboxcolumn"), DataGridViewCheckBoxCell)
                     If checkBoxCell.Value IsNot Nothing AndAlso CBool(checkBoxCell.Value) Then
+                        Dim appointmentDate As Date = Convert.ToDateTime(row.Cells("Appointment Date").Value)
+
+                        If appointmentDate.Date < today Then
+                            MessageBox.Show($"Cannot reconsider appointment dated {appointmentDate:d}. The date has already passed.", "Invalid Reconsideration", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                            Continue For
+                        End If
+
                         Dim appointmentId As Integer = Convert.ToInt32(row.Cells("id").Value)
-                        Database.ReconsiderAppointment(appointmentId) ' Update status to 'Pending' for declined appointments
+                        Database.ReconsiderAppointment(appointmentId)
+                        anyReconsidered = True
                     End If
                 End If
             Next
 
-            ' Reload the data after reconsidering appointments
-            Dim doctorName As String = NameLabel.Text.Replace("!", "").Trim()
-            Dim pendingAppointments As DataTable = Database.PendingAppointmentList(doctorName) ' Ensure this retrieves updated data
-            DataGridViewList.DataSource = pendingAppointments
+            If anyReconsidered Then
+                Dim doctorName As String = NameLabel.Text.Replace("!", "").Trim()
+                Dim pendingAppointments As DataTable = Database.PendingAppointmentList(doctorName)
+                DataGridViewList.DataSource = pendingAppointments
 
-            MessageBox.Show("Selected appointments have been reconsidered successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                MessageBox.Show("Selected appointments have been reconsidered successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End If
         Catch ex As Exception
             MessageBox.Show($"An error occurred while reconsidering the appointments: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
 
     Private Sub Staff_ExitButton_Click(sender As Object, e As EventArgs) Handles Staff_ExitButton.Click
         Dim confirm As DialogResult = MessageBox.Show("Are you sure you want to close? Unsaved changes will be lost.", "Please Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
@@ -288,21 +300,35 @@ Public Class DoctorDashboard
 
     Private Sub AcceptButton_Click(sender As Object, e As EventArgs) Handles AcceptButton.Click
         Try
+            Dim today As Date = Date.Today
+            Dim anyAccepted As Boolean = False
+
             For Each row As DataGridViewRow In DataGridViewList.Rows
                 If TypeOf row.Cells("checkboxcolumn") Is DataGridViewCheckBoxCell Then
                     Dim checkBoxCell As DataGridViewCheckBoxCell = CType(row.Cells("checkboxcolumn"), DataGridViewCheckBoxCell)
                     If checkBoxCell.Value IsNot Nothing AndAlso CBool(checkBoxCell.Value) Then
+                        Dim appointmentDate As Date = Convert.ToDateTime(row.Cells("Appointment Date").Value)
+
+                        If appointmentDate.Date < today Then
+                            MessageBox.Show($"Cannot accept appointment dated {appointmentDate:d}. The date has already passed.", "Invalid Date", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                            Continue For
+                        End If
+
                         Dim appointmentId As Integer = Convert.ToInt32(row.Cells("id").Value)
                         Database.AcceptAppointment(appointmentId)
+                        anyAccepted = True
                     End If
                 End If
             Next
 
-            Dim doctorName As String = NameLabel.Text.Replace("!", "").Trim()
-            Dim pendingAppointments As DataTable = Database.PendingAppointmentList(doctorName)
-            DataGridViewList.DataSource = pendingAppointments
+            If anyAccepted Then
+                Dim doctorName As String = NameLabel.Text.Replace("!", "").Trim()
+                Dim pendingAppointments As DataTable = Database.PendingAppointmentList(doctorName)
+                DataGridViewList.DataSource = pendingAppointments
 
-            MessageBox.Show("Selected appointments have been accepted.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                MessageBox.Show("Selected appointments have been accepted.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End If
+
         Catch ex As Exception
             MessageBox.Show($"An error occurred while accepting the appointments: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try

@@ -81,8 +81,11 @@ Partial Public Class AdminAddDoctor
         Me.Hide()
     End Sub
     Private Sub SerialNoTextBox_TextChanged(sender As Object, e As EventArgs) Handles SerialNoTextBox.TextChanged
-        _placeHolderHandler.HandleTextBoxPlaceholder(SerialNoTextBox, SNLabel, "Serial Number")
+        If _placeHolderHandler IsNot Nothing Then
+            _placeHolderHandler.HandleTextBoxPlaceholder(SerialNoTextBox, SNlabel, "License Number")
+        End If
     End Sub
+
 
     Private Sub RegisterButton_Click(sender As Object, e As EventArgs) Handles RegisterButton.Click
 

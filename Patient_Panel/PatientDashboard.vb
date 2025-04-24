@@ -61,7 +61,7 @@ Public Class PatientDashboard
         ConfirmBookBtn.Visible = False
 
         LoadSpecializations()
-        ' Set initial date range (3 days from today to 5 months from today)
+        ' Set date range - minimum 3 days from today, maximum 5 months from today
         AppointmentDatePicker.MinDate = DateTime.Today.AddDays(3)
         AppointmentDatePicker.MaxDate = DateTime.Today.AddMonths(5)
         InvoicePanel.Visible = False
@@ -77,12 +77,16 @@ Public Class PatientDashboard
     End Sub
 
     Private Sub pd_BookAppointment_Click(sender As Object, e As EventArgs) Handles pd_BookAppointment.Click
-        suppressAvailabilityCheck = True ' Temporarily suppress availability check
+        suppressAvailabilityCheck = True
         HomeDisplay()
         Guna2CustomGradientPanel3.Visible = False
 
         ' Clear any previous selections
         ClearAllSelections()
+
+        ' Set date range to start from 3 days after today
+        AppointmentDatePicker.MinDate = DateTime.Today.AddDays(3)
+        AppointmentDatePicker.MaxDate = DateTime.Today.AddMonths(5)
 
         ' Show all panels but only enable SpecialPanel initially
         SpecPanel.Visible = True
@@ -92,8 +96,7 @@ Public Class PatientDashboard
         ConfirmBookBtn.Visible = True
 
         SetPanelAccessibility(SpecialPanel)
-
-        suppressAvailabilityCheck = False ' Re-enable availability check afterward
+        suppressAvailabilityCheck = False
     End Sub
 
 
@@ -231,22 +234,20 @@ Public Class PatientDashboard
 
     Private Sub ConfigureMonthCalendar(calendar As MonthCalendar, availableDays As List(Of DayOfWeek))
         Dim today As DateTime = DateTime.Today
-        Dim minDate As DateTime = today.AddDays(3)
         Dim maxDate As DateTime = today.AddMonths(5)
 
-        calendar.MinDate = minDate
         calendar.MaxDate = maxDate
         calendar.MaxSelectionCount = 1
 
         AddHandler calendar.DateChanged, Sub(s, e)
-                                             If e.Start < minDate OrElse e.Start > maxDate OrElse Not availableDays.Contains(e.Start.DayOfWeek) Then
+                                             If e.Start > maxDate OrElse Not availableDays.Contains(e.Start.DayOfWeek) Then
                                                  MessageBox.Show("The selected date is unavailable. Please select a valid day.", "Invalid Date", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                                                 calendar.SetDate(FindNearestValidDate(e.Start, availableDays, minDate, maxDate))
+                                                 calendar.SetDate(FindNearestValidDate(e.Start, availableDays, maxDate))
                                              End If
                                          End Sub
     End Sub
 
-    Private Function FindNearestValidDate(selectedDate As DateTime, availableDays As List(Of DayOfWeek), minDate As DateTime, maxDate As DateTime) As DateTime
+    Private Function FindNearestValidDate(selectedDate As DateTime, availableDays As List(Of DayOfWeek), maxDate As DateTime) As DateTime
         Dim currentDate As DateTime = selectedDate.Date
 
         While currentDate <= maxDate
@@ -257,7 +258,6 @@ Public Class PatientDashboard
             currentDate = currentDate.AddDays(1)
         End While
 
-        Return minDate
     End Function
 
     Private Sub LoadSpecializations()
@@ -311,27 +311,23 @@ Public Class PatientDashboard
                 Dim appointmentDate = AppointmentDatePicker.SelectionStart
                 Dim specialization = If(pd_SpecBox.SelectedItem?.ToString, String.Empty)
 
-                ' ... [existing validation code] ...
-
+                ' Check if patient already has pending/accepted appointment
                 If Database.IsPatientAppointmentPendingOrAccepted(selectedPatient) Then
                     MessageBox.Show("This patient already has a pending or accepted appointment. They cannot book another appointment until the current one is completed.",
-                 "Booking Error",
-                 MessageBoxButtons.OK,
-                 MessageBoxIcon.Warning)
-
-                    ' Disable ConfBack button when there's a conflict
+                    "Booking Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning)
                     ConfBack.Enabled = False
                     ResetFormToInitialState()
                     Return
                 End If
 
-                If Database.IsDoctorOccupied(selectedDoctor, appointmentDate) Then
-                    MessageBox.Show("This doctor is already occupied for the selected date. Please choose another doctor or date.",
-                "Booking Error",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Warning)
-
-                    ' Disable ConfBack button when there's a conflict
+                ' Check if doctor is already booked for this exact time slot
+                If Database.IsDoctorTimeSlotOccupied(selectedDoctor, appointmentDate, selectedTimeSlot) Then
+                    MessageBox.Show("This doctor is already booked for the selected date and time slot. Please choose another time or date.",
+                    "Booking Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning)
                     ConfBack.Enabled = False
                     pd_SpecBox.Enabled = True
                     pd_SpecBtn1.Enabled = True
@@ -339,7 +335,7 @@ Public Class PatientDashboard
                     Return
                 End If
 
-
+                ' Rest of your booking logic...
                 Dim feeText = ConsFeeLbl1.Text.Trim.Replace("$", "").Replace("€", "").Replace("£", "").Trim
                 feeText = New String(feeText.Where(Function(c) Char.IsDigit(c) OrElse c = "."c).ToArray)
                 Dim consultationFee As Decimal = 0
@@ -895,11 +891,8 @@ Public Class PatientDashboard
 
         ' Safely reset the date picker with 3-day minimum
         Try
-            Dim minDate As DateTime = DateTime.Today.AddDays(3)
-            AppointmentDatePicker.MinDate = minDate
+            AppointmentDatePicker.MinDate = DateTime.Today.AddDays(3)
             AppointmentDatePicker.MaxDate = DateTime.Today.AddMonths(5)
-            AppointmentDatePicker.SelectionStart = minDate
-            AppointmentDatePicker.SelectionEnd = minDate
         Catch ex As Exception
             MessageBox.Show("Error resetting date picker: " & ex.Message)
         End Try
@@ -926,7 +919,4 @@ Public Class PatientDashboard
             ConfirmBookBtn.FillColor = Color.FromArgb(66, 136, 62)
         End If
     End Sub
-
-
 End Class
-

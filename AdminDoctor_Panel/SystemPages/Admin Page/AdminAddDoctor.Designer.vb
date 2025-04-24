@@ -23,42 +23,42 @@ Partial Class AdminAddDoctor
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
-        Dim CustomizableEdges69 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges70 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges36 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges37 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges38 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges39 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges40 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges41 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges42 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges43 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges44 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges45 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges46 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges47 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges48 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges49 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges50 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges51 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges52 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges53 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges54 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges55 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges34 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges35 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AdminAddDoctor))
-        Dim CustomizableEdges56 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges57 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges58 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges59 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges60 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges61 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges62 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges63 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges64 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges65 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges66 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges67 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges68 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges23 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges25 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges29 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges30 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges31 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges32 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges33 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         SNlabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
         SerialNoTextBox = New Guna.UI2.WinForms.Guna2TextBox()
@@ -149,7 +149,7 @@ Partial Class AdminAddDoctor
         Guna2CustomGradientPanel1.Controls.Add(BackButton)
         Guna2CustomGradientPanel1.Controls.Add(guna2HtmlLabel4)
         Guna2CustomGradientPanel1.Controls.Add(guna2HtmlLabel8)
-        Guna2CustomGradientPanel1.CustomizableEdges = CustomizableEdges69
+        Guna2CustomGradientPanel1.CustomizableEdges = CustomizableEdges34
         Guna2CustomGradientPanel1.FillColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel1.FillColor2 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         Guna2CustomGradientPanel1.FillColor3 = Color.FromArgb(CByte(13), CByte(41), CByte(80))
@@ -157,7 +157,7 @@ Partial Class AdminAddDoctor
         Guna2CustomGradientPanel1.Location = New Point(-4, -1)
         Guna2CustomGradientPanel1.Margin = New Padding(3, 2, 3, 2)
         Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
-        Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges70
+        Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges35
         Guna2CustomGradientPanel1.Size = New Size(1927, 1080)
         Guna2CustomGradientPanel1.TabIndex = 0
         ' 
@@ -169,9 +169,9 @@ Partial Class AdminAddDoctor
         SNlabel.Location = New Point(1337, 197)
         SNlabel.Margin = New Padding(3, 2, 3, 2)
         SNlabel.Name = "SNlabel"
-        SNlabel.Size = New Size(104, 19)
+        SNlabel.Size = New Size(158, 19)
         SNlabel.TabIndex = 238
-        SNlabel.Text = "Doctor's serial #"
+        SNlabel.Text = "Doctor's License Number"
         SNlabel.Visible = False
         ' 
         ' SerialNoTextBox
@@ -179,7 +179,7 @@ Partial Class AdminAddDoctor
         SerialNoTextBox.BackColor = Color.Transparent
         SerialNoTextBox.BorderColor = Color.Transparent
         SerialNoTextBox.BorderRadius = 8
-        SerialNoTextBox.CustomizableEdges = CustomizableEdges36
+        SerialNoTextBox.CustomizableEdges = CustomizableEdges1
         SerialNoTextBox.DefaultText = ""
         SerialNoTextBox.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         SerialNoTextBox.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -193,9 +193,9 @@ Partial Class AdminAddDoctor
         SerialNoTextBox.Margin = New Padding(3, 4, 3, 4)
         SerialNoTextBox.Name = "SerialNoTextBox"
         SerialNoTextBox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
-        SerialNoTextBox.PlaceholderText = "Serial #"
+        SerialNoTextBox.PlaceholderText = "License Number"
         SerialNoTextBox.SelectedText = ""
-        SerialNoTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges37
+        SerialNoTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges2
         SerialNoTextBox.Size = New Size(250, 60)
         SerialNoTextBox.TabIndex = 237
         ' 
@@ -203,7 +203,7 @@ Partial Class AdminAddDoctor
         ' 
         RegisterButton.BackColor = Color.Transparent
         RegisterButton.BorderRadius = 15
-        RegisterButton.CustomizableEdges = CustomizableEdges38
+        RegisterButton.CustomizableEdges = CustomizableEdges3
         RegisterButton.DisabledState.BorderColor = Color.DarkGray
         RegisterButton.DisabledState.CustomBorderColor = Color.DarkGray
         RegisterButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -214,7 +214,7 @@ Partial Class AdminAddDoctor
         RegisterButton.Location = New Point(881, 606)
         RegisterButton.Margin = New Padding(3, 2, 3, 2)
         RegisterButton.Name = "RegisterButton"
-        RegisterButton.ShadowDecoration.CustomizableEdges = CustomizableEdges39
+        RegisterButton.ShadowDecoration.CustomizableEdges = CustomizableEdges4
         RegisterButton.Size = New Size(115, 42)
         RegisterButton.TabIndex = 3
         RegisterButton.Text = "Register"
@@ -262,7 +262,7 @@ Partial Class AdminAddDoctor
         FirstNameTextBox.BackColor = Color.Transparent
         FirstNameTextBox.BorderColor = Color.Transparent
         FirstNameTextBox.BorderRadius = 8
-        FirstNameTextBox.CustomizableEdges = CustomizableEdges40
+        FirstNameTextBox.CustomizableEdges = CustomizableEdges5
         FirstNameTextBox.DefaultText = ""
         FirstNameTextBox.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         FirstNameTextBox.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -278,7 +278,7 @@ Partial Class AdminAddDoctor
         FirstNameTextBox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         FirstNameTextBox.PlaceholderText = "First name"
         FirstNameTextBox.SelectedText = ""
-        FirstNameTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges41
+        FirstNameTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges6
         FirstNameTextBox.Size = New Size(250, 60)
         FirstNameTextBox.TabIndex = 197
         ' 
@@ -286,7 +286,7 @@ Partial Class AdminAddDoctor
         ' 
         removeDoctor.BackColor = Color.Transparent
         removeDoctor.BorderRadius = 15
-        removeDoctor.CustomizableEdges = CustomizableEdges42
+        removeDoctor.CustomizableEdges = CustomizableEdges7
         removeDoctor.DisabledState.BorderColor = Color.DarkGray
         removeDoctor.DisabledState.CustomBorderColor = Color.DarkGray
         removeDoctor.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -297,7 +297,7 @@ Partial Class AdminAddDoctor
         removeDoctor.Location = New Point(1337, 595)
         removeDoctor.Margin = New Padding(3, 2, 3, 2)
         removeDoctor.Name = "removeDoctor"
-        removeDoctor.ShadowDecoration.CustomizableEdges = CustomizableEdges43
+        removeDoctor.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         removeDoctor.Size = New Size(164, 42)
         removeDoctor.TabIndex = 234
         removeDoctor.Text = "Remove Doctor"
@@ -308,7 +308,7 @@ Partial Class AdminAddDoctor
         UserNameTextBox.BackColor = Color.Transparent
         UserNameTextBox.BorderColor = Color.Transparent
         UserNameTextBox.BorderRadius = 8
-        UserNameTextBox.CustomizableEdges = CustomizableEdges44
+        UserNameTextBox.CustomizableEdges = CustomizableEdges9
         UserNameTextBox.DefaultText = ""
         UserNameTextBox.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         UserNameTextBox.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -324,7 +324,7 @@ Partial Class AdminAddDoctor
         UserNameTextBox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         UserNameTextBox.PlaceholderText = "Username"
         UserNameTextBox.SelectedText = ""
-        UserNameTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges45
+        UserNameTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges10
         UserNameTextBox.Size = New Size(250, 60)
         UserNameTextBox.TabIndex = 198
         ' 
@@ -346,7 +346,7 @@ Partial Class AdminAddDoctor
         emailTextBox.BackColor = Color.Transparent
         emailTextBox.BorderColor = Color.Transparent
         emailTextBox.BorderRadius = 8
-        emailTextBox.CustomizableEdges = CustomizableEdges46
+        emailTextBox.CustomizableEdges = CustomizableEdges11
         emailTextBox.DefaultText = ""
         emailTextBox.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         emailTextBox.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -362,7 +362,7 @@ Partial Class AdminAddDoctor
         emailTextBox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         emailTextBox.PlaceholderText = "Your Email"
         emailTextBox.SelectedText = ""
-        emailTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges47
+        emailTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges12
         emailTextBox.Size = New Size(250, 60)
         emailTextBox.TabIndex = 232
         ' 
@@ -396,7 +396,7 @@ Partial Class AdminAddDoctor
         PasswordTextBox.BackColor = Color.Transparent
         PasswordTextBox.BorderColor = Color.Transparent
         PasswordTextBox.BorderRadius = 8
-        PasswordTextBox.CustomizableEdges = CustomizableEdges48
+        PasswordTextBox.CustomizableEdges = CustomizableEdges13
         PasswordTextBox.DefaultText = ""
         PasswordTextBox.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         PasswordTextBox.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -415,7 +415,7 @@ Partial Class AdminAddDoctor
         PasswordTextBox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         PasswordTextBox.PlaceholderText = "Password"
         PasswordTextBox.SelectedText = ""
-        PasswordTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges49
+        PasswordTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges14
         PasswordTextBox.Size = New Size(250, 60)
         PasswordTextBox.TabIndex = 202
         ' 
@@ -424,7 +424,7 @@ Partial Class AdminAddDoctor
         ContactNumberTextbox.BackColor = Color.Transparent
         ContactNumberTextbox.BorderColor = Color.Transparent
         ContactNumberTextbox.BorderRadius = 8
-        ContactNumberTextbox.CustomizableEdges = CustomizableEdges50
+        ContactNumberTextbox.CustomizableEdges = CustomizableEdges15
         ContactNumberTextbox.DefaultText = ""
         ContactNumberTextbox.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         ContactNumberTextbox.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -440,7 +440,7 @@ Partial Class AdminAddDoctor
         ContactNumberTextbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         ContactNumberTextbox.PlaceholderText = "Contact Number"
         ContactNumberTextbox.SelectedText = ""
-        ContactNumberTextbox.ShadowDecoration.CustomizableEdges = CustomizableEdges51
+        ContactNumberTextbox.ShadowDecoration.CustomizableEdges = CustomizableEdges16
         ContactNumberTextbox.Size = New Size(194, 46)
         ContactNumberTextbox.TabIndex = 230
         ' 
@@ -449,7 +449,7 @@ Partial Class AdminAddDoctor
         ConfirmPasswordTextBox.BackColor = Color.Transparent
         ConfirmPasswordTextBox.BorderColor = Color.Transparent
         ConfirmPasswordTextBox.BorderRadius = 8
-        ConfirmPasswordTextBox.CustomizableEdges = CustomizableEdges52
+        ConfirmPasswordTextBox.CustomizableEdges = CustomizableEdges17
         ConfirmPasswordTextBox.DefaultText = ""
         ConfirmPasswordTextBox.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         ConfirmPasswordTextBox.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -466,7 +466,7 @@ Partial Class AdminAddDoctor
         ConfirmPasswordTextBox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         ConfirmPasswordTextBox.PlaceholderText = "Confirm Password"
         ConfirmPasswordTextBox.SelectedText = ""
-        ConfirmPasswordTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges53
+        ConfirmPasswordTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges18
         ConfirmPasswordTextBox.Size = New Size(250, 60)
         ConfirmPasswordTextBox.TabIndex = 203
         ' 
@@ -483,7 +483,7 @@ Partial Class AdminAddDoctor
         ' 
         TimeComboBox.BackColor = Color.Transparent
         TimeComboBox.BorderRadius = 8
-        TimeComboBox.CustomizableEdges = CustomizableEdges54
+        TimeComboBox.CustomizableEdges = CustomizableEdges19
         TimeComboBox.DrawMode = DrawMode.OwnerDrawFixed
         TimeComboBox.DropDownStyle = ComboBoxStyle.DropDownList
         TimeComboBox.FocusedColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
@@ -493,7 +493,7 @@ Partial Class AdminAddDoctor
         TimeComboBox.ItemHeight = 30
         TimeComboBox.Location = New Point(869, 447)
         TimeComboBox.Name = "TimeComboBox"
-        TimeComboBox.ShadowDecoration.CustomizableEdges = CustomizableEdges55
+        TimeComboBox.ShadowDecoration.CustomizableEdges = CustomizableEdges20
         TimeComboBox.Size = New Size(250, 36)
         TimeComboBox.TabIndex = 204
         ' 
@@ -510,7 +510,7 @@ Partial Class AdminAddDoctor
         AddSpecialization.Location = New Point(547, 515)
         AddSpecialization.Name = "AddSpecialization"
         AddSpecialization.PressedState.ImageSize = New Size(64, 64)
-        AddSpecialization.ShadowDecoration.CustomizableEdges = CustomizableEdges56
+        AddSpecialization.ShadowDecoration.CustomizableEdges = CustomizableEdges21
         AddSpecialization.Size = New Size(41, 45)
         AddSpecialization.TabIndex = 228
         ' 
@@ -540,7 +540,7 @@ Partial Class AdminAddDoctor
         MinimizeButton.Margin = New Padding(3, 2, 3, 2)
         MinimizeButton.Name = "MinimizeButton"
         MinimizeButton.PressedState.ImageSize = New Size(20, 30)
-        MinimizeButton.ShadowDecoration.CustomizableEdges = CustomizableEdges57
+        MinimizeButton.ShadowDecoration.CustomizableEdges = CustomizableEdges22
         MinimizeButton.Size = New Size(43, 26)
         MinimizeButton.TabIndex = 227
         ' 
@@ -560,7 +560,7 @@ Partial Class AdminAddDoctor
         ' 
         ExitButton.BackColor = Color.Transparent
         ExitButton.Cursor = Cursors.Hand
-        ExitButton.CustomizableEdges = CustomizableEdges58
+        ExitButton.CustomizableEdges = CustomizableEdges23
         ExitButton.DisabledState.BorderColor = Color.DarkGray
         ExitButton.DisabledState.CustomBorderColor = Color.DarkGray
         ExitButton.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -571,7 +571,7 @@ Partial Class AdminAddDoctor
         ExitButton.Location = New Point(1884, 0)
         ExitButton.Margin = New Padding(3, 2, 3, 2)
         ExitButton.Name = "ExitButton"
-        ExitButton.ShadowDecoration.CustomizableEdges = CustomizableEdges59
+        ExitButton.ShadowDecoration.CustomizableEdges = CustomizableEdges24
         ExitButton.Size = New Size(40, 40)
         ExitButton.TabIndex = 226
         ExitButton.Text = "X"
@@ -617,7 +617,7 @@ Partial Class AdminAddDoctor
         ConsultationFeeTextBox.BackColor = Color.Transparent
         ConsultationFeeTextBox.BorderColor = Color.Transparent
         ConsultationFeeTextBox.BorderRadius = 8
-        ConsultationFeeTextBox.CustomizableEdges = CustomizableEdges60
+        ConsultationFeeTextBox.CustomizableEdges = CustomizableEdges25
         ConsultationFeeTextBox.DefaultText = ""
         ConsultationFeeTextBox.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         ConsultationFeeTextBox.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -633,7 +633,7 @@ Partial Class AdminAddDoctor
         ConsultationFeeTextBox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         ConsultationFeeTextBox.PlaceholderText = "Fee"
         ConsultationFeeTextBox.SelectedText = ""
-        ConsultationFeeTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges61
+        ConsultationFeeTextBox.ShadowDecoration.CustomizableEdges = CustomizableEdges26
         ConsultationFeeTextBox.Size = New Size(96, 38)
         ConsultationFeeTextBox.TabIndex = 224
         ' 
@@ -712,7 +712,7 @@ Partial Class AdminAddDoctor
         ' 
         DayAvailabilityCombobox.BackColor = Color.Transparent
         DayAvailabilityCombobox.BorderRadius = 8
-        DayAvailabilityCombobox.CustomizableEdges = CustomizableEdges62
+        DayAvailabilityCombobox.CustomizableEdges = CustomizableEdges27
         DayAvailabilityCombobox.DrawMode = DrawMode.OwnerDrawFixed
         DayAvailabilityCombobox.DropDownStyle = ComboBoxStyle.DropDownList
         DayAvailabilityCombobox.FocusedColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
@@ -723,7 +723,7 @@ Partial Class AdminAddDoctor
         DayAvailabilityCombobox.Items.AddRange(New Object() {""})
         DayAvailabilityCombobox.Location = New Point(1156, 447)
         DayAvailabilityCombobox.Name = "DayAvailabilityCombobox"
-        DayAvailabilityCombobox.ShadowDecoration.CustomizableEdges = CustomizableEdges63
+        DayAvailabilityCombobox.ShadowDecoration.CustomizableEdges = CustomizableEdges28
         DayAvailabilityCombobox.Size = New Size(250, 36)
         DayAvailabilityCombobox.TabIndex = 220
         ' 
@@ -732,7 +732,7 @@ Partial Class AdminAddDoctor
         MiddleNameTextbox.BackColor = Color.Transparent
         MiddleNameTextbox.BorderColor = Color.Transparent
         MiddleNameTextbox.BorderRadius = 8
-        MiddleNameTextbox.CustomizableEdges = CustomizableEdges64
+        MiddleNameTextbox.CustomizableEdges = CustomizableEdges29
         MiddleNameTextbox.DefaultText = ""
         MiddleNameTextbox.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         MiddleNameTextbox.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -748,7 +748,7 @@ Partial Class AdminAddDoctor
         MiddleNameTextbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         MiddleNameTextbox.PlaceholderText = "Middle name"
         MiddleNameTextbox.SelectedText = ""
-        MiddleNameTextbox.ShadowDecoration.CustomizableEdges = CustomizableEdges65
+        MiddleNameTextbox.ShadowDecoration.CustomizableEdges = CustomizableEdges30
         MiddleNameTextbox.Size = New Size(250, 60)
         MiddleNameTextbox.TabIndex = 213
         ' 
@@ -769,7 +769,7 @@ Partial Class AdminAddDoctor
         LastNameTextbox.BackColor = Color.Transparent
         LastNameTextbox.BorderColor = Color.Transparent
         LastNameTextbox.BorderRadius = 8
-        LastNameTextbox.CustomizableEdges = CustomizableEdges66
+        LastNameTextbox.CustomizableEdges = CustomizableEdges31
         LastNameTextbox.DefaultText = ""
         LastNameTextbox.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         LastNameTextbox.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -785,7 +785,7 @@ Partial Class AdminAddDoctor
         LastNameTextbox.PlaceholderForeColor = Color.FromArgb(CByte(47), CByte(89), CByte(114))
         LastNameTextbox.PlaceholderText = "Last name"
         LastNameTextbox.SelectedText = ""
-        LastNameTextbox.ShadowDecoration.CustomizableEdges = CustomizableEdges67
+        LastNameTextbox.ShadowDecoration.CustomizableEdges = CustomizableEdges32
         LastNameTextbox.Size = New Size(250, 60)
         LastNameTextbox.TabIndex = 214
         ' 
@@ -802,7 +802,7 @@ Partial Class AdminAddDoctor
         BackButton.Location = New Point(520, 48)
         BackButton.Name = "BackButton"
         BackButton.PressedState.ImageSize = New Size(64, 64)
-        BackButton.ShadowDecoration.CustomizableEdges = CustomizableEdges68
+        BackButton.ShadowDecoration.CustomizableEdges = CustomizableEdges33
         BackButton.Size = New Size(61, 45)
         BackButton.TabIndex = 219
         ' 
