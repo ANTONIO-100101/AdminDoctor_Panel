@@ -716,6 +716,7 @@ Partial Class AdminDashboard2
         PatientDataGridViewList2.AllowUserToAddRows = False
         PatientDataGridViewList2.AllowUserToResizeColumns = False
         PatientDataGridViewList2.AllowUserToResizeRows = False
+        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle1.BackColor = Color.FromArgb(CByte(160), CByte(160), CByte(160))
         DataGridViewCellStyle1.Font = New Font("Segoe UI", 9F)
         DataGridViewCellStyle1.ForeColor = SystemColors.ControlText
@@ -723,7 +724,7 @@ Partial Class AdminDashboard2
         DataGridViewCellStyle1.SelectionForeColor = Color.Black
         PatientDataGridViewList2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         PatientDataGridViewList2.BackgroundColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
-        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle2.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         DataGridViewCellStyle2.Font = New Font("Tahoma", 9.75F)
         DataGridViewCellStyle2.ForeColor = Color.White
@@ -745,7 +746,7 @@ Partial Class AdminDashboard2
         PatientDataGridViewList2.Location = New Point(4, 3)
         PatientDataGridViewList2.Name = "PatientDataGridViewList2"
         PatientDataGridViewList2.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle4.BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
         DataGridViewCellStyle4.Font = New Font("Segoe UI", 9F)
         DataGridViewCellStyle4.ForeColor = SystemColors.WindowText
@@ -830,6 +831,7 @@ Partial Class AdminDashboard2
         AppointmentDataGridViewList2.AllowUserToAddRows = False
         AppointmentDataGridViewList2.AllowUserToResizeColumns = False
         AppointmentDataGridViewList2.AllowUserToResizeRows = False
+        DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle5.BackColor = Color.FromArgb(CByte(160), CByte(160), CByte(160))
         DataGridViewCellStyle5.Font = New Font("Segoe UI", 9F)
         DataGridViewCellStyle5.ForeColor = SystemColors.ControlText
@@ -837,7 +839,7 @@ Partial Class AdminDashboard2
         DataGridViewCellStyle5.SelectionForeColor = Color.Black
         AppointmentDataGridViewList2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
         AppointmentDataGridViewList2.BackgroundColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
-        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle6.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         DataGridViewCellStyle6.Font = New Font("Tahoma", 9.75F)
         DataGridViewCellStyle6.ForeColor = Color.White
@@ -859,7 +861,7 @@ Partial Class AdminDashboard2
         AppointmentDataGridViewList2.Location = New Point(8, 6)
         AppointmentDataGridViewList2.Name = "AppointmentDataGridViewList2"
         AppointmentDataGridViewList2.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle8.BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
         DataGridViewCellStyle8.Font = New Font("Segoe UI", 9F)
         DataGridViewCellStyle8.ForeColor = SystemColors.WindowText
@@ -958,6 +960,7 @@ Partial Class AdminDashboard2
         DoctorDataGridViewList2.AllowUserToAddRows = False
         DoctorDataGridViewList2.AllowUserToResizeColumns = False
         DoctorDataGridViewList2.AllowUserToResizeRows = False
+        DataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle9.BackColor = Color.FromArgb(CByte(160), CByte(160), CByte(160))
         DataGridViewCellStyle9.Font = New Font("Segoe UI", 9F)
         DataGridViewCellStyle9.ForeColor = SystemColors.ControlText
@@ -965,7 +968,7 @@ Partial Class AdminDashboard2
         DataGridViewCellStyle9.SelectionForeColor = Color.Black
         DoctorDataGridViewList2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle9
         DoctorDataGridViewList2.BackgroundColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
-        DataGridViewCellStyle10.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.Alignment = DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle10.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         DataGridViewCellStyle10.Font = New Font("Tahoma", 9.75F)
         DataGridViewCellStyle10.ForeColor = Color.White
@@ -987,7 +990,7 @@ Partial Class AdminDashboard2
         DoctorDataGridViewList2.Location = New Point(4, 3)
         DoctorDataGridViewList2.Name = "DoctorDataGridViewList2"
         DoctorDataGridViewList2.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle12.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.Alignment = DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle12.BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
         DataGridViewCellStyle12.Font = New Font("Segoe UI", 9F)
         DataGridViewCellStyle12.ForeColor = SystemColors.WindowText

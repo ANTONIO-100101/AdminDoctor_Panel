@@ -272,11 +272,13 @@ Partial Class PatientDashboard
         AppointmentDataGridViewList2.AllowUserToAddRows = False
         AppointmentDataGridViewList2.AllowUserToResizeColumns = False
         AppointmentDataGridViewList2.AllowUserToResizeRows = False
+        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = Color.FromArgb(CByte(160), CByte(160), CByte(160))
         DataGridViewCellStyle1.Font = New Font("Segoe UI", 9F)
         DataGridViewCellStyle1.ForeColor = SystemColors.ControlText
         DataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
         DataGridViewCellStyle1.SelectionForeColor = Color.Black
+        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.True
         AppointmentDataGridViewList2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         AppointmentDataGridViewList2.BackgroundColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
         DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
@@ -290,13 +292,13 @@ Partial Class PatientDashboard
         AppointmentDataGridViewList2.ColumnHeadersHeight = 39
         AppointmentDataGridViewList2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         AppointmentDataGridViewList2.Columns.AddRange(New DataGridViewColumn() {checkboxcolumn})
-        DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle4.BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
         DataGridViewCellStyle4.Font = New Font("Microsoft Sans Serif", 9F)
         DataGridViewCellStyle4.ForeColor = Color.Transparent
         DataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
         DataGridViewCellStyle4.SelectionForeColor = Color.Black
-        DataGridViewCellStyle4.WrapMode = DataGridViewTriState.False
+        DataGridViewCellStyle4.WrapMode = DataGridViewTriState.True
         AppointmentDataGridViewList2.DefaultCellStyle = DataGridViewCellStyle4
         AppointmentDataGridViewList2.GridColor = Color.FromArgb(CByte(179), CByte(230), CByte(251))
         AppointmentDataGridViewList2.Location = New Point(11, 86)
@@ -409,6 +411,7 @@ Partial Class PatientDashboard
         InvoiceDataGridView.AllowUserToAddRows = False
         InvoiceDataGridView.AllowUserToResizeColumns = False
         InvoiceDataGridView.AllowUserToResizeRows = False
+        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle6.BackColor = Color.FromArgb(CByte(160), CByte(160), CByte(160))
         DataGridViewCellStyle6.Font = New Font("Segoe UI", 9F)
         DataGridViewCellStyle6.ForeColor = SystemColors.ControlText
@@ -416,7 +419,7 @@ Partial Class PatientDashboard
         DataGridViewCellStyle6.SelectionForeColor = Color.Black
         InvoiceDataGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle6
         InvoiceDataGridView.BackgroundColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
-        DataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle7.BackColor = Color.FromArgb(CByte(13), CByte(41), CByte(80))
         DataGridViewCellStyle7.Font = New Font("Tahoma", 9.75F)
         DataGridViewCellStyle7.ForeColor = Color.White
@@ -439,7 +442,7 @@ Partial Class PatientDashboard
         InvoiceDataGridView.Location = New Point(11, 47)
         InvoiceDataGridView.Name = "InvoiceDataGridView"
         InvoiceDataGridView.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle10.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.Alignment = DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle10.BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
         DataGridViewCellStyle10.Font = New Font("Segoe UI", 9F)
         DataGridViewCellStyle10.ForeColor = SystemColors.WindowText

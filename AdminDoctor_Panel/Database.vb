@@ -1227,7 +1227,7 @@ Public Class Database
         Return appointmentTable
     End Function
     Public Shared Function PatientList() As DataTable
-        Dim query As String = "SELECT id AS 'Patient ID', p_Firstname AS 'First Name', p_middleName AS 'Middle Name', P_lastname AS 'Last Name', p_suffix AS 'Suffix', p_sex AS 'Sex', P_bdate AS 'Birth Date', p_address AS 'Full Address' FROM tb_patientinfo"
+        Dim query As String = "SELECT id AS 'Patient ID', p_Firstname AS 'First Name', p_middleName AS 'Middle Name', P_lastname AS 'Last Name', p_suffix AS 'Suffix', p_sex AS 'Sex', P_bdate AS 'Birth Date' FROM tb_patientinfo"
 
         Dim PatientTable As New DataTable()
 
